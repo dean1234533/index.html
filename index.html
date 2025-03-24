@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    
+    
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head> 
+<body>
+ 
+    
+
+
+<!-- Sticky Button -->
+<button class="sticky-button" onclick="window.location.href='#'">↑</button>
+
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+  <div class="border border-4 p-4 rounded" style="border-color: #ccc #888 #888 #ccc;">
+    
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+          <img src="../web page/images/logo-transparent-svg.svg" alt="logo" width="150" height="150" class="d-inline-block align-text-top">
+          
+      </a>
+      <!-- Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="" href="#section1">Personal Training</a>
+              </li>
+              <li class="nav-item">
+                  <a class="" href="#section2">Pricing</a>
+          
+              
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+
+
+    
+  <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators (Optional) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <style>
+
+.heading-underline {
+        display: inline-block; /* Adjusts width to text */
+        border-bottom: 3px solid red; /* Red underline */
+        padding-bottom: 5px; /* Adds space between text and line */
+       
+    }
+
+   .sticky-button {
+            position: fixed;
+            bottom: 20px; /* Distance from the bottom of the screen */
+            right: 20px; /* Distance from the right side */
+            z-index: 1000; /* Ensure it's above other content */
+            border-radius: 50%; /* Optional: makes the button round */
+            padding: 15px 20px; /* Button padding */
+            background-color: #007bff; /* Button background */
+            color: white; /* Button text color */
+            border: none; /* Remove default button border */
+            font-size: 18px; /* Button text size */
+        }
+
+        /* Optional: Adding a hover effect */
+        .sticky-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Optional: Adding some margin for content */
+        body {
+          font-family: sans-serif;
+            padding-bottom: 80px; /* Prevent content overlap with button */
+        }
+
+        /* Example content */
+        .content {
+            height: 2000px; /* To make the page scrollable */
+            background: linear-gradient(180deg, #f1f1f1, #fff);
+        }
+
+  .btn{font-size: larger;}
+  .nav-item{margin-right: 15px;}
+body{font-size: larger;}
+.fa-brands{display: flex; justify-content: center; font-size: 50px; }
+
+.transparent-section {
+    background: transparent ; /* Fully transparent background */
+    border: none; /* Remove any borders if needed */
+    box-shadow : none; /* Remove any shadow effects */
+}
+
+
+.border{background-color: rgb(20, 22, 22);}
+.custom-box {
+            background: rgb(53, 47, 47);
+            padding: 20px;
+            border-radius: 20px;
+            border: 4px solid red; /* Red outer border */
+            box-shadow: inset 0 0 5px black, 0 5px 10px rgba(0, 0, 0, 0.2); /* Inner shadow & outer shadow */
+        }
+
+        .black-white-bg {
+    background-image: url('../web page/images/IMG_8036.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed;
+    text-align: center;
+    list-style: none;
+    
+}
+.discount-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: red;
+        }
+
+        body {color: white;
+    background-image: url('../11.3 TinDog Project/images/IMG_8036.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed;
+    height: 400vh; /* Full height */
+}
+    
+      
+      
+      body{margin-left: 10%; margin-right: 10%;}
+      .we{display: flex; justify-content: center;}
+     </style>
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../web page/images/IMG_8026.jpg" class="d-block w-100" alt="...">
+      <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+
+        <h5 class="fw-bold display-4">IF YOU HAVE <br> A STRONG MIND</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../web page/images/IMG_4997.jpg" class="d-block w-100" alt="...">
+      <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+
+        <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
+          
+          <style>
+           
+          .carousel-item{max-height:700px;}
+          
+         </style></h5>
+        
+      </div>
+    </div>
+   
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+ 
+  <!-- Title -->
+  <section id="title">
+
+  </section>
+  <!-- Features -->
+  <section id="features">
+
+  </section>
+  <!-- Testimonial -->
+  <section id="testimonial">
+
+  </section>
+  <!-- Pricing -->
+  <section id="pricing">
+
+  </section>
+  <!-- Footer -->
+  <section id="footer">
+
+    <br>
+ 
+ 
+    <h2 class="heading-underline">Looking for a mobile personal trainer near you? East London.</h2><br>
+    
+    <div class="container mt-4">
+      <img src="../11.3 TinDog Project/images/IMG_4997.jpg" class="float-start me-3 rounded" alt="Example Image" width="200">
+    
+      <p>
+        My name is Dean and I have been a qualified personal trainer since 2019. My love of fitness has always been a part of my life. So it made total sense to turn my passion for fitness training  into a qualification.  As well as transforming my own body through fitness training and good nutrition, I have helped many clients to redefine themselves through health & fitness training.  Not only sharing my knowledge, I also share personal experiences, tips and health & fitness training secrets.
+      </p>
+      <p>
+        Since my Personal Training and coaching expertise is designed to help improve technique for the body, you  will certainly gain better results and help prevent injury. It’s about having a stronger body but also a strong mindset. Your body is capable of so much more and I am here to break down the barriers of the mind stopping you from reaching your full potential. Every client is different and unique, with their own strengths and weaknesses. My training sessions are tailored to each individual’s need. As a result, together we will exceed your expectations. You will also find that you look forward to our sessions before, during and after our workouts.
+      </p>
+
+      
+  
+    </div> 
+    
+    <div class="clearfix"></div><br>
+   
+   
+    <h1 class="heading-underline">Free Personal Fitness training consultation</h1><br>
+    <p>Before we start training there will be a free consultation lasting around 30 mins to an hour depending on your specific requirements. The consultation is to assess your needs and what outcome you would like to have at the end of the sessions. After that, we will start the journey towards smashing your health & fitness goals!</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform">
+  
+    <button type="button" class="btn btn-primary">ENQUIRE</button><br></a>
+<br>
+
+
+<h2 class="heading-underline title1">Personal Training services</h2><br>
+
+ 
+<ol class="list-unstyles"></ol>
+<li>Weight Loss/ Management Personal Training.</li>
+<li>Toning & Sculpting Personal Training.</li>
+<li>Resistance Training Personal Training.</li>
+<li>Muscle Building Personal Training.</li>
+<li>Mobility / Flexibility Personal Training.</li>
+<li>Personal Training for Speed, Strength, Power Development</li>
+<li>Nutritional Advice & coaching.</li>
+</ol><br>
+<section id="section1" class="bg-primary text-white"></section>
+
+
+<h2 class="heading-underline">Personal Training Sessions</h2><br>
+
+
+    <p>All Personal Training  sessions are 60 minutes  and can take place outdoors in the park or home garden in the East London area.
+    </p> <br>
+   
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="../web page/images/photo-output.jpg" class="d-block w-100" alt="Slide 1">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../web page/images/F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="Slide 2">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button><br>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+<h2 class="heading-underline">BESPOKE PERSONAL TRAINER WORKOUT PLANS</h2><br>
+  <p>We all have reasons for starting a fitness journey, maybe  you’re just starting your fitness journey or need a little help on your way, we are here to help. For example, do you want to achieve that summer body? Are you getting ready for a special occasion like a holiday or wedding? Do you dream of completing a marathon? Whatever the occasion we have tailored workout plans to suit your every need.
+  </p><br>
+  
+  <h2 class="heading-underline">Small groups or pairs fitness training</h2><br> 
+  <p>Couples or small group personal training undoubtedly increases your motivation levels. If you want to workout with a partner or in a small group of up to 4, you’ll get a discount. Contact us to find out more.
+  </p><br>
+
+</div><br>
+
+    <div class="black-white-bg" style="height: 600px; width: 100%;"> 
+   
+    <h2 class="heading-underline">Locations</h2><br>
+   
+    <ol class="no-bullets"></ol>
+<li>Stratford (E15)</li>
+<li>East Ham (E12)</li>
+<li>Leytonstone (E11)</li>
+<li>West Ham (E3, E7 & E13)</li>
+<li>Hackney  (E1 & E8)</li>
+<li>lford (E11, E12, IG1)</li>
+<li>Walthamstow (E17)</li>
+<li>Forest Gate (E7)</li>
+<li>Wanstead (E11)</li>
+<li>Leyton (E10)</li>
+<li>Aldersbrook (E12)</li>
+<li>Snaresbrook (E17)</li>
+<li>South Woodford (E18)</li>
+<li>Greenwich (E16)</li>
+<li>Bow (E3)</li>
+<li>Plaistow (E13)</li>
+<li>Canning Town (E16)</li>
+</ol>
+</div>   
+
+
+
+<br>
+
+
+
+<div class="transparent-section p-4"></div>
+  
+  
+ </div>
+
+
+<div class="border border-2 p-4 rounded" style="background: transparent; box-shadow: none; border-color: #ccc #888 #888 #ccc;">
+</div>
+
+</div><br><br>
+
+
+
+
+
+
+    
+
+
+<div class="border border-4 p-4 rounded" style="border-color: #ccc #888 #888 #ccc;">
+    
+
+
+
+<div class="container mt-4">
+ 
+
+
+
+
+
+  <div class="clearfix"></div><br>
+
+
+</div> 
+
+
+
+
+
+
+  <div class="container mt-4">
+        
+    
+        
+    </div> 
+     
+      <div class="clearfix"></div>
+    
+        <br>
+    
+
+      <div class="clearfix">
+
+      </div>
+
+      <div class="clearfix">
+        
+     <br>
+     <section id="section2" class="bg-primary text-white">
+     
+  </section>
+
+    <h1 class="heading-underline">Personal Trainer/Group fitness, Pricing</h1><br>
+     
+     
+      <p> To be sure that anyone can access my services, there are a range of flexible packages to suit your needs. So whether you are looking for a affordable Personal trainer package, or you can afford to invest in yourself upfront -there is a package suited to you. You can choose from single sessions to wide variety of block sessions. I also offer discounted personal training sessions for those who are for students & Key Worker / NHS staff. Please see below for more information or contact us for more information. </p>
+   <br>
+   <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform">
+   <button type="button" class="btn btn-primary">ENQUIRE</button><br></a>
+ <br>
+      <div class="custom-box text-center">
+
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom-card">
+                    <h5 class="text-uppercase fw-bold">single personal training session prices</h5>
+                    <p>Pay as you go personal training sessions available.</p>
+                    <p>Get in touch to find out more.</p>
+                    <p class="discount-text">£44</p>
+                    <p>Per session</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div><br>
+      
+      <div class="custom-box text-center">
+     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom-card">
+                    <h5 class="text-uppercase fw-bold">BLOCK OF 5 PERSONAL TRAINING SESSIONS</h5>
+                    <p>Includes a 5% discount with this block.</p>
+                    <p class="discount-text">£209</p>
+                    <p>(£41.80 per session)</p>
+                    <p>Get in touch to find out more.</p>
+                
+                    
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+      </div><br>
+      
+      
+      <div class="custom-box text-center">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom-card">
+                    <h5 class="text-uppercase fw-bold">BLOCK OF 10 PERSONAL TRAINING SESSIONS</h5>
+                    <p>Includes a 10% discount with this block.</p>
+                    <p class="discount-text">£396</p>
+                    <p>(£39.60 per session)</p>
+                    <p>Get in touch to find out more.</p>
+                
+                    
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div><br>
+     
+      <div class="custom-box text-center">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom-card">
+                    <h5 class="text-uppercase fw-bold">BLOCK OF 15 PERSONAL TRAINING SESSIONS</h5>
+                    <p>Includes a 15% discount with this block.</p>
+                    <p class="discount-text">£561</p>
+                    <p>(£37.40 per session)</p>
+                    <p>Get in touch to find out more.</p>
+                
+                    
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div><br>
+      
+      <div class="custom-box text-center">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom-card">
+                    <h5 class="text-uppercase fw-bold">Key Worker / NHS Worker Block Personal Training Sessions</h5>
+                    <p>Includes an additional discount with all blocks.</p>
+                    <p class="discount-text">14%</p>
+                    <p>Per session - Get in touch to find out more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div><br>
+
+      <div class="custom-box text-center">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="custom-card">
+                    <h5 class="text-uppercase fw-bold">PERSONAL TRAINING STUDENT DISCOUNT
+
+                    </h5>
+                    <p>Includes an additional discount on a block of 10 and block of 15 for all students.</p>
+                    <p class="discount-text">10%</p>
+                    <p>Per session - Get in touch to find out more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div><br>
+
+      
+
+
+
+
+    </div>
+  
+     <footer>
+      <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram:
+        <i class="fab fa-instagram"></i>
+    </a>
+     </footer>
+   
+ 
+  </section>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
