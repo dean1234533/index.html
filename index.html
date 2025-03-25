@@ -83,6 +83,21 @@
     </div>
 
     <style>
+.element {
+    width: 100%;
+}
+
+/* Viewport width */
+.element {
+    width: 100vw;
+}
+
+/* Fixed width with max-width for responsiveness */
+.element {
+    width: 100%;
+    max-width: 480px; /* or another appropriate pixel value */
+}
+
 
 .heading-underline {
         display: inline-block; /* Adjusts width to text */
@@ -173,13 +188,14 @@ body{font-size: larger;}
       body{margin-left: 10%; margin-right: 10%;}
       .we{display: flex; justify-content: center;}
      </style>
-
-<div id="carouselExampleCaptions" class="carousel slide">iu
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     
   </div>
+
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Description">
