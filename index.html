@@ -99,7 +99,7 @@
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
-                -webkit-box-orient: vertical;
+                -webkit-box-orient: horizontal;
                 -webkit-box-direction: normal;
                     -ms-flex-direction: column;
                         flex-direction: column; height: 20vh;width: 10px;
@@ -107,7 +107,7 @@
                 border: 1px solid #ddd;
             }
             .table-responsive-stack td {
-                display: block; height: 10px;
+                display: block; height: 0px;
                 text-align: right;
             }
             .table-responsive-stack td:before {
@@ -165,19 +165,27 @@
                   font-weight: bold;
                   color: red;
               }
-      
-      .transparent-section{background: transparent; background-color: rgba(0, 0, 0, 0.462);height: 400px;}
+      {background-color: #0b0b0b00;}
+      .transparent-section{background: transparent;height: 400px;}
               body{margin-left: 10%; margin-right: 10%;}
               .we{display: flex; justify-content: center;}      
       
              .table{width: 100%; height: 100%;}
-         .desktop{background-color: rgb(12, 10, 10);}
-      
+         .desktop{background-color: rgba(19, 17, 16, 0.897);}
+      .border3{background-color: #0b0b0be0;}
       @media (max-width: 469px) {
       
-           body{margin-left: 0%; margin-right: 0%;}
-          .border{background-color: #0b0b0b;}
-      }
+           body{margin-left: -5%; margin-right: -5%;}
+          .border{background-color: #0b0b0b2e;margin-top: -50px;border-top: none; border-bottom: none;border-bottom-color: #b30018;}
+     .border3{background-color: #0b0b0be1;}
+     .transparent-section{height: -0%;}
+     .border2{border: none;}  
+     .your-section-class, .your-container-class {
+.border {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+    }}
       
       .carousel-item{max-height:700px;}     
          
@@ -189,11 +197,14 @@
 </head> 
 
 <body>
+  <div class="border3 p-4 " style="border-color: #ccc #888 #888 #ccc;">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
- 
-    <div class="border" style="border-color: #ccc #888 #888 #ccc;">
-  <div class="container">
+    <div class="border-bottom:none p-4" style="border-color: #ccc #888 #888 #ccc;">
+  
+  
+      <div class="container">
     <div class="row">
       <div class="col-md-6">
         <!-- Content here -->
@@ -386,11 +397,11 @@
 <section class="transparent-section">
  
 
-
-  </section>
-
 </div>
-<div class="border p-4 " style="border-color: #ccc #888 #888 #ccc;">
+  </section>
+  <div class="border-top:none border3 p-4 " style="border-color: #ccc #888 #888 #ccc;">
+<div class="bb  border-top:none p-4 " style="border-color: #ccc #888 #888 #ccc;">
+
 
      
 
@@ -484,7 +495,7 @@
 
     </div>
   </div>
-
+ 
      <footer>
       <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram:
         <i class="fab fa-instagram"></i>
