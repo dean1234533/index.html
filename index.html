@@ -27,18 +27,196 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
 
+      .testimonial-container {
+          width: 60%; /* Takes 60% of the screen on desktop */
+          margin: auto;
+          text-align: center;
+          font-size: 20px;
+          background: #f9f9f9;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff5733;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      
+      .cta-button:hover {
+        background-color: #c4421d;
+      }
+      
+    
+      .navbar-toggler{background-color: #00000041;}
+      .heading-underline {
+              display: inline-block; /* Adjusts width to text */
+              border-bottom: 3px solid red; /* Red underline */
+              padding-bottom: 5px; /* Adds space between text and line */
+             
+          }
+      
+         .sticky-button {
+                  position: fixed;
+                  bottom: 20px; /* Distance from the bottom of the screen */
+                  right: 20px; /* Distance from the right side */
+                  z-index: 1000; /* Ensure it's above other content */
+                  border-radius: 50%; /* Optional: makes the button round */
+                  padding: 15px 20px; /* Button padding */
+                  background-color: #c33e3e; /* Button background */
+                  color: rgb(18, 17, 17); /* Button text color */
+                  border-color: red; /* Remove default button border */
+                  font-size: 18px; /* Button text size */
+              }
+      
+              /* Optional: Adding a hover effect */
+              .sticky-button:hover {
+                  background-color: #b30018;
+              }
+      
+              /* Optional: Adding some margin for content */
+              body {
+                font-family: sans-serif;
+                  padding-bottom: 80px; /* Prevent content overlap with button */
+                  
+          
+         
+      
+              
+              }
+      
+              
+              @media (max-width: 768px) {
+            .table-responsive-stack tr {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column; height: 20vh;width: 10px;
+                margin-bottom: 1rem;
+                border: 1px solid #ddd;
+            }
+            .table-responsive-stack td {
+                display: block; height: 10px;
+                text-align: right;
+            }
+            .table-responsive-stack td:before {
+                content: attr(data-label);height: 10px;
+                float: right;
+                font-weight: bold;
+            }
+        }
+    
+      
+        .btn{font-size: larger;}
+        .nav-item{margin-right: 15px;}
+      body{font-size: larger;}
+      .fa-brands{display: flex; justify-content: center; font-size: 50px; }
+      
+      .transparent-section {
+          background: transparent ; /* Fully transparent background */
+          border: none; /* Remove any borders if needed */
+          box-shadow : none; /* Remove any shadow effects */
+      }
+      
+      
+      .border{background-color: rgb(20, 22, 22);}
+      .custom-box {
+                  background: rgb(53, 47, 47);
+                  padding: 20px;
+                  border-radius: 20px;
+                  border: 4px solid red; /* Red outer border */
+                  box-shadow: inset 0 0 5px black, 0 5px 10px rgba(0, 0, 0, 0.2); /* Inner shadow & outer shadow */
+              }
+      
+              .black-white-bg {
+          background-image: url("https://raw.githubusercontent.com/dean1234533/index.html/main/images/9EC99074-1B8E-4B8D-AA66-6923C1BDC9E3.jpg"); /* Replace with your image */
+          background-size: cover;
+          background-position: center;
+          filter: grayscale(100%);
+          background-repeat: no-repeat; /* Prevent repeating */
+          background-attachment: fixed;
+          text-align: center;
+          list-style: none;
+          
+       }
+      
+      body {color: white;
+          background-image: url("https://raw.githubusercontent.com/dean1234533/index.html/main/images/9EC99074-1B8E-4B8D-AA66-6923C1BDC9E3.jpg"); /* Replace with your image URL */
+          background-size: cover; /* Cover the entire page */
+          background-position: center center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating */
+          background-attachment: fixed;}
+          
+      
+      
+      .discount-text {
+                  font-size: 2rem;
+                  font-weight: bold;
+                  color: red;
+              }
+      
+      
+              body{margin-left: 10%; margin-right: 10%;}
+              .we{display: flex; justify-content: center;}      
+      
+             .table{width: 100%;}
+         
+      
+      @media (max-width: 769px) {
+          .testimonial-container {margin-left: 0%;margin-right: 0%;
+              width: 100%; /* Full width on mobile */
+              font-size: 16px; /* Smaller text for readability */
+              padding: 15px; background-image: none;
+              background-image: url("https://raw.githubusercontent.com/dean1234533/index.html/main/images/9EC99074-1B8E-4B8D-AA66-6923C1BDC9E3.jpg"); /* Replace with your image */
+          background-size: cover;
+          background-position: center;
+          filter: grayscale(100%);
+          background-repeat: no-repeat; /* Prevent repeating */
+          background-attachment: fixed;
+          text-align: center;
+          list-style: none;
+          }
+      }
+      
+      
+      .carousel-item{max-height:700px;}     
+         
+         
+            
+        </style>
+      
+      
 </head> 
 <body>
  
-    
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Content here -->
+      </div>
+      <div class="col-md-6">
+        <!-- Content here -->
+      </div>
+    </div>
+  </div>   
 
 
 <!-- Sticky Button -->
 <button class="sticky-button" onclick="window.location.href='#'">↑</button>
 
 
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+  
 
   <div class="border border-4 p-4 rounded" style="border-color: #ccc #888 #888 #ccc;">
     
@@ -47,7 +225,7 @@
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../logo-transparent-svg.svg" alt="Description" width="150"height="150" class="d-inline-block align-text-top">
+        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../logo-transparent-svg.svg" alt="Description" width="150" height="150" class="d-inline-block align-text-top">
           
       </a>
       <!-- Navbar Toggler -->
@@ -82,122 +260,10 @@
         <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
     </div>
 
-    <style>
-
-
-
-
-
-
-.navbar-toggler{background-color: #00000041;}
-.heading-underline {
-        display: inline-block; /* Adjusts width to text */
-        border-bottom: 3px solid red; /* Red underline */
-        padding-bottom: 5px; /* Adds space between text and line */
-       
-    }
-
-   .sticky-button {
-            position: fixed;
-            bottom: 20px; /* Distance from the bottom of the screen */
-            right: 20px; /* Distance from the right side */
-            z-index: 1000; /* Ensure it's above other content */
-            border-radius: 50%; /* Optional: makes the button round */
-            padding: 15px 20px; /* Button padding */
-            background-color: #c33e3e; /* Button background */
-            color: rgb(18, 17, 17); /* Button text color */
-            border-color: red; /* Remove default button border */
-            font-size: 18px; /* Button text size */
-        }
-
-        /* Optional: Adding a hover effect */
-        .sticky-button:hover {
-            background-color: #b30018;
-        }
-
-        /* Optional: Adding some margin for content */
-        body {
-          font-family: sans-serif;
-            padding-bottom: 80px; /* Prevent content overlap with button */
-            
-    
-   
-
-        
-        }
-
-        
-        
-
-  .btn{font-size: larger;}
-  .nav-item{margin-right: 15px;}
-body{font-size: larger;}
-.fa-brands{display: flex; justify-content: center; font-size: 50px; }
-
-.transparent-section {
-    background: transparent ; /* Fully transparent background */
-    border: none; /* Remove any borders if needed */
-    box-shadow : none; /* Remove any shadow effects */
-}
-
-
-.border{background-color: rgb(20, 22, 22);}
-.custom-box {
-            background: rgb(53, 47, 47);
-            padding: 20px;
-            border-radius: 20px;
-            border: 4px solid red; /* Red outer border */
-            box-shadow: inset 0 0 5px black, 0 5px 10px rgba(0, 0, 0, 0.2); /* Inner shadow & outer shadow */
-        }
-
-        .black-white-bg {
-    background-image: url("https://raw.githubusercontent.com/dean1234533/index.html/main/images/9EC99074-1B8E-4B8D-AA66-6923C1BDC9E3.jpg"); /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-attachment: fixed;
-    text-align: center;
-    list-style: none;
-    
- }
-
-body {color: white;
-    background-image: url("https://raw.githubusercontent.com/dean1234533/index.html/main/images/9EC99074-1B8E-4B8D-AA66-6923C1BDC9E3.jpg"); /* Replace with your image URL */
-    background-size: cover; /* Cover the entire page */
-    background-position: center center; /* Center the background */
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-attachment: fixed;}
     
 
 
-.discount-text {
-            font-size: 2rem;
-            font-weight: bold;
-            color: red;
-        }
 
-
-        body{margin-left: 10%; margin-right: 10%;}
-        .we{display: flex; justify-content: center;}      
-
-       
-   
-
-@media screen and (max-width: 800px) { body {margin-right: 0%;margin-left:0%}}
- 
-
-
-      
-   
-   
-      
-  </style>
-
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -215,16 +281,14 @@ body {color: white;
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Description">
+    <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Description">
       <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
         <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
           
-          <style>
-           
-          .carousel-item{max-height:700px;}
+
+        
           
-         </style></h5>
         
       </div>
     </div>
@@ -243,26 +307,6 @@ body {color: white;
 
 
 
- 
-  <!-- Title -->
-  <section id="title">
-
-  </section>
-  <!-- Features -->
-  <section id="features">
-
-  </section>
-  <!-- Testimonial -->
-  <section id="testimonial">
-
-  </section>
-  <!-- Pricing -->
-  <section id="pricing">
-
-  </section>
-  <!-- Footer -->
-  <section id="footer">
-
     <br>
  
  
@@ -272,10 +316,10 @@ body {color: white;
       <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/../images/IMG_4997.jpg" class="float-start me-3 rounded" alt="Description" width="200">
     
       <p>
-        My name is Dean and I have been a qualified personal trainer since 2019. My love of fitness has always been a part of my life. So it made total sense to turn my passion for fitness training  into a qualification.  As well as transforming my own body through fitness training and good nutrition, I have helped many clients to redefine themselves through health & fitness training.  Not only sharing my knowledge, I also share personal experiences, tips and health & fitness training secrets.
+        I’m Dean, a certified personal trainer since 2019 with a lifelong passion for fitness. Transforming this enthusiasm into a profession allows me to guide others on their health journeys.
       </p>
       <p>
-        Since my Personal Training and coaching expertise is designed to help improve technique for the body, you  will certainly gain better results and help prevent injury. It’s about having a stronger body but also a strong mindset. Your body is capable of so much more and I am here to break down the barriers of the mind stopping you from reaching your full potential. Every client is different and unique, with their own strengths and weaknesses. My training sessions are tailored to each individual’s need. As a result, together we will exceed your expectations. You will also find that you look forward to our sessions before, during and after our workouts.
+        Since my Personal Training and coaching expertise is designed to help improve technique for the body, you  will certainly gain better results and help prevent injury. It’s about having a stronger body but also a strong mindset. Your body is capable of so much more and I am here to break down the barriers of the mind stopping you from reaching your full potential. Recognizing that each client has unique strengths and challenges, I customize every training session to align with individual goals, ensuring optimal results and minimizing injury risk. As a result, together we will exceed your expectations. You will also find that you look forward to our sessions before, during and after our workouts.
       </p>
 
       
@@ -286,34 +330,31 @@ body {color: white;
    
    
     <h1 class="heading-underline">Free Personal Fitness training consultation</h1><br>
-    <p>Before we start training there will be a free consultation lasting around 30 mins to an hour depending on your specific requirements. The consultation is to assess your needs and what outcome you would like to have at the end of the sessions. After that, we will start the journey towards smashing your health & fitness goals!</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform">
-  
-    <button type="button" class="btn btn-primary">ENQUIRE</button><br></a>
+    <p>We begin with a complimentary 30 to 60-minute consultation to assess your fitness level, discuss objectives, and develop a tailored plan to achieve your desired outcomes.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a><br>
 <br>
 
 
 <h2 class="heading-underline title1">Personal Training services</h2><br>
 
  
-<ol class="list-unstyles"></ol>
-<li>Weight Loss/ Management Personal Training.</li>
-<li>Toning & Sculpting Personal Training.</li>
-<li>Resistance Training Personal Training.</li>
-<li>Muscle Building Personal Training.</li>
-<li>Mobility / Flexibility Personal Training.</li>
-<li>Personal Training for Speed, Strength, Power Development</li>
-<li>Nutritional Advice & coaching.</li>
+<ol class="list-unstyles">
+<li>Weight Management: Weight Loss, Toning & Sculpting</li>
+<li>Strength Training: Resistance Training, Muscle Building</li>
+<li>Performance Enhancement: Mobility, Flexibility, Speed, Strength, Power Development</li>
+<li>Wellness Coaching: Nutritional Advice & Coaching</li>
 </ol><br>
-<section id="section1" class="bg-primary text-white"></section>
+
 
 
 <h2 class="heading-underline">Personal Training Sessions</h2><br>
 
 
-    <p>All Personal Training  sessions are 60 minutes  and can take place outdoors in the park or home garden in the East London area.
+    <p>Each 60-minute session is conducted at a location convenient for you—be it a local park or your home garden within East London—providing flexibility and comfort in your training environment.
     </p> <br>
    
+<h2>Client Progress</h2><br>
+
     <div class="container">
       <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6">
@@ -342,182 +383,109 @@ body {color: white;
   </p><br>
   
   <h2 class="heading-underline">Small groups or pairs fitness training</h2><br> 
-  <p>Couples or small group personal training undoubtedly increases your motivation levels. If you want to workout with a partner or in a small group of up to 4, you’ll get a discount. Contact us to find out more.
+  <p>Boost motivation and enjoy a supportive atmosphere with our small group training sessions. Train with friends or family (up to 4 participants) and benefit from discounted rates.
   </p><br>
-
-</div><br>
-
-    <div class="black-white-bg" style="height: 600px; width: 100%;"> 
+  <h2 class="heading-underline">Locations</h2><br>
    
-    <h2 class="heading-underline">Locations</h2><br>
-   
-    <ol class="no-bullets"></ol>
-<li>Stratford (E15)</li>
-<li>East Ham (E12)</li>
-<li>Leytonstone (E11)</li>
-<li>West Ham (E3, E7 & E13)</li>
-<li>Hackney  (E1 & E8)</li>
-<li>lford (E11, E12, IG1)</li>
-<li>Walthamstow (E17)</li>
-<li>Forest Gate (E7)</li>
-<li>Wanstead (E11)</li>
-<li>Leyton (E10)</li>
-<li>Aldersbrook (E12)</li>
-<li>Snaresbrook (E17)</li>
-<li>South Woodford (E18)</li>
-<li>Greenwich (E16)</li>
-<li>Bow (E3)</li>
-<li>Plaistow (E13)</li>
-<li>Canning Town (E16)</li>
-</ol>
-</div>   
-  <div class="border border-4 p-4 rounded" style="border-color: #ccc #888 #888 #ccc;">
-    
+  <p>Proudly serving multiple East London communities, including Stratford, East Ham, Leytonstone, and more. Contact us to confirm availability in your area.</p>
+
  <br>
     
 
-     <div class="clearfix">
+     
 
-      </div>
-
-      <div class="clearfix">
+     
         
      <br>
-     <section id="section2" class="bg-primary text-white">
      
-  </section>
 
     <h1 class="heading-underline">Personal Trainer/Group fitness, Pricing</h1><br>
      
      
       <p> To be sure that anyone can access my services, there are a range of flexible packages to suit your needs. So whether you are looking for a affordable Personal trainer package, or you can afford to invest in yourself upfront -there is a package suited to you. You can choose from single sessions to wide variety of block sessions. I also offer discounted personal training sessions for those who are for students & Key Worker / NHS staff. Please see below for more information or contact us for more information. </p>
    <br>
-   <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform">
-   <button type="button" class="btn btn-primary">ENQUIRE</button><br></a>
- <br>
-      <div class="custom-box text-center">
+  
 
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="custom-card">
-                    <h5 class="text-uppercase fw-bold">single personal training session prices</h5>
-                    <p>Pay as you go personal training sessions available.</p>
-                    <p>Get in touch to find out more.</p>
-                    <p class="discount-text">£44</p>
-                    <p>Per session</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<h3 class="heading-underline">What My Clients Say</h3><br>
 
-      </div><br>
-      
-      <div class="custom-box text-center">
-     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="custom-card">
-                    <h5 class="text-uppercase fw-bold">BLOCK OF 5 PERSONAL TRAINING SESSIONS</h5>
-                    <p>Includes a 5% discount with this block.</p>
-                    <p class="discount-text">£209</p>
-                    <p>(£41.80 per session)</p>
-                    <p>Get in touch to find out more.</p>
-                
-                    
-                    
-                
-                </div>
-            </div>
-        </div>
-    </div>
-      </div><br>
-      
-      
-      <div class="custom-box text-center">
+<br>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="custom-card">
-                    <h5 class="text-uppercase fw-bold">BLOCK OF 10 PERSONAL TRAINING SESSIONS</h5>
-                    <p>Includes a 10% discount with this block.</p>
-                    <p class="discount-text">£396</p>
-                    <p>(£39.60 per session)</p>
-                    <p>Get in touch to find out more.</p>
-                
-                    
-                    
-                
-                </div>
-            </div>
-        </div>
-    </div>
+<blockquote>
+  "Dean is an amazing PT! I love nature, so it's great to be able to train outside. He really listens to my goals and designs sessions to challenge me. Dean will push me - which I need - but he's encouraging and supportive as well. Our sessions are always fun with plenty of laughter and great tunes. Can't recommend Dean highly enough if you're looking for a local PT. Thanks Dean :)
+  ."
+  <br>– kelly.
+</blockquote><br>
 
-      </div><br>
+<blockquote>
+  "I would highly recommend Dean. I have trained with him for a few months outdoors using mostly body weight, park benches, boxing gloves and some other light equipment that he brings. I can see the changes in the mirror and in my mood. He adapts the routines to keep them interesting and challenging. He is personable and very punctual, no matter the weather."
+  <br>– Dessie k.
+</blockquote><br>
+
+<blockquote>
+  "I’ve been working with Dean for a while and I feel so grateful. I was very intimidated at the idea of personal training but I was quickly reassured by Dean’s professionalism and motivation. He’s surprisingly gentle and calm but won’t let you speed through or do half hearted work. I feel so comfortable and I am also seeing the hard work pay off quickly. He’s a great listener and is also mindful to your aches/pains/past injuries and goals. Communication and punctuality is 100%. I only wish I found him sooner!"
+  <br>– Amina M.
+</blockquote>
+
+
+<div class="container-fluid p-3">
+  <div class="table-responsive table width">
+      <table class="table table-bordered">
+          <thead>
+<table class="table table-bordered">
+  <tr>
+    <th>Package</th>
+    <th>Sessions</th>
+    <th>Price</th>
+    <th>Price per Session</th>
+  </tr>
+  <tr>
+    <td>Single Session</td>
+    <td>1</td>
+    <td>£45</td>
+    <td>£45</td>
+  </tr>
+  <tr>
+    <td>Starter Package</td>
+    <td>5</td>
+    <td>£209</td>
+    <td>£41.80</td>
+  </tr>
+  <tr>
+    <td>Intermediate Package</td>
+    <td>10</td>
+    <td>£396</td>
+    <td>£39.60</td>
+  </tr>
+  <tr>
+    <td>Transformation Package</td>
+    <td>15</td>
+    <td>£561</td>
+    <td>£37.40</td>
+  </tr>
+ 
+  <tr>
+    <td>Student & Key Worker Discount</td>
+    <td>Any package</td>
+    <td>10% off</td>
+    <td>-</td>
+  </tr>
+
+ </table>
+
+<p><strong>Ready to start your fitness journey?</strong></p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a>
+
+
      
-      <div class="custom-box text-center">
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="custom-card">
-                    <h5 class="text-uppercase fw-bold">BLOCK OF 15 PERSONAL TRAINING SESSIONS</h5>
-                    <p>Includes a 15% discount with this block.</p>
-                    <p class="discount-text">£561</p>
-                    <p>(£37.40 per session)</p>
-                    <p>Get in touch to find out more.</p>
-                
-                    
-                    
-                
-                </div>
-            </div>
-        </div>
-    </div>
-
-      </div><br>
-      
-      <div class="custom-box text-center">
 
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="custom-card">
-                    <h5 class="text-uppercase fw-bold">Key Worker / NHS Worker Block Personal Training Sessions</h5>
-                    <p>Includes an additional discount with all blocks.</p>
-                    <p class="discount-text">14%</p>
-                    <p>Per session - Get in touch to find out more.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-      </div><br>
+</div><br>
+
     
-      <div class="custom-box text-center">
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="custom-card">
-                    <h5 class="text-uppercase fw-bold">PERSONAL TRAINING STUDENT DISCOUNT
-
-                    </h5>
-                    <p>Includes an additional discount on a block of 10 and block of 15 for all students.</p>
-                    <p class="discount-text">10%</p>
-                    <p>Per session - Get in touch to find out more.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-      </div><br>
-
-      
-
-
-
+   
+    </div>   
+  
 
     </div>
     
@@ -528,7 +496,7 @@ body {color: white;
      </footer>
    
  
-  </section>
+  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
