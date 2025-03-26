@@ -86,12 +86,12 @@
               body {
                 font-family: sans-serif;
                   padding-bottom: 80px; /* Prevent content overlap with button */
-                  
+                .border1{border: #e6e3e3; background-color: #0b0b0b; color:}}   
           
          
       
               
-              }
+              
       
               
               @media (max-width: 768px) {
@@ -132,7 +132,7 @@
       
       .border{background-color: rgb(20, 22, 22);}
       .custom-box {
-                  background: rgb(53, 47, 47);
+                  background: rgb(11, 10, 10);
                   padding: 20px;
                   border-radius: 20px;
                   border: 4px solid red; /* Red outer border */
@@ -166,29 +166,18 @@
                   color: red;
               }
       
-      
-              
+      .transparent-section{background: transparent; background-color: rgba(0, 0, 0, 0.462);height: 400px;}
+              body{margin-left: 10%; margin-right: 10%;}
               .we{display: flex; justify-content: center;}      
       
              .table{width: 100%; height: 100%;}
-         
+         .desktop{background-color: rgb(12, 10, 10);}
       
       @media (max-width: 469px) {
-          .testimonial-container {margin-l;margin-right: 0%;
-              width: 100%; /* Full width on mobile */
-              font-size: 16px; /* Smaller text for readability */
-              padding: 15px; background-image: none;
-              background-image: url("https://raw.githubusercontent.com/dean1234533/index.html/main/images/9EC99074-1B8E-4B8D-AA66-6923C1BDC9E3.jpg"); /* Replace with your image */
-          background-size: cover;
-          background-position: center;
-          filter: grayscale(100%);
-          background-repeat: no-repeat; /* Prevent repeating */
-          background-attachment: fixed;
-          text-align: center;
-          list-style: none;
-          }
-      }
       
+           body{margin-left: 0%; margin-right: 0%;}
+          .border{background-color: #0b0b0b;}
+      }
       
       .carousel-item{max-height:700px;}     
          
@@ -198,8 +187,12 @@
       
       
 </head> 
+
 <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
  
+    <div class="border" style="border-color: #ccc #888 #888 #ccc;">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -218,7 +211,6 @@
 
   
 
-  <div class="border border-4 p-4 rounded" style="border-color: #ccc #888 #888 #ccc;">
     
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -388,15 +380,18 @@
   <h2 class="heading-underline">Locations</h2><br>
    
   <p>Proudly serving multiple East London communities, including Stratford, East Ham, Leytonstone, and more. Contact us to confirm availability in your area.</p>
+ 
+ 
+</div>
+<section class="transparent-section">
+ 
 
- <br>
-    
 
-     
+  </section>
 
-     
-        
-     <br>
+</div>
+<div class="border p-4 " style="border-color: #ccc #888 #888 #ccc;">
+
      
 
     <h1 class="heading-underline">Personal Trainer/Group fitness, Pricing</h1><br>
@@ -406,7 +401,7 @@
    <br>
   
 
-<h3 class="heading-underline">What My Clients Say</h3><br>
+   <h3 class="heading-underline">What My Clients Say</h3><br>
 
 <br>
 
@@ -476,7 +471,7 @@
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a>
 
 
-     
+</div>      
 
 
 
@@ -488,7 +483,8 @@
   
 
     </div>
-    
+  </div>
+
      <footer>
       <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram:
         <i class="fab fa-instagram"></i>
