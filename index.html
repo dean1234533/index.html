@@ -109,7 +109,48 @@
         height: auto;
     }     
               
-      
+   
+
+    .footer {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between; /* Even spacing between items */
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: small;}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; /* Adds spacing between links */
+}
+
+.footer-links a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}  
               
              
     .me{width: 200px; border-radius: 50%;}
@@ -150,7 +191,13 @@
     border: 10px solid #FFF;
 }
 
-
+.section-embossed {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.7); /* Inset for depth */
+}
 
 .full-width-img {
     width: 100%;  /* Image spans the entire screen width */
@@ -201,7 +248,18 @@ table {
             padding: 8px;
         }
     }
+    
+    .section-3d {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
 
+* {
+    max-width: 100%; /* Ensures all elements stay within the screen */
+    box-sizing: border-box; /* Prevents elements from exceeding their container */
+}
 
 h1{font-size: 32px; font-weight: bolder;}
 h2{font-size: 24px;font-weight: bold;}
@@ -232,7 +290,16 @@ h2{font-size: 24px;font-weight: bold;}
     .carousel-item{max-height:700px;}     
      .footer-link{font-size: 15px;}
     @media (max-width: 469px) {
-      
+      html, body {
+    overflow-x: hidden; /* Hides horizontal scrolling */
+    width: 100%; /* Ensures elements don’t exceed screen width */
+}
+
+
+* {
+    max-width: 100%; /* Ensures all elements stay within the screen */
+    box-sizing: border-box; /* Prevents elements from exceeding their container */
+}
       body{margin-left: 0%; margin-right:0%;}
     .black-table{display: contents;}
  .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
@@ -289,12 +356,12 @@ h2{font-size: 24px;font-weight: bold;}
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a href="#section1" style="color: #b30018;">Home</a>
+                  <a href="index.html" style="color: #b30018;">Home</a>
               </li>
               <li class="nav-item">
-                  <a href="#section2" style="color:#b30018">Pricing</a>
+                  <a href="pricing.html" style="color:#b30018">Pricing</a>
                   <li class="nav-item">
-                    <a href="#section2" style="color:#b30018">About</a>
+                    <a href="about.html" style="color:#b30018">About</a>
               
           </ul>
       </div>
@@ -368,7 +435,7 @@ h2{font-size: 24px;font-weight: bold;}
 
    <br>
 
-   <img class="me" src="../web page/images/IMG_4997 2.jpg" class="start " alt="Description">
+   <img class="me" src="images/IMG_4997 2.jpg" class="start " alt="Description">
     
 <br>
 <p>“Seeking a dedicated mobile personal trainer in East London? Meet Dean, a certified professional committed to helping you achieve your fitness goals.”
@@ -406,7 +473,7 @@ h2{font-size: 24px;font-weight: bold;}
 
 
 
-          <img  src="../web page/images/photo-output 4.JPEG"class="full-width-img">
+          <img  src="images/photo-output 4.JPEG"class="full-width-img">
       
 <br>
 
@@ -454,7 +521,7 @@ h2{font-size: 24px;font-weight: bold;}
 <hr>
 
   <Div class="img1">
-    <img src="../web page/images/photo-output 3.JPEG" class="start " alt="Description"width=100>
+    <img src="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/images/photo-output%203.JPEG" class="start " alt="Description"width=100>
         </Div>
     
     <blockquote>
@@ -463,7 +530,7 @@ h2{font-size: 24px;font-weight: bold;}
     </blockquote><br>
   <hr>  
     <Div class="img2">
-    <img src="../web page/images/photo-output 2.JPEG" class="start " alt="Description"width=100>
+    <img src="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/images/photo-output%202.JPEG" class="start " alt="Description"width=100>
         </Div>
 
   <blockquote>
@@ -473,7 +540,7 @@ h2{font-size: 24px;font-weight: bold;}
     </blockquote><br>
 
 
-  <section class="white-section">
+  <section class="white-section section-embossed">
 <h2 class="heading-underline">BESPOKE PERSONAL TRAINER WORKOUT PLANS</h2><br>
   <p>We all have reasons for starting a fitness journey, maybe  you’re just starting your fitness journey or need a little help on your way, we are here to help. For example, do you want to achieve that summer body? Are you getting ready for a special occasion like a holiday or wedding? Do you dream of completing a marathon? Whatever the occasion we have tailored workout plans to suit your every need.
   </p><br>
@@ -482,7 +549,7 @@ h2{font-size: 24px;font-weight: bold;}
 <br>
 <br>
   
-<section class="white-section">
+<section class="white-section section-3d">
 <h2 class="heading-underline">Small Groups Or Pairs Fitness Training</h2><br> 
   <p>Boost motivation and enjoy a supportive atmosphere with our small group training sessions. Train with friends or family (up to 4 participants) and benefit from discounted rates.
   </p><br>
@@ -497,7 +564,7 @@ h2{font-size: 24px;font-weight: bold;}
     <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="framed-container">
-          <img class="img-fluid rounded" src="../web page/images/IMG_8036.jpg" alt="centered image">
+          <img class="img-fluid rounded" src="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/images/IMG_8036.jpg" alt="centered image">
         </div>
         </div>
     </div>
@@ -546,37 +613,41 @@ h2{font-size: 24px;font-weight: bold;}
 
 
      <footer>
+     
+      <footer class="footer">
+        <div class="footer-links">
+            <a href="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/Privacy%20Policy.html">Privacy Policy</a>
+            <a href="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/Terms%20and%20conditions.html">Terms and Conditions</a>
+            <a href="Sign Up | LinkedIn https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHfRwSv5E_I4gAAAZXd7ePw5cFYmL_7Es3aansYnty3cd9uR5uB3QXfnt6mZAYNiKHDc_VmsSHQA4iKbz2aOPXT_iD42EinLIfYIx0X_jV_Oh2kQr9uS8H5mKqKNacmdXFUZPc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdb-s-workouts-2aa057214%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app">LinkedIn</a>
+            <a href="dbs_workouts | Facebook https://www.facebook.com/dbs.workouts1?mibextid=wwXIfr%0A%0A%0Ahttps%3A%2F%2Fwww.linkedin.com%2Fin%2Fdb-s-workouts-2aa057214%3Futm_source%3Dshare&rdid=2ZY2DEq8MBUCS12r&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F154pUYMmCe%2F%3Fmibextid%3DwwXIfr%250A%250A%250Ahttps%253A%252F%252Fwww.linkedin.com%252Fin%252Fdb-s-workouts-2aa057214%253Futm_source%253Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app">Facebook</a>
+            <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr">Instagram</a>
+            <a href="https://wa.me/07752300937">Phone</a>
+            <a href="mailto:dbs-workouts@yahoo.com">Email</a>
+
+        
+            </div>
+        
+        <div class="footer-contact">
+           
+        </div>
+    </footer>
+
+
+          
+          
+         
+         
+      
       
         
-    <table class="black-table">
-      <tr>
-          <th> Social Media Links</th>
-          
-          <a class="footer-link" href="dbs_workouts | Facebook https://www.facebook.com/dbs.workouts1?mibextid=wwXIfr%0A%0A%0Ahttps%3A%2F%2Fwww.linkedin.com%2Fin%2Fdb-s-workouts-2aa057214%3Futm_source%3Dshare&rdid=2ZY2DEq8MBUCS12r&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F154pUYMmCe%2F%3Fmibextid%3DwwXIfr%250A%250A%250Ahttps%253A%252F%252Fwww.linkedin.com%252Fin%252Fdb-s-workouts-2aa057214%253Futm_source%253Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app" target="_blank">LinkedIn:
-          
-         
-          <th>Facebook</th>
-          </a>
-          <a class="footer-link" href="Sign Up | LinkedIn https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHfRwSv5E_I4gAAAZXd7ePw5cFYmL_7Es3aansYnty3cd9uR5uB3QXfnt6mZAYNiKHDc_VmsSHQA4iKbz2aOPXT_iD42EinLIfYIx0X_jV_Oh2kQr9uS8H5mKqKNacmdXFUZPc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdb-s-workouts-2aa057214%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app" target="_blank">Facebook:
-          
-         
-          <th>LinkedIn</th>
-          </a>
-          <a class="footer-link" href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram:
-          <th>Instagram</th>
-        </a>
       
-        </tr>
-      <tr>
-          <td>Contact Information</td>
-          <td>Phone Number: 07752300937</td>
-          <td>Email Address:dbs_workouts@yahoo.com</td>
-      </tr>
-      <tr>
-          <td> Legal</td>
-          <td>Privacy Policy</td>
-          <td>Terms of Service</td>
-      </tr>
+         
+      
+      
+          
+          
+
+      
   </table>
     </div>
     
