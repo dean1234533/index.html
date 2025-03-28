@@ -26,7 +26,7 @@
 }
 
 .footer-links a {
-    color: blue;
+  color: rgb(1, 1, 126);
     text-decoration: none;
     font-weight: bold;
 }
@@ -38,7 +38,17 @@
 .footer-contact {
     text-align: center;
 }
+@media (max-width: 469px) {
+      html, body {
+    overflow-x: hidden; /* Hides horizontal scrolling */
+    width: 100%; /* Ensures elements don’t exceed screen width */
+}}
 
+
+* {
+    max-width: 100%; /* Ensures all elements stay within the screen */
+    box-sizing: border-box; /* Prevents elements from exceeding their container */
+}
 @media (max-width: 768px) {
     .footer {
         flex-direction: column; /* Stacks items vertically on small screens */
@@ -50,7 +60,10 @@
     }
 }  
               
-
+* {
+    max-width: 100%; /* Ensures all elements stay within the screen */
+    box-sizing: border-box; /* Prevents elements from exceeding their container */
+}
 h1{font-size: 32px;}
 h2{font-size: 24px;}
 h3{font-size: 18.72;}
@@ -75,7 +88,7 @@ h3{font-size: 18.72;}
 .nav-item{margin-right: 15px;}
   body{margin-left: 10%; margin-right: 10%;}
   body {color: white;
-          background-image: url("../web page/images/20210830_073442.jpg"); /* Replace with your image URL */
+          background-image: url("images/20210830_073442.jpg"); /* Replace with your image URL */
           background-size: cover; /* Cover the entire page */
           background-position: center center; /* Center the background */
           background-repeat: no-repeat; /* Prevent repeating */
@@ -84,7 +97,7 @@ h3{font-size: 18.72;}
   .border{background-color: rgb(20, 20, 20); color: #e3dede;}
   @media (max-width: 469px) 
       
-   { body{margin-left: -5%; margin-right: -5%;}}
+   { body{margin-left: 0%; margin-right: 0%;}}
      .border{background-color: #0b0b0b;margin-top: -50px;border-top: none; border-bottom: none;border-bottom-color: #b30018;}
  .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
 .heading-underline{text-decoration: underline;text-decoration-color: #b30018;}
@@ -136,7 +149,7 @@ h3{font-size: 18.72;}
     <h1 class="heading-underline h1">About Me</h1><br>
     
     <div class="container mt-4">
-      <img src="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/images/IMG_4997%202.jpg" class="start " alt="Description">
+      <img src="images/IMG_4997 2.jpg" class="start " alt="Description">
     
      
     <div class="text">
@@ -164,8 +177,8 @@ h3{font-size: 18.72;}
      
   <footer class="footer">
     <div class="footer-links">
-        <a href="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/Privacy%20Policy.html">Privacy Policy</a>
-        <a href="https://github.com/dean1234533/index.html/blob/b8c2595070321413e9e9cb71b6f914a5e9bce448/Terms%20and%20conditions.html">Terms and Conditions</a>
+        <a href="Privacy Policy.html">Privacy Policy</a>
+        <a href="Terms and conditions.html">Terms and Conditions</a>
         <a href="Sign Up | LinkedIn https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHfRwSv5E_I4gAAAZXd7ePw5cFYmL_7Es3aansYnty3cd9uR5uB3QXfnt6mZAYNiKHDc_VmsSHQA4iKbz2aOPXT_iD42EinLIfYIx0X_jV_Oh2kQr9uS8H5mKqKNacmdXFUZPc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdb-s-workouts-2aa057214%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app">LinkedIn</a>
         <a href="dbs_workouts | Facebook https://www.facebook.com/dbs.workouts1?mibextid=wwXIfr%0A%0A%0Ahttps%3A%2F%2Fwww.linkedin.com%2Fin%2Fdb-s-workouts-2aa057214%3Futm_source%3Dshare&rdid=2ZY2DEq8MBUCS12r&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F154pUYMmCe%2F%3Fmibextid%3DwwXIfr%250A%250A%250Ahttps%253A%252F%252Fwww.linkedin.com%252Fin%252Fdb-s-workouts-2aa057214%253Futm_source%253Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dios_app">Facebook</a>
         <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr">Instagram</a>
@@ -178,7 +191,9 @@ h3{font-size: 18.72;}
     <div class="footer-contact">
        
     </div>
-</footer>cript src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</footer>
+
+cript src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
