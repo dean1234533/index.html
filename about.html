@@ -10,6 +10,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <Style>
 
+#logo {
+  width: 150px; /* Adjust to your preferred size */
+  height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    width: 100px; /* Adjust to your preferred size for tablets */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #logo {
+    width: 75px; /* Adjust to your preferred size for mobile phones */
+  }
+}
+
+
+
 h1 {
     font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
 }
@@ -156,7 +176,7 @@ h3{font-size: 18.72;}
         <div class="container">
           <!-- Logo -->
           <a class="navbar-brand" href="#">
-            <img src="images/IMG_4346.PNG" alt="Description" width="150" height="150" class="d-inline-block align-text-top">
+            <img src="images/IMG_4346.PNG" alt="Description" id="Logo" width="150" height="150" class="d-inline-block align-text-top">
               
           </a>
           <!-- Navbar Toggler -->
