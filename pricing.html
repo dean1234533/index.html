@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>DB's Workouts</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="styles.css">
 
 
 </head> 
 <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <section class="section1">
     <button class="sticky-button" onclick="window.location.href='#'">↑</button>
 
@@ -48,13 +49,16 @@
     <br>
     
 <section>
+
+    <div class="desktop-only">
+
     <h1 class="heading-underline h1">Pricing</h1><br><br>
      
      
     <p> To be sure that anyone can access my services, there are a range of flexible packages to suit your needs. So whether you are looking for a affordable Personal trainer package, or you can afford to invest in yourself upfront -there is a package suited to you. You can choose from single sessions to wide variety of block sessions. I also offer discounted personal training sessions for those who are for students & Key Worker / NHS staff. Please see below for more information or contact us for more information. </p>
  <br>
 
-
+</div>
  
 
 
@@ -84,6 +88,8 @@
 
 <br>
 <br>
+
+<div class="desktop-only">
 
 <div class="custom-box text-center">
     <div class="framed-container">
@@ -182,7 +188,14 @@
         </div>
     </div>
       </div><br>
+
+    </div> 
     
+<div class="mobile-only">
+
+    
+
+
       <h3 class="heading-underline h3">What My Clients Say</h3><br>
 
       <br>
@@ -192,7 +205,8 @@
             </Div>
         
         <blockquote>
-        "I would highly recommend Dean. I have trained with him for a few months outdoors using mostly body weight, park benches, boxing gloves and some other light equipment that he brings. I can see the changes in the mirror and in my mood. He adapts the routines to keep them interesting and challenging. He is personable and very punctual, no matter the weather."
+            "Dean is amazing. Been training with him for a few weeks and I already feel better and stronger"
+
         <br>– Emma k.
         </blockquote><br>
         
@@ -202,12 +216,8 @@
         
 
             <blockquote>
-                "As a confirmed couch potato 12 months ago I started attending Dean’s circuit class.
-                I was concerned that I would not be fit enough to join in.
-                Deans is excellent at recognising people’s fitness level and ability and with his very friendly and enthusiastic approach I soon got my fitness level up to that of the group.
-                I am now 10kg lighter and a lot fitter than I was 12 months ago.
-                I would highly recommend Dean’s classes to everyone whatever your fitness level is.
-                "
+                "Dean is a really great PT. I have seen amazing progress over 10 sessions with him so far.
+                Thoroughly recommend him if you're looking to get started in fitness."
                 <br>– katy k.
                 </blockquote><br>
         
@@ -245,6 +255,19 @@
 
 <style>
 
+
+
+
+
+/* Hide on larger screens */
+@media (min-width: 769px) {
+    
+    .desktop-only {
+        display: none ;
+    }
+}
+
+
 .section1{border: solid white;}
 h1{font-size: 32px;}
 h2{font-size: 24px;}
@@ -253,7 +276,8 @@ h3{font-size: 18.72px;}
 .nav-item{margin-right: 15px;font-size: medium;}   
 .start{border-radius: 100%;}
 @media (max-width: 469px) {
-      html, body {
+    
+    html, body {
     overflow-x: hidden; /* Hides horizontal scrolling */
     width: 100%; /* Ensures elements don’t exceed screen width */
 }}
@@ -263,6 +287,17 @@ h3{font-size: 18.72px;}
     max-width: 100%; /* Ensures all elements stay within the screen */
     box-sizing: border-box; /* Prevents elements from exceeding their container */
 }
+
+ol {
+    font-size: clamp(14px, 2.5vw, 20px); /* Matches paragraph text size */
+    line-height: 1.6; /* Improves readability */
+    padding-left: 20px ; /* Ensures proper indentation */
+}
+
+ol li {
+    margin-bottom: 8px; /* Adds space between list items */
+}
+
 
 .testimonial-container {
           width: 60%; /* Takes 60% of the screen on desktop */
@@ -274,7 +309,8 @@ h3{font-size: 18.72px;}
           border-radius: 10px;
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       }
-      
+ 
+    
 
       .footer {
     display: flex;
@@ -285,6 +321,22 @@ h3{font-size: 18.72px;}
     background: black;
     color: white;
     font-size: small;}
+
+    h1 {
+    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
+}
+
+p {
+    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
+}
 
 .footer-links {
     display: flex;
@@ -311,6 +363,23 @@ h3{font-size: 18.72px;}
         flex-direction: column; /* Stacks items vertically on small screens */
         text-align: center;
     }
+
+    
+    h1 {
+    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
+}
+
+p {
+    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
+}
 
     .footer-links {
         justify-content: center;
@@ -397,7 +466,6 @@ body{margin-left: 10%;margin-right: 10%;}
 .transparent-section{height: -0%; background-color: #080707;}}
  .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
 
-.text{line-height: 2;font-size: larger;}
 
 </style>
 </section>

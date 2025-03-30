@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
 
+.mobile-only{display: none;}
       .testimonial-container {
           width: 60%; /* Takes 60% of the screen on desktop */
           margin: auto;
@@ -142,12 +143,13 @@
 }
 
 @media (max-width: 768px) {
+    .desktop-only{display: none;}
     .footer {
         flex-direction: column; /* Stacks items vertically on small screens */
         text-align: center;
         ;
     }
-
+.mobile-only{display: contents;}
     .footer-links {
         justify-content: center;
     }
@@ -158,7 +160,7 @@
       
         .btn{font-size: larger;}
         .nav-item{margin-right: 15px;}
-      body{font-size: x-large; line-height: 2;}
+     
       .fa-brands{display: flex; justify-content: center; font-size: 50px; }
       
       
@@ -249,6 +251,8 @@ table {
         }
     }
     
+span{color: #b30018;}
+
     .section-3d {
     background: white;
     padding: 20px;
@@ -261,8 +265,23 @@ table {
     box-sizing: border-box; /* Prevents elements from exceeding their container */
 }
 
-h1{font-size: 32px; font-weight: bolder;}
-h2{font-size: 24px;font-weight: bold;}
+h1 {
+    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
+}
+
+p {
+    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
+}
+
+
 
       body {color: white;
           background-image: url("images/20210830_073442.jpg"); /* Replace with your image URL */
@@ -292,7 +311,42 @@ h2{font-size: 24px;font-weight: bold;}
     @media (max-width: 469px) {
       html, body {
     overflow-x: hidden; /* Hides horizontal scrolling */
-    width: 100%; /* Ensures elements don’t exceed screen width */
+    width: 100%;ol {
+    font-size: clamp(14px, 2.5vw, 20px); /* Matches paragraph text size */
+    line-height: 1.6; /* Improves readability */
+    padding-left: 20px; /* Ensures proper indentation */
+}
+
+ol li {
+    margin-bottom: 8px; /* Adds space between list items */
+} /* Ensures elements don’t exceed screen width */
+}}
+
+
+h1 {
+    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
+}
+
+p {
+    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
+}
+
+ol {
+    font-size: clamp(14px, 2.5vw, 20px); /* Matches paragraph text size */
+    line-height: 1.6; /* Improves readability */
+    padding-left: 20px ; /* Ensures proper indentation */
+}
+
+ol li {
+    margin-bottom: 8px; /* Adds space between list items */
 }
 
 
@@ -304,8 +358,7 @@ h2{font-size: 24px;font-weight: bold;}
     .black-table{display: contents;}
  .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
 .location{display: conten}
-.text{line-height: 2;font-size: larger;}}
-  
+
             
         </style>
       
@@ -426,27 +479,55 @@ h2{font-size: 24px;font-weight: bold;}
   </button>
 </div><br>
 
+<div class="desktop-only">
 <h1>Unlock Your Fitness Potential Through Outdoor Training:
-  
+</div>
+
+
+  <div class="mobile-only">
+
+    <h1>Transform your fitness with personalized outdoor training in East London. 
+    </h1>
+  </div>
   <br><br>
  <section class="s1">
-    <p> Personalized Coaching That Transforms Your Body and Mindset in East London</p>
-   </section>
+    
+  <div class="desktop-only">
+  <p> Personalized Coaching That Transforms Your Body and Mindset in East London</p>
+   </div>
+    
+   <div class="mobile-only">
+
+    <img class="me" src="images/IMG_4997 2.jpg" class="start " alt="Description">
+
+      <P>I’m Dean, a certified mobile personal trainer dedicated to helping you reach your goals.</P>
+      </div>
+      
+      
+  </section>
 
    <br>
 
+
+   <div class="desktop-only">
    <img class="me" src="images/IMG_4997 2.jpg" class="start " alt="Description">
-    
-<br>
-<p>“Seeking a dedicated mobile personal trainer in East London? Meet Dean, a certified professional committed to helping you achieve your fitness goals.”
-</p>
+    </div>
 <br>
 
-    <h2 class="heading-underline">Free Personal Fitness Training Consultation</h2><br>
+<div class="desktop-only">
+<p>“Seeking a dedicated mobile personal trainer in East London? Meet Dean, a certified professional committed to helping you achieve your fitness goals.”
+</p>
+</div>
+
+<br>
+<div class="desktop-only">
+    <h1 class="heading-underline">Free Personal Fitness Training Consultation</h1><br>
     <br>
       
-    <p>Ready to kickstart your fitness journey? Book a free consultation with me today!</p>
+    <h2>Ready to kickstart your fitness journey? Book a free consultation with me today!</h2>
       
+<br>
+
     <ol>
       <li>Schedule Your Consultation: Simply reach out and choose a time that works for you.</li>
       <li>Complete a Quick Questionnaire: Before we meet, fill out a short form to share your fitness goals and any relevant health info.</li>
@@ -454,11 +535,33 @@ h2{font-size: 24px;font-weight: bold;}
       <li>Personalized Plan: After our consultation, I’ll create a tailored workout plan just for you.</li>
       <li>Get Started: We’ll schedule your first session and begin your transformation!</li>
     </ol>
-    
+  
     
     <p>Let’s take the first step together—book your free consultation now!
 </p>
+ </div>   
+
+<div class="mobile-only">
+ 
+<h1 class="heading-underline">Free Consultation
+</h1><br>
+
+<h2>Kickstart your journey with a free session:
+    </h2>
+   
     <br>
+
+  <li>Schedule: Pick a convenient time.</li>
+  <li>Questionnaire: Share your fitness goals and health info.</li>
+  <li>Consultation: Discuss objectives and assess fitness level.</li>
+  <li>Personalized Plan: Receive a tailored workout strategy.</li>
+  <li>Start Training: Begin your transformation. ￼</li>
+   </div>
+    
+
+
+
+<br>
 
 
 
@@ -466,7 +569,16 @@ h2{font-size: 24px;font-weight: bold;}
 
 <br>
 
-<h2 class="heading-underline title1">Personal Training Services</h2><br>
+<div class="desktop-only">
+
+<h1 class="heading-underline title1">Personal Training Services</h1><br>
+</div>
+
+
+ <div>
+<br>
+
+
 
  <div>
 <br>
@@ -477,20 +589,53 @@ h2{font-size: 24px;font-weight: bold;}
       
 <br>
 
+
+<div class="desktop-only">
+
 <ol class="list-unstyles">
 <li>Weight Management: Weight Loss, Toning & Sculpting</li>
 <li>Strength Training: Resistance Training, Muscle Building</li>
 <li>Performance Enhancement: Mobility, Flexibility, Speed, Strength, Power Development</li>
 <li>Wellness Coaching: Nutritional Advice & Coaching</li>
 </ol><br>
+</div>
 
-<h2 class="heading-underline">Personal Training Sessions</h2><br>
+
+<div class="mobile-only">
+
+  <h1 class="heading-underline">Services</h1>
+
+<br>
+
+<ol class="list-unstyles">
+  <li>Weight Management: Lose weight, tone, and sculpt.</li>
+  <li>Strength Training: Build muscle and enhance strength.</li>
+  <li>Performance Enhancement: Improve mobility, flexibility, speed, and power.</li>
+  <li>Wellness Coaching: Get nutritional advice and support.</li>
+</ol>
+</div>
+
+<div class="desktop-only">
+
+<h1 class="heading-underline">Personal Training Sessions</h1><br>
 
 
     <p>Each 60-minute session is conducted at a location convenient for you—be it a local park or your home garden within East London—providing flexibility and comfort in your training environment.
     </p> <br>
-   
-<h2 class="heading-underline">Client Progress</h2><br>
+   </div>
+
+   <div class="mobile-only">
+
+   <h1 class="heading-underline">Sessions</h1>
+
+<br>
+
+   <p>Each 60-minute session is held at a location that suits you—local park or home garden in East London.
+   </p>
+  </div>
+
+
+<h1 class="heading-underline">Client Progress</h1><br>
 
     <div class="container">
       <div class="row justify-content-center">
@@ -525,7 +670,7 @@ h2{font-size: 24px;font-weight: bold;}
         </Div>
     
     <blockquote>
-    "Absolutely recommend Dean - over the course of a year my husband & I not only gained in confidence & strength, I also managed to loose 8 kilos. Dean works to your ability, builds out the programme that gets you to your goal/s. Not only that, he's a bloody nice guy, so you have fun getting fit. Doesn't matter if it's raining or hailing, Dean will always turn up - some of our best sessions was just digging deep & laughing through the storm. As I said, can't recommend Dean enough, if we hadn't left London we'd still be working out with him!"
+      "Dean's sessions are challenging but also really enjoyable. He's super supportive and I'm feeling stronger after every session! Thanks Dean!"
     <br>– Terry j.
     </blockquote><br>
   <hr>  
@@ -534,8 +679,7 @@ h2{font-size: 24px;font-weight: bold;}
         </Div>
 
   <blockquote>
-    "Dean is an amazing PT! I love nature, so it's great to be able to train outside. He really listens to my goals and designs sessions to challenge me. Dean will push me - which I need - but he's encouraging and supportive as well. Our sessions are always fun with plenty of laughter and great tunes. Can't recommend Dean highly enough if you're looking for a local PT. Thanks Dean :)
-    ."
+    "Loved working with Dean, he was really reassuring and helped me build the confidence to go and have my independent fitness journey."
     <br>– John h.
     </blockquote><br>
 
@@ -550,12 +694,21 @@ h2{font-size: 24px;font-weight: bold;}
 <br>
   
 <section class="white-section section-3d">
-<h2 class="heading-underline">Small Groups Or Pairs Fitness Training</h2><br> 
+
+  <div class="desktop-only">
+
+<h1 class="heading-underline">Small Groups Or Pairs Fitness Training</h1><br> 
   <p>Boost motivation and enjoy a supportive atmosphere with our small group training sessions. Train with friends or family (up to 4 participants) and benefit from discounted rates.
   </p><br>
+</div>
 
+<div class="mobile-only"> 
 
-  
+  <h1>Group Training</h1>
+
+<p>Train with friends or family (up to 4 people) for added motivation and discounted rates.
+</p>
+</div>
    
 
 
@@ -579,7 +732,7 @@ h2{font-size: 24px;font-weight: bold;}
 <br>
 
 
-<h2 class="heading-underline">locations</h2>
+<h1 class="heading-underline">locations</h1>
     
 
   
@@ -608,8 +761,27 @@ h2{font-size: 24px;font-weight: bold;}
   </div>
   <br>
 <hr><section class="ws">
+
+  <div class="desktop-only">
+
   <p>If you have any enquiries about location please send me a message for more information. </p>
-  </section>
+  </div>
+
+  <div class="mobile-only"> 
+
+    <p>For location inquiries, please message me.
+    </p>
+    </div>
+    
+    <br>
+   </section> 
+    <p>Let’s achieve your <span>Fitness Goals</span> together!
+    </p>
+    
+
+
+
+
 
 
      <footer>
