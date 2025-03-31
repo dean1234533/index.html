@@ -304,11 +304,30 @@ p {
               .we{display: flex; justify-content: center;}      
       .pic3{width: 200px;float: right;}
       
+      .navbar-brand{width:200px ; }
+
+      
+
+
       .custom-border{background-color: #0b0b0b; height: 100%;border:  solid white }
      .list{list-style-type: square;list-style: none;}
     .carousel-item{max-height:700px;}     
      .footer-link{font-size: 15px;}
     @media (max-width: 469px) {
+      .navbar-brand{width:130px ; }
+ 
+      .carousel {
+  height: 200px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+
+.carousel img {
+  width: 100%; /* Ensures the images fill the container */
+  height: 100%; /* Keeps all images the same height */
+  object-fit: cover; /* Crops images to fit without distorting */
+}
+
+
       html, body {
     overflow-x: hidden; /* Hides horizontal scrolling */
     width: 100%;ol {
@@ -402,7 +421,7 @@ ol li {
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="images/IMG_4346.PNG" alt="Description" width="150" height="150" class="d-inline-block align-text-top">
+        <img src="images/IMG_4357.PNG" alt="Description" width="150" height="150" class="d-inline-block align-text-top">
           
       </a>
       <!-- Navbar Toggler -->
