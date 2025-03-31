@@ -425,6 +425,19 @@ p {
              
           }
       
+
+          .carousel {
+  height: 200px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+
+.carousel img {
+  width: 100%; /* Ensures the images fill the container */
+  height: 100%; /* Keeps all images the same height */
+  object-fit: cover; /* Crops images to fit without distorting */
+}
+
+
          .sticky-button {
                   position: fixed;
                   bottom: 20px; /* Distance from the bottom of the screen */
