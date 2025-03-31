@@ -320,7 +320,7 @@ p {
       .carousel {
   height: 200px; /* Set to match your tallest image */
   overflow: hidden;
-  max-height: fit-content;
+  object-fit: cover;
  /* Prevents content from shifting */
 }
 
@@ -332,7 +332,8 @@ p {
 
 .carousel-inner img {
   width: 100%;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
   display: block;
 }
 
