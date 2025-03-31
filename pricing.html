@@ -475,7 +475,20 @@ body {color: rgb(20, 17, 17);
 
 .border{background-color: rgb(20, 20, 20); color: #e3dede;}
 @media (max-width: 469px) {
-      
+     
+   
+ 
+      .carousel {
+  height: 200px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+
+.carousel img {
+  width: 100%; /* Ensures the images fill the container */
+  height: 100%; /* Keeps all images the same height */
+  object-fit: cover; /* Crops images to fit without distorting */
+}
+
     .navbar-brand{width:130px ; }
 
       body{margin-left: 0%; margin-right: 0%;}
