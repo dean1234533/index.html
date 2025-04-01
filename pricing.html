@@ -355,25 +355,25 @@ p {
 .carousel-container {
   width: 100%;object-fit: cover ; /* or any preferred width */
   max-width: 100%;height: 200px; /* maximum width */
-  margin: 0 auto;overflow: hidden;}
+  margin: 0 auto;overflow: hidden;object-fit: cover;}
 
   .carousel-item {
-    max-height: auto;overflow: hidden; /* Adjust to your preferred height */
+    max-height: auto;overflow: hidden;object-fit: cover; /* Adjust to your preferred height */
   }
 
   .carousel-item img {
     min-height: auto;
     width: auto;
-    object-fit: cover;overflow: hidden; /* Ensures the image covers the area without distortion */
+    object-fit: cover;overflow: hidden;object-fit: cover; /* Ensures the image covers the area without distortion */
   }
 
 
-  .container{display: flex;justify-content: center;align-items: center;}
+  .container{display: flex;justify-content: center;align-items: center;object-fit: cover;}
 
   .carousel-inner img {
     min-height: auto; /* Set to your desired maximum height */
     width: auto;
-    margin: 0 auto;overflow: hidden; /* Centers the image */
+    margin: 0 auto;overflow: hidden;object-fit: cover; /* Centers the image */
   }
 
   .footer-links {
@@ -402,7 +402,30 @@ p {
         text-align: center;
     }
 
-    
+    .carousel-container {
+  width: 100%;object-fit: cover ; /* or any preferred width */
+  max-width: 100%;height: 200px; /* maximum width */
+  margin: 0 auto;overflow: hidden;object-fit: cover;}
+
+  .carousel-item {
+    max-height: auto;overflow: hidden;object-fit: cover; /* Adjust to your preferred height */
+  }
+
+  .carousel-item img {
+    min-height: auto;
+    width: auto;
+    object-fit: cover;overflow: hidden;object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+
+
+  .container{display: flex;justify-content: center;align-items: center;object-fit: cover;}
+
+  .carousel-inner img {
+    min-height: auto; /* Set to your desired maximum height */
+    width: auto;
+    margin: 0 auto;overflow: hidden;object-fit: cover; /* Centers the image */
+  }
+
     h1 {
     font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
 }
