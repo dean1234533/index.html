@@ -281,7 +281,19 @@ p {
     font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
 }
 
+.carousel-container {
+   display: flex;
+   justify-content: space-between; /* or center, depending on your design */
+   align-items: center;
+}
 
+.carousel {
+   flex: 1; /* Adjusts width of carousel */
+}
+
+.text-content {
+   flex: 1; /* Adjusts width of text */
+}
 
       body {color: white;
           background-image: url("images/20210830_073442.jpg"); /* Replace with your image URL */
@@ -305,7 +317,7 @@ p {
       .pic3{width: 200px;float: right;}
       
       .navbar-brand{width:200px  }
-      .text-section{min-height: 100px;margin: 0;padding: 0;}
+      .text-section{min-height: 100px;margin: 0;padding: 0;margin-top: -20px;}
       .carousel-item {
     max-height: auto;overflow: hidden; /* Adjust to your preferred height */
   }
@@ -342,7 +354,19 @@ p {
       .carousel-item {
     min-height: auto;overflow: hidden; /* Adjust to your preferred height */
   }
+  .carousel-container {
+   display: flex;
+   justify-content: space-between; /* or center, depending on your design */
+   align-items: center;
+}
 
+.carousel {
+   flex: 1; /* Adjusts width of carousel */
+}
+
+.text-content {
+   flex: 1; /* Adjusts width of text */
+}
   .carousel-item img {
     min-height: auto;
     width: auto;
@@ -356,7 +380,7 @@ p {
     margin: 0 auto;overflow: hidden; /* Centers the image */
   }
 
-.text-section{min-height: 100px;margin: 0;padding: 0;}
+.text-section{min-height: 100px;margin: 0;padding: 0;margin-top: -20px;}
       html, body {
     overflow-x: hidden; /* Hides horizontal scrolling */
     width: 100%;ol {
