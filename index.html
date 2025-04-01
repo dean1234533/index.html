@@ -305,42 +305,49 @@ p {
       .pic3{width: 200px;float: right;}
       
       .navbar-brand{width:200px  }
+.carousel{height: auto;aspect-ratio: 16 / 9;overflow: hidden;min-height: fit-content; /* Keeps a consistent shape */}
+      .carousel-item {
+    height: auto;overflow: hidden; /* Adjust to your preferred height */
+  }
 
-#main-pic .carousel-inner {
-  
-  height: 700px;overflow: hidden;;
-  display: block;
-  width: 100%;
-  
-  object-fit: cover;
-} 
+  .carousel-item img {
+    min-height: 50;
+    width: auto;
+    object-fit: cover;overflow: hidden; /* Ensures the image covers the area without distortion */
+  }
 
 
+
+  .carousel-inner img {
+    min-height: auto; /* Set to your desired maximum height */
+    width: auto;
+    margin: 0 auto;overflow: hidden; /* Centers the image */
+  }
 
       .custom-border{background-color: #0b0b0b; height: 100%;border:  solid white }
      .list{list-style-type: square;list-style: none;}
-    .carousel-item img{max-height:650px;overflow: hidden;margin-top: 10px;}     
+   
      .footer-link{font-size: 15px;}
     @media (max-width: 469px) {
       .navbar-brand{width:130px ; }
  
-      #picture .carousel-inner {
-  height: 200px; /* Set to match your tallest image */
-  overflow: hidden;
-  object-fit: cover;
- /* Prevents content from shifting */
-}
-.carousel-inner img {
-  
-  height: 500px;overflow: hidden;
-  display: block;
-} 
-.carousel img {
-  width: 100%; /* Ensures the images fill the container */
-  height: 100%; /* Keeps all images the same height */
-  object-fit: cover;overflow:hidden; /* Crops images to fit without distorting */
-}
+      .carousel-item {
+    min-height: auto; /* Adjust to your preferred height */
+  }
 
+  .carousel-item img {
+    min-height: auto;
+    width: auto;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+
+
+
+  .carousel-inner img {
+    min-height:auto; /* Set to your desired maximum height */
+    width: auto;
+    margin: 0 auto; /* Centers the image */
+  }
 
 
       html, body {
@@ -475,16 +482,16 @@ ol li {
 
 
 
-<div id="main-pic" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     
   </div>
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/IMG_8026 3.jpg" class="d-block w-100" alt="Description">
+      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Description">
       <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
         <h5 class="fw-bold display-4">IF YOU HAVE <br> A STRONG MIND</h5>
@@ -492,11 +499,10 @@ ol li {
       </div>
     </div>
     <div class="carousel-item">
-    <img src="images/IMG_8037 7.jpg" class="d-block w-100" alt="Description">
+      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Description">
       <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
         <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
-          
 
         
           
@@ -681,29 +687,28 @@ ol li {
 
 <h1 class="heading-underline">Client Progress</h1><br><br><br>
 
-    <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6">
-              <div id="picture" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../photo-output.jpg" class="d-block w-100" alt="slide 1"></div>
-                      <div class="carousel-item">
-                        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="slide 2"></div>
-                       
-                     
-                      
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../photo-output.jpg" class="d-block w-100" alt="slide 1">
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                  </button><br>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="slide 2">
+                  </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </button><br>
           </div>
       </div>
   </div>
+</div>
 
  
 <hr>
@@ -892,7 +897,8 @@ ol li {
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
