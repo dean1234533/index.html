@@ -431,6 +431,20 @@ p {
   overflow: hidden; /* Prevents content from shifting */
 }
 
+.carousel-container {
+   display: flex;
+   justify-content: space-between; /* or center, depending on your design */
+   align-items: center;
+}
+
+.carousel {
+   flex: 1; /* Adjusts width of carousel */
+}
+
+.text-content {
+   flex: 1; /* Adjusts width of text */
+}
+
 .carousel-item img {
   width: 100%; /* Ensures the images fill the container */
   height: 400px; /* Keeps all images the same height */
@@ -494,6 +508,20 @@ body {color: rgb(20, 17, 17);
       .carousel {
   height: 200px; /* Set to match your tallest image */
   overflow: hidden; /* Prevents content from shifting */
+}
+
+.carousel-container {
+   display: flex;
+   justify-content: space-between; /* or center, depending on your design */
+   align-items: center;
+}
+
+.carousel {
+   flex: 1; /* Adjusts width of carousel */
+}
+
+.text-content {
+   flex: 1; /* Adjusts width of text */
 }
 
 .carousel img {
