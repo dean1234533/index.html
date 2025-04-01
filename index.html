@@ -305,13 +305,13 @@ p {
       .pic3{width: 200px;float: right;}
       
       .navbar-brand{width:200px  }
-.carousel{height: auto;aspect-ratio: 16 / 9;overflow: hidden;min-height: fit-content; /* Keeps a consistent shape */}
+.carousel{aspect-ratio: 16 / 9;min-height: auto; /* Keeps a consistent shape */}
       .carousel-item {
-    height: auto;overflow: hidden; /* Adjust to your preferred height */
+    max-height: auto;overflow: hidden; /* Adjust to your preferred height */
   }
 
   .carousel-item img {
-    min-height: 50;
+    min-height: auto;
     width: auto;
     object-fit: cover;overflow: hidden; /* Ensures the image covers the area without distortion */
   }
