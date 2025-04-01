@@ -305,10 +305,17 @@ p {
       .pic3{width: 200px;float: right;}
       
       .navbar-brand{width:200px  }
-.carousel{aspect-ratio: 16 / 9;min-height: auto; /* Keeps a consistent shape */}
+
       .carousel-item {
     max-height: auto;overflow: hidden; /* Adjust to your preferred height */
   }
+
+  .carousel-container {
+  width: 100%;object-fit: cover ; /* or any preferred width */
+  max-width: 100%;height: 800px; /* maximum width */
+  margin: 0 auto ;margin-top: 20px;ttom: -0px;overflow: hidden; hidden;aspect-ratio: 16 / 9 /* centers the carousel */
+}
+
 
   .carousel-item img {
     min-height: auto;
@@ -317,6 +324,7 @@ p {
   }
 
 
+  
 
   .carousel-inner img {
     min-height: auto; /* Set to your desired maximum height */
@@ -332,21 +340,20 @@ p {
       .navbar-brand{width:130px ; }
  
       .carousel-item {
-    min-height: auto; /* Adjust to your preferred height */
+    min-height: auto;overflow: hidden; /* Adjust to your preferred height */
   }
 
   .carousel-item img {
     min-height: auto;
     width: auto;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit: cover;overflow: hidden; /* Ensures the image covers the area without distortion */
   }
-
 
 
   .carousel-inner img {
     min-height:auto; /* Set to your desired maximum height */
     width: auto;
-    margin: 0 auto; /* Centers the image */
+    margin: 0 auto;overflow: hidden; /* Centers the image */
   }
 
 
@@ -488,7 +495,7 @@ ol li {
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     
   </div>
-
+<div class="carousel-container">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Description">
@@ -503,7 +510,7 @@ ol li {
       <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
         <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
-
+      </div>
         
           
         
