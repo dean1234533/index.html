@@ -382,10 +382,16 @@ p {
     gap: 20px; /* Adds spacing between links */
 }
 
-.carousel-container {
-  width: 100%;object-fit: cover ; /* or any preferred width */
-  max-width: 100%; /* maximum width */
-  margin: 0 auto;overflow: hidden;}
+.carousel {
+  height: 150px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+
+.carousel img {
+  width: 100%; /* Ensures the images fill the container */
+  height: 100%; /* Keeps all images the same height */
+  object-fit: cover; /* Crops images to fit without distorting */
+}
 
 .footer-links a {
     color: rgb(233, 233, 241);
