@@ -328,9 +328,7 @@ p {
   margin: 0 auto;overflow: hidden;
 }
 
-.p1{text-align: center;margin: 0;padding-top: 10px;}
- .s1{height: 100%; text-align: center;display: flex;justify-content: center;align-content: center;margin: 0;width: auto;}
- .ws{display:flex; text-align: center;width: auto;margin: 0;}
+
   .carousel-item img {
     min-height: auto;
     width: auto;
@@ -352,7 +350,16 @@ p {
      .footer-link{font-size: 15px;}
     @media (max-width: 469px) {
       .navbar-brand{width:130px ; }
- 
+      container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Or any height you need */
+}
+
+.centered-element {text-align: center;
+  /* Your centered element styles */
+}
 .p2{text-align: center;margin: 0;}
 .p1{text-align: center;margin: 0;padding-top: 10px;}
  .s1{height: 100%; text-align: center;display: flex;justify-content: center;align-content: center;margin: 0;width: auto;}
@@ -605,12 +612,18 @@ ol li {
    </div>
     
    <div class="mobile-only">
-
+    
     <img class="me" src="images/IMG_4997 2.jpg" class="start " alt="Description">
+    <div class="container">
+      <div class="centered-element">
+        
+     
+    
 
       <P class="p2">I’m Dean, a certified mobile personal trainer dedicated to helping you reach your goals.</P>
       </div>
-      
+       </div>
+    </div>
       
   </section>
 
@@ -901,12 +914,18 @@ ol li {
   <p>If you have any enquiries about location please send me a message for more information. </p>
   </div>
 
-  <div class="mobile-only"> 
+  
 
+<div class="mobile-only"> 
+   
+        <div class="container">
+      <div class="centered-element">
+     
     <p class="p1">For location inquiries, please message me.
     </p>
     </div>
-    
+  </div>
+</div>
     <br>
    </section> 
     <p>Let’s achieve your <span>Fitness Goals</span> together!
