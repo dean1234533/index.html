@@ -332,6 +332,46 @@ h1{font-size: 32px;}
 h2{font-size: 24px;}
 h3{font-size: 18.72px;}
 
+
+@media (max-width: 768px) {
+    
+    .carousel {
+  height: 350px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+    .footer {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        text-align: center;
+    }}
+   
+
+
+
+
+.carousel img {
+  width: 100%; /* Ensures the images fill the container */
+  height: 100%; /* Keeps all images the same height */
+  object-fit: cover; /* Crops images to fit without distorting */
+}
+    h1 {
+    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
+}
+
+p {
+    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
+}
+
+  
+
+
 .nav-item{margin-right: 15px;font-size: medium;}   
 .start{border-radius: 100%;}
 @media (max-width: 469px) {
@@ -470,43 +510,7 @@ body {color: rgb(20, 17, 17);
             text-shadow: -1px -1px 0 black;
             
         }
-        @media (max-width: 768px) {
-    
-    .carousel {
-  height: 350px; /* Set to match your tallest image */
-  overflow: hidden; /* Prevents content from shifting */
-}
-    .footer {
-        flex-direction: column; /* Stacks items vertically on small screens */
-        text-align: center;
-    }}
-   
-
-
-
-
-.carousel img {
-  width: 100%; /* Ensures the images fill the container */
-  height: 100%; /* Keeps all images the same height */
-  object-fit: cover; /* Crops images to fit without distorting */
-}
-    h1 {
-    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
-}
-
-p {
-    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
-}
-
-  
+       
 
     .footer-links {
         justify-content: center;
