@@ -597,6 +597,9 @@ body {color: rgb(20, 17, 17);
     box-sizing: border-box; /* Prevents elements from exceeding their container */
 }
 
+.mobile-only{display: none;}
+  .desktop-only{display: contents;}
+
 .custom-card {
             border: 4px solid rgb(238, 241, 237);
             padding: 20px;
@@ -618,7 +621,8 @@ body {color: rgb(20, 17, 17);
 .border{background-color: rgb(20, 20, 20); color: #e3dede;}
 @media (max-width: 469px) {
   .nav-item{margin-right: 16px;font-size: medium;}
-     
+  .mobile-only{display: contents;}
+  .desktop-only{display: none;}  
    
  
       

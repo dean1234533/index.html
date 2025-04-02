@@ -156,7 +156,8 @@ h3{font-size: 18.72;}
           background-repeat: no-repeat; /* Prevent repeating */
           background-attachment: fixed;background-color: #f7f3f3;
         margin-left: 10%; margin-right: 10%;}
-          
+        .mobile-only{display: none;}
+        .desktop-only{display: contents;}   
         .navbar-brand{width:200px  }
 .nav-item{text-align: right;}
                  
@@ -164,9 +165,11 @@ h3{font-size: 18.72;}
   @media (max-width: 469px) 
   
   {body{margin-left: 0%; margin-right: 0%;}
+  .mobile-only{display: contents;}
+  .desktop-only{display: none;}
   .nav-item{margin-right: 16px;font-size: medium;}
   .footer-links{color: #e3dede;}
-  .navbar-brand{width:130px ; }}
+  .navbar-brand{width:130px ; }}}
 
      .border{background-color: #0b0b0b;margin-top: -50px;border-top: none; border-bottom: none;border-bottom-color: #b30018;}
  .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
@@ -237,6 +240,7 @@ h3{font-size: 18.72;}
      
   <footer class="footer">
     <div class="footer-links">
+
       <div class="desktop-only">
         <a href="Privacy Policy.html" target="_blank">Privacy Policy
        <img src="images/statistics.png" width="30">
