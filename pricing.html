@@ -319,8 +319,7 @@ h3{font-size: 18.72px;}
 .nav-item{margin-right: 15px;font-size: medium;}   
 .start{border-radius: 100%;}
 @media (max-width: 469px) {
-    
-    html, body {
+      html, body {
     overflow-x: hidden; /* Hides horizontal scrolling */
     width: 100%; /* Ensures elements don’t exceed screen width */
 }}
@@ -330,40 +329,6 @@ h3{font-size: 18.72px;}
     max-width: 100%; /* Ensures all elements stay within the screen */
     box-sizing: border-box; /* Prevents elements from exceeding their container */
 }
-
-ol {
-    font-size: clamp(14px, 2.5vw, 20px); /* Matches paragraph text size */
-    line-height: 1.6; /* Improves readability */
-    padding-left: 20px ; /* Ensures proper indentation */
-}
-
-ol li {
-    margin-bottom: 8px; /* Adds space between list items */
-}
-
-.navbar a {
-  font-size: 1.2rem; /* Adjusts with root font size */
-  padding: 10px 15px;
-}
-
-
-@media (max-width: 768px) {
-  .navbar a {
-    font-size: 1rem; /* Smaller text on mobile */
-    padding: 8px 10px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .navbar a {
-    font-size: 0.9rem;
-    padding: 6px 8px;
-  }
-}
-
-
-.nav-item{text-align: right;font-size: 18px;}
 
 .testimonial-container {
           width: 60%; /* Takes 60% of the screen on desktop */
@@ -375,10 +340,7 @@ ol li {
           border-radius: 10px;
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       }
- 
-   
-
-    
+      
 
       .footer {
     display: flex;
@@ -390,62 +352,10 @@ ol li {
     color: white;
     font-size: small;}
 
-    h1 {
-    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
-}
-
-p {
-    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
-}
-
-.carousel-container {
-  width: 100%;object-fit: cover ; /* or any preferred width */
-  max-width: 100%;height: 200px; /* maximum width */
-  margin: 0 auto;overflow: hidden;object-fit: cover;}
-
-  .carousel-item {
-    max-height: auto;overflow: hidden;object-fit: cover; /* Adjust to your preferred height */
-  }
-
-  .carousel-item img {
-    min-height: auto;
-    width: auto;
-    object-fit: cover;overflow: hidden;object-fit: cover; /* Ensures the image covers the area without distortion */
-  }
-
-
-  .container{display: flex;justify-content: center;align-items: center;object-fit: cover;}
-
-  .carousel-inner img {
-    min-height: auto; /* Set to your desired maximum height */
-    width: auto;
-    margin: 0 auto;overflow: hidden;object-fit: cover; /* Centers the image */
-  }
-
-  .footer-links {
+.footer-links {
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; /* Adds spacing between links */
-    color: #ccc;
-}
-
-.carousel {
-  height: 500px; /* Set to match your tallest image */
-  overflow: hidden; /* Prevents content from shifting */
-}
-
-.carousel img {
-  width: 100%; /* Ensures the images fill the container */
-  height: 100%; /* Keeps all images the same height */
-  object-fit: cover; /* Crops images to fit without distorting */
 }
 
 .footer-links a {
@@ -461,6 +371,99 @@ p {
 .footer-contact {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}  
+              
+      
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff5733;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      
+      .cta-button:hover {
+        background-color: #c4421d;
+      }
+      
+    
+      .navbar-toggler{background-color: #00000041;}
+      .heading-underline {
+              display: inline-block; /* Adjusts width to text */
+              border-bottom: 3px solid red; /* Red underline */
+              padding-bottom: 5px; /* Adds space between text and line */
+             
+          }
+      
+         .sticky-button {
+                  position: fixed;
+                  bottom: 20px; /* Distance from the bottom of the screen */
+                  right: 20px; /* Distance from the right side */
+                  z-index: 1000; /* Ensure it's above other content */
+                  border-radius: 50%; /* Optional: makes the button round */
+                  padding: 15px 20px; /* Button padding */
+                  background-color: #c33e3e; /* Button background */
+                  color: rgb(18, 17, 17); /* Button text color */
+                  border-color: red; /* Remove default button border */
+                  font-size: 18px; /* Button text size */
+              }
+      
+              /* Optional: Adding a hover effect */
+              .sticky-button:hover {
+                  background-color: #b30018;
+              }
+body {color: rgb(20, 17, 17);
+          background-image: url("images/20210830_073442.jpg"); /* Replace with your image URL */
+          background-size: cover; /* Cover the entire page */
+          background-position: center center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating */
+          background-attachment: fixed;
+        font-size: larger;line-height: 2;}
+          
+        * {
+    max-width: 100%; /* Ensures all elements stay within the screen */
+    box-sizing: border-box; /* Prevents elements from exceeding their container */
+}
+
+.custom-card {
+            border: 4px solid rgb(238, 241, 237);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+            background-color: #1f1e1e;
+            color: #fbf6f6;
+            
+        }
+        .discount-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgba(15, 98, 224, 0.628);
+            text-shadow: -1px -1px 0 black;
+            
+        }
+
+.border{background-color: rgb(20, 20, 20); color: #e3dede;}
+@media (max-width: 469px) {
+      
+      body{margin-left: 0%; margin-right: 0%;}
+     .border{background-color: #0b0b0b;margin-top: -50px;border-top: none; border-bottom: none;border-bottom-color: #b30018;}
+.transparent-section{height: -0%; background-color: #080707;}}
+ .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
+
+.text{line-height: 2;font-size: larger;}
 
 @media (max-width: 768px) {
     .footer {
@@ -527,143 +530,7 @@ p {
         justify-content: center;
     }
 }  
-              
-.navbar-brand{width:200px ; }
 
-      .cta-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #ff5733;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-      }
-      
-      .cta-button:hover {
-        background-color: #c4421d;
-      }
-      
-    
-      .navbar-toggler{background-color: #00000041;}
-      .heading-underline {
-              display: inline-block; /* Adjusts width to text */
-              border-bottom: 3px solid red; /* Red underline */
-              padding-bottom: 5px; /* Adds space between text and line */
-             
-          }
-      
-
-         
-
-         .sticky-button {
-                  position: fixed;
-                  bottom: 20px; /* Distance from the bottom of the screen */
-                  right: 20px; /* Distance from the right side */
-                  z-index: 1000; /* Ensure it's above other content */
-                  border-radius: 50%; /* Optional: makes the button round */
-                  padding: 15px 20px; /* Button padding */
-                  background-color: #c33e3e; /* Button background */
-                  color: rgb(18, 17, 17); /* Button text color */
-                  border-color: red; /* Remove default button border */
-                  font-size: 18px; /* Button text size */
-              }
-      
-              /* Optional: Adding a hover effect */
-              .sticky-button:hover {
-                  background-color: #b30018;
-              }
-body {color: rgb(20, 17, 17);
-          background-image: url("images/20210830_073442.jpg"); /* Replace with your image URL */
-          background-size: cover; /* Cover the entire page */
-          background-position: center center; /* Center the background */
-          background-repeat: no-repeat; /* Prevent repeating */
-          background-attachment: fixed;
-        font-size: larger;line-height: 2;}
-          
-        * {
-    max-width: 100%; /* Ensures all elements stay within the screen */
-    box-sizing: border-box; /* Prevents elements from exceeding their container */
-}
-
-.mobile-only{display: none;}
-  .desktop-only{display: contents;}
-
-.custom-card {
-            border: 4px solid rgb(238, 241, 237);
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px 0;
-            background-color: #1f1e1e;
-            color: #fbf6f6;
-            
-        }
-        .discount-text {
-            font-size: 2rem;
-            font-weight: bold;
-            color: rgba(15, 98, 224, 0.628);
-            text-shadow: -1px -1px 0 black;
-            
-        }
-
-.border{background-color: rgb(20, 20, 20); color: #e3dede;}
-@media (max-width: 469px) {
-  .nav-item{margin-right: 16px;font-size: medium;}
-  .mobile-only{display: contents;}
-  .desktop-only{display: none;}  
-   
- 
-      
-
-
-
-    .navbar-brand{width:130px ; }
-
-      body{margin-left: 0%; margin-right: 0%;}
-     .border{background-color: #0b0b0b;margin-top: -50px;border-top: none; border-bottom: none;border-bottom-color: #b30018;}
-.transparent-section{height: -0%; background-color: #080707;}}
- .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
- @media (min-width: 768px) 
-     {.carousel {
-  height: 350px; /* Set to match your tallest image */
-  overflow: hidden; /* Prevents content from shifting */
-}
-
-.carousel img {
-  width: 100%; /* Ensures the images fill the container */
-  height: 100%; /* Keeps all images the same height */
-  object-fit: cover; /* Crops images to fit without distorting */
-}
-    .carousel-container {
-  width: 100%;object-fit: cover ; /* or any preferred width */
-  max-width: 100%;height: 200px; /* maximum width */
-  margin: 0 auto;overflow: hidden;object-fit: cover;}
-
-  .carousel-item {
-    max-height: auto;overflow: hidden;object-fit: cover; /* Adjust to your preferred height */
-  }
-
-  .carousel-item img {
-    min-height: auto;
-    width: auto;
-    object-fit: cover;overflow: hidden;object-fit: cover; /* Ensures the image covers the area without distortion */
-  }
-
-  .carousel-container {
-  width: 100%;object-fit: cover ; /* or any preferred width */
-  max-width: 100%; /* maximum width */
-  margin: 0 auto;overflow: hidden;
-}
-  .container{display: flex;justify-content: center;align-items: center;object-fit: cover;}
-
-  .carousel-inner img {
-    min-height: auto; /* Set to your desired maximum height */
-    width: auto;
-    margin: 0 auto;overflow: hidden;object-fit: cover; /* Centers the image */
-  }
-        
-    }
 
 
 </style>
