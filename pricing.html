@@ -474,7 +474,7 @@ body {color: rgb(20, 17, 17);
 .border{background-color: rgb(20, 20, 20); color: #e3dede;}
 @media (max-width: 469px) {
     .carousel {
-  height: 200px; /* Set to match your tallest image */
+  height: 350px; /* Set to match your tallest image */
   overflow: hidden; /* Prevents content from shifting */
 }
 
@@ -491,6 +491,10 @@ body {color: rgb(20, 17, 17);
 .text{line-height: 2;font-size: larger;}
 
 @media (max-width: 768px) {
+    .carousel {
+  height: 200px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
     .footer {
         flex-direction: column; /* Stacks items vertically on small screens */
         text-align: center;
@@ -498,10 +502,7 @@ body {color: rgb(20, 17, 17);
    
 .desktop-only{display: block;}
 
-.carousel {
-  height: 200px; /* Set to match your tallest image */
-  overflow: hidden; /* Prevents content from shifting */
-}
+
 
 .carousel img {
   width: 100%; /* Ensures the images fill the container */
