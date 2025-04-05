@@ -30,10 +30,10 @@
     <style>
 
   
-
+@media (min-width:1024px){
 .nav-item{margin-left: 50px;}
 li{max-width:700px;margin-left: 330px;}
-.me-container{display: flex;justify-content: center;align-items: center;}
+.me-container{display:grid center;align-items: center;text-align: center;justify-content: center;margin-right: 120px;}
 
 body{display: flex;justify-content: center;align-items: center; text-align: center; text-align: center;}
      
@@ -105,13 +105,15 @@ section {color: rgb(247, 244, 244);
                   padding-bottom: 80px; /* Prevent content overlap with button */
                 .border1{border: #382d2d; background-color: #f5f0f0;}}  
           
-         
+         html{font-size: 18px;}
       
                 body {
         max-width: 100%;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
+        
+
     }
 
     .container {
@@ -197,22 +199,24 @@ section {color: rgb(247, 244, 244);
 }
 
 table {
+  display: flex;justify-content: center;align-items: center;
         width: 100%;
+        width: 100px;
         height: 500px;
         border-collapse: collapse;
         background-color: rgb(8, 8, 8);
         color: rgb(249, 245, 245);
     }
     th {
-      padding: 10px;
+      padding: 1px;
       border: 1px solid rgb(11, 11, 11);
     }
     td, th {
-        padding: 10px;
+        padding: 1px;
         border: 1px solid rgb(10, 10, 10);
     }
     tr:nth-child(even) {
-      padding: 10px;
+      padding: 1px;
       border: 1px solid rgb(3, 3, 3);
     }
     .table-container {
@@ -220,13 +224,11 @@ table {
         overflow-x: auto;display: flex;justify-content: center; /* Enables horizontal scrolling on small screens */
     }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+    
+    
 
     th, td {
-        padding: 12px;
+        padding: 1px;
         border: 1px solid black;
         text-align: left;
     }
@@ -355,7 +357,7 @@ p {
     font-size: clamp(14px, 2.5vw, 20px); /* Matches paragraph text size */
     line-height: 1.6; /* Improves readability */
     padding-left: 20px; /* Ensures proper indentation */
-}}
+}
 
 
       
@@ -372,7 +374,7 @@ p {
   padding: 10px 15px;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
     .desktop-only{display: none;}
     
     
@@ -449,7 +451,7 @@ li{max-width:700px;margin-left: 330px;}
         overflow-x: hidden;
         margin: 0;
         padding: 0;
-    }}
+    }
           
           .border1{border: #382d2d; background-color: #f5f0f0;}
       
@@ -705,7 +707,7 @@ p {
     font-size: clamp(14px, 2.5vw, 20px); /* Matches paragraph text size */
     line-height: 1.6; /* Improves readability */
     padding-left: 20px; /* Ensures proper indentation */
-}}
+}}}
 
 
       
@@ -721,17 +723,17 @@ p {
   font-size: 1.2rem; /* Adjusts with root font size */
   padding: 10px 15px;
 }
+}}
 
-
-@media (min-width: 769px){
-  .desktop-only{display: none;}
+@media (max-width: 768px){
+ .mobile-only{display: contents ;}
     
     
 .nav-item{margin-left: 50px;}
 li{max-width:700px;margin-left: 330px;}
-.me-container{display: flex;justify-content: center;align-items: center;}
+.me-container{display: flex;justify-content: center;}
 
-    
+
 
 
       .testimonial-container {
@@ -1084,7 +1086,7 @@ p {
     
     
     .nav-item{margin-left: 50px;}
-    li{max-width:700px;margin-left: 330px;}
+    li{max-width:500px;margin-left: 0px;}
     .me-container{display: flex;justify-content: center;align-items: center;}
     
         
@@ -1176,7 +1178,7 @@ p {
             height: auto;
         }     
                   
-       
+       .video-section{margin-bottom:-90px;}
     
         .footer {
         display: flex;
@@ -1222,7 +1224,7 @@ p {
      
                   
                  
-        .me{width: 100px; border-radius: 50%;display: flex; justify-content: center;}
+        .me{width: 100px; border-radius: 50%;display: flex; justify-content: center;margin-right:40px ;}
           
             .btn{font-size: larger;}
            
@@ -1384,7 +1386,7 @@ p {
     .centered-element {text-align: center;
       /* Your centered element styles */
     }
-    .p2{text-align: center;margin: 0;}
+    .p2{text-align: center;}
     .p1{text-align: center;margin: 0;padding-top: 10px;}
      .s1{height: 100%; text-align: center;display: flex;justify-content: center;align-content: center;margin: 0;width: auto;}
      .ws{display:flex; text-align: center;width: auto;margin: 0;}
@@ -1422,7 +1424,7 @@ p {
         padding-left: 20px; /* Ensures proper indentation */
     }
     
-    
+    .slocation{min-height: 10px;}
       .navbar a {
       font-size: 1.2rem; /* Adjusts with root font size */
       padding: 10px 15px;
@@ -1569,17 +1571,30 @@ p {
     
    <div class="mobile-only">
     
+
+    <div class="container">
+     
+
+      </div>
+    </div>
+      <div class="me-container">
+     
     <img class="me" src="images/IMG_4997 2.jpg" class="start " alt="Description">
-    <div class="me-container">
+     <div class="centered-element">
+    </div>
+  </div>
+    
       <div class="centered-element">
         
      
     
 
       <P class="p2">I’m Dean, a certified mobile personal trainer dedicated to helping you reach your goals.</P>
-      </div>
-       </div>
+     
+    
     </div>
+       </div>
+     
       
   
 
@@ -1588,7 +1603,7 @@ p {
 
    <div class="desktop-only">
     <div class="me container">
-   <img class="me" src="images/IMG_4997 2.jpg" class="start " alt="Description">
+   <img class="me" src="images/IMG_4997 2.jpg" class="center " alt="Description">
     </div>
 </div>
 
@@ -1800,8 +1815,8 @@ p {
   <blockquote>
       "Dean is amazing. Been training with him for a few weeks and I already feel better and stronger"
 
-  <br>– Emma K.
-  </blockquote><br>
+  – Emma K.
+  </blockquote>
   
 </section>
       
@@ -1864,9 +1879,9 @@ p {
 <br>
 <br>
 
-<section>
+<section class="slocation">
 <h1 class="heading-underline">Locations</h1>
-    
+    </section>
 
   
   <br>
@@ -1917,13 +1932,13 @@ p {
   </div>
 </div>
 
-</section>
+
 
     <br>
-  
+  <section class=slocation>
     <p>Let’s achieve your <span>Fitness Goals</span> together!
     </p>
-    
+  </section> 
 </div>
 
 </div>
