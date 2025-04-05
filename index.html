@@ -28,11 +28,11 @@
    
     
     <style>
-
+.img1{border-radius: 100%;}
+.img2{border-radius: 100%;}
 .section-3d {
     background: white;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
 
   }
@@ -40,14 +40,13 @@
       .section-embossed {
     background: white;
     padding: 0px;
-    border-radius: 10px;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
                 inset -5px -5px 10px rgba(255, 255, 255, 0.7); /* Inset for depth */
 
 
               }
 
-.ws{background-color: #e6e3e3; color: #0f0e0e;border-radius: 20px;width: 100px;}
+
 .white-section{display: white; color: #0b0b0b;}
 * {
     box-sizing: border-box;
@@ -69,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 80px; /* Prevent content overlap with sticky button */
+    padding-bottom: 0px; /* Prevent content overlap with sticky button */
 }
 
 /* Typography */
@@ -103,6 +102,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .my-container {
@@ -418,6 +418,7 @@ hr {
     text-align: center;
     width: auto;
     margin: 0;
+    background-color: white;
 }
 
 .we {
@@ -644,7 +645,7 @@ hr {
     </div>
 </div>
 
-<section class="s1">
+<section class="ws">
     <div class="mobile-only">
         <img class="me" src="images/IMG_4997 2.jpg" alt="Personal Trainer Dean">
         <div class="my-container">
@@ -887,7 +888,7 @@ hr {
 
 <br>
 <br>
-
+<div class="desktop-only">
 <img src="images/IMG_8036.jpg" alt="Group training" class="img-fluid">
 
 <!-- Group Training Section - Desktop -->
@@ -898,10 +899,10 @@ hr {
     <p>Boost motivation and enjoy a supportive atmosphere with our small group training sessions. Train with friends or family (up to 4 participants) and benefit from discounted rates.</p>
     <br>
 </div>
-
+</div>
 <div class="mobile-only">
 <img src="images/IMG_8040 3.jpg" alt="Workout" class="img-fluid"> 
-</div>
+
 
 <!-- Workout Plans Section - Mobile -->
 <div class="mobile-only">
@@ -913,11 +914,14 @@ hr {
         <br>
     </section>
 </div>
-
+</div>
 <br>
 <br>
 
 <!-- Group Training Section - Mobile -->
+<div class="mobile-only"></div>
+<img src="images/IMG_8036.jpg" alt="Group training" class="img-fluid">
+
 <div class="mobile-only">
 <section class="white-section section-3d">
    <div class="mobile-only">
@@ -927,17 +931,14 @@ hr {
     </div>
 </section>
 </div>
-
+</div>
 
 
   
        
  
 
-  <br>
-
-
-<br>
+  
 <br>
 
 <div class="desktop-only">
@@ -998,7 +999,7 @@ hr {
     </p>
     </div>
   </div>
-</div>
+
 
 
 
@@ -1010,14 +1011,19 @@ hr {
   </section> 
 </div>
 
-</div>
-</div>
-</div>
+
 
 <div class="mobile-only">
+    <section class="ws">
+        <div class="container">
+            <div class="centered-element">
+          
 <p>Let’s achieve your <span>Fitness Goals</span> together!
 </p>
-</div> 
+</section>
+</div>
+</div>
+</div>
      <footer>
 
       <footer class="footer">
