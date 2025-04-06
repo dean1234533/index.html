@@ -28,7 +28,17 @@
    
     
     <style>
+.video-container {
+  max-width: 100%;
+  aspect-ratio: 16 / 9; /* Adjust based on your video's natural aspect ratio */
+  overflow: hidden;
+}
 
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' depending on your goal */
+}
 
 .round-image{width: 150px;height: 150px;object-fit: cover;border-radius: 100%;}
 .section-3d {
@@ -278,7 +288,10 @@ img {
 
 .carousel {
     flex: 1;
+    height: 500px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
 }
+
 
 .carousel-item {
     max-height: auto;
@@ -518,13 +531,19 @@ background-color: black;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed
+    ;
 }       
 .centered-element {
     text-align: center;display: flex;justify-content: center;align-items: center;
 }
-.ws{height: auto;width: fit-content;color:black;}
-        }
+.ws{color:black;}
+  .white-section{color: rgb(247, 244, 244);
+    background-image: url("images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}      }
         </style>
       
       
@@ -676,7 +695,7 @@ background-color: black;
 
 
     <div class="mobile-only">
-<section class="ws">
+        <section class="white-section section-3d">
         <div class="my-container">
             <div class="centered-element">
         <img class="me" src="images/IMG_4997 2.jpg" alt="Personal Trainer Dean">
@@ -715,6 +734,9 @@ background-color: black;
         <li>Personalised Plan: Receive a tailored workout strategy.</li>
         <li>Start Training: Begin your transformation.</li>
     </ol>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a>
+
 </div>
 
 <!-- Free Consultation Section - Desktop -->
@@ -746,13 +768,14 @@ background-color: black;
 </section>
 
 <!-- Video Section -->
+ <div class="video-container">
 <section class="video-section">
     <video autoplay muted loop playsinline class="background-video">
-        <source src="images/3327958-hd_1920_1080_24fps.mp4" type="video/mp4">
+        <source src="images/Video 2.mov" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </section>
-
+</div>
 
 
 
@@ -798,14 +821,16 @@ background-color: black;
     <div class="mobile-only">
         <h3>A personal training (PT) session typically includes:</h3>
         <br>
-        
+        <section class="white-section section-embossed">
         <div class="ol-container">
             <ol>
                 <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
                 <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
                 <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
             </ol>
-            
+        </section>
+
+
             <p>I will watch your form, structure your workout, and keep you motivated.</p>
         </div>
     </div>
@@ -1124,7 +1149,7 @@ background-color: black;
 
 
 <div class="mobile-only">
-    <section class="ws">
+    <section class="white-section section-3d">
         <div class="container">
             <div class="centered-element">
           
