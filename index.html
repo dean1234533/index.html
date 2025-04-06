@@ -97,7 +97,7 @@ h3 {
 
 p, ol, ul {
     font-size: clamp(14px, 2.5vw, 20px);
-    line-height: 1.6;
+    line-height: 1.6; text-justify: auto;
 }
 
 span {
@@ -339,7 +339,7 @@ tr:nth-child(even) {
 }
 
 .no-numbers {
-    list-style-type: none;
+    list-style-type: disc;
 }
 
 /* Footer */
@@ -435,6 +435,20 @@ hr {
 
 /* Desktop Styles */
 @media (min-width: 1024px) {
+    .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  table {
+    width: 900px; /* Prevent full width if you want it centered tightly */
+    margin: 0 auto;
+  }
+}
+    
     .nav-item {
         margin-left: 50px;
     }
@@ -458,7 +472,7 @@ hr {
     }
 
     
-}
+
 section {
     color: rgb(247, 244, 244);
     background-image: url("images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
@@ -472,9 +486,9 @@ section {
 
 @media (min-width: 769px) and (max-width: 1023px) {
     .nav-item {
-        margin-left: 20px;
+        margin-left: 20px;font-size: medium;
     }
-
+   
     .testimonial-container {
         width: 80%;
     }
@@ -503,13 +517,11 @@ section {
         justify-content: center;
         margin-right: 50px;
     }
-    html, body {
-  overflow-x: hidden;
-}
+  
 .ws {
     display: flex;
     text-align: center;
-    width: auto;
+    width: fit-content;
     margin: 0;
     background-color: white;
 }
@@ -771,7 +783,7 @@ background-color: black;
     <h2>Kickstart your journey with a free session:</h2>
     <br>
     
-    <ol>
+    <ol class="no-numbers">
         <li>Schedule: Pick a convenient time.</li>
         <li>Questionnaire: Share your fitness goals and health info.</li>
         <li>Consultation: Discuss objectives and assess fitness level.</li>
@@ -793,7 +805,7 @@ background-color: black;
         <br>
         
         <div class="ol-container">
-            <ol>
+            <ol class="no-numbers">
                 <li>Schedule Your Consultation: Simply reach out and choose a time that works for you.</li>
                 <li>Complete a Quick Questionnaire: Before we meet, fill out a short form to share your fitness goals and any relevant health info.</li>
                 <li>Consultation Meeting: We'll chat about your goals, assess your fitness level, and discuss the best plan for you.</li>
@@ -850,7 +862,7 @@ background-color: black;
             <br>
             
             <div class="ol-container">
-                <ol>
+                <ol class="no-numbers">
                     <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
                     <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
                     <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
@@ -869,7 +881,7 @@ background-color: black;
         <br>
        
         <div class="ol-container">
-            <ol>
+            <ol class="no-numbers">
                 <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
                 <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
                 <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
@@ -898,7 +910,7 @@ background-color: black;
 <!-- Services List - Desktop -->
 <div class="desktop-only">
     <div class="ol-container">
-        <ol class="list-unstyles">
+        <ol class="no-numbers">
             <li>Weight Management: Weight Loss, Toning & Sculpting</li>
             <li>Strength Training: Resistance Training, Muscle Building</li>
             <li>Performance Enhancement: Mobility, Flexibility, Speed, Strength, Power Development</li>
@@ -921,7 +933,7 @@ background-color: black;
     <br>
     
     <div class="ol-container">
-        <ol class="list-unstyles">
+        <ol class="no-numbers">
             <li>Weight Management: Lose weight, tone, and sculpt.</li>
             <li>Strength Training: Build muscle and enhance strength.</li>
             <li>Performance Enhancement: Improve mobility, flexibility, speed, and power.</li>
