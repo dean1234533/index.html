@@ -430,6 +430,7 @@ hr {
 .we {
     display: flex;
     justify-content: center;
+
 }
 
 /* Desktop Styles */
@@ -467,6 +468,31 @@ section {
 }
 .black-section{background-color: black;background-image: none;}
 .s1{background-color: rgb(219, 224, 230); color: #0f0e0e;border-radius: 10px; text-align-last: left;margin-left: 30px;}  
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .nav-item {
+        margin-left: 20px;
+    }
+
+    .testimonial-container {
+        width: 80%;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .me-container {
+        margin-right: 60px;
+    }
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .desktop-only {
@@ -535,7 +561,12 @@ background-color: black;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;}      }
+    background-attachment: fixed;}     
+    .carousel {
+  height: 200px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+}
         </style>
       
       
