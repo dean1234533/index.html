@@ -34,6 +34,49 @@
   overflow: hidden;
 }
 
+ul, ol {
+    text-align: left; /* Default alignment */
+    padding-left: 20px; /* Reduced default padding */
+    margin: 1em 0;
+}
+
+ul.centered, ol.centered {
+    text-align: center;
+    list-style-position: inside; /* Keeps bullets/numbers inside for centering */
+    padding-left: 0;
+}
+
+ul.justified, ol.justified {
+    text-align: justify;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* For nested lists in centered lists */
+ul.centered ul, ol.centered ol,
+ul.centered ol, ol.centered ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+/* Center list container */
+.list-container-centered {
+    text-align: center;
+    width: 100%;
+}
+
+.list-container-centered ul,
+.list-container-centered ol {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 .video-container video {
   width: 100%;
   height: 100%;
@@ -456,7 +499,7 @@ hr {
     
     li {
         max-width: 700px;
-        margin-left: 250px;
+        margin-left: 350px;
     }
     
     .me-container {
