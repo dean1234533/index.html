@@ -36,27 +36,6 @@
 
 
 
-ul.centered, ol.centered {
-    text-align: center;
-    list-style-position: inside; /* Keeps bullets/numbers inside for centering */
-    padding-left: 0;
-}
-
-ul.justified, ol.justified {
-    text-align: justify;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-/* Center list container */
-.list-container-centered {
-    text-align: center;
-    width: 100%;
-}
-
 
 
 
@@ -128,9 +107,7 @@ h3 {
 p, ol, ul {
     font-size: clamp(14px, 2.5vw, 20px);
     line-height: 1.6;
-    display: block;
-   justify-content: center;
-   align-items: center;
+    
 }
 
 span {
@@ -318,11 +295,11 @@ img {
 
 ol {
   display: block;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
+  width: 1100%;
+  max-width: 700px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 7rem;
   box-sizing: border-box;
 }
 
@@ -499,10 +476,23 @@ hr {
     }
     
     li {
-        max-width: 700px;
-        margin-left: 350px;
+        max-width: 900px;
+        margin-left: 50px;
     }
-    
+    ol {
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+
+ol li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
     .me-container {
         display: grid;
         align-items: center;
