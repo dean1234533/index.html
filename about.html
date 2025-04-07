@@ -14,165 +14,146 @@
 
 
 
+/* Remove page border */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: white;
+    background-image: url("images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f7f3f3;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+   
+}
+
+/* Use padding instead of margins for content */
+.content-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix inconsistent sizing */
+* {
+    box-sizing: border-box; /* Apply to all elements */
+    max-width: 100%; /* Prevent overflow */
+}
+
+/* Responsive typography */
 h1 {
-    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
+    font-size: clamp(24px, 5vw, 48px);
 }
 
 h2 {
-    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
+    font-size: clamp(20px, 4vw, 36px);
 }
 
 h3 {
-    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
+    font-size: clamp(18px, 3.5vw, 30px);
 }
 
 p {
-    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
+    font-size: clamp(14px, 2.5vw, 20px);
+    line-height: 1.6;
 }
 
+/* Improved navbar responsiveness */
+.navbar a {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    padding: clamp(6px, 1vw, 15px) clamp(8px, 1.5vw, 15px);
+}
 
+.navbar-brand {
+    width: clamp(130px, 15vw, 200px);
+}
+
+/* Remove problematic border class */
+.border {
+    background-color: rgb(10, 10, 10);
+    color: #e3dede;
+    margin-top: 0; /* Remove negative margin */
+    border: none; /* Remove borders */
+}
+
+/* Improved footer for all devices */
 .footer {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-    justify-content: space-between; /* Even spacing between items */
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: black;
     color: white;
-    font-size: small;}
+    font-size: small;
+    width: 100%;
+}
 
 .footer-links {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; /* Adds spacing between links */
+    flex-wrap: wrap;
+    gap: clamp(10px, 2vw, 20px);
     color: #e3dede;
 }
 
 .footer-links a {
-  color: rgb(234, 239, 231);
+    color: rgb(234, 239, 231);
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-contact {
-    text-align: center;
-}
-@media (max-width: 469px) {
-      html, body {
-    overflow-x: hidden; /* Hides horizontal scrolling */
-    width: 100%; /* Ensures elements don’t exceed screen width */
-}}
-
-
-* {
-    max-width: 100%; /* Ensures all elements stay within the screen */
-    box-sizing: border-box; /* Prevents elements from exceeding their container */
-}
+/* Media queries for different screen sizes */
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column; /* Stacks items vertically on small screens */
+        flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
-    h1 {
-    font-size: clamp(24px, 5vw, 48px); /* Min 24px, adjusts with screen, max 48px */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px); /* Min 20px, adjusts with screen, max 36px */
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px); /* Min 18px, adjusts with screen, max 30px */
-}
-
-p {
-    font-size: clamp(14px, 2.5vw, 20px); /* Min 14px, adjusts with screen, max 20px */
-}
-
-
+    
     .footer-links {
         justify-content: center;
     }
-}  hr{color: #d00a25;}
-   
-
-.navbar a {
-  font-size: 1.2rem; /* Adjusts with root font size */
-  padding: 10px 15px;
+    
+    .nav-item {
+        margin-right: 12px;
+        font-size: small;
+    }
 }
 
-
-@media (max-width: 768px) {
-  .navbar a {
-    font-size: 1rem; /* Smaller text on mobile */
-    padding: 8px 10px;
-  }
+@media (max-width: 469px) {
+    .content-container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    .nav-item {
+        margin-right: 8px;
+        font-size: small;
+    }
 }
 
-
-@media (max-width: 480px) {
-  .navbar a {
-    font-size: 0.9rem;
-    padding: 6px 8px;
-  }
-}
-
-
-* {
-    max-width: 100%; /* Ensures all elements stay within the screen */
-    box-sizing: border-box; /* Prevents elements from exceeding their container */
-}
-h1{font-size: 32px;}
-h2{font-size: 24px;}
-h3{font-size: 18.72;}
+/* Fix sticky button */
 .sticky-button {
-                  position: fixed;
-                  bottom: 20px; /* Distance from the bottom of the screen */
-                  right: 20px; /* Distance from the right side */
-                  z-index: 1000; /* Ensure it's above other content */
-                  border-radius: 50%; /* Optional: makes the button round */
-                  padding: 15px 20px; /* Button padding */
-                  background-color: #c33e3e; /* Button background */
-                  color: rgb(18, 17, 17); /* Button text color */
-                  border-color: red; /* Remove default button border */
-                  font-size: 18px; /* Button text size */
-              }
-      
-              /* Optional: Adding a hover effect */
-              .sticky-button:hover {
-                  background-color: #b30018;}
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 15px 20px;
+    background-color: #c33e3e;
+    color: rgb(18, 17, 17);
+    border: 2px solid #b30018;
+    font-size: clamp(14px, 2vw, 18px);
+}
 
-.section1{border: solid white;}
-.nav-item{margin-right: 18px;font-size: medium;}
-  
-  body {color: white;
-          background-image: url("images/20210830_073442.jpg"); /* Replace with your image URL */
-          background-size: cover; /* Cover the entire page */
-          background-position: center center; /* Center the background */
-          background-repeat: no-repeat; /* Prevent repeating */
-          background-attachment: fixed;background-color: #f7f3f3;
-        margin-left: 10%; margin-right: 10%;}
-      
-        .navbar-brand{width:200px  }
-.nav-item{text-align: right;}
-                 
-  .border{background-color: rgb(10, 10, 10); color: #e3dede;}
-  @media (max-width: 469px) 
-  
-  {body{margin-left: 0%; margin-right: 0%;}
-  
-  .nav-item{margin-right: 16px;font-size: medium;}
-  .footer-links{color: #e3dede;}
-  .navbar-brand{width:130px ; }}
-
-     .border{background-color: #0b0b0b;margin-top: -50px;border-top: none; border-bottom: none;border-bottom-color: #b30018;}
- .start{border-radius: 100%; display: inline-block;text-align: center; height:100px} 
-.heading-underline{text-decoration: underline;text-decoration-color: #b30018;}
-.text{line-height: 2;font-size: larger;}
+.sticky-button:hover {
+    background-color: #b30018;
+    color: white;
+}
 </Style>
   </head> 
 <body>
