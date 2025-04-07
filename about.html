@@ -31,11 +31,12 @@ body {
 }
 
 /* Use padding instead of margins for content */
-.content-container {
+.container {
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 50%;
 }
 
 /* Fix inconsistent sizing */
@@ -75,7 +76,6 @@ p {
 /* Remove problematic border class */
 .border {
     background-color: rgb(10, 10, 10);
-    color: #e3dede;
     margin-top: 0; /* Remove negative margin */
     border: none; /* Remove borders */
 }
@@ -125,9 +125,10 @@ p {
 }
 
 @media (max-width: 469px) {
-    .content-container {
+    .container {
         padding-left: 3%;
         padding-right: 3%;
+        border-radius: 50%;
     }
     
     .nav-item {
