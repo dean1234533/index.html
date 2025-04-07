@@ -47,7 +47,7 @@
     </nav>
 
     <br>
-    
+  <div class="page-content"> 
 <section>
 
     <div class="desktop-only">
@@ -332,10 +332,22 @@ body {
     line-height: 2;
     margin-left: 0%;
     margin-right: 0%;
-    display: flex ;justify-content: center;align-items: center;
-padding-left: 4%;
-padding-right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Removing specific padding here as we'll use the responsive padding below */
+}
 
+/* Add responsive padding to page content */
+.page-content {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
+}
+
+/* Add padding to top of navbar */
+.navbar {
+    padding-top: 15px;
 }
 
 /* Typography */
@@ -511,14 +523,17 @@ p {
     text-align: center;
 }
 
-/* Media Queries - Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Media Queries - Small Mobile */
+@media (max-width: 468px) {
     .carousel {
-        height: 350px;
+        height: 250px;
+        min-height: auto;
     }
     
-    .testimonial-container {
-        width: 80%;
+    /* 3% padding for mobile */
+    .page-content {
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
 
@@ -538,11 +553,20 @@ p {
     }
 }
 
-/* Media Queries - Small Mobile */
-@media (max-width: 468px) {
+/* Media Queries - Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
     .carousel {
-        height: 250px;
-        min-height: auto;
+        height: 350px;
+    }
+    
+    .testimonial-container {
+        width: 80%;
+    }
+    
+    /* 5% padding for iPad/tablet */
+    .page-content {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
@@ -550,6 +574,12 @@ p {
 @media (min-width: 1024px) {
     .carousel {
         height: 500px;
+    }
+    
+    /* 7% padding for desktop */
+    .page-content {
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
 
