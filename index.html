@@ -45,6 +45,15 @@
    
     
     <style>
+
+
+
+
+
+
+
+
+        
 .video-container {
   max-width: 100%;
   aspect-ratio: 16 / 9; /* Adjust based on your video's natural aspect ratio */
@@ -910,6 +919,36 @@ background-color: black;
 </section>
 </div>
 
+
+
+<div class="container">
+    <div class="header">
+        <img src="/api/placeholder/32/32" alt="Logo">
+        <strong>dbworkouts.co.uk</strong>
+    </div>
+    <div class="video-wrapper">
+        <video id="workout-video" playsinline controls autoplay muted loop>
+            <source src="images/Video 2.mov" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('workout-video');
+        
+        // Tap to play/pause (Instagram-like behavior)
+        video.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    });
+</script>
 
 
 <!-- Training Sessions Section -->
