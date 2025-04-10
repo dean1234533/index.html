@@ -1394,15 +1394,9 @@ background-color: black;
 
     <script>
         const video = document.getElementById('myVideo');
-    
-        // Wait for the video to actually start playing
-        let restarted = false;
-        video.addEventListener('playing', () => {
-          if (!restarted) {
-            restarted = true;
-            video.currentTime = 0;
-            video.play();
-          }
+      
+        video.addEventListener('play', () => {
+          video.removeAttribute('poster'); // Remove poster on play
         });
       </script>
     
