@@ -1392,7 +1392,22 @@ background-color: black;
  
     </section> 
 
-
+    <script>
+        const video = document.getElementById('myVideo');
+    
+        // Wait for the video to actually start playing
+        let restarted = false;
+        video.addEventListener('playing', () => {
+          if (!restarted) {
+            restarted = true;
+            video.currentTime = 0;
+            video.play();
+          }
+        });
+      </script>
+    
+    </body>
+    
     
 
   <script src="js/jquery-3.3.1.min.js"></script>
