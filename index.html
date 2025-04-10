@@ -39,7 +39,18 @@
     <link rel="icon" href="images/photo-output 5.PNG" type="image/png">
 
    
-   
+    <script>
+        const video = document.getElementById('myVideo');
+        let firstPlay = true;
+      
+        video.addEventListener('play', () => {
+          if (firstPlay) {
+            firstPlay = false;
+            video.currentTime = 0; // reset to beginning
+            video.play(); // restart playback
+          }
+        });
+      </script>
     
   
     
@@ -1398,18 +1409,7 @@ background-color: black;
     </section> 
 
 
-    <script>
-        const video = document.getElementById('myVideo');
-        let firstPlay = true;
-      
-        video.addEventListener('play', () => {
-          if (firstPlay) {
-            firstPlay = false;
-            video.currentTime = 0; // reset to beginning
-            video.play(); // restart playback
-          }
-        });
-      </script>
+    
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
