@@ -37,7 +37,8 @@
     <link rel="icon" href="images/photo-output 5.PNG" type="image/png">
 
     <link rel="canonical" href="https://dbworkouts.co.uk/index.html/" />
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     
     <style>
 
@@ -59,6 +60,26 @@
 
 
 
+    
+
+#myButton {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(90deg, #8B0000 0%, #00008B 100%);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+
+}
+      
+    
+
+    
+   
 
 
 .video-container video {
@@ -877,8 +898,15 @@ background-color: black;
         <li>Start Training: Begin your transformation.</li>
     </ol>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a>
 
+    <div class="spacer"></div> <!-- just pushes button down the page -->
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform">
+<button id="myButton">Book a Free Consultation</button>
+  </a>
+
+  <div class="spacer"></div>
+
+    
 </div>
 
 <!-- Free Consultation Section - Desktop -->
@@ -902,6 +930,8 @@ background-color: black;
         
         <section class="black-section">
         <p>Let's take the first step together—book your free consultation now!</p>
+        
+
         
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a>
    
@@ -1445,7 +1475,24 @@ background-color: black;
         }
         </script>
     
-    
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+      
+          gsap.to("#myButton", {
+  background: "linear-gradient(90deg, #00008B 0%, #8B0000 100%)", // reversed
+  scrollTrigger: {
+    trigger: "#myButton",
+    start: "top 80%",
+    end: "top 50%",
+    scrub: true
+  }
+});
+
+        </script>
+      
+      
     
 
   <script src="js/jquery-3.3.1.min.js"></script>
