@@ -59,7 +59,21 @@
 
 
 
-
+#myButton {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    }
+  
     
       
     
@@ -218,16 +232,12 @@ span {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff5733;
-    color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
 
-.cta-button:hover {
-    background-color: #c4421d;
-}
+
 
 .sticky-button {
     position: fixed;
@@ -779,7 +789,7 @@ background-color: black;
 <div class="carousel-container">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Description">
+      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Slide 1">
       <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
         <h5 class="fw-bold display-4">IF YOU HAVE <br> A STRONG MIND</h5>
@@ -787,7 +797,7 @@ background-color: black;
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Description">
+      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Slide 2">
       <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
         <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
@@ -885,8 +895,14 @@ background-color: black;
     </ol>
 
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">Book a Free Consultation</a>
-
+   
+    <div class="spacer"></div> <!-- just pushes button down the page -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">
+    
+    <button id="myButton">Book a Free Consultation</button>
+</a>
+    <div class="spacer"></div>
+  
     
 </div>
 
@@ -1371,9 +1387,22 @@ background-color: black;
     </footer>
 
 
-          
-          
-         
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.to("#myButton", {
+          backgroundColor: "#e74c3c", // new color
+          scrollTrigger: {
+            trigger: "#myButton",
+            start: "top 80%", // when the top of button hits 80% of viewport
+            end: "top 50%",
+            scrub: true
+          },
+          duration: 0.5
+        });
+      </script>
+    
+    
          
       
       
@@ -1459,7 +1488,8 @@ background-color: black;
 
         </script>
       
-      
+       
+       
     
 
   <script src="js/jquery-3.3.1.min.js"></script>
