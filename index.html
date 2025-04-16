@@ -57,13 +57,16 @@
 }
 
 
-
+.fade-wrapper > * {
+  opacity: 0;
+  transform: translateY(20px);
+}
 
 #myButton {
       display: inline-block;
       margin: 0 auto;
       padding: 10px 20px;
-      background-color: #3498db;
+      background-color: #c33e3e;
       color: white;
       border: none;
       font-size: 18px;
@@ -896,13 +899,13 @@ background-color: black;
 
 
    
-    <div class="spacer"></div> <!-- just pushes button down the page -->
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">
-    
-    <button id="myButton">Book a Free Consultation</button>
-</a>
-    <div class="spacer"></div>
-  
+    <div class="fade-wrapper">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">   
+          <button id="myButton">Book a Free Consultation</button>
+          </a>    
+          </div>
+
+         
     
 </div>
 
@@ -1389,17 +1392,20 @@ background-color: black;
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
-    
-        gsap.to("#myButton", {
-          backgroundColor: "#e74c3c", // new color
-          scrollTrigger: {
-            trigger: "#myButton",
-            start: "top 80%", // when the top of button hits 80% of viewport
-            end: "top 50%",
-            scrub: true
-          },
-          duration: 0.5
-        });
+
+gsap.to(".fade-wrapper > *", {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".fade-wrapper",
+    start: "top 80%",
+    end: "top 30%",
+    toggleActions: "play reverse play reverse", // fades in on scroll down, fades out on scroll up
+    markers: false // set to true to debug
+  }
+});
       </script>
     
     
