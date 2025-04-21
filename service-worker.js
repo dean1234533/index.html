@@ -19,3 +19,13 @@ self.addEventListener('install', event => {
       })
     );
   });
+// Inside your service worker (sw.js)
+self.addEventListener('sync', (event) => {
+  if (event.tag === 'sync-data') {
+      event.waitUntil(syncData());
+  }
+});
+
+async function syncData() {
+  // Fetch and sync data with your server
+}
