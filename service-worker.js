@@ -66,3 +66,49 @@ function loadContent(url) {
 document.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', handleLinks);
 });
+const CACHE_NAME = 'my-pwa-cache-v1';
+const urlsToCache = [
+    '/',
+    '/index.html',
+    '/styles.css',
+    '/app.js',
+    // Add other assets you want to cache
+];
+
+// Install the service worker and cache assets
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(cache => {
+                console.log('Caching app shell');
+                return cache.addAll(urlsToCache);
+            })
+    );
+});
+
+// Serve cached assets when offline
+self.addEventListener('fetch', event => {
+    event.respondWith(
+        caches.match(event.request)
+            .then(response => {
+                // Return cached response if available, else fetch from network
+                return response || fetch(event.request);
+            })
+    );
+});
+
+// Activate the service worker and clean up old caches
+self.addEventListener('activate', event => {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => {
+                    if (!cacheWhitelist.includes(cacheName)) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
