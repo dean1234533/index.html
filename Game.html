@@ -23,11 +23,14 @@
   <meta property="og:type" content="website">
     
   <link rel="canonical" href="https://dbworkouts.co.uk/Game.html/" />
-  <link rel="manifest" href="manifest.json">
+  
 
 
     <style>
-    * {
+  
+
+   
+   * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -581,10 +584,19 @@ body {
     </div>
 </footer>
 <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('pwabuilder-sw.js')
+          .then(registration => {
+            console.log('Service Worker registered:', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
     }
   </script>
+  
   
 </body>
 
