@@ -36,49 +36,19 @@
 
     }
     
-    .navbar {
-    background-color: #f8f9fa; /* Light background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-/* Navbar Brand Styles */
-.navbar-brand img {
-    max-width: 150px; /* Limit logo size */
-    height: auto; /* Maintain aspect ratio */
+.side-image {
+    width: 40px; /* Keep the image size consistent */
+    margin: 0 10px; /* Space between the images and the title */
+    font-size: calc(1.5rem + 1vw); /* Responsive font size */
 }
 
-/* Navbar Link Styles */
-.nav-link {
-    font-size: 1rem; /* Standard font size */
-    padding: 10px 15px; /* Padding for touch targets */
-    color: #b30018; /* Set the color for links */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.nav-link:hover {
-    color: #800000; /* Darker shade on hover for links */
-}
-
-/* Navbar Toggler Styles */
-.navbar-toggler {
-    border: none; /* Remove default border */
-    background-color: rgba(128, 128, 128, 0.6); /* Semi-transparent background for toggler */
-}
-
-/* Dropdown Menu Styles */
-.dropdown-menu {
-    background-color: #f8f9fa; /* Light background for dropdown */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
-}
-
-.dropdown-item {
-    font-size: 1rem; /* Standard font size for dropdown items */
-    color: #b30018; /* Set color for dropdown items */
-}
-
-.dropdown-item:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Background change on hover */
-}
 
 
     
@@ -99,20 +69,7 @@
     background-attachment: fixed;
     }
 
-.navbar{width: 80vw;}
 
-    .navbar-toggler{background-color: rgba(128, 128, 128, 0.564);}
-
-    .nav-item{display: flex; margin: 10px;justify-content: center;align-items: center;text-align: center;}
- 
-    .navbar a {
-    font-size: 1.2rem;
-    padding: 10px 15px;
-}
-
-.navbar-brand {
-    width: 200px;
-}
 
 .container{width: fixed;}
 
@@ -126,7 +83,9 @@
         padding: 20px;
         max-width: 600px;
         width: 100%;
-        
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     }
     
     button {
@@ -225,6 +184,11 @@
             font-size: 14px;
         }
     
+        .side-image {
+        width: 30px; /* Adjust size for smaller screens */
+    }
+}
+
         #diceImage {
             width: 80px;/* Smaller width for mobile */
             width: 100px; /* Set your desired width */
@@ -241,7 +205,7 @@
         .info-section {
             max-height: 200px; /* Adjust height for smaller screens */
         }
-    }
+    
     
     @media (max-width: 480px) {
         h1 {
@@ -261,6 +225,11 @@
             font-size: 12px; /* Smaller font size for buttons */
         }
     
+        .side-image {
+        width: 30px; /* Adjust size for smaller screens */
+    }
+
+
         #diceImage {
             width: 60px; /* Even smaller width for mobile */
             width: 100px; /* Set your desired width */
@@ -278,42 +247,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container"> <!-- Use container for fixed width -->
-            <a class="navbar-brand" href="#">
-                <img src="/images/IMG_4357.PNG" alt="logo" id="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Blog.html">Active Living Guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Blog page 4.html">Park vs Park</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Blog page 5.html">Park & Home Workout Guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/summer glute workout guide.html">Glute Workout Guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Blog page 6.html">Workout Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Blog page 7.html">Nutrition Guide</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+   
     <br>
 
 
@@ -505,6 +439,42 @@
             }
         }
     </script>
+
+
+<footer class="footer">
+    <div class="footer-links">
+
+     
+
+
+      <a href="https:/dbworkouts.co.uk" target="_blank">Website
+        <img src="/images/IMG_4357.PNG" style="color: white"alt="whatsapp logo" width="30">
+      </a> 
+
+
+<a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram
+    <img src="/images/instagram 2.png" style="color: white"alt="instagram logo" width="30">
+  </a>
+   
+
+   
+    
+  
+      
+    
+
+    
+    </div>
+    
+  
+
+        
+
+    <div class="footer-contact">
+       
+    </div>
+</footer>
+
 </body>
 
 </html>
