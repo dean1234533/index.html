@@ -1,4 +1,3 @@
-
 {
   "id": "/dbworkouts",
   "name": "DB Workouts Game",
@@ -21,14 +20,7 @@
     }
   ],
   "description": "DB Workouts transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your daily life. Stay active and motivated while turning mundane moments into fun exercise opportunities!",
-  "categories": [
-    "fitness",
-    "games",
-    "health",
-    "lifestyle",
-    "social",
-    "sports"
-  ],
+  "categories": ["fitness", "games", "health", "lifestyle", "social", "sports"],
   "screenshots": [
     {
       "src": "/screenshots/screen1.png",
@@ -44,5 +36,80 @@
   "launch_handler": {
     "client_mode": "navigate-existing"
   },
-  "display_override": ["window-controls-overlay", "standalone"]
+  "display_override": ["window-controls-overlay", "standalone"],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "lang": "en",
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Start Workout",
+      "short_name": "Workout",
+      "description": "Start a new workout",
+      "url": "/workout",
+      "icons": [{ "src": "/images/workout-icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Roll Dice",
+      "short_name": "Dice",
+      "description": "Roll dice for random workout",
+      "url": "/roll-dice",
+      "icons": [{ "src": "/images/dice-icon.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.dbworkouts",
+      "id": "com.example.dbworkouts"
+    }
+  ],
+  "scope": "/",
+  "scope_extensions": [
+    {
+      "origin": "https://yourdomain.com"
+    }
+  ],
+  "gcm_sender_id": "YOUR_SENDER_ID",
+  "gcm_user_visible_only": true,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "file_handlers": [
+    {
+      "action": "/open-workout",
+      "accept": {
+        "application/json": [".workout", ".dbw"]
+      },
+      "name": "DB Workout File"
+    }
+  ],
+  "handle_links": {
+    "urls": [
+      { "origin": "https://yourdomain.com" },
+      { "origin": "https://www.yourdomain.com" }
+    ]
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+dbworkout",
+      "url": "/handle-protocol?workout=%s"
+    }
+  ],
+  "share_target": {
+    "action": "/share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "workout",
+          "accept": ["application/json", ".workout", ".dbw"]
+        }
+      ]
+    }
+  }
 }
