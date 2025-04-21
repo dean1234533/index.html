@@ -1,11 +1,6 @@
-"id": "/dbworkouts",
-"display_override": ["window-controls-overlay", "standalone"]
-"launch_handler": {
-  "client_mode": "navigate-existing"
-},
-
 
 {
+  "id": "/dbworkouts",
   "name": "DB Workouts Game",
   "short_name": "DBWorkouts",
   "start_url": "/",
@@ -24,9 +19,8 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-    
   ],
-  "description": "Reping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.",
+  "description": "DB Workouts transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your daily life. Stay active and motivated while turning mundane moments into fun exercise opportunities!",
   "categories": [
     "fitness",
     "games",
@@ -35,21 +29,20 @@
     "social",
     "sports"
   ],
-
-
-"screenshots": [
-  {
-    "src": "/screenshots/screen1.png",
-    "sizes": "640x480",
-    "type": "image/png"
+  "screenshots": [
+    {
+      "src": "/screenshots/screen1.png",
+      "sizes": "640x480",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/screen2.png",
+      "sizes": "640x480",
+      "type": "image/png"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
   },
-  {
-    "src": "/screenshots/screen2.png",
-    "sizes": "640x480",
-    "type": "image/png"
-  }
-]
+  "display_override": ["window-controls-overlay", "standalone"]
 }
-
-
-  
