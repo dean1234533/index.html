@@ -92,7 +92,7 @@
         flex-direction: column;
         min-height: 100vh;
         padding: 20px;
-        background-image: url("../web page 2.html/pics/IMG_4678 2.JPG");
+        background-image: url("/images/IMG_4678 2.JPG");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -318,10 +318,10 @@
 
 
     <div class="app-container">
-        <h1><img src="../web page 2.html/pics/IMG_4676-removebg-preview.png"style="margin-bottom: -10px; start; width: 40px;">Everyday Beast Mode<img src="../web page 2.html/pics/photo-output-removebg-preview.png"style="margin-bottom: -10px; end; width: 40px;"></h1>
+        <h1><img src="/images/IMG_4676-removebg-preview.png"style="margin-bottom: -10px; start; width: 40px;">Everyday Beast Mode<img src="/images/photo-output-removebg-preview.png"style="margin-bottom: -10px; end; width: 40px;"></h1>
         <div class="dice-container">
             <button id="rollButton">Roll the Dice!</button>
-            <img id="diceImage" src="../web page 2.html/pics/IMG_4675.PNG"style alt="Dice Image"style="display: block; margin: 15px auto;"/> <!-- Initial image -->
+            <img id="diceImage" src="/images/IMG_4675.PNG"style alt="Dice Image"style="display: block; margin: 15px auto;"/> <!-- Initial image -->
             <h3 id="totalReps">Total Reps: 0</h3>
             <button id="resetButton">Reset</button>
         </div>
@@ -469,17 +469,17 @@
             totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
 
             // Update the dice image's src with the roll value
-            diceImage.src = `../web page 2.html/pics/IMG_4675_${roll}.PNG`; // Ensure to have corresponding images for each roll value
+            diceImage.src = `/images/IMG_4675_${roll}.PNG`; // Ensure to have corresponding images for each roll value
 
             // GSAP animation for the dice image
-            gsap.fromTo(diceImage.src = `../web page 2.html/pics/IMG_4675.PNG`, { scale: 1.2 }, { scale: 1, duration: 0.2, yoyo: true, repeat: 1 });
+            gsap.fromTo(diceImage.src = `/images/IMG_4675.PNG`, { scale: 1.2 }, { scale: 1, duration: 0.2, yoyo: true, repeat: 1 });
         });
 
         // Function to reset the reps
         resetButton.addEventListener('click', () => {
             totalReps = 0;
             totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
-            diceImage.src = "../web page 2.html/pics/IMG_4675.PNG"; // Reset to the initial image
+            diceImage.src = "/images/IMG_4675.PNG"; // Reset to the initial image
         });
 
         // Function to get a random challenge
