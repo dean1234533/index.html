@@ -69,6 +69,54 @@
     background-attachment: fixed;
     }
 
+    * {
+    box-sizing: border-box; /* Ensure padding and margins don't affect element width */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add some padding around content */
+}
+
+.title {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 100%;
+    font-size: 3vw; /* Responsive font size */
+    margin: 20px 0; /* Add vertical spacing */
+}
+
+.side-image {
+    width: 40px; /* Fixed size for images */
+    margin: 0 10px; /* Space between images and title */
+}
+
+.dice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements in the dice container */
+}
+
+.action-button {
+    padding: 10px 20px; /* Add padding to buttons */
+    font-size: 1.5rem; /* Responsive font size for buttons */
+    margin: 10px; /* Space around buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.dice-image {
+    display: block;
+    margin: 15px auto; /* Center the dice image */
+    width: 60px; /* Fixed width for the dice image */
+}
 
 
 .container{width: fixed;}
@@ -175,7 +223,7 @@
         color: white;
     }
 
-    
+    #challengeInfo{width: 100%;}
     
     /* Responsive Styles */
     @media (max-width: 768px) {
@@ -188,6 +236,22 @@
         width: 30px; /* Adjust size for smaller screens */
     }
 }
+.side-image {
+        width: 30px; /* Smaller image size for smaller screens */
+    }
+    
+    .title {
+        font-size: 4vw; /* Larger font size for small screens */
+    }
+
+    .action-button {
+        font-size: 1.2rem; /* Smaller button text */
+        padding: 8px 16px; /* Adjust padding */
+    }
+
+    .dice-image {
+        width: 50px; /* Adjust dice image size for smaller screens */
+    }
 
         #diceImage {
             width: 80px;/* Smaller width for mobile */
