@@ -10,19 +10,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <meta name="description" content="Move More: Your Fitness and Recreation Guide helps you stay active and healthy with simple tips, workouts, and fun ways to move every day.
+    <meta name="description" content="Everyday Beast Mode transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.
     ">
   
   
-    <meta name="keywords" content="East London outdoor fitness, Stratford Park workout locations, Outdoor exercise spaces East London, Personal trainer East London parks, Outdoor gym equipment London parks, East London green spaces for fitness, Stratford Park facilities for exercise, Outdoor workout locations London, London park fitness guide, East London recreation areas">
+    <meta name="keywords" content="Everyday Beast Mode,Fitness game,Home workouts,Active lifestyle,Exercise challenges,Fun fitness activities,Dice workout,Motivational fitness,Healthy living,Interactive exercise,Unique workout routines,Fitness tracker,Outdoor workouts,Home fitness challenges">
     
-    <meta property="og:title" content="Move more: your fitness & Recreation Guide | Outdoor Fitness in East London">
-  <meta property="og:description" content="Move More: Your Fitness and Recreation Guide helps you stay active and healthy with simple tips, workouts, and fun ways to move every day.
+    <meta property="og:title" content="Everyday Beast Mode Game | Outdoor Fitness in East London">
+  <meta property="og:description" content="Everyday Beast Mode transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.
   ">
-  <meta property="og:url" content="https://dbworkouts.co.uk/Blog.html">
+  <meta property="og:url" content="https://dbworkouts.co.uk/Game.html">
   <meta property="og:type" content="website">
     
-  <link rel="canonical" href="https://dbworkouts.co.uk/Blog.html/" />
+  <link rel="canonical" href="https://dbworkouts.co.uk/Game.html/" />
   
 
     <style>
@@ -322,7 +322,7 @@ body {
         <h1 class="title"><img src="/images/IMG_4676-removebg-preview.png" class="side-image";style="margin-bottom: -10px;start width: 40px;">Everyday Beast Mode<img src="/images/photo-output-removebg-preview.png"class="side-image";style="margin-bottom: -10px; end; width: 40px;padding-left:11px;padding-bottom:10px"></h1>
         <div class="dice-container">
             <button id="rollButton">Roll the Dice!</button>
-            <img id="diceImage" src="/images/IMG_4675.PNG"style alt="Dice Image"style="display: block; margin: 15px auto;"/> <!-- Initial image -->
+            <img id="diceImage" src="/images/IMG_4675.PNG" alt="anime woman Image"style="display: block; margin: 15px auto;"/> <!-- Initial image -->
             <h3 id="totalReps">Total Reps: 0</h3>
             <button id="resetButton">Reset</button>
         </div>
@@ -429,39 +429,77 @@ body {
 
         // Array of challenges
         const challenges = [
-            {
-                title: "Hell’s Kitchen Heat",
-                description: `Every time Gordon Ramsay swears<br>Do: Squats based on dice roll.`
-            },
-            {
-                title: "Ad Break Burpees",
-                description: `Every time a YouTube ad comes on<br>Do: Burpees based on dice roll.`
-            },
-            {
-                title: "Delivery Driver Drop Set",
-                description: `Every time you see a food delivery rider<br>Do: Press-Ups based on dice roll.`
-            },
-            {
-                title: "Pothole Pounder",
-                description: `Each pothole you see<br>Do: High Knees per pothole based on dice roll.`
-            },
-            {
-                title: "L Plate Lifter",
-                description: `Every car/bike with an L plate.<br>Do: 12 Sit-Ups based on dice roll.`
-            },
-            {
-                title: "Construction Crusher",
-                description: `Each time you see roadworks<br>Do: Plank Punches each arm based on dice roll.`
-            },
-            {
-                title: "Channel Surfing Dips",
-                description: `Each time you change channels on TV<br>Do: Tricep Dips based on dice roll.`
-            },
-            {
-                title: "Birdwatcher Flutter Kicks",
-                description: `Every time you see a bird<br>Do: Flutter Kicks based on dice roll.`
-            },
-        ];
+    {
+        title: "Hell’s Kitchen Heat",
+        description: `Every time Gordon Ramsay swears<br><br>Do: Squats based on dice roll<br><br>Explanation:<br><ul>
+                       <li>Stand: Feet shoulder-width apart, toes slightly out.</li>
+                       <li>Lower: Bend hips and knees, keeping chest up and back straight.</li>
+                       <li>Depth: Lower until thighs are parallel to the ground.</li>
+                       <li>Rise: Press through heels to stand up.</li>
+                   </ul>`
+    },
+    {
+        title: "Ad Break Burpees",
+        description: `Every time a YouTube ad comes on<br><br>Do: Burpees based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Start: Stand straight, then squat down.</li>
+                       <li>Plank: Kick feet back into a plank position.</li>
+                       <li>Push-Up: Perform a push-up (optional).</li>
+                       <li>Jump: Jump feet back to hands and leap up.</li>
+                   </ul>`
+    },
+    {
+        title: "Delivery Driver Drop Set",
+        description: `Every time you see a food delivery rider<br><br>Do: Press-Ups based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Position: Start in a plank position, hands shoulder-width apart.</li>
+                       <li>Lower: Bend elbows to lower your body, keeping back straight.</li>
+                       <li>Push: Press back up to starting position.</li>
+                   </ul>`
+    },
+    {
+        title: "Pothole Pounder",
+        description: `Each pothole you see<br><br>Do: High Knees per pothole based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Stand: Feet hip-width apart.</li>
+                       <li>Run: Jog in place, driving knees up towards your chest.</li>
+                       <li>Arms: Pump arms to maintain rhythm.</li>
+                       <li>Speed: Increase intensity as you go.</li>
+                   </ul>`
+    },
+    {
+        title: "L Plate Lifter",
+        description: `Every car/bike with an L plate.<br><br>Do: Sit-Ups based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Lie Down: On your back, knees bent, feet flat on the floor.</li>
+                       <li>Hands: Place hands behind your head or crossed on your chest.</li>
+                       <li>Lift: Curl your torso towards your knees.</li>
+                       <li>Lower: Return to starting position.</li>
+                   </ul>`
+    },
+    {
+        title: "Construction Crusher",
+        description: `Each time you see roadworks<br><br>Do: Plank Punches each arm based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Position: Start in a plank position.</li>
+                       <li>Punch: Alternate punching forward with each hand.</li>
+                       <li>Core: Keep your core tight and hips stable.</li>
+                   </ul>`
+    },
+    {
+        title: "Channel Surfing Dips",
+        description: `Each time you change channels on TV<br><br>Do: Tricep Dips based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Sit: On the edge of a bench/chair, hands at your sides.</li>
+                       <li>Lower: Bend elbows to lower your body.</li>
+                       <li>Push: Press back up until arms are straight.</li>
+                       <li>Feet: Keep legs extended or bent for easier variation.</li>
+                   </ul>`
+    },
+    {
+        title: "Birdwatcher Flutter Kicks",
+        description: `Every time you see a bird<br><br>Do: Flutter Kicks based on dice roll.<br><br>Explanation:<br><ul>
+                       <li>Lie Down: On your back, hands under your hips.</li>
+                       <li>Lift: Raise legs off the ground slightly.</li>
+                       <li>Kick: Alternate kicking legs up and down.</li>
+                       <li>Core: Keep your lower back pressed to the floor.</li>
+                   </ul>`
+    },
+];
 
         // Function to roll the dice
         rollButton.addEventListener('click', () => {
@@ -480,7 +518,7 @@ body {
         resetButton.addEventListener('click', () => {
             totalReps = 0;
             totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
-            diceImage.src = "/images/IMG_4675.PNG"; // Reset to the initial image
+            diceImage.src = `/images/IMG_4675_${roll}.PNG`;
         });
 
         // Function to get a random challenge
@@ -491,7 +529,7 @@ body {
             modal.style.display = "block";
 
             // GSAP animation for modal
-            gsap.fromTo(modal, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+            gsap.fromTo(diceImage, { scale: 1.2 }, { scale: 1, duration: 0.2, yoyo: true, repeat: 1 });
         });
 
         // Close the modal when the user clicks on <span> (x)
@@ -515,7 +553,7 @@ body {
 
 
       <a href="https:/dbworkouts.co.uk" target="_blank">Website
-        <img src="/images/IMG_4357.PNG" style="color: white"alt="whatsapp logo" width="30">
+        <img src="/images/IMG_4357.PNG" style="color: white"alt="Website logo" width="60">
       </a> 
 
 
