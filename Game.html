@@ -361,13 +361,25 @@ body {
             <h3 id="totalReps">Total Reps: 0</h3>
             <button id="resetButton">Reset</button>
         </div>
-
+       
         <button id="challengeButton">Get a Challenge!</button>
-
+ <button id="customizeAvatar">Customize Avatar</button>
         <div class="info-section" id="challengeInfo">
             <!-- Challenge information will be displayed here -->
         </div>
-
+        <div class="missions-container">
+            <h2>Daily Missions</h2>
+            <ul id="missionsList">
+                <!-- Populate with daily missions -->
+            </ul>
+        </div>
+        
+        <div class="leaderboard-container">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboardList">
+                <!-- Populate with leaderboard data -->
+            </ul>
+        </div>
         <div class="info-section" id="gameInfo">
             <h2 class="heading-underline">Welcome to the Game</h2>
 
@@ -614,7 +626,31 @@ body {
        
     </div>
 </footer>
+<script>
 
+let userLevel = 1;
+let userXP = 0;
+
+function updateProgress(points) {
+    userXP += points;
+    // Logic to check level up
+}
+
+
+
+// Function to fetch steps from Google Fit (pseudo code)
+function fetchSteps() {
+    // Use Google Fit API to fetch steps
+}
+
+
+
+
+
+
+
+
+</script>
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -641,6 +677,32 @@ body {
           .catch(err => console.error('Service Worker registration failed:', err));
       });
     }
+
+
+
+    function startMiniGame() {
+    // Logic for mini-game (e.g., jump to dodge)
+}
+
+function displayLeaderboard() {
+    // Fetch and display leaderboard data
+}
+
+const missions = [
+    { name: "Complete 50 Reps", reward: "Unlock a new outfit" },
+    // Add more missions
+];
+
+function checkMissions() {
+    // Logic to check if missions are completed
+}
+
+function provideFeedback() {
+    // Play sound or show animation on task completion
+}
+
+
+
     </script>
   
 </body>
