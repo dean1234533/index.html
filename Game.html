@@ -55,7 +55,30 @@
 }
 
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: small;
+    width: 100%;
+}
 
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 2vw, 20px);
+    color: #e3dede;
+}
+
+.footer-links a {
+    color: rgb(234, 239, 231);
+    text-decoration: none;
+    font-weight: bold;
+}
     
     body {
         font-family: 'Arial', sans-serif;
@@ -230,7 +253,15 @@ body {
             padding: 8px 16px;
             font-size: 14px;
         }
+        .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
     
+    .footer-links {
+        justify-content: center;
+    }
         .side-image {
         width: 45px; /* Smaller size for smaller screens */
     padding-left: 11px;
