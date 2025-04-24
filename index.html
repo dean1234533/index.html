@@ -1,1257 +1,1523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repping It: Interactive Fitness Challenge | Gamified Workout Experience</title>
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DB’s Workouts | Outdoor Personal Training in East London</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <meta name="description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.
-    ">
-  
-  
-    <meta name="keywords" content="Repping It,Fitness game,Home workouts,Active lifestyle,Exercise challenges,Fun fitness activities,Dice workout,Motivational fitness,Healthy living,Interactive exercise,Unique workout routines,Fitness tracker,Outdoor workouts,Home fitness challenges">
     
-    <meta property="og:title" content="Repping It: Interactive Fitness Challenge | Gamified Workout Experience">
-  <meta property="og:description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.
-  ">
-  <meta property="og:url" content="https://dbworkouts.co.uk/Game.html">
-  <meta property="og:type" content="website">
+   
+    <meta name="description" content="DB’s Workouts offers personalized outdoor personal training in East London, helping you build strength, burn fat, and boost your confidence through focused fitness coaching.">
+    <meta name="keywords" content="Outdoor personal training East London,Strength building coach,Fat loss training,Confidence boosting fitness,Personalized fitness coaching,East London personal trainer,Outdoor workouts, Fitness coaching in East London">
+    <meta name="author" content="Dean Burt">
+    <meta name="robots" content="index, follow">
     
-  <link rel="canonical" href="https://dbworkouts.co.uk/Game.html/" />
-  <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <meta property="og:title" content="DB's Workouts – Personalized Outdoor Training in East London">
+    <meta property="og:description" content="Get Fit Anywhere with Mobile Personal Training – Home & Park Sessions Available
+    Enjoy personalized fitness training in the comfort of your home or the fresh air of your local park. Our mobile personal training service brings expert coaching, customized workout plans, and real results—directly to you. Whether you’re aiming for weight loss, muscle building, or improved overall health, we make fitness convenient, flexible, and effective. No gym required—just your goals, your schedule, and a trainer who comes to you.">
+    <meta property="og:image" content="images/IMG_4357.jpg">
+    <meta property="og:url" content="https://dbworkouts.co.uk/index.html/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DB's Workouts – Personalized Outdoor Training in East London">
+    <meta name="twitter:description" content="Transform your body and mindset with Dean's personalized outdoor personal training sessions.">
+    <meta name="twitter:image" content="images/IMG_4357.jpg">
+    <meta property="og:type" content="video" />
+   
+    <link rel="icon" href="images/photo-output 5.PNG" type="image/png">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    
+    <link rel="canonical" href="https://dbworkouts.co.uk/index.html/" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+   
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       
-            .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
+
+
+
+
+
+
+
+
+        
+.video-container {
+  max-width: 100%;
+  aspect-ratio: 16 / 9; /* Adjust based on your video's natural aspect ratio */
+  overflow: hidden;
+}
+
+
+.fade-wrapper > * {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+#myButton {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #c33e3e;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
     }
+    
+      
+    
+    .orange-cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    background-color:#c33e3e ;
+}
+    
+   
 
 
-        }
-        .controls {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 20px; /* Space between controls */
-}.card-front {
-    background-image: url('IMG_4715.JPG'); /* Add background image */
-    background-size: cover; /* Cover the entire card */
-    background-position: center; /* Center the image */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' depending on your goal */
+}
+
+.round-image{width: 150px;height: 150px;object-fit: cover;border-radius: 100%;}
+.section-3d {
+   background-color: white;
+    padding: 0px;
+   
+  }
+
+     
+              
+              section {
+    color: rgb(247, 244, 244);
+    background-image: url("images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    font-size: 18px;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(230, 224, 224);
-    
-}
-
-
- a{
     text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    
-    color: rgb(247, 243, 243);
+    padding-bottom: 0px; /* Prevent content overlap with sticky button */
+position: relative;
+
+
 }
 
-.footer img {
-    margin-left: 5px; /* Add space between text and image */
+/* Typography */
+h1 {
+    font-size: clamp(24px, 5vw, 48px);
 }
-        body {
-            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            position: relative;
-            overflow-x: hidden;
-        }
-.h3{text-align: center;justify-content: center;align-items: center;}
-        .container {
-            max-width: 1200px;
-            text-align: center;
-            
-            position: relative;
-            z-index: 1;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-        .card-front, .card-back {
-    position: absolute;
-    width: 100%;
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px);
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px);
+}
+
+p, ol, ul {
+    font-size: clamp(14px, 2.5vw, 20px);
+    line-height: 1.6;
+    
+}
+
+span {
+    color: #b30018;
+}
+
+/* Container and Layout */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.my-container {
+    margin-top: 24px;
+}
+
+.centered-element {
+    text-align: center;
+}
+
+/* Navigation */
+.navbar-brand {
+    width: 200px;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+.navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav-item {
+    text-align: right;
+    font-size: 18px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Background and Sections */
+
+
+.black-section {
+    background-color: #0e0d0d;
+    border: solid rgb(7, 7, 7);
+}
+
+.text-section {
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+}
+
+.custom-border {
+    background-color: black;
     height: 100%;
-    backface-visibility: hidden;
-    border-radius: 15px;
+    border: solid white;
+}
+
+/* Elements and Components */
+.heading-underline {
+    display: inline-block;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+/* Remove the following code */
+
+
+.btn {
+    font-size: larger;
+}
+
+/* Testimonials and Custom Boxes */
+.testimonial-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    background: #efeeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-box {
+    background: rgb(11, 10, 10);
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid red;
+    box-shadow: inset 0 0 5px black, 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.border1 {
+    border: #382d2d;
+    background-color: #f5f0f0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.full-width-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.me {
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic2 {
+    width: 200px;
+    border-radius: 40%;
+    text-align: center;
+}
+
+.pic3 {
+    width: 200px;
+    float: right;
+}
+
+.start {
+    border-radius: 100%;
+}
+
+/* Carousel */
+.carousel-container {
+    width: 100%;
+    max-width: 100%;
+    height: 750px;
+    margin: 0 auto;
     overflow: hidden;
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center text *
-    align-items: flex-start; /* Align items to the top */
-    padding-top: 20px; /* Add padding to move text down from the top */
-}
-   
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            background: linear-gradient(to right, #fff, #ccc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .card-back h3 {
-    font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive heading size */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
 }
 
-.card-back p {
-    font-size: clamp(0.9rem, 2.5vw, 1.5rem); /* Responsive paragraph size */
+.carousel {
+    flex: 1;
+   overflow: hidden; /* Prevents content from shifting */
 }
 
-.card-front .value {
-    font-size: clamp(2rem, 10vw, 4rem); /* Responsive value size */
-display: none;
+ol {
+  display: block;
+  width: 1100%;
+  max-width: 700px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 7rem;
+  box-sizing: border-box;
 }
-        .subtitle {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 40px;
-            font-style: italic;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
 
-        .cards-container {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-bottom: 40px;
-            
-           
-        }
+ol li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.carousel-item {
+    max-height: auto;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    min-height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    min-height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+}
+
+/* Tables */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(8, 8, 8);
+    color: rgb(249, 245, 245);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+/* Lists */
+.list {
+    list-style-type: square;
+    list-style: none;
+}
+
+.no-numbers {
+    list-style-type: disc;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: small;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ccc;
+}
+
+.footer-links a {
+    color: rgb(228, 228, 234);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-link {
+    font-size: 15px;
+    color: #e6e3e3;
+}
+
+/* Helper Classes */
+.discount-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+.fa-brands {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+hr {
+    margin-top: 60px;
+}
+
+/* Layout Classes */
+.p1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.p2 {
+    text-align: center;
+    margin: 0;
+}
+
+.s1 {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    width: auto;
+}
+
+.ws {
+    display: flex;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    background-color: white;
+}
+
+.we {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  table {
+    width: 900px; /* Prevent full width if you want it centered tightly */
+    margin: 0 auto;
+  }
+}
+    
+    .nav-item {
+        margin-left: 50px;
+    }
+    
+    li {
+        max-width: 900px;
+        margin-left: 40px;
+    }
+    ol {
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+
+ol li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+    .me-container {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .desktop-only{display: block;}
+    .mobile-only {
+        display: none;
+  
+    }
+
+    
+
+section {
+    color: rgb(247, 244, 244);
+    background-image: url("/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.black-section{background-color: black;background-image: none;}
+.s1{background-color: rgb(219, 224, 230); color: #0f0e0e;border-radius: 10px; text-align-last: left;margin-left: 30px;}  
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .nav-item {
+        margin-left: 20px;font-size: medium;
+    }
+  
+
+
+
+    .testimonial-container {
+        width: 80%;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+.me {
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .me-container {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-right: 50px;
+    }
+  
+.ws {
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    margin: 0;
+    background-color: white;
+    
+}
+.mobile-only{display: none;}}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: contents;
+    }
+    
+    .nav-item {
+        margin-left: 0;
+    }
+    
+    li {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    .me-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
        
-        .card-stack {
-            width: 100%;
-            display: none;
-        }
+        
+        
+    }
+    .me {
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: -23px;
 
-        .card-stack.active {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .card {
-            width: 280px;
-            height: 400px;
-            perspective: 1500px;
-            cursor: pointer;
-            position: relative;
-            margin-bottom: 20px;
-            
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            transform: translateZ(-8px);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            z-index: -1;
-        }
-
-        .card-inner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.5s;
-        }
-
-        .card-inner.flipped {
-            transform: rotateY(180deg);
-        }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        .card-front {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .card-symbol {
-            text-align: center;
-        }
-
-        .symbol {
-            font-size: 100px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .symbol.red {
-            color: #e74c3c;
-        }
-
-        .symbol.black {
-            color: #2c3e50;
-        }
-
-        .value {
-            font-size: 80px;
-            font-weight: bold;
-        }
-
-        .card-back {
-            background: linear-gradient(45deg, #222, #333);
-            color: white;
-            transform: rotateY(180deg);
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card-back h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .card-back p {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        .controls {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        button {
-            background: rgba(122, 44, 44, 0.15);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            background-color: #b33b2e;
-        }
-
-        button:hover {
-            background: rgba(141, 42, 42, 0.25);
-            transform: translateY(-3px);
-        }
-.controls {
-    margin-top: 30px;
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center controls horizontally */
-    align-items: center; /* Center controls vertically */
-    gap: 20px; /* Space between controls */
+} 
+    .testimonial-container {
+        width: 90%;
+    }
     
-}
-
-/* Media query to ensure controls remain side by side on larger screens */
-        button:active {
-            transform: translateY(1px);
-        }
-
-        select {
-            background: rgba(255, 255, 255, 0.15);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            appearance: none;
-            text-align: center;
-        }
-
-        select:hover {
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        .dice-container {
-            margin-top: 20px;
-            text-align: center;
-            
-        }
-
-        #diceImage {
-            width: 200px;
-            height: 200px;
-            transition: transform 0.5s ease;
-        }
-
-        .rolling {
-            animation: rollDice 0.5s ease forwards;
-        }
-
-        #totalReps {
-            margin-top: 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .card-back h3,
-.card-back p {
-    text-align: center; /* Center text for both heading and paragraph */
-    margin: 0; /* Remove default margins */
-}
-.card-back h3 {
-    font-size: 1.5rem; /* Adjusted for readability on larger screens */
-    margin-bottom: 10px; /* Space below the heading */
-}
-
-.card-back p {
-    font-size: 1rem; /* Adjusted for readability */
-    line-height: 1.4; /* Improved line height for better readability */
-}
-.card-front {
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
-        @keyframes rollDice {
-            0% { transform: rotate(0deg); }
-            50% { transform: rotate(180deg); }
-            100% { transform: rotate(360deg); }
-        }
-        h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive size between 1.5rem and 3rem */
-}
-
-.subtitle {
-    font-size: clamp(1rem, 3vw, 2rem); /* Responsive size between 1rem and 2rem */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px);
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
-}
-
-p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 20px);
-    line-height: 1.6;
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
     
-}
-.card-back h3 {
-    font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive heading size */
-}
-
-.card-back p {
-    font-size: clamp(0.9rem, 2.5vw, 1.5rem); /* Responsive paragraph size */
-}
-
-.card-front .value {
-    font-size: clamp(2rem, 10vw, 4rem); /* Responsive value size */
-}
-        @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Smaller heading for mobile */
+    .carousel-container {
+        height: auto;
+        flex-direction: column;
     }
-    .card {
-        width: 90%; /* Maintain width for mobile */
-        height: 300px; /* Adjust height for mobile */
-    }
-}
-    .subtitle {
-        font-size: 1rem; /* Smaller subtitle */
-    }
-    .card-back h3 {
-        font-size: 1.2rem; /* Smaller heading for mobile */
-    }
-
-    .card-back p {
-        font-size: 0.9rem; /* Smaller paragraph text for mobile */
-    }
-
-    .controls {
-        flex-direction: column; /* Ensure controls stack vertically */
-    }
-
-    button, select {
-        max-width: 90%; /* Allow buttons to take more width on mobile */
-    }
-    .card-back h3 {
-        font-size: 1.2rem; /* Smaller heading for mobile */
-    }
-
-    .card-back p {
-        font-size: 0.9rem; /* Smaller paragraph text for mobile */
-    }
-    .card-back h3,
-.card-back p {
-    text-align: center; /* Center text for both heading and paragraph */
-    margin: 0; /* Remove default margins */
-}
-h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive size between 1.5rem and 3rem */
-}
-
-.subtitle {
-    font-size: clamp(1rem, 3vw, 2rem); /* Responsive size between 1rem and 2rem */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px);
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
-}
-
-p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 20px);
-    line-height: 1.6;
     
-}
-.card-back h3 {
-    font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive heading size */
-}
-
-.card-back p {
-    font-size: clamp(0.9rem, 2.5vw, 1.5rem); /* Responsive paragraph size */
-}
-
-.card-front .value {
-    font-size: clamp(2rem, 10vw, 4rem); /* Responsive value size */
-}
-.card-front {
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
-    .controls {
-    margin-top: 30px;
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center controls horizontally */
-    align-items: center; /* Center controls vertically */
-    gap: 20px; /* Space between controls */
-}
-#diceImage {
-            width: 200px;
-            height: 200px;
-            transition: transform 0.5s ease;
-        }
-/* Ensure controls remain side by side on larger screens */
-@media (min-width: 769px) {
-    .controls {
-        flex-direction: row; /* Arrange controls in a row */
+    table {
+        height: auto;
     }
-
-    card-back h3 {
-        font-size: 1.2rem; /* Smaller heading for mobile */
-    }
-
-    .card-back p {
-        font-size: 0.9rem; /* Smaller paragraph text for mobile */
-    }
-}
-#diceImage {
-            width: 200px;
-            height: 200px;
-            transition: transform 0.5s ease;
-        }
-.card-front {
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
-h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive size between 1.5rem and 3rem */
-}
-
-.subtitle {
-    font-size: clamp(1rem, 3vw, 2rem); /* Responsive size between 1rem and 2rem */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px);
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
-}
-
-p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 20px);
-    line-height: 1.6;
     
-}
-.card-back h3 {
-    font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive heading size */
-}
-
-.card-back p {
-    font-size: clamp(0.9rem, 2.5vw, 1.5rem); /* Responsive paragraph size */
-}
-
-.card-front .value {
-    font-size: clamp(2rem, 10vw, 4rem); /* Responsive value size */
-}
-@media (max-width: 1024px) { /* Styles for tablets */
-    h1 {
-        font-size: 2.2rem; /* Adjust heading size for tablets */
-    }
-    .card-back h3,
-.card-back p {
-    text-align: center; /* Center text for both heading and paragraph */
-    margin: 0; /* Remove default margins */
-}
-.card-back h3 {
-        font-size: 1.4rem; /* Adjusted heading size for tablets */
-    }
-    h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive size between 1.5rem and 3rem */
-}
-
-.subtitle {
-    font-size: clamp(1rem, 3vw, 2rem); /* Responsive size between 1rem and 2rem */
-}
-
-h2 {
-    font-size: clamp(20px, 4vw, 36px);
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
-}
-
-p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 20px);
-    line-height: 1.6;
-    
-}
-    .card-back p {
-        font-size: 1rem; /* Adjusted paragraph size for tablets */
-    }
-}
-.card-front {
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
-    .subtitle {
-        font-size: 1.1rem; /* Adjust subtitle size for tablets */
+    th, td {
+        padding: 8px;
     }
 
-    .card {
-        width: 80%; /* Adjust width for tablets */
-    }
+.round-image{width: 100px;height: 100px;object-fit: cover;border-radius: 100%;}
+section {
+    color: rgb(247, 244, 244);
+   background-image: none;
+background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+    ;
+} 
+.PT{padding-bottom: 15px;}     
+.centered-element {
+    text-align: center;display: flex;justify-content: center;align-items: center;
+}
+.ws{color:black; background-color: rgba(249, 245, 245, 0.939);display: inline-block;justify-content: center;align-items: center;text-align: center;
 
-    .controls {
-        flex-direction: row; /* Allow controls to be side by side on tablets */
-        justify-content: center; /* Center controls */
-    }
-    .card {
-        width: 80%; /* Adjust width for tablets */
-        height: 350px; /* Adjust height for tablets */
-    }
-   
+}
+ 
+.white-section{background-color: none;
+    background-image: url("/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}     
+    .carousel {
+  height: 250px; /* Set to match your tallest image */
+  overflow: hidden; /* Prevents content from shifting */
+}
+}
+        </style>
+      
+      
+</head> 
 
-h2 {
-    font-size: clamp(20px, 4vw, 36px);
-}
-
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
-}
-
-p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 20px);
-    line-height: 1.6;
-    
-}
-    button, select {
-        max-width: 200px; /* Limit button width on tablets */
-    }
-    .card-back h3 {
-        font-size: 1.2rem; /* Adjusted heading size for tablets */
-    }
-    #diceImage {
-            width: 200px;
-            height: 200px;
-            transition: transform 0.5s ease;
-        }
-    .card-back p {
-        font-size: 1rem; /* Adjusted paragraph size for tablets */
-    }
-    h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive size between 1.5rem and 3rem */
-}
-.card-back h3 {
-    font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive heading size */
-}
-
-.card-back p {
-    font-size: clamp(0.9rem, 2.5vw, 1.5rem); /* Responsive paragraph size */
-}
-
-.card-front .value {
-    font-size: clamp(2rem, 10vw, 4rem); /* Responsive value size */
-}
-.subtitle {
-    font-size: clamp(1rem, 3vw, 2rem); /* Responsive size between 1rem and 2rem */
-}
-    </style>
-</head>
 <body>
+  <section class="black-section">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
    
-    <div class="container">
-        
-        
-        <h1>Repping It</h1>
-        
-        
-        <div class="controls">
-            
-            <button id="shuffle-btn">Shuffle</button>
-            <button id="roll-dice-btn">Roll Dice</button>
-            <button id="reset-dice-btn">Reset Dice</button>
-            <button id="tally-btn">Tally Counter</button>
-            <button id="reset-tally-btn">Reset Tally</button>
-           
-        </div>
 
-        <div class="dice-container">
-            <img id="diceImage" src="IMG_4702.PNG" alt="Dice" />
-            <p id="totalReps">Total Reps: 0</p>
-        </div>
+  
+  
+      <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Content here -->
+      </div>
+      <div class="col-md-6">
+        <!-- Content here -->
+      </div>
+    </div>
+  </div>   
 
-        <p id="tallyCountDisplay">Tally Count: 0</p> <!-- Tally Count Display -->
 
-        
-        <div class="cards-container">
-            <!-- Stack 1 - Fitness Challenges -->
-            <div class="card-stack" id="stack1">
-                <div class="card" id="card1">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">1</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Hell's Kitchen Heat</h3>
-                            <p> <br>Every time Gordon Ramsay swears<br><br>Do: Squats based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card2">
-                    <div class="card-inner">
-                        <div class="card-front";>
-                            <div class="card-symbol">
-                               
-                                <span class="value"style="color: black;">2</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Every Siren Counts</h3>
-                            <p><br>Every time you hear a siren<br><br>Do: Jumping Jacks based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card3">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">3</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Bark and Burn</h3>
-                            <p><br>Each time you see a dog<br><br>Do: Lunges based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card4">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value"style="color: black;">4</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Text to Flex</h3>
-                            <p><br> Every time you receive a text<br><br>Do: Plank for seconds based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-                
-                </select>
-            <!-- Stack 2 - Home Workout -->
-            <div class="card-stack" id="stack2">
-                <div class="card" id="card5">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                                
-                                <span class="value">1</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Laugh Out Loud</h3>
-                            <p><br> Every time you hear a laugh<br><br>Do: Sit-ups based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card6">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value">2</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Call to Action</h3>
-                            <p><br>Every time the phone rings<br><br>Do: High knees based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card7">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">3</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>YouTube Ad App</h3>Every time a new song starts
-                            <p><br>Every time YouTube ad appears<br><br>Do: Wall sits for seconds based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card8">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value">4</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Tweet and Tone</h3>
-                            <p><br>Every time you see a bird<br><br>Do: Burpees based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-               
-               
-                
-                
-            <!-- Stack 3 - Office Workout -->
-            <div class="card-stack" id="stack3">
-                <div class="card" id="card9">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">1</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Inbox Intervals</h3>
-                            <p><br>Every email notification<br><br>Do: Chair dips based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card10">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value">2</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Every Check In</h3>
-                            <p><br> Every time you check your phone"<br><br>Do: Calf raises based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card11">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">3</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Sip & Sweat</h3>
-                            <p><br>Every coffee break<br><br>Do: Desk push-ups based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card12">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value">4</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Rise and Shine</h3>
-                            <p><br>Every time you stand up<br><br>Do: Squats based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Stack 4 - TV Workout -->
-            <div class="card-stack" id="stack4">
-                <div class="card" id="card13">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">1</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>King of Spades</h3>
-                            <p><br> For every snack you grab<br><br>Do: Mountain climbers based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card14">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                               
-                                <span class="value">2</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3></h3>
-                            <p><br>Every time a character changes outfits<br><br>Do: Jumping jacks based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card15">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">3</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Galactic Gains</h3>
-                            <p><br>Every time you see a light saber in starwars<br><br>Do: Bicycle crunches based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card16">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                               
-                                <span class="value">4</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Showtime Sweat</h3>
-                            <p><br>For every new show that comes to netflix<br><br>Do: Push-ups based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Stack 5 - Study Break Workout -->
-            <div class="card-stack" id="stack5">
-                <div class="card" id="card17">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">4</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Delivery Driver Drop Set</h3>
-                            <p><br>Every time you see a food delivery rider<br><br>Do: Arm circles based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card18">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value">5</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Pothole Pounder</h3>
-                            <p><br>Each pothole you see<br><br>Do: Stretches based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card19">
-                    <div class="card-inner">
-                        <div class="card-front"style="background-color: #b33b2e;">
-                            <div class="card-symbol">
-                               
-                                <span class="value">6</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>L Plate Lifter</h3>
-                            <p><br>Every car/bike with a L plate<br><br>Do: Toe touches based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card20">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-symbol">
-                                
-                                <span class="value">7</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Construction Crusher</h3>
-                            <p><br>Each time you see roadworks<br><br>Do: Plank seconds based on dice roll.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        
 
-              </a> 
-              <div class="bottom-controls controls" style="margin-bottom: 35px;">
-                <button id="game-rules-btn">Game Rules</button> <!-- Game Rules Button -->
-                <select id="stack-select">
-                    <option value="0">Select Stack</option>
-                    <option value="1">Fitness Challenges</option>
-                    <option value="2">Home Workout</option>
-                    <option value="3">Office Workout</option>
-                    <option value="4">TV Workout</option>
-                    <option value="5">Outdoor Workout</option>
-                </select>
-                <select id="difficulty-select">
-                    <option value="low">Low (2, 4, 6, 8, 10, 12)</option>
-                    <option value="medium">Medium (4, 8, 12, 16, 20, 24)</option>
-                    <option value="high">High (5, 10, 15, 20, 25, 30)</option>
-                </select>
-                <a href="https://dbworkouts.co.uk/index.html">Website:
-                    <img src="photo-output 7.PNG" style="color: white"alt="Website logo" width="30">
-                
-            </div>
+  
+
     
-            </div>
-           
-            
-                 
-            
-            
-                  
-            
-               
-            
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const shuffleBtn = document.getElementById('shuffle-btn');
-            const rollDiceBtn = document.getElementById('roll-dice-btn');
-            const resetDiceBtn = document.getElementById('reset-dice-btn');
-            const stackSelect = document.getElementById('stack-select');
-            const diceImage = document.getElementById('diceImage');
-            const totalRepsDisplay = document.getElementById('totalReps');
-            const tallyCountDisplay = document.getElementById('tallyCountDisplay'); // Tally Count Display Element
-            const cards = document.querySelectorAll('.card-inner');
 
-            let totalReps = 0;
-            let tallyCount = 0;
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="/images/IMG_4357.PNG" alt="Description" width="150" height="150" class="d-inline-block align-text-top">
+          
+      </a>
+      <!-- Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a href="/index.html" style="color: #b30018;">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/pricing.html" style="color:#b30018">Pricing</a>
+                  <li class="nav-item">
+                    <a href="/about.html" style="color:#b30018">About</a>
+                    <li class="nav-item">
+                    <a href="/Blog.html" style="color:#b30018">Blog</a>
+          </ul>
+      </div>
+  </div>
+</nav>
 
-            // Add the ability to flip cards when clicked
-            cards.forEach(card => {
-                card.addEventListener('click', () => {
-                    card.classList.toggle('flipped');
-                });
-            });
 
-            // Show the selected card stack
-            stackSelect.addEventListener('change', (event) => {
-                const selectedStack = event.target.value;
-                
-                // Hide all stacks
-                const stacks = document.querySelectorAll('.card-stack');
-                stacks.forEach(stack => {
-                    stack.style.display = 'none';
-                });
-                
-                // Show the selected stack
-                if (selectedStack !== "0") {
-                    document.getElementById(`stack${selectedStack}`).style.display = 'flex';
-                }
-            });
 
-            // Function to shuffle cards
-            const shuffleCards = () => {
-                const activeStack = document.querySelector('.card-stack[style*="display: flex"]');
-                
-                if (!activeStack) {
-                    alert("Please select a stack first!");
-                    return;
-                }
-                
-                const cards = Array.from(activeStack.querySelectorAll('.card'));
-                
-                // Fisher-Yates shuffle algorithm
-                for (let i = cards.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    activeStack.appendChild(cards[j]); // Move card to the end
-                }
-                
-                // Reset any cards that were flipped
-                cards.forEach(card => {
-                    card.querySelector('.card-inner').classList.remove('flipped');
-                });
-            };
 
-            const rollDice = () => {
-    const difficulty = document.getElementById('difficulty-select').value;
-    let maxRoll;
 
-    // Define the maximum roll based on difficulty
-    switch (difficulty) {
-        case 'low':
-            maxRoll = 12; // Max value for low difficulty
-            break;
-        case 'medium':
-            maxRoll = 24; // Max value for medium difficulty
-            break;
-        case 'high':
-            maxRoll = 30; // Max value for high difficulty
-            break;
-        default:
-            maxRoll = 6; // Default value
-    }
+    
+  <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators (Optional) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+    </div>
 
-    const roll = Math.floor(Math.random() * (maxRoll / 2)) + 1; // Roll based on difficulty
-    totalReps += roll;
-    totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
+    
 
-    diceImage.src = 'IMG_4702.PNG'; // Set dice image to IMG_4702.PNG
 
-    // Add rolling animation
-    diceImage.classList.add('rolling');
-    setTimeout(() => {
-        diceImage.classList.remove('rolling');
-    }, 500);
-};
 
-            // Function to reset the dice
-            const resetDice = () => {
-                totalReps = 0;
-                totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
-                diceImage.src = `IMG_4702.PNG`;
-            };
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+  </div>
+  
+<div class="carousel-container">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
-            // Tally functionality
-            const tallyBtn = document.getElementById('tally-btn');
-            const resetTallyBtn = document.getElementById('reset-tally-btn');
+        <h5 class="fw-bold display-4">IF YOU HAVE <br> A STRONG MIND</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
 
-            // Function to increment the tally
-            const incrementTally = () => {
-                tallyCount++;
-                tallyCountDisplay.textContent = `Tally Count: ${tallyCount}`; // Update display
-            };
-
-            // Function to reset the tally
-            const resetTally = () => {
-                tallyCount = 0;
-                tallyCountDisplay.textContent = `Tally Count: ${tallyCount}`; // Update display
-            };
-
-            // Add event listeners for buttons
-            shuffleBtn.addEventListener('click', shuffleCards);
-            rollDiceBtn.addEventListener('click', rollDice);
-            resetDiceBtn.addEventListener('click', resetDice);
-            tallyBtn.addEventListener('click', incrementTally);
-            resetTallyBtn.addEventListener('click', resetTally);
-            
-            // Initialize the first stack as visible
-            document.getElementById('stack1').style.display = 'flex';
-            stackSelect.value = "1";
-        });
-
-       
- </script>
+        <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
+      </div>
+        
+          
+        
+      </div>
+    </div>
    
-   <div id="gameRulesModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); z-index: 1000; justify-content: center; align-items: center;">
-    <div style="background:rgb(15, 14, 14); padding:20px; border-radius:10px; max-width:600px; margin:auto; position:relative;">
-        <span class="close" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:24px;">&times;</span>
-        <h2>Game Setup</h2>
-       <br>
-       
-        <p>1. Pick Your Daily Scenario (or let fate decide): Use the cards to randomly pick one or more of the following challenges each day.Then roll the dice to get your reps.</p>
-        <p>2. Track Your Reps: Use the in-game tally counter. At the end of the day, add up the total reps.</p>
-        <p>3. Finish Strong: Complete your reps at once or spread them throughout the day.<br> The only rule is — get it done.</p>
-       <br> 
-        
-        <h3>Warm-Up: “Ignite the Engine”</h3>
-        <p>Always warm up first to avoid injuries and get in the zone. </p>
-        <br>
-        
-        
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br>
+
+
+<Clear></Clear>
+
+<div class="desktop-only">
+    <section class="black-section">
+  <h1 class="text-section">Unlock Your Fitness Potential Through Outdoor Training:
+  </section>
+</div>
+  <br><br>
+
+    
+  
+ 
+    
+   
+  <div class="mobile-only">
+    <div class="container">
+        <h1>Personalised Coaching That Transforms Your Body and Mindset in East London</h1>
+    </div>
+</div>
+
+<!-- Trainer Profile Section -->
+<div class="me-container">
+    <div class="desktop-only">
+        <section class="black-section">
+        <img class="me" src="/images/IMG_4997 2.jpg" alt="Personal Trainer Dean">
+    </section>
+    
+    </div>
+</div>
+
+
+    <div class="mobile-only">
+        <section class="ws">
+        <div class="my-container">
+            <div class="centered-element">
+        <img class="me" src="/images/IMG_4997 2.jpg" alt="Personal Trainer Dean">
+<div class="PT">
+                <p class="p2">I'm Dean, a certified mobile personal trainer dedicated to helping you reach your goals.</p>
+        </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+</div></div>
+
 <br>
 
-        <h3>Stretch it Out: “Cooldown Flow”</h3>
+<div class="desktop-only">
+    <section class="black-section">
+    <p>"Seeking a dedicated mobile personal trainer in East London? Meet Dean, a certified professional committed to helping you achieve your fitness goals."</p>
 
-        <br>
-       
-        <p>After completing your reps, cool down and stretch to reduce soreness:</p>
-        
-       
-        
-       
-        <br>
-        
-        <h3>Final Word</h3>
+</section>
+</div>
+  
+<br>
 
+<!-- Free Consultation Section - Mobile -->
+<div class="mobile-only">
+    <h1 class="heading-underline">Free Consultation</h1>
+    <br>
+    
+    <h2>Kickstart your journey with a free session:</h2>
+    <br>
+    
+    <ol class="no-numbers">
+        <li>Schedule: Pick a convenient time.</li>
+        <li>Questionnaire: Share your fitness goals and health info.</li>
+        <li>Consultation: Discuss objectives and assess fitness level.</li>
+        <li>Personalised Plan: Receive a tailored workout strategy.</li>
+        <li>Start Training: Begin your transformation.</li>
+    </ol>
+
+
+   
+    <div class="fade-wrapper">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">   
+          <button id="myButton">Book a Free Consultation</button>
+          </a>    
+          </div>
+
+         
+    
+</div>
+
+<!-- Free Consultation Section - Desktop -->
+<section>
+    <div class="desktop-only">
+        <h1 class="heading-underline">Free Personal Fitness Training Consultation</h1>
+        <br><br>
+        
+        <h2>Ready to kickstart your fitness journey? Book a free consultation with me today!</h2>
         <br>
-        <p>Repping It isn’t just a workout — it’s a lifestyle challenge. You’ll never watch TV, walk to the shop, or scroll through YouTube the same way again. Every moment becomes an opportunity to move, laugh, and get stronger.</p>
-       
+        
+        <div class="ol-container">
+            <ol class="no-numbers">
+                <li>Schedule Your Consultation: Simply reach out and choose a time that works for you.</li>
+                <li>Complete a Quick Questionnaire: Before we meet, fill out a short form to share your fitness goals and any relevant health info.</li>
+                <li>Consultation Meeting: We'll chat about your goals, assess your fitness level, and discuss the best plan for you.</li>
+                <li>Personalised Plan: After our consultation, I'll create a tailored workout plan just for you.</li>
+                <li>Get Started: We'll schedule your first session and begin your transformation!</li>
+            </ol>
+        </div>
+        
+        <section class="black-section">
+        <p>Let's take the first step together—book your free consultation now!</p>
+        
+
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="orange-cta-button ">Book a Free Consultation</a>
+   
+    </section>
     </div>
-</div>  
+</section>
 
-</footer>
-<script>
-    // Get modal element
-const gameRulesModal = document.getElementById('gameRulesModal');
-const gameRulesBtn = document.getElementById('game-rules-btn');
-const closeModal = document.getElementsByClassName('close')[0];
-
-// Open the modal when the Game Rules button is clicked
-gameRulesBtn.onclick = function() {
-    gameRulesModal.style.display = "flex"; // Change to flex for centering
-}
-
-// Close the modal when the close button is clicked
-closeModal.onclick = function() {
-    gameRulesModal.style.display = "none";
-}
-
-// Close the modal when clicking anywhere outside of the modal
-window.onclick = function(event) {
-    if (event.target === gameRulesModal) {
-        gameRulesModal.style.display = "none";
-    }
-}
+<!-- Video Section -->
+ <div class="video-container">
+<section class="video-section">
+    <video  autoplay controls muted loop playsinline  class="background-video">
+        <source src="/images/Video.MP4" type="video/mp4">
+    </video>
+</section>
+</div>
 
 
+  
 
 
-</script>
+<!-- Training Sessions Section -->
+
+    <div class="desktop-only">
+        <section class="black-section">
+        <h1 class="heading-underline">Personal Training Sessions</h1>
+        <br>
+        
+        <p>Each 60-minute session is conducted at a location convenient for you—be it a local park or your home garden within East London—providing flexibility and comfort in your training environment.</p>
+        <br>
+    </section>
+    
+    </div>
+    
+    <div class="mobile-only">
+        <h1 class="heading-underline">Sessions</h1>
+        <br>
+        
+        <p>Each 60-minute session is held at a location that suits you—local park or home garden in East London.</p>
+    </div>
+    
+    <!-- Session Details - Desktop -->
+    <div class="desktop-only">
+        <section>
+            <h3>A personal training (PT) session typically includes:</h3>
+            <br>
+            
+            <div class="ol-container">
+                <ol class="no-numbers">
+                    <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
+                    <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
+                    <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
+                </ol>
+                
+                <p>I will watch your form, structure your workout, and keep you motivated.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Session Details - Mobile -->
+    <div class="mobile-only">
+       
+        <section class="white-section section-embossed">
+        <h3>A personal training (PT) session typically includes:</h3>
+        <br>
+       
+        <div class="ol-container">
+            <ol class="no-numbers">
+                <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
+                <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
+                <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
+            </ol>
+        </section>
+
+
+            <p>I will watch your form, structure your workout, and keep you motivated.</p>
+        </div>
+    </div>
+
+
+<br>
+<div class="desktop-only">
+    <section class="black-section">
+<img src="/images/IMG_8032.jpg" alt="Training session" class="img-fluid">
+
+<!-- Services Section -->
+<div class="desktop-only">
+    <h1 class="heading-underline title1">Personal Training Services</h1>
+    <br>
+</div>
+
+<br>
+
+<!-- Services List - Desktop -->
+<div class="desktop-only">
+    <div class="ol-container">
+        <ol class="no-numbers">
+            <li>Weight Management: Weight Loss, Toning & Sculpting</li>
+            <li>Strength Training: Resistance Training, Muscle Building</li>
+            <li>Performance Enhancement: Mobility, Flexibility, Speed, Strength, Power Development</li>
+            <li>Wellness Coaching: Nutritional Advice & Coaching</li>
+        </ol>
+        <br>
+   
+    </div>
+</div>
+</section>
+</div>
+
+<div class="mobile-only">
+    <section class="white-section section-embossed">
+<img src="/images/IMG_8032.jpg" alt="Training session" class="img-fluid">
+
+<!-- Services List - Mobile -->
+<div class="mobile-only">
+    <h1 class="heading-underline">Services</h1>
+    <br>
+    
+    <div class="ol-container">
+        <ol class="no-numbers">
+            <li>Weight Management: Lose weight, tone, and sculpt.</li>
+            <li>Strength Training: Build muscle and enhance strength.</li>
+            <li>Performance Enhancement: Improve mobility, flexibility, speed, and power.</li>
+            <li>Wellness Coaching: Get nutritional advice and support.</li>
+        </ol>
+    </div>
+</section>
+</div>
+</div>
+
+<h1 class="heading-underline">Client Progress</h1>
+
+<div class="desktop-only">
+<section class="black-section">
+<!-- Image Carousel -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../photo-output.jpg" class="d-block w-100" alt="slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="slide 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+
+
+
+<div class="mobile-only">
+    
+    <!-- Image Carousel -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../photo-output.jpg" class="d-block w-100" alt="slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="slide 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+<br>
+
+<!-- Testimonials -->
+<div class="desktop-only">
+    <section>
+        <div class="img1">
+            <img src="/images/8C490568-0EF3-4CCA-821A-5725B440B1FD.jpg" class="img-fluid round-image" alt="Testimonial" width="100">
+        </div>
+        
+        <blockquote>
+            "Dean is amazing. Been training with him for a few weeks and I already feel better and stronger"
+            – Emma K.
+        </blockquote>
+    </section>
+</div>
+
+
+<div class="mobile-only">
+    <div class="img2">
+        <img src="/images/photo-output 2.JPEG" class="img-fluid round-image" alt="Testimonial" width="100">
+    </div>
+    
+    <blockquote>
+        "Loved working with Dean, he was really reassuring and helped me build the confidence to go and have my independent fitness journey."
+        <br>– John H.
+    </blockquote>
+    </div>
+
+
+<div class="mobile-only">
+    
+    <div class="img1">
+        <img src="/images/8C490568-0EF3-4CCA-821A-5725B440B1FD.jpg" class="img-fluid round-image" alt="Testimonial" width="100">
+    </div>
+    
+    <blockquote>
+        "Dean is amazing. Been training with him for a few weeks and I already feel better and stronger"
+        – Emma K.
+    </blockquote>
+    
+
+</div>
+
+<br>
+<div class="desktop-only">
+<section class="black-section">
+<div class="img2">
+    <img src="/images/photo-output 2.JPEG" class="img-fluid round-image" alt="Testimonial" width="100">
+</div>
+
+<blockquote>
+    "Loved working with Dean, he was really reassuring and helped me build the confidence to go and have my independent fitness journey."
+    <br>– John H.
+</blockquote>
+</section>
+</div>
+<br>
+
+<!-- Workout Plans Section - Desktop -->
+<div class="desktop-only">
+    
+   <img src="/images/IMG_8040 3.jpg" alt="Workout" class="img-fluid"> 
+  <section>
+      
+        
+        <h2 class="heading-underline">BESPOKE PERSONAL TRAINER WORKOUT PLANS</h2>
+        <br>
+        
+        <p>We all have reasons for starting a fitness journey, maybe you're just starting your fitness journey or need a little help on your way, we are here to help. For example, do you want to achieve that summer body? Are you getting ready for a special occasion like a holiday or wedding? Do you dream of completing a marathon? Whatever the occasion we have tailored workout plans to suit your every need.</p>
+        <br>
+    </section>
+</div>
+
+<br>
+<br>
+<div class="desktop-only">
+    <section class="black-section">
+<img src="/images/IMG_8036.jpg" alt="Group training" class="img-fluid">
+</section>
+<!-- Group Training Section - Desktop -->
+<div class="desktop-only">
+    <section class="black-section">
+    <h1 class="heading-underline">Small Groups Or Pairs Fitness Training</h1>
+    </section>
+    <br>
+    
+    <p>Boost motivation and enjoy a supportive atmosphere with our small group training sessions. Train with friends or family (up to 4 participants) and benefit from discounted rates.</p>
+    <br>
+</div>
+</div>
+<div class="mobile-only">
+<img src="/images/IMG_8040 3.jpg" alt="Workout" class="img-fluid"> 
+
+
+<!-- Workout Plans Section - Mobile -->
+<div class="mobile-only">
+    <section class="white-section section-embossed">
+        <h2 class="heading-underline">BESPOKE PERSONAL TRAINER WORKOUT PLANS</h2>
+        <br>
+        
+        <p>We all have reasons for starting a fitness journey, maybe you're just starting your fitness journey or need a little help on your way, we are here to help. For example, do you want to achieve that summer body? Are you getting ready for a special occasion like a holiday or wedding? Do you dream of completing a marathon? Whatever the occasion we have tailored workout plans to suit your every need.</p>
+        <br>
+    </section>
+</div>
+</div>
+<br>
+<br>
+
+<!-- Group Training Section - Mobile -->
+<div class="mobile-only">
+<img src="/images/IMG_8036.jpg" alt="Group training" class="img-fluid">
+</div>
+
+<div class="mobile-only">
+<section class="white-section section-3d">
+   <div class="mobile-only">
+        <h1 class="heading-underline">Group Training</h1>
+        
+        <p>Train with friends or family (up to 4 people) for added motivation and discounted rates.</p>
+    </div>
+</section>
+</div>
+
+
+
+  
+       
+ 
+
+  
+<br>
+
+<div class="desktop-only">
+<section class="slocation">
+    
+<h1 class="heading-underline">Locations</h1>
+    </section>
+</div>
+
+
+<div class="mobile-only">
+<h1 class="heading-underline">Locations</h1>
+</div>
+
+  <br>
+  
+  <div class="table-container">
+    
+
+  <table class="black-table">
+    <tr>
+        <th>Stratford (E15)</th>
+        <th>East Ham (E12)</th>
+        <th>Leytonstone (E11)</th>
+    </tr>
+    <tr>
+        <td>Ilford (E11, E12, IG1)</td>
+        <td>Walthamstow (E17)</td>
+        <td>Wanstead (E11)</td>
+    </tr>
+    <tr>
+        <td>Leyton (E10)</td>
+        <td>Canning Town (E16)</td>
+        <td>Bow (E3)</td>
+    </tr>
+</table>
+  </div>
+
+
+
+
+  <br>
+
+
+  <div class="desktop-only">
+
+  <p>If you have any enquiries about location please send me a message for more information. </p>
+  </div>
+
+  <div class="desktop-only"> 
+   
+    <section class="slocation">
+    <p>Let’s achieve your <span>Fitness Goals</span> together!
+    </p>
+  </section> 
+</div>
+
+<div class="mobile-only"> 
+   
+        <div class="container">
+      <div class="centered-element">
+     
+    <p class="p1">For location inquiries, please message me.
+    </p>
+    </div>
+  </div>
+
+
+
+
+    <br>
+   
+
+
+
+
+    
+
+
+    <section class="white-section section-3d">
+        <div class="container">
+            <div class="centered-element">
+          
+<p>Let’s achieve your <span>Fitness Goals</span> together!
+</p>
+</section>
+</div>
+</div>
+
+     <footer>
+
+      <footer class="footer">
+        <div class="footer-links">
+     
+      
+            <a href="https://wa.me/447752300937" target="_blank">Phone
+                <img src="/images/whatsapp 3.png" style="color: white"alt="whatsapp logo" width="30">
+              </a> 
+        
+              <a href="mailto:dbs-workouts@yahoo.com" target="_blank">Email
+                <img src="/images/mail.png" style="color: white"alt="email logo" width="30">
+              </a>
+        
+        
+        <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram
+            <img src="/images/instagram 2.png" style="color: white"alt="instagram logo" width="30">
+          </a>
+
+       
+
+       
+        
+      <a href="/Privacy Policy.html" target="_blank">Privacy Policy
+      </a>
+  
+  
+  
+   <a href="/Terms and conditions.html" target="_blank">Terms and Conditions
+    
+  </a>
+          
+        
+
+        
+        </div>
+        
+
+            
+
+        
+            </div>
+        
+        <div class="footer-contact">
+           
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".fade-wrapper > *", {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".fade-wrapper",
+    start: "top 80%",
+    end: "top 30%",
+    toggleActions: "play reverse play reverse", // fades in on scroll down, fades out on scroll up
+    markers: false // set to true to debug
+  }
+});
+      </script>
+    
+    
+         
+      
+      
+        
+      
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "DB's Workouts",
+          "image": "https://dbworkouts.co.uk/images/images/IMG_4357.PNG",
+          "description": "Mobile personal trainer offering sessions across East London including Ilford, Stratford,Wanstead,Chadwell heath and romford.",
+          "url": "https://dbworkouts.co.uk",
+          "telephone": "+7752300937",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "East London",
+            "addressCountry": "UK"
+          },
+          "areaServed": [
+            {
+              "@type": "Place",
+              "name": "Stratford"
+            },
+            {
+              "@type": "Place",
+              "name": "Wanstead"
+            },
+            {
+              "@type": "Place",
+              "name": "Ilford"
+            },
+            {
+                "@type": "Place",
+                "name": "Leyton"
+              },
+              {
+                "@type": "Place",
+                "name": "Romford"
+              },
+              {
+                "@type": "Place",
+                "name": "East ham"
+              },
+              {
+                "@type": "Place",
+                "name": "Canning town"
+              },
+              {
+                "@type": "Place",
+                "name": "Walthamstow"
+              },
+              {
+                "@type": "Place",
+                "name": "Leytonstone"
+              },
+              {
+                "@type": "Place",
+                "name": "Bow"
+              },
+              {
+                "@type": "Place",
+                "name": "Chadwell heath"
+              },
+              {
+                "@type": "Place",
+                "name": "Hackney"
+              }
+
+
+
+          ],
+          "serviceType": "Mobile Personal Training",
+          "sameAs": [
+            "https://www.facebook.com/dbs.workouts1", 
+            "https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr", 
+            "https://twitter.com/dbworkouts", 
+            "https://www.linkedin.com/in/db-s-workouts-2aa057214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          ]
+        }
+        </script>
+
+        <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+<zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cm9n1ntxk005evi2r76wowtwc'></zapier-interfaces-chatbot-embed>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/pwabuilder-sw.js') // Ensure the path is correct
-          .then(reg => {
-            console.log('Service Worker registered:', reg.scope);
-            
-            // Check for updates
-            reg.onupdatefound = () => {
-              const installingWorker = reg.installing;
-              installingWorker.onstatechange = () => {
-                if (installingWorker.state === 'installed') {
-                  if (navigator.serviceWorker.controller) {
-                    // New update available
-                    console.log('New content is available; please refresh.');
-                  } else {
-                    // Content is cached for offline use
-                    console.log('Content is cached for offline use.');
-                  }
-                }
-              };
-            };
-          })
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => console.log('Service Worker registered:', reg.scope))
           .catch(err => console.error('Service Worker registration failed:', err));
       });
     }
+  </script>
 
-
-
-    function startMiniGame() {
-    // Logic for mini-game (e.g., jump to dodge)
-}
-
-function displayLeaderboard() {
-    // Fetch and display leaderboard data
-}
-
-const missions = [
-    { name: "Complete 50 Reps", reward: "Unlock a new outfit" },
-    // Add more missions
-];
-
-function checkMissions() {
-    // Logic to check if missions are completed
-}
-
-function provideFeedback() {
-    // Play sound or show animation on task completion
-}
-
-
-
-    </script>
-</script>
-</script>
 </body>
+
 </html>
