@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Move more: your fitness & Recreation Guide</title>
-  
+    <title>Repping It: Interactive Fitness Challenge | Gamified Workout Experience</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <meta name="description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.
-    ">
-  
-  
+    <!-- Add GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <meta name="description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.">
+
     <meta name="keywords" content="Repping It,Fitness game,Home workouts,Active lifestyle,Exercise challenges,Fun fitness activities,Dice workout,Motivational fitness,Healthy living,Interactive exercise,Unique workout routines,Fitness tracker,Outdoor workouts,Home fitness challenges">
-    
+
     <meta property="og:title" content="Repping It: Interactive Fitness Challenge | Gamified Workout Experience">
-  <meta property="og:description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.
-  ">
-  <meta property="og:url" content="https://dbworkouts.co.uk/Game.html">
-  <meta property="og:type" content="website">
-    
-  <link rel="canonical" href="https://dbworkouts.co.uk/Game.html/" />
-  <link rel="manifest" href="manifest.json">
-
-
+    <meta property="og:description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.">
+    <meta property="og:url" content="https://dbworkouts.co.uk/Game.html">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="https://dbworkouts.co.uk/Game.html/" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-  
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-   
-   * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-    
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-    }
-    
-    .title {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    width: 100%; /* Full width */
-    font-size: 3vw; /* Responsive font size */
-    margin: 20px 0; /* Add vertical spacing */
-}
-
-.side-image {
-    width: 50px; /* Fixed width for images */
-    margin: 0 10px; /* Space between images and title */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-.footer {
+        .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: black;
+    
     color: white;
     font-size: small;
     width: 100%;
 }
+
+
+    /* Add hover effect glow */
+    .card:hover .card-inner {
+        box-shadow: 0 0 25px rgba(179, 59, 46, 0.6);
+    }
+    
+    /* Add this for shine effect */
+    .card-shine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px;
+        background: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 10;
+    }
 
 .footer-links {
     display: flex;
@@ -79,632 +87,1091 @@
     text-decoration: none;
     font-weight: bold;
 }
-    
-    body {
-        font-family: 'Arial', sans-serif;
-        background: linear-gradient(to bottom right, #1c1c1c, #3f3f3f);
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 20px;
-        background-image: url("/images/IMG_4678 2.JPG");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-
-    * {
-    box-sizing: border-box; /* Ensure padding and margins don't affect element width */
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif; /* Set a default font */
-}
-
-.app-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    padding: 20px; /* Add some padding around content */
-
-}
 
 
 
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px auto;
+        }
 
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            margin-bottom: 10px;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to right, #fff, #ccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
+        .controls {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
+        select, button {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
 
-.dice-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center elements in the dice container */
-}
-
-.action-button {
-    padding: 10px 20px; /* Add padding to buttons */
-    font-size: 1.5rem; /* Responsive font size for buttons */
-    margin: 10px; /* Space around buttons */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.dice-image {
-    display: block;
-    margin: 15px auto; /* Center the dice image */
-    width: 60px; /* Fixed width for the dice image */
-}
-
-
-.container{width: fixed;}
-
-.heading-underline{text-decoration: underline;}
-
-    .app-container {
-        text-align: center;
-        background: rgba(30, 30, 30, 0.8);
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        max-width: 600px;
-        width: 100%;
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    }
-    
-    button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 10px;
-    }
-    
-    button:hover {
-        background-color: #0056b3;
-    }
-    
-    .dice-container {
-        margin-top: 20px;
-        
-    }
-    
-    #diceImage {
-        width: 100px; /* Set your desired width */
-        height: auto; /* Maintain aspect ratio */
-        margin-top: 15px;
-        display: block; /* Show image by default */
-        width: 100px; /* Set your desired width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 15px auto; /* Center the image horizontally with margin */
-    display: block; /* Ensure the image is treated as a block element */
-    
-}
-    
-    
-    /* Modal Styles */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding-top: 60px;
-        
-    }
-    
-    .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        color: black;
-        border-radius: 5px;
-        
-    }
-    
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    /* Scrollable Info Box Styles */
-    .info-section {
-        margin-top: 30px;
-        text-align: left;
-        max-height: 300px;
-        overflow-y: auto;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
-    }
-
-    #challengeInfo{width: 100%;}
-    
-    /* Responsive Styles */
-    @media (max-width: 768px) {
         button {
-            padding: 8px 16px;
-            font-size: 14px;
+            background-color: #b33b2e;
         }
-        .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    
-    .footer-links {
-        justify-content: center;
-    }
-        .side-image {
-        width: 45px; /* Smaller size for smaller screens */
-    padding-left: 11px;
-    }
 
-    .title {
-        font-size: 5vw; /* Increase font size for small screens */
-        margin: 15px 0; /* Reduce vertical spacing */
-    }
+        button:hover {
+            background: rgba(141, 42, 42, 0.25);
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        select:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .card-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 350px;
+            margin: 30px 0;
+            
+        }
+
+        .card-stack {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .card {
+            display: none;
+            perspective: 1000px;
+            width: 224px;
+            height: 336px;
+            margin: 0 auto;
+            position: relative; /* Added for gloss effect */
+            overflow: hidden; /* Added for gloss effect */
+        
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            cursor: pointer;
+            
+         
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+            
+           
+        }
+        h1 {
+    font-size: clamp(24px, 5vw, 48px);
 }
 
-    .action-button {
-        font-size: 1.2rem; /* Smaller button text */
-        padding: 8px 16px; /* Adjust padding */
-    }
+h2 {
+    font-size: clamp(20px, 4vw, 36px);
+}
 
-    .dice-image {
-        width: 50px; /* Adjust dice image size for smaller screens */
-    }
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px);
+}
 
-        #diceImage {
-            width: 80px;/* Smaller width for mobile */
-            width: 100px; /* Set your desired width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 15px auto; /* Center the image horizontally with margin */
-    display: block; /* Ensure the image is treated as a block element */
-
-        }
+p, ol, ul {
+    font-size: clamp(14px, 2.5vw, 20px);
+    line-height: 1.6;
     
-        .app-container {
+}
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
             padding: 15px;
         }
+    .card-front {
+    background-image: url('/IMG_4676-removebg-preview.png'); /* Add background image */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */;
+    justify-content: center;
+    align-items: center;
+    color: rgb(230, 224, 224);
     
-        .info-section {
-            max-height: 200px; /* Adjust height for smaller screens */
-        }
-    
-    
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 1.5em;/* Adjust header size for small screens */
-        }
-    
-        h2 {
-            font-size: 1.2em; /* Adjust subheader size */
-        }
-    
-        h3 {
-            font-size: 1em; /* Adjust smaller header size */
-        }
-    
-        button {
-            padding: 8px 12px; /* Further reduce button padding */
-            font-size: 12px; /* Smaller font size for buttons */
-        }
-    
-       
-
-        .title {
-        font-size: 6vw; /* Increase font size for very small screens */
-        margin: 10px 0; /* Further reduce vertical spacing */
-    }
-
-    .side-image {
-        width: 45px; /* Even smaller size for very small screens */
-    padding-left: 9px;
-    }
 }
+        .card-front {
+           
+        display: flex;
+        text-align: center;
+        justify-content: center;
+            background-color: #3498db;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+
+        .card-back {
+            background-image: url('/annie-spratt-6a3nqQ1YwBw-unsplash.jpg'); /* Add background image */
+            background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */
+            display: grid;
+            color: #f6eded;
+justify-content: center;
+text-align: center;
+line-height: 10px;
+            transform: rotateY(180deg);
+            font-size: 25px;
+            padding-top: 2px;
+            text-align: center;
+        }
+
+        /* Gloss Effect */
+        .card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+            border-radius: 8px;
+            opacity: 0.5; /* Adjust opacity for gloss */
+            pointer-events: none; /* Prevents interfering with clicks */
+        }
+
+        .navigation {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;  
+        }
+
+        .dice-container {
+            
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .dice {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         #diceImage {
-            width: 60px; /* Even smaller width for mobile */
-            width: 100px; /* Set your desired width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 15px auto; /* Center the image horizontally with margin */
-    display: block; /* Ensure the image is treated as a block element */
-}
-        
-    
-        .app-container {
-            width: 90%; /* Use more width on mobile */
-        
+            
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;
         }
-    
+
+        .rolling {
+            
+            animation: rollDice 0.5s ease-out 3;
+        }
+
+        @keyframes rollDice {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.2); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        .dice-controls, .tally-controls {
+            display: flex;
+            justify-content: center;  
+            gap: 15px;            
+            margin: 20px 0;          
+        }
+
+        .stats {
+            margin-top: 30px;       
+            margin-bottom: 20px;    
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        /* Difficulty buttons container */
+        .difficulty-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;          
+        }
+
+        .difficulty-title {
+            font-size: 20px;
+            margin-bottom: 10px;    
+        }
+
+        .difficulty-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;              
+            flex-wrap: wrap;
+        }
+
+        /* Style difficulty buttons differently */
+        .difficulty-btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            min-width: 120px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .difficulty-btn.active {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        .low-btn {
+            background-color: #27ae60;  
+        }
+
+        .medium-btn {
+            background-color: #f39c12;  
+        }
+
+        .high-btn {
+            background-color: #e74c3c;  
+        }
+
+        /* Section dividers */
+        .section-divider {
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+            margin: 30px auto;
+        }
+
+        /* Modal Styles */
+        .modal-header {
+            background-color: #b33b2e; /* Same color as buttons */
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .controls, .difficulty-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                width: 160px;
+                height: 240px;
+                ;
+            }
+            .card-back-list{margin-top: -25px;}
+            .dice {
+                width: 60px;
+                height: 60px;
+            }
+            p{margin-top: -10px;}
+            #diceImage {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            a{padding: 10px;}
+        }
     </style>
 </head>
-
 <body>
-   
-    <br>
+    <div class="container">
+        <h1>Repping It: Fitness Card Game</h1>
+        
+        <div class="controls">
+            <select id="stack-select">
+                <option value="2">Home Workout</option>
+                <option value="3">Office Workout</option>
+                <option value="4">Tv Workout</option>
+                <option value="5">Outdoor Workout</option>
+                <option value="6">Pyramid Workout </option>
+                <option value="1">family Fun</option>
+            </select>
+            <button id="shuffle-btn">Shuffle Cards</button>
+            <!-- New Game Rules Button -->
+            <button id="game-rules-btn" data-bs-toggle="modal" data-bs-target="#rulesModal">Game Rules</button>
+        </div>
 
+        <div class="card-container">
+            <!-- Family Challenges -->
+            <div id="stack1" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>30 Day Fitness</h3><br>
+                            <p>Do a short workout together (10-15 mins)<br> </p><br><br>
+                          <div class="card-back-list"> 
+                            <p><a href="https://www.youtube.com/shorts/j42uR-9svnY" style="color: #b33b2e; text-decoration: underline;">Lightning Legs</a></p>
+                            <p><a href="https://www.youtube.com/watch?v=K5wuM_gNWyw" style="color: #b33b2e; text-decoration: underline;line-height: -1px;">Captain futter</a></p>
+                            <p><a href="https://www.youtube.com/watch?v=xcBz0TtHqWI" style="color: #b33b2e; text-decoration: underline;line-height: -1px;">Jet Plank</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Freeze Tag Fitness</h3>
+                            <p>Freeze tag, but to unfreeze</p><br><br>
+                            <p>Do: <br><a href="https://www.youtube.com/shorts/6PH9CjOytYE" style="color: #b33b2e; text-decoration: underline;">Hand Walkout</a><br>& <br>Silly dance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>The Floor is Lava </h3>
+                            <p>Everyone has 5 seconds to get off the floor</p><br><br>
+                            <p>Last one off the floor does:<br> <a href="https://www.youtube.com/watch?v=9AE_da-cN8M" style="color: #b33b2e; text-decoration: underline;">Plank Punches</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Mirror Me</h3>
+                            <p>The leader moves however they want, while the other mirrors them.(Dice number = number of moves)</p><br><br>
+                            <p>Loser does: Silly Dance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Home Workout -->
+            <div id="stack2" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Laugh Out Loud</h3>
+                            <p>Every time you hear a laugh</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/Lo4BRhPrlZo" style="color: #b33b2e; text-decoration: underline;">Straight Leg Toe Touch</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Call to Action</h3>
+                            <p>Every time the phone rings</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/vvswCtj0Mjw" style="color: #b33b2e; text-decoration: underline;">Cross Jacks</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>YouTube Ad App</h3>
+                            <p>Every time YouTube ad appears</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/PPTj-MW2tcs" style="color: #b33b2e; text-decoration: underline;">Diamond Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Tweet and Tone</h3>
+                            <p>Every time you see a bird</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/xbpNaytC92o" style="color: #b33b2e; text-decoration: underline;">Standing Side Crunch</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Offie Workout -->
+            <div id="stack3" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                         <div class="card-back">
+                            <h3>Inbox Intervals</h3>
+                            <p>Every email notification</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/N3hB8rDErZI" style="color: #b33b2e; text-decoration: underline;">Chair Dips</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Every Check In</h3>
+                            <p>Every time you check your phone</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/JTzf4IPR7dw" style="color: #b33b2e; text-decoration: underline;">Calf Raises</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Sip & Sweat</h3>
+                            <p>Every coffee break</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/-TMXETQfnRU" style="color: #b33b2e; text-decoration: underline;">Wall Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Rise and Shine</h3>
+                            <p>Every time you stand up</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/Z09h_OcV0YU" style="color: #b33b2e; text-decoration: underline;">Chair Squats</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tv Workout -->
+            <div id="stack4" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Snack Attack Set</h3>
+                            <p>For every snack you grab</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/watch?v=B2KXk1iE41E" style="color: #b33b2e; text-decoration: underline;">ski jumps</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Closet Call</h3>
+                            <p>Every time a character changes outfits</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/watch?v=L4oFJRDAU4Q" style="color: #b33b2e; text-decoration: underline;">Up/down plank </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Scroll & Sweat</h3>
+                            <p>Every time you check social media</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/watch?v=Xyd_fa5zoEU" style="color: #b33b2e; text-decoration: underline;">Crunches</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Showtime Sweat</h3>
+                            <p>For every new show that comes to netflix</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/watch?v=IODxDxX7oi4" style="color: #b33b2e; text-decoration: underline;">Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="app-container">
-        <h1 class="title"><img src="/images/IMG_4676-removebg-preview.png" class="side-image"alt="Right Bicep Image";style="margin-bottom: -10px;start width: 40px;">Repping It<img src="/images/photo-output-removebg-preview.png"class="side-image"alt="Left Bicep Image";style="margin-bottom: -10px; end; width: 40px;padding-left:11px;padding-bottom:10px"></h1>
+            <!-- Outdoor Workout -->
+            <div id="stack5" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Delivery Driver Drop Set</h3>
+                            <p>Every time you see a food delivery rider</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/watch?v=nmwgirgXLYM" style="color: #b33b2e; text-decoration: underline;">Mountain Climbers</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pothole Pounder</h3>
+                            <p> Each pothole you see</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/watch?v=U4s4mEQ5VqU" style="color: #b33b2e; text-decoration: underline;">Jump squats</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>L Plate Lifter</h3>
+                            <p>Every car/bike with a L plate</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/xPzikhQSEAs" style="color: #b33b2e; text-decoration: underline;">Lunges</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Construction Crusher</h3>
+                            <p>Each time you see roadworks</p><br><br>
+                            <p>Do: <a href="https://www.youtube.com/shorts/YHVrLfVjgwQ" style="color: #b33b2e; text-decoration: underline;">Tuck Jumps</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- Pyramid Workout -->
+              <div id="stack6" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip </div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://www.youtube.com/watch?v=L4oFJRDAU4Q" style="color: #b33b2e; text-decoration: underline;">Squats</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://www.youtube.com/watch?v=c4DAnQ6DtF8" style="color: #b33b2e; text-decoration: underline;">Press ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                           <p> You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://www.youtube.com/shorts/gYiE_2BtSTg" style="color: #b33b2e; text-decoration: underline;">Burpees</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://www.youtube.com/watch?v=JB2oyawG9KI" style="color: #b33b2e; text-decoration: underline;">Sit up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prev-card-btn">Previous Card</button>
+            <button id="next-card-btn">Next Card</button>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- New Difficulty Selector -->
+        <div class="difficulty-container">
+            <div class="difficulty-title">Select Difficulty Level</div>
+            <div class="difficulty-buttons">
+                <button id="low-btn" class="difficulty-btn low-btn">Low</button>
+                <button id="medium-btn" class="difficulty-btn medium-btn">Medium</button>
+                <button id="high-btn" class="difficulty-btn high-btn">High</button>
+            </div>
+            <div id="difficulty-info">
+                Current Level: Low (2, 4, 6, 8, 10 reps)
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+       
         <div class="dice-container">
-            <button id="rollButton">Roll the Dice!</button>
-            <img id="diceImage" src="/images/IMG_4675.PNG" alt="anime woman Image"style="display: block; margin: 15px auto;"/> <!-- Initial image -->
-            <h3 id="totalReps">Total Reps: 0</h3>
-            <button id="resetButton">Reset</button>
-        </div>
-       
-        <button id="challengeButton">Get a Challenge!</button>
- <button id="customizeAvatar">Customize Avatar</button>
-        <div class="info-section" id="challengeInfo">
-            <!-- Challenge information will be displayed here -->
-        </div>
-        <div class="missions-container">
-            <h2>Daily Missions</h2>
-            <ul id="missionsList">
-                <!-- Populate with daily missions -->
-            </ul>
+            <div class="dice">
+                <img id="diceImage" src="/IMG_4702.PNG" alt="Dice" />
+            </div>
+            <div class="dice-controls">
+                <button id="roll-dice-btn">Roll Dice</button>
+                <button id="reset-dice-btn">Reset Dice</button>
+            </div>
         </div>
         
-        <div class="leaderboard-container">
-            <h2>Leaderboard</h2>
-            <ul id="leaderboardList">
-                <!-- Populate with leaderboard data -->
-            </ul>
+        <div class="section-divider"></div>
+        
+        <div class="tally-controls">
+            <button id="tally-btn">Add Tally</button>
+            <button id="reset-tally-btn">Reset Tally</button>
         </div>
-        <div class="info-section" id="gameInfo">
-            <h2 class="heading-underline">Welcome to the Game</h2>
-
-            <br>
-
-            <p>This is not your average workout routine. This is Repping It — a fitness challenge that takes everyday occurrences and turns them into epic workout triggers. Whether you’re watching TV, walking outside, or just chilling, your environment is now your gym. Get creative, stay alert, and move like a beast.</p>
-
-<br>
-
-            <h3 class="heading-underline">Game Setup</h3>
-
-<br>
-
-            <ol>
-                <li>Pick Your Daily Scenario (or let fate decide): Use the dice to randomly pick one or more of the following challenges each day.</li>
-                <li>Track Your Reps: Use the in game tally counter. At the end of the day, add up the total reps.</li>
-                <li>Finish Strong: Complete your reps at once or spread them throughout the day. The only rule is — get it done.</li>
-            </ol>
-
-            <br>
-
-            <h3 class="heading-underline">Warm-Up: “Ignite the Engine”</h3>
-
-            <br>
-
-            <p>Always warm up first to avoid injuries and get in the zone. Here’s a quick 5-minute routine:</p>
-            
-            <br>
-            
-            <ul>
-                <li>30 seconds Jumping Jacks</li>
-                <li>30 seconds Arm Circles (forward + backward)</li>
-                <li>30 seconds Leg Swings (each leg)</li>
-                <li>30 seconds Bodyweight Squats</li>
-                <li>1 minute Jog in Place</li>
-                <li>2 minutes Dynamic Stretching (hip openers, lunges with reach, toe touches)</li>
-            </ul>
-
-<br>
-
-            <h3 class="heading-underline">Stretch it Out: “Cooldown Flow”</h3>
+        
+        <div class="stats">
+            <div id="totalReps">Total Reps: 0</div>
+            <div id="tallyCountDisplay">Tally Count: 0</div>
+        </div>
+    
+    
+        <footer class="footer">
+            <div class="footer-links">
+        
+             
+        
+        
+              <a href="https:dbworkouts.co.uk" target="_blank">Website
+                <img src="/images/whatsapp 3.png" style="color: white"alt="business logo" width="30">
+              
+    
+              
+        
            
-           <br>
-           
-            <p>After completing your reps, cool down and stretch to reduce soreness:</p>
             
-            <br>
-            
-            <ul>
-                <li>Forward Fold</li>
-                <li>Hip Flexor Stretch</li>
-                <li>Shoulder Cross Stretch</li>
-                <li>Seated Twist</li>
-                <li>Cat-Cow Stretch (yoga style)</li>
-                <li>Deep Breathing for 2 minutes</li>
-            </ul>
+               
+            </div>
+        </footer>
+    </div>
 
-<br>
-
-            <h3 class="heading-underline">Final Word</h3>
-            
-            <br>
-            
-            <p>Repping It isn’t just a workout — it’s a lifestyle challenge. You’ll never watch TV, walk to the shop, or scroll through YouTube the same way again. Every moment becomes an opportunity to move, laugh, and get stronger.</p>
-            
-            <br>
-            
-            <p>Get your reps in. No excuses. Go Beast Mode.</p>
+    <!-- Modal for Game Rules -->
+    <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rulesModalLabel">Game Rules</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"style="color:black">
+                    <h6>Game Setup</h6>
+                    <ol>
+                        <li>Pick Your Daily Scenario (or let fate decide):
+                            <p>Use the cards to randomly pick one or more of the following challenges each day. Then roll the dice to get your reps.</p>
+                        </li>
+                        <li>Track Your Reps: Use the in-game tally counter. At the end of the day, add up the total reps.</li>
+                        <li>Finish Strong: Complete your reps at once or spread them throughout the day. The only rule is - get it done.</li>
+                    </ol>
+                    <h6>Warm-Up: "Ignite the Engine"</h6>
+                    <p>Always warm up first to avoid injuries and get in the zone.</p>
+                    <h6>Stretch it Out: "Cooldown Flow"</h6>
+                    <p>After completing your reps, cool down and stretch to reduce soreness.</p>
+                    <h6>Final Word</h6>
+                    <p>Repping It isn't just a workout - it's a lifestyle challenge. You'll never watch TV, walk to the shop, or scroll through YouTube the same way again.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Modal for Challenge Details -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalTitle">Challenge Title</h2>
-            <p id="modalDescription">Challenge description goes here.</p>
-        </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
     <script>
-        const rollButton = document.getElementById('rollButton');
-        const resetButton = document.getElementById('resetButton');
-        const challengeButton = document.getElementById('challengeButton');
-        const diceImage = document.getElementById('diceImage');
-        const totalRepsDisplay = document.getElementById('totalReps');
-        const modal = document.getElementById("myModal");
-        const span = document.getElementsByClassName("close")[0];
-        const modalTitle = document.getElementById('modalTitle');
-        const modalDescription = document.getElementById('modalDescription');
 
-        let totalReps = 0;
-
-        // Array of challenges
-        const challenges = [
-    {
-        title: "Hell’s Kitchen Heat",
-        description: `Every time Gordon Ramsay swears<br><br>Do: Squats based on dice roll<br><br>Explanation:<br><ul>
-                       <li>Stand: Feet shoulder-width apart, toes slightly out.</li>
-                       <li>Lower: Bend hips and knees, keeping chest up and back straight.</li>
-                       <li>Depth: Lower until thighs are parallel to the ground.</li>
-                       <li>Rise: Press through heels to stand up.</li>
-                   </ul>`
-    },
-    {
-        title: "Ad Break Burpees",
-        description: `Every time a YouTube ad comes on<br><br>Do: Burpees based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Start: Stand straight, then squat down.</li>
-                       <li>Plank: Kick feet back into a plank position.</li>
-                       <li>Push-Up: Perform a push-up (optional).</li>
-                       <li>Jump: Jump feet back to hands and leap up.</li>
-                   </ul>`
-    },
-    {
-        title: "Delivery Driver Drop Set",
-        description: `Every time you see a food delivery rider<br><br>Do: Press-Ups based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Position: Start in a plank position, hands shoulder-width apart.</li>
-                       <li>Lower: Bend elbows to lower your body, keeping back straight.</li>
-                       <li>Push: Press back up to starting position.</li>
-                   </ul>`
-    },
-    {
-        title: "Pothole Pounder",
-        description: `Each pothole you see<br><br>Do: High Knees per pothole based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Stand: Feet hip-width apart.</li>
-                       <li>Run: Jog in place, driving knees up towards your chest.</li>
-                       <li>Arms: Pump arms to maintain rhythm.</li>
-                       <li>Speed: Increase intensity as you go.</li>
-                   </ul>`
-    },
-    {
-        title: "L Plate Lifter",
-        description: `Every car/bike with an L plate.<br><br>Do: Sit-Ups based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Lie Down: On your back, knees bent, feet flat on the floor.</li>
-                       <li>Hands: Place hands behind your head or crossed on your chest.</li>
-                       <li>Lift: Curl your torso towards your knees.</li>
-                       <li>Lower: Return to starting position.</li>
-                   </ul>`
-    },
-    {
-        title: "Construction Crusher",
-        description: `Each time you see roadworks<br><br>Do: Plank Punches each arm based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Position: Start in a plank position.</li>
-                       <li>Punch: Alternate punching forward with each hand.</li>
-                       <li>Core: Keep your core tight and hips stable.</li>
-                   </ul>`
-    },
-    {
-        title: "Channel Surfing Dips",
-        description: `Each time you change channels on TV<br><br>Do: Tricep Dips based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Sit: On the edge of a bench/chair, hands at your sides.</li>
-                       <li>Lower: Bend elbows to lower your body.</li>
-                       <li>Push: Press back up until arms are straight.</li>
-                       <li>Feet: Keep legs extended or bent for easier variation.</li>
-                   </ul>`
-    },
-    {
-        title: "Birdwatcher Flutter Kicks",
-        description: `Every time you see a bird<br><br>Do: Flutter Kicks based on dice roll.<br><br>Explanation:<br><ul>
-                       <li>Lie Down: On your back, hands under your hips.</li>
-                       <li>Lift: Raise legs off the ground slightly.</li>
-                       <li>Kick: Alternate kicking legs up and down.</li>
-                       <li>Core: Keep your lower back pressed to the floor.</li>
-                   </ul>`
-    },
-];
-
-        // Function to roll the dice
-        rollButton.addEventListener('click', () => {
-            const roll = [5, 10, 15, 20, 25, 30][Math.floor(Math.random() * 6)];
-            totalReps += roll;
-            totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
-
-            // Update the dice image's src with the roll value
-            diceImage.src = `/images/IMG_4675_${roll}.PNG`; // Ensure to have corresponding images for each roll value
-
-            // GSAP animation for the dice image
-            gsap.fromTo(diceImage.src = `/images/IMG_4675.PNG`, { scale: 1.2 }, { scale: 1, duration: 0.2, yoyo: true, repeat: 1 });
-        });
-
-        // Function to reset the reps
-        resetButton.addEventListener('click', () => {
-            totalReps = 0;
-            totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
-            diceImage.src = `/images/IMG_4675_${roll}.PNG`;
-        });
-
-        // Function to get a random challenge
-        challengeButton.addEventListener('click', () => {
-            const randomChallenge = challenges[Math.floor(Math.random() * challenges.length)];
-            modalTitle.textContent = randomChallenge.title;
-            modalDescription.innerHTML = randomChallenge.description;
-            modal.style.display = "block";
-
-            // GSAP animation for modal
-            gsap.fromTo(diceImage, { scale: 1.2 }, { scale: 1, duration: 0.2, yoyo: true, repeat: 1 });
-        });
-
-        // Close the modal when the user clicks on <span> (x)
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // Close the modal when the user clicks anywhere outside of the modal
-        window.onclick = function (event) {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-
-<footer class="footer">
-    <div class="footer-links">
-
-     
-
-
-      <a href="/index.html" target="_blank">Website
-        <img src="/images/photo-output 4.PNG" style="color: white"alt="Website logo" width="30">
-      </a> 
-
-
-<a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram
-    <img src="/images/instagram 2.png" style="color: white"alt="instagram logo" width="30">
-  </a>
-   
 
    
-    
-  
-      
-    
-
-    
-    </div>
-    
-  
-
         
-
-    <div class="footer-contact">
-       
-    </div>
-</footer>
-<script>
-
-let userLevel = 1;
-let userXP = 0;
-
-function updateProgress(points) {
-    userXP += points;
-    // Logic to check level up
-}
-
-
-
-// Function to fetch steps from Google Fit (pseudo code)
-function fetchSteps() {
-    // Use Google Fit API to fetch steps
-}
-
-
-
-
-
-
-
-
-</script>
-<script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/pwabuilder-sw.js') // Ensure the path is correct
-          .then(reg => {
-            console.log('Service Worker registered:', reg.scope);
+        // Add shine element to each card
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            const shine = document.createElement('div');
+            shine.className = 'card-shine';
+            card.appendChild(shine);
             
-            // Check for updates
-            reg.onupdatefound = () => {
-              const installingWorker = reg.installing;
-              installingWorker.onstatechange = () => {
-                if (installingWorker.state === 'installed') {
-                  if (navigator.serviceWorker.controller) {
-                    // New update available
-                    console.log('New content is available; please refresh.');
-                  } else {
-                    // Content is cached for offline use
-                    console.log('Content is cached for offline use.');
-                  }
+            // Initialize GSAP for each card
+            initCardAnimation(card);
+        });
+        
+        // Function to initialize 3D card animations
+        function initCardAnimation(card) {
+            const cardInner = card.querySelector('.card-inner');
+            const shine = card.querySelector('.card-shine');
+            let isFlipped = false;
+            
+            // Remove old click event listener
+            const newCardInner = cardInner.cloneNode(true);
+            cardInner.parentNode.replaceChild(newCardInner, cardInner);
+            
+            // Add mouseenter/mousemove for 3D tilt effect (when not flipped)
+            card.addEventListener('mousemove', (e) => {
+                if (isFlipped) return;
+                
+                const rect = card.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const mouseX = e.clientX - centerX;
+                const mouseY = e.clientY - centerY;
+                
+                // Calculate rotation angles
+                const rotateY = mouseX * 0.1; // Adjust for sensitivity
+                const rotateX = -mouseY * 0.1; // Negative for correct direction
+                
+                // Animate with GSAP
+                gsap.to(newCardInner, {
+                    rotationY: rotateY,
+                    rotationX: rotateX,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+                
+                // Animate shine effect
+                const angle = Math.atan2(mouseY, mouseX);
+                const distance = Math.sqrt(mouseX * mouseX + mouseY * mouseY);
+                const normalizedDistance = Math.min(distance / (rect.width / 2), 1);
+                
+                gsap.to(shine, {
+                    opacity: 0.3 * normalizedDistance,
+                    duration: 0.3
+                });
+            });
+            
+            // Reset on mouse leave
+            card.addEventListener('mouseleave', () => {
+                if (isFlipped) return;
+                
+                gsap.to(newCardInner, {
+                    rotationY: 0,
+                    rotationX: 0,
+                    duration: 0.5,
+                    ease: "elastic.out(1, 0.5)"
+                });
+                
+                gsap.to(shine, {
+                    opacity: 0,
+                    duration: 0.3
+                });
+            });
+            
+            // Add click for flip animation
+            newCardInner.addEventListener('click', () => {
+                isFlipped = !isFlipped;
+                
+                if (isFlipped) {
+                    // Flip to back
+                    gsap.to(newCardInner, {
+                        rotationY: 180,
+                        duration: 0.6,
+                        ease: "back.out(1.5)"
+                    });
+                } else {
+                    // Flip to front
+                    gsap.to(newCardInner, {
+                        rotationY: 0,
+                        duration: 0.6,
+                        ease: "back.out(1.5)"
+                    });
                 }
-              };
-            };
-          })
-          .catch(err => console.error('Service Worker registration failed:', err));
-      });
-    }
-
-
-
-    function startMiniGame() {
-    // Logic for mini-game (e.g., jump to dodge)
-}
-
-function displayLeaderboard() {
-    // Fetch and display leaderboard data
-}
-
-const missions = [
-    { name: "Complete 50 Reps", reward: "Unlock a new outfit" },
-    // Add more missions
-];
-
-function checkMissions() {
-    // Logic to check if missions are completed
-}
-
-function provideFeedback() {
-    // Play sound or show animation on task completion
-}
-
-
-
+            });
+        }
+        
+     
     </script>
-  
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const shuffleBtn = document.getElementById('shuffle-btn');
+            const rollDiceBtn = document.getElementById('roll-dice-btn');
+            const resetDiceBtn = document.getElementById('reset-dice-btn');
+            const tallyBtn = document.getElementById('tally-btn');
+            const resetTallyBtn = document.getElementById('reset-tally-btn');
+            const prevCardBtn = document.getElementById('prev-card-btn');
+            const nextCardBtn = document.getElementById('next-card-btn');
+            const stackSelect = document.getElementById('stack-select');
+            const diceImage = document.getElementById('diceImage');
+            const totalRepsDisplay = document.getElementById('totalReps');
+            const tallyCountDisplay = document.getElementById('tallyCountDisplay');
+            const difficultyInfo = document.getElementById('difficulty-info');
+            const cardInners = Array.from(document.querySelectorAll('.card-inner'));
 
+            // Difficulty buttons
+            const lowBtn = document.getElementById('low-btn');
+            const mediumBtn = document.getElementById('medium-btn');
+            const highBtn = document.getElementById('high-btn');
+            
+            let currentCardIndex = 0;
+            let totalReps = 0;
+            let tallyCount = 0;
+            let currentStackId = 'stack1'; // Start with Stack 1 selected
+            
+            // Difficulty levels and their rep values
+            const difficultyLevels = {
+                low: {
+                    name: 'Low',
+                    reps: [2, 4, 6, 8, 10],
+                    color: '#27ae60'
+                },
+                medium: {
+                    name: 'Medium',
+                    reps: [4, 8, 12, 16, 20, 24],
+                    color: '#f39c12'
+                },
+                high: {
+                    name: 'High',
+                    reps: [5, 10, 15, 20, 25, 30],
+                    color: '#e74c3c'
+                }
+            };
+            
+            let currentDifficulty = 'low'; // Default difficulty
+            
+            // Dice images array for dice animation
+            const diceImages = [
+                '/IMG_4702.PNG',
+                '/IMG_4702.PNG',
+                '/IMG_4702.PNG',
+                '/IMG_4702.PNG',
+                '/IMG_4702.PNG',
+                '/IMG_4702.PNG'
+            ];
+
+            // Add the ability to flip cards when clicked
+            cardInners.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('flipped');
+                });
+            });
+
+            // Function to show only the current card in the active stack
+            function showCurrentCard() {
+                if (!currentStackId) return;
+                
+                const cardsInCurrentStack = document.querySelectorAll(`#${currentStackId} .card`);
+                
+                cardsInCurrentStack.forEach((card, index) => {
+                    if (index === currentCardIndex) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Function to show a stack
+            function showStack(stackId) {
+                document.querySelectorAll('.card-stack').forEach(stack => {
+                    stack.style.display = 'none';
+                });
+                
+                const selectedCardStack = document.getElementById(stackId);
+                selectedCardStack.style.display = 'flex';
+                currentCardIndex = 0;
+                showCurrentCard();
+            }
+            
+            // Function to update difficulty info
+            function updateDifficultyInfo() {
+                const level = difficultyLevels[currentDifficulty];
+                difficultyInfo.textContent = `Current Level: ${level.name} (${level.reps.join(', ')} reps)`;
+                
+                // Reset active state for all buttons
+                lowBtn.classList.remove('active');
+                mediumBtn.classList.remove('active');
+                highBtn.classList.remove('active');
+                
+                // Set active state for current difficulty
+                if (currentDifficulty === 'low') {
+                    lowBtn.classList.add('active');
+                } else if (currentDifficulty === 'medium') {
+                    mediumBtn.classList.add('active');
+                } else if (currentDifficulty === 'high') {
+                    highBtn.classList.add('active');
+                }
+            }
+
+            // Show Stack 1 initially
+            showStack(currentStackId);
+            
+            // Set default difficulty
+            updateDifficultyInfo();
+
+            // Show the selected card stack
+            stackSelect.addEventListener('change', (event) => {
+                const selectedStack = event.target.value;
+                currentStackId = `stack${selectedStack}`;
+                showStack(currentStackId);
+            });
+
+            // Function to shuffle cards
+            const shuffleCards = () => {
+                if (!currentStackId) {
+                    alert("Please select a stack first!");
+                    return;
+                }
+                
+                const activeStack = document.getElementById(currentStackId);
+                const cards = Array.from(activeStack.querySelectorAll('.card'));
+                
+                // Fisher-Yates shuffle algorithm
+                for (let i = cards.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cards[i].innerHTML, cards[j].innerHTML] = [cards[j].innerHTML, cards[i].innerHTML];
+                }
+                
+                currentCardIndex = 0;
+                showCurrentCard();
+            };
+
+            // Navigate to previous card
+            prevCardBtn.addEventListener('click', () => {
+                const cardsInCurrentStack = document.querySelectorAll(`#${currentStackId} .card`);
+                
+                if (currentCardIndex > 0) {
+                    currentCardIndex--;
+                    showCurrentCard();
+                } else {
+                    // Wrap around to the last card
+                    currentCardIndex = cardsInCurrentStack.length - 1;
+                    showCurrentCard();
+                }
+            });
+
+            // Navigate to next card
+            nextCardBtn.addEventListener('click', () => {
+                const cardsInCurrentStack = document.querySelectorAll(`#${currentStackId} .card`);
+                
+                if (currentCardIndex < cardsInCurrentStack.length - 1) {
+                    currentCardIndex++;
+                    showCurrentCard();
+                } else {
+                    // Wrap around to the first card
+                    currentCardIndex = 0;
+                    showCurrentCard();
+                }
+            });
+
+            // Function to roll the dice with animation
+            const rollDice = () => {
+                // Disable roll button during animation
+                rollDiceBtn.disabled = true;
+                
+                // Add rolling animation
+                diceImage.classList.add('rolling');
+                
+                // Quick animation of changing dice faces
+                let rollCount = 0;
+                const rollInterval = setInterval(() => {
+                    const randomDiceValue = Math.floor(Math.random() * 6);
+                    diceImage.src = diceImages[randomDiceValue];
+                    rollCount++;
+                    
+                    if (rollCount >= 10) {
+                        clearInterval(rollInterval);
+                        
+                        // Final dice value (1-6)
+                        const diceRoll = Math.floor(Math.random() * 6) + 1;
+                        diceImage.src = diceImages[diceRoll - 1];
+                        
+                        // Get rep count based on difficulty level
+                        const level = difficultyLevels[currentDifficulty];
+                        const repIndex = Math.min(diceRoll - 1, level.reps.length - 1);
+                        const repCount = level.reps[repIndex];
+                        
+                        // Update total reps
+                        totalReps += repCount;
+                        totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
+                        
+                        // Remove rolling animation
+                        setTimeout(() => {
+                            diceImage.classList.remove('rolling');
+                            rollDiceBtn.disabled = false;
+                        }, 500);
+                    }
+                }, 100);
+            };
+
+            // Function to reset the dice
+            const resetDice = () => {
+                totalReps = 0;
+                totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
+                diceImage.src = diceImages[5]; // Set to dice-6.png
+            };
+
+            // Function to increment tally
+            const incrementTally = () => {
+                tallyCount++;
+                tallyCountDisplay.textContent = `Tally Count: ${tallyCount}`;
+            };
+
+            // Function to reset tally
+            const resetTally = () => {
+                tallyCount = 0;
+                tallyCountDisplay.textContent = `Tally Count: ${tallyCount}`;
+            };
+
+            // Difficulty button event listeners
+            lowBtn.addEventListener('click', () => {
+                currentDifficulty = 'low';
+                updateDifficultyInfo();
+            });
+            
+            mediumBtn.addEventListener('click', () => {
+                currentDifficulty = 'medium';
+                updateDifficultyInfo();
+            });
+            
+            highBtn.addEventListener('click', () => {
+                currentDifficulty = 'high';
+                updateDifficultyInfo();
+            });
+
+            // Add event listeners for buttons
+            shuffleBtn.addEventListener('click', shuffleCards);
+            rollDiceBtn.addEventListener('click', rollDice);
+            resetDiceBtn.addEventListener('click', resetDice);
+            tallyBtn.addEventListener('click', incrementTally);
+            resetTallyBtn.addEventListener('click', resetTally);
+        });
+    
+       
+    
+    </script>
+</body>
 </html>
