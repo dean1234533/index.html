@@ -20,10 +20,26 @@
     <meta property="og:url" content="https://dbworkouts.co.uk/Game.html">
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="canonical" href="https://dbworkouts.co.uk/Game.html/" />
+    <link rel="canonical" href="https://dbworkouts.co.uk/Game.html"/>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/Repping-It/pwabuilder-sw (4).js')
+          .then(registration => {
+            console.log('Service worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.log('Service worker registration failed:', error);
+          });
+        }
+      </script>
+   
+   
+   
+   
+   
+   <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -74,7 +90,29 @@
         pointer-events: none;
         z-index: 10;
     }
-
+    #timer {
+            font-size: 5rem;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #e94f37;
+            color: white;
+        }
+        input {
+            width: 80px;
+            padding: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
 .footer-links {
     display: flex;
     flex-wrap: wrap;
@@ -228,10 +266,10 @@ p, ol, ul {
             align-items: center;
             justify-content: center;
             border-radius: 8px;
-            padding: 15px;
+            padding: 1px;
         }
     .card-front {
-    background-image: url('/IMG_4715.JPG'); /* Add background image */
+    background-image: url('IMG_4715.JPG'); /* Add background image */
     background-size: cover; /* Cover the entire card */
     background-position: center; /* Center the image */;
     justify-content: center;
@@ -252,7 +290,7 @@ p, ol, ul {
         }
 
         .card-back {
-            background-image: url('/annie-spratt-6a3nqQ1YwBw-unsplash.jpg'); /* Add background image */
+            background-image: url('annie-spratt-6a3nqQ1YwBw-unsplash.jpg'); /* Add background image */
             background-size: cover; /* Cover the entire card */
     background-position: center; /* Center the image */
             display: grid;
@@ -440,67 +478,20 @@ line-height: 10px;
         
         <div class="controls">
             <select id="stack-select">
-                <option value="1">Home Workout</option>
-                <option value="3">Office Workout</option>
-                <option value="4">Tv Workout</option>
-                <option value="5">Outdoor Workout</option>
-                <option value="6">Pyramid Workout </option>
-                <option value="2">family Fun</option>
+                <option value="1">Home Work</option>
+                <option value="3">Office Rep</option>
+                <option value="4">Remote Flex</option>
+                <option value="5">OutFit</option>
+                <option value="6">Pyramid Hustle</option>
+                <option value="2">Family Fun</option>
+                <option value="7">Party Clash</option>
+                <option value="8">Fit Parents</option>
             </select>
             <button id="shuffle-btn">Shuffle Cards</button>
-            <!-- New Game Rules Button -->
-            <button id="game-rules-btn" data-bs-toggle="modal" data-bs-target="#rulesModal">Game Rules</button>
+            <button id="game-rules-btn">Game Rules</button>
         </div>
-
+    
         <div class="card-container">
-            <!-- Family Challenges -->
-            <div id="stack2" class="card-stack">
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">Tap To Flip</div>
-                        <div class="card-back">
-                            <h3>30 Day Fitness</h3><br>
-                            <p>Do a short workout together (10-15 mins)<br> </p><br><br>
-                          <div class="card-back-list"> 
-                            <p><a href="https://youtube.com/shorts/uTbfBwpUftw" style="color: #b33b2e; text-decoration: underline;">Lightning Legs</a></p>
-                            <p><a href="https://youtube.com/shorts/j588IjqLyok" style="color: #b33b2e; text-decoration: underline;line-height: -1px;">Captain futter</a></p>
-                            <p><a href="https://youtube.com/shorts/vppEPyQpF-Q" style="color: #b33b2e; text-decoration: underline;line-height: -1px;">Jet Plank</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">Tap To Flip</div>
-                        <div class="card-back">
-                            <h3>Freeze Tag Fitness</h3>
-                            <p>Freeze tag, but to unfreeze</p><br><br>
-                            <p>Do: <br><a href="https://youtube.com/shorts/zbAcjZkZzHA" style="color: #b33b2e; text-decoration: underline;">Hand Walkout</a><br>& <br>Silly dance</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">Tap To Flip</div>
-                        <div class="card-back">
-                            <h3>The Floor is Lava </h3>
-                            <p>Everyone has 5 seconds to get off the floor</p><br><br>
-                            <p>Last one off the floor does:<br> <a href="https://youtube.com/shorts/CrroLZeeLlU" style="color: #b33b2e; text-decoration: underline;">Plank Punches</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">Tap To Flip</div>
-                        <div class="card-back">
-                            <h3>Mirror Me</h3>
-                            <p>The leader moves however they want, while the other mirrors them.(Dice number = number of moves)</p><br><br>
-                            <p>Loser does: Silly Dance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <!-- Home Workout -->
             <div id="stack1" class="card-stack">
                 <div class="card">
@@ -545,12 +536,60 @@ line-height: 10px;
                 </div>
             </div>
             
-            <!-- Offie Workout -->
+            <!-- Family Fun -->
+            <div id="stack2" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>30 Day Fitness</h3><br>
+                            <p>Do a short workout together (10-15 mins)<br> </p><br><br>
+                            <div class="card-back-list"> 
+                                <p><a href="https://youtube.com/shorts/uTbfBwpUftw" style="color: #b33b2e; text-decoration: underline;">Lightning Legs</a></p>
+                                <p><a href="https://youtube.com/shorts/j588IjqLyok" style="color: #b33b2e; text-decoration: underline;">Captain Flutter</a></p>
+                                <p><a href="https://youtube.com/shorts/vppEPyQpF-Q" style="color: #b33b2e; text-decoration: underline;">Jet Plank</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Freeze Tag Fitness</h3>
+                            <p>Freeze tag, but to unfreeze</p><br><br>
+                            <p>Do: <br><a href="https://youtube.com/shorts/zbAcjZkZzHA" style="color: #b33b2e; text-decoration: underline;">Hand Walkout</a><br>& <br>Silly dance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>The Floor is Lava </h3>
+                            <p>Everyone has 5 seconds to get off the floor</p><br><br>
+                            <p>Last one off the floor does:<br> <a href="https://youtube.com/shorts/CrroLZeeLlU" style="color: #b33b2e; text-decoration: underline;">Plank Punches</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Mirror Me</h3>
+                            <p>The leader moves however they want, while the other mirrors them.(Dice number = number of moves)</p><br><br>
+                            <p>Loser does: Silly Dance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Office Workout -->
             <div id="stack3" class="card-stack">
                 <div class="card">
                     <div class="card-inner">
                         <div class="card-front">Tap To Flip</div>
-                         <div class="card-back">
+                        <div class="card-back">
                             <h3>Inbox Intervals</h3>
                             <p>Every email notification</p><br><br>
                             <p>Do:<br> <a href="https://youtube.com/shorts/LxEvqzhY7Cw" style="color: #b33b2e; text-decoration: underline;">Chair Dips</a></p>
@@ -589,7 +628,7 @@ line-height: 10px;
                 </div>
             </div>
             
-            <!-- Tv Workout -->
+            <!-- TV Workout -->
             <div id="stack4" class="card-stack">
                 <div class="card">
                     <div class="card-inner">
@@ -597,7 +636,7 @@ line-height: 10px;
                         <div class="card-back">
                             <h3>Snack Attack Set</h3>
                             <p>For every snack you grab</p><br><br>
-                            <p>Do:<br> <a href="https://youtube.com/shorts/Y-cvP_XZcQQ" style="color: #b33b2e; text-decoration: underline;">ski jumps</a></p>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/Y-cvP_XZcQQ" style="color: #b33b2e; text-decoration: underline;">Ski Jumps</a></p>
                         </div>
                     </div>
                 </div>
@@ -607,7 +646,7 @@ line-height: 10px;
                         <div class="card-back">
                             <h3>Closet Call</h3>
                             <p>Every time a character changes outfits</p><br><br>
-                            <p>Do:<br> <a href="https://youtube.com/shorts/mI-4ppo3nD4" style="color: #b33b2e; text-decoration: underline;">dimond press ups </a></p>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/mI-4ppo3nD4" style="color: #b33b2e; text-decoration: underline;">Diamond Push Ups</a></p>
                         </div>
                     </div>
                 </div>
@@ -632,7 +671,7 @@ line-height: 10px;
                     </div>
                 </div>
             </div>
-
+    
             <!-- Outdoor Workout -->
             <div id="stack5" class="card-stack">
                 <div class="card">
@@ -650,8 +689,8 @@ line-height: 10px;
                         <div class="card-front">Tap To Flip</div>
                         <div class="card-back">
                             <h3>Pothole Pounder</h3>
-                            <p> Each pothole you see</p><br><br>
-                            <p>Do:<br> <a href="https://youtube.com/shorts/sghzl-NslKE" style="color: #b33b2e; text-decoration: underline;">Jump squats</a></p>
+                            <p>Each pothole you see</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/sghzl-NslKE" style="color: #b33b2e; text-decoration: underline;">Jump Squats</a></p>
                         </div>
                     </div>
                 </div>
@@ -676,11 +715,12 @@ line-height: 10px;
                     </div>
                 </div>
             </div>
-              <!-- Pyramid Workout -->
-              <div id="stack6" class="card-stack">
+            
+            <!-- Pyramid Workout -->
+            <div id="stack6" class="card-stack">
                 <div class="card">
                     <div class="card-inner">
-                        <div class="card-front">Tap To Flip </div>
+                        <div class="card-front">Tap To Flip</div>
                         <div class="card-back">
                             <h3>Pyramid Sweat</h3><br>
                             <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
@@ -694,7 +734,7 @@ line-height: 10px;
                         <div class="card-back">
                             <h3>Pyramid Sweat</h3><br>
                             <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
-                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/56yOUm3WOZM" style="color: #b33b2e; text-decoration: underline;">Press ups</a></p>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/56yOUm3WOZM" style="color: #b33b2e; text-decoration: underline;">Press Ups</a></p>
                         </div>
                     </div>
                 </div>
@@ -703,7 +743,7 @@ line-height: 10px;
                         <div class="card-front">Tap To Flip</div>
                         <div class="card-back">
                             <h3>Pyramid Sweat</h3><br>
-                           <p> You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
                             <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/-r0tnaEJsGw" style="color: #b33b2e; text-decoration: underline;">Burpees</a></p>
                         </div>
                     </div>
@@ -714,20 +754,129 @@ line-height: 10px;
                         <div class="card-back">
                             <h3>Pyramid Sweat</h3><br>
                             <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
-                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/YyO7WrwFo6M" style="color: #b33b2e; text-decoration: underline;">Sit up</a></p>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/YyO7WrwFo6M" style="color: #b33b2e; text-decoration: underline;">Sit Up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Party Power Challenges -->
+            <div id="stack7" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Reverse Fitness</h3>
+                            <p>
+                                Move backwards! Lunges, crawls, burpees — but every move must be done in reverse. 
+                                Roll the dice to see how many reverse moves you must complete. Mess up? Add 5 penalty situps!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Dodge Drop</h3>
+                            <p>
+                                Keep moving until you hear "DROP!" — then hit the floor fast with a burpee or pushup.
+                                Roll the dice to find out how many drops you must survive. Last to drop? Do 20 mountain climbers!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Balance Battle</h3>
+                            <p>
+                                Stand on one leg! Roll the dice to set your balance time (seconds). Follow quick commands (clap, squat, touch ground) without falling. 
+                                Last one balancing wins!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pulse Party</h3>
+                            <p>
+                                Pick a pulse move (bounce squats, jogging). Roll the dice to set your pulse reps. 
+                                When the music drops — hit the floor in plank and pop back up fast!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Parent Power Challenges -->
+            <div id="stack8" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Nappy Ninja</h3>
+                            <p> 
+                                Every time you do a nappy change, drop and do 10 fast squats — ninja style! Bonus: Add a high jump if it's a messy one!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Toy Tidy Toss</h3>
+                            <p>
+                                Every time you pick up toys off the floor, throw in 5 lunges for every toy! Power-up: Add a jump lunge every 5th toy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Snack Time Sizzler</h3>
+                            <p>
+                                Every time you prep a snack or feed the little one, hold a wall-sit for 30 seconds. Add 5 calf raises at the end to spice it up!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Storybook Squats</h3>
+                            <p>
+                                During story time, do 1 squat for every page you read out loud! Bonus: Add a jump every time there's a funny sound or animal noise!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      
+
         
+        
+
+
+       
         
         <div class="navigation">
             <button id="prev-card-btn">Previous Card</button>
             <button id="next-card-btn">Next Card</button>
         </div>
-        
+
         <div class="section-divider"></div>
+        
+
+        
         
         <!-- New Difficulty Selector -->
         <div class="difficulty-container">
@@ -746,7 +895,7 @@ line-height: 10px;
        
         <div class="dice-container">
             <div class="dice">
-                <img id="diceImage" src="/IMG_4702.PNG" alt="Dice" />
+                <img id="diceImage" src="IMG_4702.PNG" alt="Dice" />
             </div>
             <div class="dice-controls">
                 <button id="roll-dice-btn">Roll Dice</button>
@@ -765,7 +914,26 @@ line-height: 10px;
             <div id="totalReps">Total Reps: 0</div>
             <div id="tallyCountDisplay">Tally Count: 0</div>
         </div>
-    
+
+        <div class="section-divider"></div>
+
+        <div>
+            <input type="number" id="minutes" placeholder="Min" min="0">
+            <input type="number" id="seconds" placeholder="Sec" min="0" max="59">
+        </div>
+        <audio id="buzzer" src="digital-timer-beeping-epic-stock-media-1-00-08.mp3"></audio>
+        <div id="timer">00:00</div>
+        
+        <div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        
+        <!-- Buzzer sound -->
+       
+        
+        
+        
     
         <footer class="footer">
             <div class="footer-links">
@@ -773,8 +941,8 @@ line-height: 10px;
              
         
         
-              <a href="https://dbworkouts.co.uk/index.html" target="_blank">Website
-                <img src="/photo-output 7.PNG" style="color: white"alt="business logo" width="30">
+                <a href="https://dbworkouts.co.uk/index.html" target="_blank">Website
+                <img src="photo-output 7.PNG" style="color: white"alt="business logo" width="30">
               
     
               
@@ -965,12 +1133,12 @@ line-height: 10px;
             
             // Dice images array for dice animation
             const diceImages = [
-                '/IMG_4702.PNG',
-                '/IMG_4702.PNG',
-                '/IMG_4702.PNG',
-                '/IMG_4702.PNG',
-                '/IMG_4702.PNG',
-                '/IMG_4702.PNG'
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG'
             ];
 
             // Add the ability to flip cards when clicked
@@ -1170,9 +1338,173 @@ line-height: 10px;
             tallyBtn.addEventListener('click', incrementTally);
             resetTallyBtn.addEventListener('click', resetTally);
         });
+   // Audio context for fallback sound
+let audioContext;
+
+// Function to initialize audio context
+function initAudioContext() {
+  if (!audioContext) {
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  
+  // Resume audio context if it's suspended (browser policy requirement)
+  if (audioContext.state === 'suspended') {
+    audioContext.resume();
+  }
+}
+
+// Initialize on page interaction to handle autoplay restrictions
+document.addEventListener('click', initAudioContext);
+document.addEventListener('touchstart', initAudioContext);
+
+// Fallback beep using Web Audio API
+function createBeep() {
+  initAudioContext();
+  
+  const oscillator = audioContext.createOscillator();
+  const gainNode = audioContext.createGain();
+  
+  oscillator.connect(gainNode);
+  gainNode.connect(audioContext.destination);
+  
+  oscillator.type = 'square';
+  oscillator.frequency.value = 800;
+  gainNode.gain.value = 0.5;
+  
+  oscillator.start();
+  
+  // Beep for 0.3 seconds
+  setTimeout(() => {
+    oscillator.stop();
+  }, 300);
+}
+
+// Function to reload and play sound
+function playSound() {
+  // Create new audio element each time instead of reusing
+  const buzzer = new Audio('digital-timer-beeping-epic-stock-media-1-00-08.mp3');
+  
+  // Try to play the audio
+  const playPromise = buzzer.play();
+  
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        console.log("Buzzer sound played successfully");
+      })
+      .catch(error => {
+        console.log("Error playing buzzer sound:", error);
+        // Use Web Audio API as fallback
+        createBeep();
+      });
+  }
+}
+
+let countdown;
+let timeLeft = 0;
+
+function startTimer() {
+  clearInterval(countdown);
+
+  const minutes = parseInt(document.getElementById('minutes').value) || 0;
+  const seconds = parseInt(document.getElementById('seconds').value) || 0;
+
+  timeLeft = (minutes * 60) + seconds;
+
+  if (timeLeft <= 0) {
+    alert("Please set a valid time!");
+    return;
+  }
+
+  // Initialize audio context when timer starts
+  initAudioContext();
+  
+  updateDisplay();
+
+  countdown = setInterval(() => {
+    timeLeft--;
+    updateDisplay();
+
+    if (timeLeft <= 0) {
+      clearInterval(countdown);
+      // Try both methods for maximum compatibility
+      playSound();
+      
+      // Also try using the original buzzer element as backup
+      const originalBuzzer = document.getElementById('buzzer');
+      originalBuzzer.currentTime = 0;
+      originalBuzzer.play().catch(() => {
+        console.log("Backup method failed, already tried alternative");
+      });
+    }
+  }, 1000);
+}
+
+function updateDisplay() {
+  const mins = Math.floor(timeLeft / 60);
+  const secs = timeLeft % 60;
+
+  document.getElementById('timer').textContent = 
+    `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+}
+
+function resetTimer() {
+  clearInterval(countdown);
+  timeLeft = 0;
+  document.getElementById('timer').textContent = "00:00";
+  document.getElementById('minutes').value = "";
+  document.getElementById('seconds').value = "";
+  
+  // Reset audio element when timer is reset
+  const buzzer = document.getElementById('buzzer');
+  buzzer.pause();
+  buzzer.currentTime = 0;
+}
+
+// Double-ensure the audio is properly set up
+document.addEventListener('DOMContentLoaded', () => {
+  // Set the src again to ensure it's properly loaded
+  const buzzer = document.getElementById('buzzer');
+  buzzer.src = 'digital-timer-beeping-epic-stock-media-1-00-08.mp3';
+  buzzer.load();
+});
+
+
+
+// Simple test service worker
+self.addEventListener('install', event => {
+  console.log('dean1234533.github.io/Repping-It/pwabuilder-sw (4).js');
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', event => {
+  console.log('Service worker activated');
+  return self.clients.claim();
+});
+
+self.addEventListener('fetch', event => {
+  // Basic fetch handler
+  event.respondWith(fetch(event.request));
+});
+
+
+        if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('dean1234533.github.io/Repping-It/pwabuilder-sw (4).js') // make sure this path is correct
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.log('Service Worker registration failed:', error);
+      });
+  });
+}
     
-       
-    
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('dean1234533.github.io/Repping-It/pwabuilder-sw (4).js')
+  }
+
+
     </script>
 </body>
 </html>
