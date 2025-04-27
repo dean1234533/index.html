@@ -1,159 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DB’s Workouts | Outdoor Personal Training in East London</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repping It: Interactive Fitness Challenge | Gamified Workout Experience</title>
 
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
- 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Add GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <meta name="description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.">
+
+    <meta name="keywords" content="Repping It,Fitness game,Home workouts,Active lifestyle,Exercise challenges,Fun fitness activities,Dice workout,Motivational fitness,Healthy living,Interactive exercise,Unique workout routines,Fitness tracker,Outdoor workouts,Home fitness challenges">
+
+    <meta property="og:title" content="Repping It: Interactive Fitness Challenge | Gamified Workout Experience">
+    <meta property="og:description" content="Repping It transforms everyday activities into exciting fitness challenges. Roll the dice to determine your workout reps based on common occurrences in your day-to-day life. Stay active and motivated while turning mundane moments into fun exercise opportunities. Unleash your inner beast and make fitness a part of your daily routine!.">
+    <meta property="og:url" content="https://dean1234533.github.io/Repping-It">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="https://dean1234533.github.io/Repping-It"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
    
-    <meta name="description" content="DB’s Workouts offers personalized outdoor personal training in East London, helping you build strength, burn fat, and boost your confidence through focused fitness coaching.">
-    <meta name="keywords" content="Outdoor personal training East London,Strength building coach,Fat loss training,Confidence boosting fitness,Personalized fitness coaching,East London personal trainer,Outdoor workouts, Fitness coaching in East London">
-    <meta name="author" content="Dean Burt">
-    <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     
-   
-    <meta property="og:title" content="DB's Workouts – Personalized Outdoor Training in East London">
-    <meta property="og:description" content="Get Fit Anywhere with Mobile Personal Training – Home & Park Sessions Available
-    Enjoy personalized fitness training in the comfort of your home or the fresh air of your local park. Our mobile personal training service brings expert coaching, customized workout plans, and real results—directly to you. Whether you’re aiming for weight loss, muscle building, or improved overall health, we make fitness convenient, flexible, and effective. No gym required—just your goals, your schedule, and a trainer who comes to you.">
-    <meta property="og:image" content="images/IMG_4357.jpg">
-    <meta property="og:url" content="https://dbworkouts.co.uk/index.html/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DB's Workouts – Personalized Outdoor Training in East London">
-    <meta name="twitter:description" content="Transform your body and mindset with Dean's personalized outdoor personal training sessions.">
-    <meta name="twitter:image" content="images/IMG_4357.jpg">
-    <meta property="og:type" content="video" />
-   
-    <link rel="icon" href="images/photo-output 5.PNG" type="image/png">
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    
-    <link rel="canonical" href="https://dbworkouts.co.uk/index.html/" />
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="manifest" href="manifest.json">
-   
-
-    <style>
-
-
-
-
-
-
-
-
-        
-.video-container {
-  max-width: 100%;
-  aspect-ratio: 16 / 9; /* Adjust based on your video's natural aspect ratio */
-  overflow: hidden;
+    color: white;
+    font-size: small;
+    width: 100%;
 }
 
 
-.fade-wrapper > * {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-
-#myButton {
-      display: inline-block;
-      margin: 0 auto;
-      padding: 10px 20px;
-      background-color: #c33e3e;
-      color: white;
-      border: none;
-      font-size: 18px;
-      cursor: pointer;
-      text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    
+    /* Add hover effect glow */
+    .card:hover .card-inner {
+        box-shadow: 0 0 25px rgba(179, 59, 46, 0.6);
     }
     
-      
-    
-    .orange-cta-button {
-    display: inline-block;
-    padding: 15px 25px;
+    /* Add this for shine effect */
+    .card-shine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px;
+        background: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 10;
+    }
+    #timer {
+            font-size: 5rem;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #e94f37;
+            color: white;
+        }
+        input {
+            width: 80px;
+            padding: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 2vw, 20px);
+    color: #e3dede;
+}
+
+.footer-links a {
+    color: rgb(234, 239, 231);
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
-    background-color:#c33e3e ;
-}
-    
-   
-
-
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* or 'cover' depending on your goal */
-}
-
-.round-image{width: 150px;height: 150px;object-fit: cover;border-radius: 100%;}
-.section-3d {
-   background-color: white;
-    padding: 0px;
-   
-  }
-
-     
-              
-              section {
-    color: rgb(247, 244, 244);
-    background-image: url("images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 
-* {
-    box-sizing: border-box;
-    max-width: 100%;
-}
 
-html {
-    font-size: 18px;
-    overflow-x: hidden;
-    width: 100%;
-    position: relative;
-}
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px auto;
+        }
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 0px; /* Prevent content overlap with sticky button */
-position: relative;
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            margin-bottom: 10px;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to right, #fff, #ccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
+        .controls {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-}
+        select, button {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
 
-/* Typography */
-h1 {
+        button {
+            background-color: #b33b2e;
+        }
+
+        button:hover {
+            background: rgba(141, 42, 42, 0.25);
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        select:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .card-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 350px;
+            margin: 30px 0;
+            
+        }
+
+        .card-stack {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .card {
+            display: none;
+            perspective: 1000px;
+            width: 224px;
+            height: 336px;
+            margin: 0 auto;
+            position: relative; /* Added for gloss effect */
+            overflow: hidden; /* Added for gloss effect */
+        
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            cursor: pointer;
+            
+         
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+            
+           
+        }
+        h1 {
     font-size: clamp(24px, 5vw, 48px);
 }
 
@@ -171,1353 +246,1289 @@ p, ol, ul {
     
 }
 
-span {
-    color: #b30018;
-}
-
-/* Container and Layout */
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.my-container {
-    margin-top: 24px;
-}
-
-.centered-element {
-    text-align: center;
-}
-
-/* Navigation */
-.navbar-brand {
-    width: 200px;
-}
-
-.navbar a {
-    font-size: 1.2rem;
-    padding: 10px 15px;
-}
-
-.navbar-toggler {
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-.nav-item {
-    text-align: right;
-    font-size: 18px;
-    margin-right: 15px;
-    display: flex;
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 1px;
+        }
+    .card-front {
+    background-image: url('IMG_4715.JPG'); /* Add background image */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-/* Background and Sections */
-
-
-.black-section {
-    background-color: #0e0d0d;
-    border: solid rgb(7, 7, 7);
-}
-
-.text-section {
-    min-height: 100px;
-    margin: 0;
-    padding: 0;
-    margin-top: -20px;
-}
-
-.custom-border {
-    background-color: black;
-    height: 100%;
-    border: solid white;
-}
-
-/* Elements and Components */
-.heading-underline {
-    display: inline-block;
-    border-bottom: 3px solid red;
-    padding-bottom: 5px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-
-
-/* Remove the following code */
-
-
-.btn {
-    font-size: larger;
-}
-
-/* Testimonials and Custom Boxes */
-.testimonial-container {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    font-size: 20px;
-    background: #efeeee;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.custom-box {
-    background: rgb(11, 10, 10);
-    padding: 20px;
-    border-radius: 20px;
-    border: 4px solid red;
-    box-shadow: inset 0 0 5px black, 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.border1 {
-    border: #382d2d;
-    background-color: #f5f0f0;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.full-width-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.me {
-    width: 150px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pic2 {
-    width: 200px;
-    border-radius: 40%;
-    text-align: center;
-}
-
-.pic3 {
-    width: 200px;
-    float: right;
-}
-
-.start {
-    border-radius: 100%;
-}
-
-/* Carousel */
-.carousel-container {
-    width: 100%;
-    max-width: 100%;
-    height: 750px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 5%;
-}
-
-.carousel {
-    flex: 1;
-   overflow: hidden; /* Prevents content from shifting */
-}
-
-ol {
-  display: block;
-  width: 1100%;
-  max-width: 700px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 7rem;
-  box-sizing: border-box;
-}
-
-ol li {
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-.carousel-item {
-    max-height: auto;
-    overflow: hidden;
-}
-
-.carousel-item img {
-    min-height: auto;
-    width: auto;
-    object-fit: cover;
-}
-
-.carousel-inner img {
-    min-height: auto;
-    width: auto;
-    margin: 0 auto;
-}
-
-.text-content {
-    flex: 1;
-}
-
-/* Tables */
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    justify-content: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgb(8, 8, 8);
-    color: rgb(249, 245, 245);
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid black;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    padding: 10px;
-    border: 1px solid rgb(3, 3, 3);
-}
-
-/* Lists */
-.list {
-    list-style-type: square;
-    list-style: none;
-}
-
-.no-numbers {
-    list-style-type: disc;
-}
-
-/* Footer */
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: black;
-    color: white;
-    font-size: small;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    color: #ccc;
-}
-
-.footer-links a {
-    color: rgb(228, 228, 234);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-contact {
-    text-align: center;
-}
-
-.footer-link {
-    font-size: 15px;
-    color: #e6e3e3;
-}
-
-/* Helper Classes */
-.discount-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: red;
-}
-
-.fa-brands {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-}
-
-hr {
-    margin-top: 60px;
-}
-
-/* Layout Classes */
-.p1 {
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.p2 {
-    text-align: center;
-    margin: 0;
-}
-
-.s1 {
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0;
-    width: auto;
-}
-
-.ws {
-    display: flex;
-    text-align: center;
-    width: auto;
-    margin: 0;
-    background-color: white;
-}
-
-.we {
-    display: flex;
-    justify-content: center;
-
-}
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
-    .table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  table {
-    width: 900px; /* Prevent full width if you want it centered tightly */
-    margin: 0 auto;
-  }
-}
-    
-    .nav-item {
-        margin-left: 50px;
-    }
-    
-    li {
-        max-width: 900px;
-        margin-left: 40px;
-    }
-    ol {
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
-  box-sizing: border-box;
-}
-
-ol li {
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-    .me-container {
-        display: grid;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-right: 10px;
-    }
-    .desktop-only{display: block;}
-    .mobile-only {
-        display: none;
-  
-    }
-
-    
-
-section {
-    color: rgb(247, 244, 244);
-    background-image: url("/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.black-section{background-color: black;background-image: none;}
-.s1{background-color: rgb(219, 224, 230); color: #0f0e0e;border-radius: 10px; text-align-last: left;margin-left: 30px;}  
-
-@media (min-width: 769px) and (max-width: 1023px) {
-    .nav-item {
-        margin-left: 20px;font-size: medium;
-    }
-  
-
-
-
-    .testimonial-container {
-        width: 80%;
-    }
-
-    .carousel-container {
-        flex-direction: column;
-        height: 450px;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-.me {
-    width: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .me-container {
-        display: grid;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-right: 50px;
-    }
-  
-.ws {
-    display: flex;
-    text-align: center;
-    width: fit-content;
-    margin: 0;
-    background-color: white;
+    color: rgb(230, 224, 224);
     
 }
-.mobile-only{display: none;}}
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .desktop-only {
-        display: none;
-    }
-    
-    .mobile-only {
-        display: contents;
-    }
-    
-    .nav-item {
-        margin-left: 0;
-    }
-    
-    li {
-        max-width: 100%;
-        margin-left: 0;
-    }
-    
-    .me-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-       
-        
-        
-    }
-    .me {
-    width: 100px;
-    border-radius: 50%;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0px;
-    margin-top: -23px;
-
-} 
-    .testimonial-container {
-        width: 90%;
-    }
-    
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .carousel-container {
-        height: auto;
-        flex-direction: column;
-    }
-    
-    table {
-        height: auto;
-    }
-    
-    th, td {
-        padding: 8px;
-    }
-
-.round-image{width: 100px;height: 100px;object-fit: cover;border-radius: 100%;}
-section {
-    color: rgb(247, 244, 244);
-   background-image: none;
-background-color: black;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed
-    ;
-} 
-.PT{padding-bottom: 15px;}     
-.centered-element {
-    text-align: center;display: flex;justify-content: center;align-items: center;
-}
-.ws{color:black; background-color: rgba(249, 245, 245, 0.939);display: inline-block;justify-content: center;align-items: center;text-align: center;
-
-}
- 
-.white-section{background-color: none;
-    background-image: url("/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}     
-    .carousel {
-  height: 250px; /* Set to match your tallest image */
-  overflow: hidden; /* Prevents content from shifting */
-}
-}
-        </style>
-      
-      
-</head> 
-
-<body>
-  <section class="black-section">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-   
-
-  
-  
-      <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <!-- Content here -->
-      </div>
-      <div class="col-md-6">
-        <!-- Content here -->
-      </div>
-    </div>
-  </div>   
-
-
-
-
-  
-
-    
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="/images/IMG_4357.PNG" alt="Description" width="150" height="150" class="d-inline-block align-text-top">
-          
-      </a>
-      <!-- Navbar Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <a href="/index.html" style="color: #b30018;">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a href="/pricing.html" style="color:#b30018">Pricing</a>
-                  <li class="nav-item">
-                    <a href="/about.html" style="color:#b30018">About</a>
-                    <li class="nav-item">
-                    <a href="/Blog.html" style="color:#b30018">Blog</a>
-          </ul>
-      </div>
-  </div>
-</nav>
-
-
-
-
-
-    
-  <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicators (Optional) -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
-    </div>
-
-    
-
-
-
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    
-  </div>
-  
-<div class="carousel-container">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8026.jpg" class="d-block w-100" alt="Slide 1">
-      <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-
-        <h5 class="fw-bold display-4">IF YOU HAVE <br> A STRONG MIND</h5>
-        
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../IMG_8037 2.jpg" class="d-block w-100" alt="Slide 2">
-      <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-
-        <h5 class="fw-bold display-4">THE BODY <br> WILL <br> FOLLOW</h5>
-      </div>
-        
-          
-        
-      </div>
-    </div>
-   
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div><br>
-
-
-<Clear></Clear>
-
-<div class="desktop-only">
-    <section class="black-section">
-  <h1 class="text-section">Unlock Your Fitness Potential Through Outdoor Training:
-  </section>
-</div>
-  <br><br>
-
-    
-  
- 
-    
-   
-  <div class="mobile-only">
-    <div class="container">
-        <h1>Personalised Coaching That Transforms Your Body and Mindset in East London</h1>
-    </div>
-</div>
-
-<!-- Trainer Profile Section -->
-<div class="me-container">
-    <div class="desktop-only">
-        <section class="black-section">
-        <img class="me" src="/images/IMG_4997 2.jpg" alt="Personal Trainer Dean">
-    </section>
-    
-    </div>
-</div>
-
-
-    <div class="mobile-only">
-        <section class="ws">
-        <div class="my-container">
-            <div class="centered-element">
-        <img class="me" src="/images/IMG_4997 2.jpg" alt="Personal Trainer Dean">
-<div class="PT">
-                <p class="p2">I'm Dean, a certified mobile personal trainer dedicated to helping you reach your goals.</p>
-        </div>
-            </div>
-        </div>
-    </section>
-    </div>
-
-</div></div>
-
-<br>
-
-<div class="desktop-only">
-    <section class="black-section">
-    <p>"Seeking a dedicated mobile personal trainer in East London? Meet Dean, a certified professional committed to helping you achieve your fitness goals."</p>
-
-</section>
-</div>
-  
-<br>
-
-<!-- Free Consultation Section - Mobile -->
-<div class="mobile-only">
-    <h1 class="heading-underline">Free Consultation</h1>
-    <br>
-    
-    <h2>Kickstart your journey with a free session:</h2>
-    <br>
-    
-    <ol class="no-numbers">
-        <li>Schedule: Pick a convenient time.</li>
-        <li>Questionnaire: Share your fitness goals and health info.</li>
-        <li>Consultation: Discuss objectives and assess fitness level.</li>
-        <li>Personalised Plan: Receive a tailored workout strategy.</li>
-        <li>Start Training: Begin your transformation.</li>
-    </ol>
-
-
-   
-    <div class="fade-wrapper">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="cta-button">   
-          <button id="myButton">Book a Free Consultation</button>
-          </a>    
-          </div>
-
-         
-    
-</div>
-
-<!-- Free Consultation Section - Desktop -->
-<section>
-    <div class="desktop-only">
-        <h1 class="heading-underline">Free Personal Fitness Training Consultation</h1>
-        <br><br>
-        
-        <h2>Ready to kickstart your fitness journey? Book a free consultation with me today!</h2>
-        <br>
-        
-        <div class="ol-container">
-            <ol class="no-numbers">
-                <li>Schedule Your Consultation: Simply reach out and choose a time that works for you.</li>
-                <li>Complete a Quick Questionnaire: Before we meet, fill out a short form to share your fitness goals and any relevant health info.</li>
-                <li>Consultation Meeting: We'll chat about your goals, assess your fitness level, and discuss the best plan for you.</li>
-                <li>Personalised Plan: After our consultation, I'll create a tailored workout plan just for you.</li>
-                <li>Get Started: We'll schedule your first session and begin your transformation!</li>
-            </ol>
-        </div>
-        
-        <section class="black-section">
-        <p>Let's take the first step together—book your free consultation now!</p>
-        
-
-        
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="orange-cta-button ">Book a Free Consultation</a>
-   
-    </section>
-    </div>
-</section>
-
-<!-- Video Section -->
- <div class="video-container">
-<section class="video-section">
-    <video  autoplay controls muted loop playsinline  class="background-video">
-        <source src="/images/Video.MP4" type="video/mp4">
-    </video>
-</section>
-</div>
-
-
-  
-
-
-<!-- Training Sessions Section -->
-
-    <div class="desktop-only">
-        <section class="black-section">
-        <h1 class="heading-underline">Personal Training Sessions</h1>
-        <br>
-        
-        <p>Each 60-minute session is conducted at a location convenient for you—be it a local park or your home garden within East London—providing flexibility and comfort in your training environment.</p>
-        <br>
-    </section>
-    
-    </div>
-    
-    <div class="mobile-only">
-        <h1 class="heading-underline">Sessions</h1>
-        <br>
-        
-        <p>Each 60-minute session is held at a location that suits you—local park or home garden in East London.</p>
-    </div>
-    
-    <!-- Session Details - Desktop -->
-    <div class="desktop-only">
-        <section>
-            <h3>A personal training (PT) session typically includes:</h3>
-            <br>
-            
-            <div class="ol-container">
-                <ol class="no-numbers">
-                    <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
-                    <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
-                    <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
-                </ol>
-                
-                <p>I will watch your form, structure your workout, and keep you motivated.</p>
-            </div>
-        </section>
-    </div>
-    
-    <!-- Session Details - Mobile -->
-    <div class="mobile-only">
-       
-        <section class="white-section section-embossed">
-        <h3>A personal training (PT) session typically includes:</h3>
-        <br>
-       
-        <div class="ol-container">
-            <ol class="no-numbers">
-                <li>Warm-Up (5-10 min): Light cardio, mobility, and stretching.</li>
-                <li>Main Workout (30-40 min): A mix of boxing (punching and footwork), weight training (bodyweight or weights), circuits (back-to-back exercises), cardio (running, skipping), and core work (planks, crunches).</li>
-                <li>Cool-Down (5-10 min): Stretching exercises to relax muscles.</li>
-            </ol>
-        </section>
-
-
-            <p>I will watch your form, structure your workout, and keep you motivated.</p>
-        </div>
-    </div>
-
-
-<br>
-<div class="desktop-only">
-    <section class="black-section">
-<img src="/images/IMG_8032.jpg" alt="Training session" class="img-fluid">
-
-<!-- Services Section -->
-<div class="desktop-only">
-    <h1 class="heading-underline title1">Personal Training Services</h1>
-    <br>
-</div>
-
-<br>
-
-<!-- Services List - Desktop -->
-<div class="desktop-only">
-    <div class="ol-container">
-        <ol class="no-numbers">
-            <li>Weight Management: Weight Loss, Toning & Sculpting</li>
-            <li>Strength Training: Resistance Training, Muscle Building</li>
-            <li>Performance Enhancement: Mobility, Flexibility, Speed, Strength, Power Development</li>
-            <li>Wellness Coaching: Nutritional Advice & Coaching</li>
-        </ol>
-        <br>
-   
-    </div>
-</div>
-</section>
-</div>
-
-<div class="mobile-only">
-    <section class="white-section section-embossed">
-<img src="/images/IMG_8032.jpg" alt="Training session" class="img-fluid">
-
-<!-- Services List - Mobile -->
-<div class="mobile-only">
-    <h1 class="heading-underline">Services</h1>
-    <br>
-    
-    <div class="ol-container">
-        <ol class="no-numbers">
-            <li>Weight Management: Lose weight, tone, and sculpt.</li>
-            <li>Strength Training: Build muscle and enhance strength.</li>
-            <li>Performance Enhancement: Improve mobility, flexibility, speed, and power.</li>
-            <li>Wellness Coaching: Get nutritional advice and support.</li>
-        </ol>
-    </div>
-</section>
-</div>
-</div>
-
-<h1 class="heading-underline">Client Progress</h1>
-
-<div class="desktop-only">
-<section class="black-section">
-<!-- Image Carousel -->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../photo-output.jpg" class="d-block w-100" alt="slide 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="slide 2">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-</div>
-
-
-
-<div class="mobile-only">
-    
-    <!-- Image Carousel -->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../photo-output.jpg" class="d-block w-100" alt="slide 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://raw.githubusercontent.com/dean1234533/index.html/main/images/images/../F6CC1351-50E1-42F0-A93A-1FF480633588.jpg" class="d-block w-100" alt="slide 2">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    </div>
-
-<br>
-
-<!-- Testimonials -->
-<div class="desktop-only">
-    <section>
-        <div class="img1">
-            <img src="/images/8C490568-0EF3-4CCA-821A-5725B440B1FD.jpg" class="img-fluid round-image" alt="Testimonial" width="100">
-        </div>
-        
-        <blockquote>
-            "Dean is amazing. Been training with him for a few weeks and I already feel better and stronger"
-            – Emma K.
-        </blockquote>
-    </section>
-</div>
-
-
-<div class="mobile-only">
-    <div class="img2">
-        <img src="/images/photo-output 2.JPEG" class="img-fluid round-image" alt="Testimonial" width="100">
-    </div>
-    
-    <blockquote>
-        "Loved working with Dean, he was really reassuring and helped me build the confidence to go and have my independent fitness journey."
-        <br>– John H.
-    </blockquote>
-    </div>
-
-
-<div class="mobile-only">
-    
-    <div class="img1">
-        <img src="/images/8C490568-0EF3-4CCA-821A-5725B440B1FD.jpg" class="img-fluid round-image" alt="Testimonial" width="100">
-    </div>
-    
-    <blockquote>
-        "Dean is amazing. Been training with him for a few weeks and I already feel better and stronger"
-        – Emma K.
-    </blockquote>
-    
-
-</div>
-
-<br>
-<div class="desktop-only">
-<section class="black-section">
-<div class="img2">
-    <img src="/images/photo-output 2.JPEG" class="img-fluid round-image" alt="Testimonial" width="100">
-</div>
-
-<blockquote>
-    "Loved working with Dean, he was really reassuring and helped me build the confidence to go and have my independent fitness journey."
-    <br>– John H.
-</blockquote>
-</section>
-</div>
-<br>
-
-<!-- Workout Plans Section - Desktop -->
-<div class="desktop-only">
-    
-   <img src="/images/IMG_8040 3.jpg" alt="Workout" class="img-fluid"> 
-  <section>
-      
-        
-        <h2 class="heading-underline">BESPOKE PERSONAL TRAINER WORKOUT PLANS</h2>
-        <br>
-        
-        <p>We all have reasons for starting a fitness journey, maybe you're just starting your fitness journey or need a little help on your way, we are here to help. For example, do you want to achieve that summer body? Are you getting ready for a special occasion like a holiday or wedding? Do you dream of completing a marathon? Whatever the occasion we have tailored workout plans to suit your every need.</p>
-        <br>
-    </section>
-</div>
-
-<br>
-<br>
-<div class="desktop-only">
-    <section class="black-section">
-<img src="/images/IMG_8036.jpg" alt="Group training" class="img-fluid">
-</section>
-<!-- Group Training Section - Desktop -->
-<div class="desktop-only">
-    <section class="black-section">
-    <h1 class="heading-underline">Small Groups Or Pairs Fitness Training</h1>
-    </section>
-    <br>
-    
-    <p>Boost motivation and enjoy a supportive atmosphere with our small group training sessions. Train with friends or family (up to 4 participants) and benefit from discounted rates.</p>
-    <br>
-</div>
-</div>
-<div class="mobile-only">
-<img src="/images/IMG_8040 3.jpg" alt="Workout" class="img-fluid"> 
-
-
-<!-- Workout Plans Section - Mobile -->
-<div class="mobile-only">
-    <section class="white-section section-embossed">
-        <h2 class="heading-underline">BESPOKE PERSONAL TRAINER WORKOUT PLANS</h2>
-        <br>
-        
-        <p>We all have reasons for starting a fitness journey, maybe you're just starting your fitness journey or need a little help on your way, we are here to help. For example, do you want to achieve that summer body? Are you getting ready for a special occasion like a holiday or wedding? Do you dream of completing a marathon? Whatever the occasion we have tailored workout plans to suit your every need.</p>
-        <br>
-    </section>
-</div>
-</div>
-<br>
-<br>
-
-<!-- Group Training Section - Mobile -->
-<div class="mobile-only">
-<img src="/images/IMG_8036.jpg" alt="Group training" class="img-fluid">
-</div>
-
-<div class="mobile-only">
-<section class="white-section section-3d">
-   <div class="mobile-only">
-        <h1 class="heading-underline">Group Training</h1>
-        
-        <p>Train with friends or family (up to 4 people) for added motivation and discounted rates.</p>
-    </div>
-</section>
-</div>
-
-
-
-  
-       
- 
-
-  
-<br>
-
-<div class="desktop-only">
-<section class="slocation">
-    
-<h1 class="heading-underline">Locations</h1>
-    </section>
-</div>
-
-
-<div class="mobile-only">
-<h1 class="heading-underline">Locations</h1>
-</div>
-
-  <br>
-  
-  <div class="table-container">
-    
-
-  <table class="black-table">
-    <tr>
-        <th>Stratford (E15)</th>
-        <th>East Ham (E12)</th>
-        <th>Leytonstone (E11)</th>
-    </tr>
-    <tr>
-        <td>Ilford (E11, E12, IG1)</td>
-        <td>Walthamstow (E17)</td>
-        <td>Wanstead (E11)</td>
-    </tr>
-    <tr>
-        <td>Leyton (E10)</td>
-        <td>Canning Town (E16)</td>
-        <td>Bow (E3)</td>
-    </tr>
-</table>
-  </div>
-
-
-
-
-  <br>
-
-
-  <div class="desktop-only">
-
-  <p>If you have any enquiries about location please send me a message for more information. </p>
-  </div>
-
-  <div class="desktop-only"> 
-   
-    <section class="slocation">
-    <p>Let’s achieve your <span>Fitness Goals</span> together!
-    </p>
-  </section> 
-</div>
-
-<div class="mobile-only"> 
-   
-        <div class="container">
-      <div class="centered-element">
-     
-    <p class="p1">For location inquiries, please message me.
-    </p>
-    </div>
-  </div>
-
-
-
-
-    <br>
-   
-
-
-
-
-    
-
-
-    <section class="white-section section-3d">
-        <div class="container">
-            <div class="centered-element">
-          
-<p>Let’s achieve your <span>Fitness Goals</span> together!
-</p>
-</section>
-</div>
-</div>
-
-     <footer>
-
-      <footer class="footer">
-        <div class="footer-links">
-     
-      
-            <a href="https://wa.me/447752300937" target="_blank">Phone
-                <img src="/images/whatsapp 3.png" style="color: white"alt="whatsapp logo" width="30">
-              </a> 
-        
-              <a href="mailto:dbs-workouts@yahoo.com" target="_blank">Email
-                <img src="/images/mail.png" style="color: white"alt="email logo" width="30">
-              </a>
-        
-        
-        <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram
-            <img src="/images/instagram 2.png" style="color: white"alt="instagram logo" width="30">
-          </a>
-
-       
-
-       
-        
-      <a href="/Privacy Policy.html" target="_blank">Privacy Policy
-      </a>
-  
-  
-  
-   <a href="/Terms and conditions.html" target="_blank">Terms and Conditions
-    
-  </a>
-          
-        
-
-        
-        </div>
-        
-
-            
-
-        
-            </div>
-        
-        <div class="footer-contact">
+        .card-front {
            
+        display: flex;
+        text-align: center;
+        justify-content: center;
+            background-color: #3498db;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+
+        .card-back {
+            background-image: url('annie-spratt-6a3nqQ1YwBw-unsplash.jpg'); /* Add background image */
+            background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */
+            display: grid;
+            color: #f6eded;
+justify-content: center;
+text-align: center;
+line-height: 2px;
+            transform: rotateY(180deg);
+            font-size: 25px;
+            padding-top: 2px;
+            text-align: center;
+        }
+
+        /* Gloss Effect */
+        .card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+            border-radius: 8px;
+            opacity: 0.5; /* Adjust opacity for gloss */
+            pointer-events: none; /* Prevents interfering with clicks */
+        }
+
+        .navigation {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;  
+        }
+
+        .dice-container {
+            
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .dice {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #diceImage {
+            
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;
+        }
+
+        .rolling {
+            
+            animation: rollDice 0.5s ease-out 3;
+        }
+
+        @keyframes rollDice {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.2); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        .dice-controls, .tally-controls {
+            display: flex;
+            justify-content: center;  
+            gap: 15px;            
+            margin: 20px 0;          
+        }
+
+        .stats {
+            margin-top: 30px;       
+            margin-bottom: 20px;    
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        /* Difficulty buttons container */
+        .difficulty-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;          
+        }
+
+        .difficulty-title {
+            font-size: 20px;
+            margin-bottom: 10px;    
+        }
+
+        .difficulty-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;              
+            flex-wrap: wrap;
+        }
+
+        /* Style difficulty buttons differently */
+        .difficulty-btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            min-width: 120px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .difficulty-btn.active {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        .low-btn {
+            background-color: #27ae60;  
+        }
+
+        .medium-btn {
+            background-color: #f39c12;  
+        }
+
+        .high-btn {
+            background-color: #e74c3c;  
+        }
+
+        /* Section dividers */
+        .section-divider {
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+            margin: 30px auto;
+        }
+
+        /* Modal Styles */
+        .modal-header {
+            background-color: #b33b2e; /* Same color as buttons */
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .controls, .difficulty-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                width: 160px;
+                height: 240px;
+                ;
+            }
+            .card-back-list{margin-top: -25px;}
+            .dice {
+                width: 60px;
+                height: 60px;
+            }
+            p{margin-top: -10px;}
+            #diceImage {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            a{padding: 10px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repping It: Fitness Card Game</h1>
+        
+        <div class="controls">
+            <select id="stack-select">
+                <option value="1">Home Work</option>
+                <option value="3">Office Rep</option>
+                <option value="4">Remote Flex</option>
+                <option value="5">OutFit</option>
+                <option value="6">Pyramid Hustle</option>
+                <option value="2">Family Fun</option>
+                <option value="7">Party Clash</option>
+                <option value="8">Fit Parents</option>
+                <option value="9">Time Crusher</option>
+            </select>
+            <button id="shuffle-btn">Shuffle Cards</button>
+            <button id="game-rules-btn">Game Rules</button>
         </div>
-      </div>
-    </footer>
+    
+        <div class="card-container">
+            <!-- Home Workout -->
+            <div id="stack1" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Laugh Out Loud</h3>
+                            <p>Every time you hear a laugh</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/S0oc8-a1eoo" style="color: #b33b2e; text-decoration: underline;">Straight Leg Toe Touch</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Call to Action</h3>
+                            <p>Every time the phone rings</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/wKvR_B0Gbus" style="color: #b33b2e; text-decoration: underline;">Cross Jacks</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>YouTube Ad App</h3>
+                            <p>Every time YouTube ad appears</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/mI-4ppo3nD4" style="color: #b33b2e; text-decoration: underline;">Diamond Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Tweet and Tone</h3>
+                            <p>Every time you see a bird</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/8r0k1cWA068" style="color: #b33b2e; text-decoration: underline;">Standing Side Crunch</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Family Fun -->
+            <div id="stack2" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>30 Day Fitness</h3><br>
+                            <p>Do a short workout together (10-15 mins)<br> </p><br><br>
+                            <div class="card-back-list"> 
+                                <p><a href="https://youtube.com/shorts/uTbfBwpUftw" style="color: #b33b2e; text-decoration: underline;">Lightning Legs</a></p>
+                                <p><a href="https://youtube.com/shorts/j588IjqLyok" style="color: #b33b2e; text-decoration: underline;">Captain Flutter</a></p>
+                                <p><a href="https://youtube.com/shorts/vppEPyQpF-Q" style="color: #b33b2e; text-decoration: underline;">Jet Plank</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Freeze Tag Fitness</h3>
+                            <p>Freeze tag, but to unfreeze</p><br><br>
+                            <p>Do: <br><a href="https://youtube.com/shorts/zbAcjZkZzHA" style="color: #b33b2e; text-decoration: underline;">Hand Walkout</a><br>& <br>Silly dance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>The Floor is Lava </h3>
+                            <p>Everyone has 5 seconds to get off the floor</p><br><br>
+                            <p>Last one off the floor does:<br> <a href="https://youtube.com/shorts/CrroLZeeLlU" style="color: #b33b2e; text-decoration: underline;">Plank Punches</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Mirror Me</h3>
+                            <p>The leader moves however they want, while the other mirrors them.(Dice number = number of moves)</p><br><br>
+                            <p>Loser does: Silly Dance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Office Workout -->
+            <div id="stack3" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Inbox Intervals</h3>
+                            <p>Every email notification</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/LxEvqzhY7Cw" style="color: #b33b2e; text-decoration: underline;">Chair Dips</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Every Check In</h3>
+                            <p>Every time you check your phone</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/OW3E2FhSjPg" style="color: #b33b2e; text-decoration: underline;">Calf Raises</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Sip & Sweat</h3>
+                            <p>Every coffee break</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/V47pG-zWjwA" style="color: #b33b2e; text-decoration: underline;">Wall Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Rise and Shine</h3>
+                            <p>Every time you stand up</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/3bHwrNcx8ww" style="color: #b33b2e; text-decoration: underline;">Chair Squats</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TV Workout -->
+            <div id="stack4" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Snack Attack Set</h3>
+                            <p>For every snack you grab</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/Y-cvP_XZcQQ" style="color: #b33b2e; text-decoration: underline;">Ski Jumps</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Closet Call</h3>
+                            <p>Every time a character changes outfits</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/mI-4ppo3nD4" style="color: #b33b2e; text-decoration: underline;">Diamond Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Scroll & Sweat</h3>
+                            <p>Every time you check social media</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/NSo7v8taJKw" style="color: #b33b2e; text-decoration: underline;">Crunches</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Showtime Sweat</h3>
+                            <p>For every new show that comes to netflix</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/56yOUm3WOZM" style="color: #b33b2e; text-decoration: underline;">Push Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Outdoor Workout -->
+            <div id="stack5" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Delivery Driver Drop Set</h3>
+                            <p>Every time you see a food delivery rider</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/vaQ8TuLpjdo" style="color: #b33b2e; text-decoration: underline;">Mountain Climbers</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pothole Pounder</h3>
+                            <p>Each pothole you see</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/sghzl-NslKE" style="color: #b33b2e; text-decoration: underline;">Jump Squats</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>L Plate Lifter</h3>
+                            <p>Every car/bike with a L plate</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/QC1RKGE9wjc" style="color: #b33b2e; text-decoration: underline;">Lunges</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Construction Crusher</h3>
+                            <p>Each time you see roadworks</p><br><br>
+                            <p>Do:<br> <a href="https://youtube.com/shorts/zzNwlVK_XPg" style="color: #b33b2e; text-decoration: underline;">Tuck Jumps</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pyramid Workout -->
+            <div id="stack6" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/AhunaH0K2VM" style="color: #b33b2e; text-decoration: underline;">Squats</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/56yOUm3WOZM" style="color: #b33b2e; text-decoration: underline;">Press Ups</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/-r0tnaEJsGw" style="color: #b33b2e; text-decoration: underline;">Burpees</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pyramid Sweat</h3><br>
+                            <p>You start with 1 rep, go up to a peak (say 10), then back down to 1.</p><br><br>
+                            <p>Reps based off dice roll, do:<br><br> <a href="https://youtube.com/shorts/YyO7WrwFo6M" style="color: #b33b2e; text-decoration: underline;">Sit Up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Party Power Challenges -->
+            <div id="stack7" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Reverse Fitness</h3>
+                            <p>
+                                Move backwards! Lunges, crawls, burpees — but every move must be done in reverse. 
+                                Roll the dice to see how many reverse moves you must complete. Mess up? Add 5 penalty situps!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Dodge Drop</h3>
+                            <p>
+                                Keep moving until you hear "DROP!" — then hit the floor fast with a burpee or pushup.
+                                Roll the dice to find out how many drops you must survive. Last to drop? Do 20 mountain climbers!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Balance Battle</h3>
+                            <p>
+                                Stand on one leg! Roll the dice to set your balance time (seconds). Follow quick commands (clap, squat, touch ground) without falling. 
+                                Last one balancing wins!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Pulse Party</h3>
+                            <p>
+                                Pick a pulse move (bounce squats, jogging). Roll the dice to set your pulse reps. 
+                                When the music drops — hit the floor in plank and pop back up fast!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Parent Power Challenges -->
+            <div id="stack8" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Nappy Ninja</h3>
+                            <p> 
+                                Every time you do a nappy change, drop and do 10 fast squats — ninja style! Bonus: Add a high jump if it's a messy one!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Toy Tidy Toss</h3>
+                            <p>
+                                Every time you pick up toys off the floor, throw in 5 lunges for every toy! Power-up: Add a jump lunge every 5th toy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Snack Time Sizzler</h3>
+                            <p>
+                                Every time you prep a snack or feed the little one, hold a wall-sit for 30 seconds. Add 5 calf raises at the end to spice it up!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Storybook Squats</h3>
+                            <p>
+                                During story time, do 1 squat for every page you read out loud! Bonus: Add a jump every time there's a funny sound or animal noise!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stack9" class="card-stack">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Stair Climb Challenge</h3><br>
+                            <p>Set a timer for 10 minutes and climb stairs continuously. Aim for maximum repetitions!</p><br><br>
+                            <p>For added intensity, do:<br><br> Step Ups</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Nature Walk Fitness Challenge</h3><br>
+                            <p>Set a timer for 30 minutes and explore a natural area. Stop every 5 minutes to do 10 push-ups!</p><br><br>
+                            <p>Mix it up with: <a href="https://youtube.com/shorts/QC1RKGE9wjc" style="color: #b33b2e; text-decoration: underline;">Alternating Lunges</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Fitness Alphabet Challenge</h3><br>
+                            <p>Set a timer for 20 minutes. Spell out a word using exercises (A=Arm Circles, B=Burpees). Complete the reps as you go!</p><br><br>
+                            <p>For each letter do:<br><a href="https://youtube.com/shorts/wKvR_B0Gbus" style="color: #b33b2e; text-decoration: underline;">Cross Jacks</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>5-Minute Freestyle Challenge</h3><br>
+                            <p>Set a timer for 5 minutes and perform any exercise you want. Switch it up every minute!</p><br><br>
+                            <p>Try combining with:<br> <a href="https://youtube.com/shorts/F1nZSWab1aA" style="color: #b33b2e; text-decoration: underline;">High Knees</a></p>
+                        </div>
+                    </div>
+                </div>
+           
+           
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>Split Time Challenge</h3><br>
+                            <p>Set a timer for 20 minutes. Alternate between 2 minutes of high-intensity exercise and 2 minutes of low-intensity recovery.</p><br><br>
+                            <p>For high intensity, do: <a href="https://youtube.com/shorts/-r0tnaEJsGw" style="color: #b33b2e; text-decoration: underline;">Burpees</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tap To Flip</div>
+                        <div class="card-back">
+                            <h3>15-Minute Circuit Countdown</h3><br>
+                            <p>Set a timer for 15 minutes. Complete a circuit of exercises for 1 minute each, resting for 15 seconds between.</p><br><br>
+                            <p>Include exercises like:<br><br> <a href="https://youtube.com/shorts/AhunaH0K2VM" style="color: #b33b2e; text-decoration: underline;">Squats</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      
+
+        
+        
+
+
+       
+        
+        <div class="navigation">
+            <button id="prev-card-btn">Previous Card</button>
+            <button id="next-card-btn">Next Card</button>
+        </div>
+
+        <div class="section-divider"></div>
+        
+
+        
+        
+        <!-- New Difficulty Selector -->
+        <div class="difficulty-container">
+            <div class="difficulty-title">Select Difficulty Level</div>
+            <div class="difficulty-buttons">
+                <button id="low-btn" class="difficulty-btn low-btn">Low</button>
+                <button id="medium-btn" class="difficulty-btn medium-btn">Medium</button>
+                <button id="high-btn" class="difficulty-btn high-btn">High</button>
+            </div>
+            <div id="difficulty-info">
+                Current Level: Low (2, 4, 6, 8, 10 reps)
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+       
+        <div class="dice-container">
+            <div class="dice">
+                <img id="diceImage" src="IMG_4702.PNG" alt="Dice" />
+            </div>
+            <div class="dice-controls">
+                <button id="roll-dice-btn">Roll Dice</button>
+                <button id="reset-dice-btn">Reset Dice</button>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <div class="tally-controls">
+            <button id="tally-btn">Add Tally</button>
+            <button id="reset-tally-btn">Reset Tally</button>
+        </div>
+        
+        <div class="stats">
+            <div id="totalReps">Total Reps: 0</div>
+            <div id="tallyCountDisplay">Tally Count: 0</div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div>
+            <input type="number" id="minutes" placeholder="Min" min="0">
+            <input type="number" id="seconds" placeholder="Sec" min="0" max="59">
+        </div>
+        <audio id="buzzer" src="digital-timer-beeping-epic-stock-media-1-00-08.mp3"></audio>
+        <div id="timer">00:00</div>
+        
+        <div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        
+        <!-- Buzzer sound -->
+       
+        
+        
+        
+    
+        <footer class="footer">
+            <div class="footer-links">
+        
+             
+        
+        
+                <a href="https://dbworkouts.co.uk/index.html" target="_blank">Website
+                <img src="photo-output 7.PNG" style="color: white"alt="business logo" width="30">
+              
+    
+              
+        
+           
+            
+               
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Game Rules -->
+    <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rulesModalLabel">Game Rules</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"style="color:black">
+                    <h6>Game Setup</h6>
+                    <ol>
+                        <li>Pick Your Daily Scenario (or let fate decide):
+                            <p>Use the cards to randomly pick one or more of the following challenges each day. Then roll the dice to get your reps.</p>
+                        </li>
+                        <li>Track Your Reps: Use the in-game tally counter. At the end of the day, add up the total reps.</li>
+                        <li>Finish Strong: Complete your reps at once or spread them throughout the day. The only rule is - get it done.</li>
+                    </ol>
+                    <h6>Warm-Up: "Ignite the Engine"</h6>
+                    <p>Always warm up first to avoid injuries and get in the zone.</p>
+                    <h6>Stretch it Out: "Cooldown Flow"</h6>
+                    <p>After completing your reps, cool down and stretch to reduce soreness.</p>
+                    <h6>Final Word</h6>
+                    <p>Repping It isn't just a workout - it's a lifestyle challenge. You'll never watch TV, walk to the shop, or scroll through YouTube the same way again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <script>
-        gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".fade-wrapper > *", {
-  opacity: 1,
-  y: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".fade-wrapper",
-    start: "top 80%",
-    end: "top 30%",
-    toggleActions: "play reverse play reverse", // fades in on scroll down, fades out on scroll up
-    markers: false // set to true to debug
-  }
-});
-      </script>
-    
-    
-         
-      
-      
+
+   
         
-      
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "DB's Workouts",
-          "image": "https://dbworkouts.co.uk/images/images/IMG_4357.PNG",
-          "description": "Mobile personal trainer offering sessions across East London including Ilford, Stratford,Wanstead,Chadwell heath and romford.",
-          "url": "https://dbworkouts.co.uk",
-          "telephone": "+7752300937",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "East London",
-            "addressCountry": "UK"
-          },
-          "areaServed": [
-            {
-              "@type": "Place",
-              "name": "Stratford"
-            },
-            {
-              "@type": "Place",
-              "name": "Wanstead"
-            },
-            {
-              "@type": "Place",
-              "name": "Ilford"
-            },
-            {
-                "@type": "Place",
-                "name": "Leyton"
-              },
-              {
-                "@type": "Place",
-                "name": "Romford"
-              },
-              {
-                "@type": "Place",
-                "name": "East ham"
-              },
-              {
-                "@type": "Place",
-                "name": "Canning town"
-              },
-              {
-                "@type": "Place",
-                "name": "Walthamstow"
-              },
-              {
-                "@type": "Place",
-                "name": "Leytonstone"
-              },
-              {
-                "@type": "Place",
-                "name": "Bow"
-              },
-              {
-                "@type": "Place",
-                "name": "Chadwell heath"
-              },
-              {
-                "@type": "Place",
-                "name": "Hackney"
-              }
-
-
-
-          ],
-          "serviceType": "Mobile Personal Training",
-          "sameAs": [
-            "https://www.facebook.com/dbs.workouts1", 
-            "https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr", 
-            "https://twitter.com/dbworkouts", 
-            "https://www.linkedin.com/in/db-s-workouts-2aa057214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-          ]
+        // Add shine element to each card
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            const shine = document.createElement('div');
+            shine.className = 'card-shine';
+            card.appendChild(shine);
+            
+            // Initialize GSAP for each card
+            initCardAnimation(card);
+        });
+        
+        // Function to initialize 3D card animations
+        function initCardAnimation(card) {
+            const cardInner = card.querySelector('.card-inner');
+            const shine = card.querySelector('.card-shine');
+            let isFlipped = false;
+            
+            // Remove old click event listener
+            const newCardInner = cardInner.cloneNode(true);
+            cardInner.parentNode.replaceChild(newCardInner, cardInner);
+            
+            // Add mouseenter/mousemove for 3D tilt effect (when not flipped)
+            card.addEventListener('mousemove', (e) => {
+                if (isFlipped) return;
+                
+                const rect = card.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const mouseX = e.clientX - centerX;
+                const mouseY = e.clientY - centerY;
+                
+                // Calculate rotation angles
+                const rotateY = mouseX * 0.1; // Adjust for sensitivity
+                const rotateX = -mouseY * 0.1; // Negative for correct direction
+                
+                // Animate with GSAP
+                gsap.to(newCardInner, {
+                    rotationY: rotateY,
+                    rotationX: rotateX,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+                
+                // Animate shine effect
+                const angle = Math.atan2(mouseY, mouseX);
+                const distance = Math.sqrt(mouseX * mouseX + mouseY * mouseY);
+                const normalizedDistance = Math.min(distance / (rect.width / 2), 1);
+                
+                gsap.to(shine, {
+                    opacity: 0.3 * normalizedDistance,
+                    duration: 0.3
+                });
+            });
+            
+            // Reset on mouse leave
+            card.addEventListener('mouseleave', () => {
+                if (isFlipped) return;
+                
+                gsap.to(newCardInner, {
+                    rotationY: 0,
+                    rotationX: 0,
+                    duration: 0.5,
+                    ease: "elastic.out(1, 0.5)"
+                });
+                
+                gsap.to(shine, {
+                    opacity: 0,
+                    duration: 0.3
+                });
+            });
+            
+            // Add click for flip animation
+            newCardInner.addEventListener('click', () => {
+                isFlipped = !isFlipped;
+                
+                if (isFlipped) {
+                    // Flip to back
+                    gsap.to(newCardInner, {
+                        rotationY: 180,
+                        duration: 0.6,
+                        ease: "back.out(1.5)"
+                    });
+                } else {
+                    // Flip to front
+                    gsap.to(newCardInner, {
+                        rotationY: 0,
+                        duration: 0.6,
+                        ease: "back.out(1.5)"
+                    });
+                }
+            });
         }
-        </script>
+        
+     
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const shuffleBtn = document.getElementById('shuffle-btn');
+            const rollDiceBtn = document.getElementById('roll-dice-btn');
+            const resetDiceBtn = document.getElementById('reset-dice-btn');
+            const tallyBtn = document.getElementById('tally-btn');
+            const resetTallyBtn = document.getElementById('reset-tally-btn');
+            const prevCardBtn = document.getElementById('prev-card-btn');
+            const nextCardBtn = document.getElementById('next-card-btn');
+            const stackSelect = document.getElementById('stack-select');
+            const diceImage = document.getElementById('diceImage');
+            const totalRepsDisplay = document.getElementById('totalReps');
+            const tallyCountDisplay = document.getElementById('tallyCountDisplay');
+            const difficultyInfo = document.getElementById('difficulty-info');
+            const cardInners = Array.from(document.querySelectorAll('.card-inner'));
 
-        <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-<zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cm9n1ntxk005evi2r76wowtwc'></zapier-interfaces-chatbot-embed>
+            // Difficulty buttons
+            const lowBtn = document.getElementById('low-btn');
+            const mediumBtn = document.getElementById('medium-btn');
+            const highBtn = document.getElementById('high-btn');
+            
+            let currentCardIndex = 0;
+            let totalReps = 0;
+            let tallyCount = 0;
+            let currentStackId = 'stack1'; // Start with Stack 1 selected
+            
+            // Difficulty levels and their rep values
+            const difficultyLevels = {
+                low: {
+                    name: 'Low',
+                    reps: [2, 4, 6, 8, 10],
+                    color: '#27ae60'
+                },
+                medium: {
+                    name: 'Medium',
+                    reps: [4, 8, 12, 16, 20, 24],
+                    color: '#f39c12'
+                },
+                high: {
+                    name: 'High',
+                    reps: [5, 10, 15, 20, 25, 30],
+                    color: '#e74c3c'
+                }
+            };
+            
+            let currentDifficulty = 'low'; // Default difficulty
+            
+            // Dice images array for dice animation
+            const diceImages = [
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG',
+                'IMG_4702.PNG'
+            ];
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-          .then(reg => console.log('Service Worker registered:', reg.scope))
-          .catch(err => console.error('Service Worker registration failed:', err));
+            // Add the ability to flip cards when clicked
+            cardInners.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('flipped');
+                });
+            });
+
+            // Function to show only the current card in the active stack
+            function showCurrentCard() {
+                if (!currentStackId) return;
+                
+                const cardsInCurrentStack = document.querySelectorAll(`#${currentStackId} .card`);
+                
+                cardsInCurrentStack.forEach((card, index) => {
+                    if (index === currentCardIndex) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Function to show a stack
+            function showStack(stackId) {
+                document.querySelectorAll('.card-stack').forEach(stack => {
+                    stack.style.display = 'none';
+                });
+                
+                const selectedCardStack = document.getElementById(stackId);
+                selectedCardStack.style.display = 'flex';
+                currentCardIndex = 0;
+
+                showCurrentCard();
+            }
+            
+            // Function to update difficulty info
+            function updateDifficultyInfo() {
+                const level = difficultyLevels[currentDifficulty];
+                difficultyInfo.textContent = `Current Level: ${level.name} (${level.reps.join(', ')} reps)`;
+                
+                // Reset active state for all buttons
+                lowBtn.classList.remove('active');
+                mediumBtn.classList.remove('active');
+                highBtn.classList.remove('active');
+                
+                // Set active state for current difficulty
+                if (currentDifficulty === 'low') {
+                    lowBtn.classList.add('active');
+                } else if (currentDifficulty === 'medium') {
+                    mediumBtn.classList.add('active');
+                } else if (currentDifficulty === 'high') {
+                    highBtn.classList.add('active');
+                }
+            }
+
+            // Show Stack 1 initially
+            showStack(currentStackId);
+            
+            // Set default difficulty
+            updateDifficultyInfo();
+
+            // Show the selected card stack
+            stackSelect.addEventListener('change', (event) => {
+                const selectedStack = event.target.value;
+                currentStackId = `stack${selectedStack}`;
+                showStack(currentStackId);
+            });
+
+            // Function to shuffle cards
+            const shuffleCards = () => {
+                if (!currentStackId) {
+                    alert("Please select a stack first!");
+                    return;
+                }
+                
+                const activeStack = document.getElementById(currentStackId);
+                const cards = Array.from(activeStack.querySelectorAll('.card'));
+                
+                // Fisher-Yates shuffle algorithm
+                for (let i = cards.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cards[i].innerHTML, cards[j].innerHTML] = [cards[j].innerHTML, cards[i].innerHTML];
+                }
+                
+                currentCardIndex = 0;
+                showCurrentCard();
+            };
+
+            // Navigate to previous card
+            prevCardBtn.addEventListener('click', () => {
+                const cardsInCurrentStack = document.querySelectorAll(`#${currentStackId} .card`);
+                
+                if (currentCardIndex > 0) {
+                    currentCardIndex--;
+                    showCurrentCard();
+                } else {
+                    // Wrap around to the last card
+                    currentCardIndex = cardsInCurrentStack.length - 1;
+                    showCurrentCard();
+                }
+            });
+
+            // Navigate to next card
+            nextCardBtn.addEventListener('click', () => {
+                const cardsInCurrentStack = document.querySelectorAll(`#${currentStackId} .card`);
+                
+                if (currentCardIndex < cardsInCurrentStack.length - 1) {
+                    currentCardIndex++;
+                    showCurrentCard();
+                } else {
+                    // Wrap around to the first card
+                    currentCardIndex = 0;
+                    showCurrentCard();
+                    
+                }
+            });
+
+            // Function to roll the dice with animation
+            const rollDice = () => {
+                // Disable roll button during animation
+                rollDiceBtn.disabled = true;
+                
+                // Add rolling animation
+                diceImage.classList.add('rolling');
+                
+                // Quick animation of changing dice faces
+                let rollCount = 0;
+                const rollInterval = setInterval(() => {
+                    const randomDiceValue = Math.floor(Math.random() * 6);
+                    diceImage.src = diceImages[randomDiceValue];
+                    rollCount++;
+                    
+                    if (rollCount >= 10) {
+                        clearInterval(rollInterval);
+                        
+                        // Final dice value (1-6)
+                        const diceRoll = Math.floor(Math.random() * 6) + 1;
+                        diceImage.src = diceImages[diceRoll - 1];
+                        
+                        // Get rep count based on difficulty level
+                        const level = difficultyLevels[currentDifficulty];
+                        const repIndex = Math.min(diceRoll - 1, level.reps.length - 1);
+                        const repCount = level.reps[repIndex];
+                        
+                        // Update total reps
+                        totalReps += repCount;
+                        totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
+                        
+                        // Remove rolling animation
+                        setTimeout(() => {
+                            diceImage.classList.remove('rolling');
+                            rollDiceBtn.disabled = false;
+                        }, 500);
+                    }
+                }, 100);
+            };
+
+            // Function to reset the dice
+            const resetDice = () => {
+                totalReps = 0;
+                totalRepsDisplay.textContent = `Total Reps: ${totalReps}`;
+                diceImage.src = diceImages[5]; // Set to dice-6.png
+            };
+
+            // Function to increment tally
+            const incrementTally = () => {
+                tallyCount++;
+                tallyCountDisplay.textContent = `Tally Count: ${tallyCount}`;
+            };
+
+            // Function to reset tally
+            const resetTally = () => {
+                tallyCount = 0;
+                tallyCountDisplay.textContent = `Tally Count: ${tallyCount}`;
+            };
+
+            // Difficulty button event listeners
+            lowBtn.addEventListener('click', () => {
+                currentDifficulty = 'low';
+                updateDifficultyInfo();
+            });
+            
+            mediumBtn.addEventListener('click', () => {
+                currentDifficulty = 'medium';
+                updateDifficultyInfo();
+            });
+            
+            highBtn.addEventListener('click', () => {
+                currentDifficulty = 'high';
+                updateDifficultyInfo();
+            });
+
+            // Add event listeners for buttons
+            shuffleBtn.addEventListener('click', shuffleCards);
+            rollDiceBtn.addEventListener('click', rollDice);
+            resetDiceBtn.addEventListener('click', resetDice);
+            tallyBtn.addEventListener('click', incrementTally);
+            resetTallyBtn.addEventListener('click', resetTally);
+        });
+   // Audio context for fallback sound
+let audioContext;
+
+// Function to initialize audio context
+function initAudioContext() {
+  if (!audioContext) {
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  
+  // Resume audio context if it's suspended (browser policy requirement)
+  if (audioContext.state === 'suspended') {
+    audioContext.resume();
+  }
+}
+
+// Initialize on page interaction to handle autoplay restrictions
+document.addEventListener('click', initAudioContext);
+document.addEventListener('touchstart', initAudioContext);
+
+// Fallback beep using Web Audio API
+function createBeep() {
+  initAudioContext();
+  
+  const oscillator = audioContext.createOscillator();
+  const gainNode = audioContext.createGain();
+  
+  oscillator.connect(gainNode);
+  gainNode.connect(audioContext.destination);
+  
+  oscillator.type = 'square';
+  oscillator.frequency.value = 800;
+  gainNode.gain.value = 0.5;
+  
+  oscillator.start();
+  
+  // Beep for 0.3 seconds
+  setTimeout(() => {
+    oscillator.stop();
+  }, 300);
+}
+
+// Function to reload and play sound
+function playSound() {
+  // Create new audio element each time instead of reusing
+  const buzzer = new Audio('digital-timer-beeping-epic-stock-media-1-00-08.mp3');
+  
+  // Try to play the audio
+  const playPromise = buzzer.play();
+  
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        console.log("Buzzer sound played successfully");
+      })
+      .catch(error => {
+        console.log("Error playing buzzer sound:", error);
+        // Use Web Audio API as fallback
+        createBeep();
+      });
+  }
+}
+
+let countdown;
+let timeLeft = 0;
+
+function startTimer() {
+  clearInterval(countdown);
+
+  const minutes = parseInt(document.getElementById('minutes').value) || 0;
+  const seconds = parseInt(document.getElementById('seconds').value) || 0;
+
+  timeLeft = (minutes * 60) + seconds;
+
+  if (timeLeft <= 0) {
+    alert("Please set a valid time!");
+    return;
+  }
+
+  // Initialize audio context when timer starts
+  initAudioContext();
+  
+  updateDisplay();
+
+  countdown = setInterval(() => {
+    timeLeft--;
+    updateDisplay();
+
+    if (timeLeft <= 0) {
+      clearInterval(countdown);
+      // Try both methods for maximum compatibility
+      playSound();
+      
+      // Also try using the original buzzer element as backup
+      const originalBuzzer = document.getElementById('buzzer');
+      originalBuzzer.currentTime = 0;
+      originalBuzzer.play().catch(() => {
+        console.log("Backup method failed, already tried alternative");
       });
     }
-  </script>
+  }, 1000);
+}
 
+function updateDisplay() {
+  const mins = Math.floor(timeLeft / 60);
+  const secs = timeLeft % 60;
+
+  document.getElementById('timer').textContent = 
+    `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+}
+
+function resetTimer() {
+  clearInterval(countdown);
+  timeLeft = 0;
+  document.getElementById('timer').textContent = "00:00";
+  document.getElementById('minutes').value = "";
+  document.getElementById('seconds').value = "";
+  
+  // Reset audio element when timer is reset
+  const buzzer = document.getElementById('buzzer');
+  buzzer.pause();
+  buzzer.currentTime = 0;
+}
+
+// Double-ensure the audio is properly set up
+document.addEventListener('DOMContentLoaded', () => {
+  // Set the src again to ensure it's properly loaded
+  const buzzer = document.getElementById('buzzer');
+  buzzer.src = 'digital-timer-beeping-epic-stock-media-1-00-08.mp3';
+  buzzer.load();
+});
+
+
+
+
+    </script>
 </body>
-
 </html>
