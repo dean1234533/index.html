@@ -478,7 +478,7 @@ line-height: 2px;
                 <option value="9">Time Crusher</option>
             </select>
             <button id="shuffle-btn">Shuffle Cards</button>
-            <button id="game-rules-btn">Game Rules</button>
+            <button id="game-rules-btn" data-bs-toggle="modal" data-bs-target="#rulesModal">Game Rules</button>
         </div>
     
         <div class="card-container">
@@ -1526,9 +1526,8 @@ document.addEventListener('DOMContentLoaded', () => {
   buzzer.load();
 });
 
-chrome.action.onClicked.addListener(() => {
-  chrome.tabs.create({ url: "https://github.com/dean1234533/Repping-It/edit/main/index.html" });
-});
+
+
 
     </script>
 </body>
