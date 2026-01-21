@@ -140,6 +140,9 @@ transform: scale(1.1);
   padding: 20px;
 }
 
+.Workout-img{
+      width:100%
+}
 .List {
   max-width: 100%;
 }
