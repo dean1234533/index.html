@@ -238,7 +238,7 @@ overflow: hidden;
 
 
 
-/* Typography */
+
 h1 {
     font-size: clamp(24px, 5vw, 48px);
      margin-top: 20px;
@@ -321,10 +321,7 @@ hr{color: #b30018;}
     text-align: center;
 }
 
-/* Media Queries - Small Mobile */
 
-
-/* Media Queries - Mobile */
 @media (max-width: 767px) {
    
   .navbar{
