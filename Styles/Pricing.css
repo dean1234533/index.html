@@ -153,12 +153,15 @@ transform: scale(1.1);
 
 
 .carousel-progress-pics{
-    width: 500px;
+   width: 100%;
+   max-width: 400px;
     margin:0 auto;
     overflow-y: hidden;
-    height: 350px;
+    height: auto;
     margin-top: 40px;
+    margin-bottom: 70px;
 }
+
 
 .carousel-inner,
 .carousel-item,
