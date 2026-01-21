@@ -387,7 +387,7 @@ hr{color: #b30018;}
     font-size: 20px;
 }
 
-  .desktop-nav{display:none;}
+  
 
      .desktop-only{
         display: none;
@@ -402,9 +402,9 @@ hr{color: #b30018;}
 /* Media Queries - Large Screens */
 @media (min-width: 1200px) {
     
-  
-
-     .page-content {
+  .desktop-nav{display:none;}
+     
+  .page-content {
         padding-left: 7%;
         padding-right: 7%;
     }
