@@ -145,13 +145,7 @@ transform: scale(1.1);
       padding: 20px;
     }
 
-.content-container h1,
-.Sugar-Loaded-Beverages-container h2,
-.Processed-Foods-container h2,
-.Hidden-Sugar-Sources-container h2,
-.Alcohol-Considerations-container h2,
-.Tricky-Health-Foods-container h2,
-.Practical-Tips-container h2
+.content-container h1 h2,
 {text-decoration: underline;
 text-decoration-color: #b30018;}
 
