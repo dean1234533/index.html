@@ -249,7 +249,7 @@ h2 {
     font-size: clamp(20px, 4vw, 36px);
      margin-top: 20px;
     margin-bottom: 20px;
-}
+  text-align: center;}
 
 h3 {
     font-size: clamp(18px, 3.5vw, 30px);
