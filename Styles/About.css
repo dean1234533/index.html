@@ -286,12 +286,9 @@ hr{
 
 @media (min-width: 1200px) {
     
-.desktop-nav,    
-.content-container{
     
-     margin-right: 3%;
-     margin-left: 3%;
-}
+
+
 .Personal-Trainer-Img img{
     width: 140px;
 }
