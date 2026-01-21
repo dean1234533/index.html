@@ -10,7 +10,7 @@
            background-color: white;
     }
 
-    /* Desktop Navigation */
+   
     .desktop-only {
       display: none;
     }
@@ -269,6 +269,8 @@ hr{
     }
 
     }
+
+
  @media (min-width: 768px) {
 
   .navbar .navbar-logo{
@@ -314,7 +316,7 @@ hr{
    
 }
 
-    /* Desktop styles */
+    
     @media (min-width: 1200px) {
 
 
