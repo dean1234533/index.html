@@ -19,7 +19,8 @@
       background-color:white;
       border-left: 1px solid rgba(191, 187, 187, 0.39);
       border-right: 1px solid rgba(191, 187, 187, 0.39);
-     
+       margin-left: 3%;
+  margin-right: 3%;   
     }
 
      .desktop-nav .nav-container {
@@ -261,20 +262,7 @@ hr{
 .desktop-only{display: none;}
     }
 
-  .navbar {
-        margin-left: 0;
-        margin-right: 0;
-        border-left: none;
-        border-right: none;
-        text-align: center;
-         text-align: center;
-      }
-      
-
-      .content-container {
-        margin-left: 0;
-        margin-right: 0;
-      }
+ 
 
     
  @media (min-width: 768px) {
@@ -319,7 +307,7 @@ hr{
    
 }
 
-    /* Desktop styles */
+   
     @media (min-width: 1200px) {
 
 .desktop-nav .logo img{
@@ -351,15 +339,14 @@ hr{
     font-weight: bolder;
   }
 
+
+
   .content-container{
     margin-left: 3%;
     margin-right: 3%;
   }
 
-.desktop-nav{
-  margin-left: 3%;
-  margin-right: 3%;
-}
+
 
  .footer-links  a{
   font-size: larger;
