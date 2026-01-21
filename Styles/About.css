@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* Apply to all elements */
+    box-sizing: border-box; 
    
 }
 
@@ -113,7 +113,8 @@ transform: scale(1.1);
     
 }
 
-.navbar-toggler:hover{background-color: gray;
+.navbar-toggler:hover{
+    background-color: gray;
  
 }
 
