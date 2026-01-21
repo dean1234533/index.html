@@ -10,7 +10,6 @@
            background-color: white;
     }
 
-    /* Desktop Navigation */
     .desktop-only {
       display: none;
     }
@@ -136,7 +135,9 @@ transform: scale(1.1);
        padding: 20px;
     }
 
-.content-container h1 ,h2 ,h3, p {padding: 20px;}
+.content-container h1 ,h2 ,h3, p {
+      padding: 20px;
+}
 
 .content-container h1 ,h2,
 .Park-HIIT-Circuit-container h2,
@@ -203,7 +204,9 @@ p, ol, ul{
 }
 
 
-hr{color: #b30018;}
+hr{
+      color: #b30018;
+}
 
 
 .footer {
@@ -317,8 +320,6 @@ hr{color: #b30018;}
 
     /* Desktop styles */
     @media (min-width: 1200px) {
-
-
 
  .content-container{
   margin-left: 3%;
