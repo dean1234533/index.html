@@ -228,7 +228,9 @@ p, ol, ul {
 }
 
 
-hr{color: #b30018;}
+hr{
+      color: #b30018;
+}
 
 
 
@@ -263,21 +265,6 @@ hr{color: #b30018;}
       
 .desktop-only{display: none;}
     }
-
-  .navbar {
-        margin-left: 0;
-        margin-right: 0;
-        border-left: none;
-        border-right: none;
-        text-align: center;
-         text-align: center;
-      }
-      
-
-      .content-container {
-        margin-left: 0;
-        margin-right: 0;
-      }
 
     
  @media (min-width: 768px) {
@@ -322,7 +309,7 @@ hr{color: #b30018;}
    
 }
 
-    /* Desktop styles */
+    
     @media (min-width: 1200px) {
 
 .desktop-nav .logo img{
