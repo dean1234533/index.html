@@ -240,7 +240,7 @@ margin-bottom: 20px;
     
 }
 
-
+.Profile-Img-container,.Profile-Img_Text{overflow-y: hidden;;}
 
 .fade-wrapper > * {
   opacity: 0 ;
@@ -478,14 +478,19 @@ blockquote{
     body{
         margin: 0;
         padding: 0;
+        
     }
 
 
-  .White-section{height: 160px;}
+  .White-section{padding: 5px;}
 
- .Profile-Img_Text{display: flex;align-items: center;letter-spacing: -1px;}
+ .Profile-Img_Text{display: flex;align-items: center;letter-spacing: -1px;margin:0;flex-shrink: 3;;}
 
- .Profile-Img-container img{width: 150px;}
+ .Profile-Img-container.Profile-Img-container img{margin-left: 3px;max-width: 140px;min-width: 100px;}
+
+ .Profile-Img-container{padding:2px ;}
+
+ 
 
 #carouselClientProgress
 .carousel-item img {
