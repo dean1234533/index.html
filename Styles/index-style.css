@@ -552,7 +552,7 @@ margin-bottom: 10px;
     display: flex;
     position: relative;
     bottom:80px;
-   
+   justify-content: center;
 }
 
 .Profile-Img-container {
