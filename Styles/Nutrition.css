@@ -156,8 +156,9 @@ transform: scale(1.1);
 text-decoration-color: #b30018;}
 
 
-
-
+.Nutrition-Img{
+      width:100%
+}
 
 .List {
   max-width: 100%;
