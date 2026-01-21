@@ -145,15 +145,20 @@ transform: scale(1.1);
       padding: 20px;
     }
 
+h2{
+      text-decoration: underline;
+text-decoration-color: #b30018;
+}
+
+
 .content-container h1,
 .content-container h2{
       text-decoration: underline;
 text-decoration-color: #b30018;
 }
 
-
 .Nutrition-Img{
-      width:100%
+      width:100%;
 }
 
 .List {
