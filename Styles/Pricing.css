@@ -387,7 +387,7 @@ hr{color: #b30018;}
     font-size: 20px;
 }
 
-  desktop-nav{display:none;}
+  .desktop-nav{display:none;}
 
      .desktop-only{
         display: none;
