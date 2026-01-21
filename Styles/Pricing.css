@@ -286,7 +286,9 @@ blockquote{
     background-color: #b30018;
 }
 
-hr{color: #b30018;}
+hr{
+  color: #b30018;
+}
 
 
 .footer {
