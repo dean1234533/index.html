@@ -50,7 +50,7 @@
       list-style: none;
       margin: 0;
       padding: 0;
-  
+   z-index: 2;
     }
 
     .desktop-nav .nav-links a {
@@ -61,7 +61,7 @@
       padding: 10px 15px;
       white-space: nowrap;
       transition: all 0.3s ease;
-     z-index: 2;
+    
        
     }
 
