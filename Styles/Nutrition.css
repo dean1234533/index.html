@@ -145,10 +145,10 @@ transform: scale(1.1);
       padding: 20px;
     }
 
-.content-container h1,
-.content-container h2
-{text-decoration: underline;
-text-decoration-color: #b30018;}
+.content-container h1,h2{
+      text-decoration: underline;
+text-decoration-color: #b30018;
+}
 
 
 .Nutrition-Img{
