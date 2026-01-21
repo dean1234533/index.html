@@ -36,7 +36,8 @@ body {
     padding: 10px;
     background-color: rgb(251, 249, 249);
    color: black;
-   border-left: 1px solid rgba(191, 187, 187, 0.39);border-right: 1px solid rgba(191, 187, 187, 0.39);
+   border-left: 1px solid rgba(191, 187, 187, 0.39);
+    border-right: 1px solid rgba(191, 187, 187, 0.39);
    
    
 }
@@ -149,7 +150,6 @@ transform: scale(1.1);
     margin-right: 40px;
    width: 70px;
   border-radius: 10px;
- 
    border: 2px solid rgb(152, 15, 15);
 }
 
@@ -240,7 +240,9 @@ margin-bottom: 20px;
     
 }
 
-.Profile-Img-container,.Profile-Img_Text{overflow-y: hidden;;}
+.Profile-Img-container,.Profile-Img_Text{
+    overflow-y: hidden;
+}
 
 .fade-wrapper > * {
   opacity: 0 ;
@@ -482,13 +484,27 @@ blockquote{
     }
 
 
-  .White-section{padding: 5px;}
+  .White-section{
+      padding: 5px;
+  }
 
- .Profile-Img_Text{display: flex;align-items: center;letter-spacing: -1px;margin:0;flex-shrink: 3;;}
+ .Profile-Img_Text{
+     display: flex;
+     align-items: center;
+     letter-spacing: -1px;
+     margin:0;
+     flex-shrink: 3;
+ }
 
- .Profile-Img-container.Profile-Img-container img{margin-left: 3px;max-width: 140px;min-width: 100px;}
+ .Profile-Img-container.Profile-Img-container img{
+     margin-left: 3px;
+     max-width: 140px;
+     min-width: 100px;
+ }
 
- .Profile-Img-container{padding:2px ;}
+ .Profile-Img-container{
+     padding:2px ;
+ }
 
  
 
@@ -604,8 +620,6 @@ body{margin-left: 3%;
     margin-right: 3%;}
 
 
-
- 
 
     
 #carouselClientProgress
