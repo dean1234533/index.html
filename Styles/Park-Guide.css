@@ -99,8 +99,6 @@ transform: scale(1.1);
 
 .navbar-toggler:hover{
   background-color: gray;
- 
-
 
 }
 
@@ -133,7 +131,8 @@ transform: scale(1.1);
 }
 
 .navbar .container{
-  max-width: 100%;}
+  max-width: 100%;
+}
    
     .content-container {
       background-color: black;
