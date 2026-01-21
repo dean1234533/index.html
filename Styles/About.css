@@ -14,8 +14,7 @@ body {
 .content-container{
     background-color: black; 
     padding: 20px;
-     margin-right: 3%;
-     margin-left: 3%;
+     
 }
 
 .content-container p{
@@ -27,8 +26,7 @@ body {
       background-color:white;
       border-left: 1px solid rgba(191, 187, 187, 0.39);
       border-right: 1px solid rgba(191, 187, 187, 0.39);
-       margin-right: 3%;
-     margin-left: 3%;
+      
     
     }
 
@@ -288,9 +286,12 @@ hr{
 
 @media (min-width: 1200px) {
     
+.desktop-nav,    
+.content-container{
     
-
-
+     margin-right: 3%;
+     margin-left: 3%;
+}
 .Personal-Trainer-Img img{
     width: 140px;
 }
