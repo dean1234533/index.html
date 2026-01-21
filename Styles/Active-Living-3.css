@@ -19,8 +19,8 @@
       background-color:white;
       border-left: 1px solid rgba(191, 187, 187, 0.39);
       border-right: 1px solid rgba(191, 187, 187, 0.39);
-     
-      
+       margin-left: 3%;
+  margin-right: 3%;      
     }
 
      .desktop-nav .nav-container {
@@ -335,10 +335,6 @@ hr{
     font-weight: bolder;
   }
 
-.desktop-nav{
-  margin-left: 3%;
-  margin-right: 3%;
-}
 
   .content-container{
     margin-left: 3%;
