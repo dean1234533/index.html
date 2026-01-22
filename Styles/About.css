@@ -164,21 +164,19 @@ margin-left: 10px;
 
 
 h1 {
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: clamp(25px, 5vw, 48px);
 }
 
 h2 {
-    font-size: clamp(20px, 4vw, 36px);
+    font-size: clamp(21px, 4vw, 36px);
     margin-top: 20px;
-    text-decoration: underline #b30018;
+    color: #850516;
 }
 
-h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
-}
+
 
 p {
-    font-size: clamp(14px, 2.5vw, 22px);
+    font-size: clamp(15px, 2.5vw, 22px);
     line-height: 1.6;
 }
 

@@ -124,12 +124,14 @@ transform: scale(1.1);
 }
 
 .navbar{
-  border-left: 1px solid rgba(191, 187, 187, 0.39);border-right: 1px solid rgba(191, 187, 187, 0.39);
+  border-left: 1px solid rgba(191, 187, 187, 0.39);
+  border-right: 1px solid rgba(191, 187, 187, 0.39);
 }
 
 .navbar .container{
   max-width: 100%;
 }
+
     
     .content-container {
       background-color: black;
@@ -137,41 +139,28 @@ transform: scale(1.1);
     }
 
 .content-container h1,h2,h3{
-  text-decoration: underline rgb(235, 32, 32);
+  text-decoration: underline ;
+  text-decoration-color: #b30018;
 }
 
 .content-container h1 ,h2 ,h3, p {
   padding: 20px;
 }
 
-.Workout-img{
-      width:100%
-}
-.List {
-  max-width: 100%;
-}
-
-.List li{ list-style-type: disc;
-    list-style-position: inside;
-   line-height: 40px;
-   }
-
-
-
 h1 {
-    font-size: clamp(24px, 5vw, 49px);
+    font-size: clamp(25px, 5vw, 49px);
      margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: clamp(20px, 4vw, 36px);
+    font-size: clamp(21px, 4vw, 36px);
      margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: clamp(18px, 3.5vw, 32px);
+    font-size: clamp(19px, 3.5vw, 32px);
      margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -180,9 +169,28 @@ p{ margin-top: 20px;
     margin-bottom: 20px;}
 
 p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 22px);
+    font-size: clamp(15px, 2.5vw, 22px);
     line-height: 1.6;
 }
+
+
+.Workout-img{
+      width:100%
+}
+
+
+.List {
+  max-width: 100%;
+}
+
+
+.List li{ list-style-type: disc;
+    list-style-position: inside;
+   line-height: 40px;
+   }
+
+
+
 
 .sticky-button {
     position: fixed;

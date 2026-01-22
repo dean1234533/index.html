@@ -213,7 +213,7 @@ margin-bottom: 20px;
  
 
 
-.Transform Your Body  h1{
+.Transform-Your-Body  h1{
     min-height: 100px;
     margin: 0;
     padding: 0;
@@ -356,26 +356,26 @@ margin: 0 auto;
 
 
 h1 {
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: clamp(25px, 5vw, 48px);
     margin-bottom: 20px;
     margin-top: 20px;
     
 }
 
 h2 {
-    font-size: clamp(20px, 4vw, 36px);
+    font-size: clamp(21px, 4vw, 36px);
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
+    font-size: clamp(19px, 3.5vw, 30px);
     margin-bottom: 20px;
      margin-top: 20px;
 }
 
 p, ol, ul {
-    font-size: clamp(17px, 2.5vw, 22px);
+    font-size: clamp(18px, 2.5vw, 22px);
     line-height: 1.6;
     
 }

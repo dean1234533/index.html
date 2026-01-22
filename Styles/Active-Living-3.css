@@ -157,7 +157,8 @@ transform: scale(1.1);
 .content-container h1,
 .Lloyd-Park-container h2,
 .Victory-Park-container h2,
-.Barking-Riverside-container h2{text-decoration: underline;
+.Barking-Riverside-container h2{
+  text-decoration: underline;
 text-decoration-color: #b30018;
 }
 
@@ -183,25 +184,25 @@ text-decoration-color: #b30018;
 
 
 h1 {
-    font-size: clamp(24px, 5vw, 49px);
+    font-size: clamp(25px, 5vw, 49px);
      margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: clamp(20px, 4vw, 36px);
+    font-size: clamp(21px, 4vw, 36px);
      margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: clamp(18px, 3.5vw, 30px);
+    font-size: clamp(19px, 3.5vw, 30px);
      margin-top: 20px;
     margin-bottom: 20px;
 }
 
 p, ol, ul {
-    font-size: clamp(14px, 2.5vw, 22px);
+    font-size: clamp(15px, 2.5vw, 22px);
     line-height: 1.6;
 }
 
