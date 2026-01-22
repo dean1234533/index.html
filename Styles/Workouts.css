@@ -123,16 +123,20 @@ transform: scale(1.1);
     
 }
 
-.navbar{border-left: 1px solid rgba(191, 187, 187, 0.39);border-right: 1px solid rgba(191, 187, 187, 0.39);}
+.navbar{
+  border-left: 1px solid rgba(191, 187, 187, 0.39);border-right: 1px solid rgba(191, 187, 187, 0.39);
+}
 
-.navbar .container{max-width: 100%;}
+.navbar .container{
+  max-width: 100%;
+}
     
     .content-container {
       background-color: black;
       padding: 20px;
     }
 
-.content-container h1,h3{
+.content-container h1,h2,h3{
   text-decoration: underline rgb(235, 32, 32);
 }
 
