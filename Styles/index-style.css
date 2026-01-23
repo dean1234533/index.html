@@ -30,6 +30,22 @@ body {
     color: white;
 }
 
+.Gray-section .achieve-your-fitness-goals-text,
+.black-section .watch-your-form{
+    margin-top: 20px;
+}
+
+
+.Gray-section {
+    color: rgb(247, 244, 244);
+    background-image: url("../pics/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 .White-section {
    display: flex;
     width: auto;
@@ -42,14 +58,8 @@ body {
    
 }
 
-.Gray-section {
-    color: rgb(247, 244, 244);
-    background-image: url("../pics/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
+
 
 
 .desktop-nav {
@@ -188,9 +198,9 @@ transform: scale(1.1);
     right: 0;
     display: flex;justify-content: center;
     align-items: center;
-color: #e0dfdc;
+color: #e0dfdc50;
 letter-spacing:1rem;
-text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+text-shadow: 0 -1px 0 #ffffff97, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
 }
 
 
@@ -374,15 +384,17 @@ h3 {
      margin-top: 20px;
 }
 
-p, ol, ul {
+p,ol{
     font-size: clamp(18px, 2.5vw, 22px);
     line-height: 1.6;
     
 }
 
+
+
 p{
     margin-bottom: 20px;
-    margin-top: 20px;
+    
 }
 
 
@@ -452,16 +464,33 @@ blockquote{
     background: black;
     font-size: small;
     gap: 20px;
-   
+
 }
 
 
 
-.footer-links a {
+ .footer-links a {
+
     color: rgb(228, 228, 234);
     text-decoration: none;
     font-weight: bold;
-    
+   
+}
+
+.footer img{
+    width: clamp(23px,4vw,32px);
+}
+
+.Policy-container a,
+.contact-links-container a{
+    margin-left:clamp(11px,2.5vw,50px);
+}
+
+.Policy-container,
+.contact-links-container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .achieve-your-fitness-goals-text span,
@@ -475,7 +504,7 @@ blockquote{
 
 
 
-@media(max-width:767px){.mobile-only{display: block;}
+@media(max-width:767px){
 
     body{
         margin: 0;
@@ -519,6 +548,10 @@ ol li{line-height:35px;}
 .desktop-only{
         display: none;
     }
+
+  .mobile-only{
+    display: block;
+}  
        
 }
 

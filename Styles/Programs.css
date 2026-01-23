@@ -180,7 +180,7 @@ h3 {
 
 
 
-p, ol, ul{
+p, ol{
     font-size: clamp(15px, 2.5vw, 22px);
     line-height: 1.6;
 }
@@ -188,7 +188,7 @@ p, ol, ul{
 p{ margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
 .sticky-button {
     position: fixed;
     bottom: 20px;
@@ -237,6 +237,21 @@ hr{
     font-weight: bold;
 }
 
+.footer img{
+  width: clamp(23px,4vw,32px);
+}
+
+.Policy-container a,
+.contact-links-container a{
+  margin-left:clamp(11px,2.5vw,50px);
+}
+
+.Policy-container,
+.contact-links-container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
  @media (max-width: 767px) {
       
  

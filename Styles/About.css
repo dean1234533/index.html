@@ -230,6 +230,22 @@ hr{
     font-weight: bold;
 }
 
+.footer img{
+    width: clamp(23px,4vw,32px);
+}
+
+.Policy-container a,
+.contact-links-container a{
+    margin-left:clamp(11px,2.5vw,50px);
+}
+
+.Policy-container,
+.contact-links-container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 767px) {
      
 
