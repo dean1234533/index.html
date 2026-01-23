@@ -228,7 +228,7 @@ margin-bottom: 20px;
 
 
 .Profile-Img_Text{
-    margin-top: 4%;
+    margin-top: 5%;
     text-align: justify;
 }
 .Profile-Img-container {
@@ -378,24 +378,26 @@ h3 {
      margin-top: 20px;
 }
 
-p,ol{
+p{
     font-size: clamp(18px, 2.5vw, 22px);
     line-height: 1.6;
-    
+      margin-bottom: 20px;
 }
 
 
 
-p{
-    margin-bottom: 20px;
-    
-}
+ol{
+    font-size: clamp(13.7px, 3.5vw, 22px)
+  
+    }
 
 
 blockquote{ 
-    font-size: clamp(15px, 2.5vw, 20px) ;
+    font-size: clamp(15px, 2.5vw, 21px) ;
     margin-bottom: 55px;
     margin-top:20px;
+    
+
 }
 
 
@@ -418,10 +420,14 @@ blockquote{
    
 }
 
+
+
 .table-container th, td {
     padding: 20px;
     border: 1px solid black;
-    text-align: justify;
+    text-align: left;
+font-size: clamp(12px, 2.5vw, 40px);
+
 
 }
 
@@ -596,7 +602,10 @@ margin-bottom: 10px;
     position: relative;
     bottom:80px;
    justify-content: center;
+
 }
+
+.Profile-Img_Text p{font-size: clamp(17px, 2vw, 24px);}
 
 .Profile-Img-container {
     margin-bottom: 25px;
@@ -607,9 +616,10 @@ margin-bottom: 10px;
    width: 150px;
     height: auto;
     margin: 0 auto;
-   
+   margin-bottom: 10px;
     
 }
+
 
 
 .Testimonial-Container img{

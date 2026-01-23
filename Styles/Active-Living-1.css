@@ -205,10 +205,12 @@ h3 {
     margin-top: 20px;
 }
 
-p, ol {
+p,ol {
     font-size: clamp(15px, 2.5vw, 21px);
     line-height: 1.6;
 }
+
+
 
 .sticky-button {
     position: fixed;
