@@ -237,7 +237,7 @@ margin-bottom: 20px;
 .Profile-Img_Text_container {display: flex; align-items: center;max-width: 500px;flex-shrink: 3;margin: 0 auto;overflow:visible;margin-bottom: 20px;margin-top: 20px;}
 
 
-.Profile-Img_Text_container .Profile-Img_Text p{line-height: 2.2rem;}
+.Profile-Img_Text_container .Profile-Img_Text p{line-height: 1.5rem;}
 
 .Profile-Img-container {
     display: flex;
@@ -614,7 +614,7 @@ margin-bottom: 10px;
 }
 
 
-
+.Profile-Img_Text_container .Profile-Img_Text p{line-height: 2.5rem;}
 
 .Profile-Img_Text{
     text-align: center;
