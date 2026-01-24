@@ -1,0 +1,743 @@
+
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+  
+
+
+
+
+}
+
+.black-section .space{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.black-section {
+   background-color: black;
+    color: white;
+}
+
+.black-section blockquote{
+    margin-bottom: 50px;
+}
+
+
+.Gray-section .achieve-your-fitness-goals-text,
+.black-section .watch-your-form{
+    margin-top: 20px;
+}
+
+
+
+
+
+.Gray-section {
+    color: white;
+    background-image: url("../pics/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.White-section {
+   display: flex;
+    width: auto;
+    padding: 10px;
+    background-color: rgba(201, 196, 196, 0.778);
+   color: black;
+   border-left: 1px solid rgba(191, 187, 187, 0.39);
+    border-right: 1px solid rgba(191, 187, 187, 0.39);
+   
+   
+}
+
+
+
+
+
+.desktop-nav {
+      background-color: white;
+      border-left: 1px solid rgba(191, 187, 187, 0.39);
+      border-right: 1px solid rgba(191, 187, 187, 0.39);
+      
+    }
+
+    .desktop-nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 30px;
+      position: relative;
+     background-color: white;
+    }
+
+    .desktop-nav .nav-container::after{
+    background-color: #5348481e;
+    content: "";position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+    .desktop-nav .logo img {
+      width: 180px;
+      height: auto;
+    cursor: auto;
+     
+    }
+ 
+
+    .desktop-nav .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .desktop-nav .nav-links a {
+      color: #b30018;
+      text-decoration: none;
+      font-size: 1.4rem;
+      padding: 10px 15px;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      font-weight: bolder;
+      z-index: 2;
+    }
+
+
+    .navbar .nav-item a:hover,
+    .desktop-nav .nav-links a:hover {
+      background-color: rgba(214, 207, 207, 0.692);
+      border: 1px solid #b30018;
+      border-radius: 4px;
+    }
+
+.navbar .navbar-logo img{
+    width:140px;
+    height: auto;
+    cursor: auto;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+
+
+.navbar-toggler-icon:hover { 
+   
+transform: scale(1.1);
+    
+}
+
+.navbar-toggler:hover{
+    background-color: gray;
+ 
+
+
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-right: 40px;
+   width: 70px;
+  border-radius: 10px;
+   border: 2px solid rgb(152, 15, 15);
+}
+
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.nav-item {
+    text-align: right;
+    font-size: 18px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.navbar{
+    border-left: 1px solid rgba(191, 187, 187, 0.39);
+    border-right: 1px solid rgba(191, 187, 187, 0.39);
+    
+}
+
+.navbar .container{
+    max-width: 100%;
+   
+}
+
+.carousel-caption{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;justify-content: center;
+    align-items: center;
+color: #e0dfdc50;
+letter-spacing:clamp(8px,2.5vw,22px);
+text-shadow: 0 -1px 0 #e6dfdff2, 0 1px 0 #e00909, 0 2px 0 #e30c0c, 0 3px 0 #e00b0b, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+font-size: clamp(16px,3.5vw,31px);
+}
+
+
+
+
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+margin-bottom: 20px;
+  object-fit: cover;
+  max-height: 85vh;
+  overflow-y: hidden;
+}
+
+
+ 
+
+.Profile-Img_Text{
+    
+   text-align: left;
+   font-size: 8px,3.5vw,22px;
+   display: flex;
+  
+   
+}
+
+.Profile-Img_Text_container {display: flex; align-items: center;max-width: 500px;flex-shrink: 3;margin: 0 auto;overflow:visible;margin-bottom: 20px;margin-top: 20px;}
+
+
+.Profile-Img_Text_container .Profile-Img_Text p{line-height: 2.2rem;}
+
+.Profile-Img-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.Profile-Img-container img {
+    width:clamp( 80px,20vw,180px);
+    border-radius: 50%;
+   border: 1px solid black;
+   
+    
+}
+
+.Profile-Img-container,.Profile-Img_Text{
+   
+    overflow: visible;
+}
+
+.fade-wrapper > * {
+  opacity: 0 ;
+  transform: translateY(20px) ;
+ 
+}
+
+
+.fade-wrapper .consultation-button {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #c33e3e;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    
+    }
+
+
+.video-container {
+  max-width: 100%;
+  aspect-ratio: 16 / 8; 
+  overflow: hidden;
+  
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+ 
+
+.Free-Consultation ,
+.Locations ,
+.Group-Training ,
+.Workout-Plans ,
+.Client-Progress ,
+.Services ,
+.Personal-Training-Sessions h2 {
+    display: inline-block;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+  
+    
+}    
+
+.Sessions-Include li,
+.Service-List li,
+.consultation-Guide-List li,
+.Personal-Training-Sessions  li {
+   
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 20px;
+    text-align: left;
+  
+}
+
+ 
+
+.Service-List-Container,
+.consultation-Guide-Container,
+ .Sessions-Include-Container{
+    display: flex;
+    justify-content: center;
+   
+}  
+
+.Service-List-Container li,
+.consultation-Guide-Container li,
+.Sessions-Include-Container li{line-height: 1.5rem;margin-bottom: 1.5rem;}
+   
+
+.Service-List-Container li::marker,
+.consultation-Guide-Container li::marker,
+ .Sessions-Include-Container li::marker{ color:rgb(163, 7, 7)}
+
+
+.Training-Session-Img,
+.Workout-Plans-Group-Img,
+.Group-Training-Img{
+    
+    width: 100%;
+max-height: 600px;
+height: auto;
+display: block;
+}
+
+#carouselClientProgress
+.carousel-item img {
+margin-bottom: 20px;
+ max-width: 50vh;
+margin: 0 auto;
+  overflow: hidden;
+}
+
+.Testimonial-Container img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+.Testimonial-Container{
+    margin-top: 20px;
+}
+
+
+
+
+h1 {
+    font-size: clamp(22px, 5vw, 49px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  
+    
+}
+
+h2 {
+    font-size: clamp(19px, 4vw, 37px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: clamp(17px, 3.5vw, 31px);
+    margin-bottom: 10px;
+     margin-top: 20px;
+   
+}
+
+p,ol{
+    font-size: clamp(16px, 3.5vw, 24px);
+    line-height: 1.6rem;
+      margin: 0;
+     padding: 20px;
+     
+}
+    
+ol,li{overflow-y: hidden;}
+
+
+blockquote{ 
+    font-size: clamp(15px, 2.5vw, 21px) ;
+    
+max-width: 600px;
+margin: 0 auto;
+
+}
+
+
+
+.table-container {
+    width: 100%;
+    overflow-x:hidden;
+    
+    
+   
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+   background-color: black;
+    color: rgb(249, 245, 245);
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+
+
+.table-container th, td {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: left;
+    font-weight: bold;
+font-size: clamp(14px, 2.5vw, 40px);
+
+
+}
+
+.table-container tr:nth-child(even) {
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+    
+}
+
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 15px 20px;
+    background-color: #c33e3e;
+    color: rgb(18, 17, 17);
+    border-color: red;
+    font-size: 18px;
+}
+
+.sticky-button:hover {
+    background-color: #b30018;
+}
+
+.footer-links ,
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    font-size: small;
+    gap: 20px;
+
+}
+
+
+
+ .footer-links a {
+
+    color: rgb(228, 228, 234);
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+.footer img{
+    width: clamp(23px,4vw,32px);
+}
+
+.Policy-container a,
+.contact-links-container a{
+    margin-left:clamp(11px,2.5vw,50px);
+}
+
+.Policy-container,
+.contact-links-container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.achieve-your-fitness-goals-text span,
+.footer-links a:hover {
+    color: #b30018;
+}
+
+
+
+
+
+
+
+@media(max-width:767px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    
+
+  .White-section{
+      padding: 5px;
+  }
+
+ .Profile-Img_Text{
+     display: flex;
+     align-items: center;
+     letter-spacing: -1px;
+     margin:0;
+     flex-shrink: 3;
+ }
+
+ .Profile-Img-container.Profile-Img-container img{
+     margin-left: 3px;
+     max-width: 140px;
+     min-width: 100px;
+ }
+
+ .Profile-Img-container{
+     padding:2px ;
+ }
+
+ 
+
+#carouselClientProgress
+.carousel-item img {
+ max-width: 50vh;
+
+}
+
+
+
+.desktop-only{
+        display: none;
+    }
+
+  .mobile-only{
+    display: block;
+}  
+       
+}
+
+
+
+@media(min-width:768px){
+
+
+
+.navbar .navbar-logo img{
+    width: 160px;
+    height: auto;
+}
+
+
+
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img   {
+margin-bottom: 10px;
+}
+
+#carouselClientProgress
+.carousel-item img {
+    max-width: 70vh;
+
+}
+
+.content-container p{
+    padding: 40px;
+}
+
+.White-section{ 
+    background-color:black;
+    color:white;
+    display: block;
+    margin-bottom: -150px;
+   
+}
+
+
+
+
+.Profile-Img_Text{
+    text-align: center;
+    display: flex;
+    position: relative;
+    bottom:80px;
+    margin-bottom: 20px;
+   justify-content: center;
+  
+ 
+ 
+
+}
+
+.Profile-Img_Text p{font-size: clamp(12px, 3vw, 25px);}
+
+.Profile-Img_Text_container{max-width: 600px;}
+   
+.Profile-Img-container {
+    margin-bottom: 45px;
+  
+}
+
+.Profile-Img-container img {
+   width:  120px,3vw,130px;
+    margin: 0 auto;
+   margin-bottom: 10px;
+    
+    
+}
+
+
+.Testimonial-Container img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+  
+
+
+.footer-links  a{
+    font-size: medium;
+}
+  
+.footer-links  img{
+    width: 32px;
+}
+
+.sticky-button {
+    font-size: 20px;
+}
+.mobile-only{display: block;}
+
+     .desktop-only{
+        display: none;
+    }
+}
+
+@media(min-width:1200px){
+
+    
+
+  
+body{margin-left: 3%;
+    margin-right: 3%;}
+
+
+
+    
+#carouselClientProgress
+.carousel-item img {
+
+max-width: 100vh;
+
+}
+
+.Profile-Img-container img {
+    width: 200px;
+}
+
+
+
+  .fade-wrapper .consultation-button{
+    font-size: 22px;
+}  
+
+
+.Testimonial-Container img{
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+}
+  
+
+.table-container table th, td {
+    padding: 50px;
+    line-height:40px;
+   font-size: larger;
+}
+
+.sticky-button {
+    font-size: 22px;
+}
+
+.footer-links  a{
+    font-size: larger;
+}
+  
+.footer-links  img{
+    width: 35px;
+}
+
+
+.mobile-only{
+    display: none;
+}
+
+    .desktop-only{
+        display: block;
+}
+}
+
+
