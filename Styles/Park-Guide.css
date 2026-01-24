@@ -164,14 +164,23 @@ Outdoor-Gyms-Container img,
 .Conclusion-container img{width: 100%;}
 
 .List {
-  max-width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
-.List li{ 
-  list-style-type: disc;
+
+.List li{ list-style-type: disc;
     list-style-position: inside;
-   line-height: 40px;
-    }
+  
+   }
+
+  .List li::marker{
+    color:#b30018
+  }  
+
+ .List-Container li{
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;}
 
 
 
@@ -194,8 +203,7 @@ h3 {
 
 
 p, ol {
-    font-size: clamp(15px, 2.5vw, 22px);
-    line-height: 1.6;
+    font-size: clamp(16px, 2.5vw, 24px);
 }
 
 p{ margin-top: 20px;

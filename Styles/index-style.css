@@ -218,19 +218,20 @@ margin-bottom: 20px;
 }
 
 
- .content-container p,ol{
-    padding: 20px;
-}  
  
 
-
-
-
-
 .Profile-Img_Text{
-    margin-top: 5%;
-    text-align: justify;
+    
+   text-align: left;
+   font-size: 8px,3.5vw,22px;
+   
 }
+
+.Profile-Img_Text_container {display: flex; align-items: center;max-width: 500px;flex-shrink: 3;margin: 0 auto;overflow:visible;}
+
+
+
+
 .Profile-Img-container {
     display: flex;
     align-items: center;
@@ -238,14 +239,16 @@ margin-bottom: 20px;
 }
 
 .Profile-Img-container img {
-    width: 200px;
+    width:clamp( 80px,20vw,180px);
     border-radius: 50%;
    border: 1px solid black;
+   
     
 }
 
 .Profile-Img-container,.Profile-Img_Text{
-    overflow-y: hidden;
+   
+    overflow: visible;
 }
 
 .fade-wrapper > * {
@@ -294,7 +297,7 @@ margin-bottom: 20px;
 .Workout-Plans ,
 .Client-Progress ,
 .Services ,
-.Personal-Training-Sessions h1 {
+.Personal-Training-Sessions h2 {
     display: inline-block;
     border-bottom: 3px solid red;
     padding-bottom: 5px;
@@ -303,16 +306,16 @@ margin-bottom: 20px;
 }    
 
 
-.Sessions-Include,
-.Service-List,
-.consultation-Guide-List,
+.Sessions-Include li,
+.Service-List li,
+.consultation-Guide-List li,
 .Personal-Training-Sessions  li {
    
     list-style-type: disc;
     list-style-position: inside;
     padding-left: 20px;
-    text-align: justify;
-    
+    text-align: left;
+  
 }
 
  
@@ -322,8 +325,17 @@ margin-bottom: 20px;
  .Sessions-Include-Container{
     display: flex;
     justify-content: center;
+   
 }  
 
+.Service-List-Container li,
+.consultation-Guide-Container li,
+.Sessions-Include-Container li{line-height: 1.5rem;margin-bottom: 1.5rem;}
+   
+
+.Service-List-Container li::marker,
+.consultation-Guide-Container li::marker,
+ .Sessions-Include-Container li::marker{ color:#b30018}
 
 
 .Training-Session-Img,
@@ -360,50 +372,49 @@ margin: 0 auto;
 
 
 h1 {
-    font-size: clamp(22px, 5vw, 48px);
+    font-size: clamp(22px, 5vw, 49px);
     margin-bottom: 20px;
     margin-top: 20px;
+  
     
 }
 
 h2 {
-    font-size: clamp(21px, 4vw, 36px);
+    font-size: clamp(19px, 4vw, 37px);
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 h3 {
-    font-size: clamp(19px, 3.5vw, 30px);
-    margin-bottom: 20px;
+    font-size: clamp(17px, 3.5vw, 31px);
+    margin-bottom: 10px;
      margin-top: 20px;
 }
 
-p{
-    font-size: clamp(18px, 2.5vw, 22px);
-    line-height: 1.6;
+p,ol{
+    font-size: clamp(16px, 3.5vw, 24px);
+    line-height: 1.6rem;
       margin-bottom: 20px;
+     
 }
 
-
-
-ol{
-    font-size: clamp(13.7px, 3.5vw, 22px)
-  
-    }
+ol{ 
+    padding: 15zpx;
+}
 
 
 blockquote{ 
     font-size: clamp(15px, 2.5vw, 21px) ;
     margin-bottom: 55px;
     margin-top:20px;
-    
+    margin: 20px;
 
 }
 
 
 .table-container {
     width: 100%;
-    overflow-x: auto;
+    overflow-x:hidden;
     
     
    
@@ -426,7 +437,8 @@ blockquote{
     padding: 20px;
     border: 1px solid black;
     text-align: left;
-font-size: clamp(12px, 2.5vw, 40px);
+    font-weight: bold;
+font-size: clamp(14px, 2.5vw, 40px);
 
 
 }
@@ -543,7 +555,7 @@ font-size: clamp(12px, 2.5vw, 40px);
 
 }
 
-ol li{line-height:35px;}
+
 
 .desktop-only{
         display: none;
@@ -596,30 +608,35 @@ margin-bottom: 10px;
 }
 
 
-.Profile-Img_Text{width: auto;
+.Profile-Img_Text{
     text-align: center;
     display: flex;
     position: relative;
     bottom:80px;
+    margin-bottom: 20px;
    justify-content: center;
+  
+ 
+ 
 
 }
 
-.Profile-Img_Text p{font-size: clamp(17px, 2vw, 24px);}
+.Profile-Img_Text p{font-size: clamp(12px, 3vw, 25px);}
 
-.Profile-Img-container {
-    margin-bottom: 25px;
+.Profile-Img_Text_container{max-width: 600px;}
    
+.Profile-Img-container {
+    margin-bottom: 45px;
+  
 }
 
 .Profile-Img-container img {
-   width: 150px;
-    height: auto;
+   width:  120px,3vw,130px;
     margin: 0 auto;
    margin-bottom: 10px;
     
+    
 }
-
 
 
 .Testimonial-Container img{
@@ -670,11 +687,7 @@ max-width: 100vh;
     width: 200px;
 }
 
-.Profile-Img_Text {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
+
 
   .fade-wrapper .consultation-button{
     font-size: 22px;
