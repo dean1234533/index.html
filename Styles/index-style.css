@@ -36,8 +36,11 @@ body {
 }
 
 
+.Gray-section h3  {margin-bottom: 35px;}
+
+
 .Gray-section {
-    color: rgb(247, 244, 244);
+    color: white;
     background-image: url("../pics/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
     background-size: cover;
     background-position: center center;
@@ -50,7 +53,7 @@ body {
    display: flex;
     width: auto;
     padding: 10px;
-    background-color: rgb(251, 249, 249);
+    background-color: rgba(201, 196, 196, 0.778);
    color: black;
    border-left: 1px solid rgba(191, 187, 187, 0.39);
     border-right: 1px solid rgba(191, 187, 187, 0.39);
@@ -305,7 +308,6 @@ margin-bottom: 20px;
     
 }    
 
-
 .Sessions-Include li,
 .Service-List li,
 .consultation-Guide-List li,
@@ -335,7 +337,7 @@ margin-bottom: 20px;
 
 .Service-List-Container li::marker,
 .consultation-Guide-Container li::marker,
- .Sessions-Include-Container li::marker{ color:#b30018}
+ .Sessions-Include-Container li::marker{ color:rgb(163, 7, 7)}
 
 
 .Training-Session-Img,
@@ -389,17 +391,20 @@ h3 {
     font-size: clamp(17px, 3.5vw, 31px);
     margin-bottom: 10px;
      margin-top: 20px;
+   
 }
 
 p,ol{
     font-size: clamp(16px, 3.5vw, 24px);
     line-height: 1.6rem;
       margin-bottom: 20px;
-     
+    
+
+ol { 
+     padding: 15px;
 }
 
-ol{ 
-    padding: 15zpx;
+
 }
 
 
@@ -524,6 +529,7 @@ font-size: clamp(14px, 2.5vw, 40px);
         
     }
 
+    
 
   .White-section{
       padding: 5px;
@@ -602,10 +608,10 @@ margin-bottom: 10px;
     color:white;
     display: block;
     margin-bottom: -150px;
-    
-    
-    
+   
 }
+
+
 
 
 .Profile-Img_Text{
