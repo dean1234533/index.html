@@ -56,14 +56,11 @@ body {
 
 .White-section {
    display: flex;
-    width: auto;
-    padding: 10px;
     background-color: rgba(201, 196, 196, 0.778);
    color: black;
    border-left: 1px solid rgba(191, 187, 187, 0.39);
     border-right: 1px solid rgba(191, 187, 187, 0.39);
-   
-   
+   padding: 10px;
 }
 
 
@@ -411,7 +408,6 @@ p,ol{
     
 ol,li{overflow-y: hidden;}
 
-
 blockquote{ 
     font-size: clamp(15px, 2.5vw, 21px) ;
     
@@ -468,7 +464,7 @@ font-size: clamp(14px, 2.5vw, 40px);
     padding: 15px 20px;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
-    border-color: red;
+    border-color: rgb(228, 219, 219);
     font-size: 18px;
 }
 
@@ -537,7 +533,8 @@ font-size: clamp(14px, 2.5vw, 40px);
     
 
   .White-section{
-      padding: 5px;
+     padding: 0;
+     
   }
 
  .Profile-Img_Text{
