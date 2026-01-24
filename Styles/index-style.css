@@ -30,7 +30,9 @@ body {
     color: white;
 }
 
-.black-section blockquote{margin-bottom: 50px;}
+.black-section blockquote{
+    margin-bottom: 50px;
+}
 
 
 .Gray-section .achieve-your-fitness-goals-text,
@@ -230,13 +232,15 @@ margin-bottom: 20px;
     
    text-align: left;
    font-size: 8px,3.5vw,22px;
+   display: flex;
+  
    
 }
 
-.Profile-Img_Text_container {display: flex; align-items: center;max-width: 500px;flex-shrink: 3;margin: 0 auto;overflow:visible;}
+.Profile-Img_Text_container {display: flex; align-items: center;max-width: 500px;flex-shrink: 3;margin: 0 auto;overflow:visible;margin-bottom: 20px;margin-top: 20px;}
 
 
-
+.Profile-Img_Text_container .Profile-Img_Text p{line-height: 2.2rem;}
 
 .Profile-Img-container {
     display: flex;
