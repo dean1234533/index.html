@@ -30,6 +30,9 @@ body {
     color: white;
 }
 
+.black-section blockquote{margin-bottom: 50px;}
+
+
 .Gray-section .achieve-your-fitness-goals-text,
 .black-section .watch-your-form{
     margin-top: 20px;
@@ -406,11 +409,12 @@ p,ol{
 
 blockquote{ 
     font-size: clamp(15px, 2.5vw, 21px) ;
-    margin-bottom: 55px;
-    margin-top:20px;
-    margin: 20px;
+    
+max-width: 600px;
+margin: 0 auto;
 
 }
+
 
 
 .table-container {
