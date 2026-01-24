@@ -151,7 +151,9 @@ transform: scale(1.1);
     padding: 20px
     ;}
 
-.content-container blockquote{margin-bottom: 25px;}
+.content-container blockquote{
+    margin-bottom: 25px;
+}
 
 .carousel-progress-pics{
    width: 100%;
@@ -283,7 +285,7 @@ blockquote{
     padding: 15px 20px;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
-    border-color: red;
+    border-color: white;
     font-size: 18px;
 }
 
