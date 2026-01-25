@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/Active-Living-1", "destination": "/Active-Living-1.html" },
+    { "source": "/Active-Living-2", "destination": "/Active-Living-2.html" },
+    { "source": "/Active-Living-3", "destination": "/Active-Living-3.html" },
+    { "source": "/Nutrition", "destination": "/Nutrition.html" },
+    { "source": "/Park-Guide", "destination": "/Park-Guide.html" },
+    { "source": "/Pricing", "destination": "/Pricing.html" },
+    { "source": "/Privacy-Policy", "destination": "/Privacy-Policy.html" },
+    { "source": "/Programs", "destination": "/Programs.html" },
+    { "source": "/T&C", "destination": "/T&C.html" },
+    { "source": "/Workouts", "destination": "/Workouts.html" }
+  ]
+}
