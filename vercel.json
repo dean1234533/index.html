@@ -6,7 +6,7 @@
     { "source": "/Active-Living-3", "destination": "/Active-Living-3.html" },
     { "source": "/Nutrition", "destination": "/Nutrition.html" },
     { "source": "/Park-Guide", "destination": "/Park-Guide.html" },
-    { "source": "/Pricing", "destination": "/Pricing.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/Privacy-Policy", "destination": "/Privacy-Policy.html" },
     { "source": "/Programs", "destination": "/Programs.html" },
     { "source": "/Terms-and-conditions", "destination": "/Terms-and-conditions.html" },
