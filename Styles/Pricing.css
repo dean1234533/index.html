@@ -279,19 +279,30 @@ blockquote{
 .sticky-button {
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right: 20px;
     z-index: 1000;
     border-radius: 50%;
-    padding: 5px 20px;
     background-color: #c33e3e;
-    color: rgb(18, 17, 17);
-    border-color: white;
-    font-size: clamp(24px,5vw,28.5px);
+    color: rgb(11, 11, 11);
+    border: 2px solid white;
+    font-size: clamp(14px, 3vw, 18px);
+    width: clamp(60px, 13vw, 80px);
+    height: clamp(60px, 13vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-
 .sticky-button:hover {
-    background-color: #b30018;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.sticky-button:active {
+    transform: scale(0.95);
 }
 
 
