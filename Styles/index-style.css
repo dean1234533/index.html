@@ -473,12 +473,12 @@ font-size: clamp(14px, 2.5vw, 40px);
     bottom: 20px;
     right: 10px;
     z-index: 1000;
-    border-radius: 50%;
+    border-radius: 50% !important;
     padding: 5px 20px !important;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
     border-color: white;
-    font-size: clamp(24px,5vw,28.5px);
+    font-size: clamp(24px,5vw,28.5px) !important;
 }
 
 .sticky-button:hover {
