@@ -9,32 +9,43 @@ body{
 
 
 .content-container {
+  
     background-color: black;
-    padding: 20px;
     
+     padding: 20px;
     
    
    
 }
 
+
+
 h1 {
-    font-size: clamp(25px, 5vw, 48px);
-   text-decoration: underline;
-    text-decoration-color: #b30018;
+    font-size: clamp(25px, 5vw, 49px);
+     margin-top: 20px;
     margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 h2 {
     font-size: clamp(21px, 4vw, 36px);
+     margin-top: 20px;
+    margin-bottom: 20px;
     text-decoration: underline;
-    text-decoration-color: #b30018;
+    text-decoration-color: red;
 }
 
 h3 {
     font-size: clamp(19px, 3.5vw, 30px);
+     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-p,ol,li {
-    font-size: clamp(15px, 2.5vw, 22px);
-    line-height: 1.6;
+
+p, ol {
+    font-size: clamp(16px, 2.5vw, 24px);
 }
+
+.List-Container li {line-height: 1.5rem;margin-bottom: 20px;}
+
