@@ -9,7 +9,7 @@
     { "source": "/Pricing", "destination": "/Pricing.html" },
     { "source": "/Privacy-Policy", "destination": "/Privacy-Policy.html" },
     { "source": "/Programs", "destination": "/Programs.html" },
-    { "source": "/T&C", "destination": "/Terms-and-conditions.html" },
+    { "source": "/Terms-and-conditions", "destination": "/Terms-and-conditions.html" },
     { "source": "/Workouts", "destination": "/Workouts.html" }
   ]
 }
