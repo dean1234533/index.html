@@ -181,22 +181,6 @@ p {
 }
 
 
-.sticky-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    border-radius: 50%;
-    padding: 15px 20px;
-    background-color: #c33e3e;
-    color: rgb(18, 17, 17);
-    border-color: white;
-    font-size: 18px;
-}
-
-.sticky-button:hover {
-    background-color: #b30018;
-}
 
 hr{
     color: #b30018;
@@ -265,6 +249,7 @@ hr{
     width: 130px;
 }
 
+
     .footer {
         flex-direction: column;
         text-align: center;
@@ -285,10 +270,6 @@ hr{
 }
 
 
-
-.sticky-button {
-    font-size: 20px;
-}
 .desktop-only{
         display: none;
     }
@@ -308,9 +289,6 @@ hr{
     width: 140px;
 }
 
-.sticky-button {
-    display: none;
-}
 
 .footer-links  a{
     font-size: larger;

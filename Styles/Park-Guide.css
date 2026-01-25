@@ -213,15 +213,16 @@ p{ margin-top: 20px;
 .sticky-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 1000;
     border-radius: 50%;
-    padding: 15px 20px;
+    padding: 5px 20px;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
     border-color: white;
-    font-size: 18px;
+    font-size: clamp(24px,5vw,28.5px);
 }
+
 
 .sticky-button:hover {
     background-color: #b30018;
@@ -317,9 +318,6 @@ hr{
   margin: 0;
 }
 
-  .sticky-button {
-    font-size: 20px;
-  }
  
  .footer-links  a{
   font-size: medium
@@ -353,16 +351,16 @@ hr{
   background-color: black
 }
 
+.sticky-button {
+    margin-right: 42px;
+}
+
  .footer-links  a{
   font-size: larger
 }
   
 .footer-links  img{
   width: 35px
-}
-
-.sticky-button {
-  font-size: 22px;
 }
 
 

@@ -204,15 +204,16 @@ p, ol {
 .sticky-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 1000;
     border-radius: 50%;
-    padding: 15px 20px;
+    padding: 5px 20px;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
     border-color: white;
-    font-size: 18px;
+    font-size: clamp(24px,5vw,28.5px);
 }
+
 
 .sticky-button:hover {
     background-color: #b30018;
@@ -302,9 +303,6 @@ hr{color: #b30018;}
   width: 32px;
 }
 
-.sticky-button {
-  font-size: 20px;
-}
 
 .desktop-only{
         display: none;
@@ -326,6 +324,10 @@ hr{color: #b30018;}
     background-color: black
   }
 
+.sticky-button {
+    margin-right: 42px;
+}
+
 
  .footer-links  a{
   font-size: larger
@@ -335,9 +337,6 @@ hr{color: #b30018;}
   width: 35px
 }
 
-.sticky-button {
-  font-size: 22px;
-}
 
       .desktop-only {
         display: block;

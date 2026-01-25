@@ -471,14 +471,14 @@ font-size: clamp(14px, 2.5vw, 40px);
 .sticky-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 1000;
     border-radius: 50%;
-    padding: 15px 20px;
+    padding: 5px 20px;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
-    border-color: rgb(228, 219, 219);
-    font-size: 18px;
+    border-color: white;
+    font-size: clamp(24px,5vw,28.5px);
 }
 
 .sticky-button:hover {
@@ -528,9 +528,6 @@ font-size: clamp(14px, 2.5vw, 40px);
 .footer-links a:hover {
     color: #b30018;
 }
-
-
-
 
 
 
@@ -682,9 +679,6 @@ margin-bottom: 10px;
     width: 32px;
 }
 
-.sticky-button {
-    font-size: 20px;
-}
 
 .mobile-only{
     display: block;
@@ -738,8 +732,9 @@ max-width: 100vh;
 }
 
 .sticky-button {
-    font-size: 22px;
+    margin-right: 42px;
 }
+
 
 .footer-links  a{
     font-size: larger;
