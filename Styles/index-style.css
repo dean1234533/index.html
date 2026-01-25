@@ -474,7 +474,7 @@ font-size: clamp(14px, 2.5vw, 40px);
     right: 10px;
     z-index: 1000;
     border-radius: 50%;
-    padding: 5px 20px;
+    padding: 5px 20px !important;
     background-color: #c33e3e;
     color: rgb(18, 17, 17);
     border-color: white;
