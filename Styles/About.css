@@ -9,6 +9,9 @@ body {
     color: white;
     background-color: white;
     overflow-x: hidden; 
+    font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .content-container{
@@ -165,12 +168,14 @@ margin-left: 10px;
 
 h1 {
     font-size: clamp(25px, 5vw, 48px);
+   
 }
 
 h2 {
     font-size: clamp(21px, 4vw, 36px);
     margin-top: 20px;
     color: #850516;
+   
 }
 
 
@@ -178,6 +183,7 @@ h2 {
 p {
     font-size: clamp(16px, 2.5vw, 24px);
     line-height: 1.6;
+   
 }
 
 

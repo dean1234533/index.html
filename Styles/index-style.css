@@ -13,7 +13,9 @@ body {
     font-family: sans-serif;
     text-align: center;
   
-
+font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 
 
 
@@ -207,8 +209,11 @@ transform: scale(1.1);
     align-items: center;
 color: #e0dfdc50;
 letter-spacing:clamp(8px,2.5vw,22px);
-text-shadow: 0 -1px 0 #e6dfdff2, 0 1px 0 #e00909, 0 2px 0 #e30c0c, 0 3px 0 #e00b0b, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+text-shadow: 0 -1px 0 #e6dfdff2, 0 1px 0 #e00909, 0 2px 0 #e30c0c, 0 3px 0 #e00b0b, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0  0 rgba(0,0,0,0.9);
 font-size: clamp(16px,3.5vw,31px);
+font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 
@@ -402,6 +407,7 @@ h2 {
     font-size: clamp(19px, 4vw, 37px);
     margin-bottom: 20px;
     margin-top: 20px;
+   
 }
 
 h3 {
