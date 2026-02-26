@@ -159,7 +159,7 @@ h1 .redText {
 
 
 .insta-grid img {
-  max-width: 55%;
+  max-width: 50%;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -473,16 +473,20 @@ footer a {
 }
 
 @media (min-width: 768px) {
-    .cardContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
- .insta-grid img{height: 300px;max-width: 100%;}
+    @media (min-width: 768px) {
     .insta-grid {
-  
-  flex-wrap: nowrap;
-  
+        flex-wrap: nowrap;
+        max-width: 900px; 
+    }
+
+    .insta-grid img {
+        height: 300px;
+        width: 300px;       
+        max-width: unset;   
+        object-fit: cover;  
+    }
 }
+
 
     .carousel-inner,
     .carousel-item,
