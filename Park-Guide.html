@@ -30,57 +30,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bitcount+Grid+Single:wght@100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Changa+One:ital@0;1&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&family=Nosifer&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./Styles/Park-Guide.css">
+  <link rel="stylesheet" href="./Styles/navBar.css">
 </head>
 
 <body>
 
-  <button class="sticky-button" onclick="window.location.href='#'">↑</button>
-
-  <div class="desktop-only">
-    <nav class="desktop-nav">
-      <div class="nav-container">
-        <a href="#" class="logo">
-          <img src="./pics/IMG_8070-removebg-preview.png"  alt="DB's Workouts Logo - Personal Training and Fitness in East London">
-        </a>
-        <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/Active-Living-1">Active Living</a></li>
-          <li><a href="/Workouts">Workouts</a></li>
-          <li><a href="/Programs">Programs</a></li>
-          <li><a href="/Nutrition">Nutrition</a></li>
+  <div class="navContainer">
+    <nav class="navBar">
+   
+        
+          <img src="./pics/IMG_8070-removebg-preview.png" alt="DB's Workouts outdoor personal training logo">
+        
+        
+        <ul>
+           <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/Active-Living-1">Active Living</a>
+          </li>
+          
+           <li >
+            <a href="/Workouts">Workouts</a>
+          </li>
+          <li >
+            <a href="/Programs">Programs</a>
+          </li>
+           <li>
+            <a href="/Nutrition">Nutrition</a>
+          </li>
         </ul>
-      </div>
-    </nav>
-  </div>
+      
 
-  <div class="mobile-only">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-logo" href="#">
-          <img src="./pics/IMG_8070-removebg-preview.png"  alt="DB's Workouts Logo - Personal Training and Fitness in East London">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a href="/">Home</a></li>
-            <li class="nav-item"><a href="/Active-Living-1">Active Living</a></li>
-            <li class="nav-item"><a href="/Workouts">Workouts</a></li>
-            <li class="nav-item"><a href="/Programs">Programs</a></li>
-            <li class="nav-item"><a href="/Nutrition">Nutrition</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+      <button class="Navbtn">
 
+<span class="line1"></span>
+<span class="line2"></span>
+<span class="line3"></span>
+
+</button>
+
+    </nav>
+ </div>
+
+
+        
   <div class="content-container ">
 
     <h1 class="heading-underline">The Ultimate East London Park Fitness Comparison Guide</h1>
 
     <div class="Outdoor-Gyms-Container">
-      <h2>Top-Rated Outdoor Gyms for Strength Training</h2>
+      <h2 class="redText">Top-Rated Outdoor Gyms for Strength Training</h2>
 
      <img src="./pics/IMG_7861 3.jpg" loading="lazy" alt="Calisthenics workout station at Barley Lane Park in Goodmayes, featuring pull-up bars and resistance equipment">
 
@@ -99,7 +99,7 @@
     </div>
 
     <div class="Childrens-Playgrounds-container">
-      <h2>Best Children's Playgrounds for Family Fitness</h2>
+      <h2 class="redText">Best Children's Playgrounds for Family Fitness</h2>
 
      <img src="./pics/IMG_7862 3.jpg" loading="lazy" alt="Public tennis courts in West Ham Park, East London, available for community sports and fitness training">
 
@@ -119,7 +119,7 @@
     </div>
 
     <div class="Sports-Facilities-container">
-      <h2>Professional Sports Facilities & Courts</h2>
+      <h2 class="redText">Professional Sports Facilities & Courts</h2>
 
       <img src="./pics/IMG_7854 3.jpg" loading="lazy" alt="Playing Tennis on a tennis court">
 
@@ -139,7 +139,7 @@
     </div>
 
     <div class="Seasonal-Considerations-container">
-      <h2>Seasonal Training & Outdoor Conditions</h2>
+      <h2 class="redText">Seasonal Training & Outdoor Conditions</h2>
 
       
 
@@ -153,7 +153,7 @@
     </div>
 
     <div class="Personal-Training-Recommendations-container">
-      <h3>Personal Trainer Expert Recommendations</h3>
+      <h3 class="redText">Personal Trainer Expert Recommendations</h3>
 
       
 
@@ -168,49 +168,56 @@
     </div>
 
     <div class="Conclusion-container">
-      <h2>Final Thoughts on Training in East London</h2>
+      <h2 class="redText">Final Thoughts on Training in East London</h2>
       <p>Our local parks offer incredible diversity for fitness enthusiasts of all levels. From world-class athletic facilities to charming local spaces, there is a perfect spot for every workout style. My personal favorite routine involves using Jubilee Park's excellent gym for strength days and Wanstead Flats' varied terrain for weekend endurance runs. Whether you are a serious athlete or a family looking for active recreation, East London provides the perfect backdrop for your fitness journey.</p>
     </div>
- <hr>
-    <footer>
-     <div class="footer">
-        <div class="footer-links">
-           
-          
-          <div class="contact-links-container">
-            <a href="https://wa.me/447752300937" target="_blank">Phone
-                <img src="./pics/whatsapp 3.png" loading="lazy" style="color: white" alt="Contact DB's Workouts on WhatsApp" width="30">
-              </a> 
-        
-              <a href="mailto:dbs-workouts@yahoo.com" target="_blank">Email
-                <img src="./pics/mail.png" loading="lazy" style="color: white" alt="Email contact for DB's Workouts personal training" width="30">
-              </a>
-        
-        
-        <a href="https://www.instagram.com/dbs_workouts?igsh=MXQ2OHY0a2QzeTFzaw%3D%3D&utm_source=qr" target="_blank">Instagram
-            <img src="./pics/instagram 2.png" loading="lazy" style="color: white" alt="Follow DB's Workouts personal training on Instagram" width="30">
-          </a>
-</div>
-       
+<div class="whiteSpace"></div>
 
-       
- <div class="Policy-container">      
-      <a href="./Privacy-Policy" target="_blank"><span>Privacy Policy</span>
+
+   <footer>
+  <div class="footer-columns">
+
+    <div class="footer-col">
+  
+      <p>Outdoor PT · East London</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading redText"> Pages</p>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/pricing">Services & Pricing</a>
+      <a href="/Active-Living-1">Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading redText">Contact</p>
+      <a href="https://wa.me/447752300937" target="_blank">
+        <img src="./pics/whatsapp 3.png" width="30" alt="WhatsApp"> Phone
       </a>
-  
-  
-  
-   <a href="./Terms-and-conditions" target="_blank"><span>Terms and Conditions</span>
-    
-  </a>
-      </div>    
+      <a href="mailto:dbs-workouts@yahoo.com" target="_blank">
+        <img src="./pics/mail.png" width="30" alt="Email"> Email
+      </a>
+      <a href="https://www.instagram.com/dbs_workouts" target="_blank">
+        <img src="./pics/instagram 2.png" width="30" alt="Instagram"> Instagram
+      </a>
+    </div>
 
-      
-        </div>
-      </div>
-    </footer>
   </div>
 
+  <div class="footer-bottom">
+  <p class="redText">© 2025 DB's Workouts · Dean Burt   <a   href="./Privacy-Policy" target="_blank">Privacy Policy </a> <a  href="./Terms-and-conditions" target="_blank">Terms and Conditions</a></p>
+</div>
+
+    
+     
+    
+  
+</footer> 
+    
+    
+  </div>
+  <script src="./Script/navBar.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 

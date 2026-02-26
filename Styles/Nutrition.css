@@ -1,390 +1,160 @@
 * {
-      box-sizing: border-box;
-      max-width: 100%;
-    }
-
-    body {
-      color: white;
-      margin: 0;
-      padding: 0;
-      background-color: white;
-      font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-    }
-
-    
-    .desktop-only {
-      display: none;
-    }
-
-    .desktop-nav {
-      border-left: 1px solid rgba(191, 187, 187, 0.39);
-      border-right: 1px solid rgba(191, 187, 187, 0.39);
-      margin-left: 3%;
-      margin-right: 3%;
-    }
-
-     .desktop-nav .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0 30px;
-      position: relative;
-     background-color: white;
-    }
-
-    .desktop-nav .nav-container::after{
-    background-color: #5348481e;
-    content: "";position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-    .desktop-nav .logo img {
-      width: 180px;
-      height: auto;
-      cursor: auto;
-    }
-
-    .desktop-nav .nav-links {
-      display: flex;
-      gap: 30px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-       z-index: 2;
-       font-weight: bolder;
-    }
-
-    .desktop-nav .nav-links a {
-      color: #b30018;
-      text-decoration: none;
-      font-size: 1.4rem;
-      padding: 10px 15px;
-      white-space: nowrap;
-      transition: all 0.3s ease;
-     
-    }
-
-
-    .navbar .nav-item a:hover,
-    .desktop-nav .nav-links a:hover {
-      background-color: rgba(214, 207, 207, 0.692);
-      border: 1px solid #b30018;
-      border-radius: 4px;
-    }
-
-
-    .navbar .navbar-logo img{
-      width:140px;
-      height: auto;
-      cursor: auto;
-    }
-
-.navbar a {
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #b30018;
-    line-height: 40px;
-     font-weight: bold;
+    box-sizing: border-box;
+   overflow-x: hidden;
 }
 
-.navbar-toggler-icon:hover { 
-   
-transform: scale(1.1);
-    
-}
-
-.navbar-toggler:hover{
-  background-color: gray;
- 
-
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 
 }
-
-.navbar-toggler:focus{
-  box-shadow: none;
-}
-
-.navbar-toggler {
-    background-color: rgba(0, 0, 0, 0.25);
-    margin-right: 40px;
-   width: 70px;
-  border-radius: 10px;
-    border: 2px solid rgb(152, 15, 15);
-}
-
-
-.nav-item {
-    text-align: right;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-
-.navbar{
-  border-left: 1px solid rgba(191, 187, 187, 0.39);
-  border-right: 1px solid rgba(191, 187, 187, 0.39);
-}
-
-.navbar .container{
-  max-width: 100%;
-}
-    
-    .content-container {
-      background-color: black;
-       padding: 20px;
-    }
-
-    .content-container h1 ,h2 ,h3, p {
-      padding: 20px;
-    }
-
-.content-container h1,h2,
-.Sugar-Loaded-Beverages-container h3,
-.Processed-Foods-container h3,
-.Hidden-Sugar-Sources-container h3,
-.Alcohol-Considerations-container h3,
-.Tricky-Health-Foods-container h3,
-.Practical-Tips-container h3
-{
-  text-decoration: underline;
-text-decoration-color: #b30018;
-}
-
-
-
-
-
-.Nutrition-Img img{
-      width:100%;
-
-}
-
-.List {
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-
-.List li{ list-style-type: disc;
-    list-style-position: inside;
-  
-   }
-
-
- .List li::marker{
-    color:#b30018
-  }    
-
- .List-Container li{
-  margin-bottom: 1.5rem;
-  line-height: 1.5rem;
-}
-
-
 
 h1 {
     font-size: clamp(25px, 5vw, 49px);
-     margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 h2 {
     font-size: clamp(21px, 4vw, 36px);
-     margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 h3 {
     font-size: clamp(19px, 3.5vw, 30px);
-     margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
-
-p, ol {
+p,
+ol {
     font-size: clamp(16px, 2.5vw, 24px);
+    font-family: "Changa One", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
-p{ 
-  margin-top: 20px;
+p {
+    margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-
-.sticky-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    border-radius: 50%;
-    background-color: #c33e3e;
-    color: rgb(11, 11, 11);
-    border: 2px solid white;
-    font-size: clamp(14px, 3vw, 18px);
-    width: clamp(60px, 13vw, 80px);
-    height: clamp(60px, 13vw, 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.sticky-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-}
-
-.sticky-button:active {
-    transform: scale(0.95);
-}
-
-hr{
-      color: #b30018;
-}
-
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.content-container {
+    background-color: black;
     padding: 20px;
-    background: black;
-    color: white;
-    font-size: small;
+    padding-top: 120px;
+}
+
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container p {
+    padding: 20px;
+}
+
+.Nutrition-Img img {
     width: 100%;
+    max-height: 600px;
 }
 
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(10px, 2vw, 20px);
-    color: #e3dede;
-}
-
-.footer-links a {
-    color: rgb(234, 239, 231);
-    text-decoration: none;
-     font-weight: bold;
-}
-
-.footer img{
-  width: clamp(23px,4vw,32px);
-}
-
-.Policy-container a,
-.contact-links-container a{
-  margin-left:clamp(11px,2.5vw,50px);
-}
-
-.Policy-container,
-.contact-links-container{
+.List {
+    max-width: 850px;
     margin: 0 auto;
+}
+
+.List li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.List li::marker {
+    color: #b30018;
+}
+
+.List-Container li {
+    margin-bottom: 1.8rem;
+    line-height: 1.5rem;
+}
+
+.whiteSpace {
+    padding: 2px;
+    background-color: white;
+}
+
+.redText {
+    color: #b30018;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer p {
+    margin: 20px;
+    width: 95%;
+    text-align: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: clamp(10px, 2vw, 20px);
+}
+
+.footer-col {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
- @media (max-width: 767px) {
-     
-  .navbar {
+.footerItems {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .content-container {
         margin-left: 0;
         margin-right: 0;
-        border-left: none;
-        border-right: none;
-         text-align: center;
-      }
-
-       
-      .content-container {
-        margin-left: 0;
-        margin-right: 0;
-      }
-     .desktop-only{
-      display: none;
-    }
-
-    }
-
- @media (min-width: 768px){
-
-.navbar .navbar-logo{
-  display: flex;
-  flex-shrink: 0;
-}
-
-.navbar a{
-      white-space: nowrap;
-}
-
- .navbar .navbar-logo img{
-    width: 160px;
-    height: auto;
-}
-
-.content-container{
-  margin: 0;
-}
-
-
-  .footer-links  a{
-    font-size: medium;
-  }
-  
-.footer-links  img{
-  width: 32px;
-}
-
-
-
-.desktop-only{
-        display: none;
-    }
-
-
-     .mobile-only{
-        display: block;
     }
 }
 
-   
-    @media (min-width: 1200px) {
-
-.content-container{
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.sticky-button {
-    margin-right: 42px;
-}
-
- .footer-links  a{
-  font-size: larger;
-}
-  
-.footer-links  img{
-  width: 35px;
-}
-
-
-
-      .desktop-only {
-        display: block;
-      }
-      
-      .mobile-only {
-        display: none;
-      }
+@media (min-width: 768px) {
+    .content-container {
+        margin: 0;
     }
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sticky-button {
+        margin-right: 42px;
+    }
+}

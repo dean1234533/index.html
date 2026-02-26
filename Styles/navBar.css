@@ -1,0 +1,286 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav img {
+  width:clamp( 70px,50vw,90px);
+  height:clamp( 70px,50vw,0px); ;
+  opacity: 1;
+  display: block;
+  object-fit: cover;
+  transition: all 1.2s;
+}
+
+
+
+nav .phone{margin: 0 auto;margin-top: 20px;text-decoration: none;cursor: pointer;color: black;font-weight: bold;}
+
+nav .phone:hover {
+  text-decoration: underline;
+ 
+}
+
+
+.navContainer {
+  width: 100%;
+  height: 100%;
+}
+
+
+.navBar {
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  transition: all 1.2s;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+border-bottom: 2px solid rgb(201, 18, 18);
+
+}
+
+
+.navBar ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+ 
+}
+
+.Active img{
+ opacity: 0;
+
+}
+
+.Active {
+  height: 500px;
+  background-color: white;
+
+}
+
+.Active ul {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: bolder;
+  list-style: none;
+ 
+}
+
+.Active ul li a {
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: -40px;
+  line-height: 50px;
+  
+ 
+}
+
+.Active ul li a:hover {
+  color:rgb(189, 15, 15);
+}
+
+
+.navBar ul li a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  display: block;
+  font-size: clamp(17px, 2.5vw, 20px);
+ 
+}
+
+
+@media (max-width: 1199px) {
+  .navBar ul li a {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+.Active ul li:nth-child(1) a {
+  animation: slideIn 0.5s forwards;
+}
+
+.Active ul li:nth-child(2) a {
+  animation: slideIn 0.5s 0.2s forwards;
+}
+
+.Active ul li:nth-child(3) a {
+  animation: slideIn 0.5s 0.4s forwards;
+}
+
+.Active ul li:nth-child(4) a {
+  animation: slideIn 0.5s 0.6s forwards;
+}
+
+.Active ul li:nth-child(5) a {
+  animation: slideIn 0.5s 0.8s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.Navbtn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 50%;  
+  transform:translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+ 
+
+}
+
+.navBar .Navbtn,
+.Active .Navbtn{position: absolute;top: 40px;}
+
+.line1 {
+  display: block;
+  width:25px;
+  height: 3px;
+  background-color: black !important;
+  transition: all 0.3s;
+  
+}
+
+.line2 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color:black !important;
+  transition: all 0.3s;
+ 
+}
+
+.line3 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black !important;
+  transition: all 0.3s;
+ 
+}
+
+
+.Active .line2 {
+  opacity: 0;
+  transition: all 1.2s;
+}
+
+.Active .line1 {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;  
+  transition: all 1.2s;
+  width: 20px;
+}
+
+.Active .line3 {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px; 
+  transition: all 1.2s;
+  width: 20px;
+}
+
+
+@media (min-width: 1200px) {
+  
+  
+  .navBar ul {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    transform: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+    margin-left: 58%;
+    font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+
+  }
+
+  .navBar ul li {
+    margin: 0;
+  }
+
+  .navBar ul li a {
+    opacity: 1 !important;
+    
+    
+   margin-top: 50px;
+   transform: translateY(-30%);
+    color:black;
+    text-decoration: none;
+    animation: none !important;
+    z-index: 3;
+   font-size: clamp(20px, 3vw, 25px);
+
+  }
+
+  .navBar ul li a:hover {
+    
+   text-decoration: underline;
+text-decoration-color: rgb(189, 15, 15);
+transition: ease 1.2s;
+  }
+
+  
+  .Navbtn {
+    display: none;
+  }
+
+ 
+  .Active {
+    height: 70px;
+  }
+
+  .Active ul {
+    position: static;
+    transform: none;
+    display: flex !important;
+    text-align: left;
+  }
+
+  .Active ul li {
+    margin-top: 0;
+    line-height: normal;
+  }
+
+ 
+  .navBar {
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+  }
+}

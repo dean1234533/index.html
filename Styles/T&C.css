@@ -1,151 +1,20 @@
 * {
     box-sizing: border-box; 
+    overflow-x: hidden;
 }
 
 body{
     color: white;
     background-color: black;
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;  
+
 }
 
-.desktop-nav {
-    background-color: white;
-    border-left: 1px solid rgba(191, 187, 187, 0.39);
-    border-right: 1px solid rgba(191, 187, 187, 0.39);
-}
-
-.desktop-nav .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 30px;
-    position: relative;
-    background-color: white;
-}
-
-.desktop-nav .nav-container::after{
-    background-color: #5348481e;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    pointer-events: none; /* Add this so links are clickable */
-}
-
-.desktop-nav .logo img {
-    width: 180px;
-    height: auto;
-    cursor: auto;
-    position: relative; /* Add this to bring logo above ::after */
-    z-index: 1;
-}
-
-.desktop-nav .nav-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    position: relative; /* Add this to bring links above ::after */
-    z-index: 1;
-}
-
-.desktop-nav .nav-links a {
-    color: #b30018;
-    text-decoration: none;
-    font-size: 1.4rem;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    font-weight: bolder;
-}
-
-.desktop-nav .nav-links li {
-    cursor: pointer;
-}
-
-.navbar .nav-item a:hover,
-.desktop-nav .nav-links a:hover {
-    background-color: rgba(214, 207, 207, 0.692);
-    border: 1px solid #b30018;
-    border-radius: 4px;
-}
-
-.navbar-logo {
-    width: 140px;
-    height: auto;
-    cursor: auto;
-}
-
-.navbar .navbar-logo img{
-    width:140px;
-    height: auto;
-    cursor: auto;
-}
-
-.navbar a {
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    font-weight: bold;
-    color: #b30018;
-}
-
-.navbar-toggler-icon:hover { 
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.navbar-toggler:hover{
-    background-color: gray;
-}
-
-.navbar-toggler:focus{
-    box-shadow: none;
-}
-
-.navbar-toggler {
-    background-color: rgba(0, 0, 0, 0.25);
-    margin-right: 40px;
-    width: 70px;
-    border-radius: 10px;
-    border: 2px solid rgb(152, 15, 15);
-}
-
-.nav-item a{
-    text-decoration: none;
-}
-
-.nav-item {
-    text-align: right;
-    font-size: 18px;
-    margin-right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.navbar{ 
-    border-left: 1px solid rgba(191, 187, 187, 0.39);
-    border-right: 1px solid rgba(191, 187, 187, 0.39);
-}
-
-.navbar .container{
-    max-width: 100%;
-}
 
 .content-container {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
+    padding-top: 120px;
 }
 
 h1 {
@@ -154,6 +23,9 @@ h1 {
     margin-bottom: 20px;
     text-decoration: underline;
     text-decoration-color: red;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 h2 {
@@ -162,16 +34,25 @@ h2 {
     margin-bottom: 20px;
     text-decoration: underline;
     text-decoration-color: red;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 h3 {
     font-size: clamp(19px, 3.5vw, 30px);
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 p, ol {
     font-size: clamp(16px, 2.5vw, 24px);
+    font-family: "Changa One", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .List-Container li {
@@ -187,10 +68,9 @@ p, ol {
 
 
 @media (max-width: 1199px) {
-    .desktop-only { display: none; }
+    
 }
 
 @media (min-width: 1200px) {
-    .mobile-only { display: none; }
-    .desktop-only { display: block; }
+    
 }
