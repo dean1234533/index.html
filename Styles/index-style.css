@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-   
+    padding-top: 80px;
 }
 
 h1 {
@@ -55,6 +55,7 @@ li {
 .content-container {
     text-align: center;
     color: aliceblue;
+   
 }
 
 .redText {
@@ -84,6 +85,7 @@ h1 .redText {
     position: relative;
     margin-bottom: 30px;
     color: aliceblue;
+  
 }
 
 .heroImageContainer::after {
@@ -106,6 +108,7 @@ h1 .redText {
     text-align: left;
     margin: 20px;
     overflow-y: hidden;
+ 
 }
 
 .google-badge {

@@ -160,7 +160,7 @@ footer a {
     }
 
     p{
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -170,4 +170,5 @@ footer a {
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}
 
+   
 }
