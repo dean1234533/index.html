@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 body {
@@ -47,6 +47,7 @@ ol {
 p {
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
 
 .content-container {
@@ -162,7 +163,23 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-    .content-container {
+.content-container {
         background-color: black;
+       text-align: center;
     }
+
+    p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-container img {
+        width: 80%;
+       
+    }
+    ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}
+
+    h1{margin: 0 auto;width: 80%;}
+
+  
 }

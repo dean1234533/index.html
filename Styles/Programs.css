@@ -173,5 +173,5 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-    
+    h1,h2,h3{text-align: center;}
 }

@@ -225,7 +225,8 @@ border-bottom: 2px solid rgb(201, 18, 18);
     padding: 0;
     align-items: center;
     height: 100%;
-    margin-left: 40%;
+    margin-left: auto ;
+
     font-family: "Changa One", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -234,7 +235,7 @@ border-bottom: 2px solid rgb(201, 18, 18);
 
   .navBar ul li {
     margin: 0;
-     
+   
   }
 
   .navBar ul li a {

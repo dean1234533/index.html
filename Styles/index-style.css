@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
+ 
 
 body {
     background-color: black;
-    
+   
 }
 
 h1 {
@@ -465,6 +466,8 @@ footer a {
     flex-direction: column;
 }
 
+
+
 @media (max-width: 767px) {
     #carouselClientProgress .carousel-item img {
         max-width: 50vh;
@@ -485,6 +488,7 @@ footer a {
         max-width: unset;   
         object-fit: cover;  
     }
+   
 }
 
 

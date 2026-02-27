@@ -167,10 +167,21 @@ footer a {
 
 @media (min-width: 1200px) {
     
+.content-container {
+        background-color: black;
+       text-align: center;
+    }
 
+    p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-container img {
+        width: 80%;
+       
+    }
+    ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}
    
-
-    
-
-    
+ 
 }
