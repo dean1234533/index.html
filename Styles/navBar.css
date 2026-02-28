@@ -6,13 +6,27 @@ body {
   margin: 0;
 }
 
-nav img {
-  width: clamp(70px, 50vw, 90px);
-  height: clamp(70px, 50vw, 90px);
+
+.navBar .logoContainer {
+  display: block;
+  
+  
+  transition: transform 1.5s ease, opacity 1.5s ease;
   opacity: 1;
+}
+
+.navBar.Active .logoContainer {
+display: flexbox;
+align-items: center;
+  opacity: 0;                
+}
+
+nav img {
+  width: clamp(70px, 10vw, 90px);
+  height: clamp(70px, 10vw, 90px);
   display: block;
   object-fit: cover;
-  transition: all 1.2s;
+  
 }
 
 nav .phone {
@@ -118,9 +132,6 @@ nav .phone:hover {
   background-color: white;
 }
 
-.Active img {
-  opacity: 0;
-}
 
 .Active .line2 {
   opacity: 0;
@@ -172,7 +183,7 @@ nav .phone:hover {
 }
 
 .Active .Nav-consultation-button {
-  background-color: red;
+  background-color: rgb(229, 14, 14);
   color: white;
   padding: 30px;
   border-radius: 10px;
