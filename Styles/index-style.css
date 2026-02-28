@@ -81,11 +81,17 @@ h1 .redText {
     color: #b30018;
 }
 
+#heroVideo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .heroImageContainer {
     position: relative;
     margin-bottom: 30px;
     color: aliceblue;
-  
+    min-height: 50vh;
 }
 
 .heroImageContainer::after {
