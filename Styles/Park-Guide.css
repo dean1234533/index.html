@@ -47,7 +47,7 @@ ol {
 p {
     margin-top: 20px;
     margin-bottom: 20px;
-    
+  line-height:clamp( 106px,6vw,200px);
 }
 
 .content-container {
@@ -89,7 +89,7 @@ p {
 
 .List-Container li {
     margin-bottom: 1.8rem;
-    line-height: 1.5rem;
+    line-height:clamp( 1.6rem,6vw,2.2rem);
 }
 
 .whiteSpace {
@@ -171,6 +171,8 @@ footer a {
     p{
         width: 80%;
         margin: 0 auto;
+        line-height: 2.0rem;
+        width: 80%;
     }
 
     .content-container img {

@@ -80,7 +80,7 @@ ol {
 }
 
 .List-Container li {
-    line-height: 1.6rem;
+    line-height:clamp( 1.6rem,6vw,2.2rem);
     margin-bottom: 1.8rem;
 }
 
@@ -152,7 +152,7 @@ footer a {
     .content-container {
         margin: 0;
     }
-
+  li {line-height: 40px;}
     .footer-columns {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -166,8 +166,10 @@ footer a {
     }
 
     p{
+       line-height: 2.0rem;
         width: 80%;
         margin: 0 auto;
+        
     }
 
     .content-container img {
@@ -175,4 +177,6 @@ footer a {
        
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}
+
+  
 }
