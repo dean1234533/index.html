@@ -443,6 +443,7 @@ overflow: hidden;}
 .whiteSpace {
     padding: 2px;
     background-color: white;
+    margin-top: 20px;
 }
 
 footer {

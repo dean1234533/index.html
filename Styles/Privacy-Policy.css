@@ -66,10 +66,54 @@ p, ol {
 }
 
 
-@media (min-width: 1200px) {
-
-
+.redText {
+    color: #b30018;
 }
+
+.whiteSpace {
+    padding: 2px;
+    background-color: white;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer p {
+    margin: 20px;
+    width: 95%;
+    text-align: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: clamp(10px, 2vw, 20px);
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
    

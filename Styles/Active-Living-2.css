@@ -85,7 +85,7 @@ ol {
 
 .List-Container li {
     margin-bottom: 1.8rem;
-   line-height:clamp( 1.6rem,6vw,2.2rem);
+   line-height:clamp( 1.6rem,3vw,2.2rem);
 }
 
 .pagination,
@@ -101,6 +101,7 @@ ol {
 .whiteSpace {
     padding: 2px;
     background-color: white;
+    margin-top: 20px;
 }
 
 .redText {

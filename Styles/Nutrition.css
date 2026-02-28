@@ -23,7 +23,7 @@ h1 {
 h2 {
     font-size: clamp(21px, 4vw, 36px);
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "Changa One", sans-serif;
     font-weight: 500;
     font-style: italic;
@@ -46,10 +46,7 @@ ol {
     font-style: italic;
 }
 
-p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 .content-container {
     background-color: black;
@@ -85,12 +82,13 @@ p {
 
 .List-Container li {
     margin-bottom: 1.8rem;
-    line-height:clamp( 1.6rem,6vw,2.2rem);
+    line-height:clamp( 1.6rem,3vw,2.2rem);
 }
 
 .whiteSpace {
     padding: 2px;
     background-color: white;
+   
 }
 
 .redText {

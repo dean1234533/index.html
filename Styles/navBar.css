@@ -1,4 +1,3 @@
-/* Reset */
 * {
   box-sizing: border-box;
 }
@@ -8,29 +7,31 @@ body {
 }
 
 nav img {
-  width:clamp( 70px,50vw,90px);
-  height:clamp( 70px,50vw,0px); ;
+  width: clamp(70px, 50vw, 90px);
+  height: clamp(70px, 50vw, 90px);
   opacity: 1;
   display: block;
   object-fit: cover;
   transition: all 1.2s;
 }
 
-
-
-nav .phone{margin: 0 auto;margin-top: 20px;text-decoration: none;cursor: pointer;color: black;font-weight: bold;}
+nav .phone {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
 
 nav .phone:hover {
   text-decoration: underline;
- 
 }
-
 
 .navContainer {
   width: 100%;
   height: 100%;
 }
-
 
 .navBar {
   display: flex;
@@ -42,102 +43,40 @@ nav .phone:hover {
   z-index: 100;
   top: 0;
   left: 0;
-border-bottom: 2px solid rgb(201, 18, 18);
-
+  border-bottom: 2px solid rgb(201, 18, 18);
 }
-
 
 .navBar ul {
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  
- 
 }
-
-.Active img{
- opacity: 0;
-
-}
-
-.Active {
-  height: 500px;
-  background-color: white;
-
-}
-
-.Active ul {
-  display: block;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  
-  transform: translateX(-50%);
-  text-align: center;
-  font-weight: bolder;
-  list-style: none;
- 
-}
-
-.Active ul li a {
-  font-weight: bolder;
-  font-size: larger;
-  margin-top: -40px;
-  line-height: 50px;
-  
- 
-}
-
-.Active ul li a:hover {
-  color:rgb(189, 15, 15);
-}
-
 
 .navBar ul li a {
   text-decoration: none;
   padding: 20px;
   color: black;
   display: block;
-  font-size: clamp(17px, 2.5vw, 20px);
- 
-}
-
-
-@media (max-width: 1199px) {
-  .navBar ul li a {
-    opacity: 0;
-    transform: translateY(-20px);
+  font-size: clamp(17px, 2.5vw, 20px) ;
   
-  }
 }
 
 
-.Active ul li:nth-child(1) a {
-  animation: slideIn 0.5s forwards;
+.navBar .Nav-consultation-button {
+  background-color: rgb(237, 9, 9);
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  display: block;
+  
 }
 
-.Active ul li:nth-child(2) a {
-  animation: slideIn 0.5s 0.2s forwards;
-}
-
-.Active ul li:nth-child(3) a {
-  animation: slideIn 0.5s 0.4s forwards;
-}
-
-.Active ul li:nth-child(4) a {
-  animation: slideIn 0.5s 0.6s forwards;
-}
-
-.Active ul li:nth-child(5) a {
-  animation: slideIn 0.5s 0.8s forwards;
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.navBar .Nav-consultation-button:hover {
+  background-color: rgb(189, 27, 27);
+  text-decoration: none;
+  border: 3px solid black;
+  transition:  border 0.2s;
 }
 
 
@@ -146,8 +85,8 @@ border-bottom: 2px solid rgb(201, 18, 18);
   height: 30px;
   position: absolute;
   right: 20px;
-  top: 50%;  
-  transform:translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
@@ -156,40 +95,32 @@ border-bottom: 2px solid rgb(201, 18, 18);
   justify-content: center;
   align-items: center;
   gap: 5px;
- 
-
 }
 
 .navBar .Navbtn,
-.Active .Navbtn{position: absolute;top: 40px;}
-
-.line1 {
-  display: block;
-  width:25px;
-  height: 3px;
-  background-color: black !important;
-  transition: all 0.3s;
-  
+.Active .Navbtn {
+  position: absolute;
+  top: 40px;
 }
 
-.line2 {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color:black !important;
-  transition: all 0.3s;
- 
-}
-
+.line1,
+.line2,
 .line3 {
   display: block;
   width: 25px;
   height: 3px;
   background-color: black !important;
   transition: all 0.3s;
- 
 }
 
+.Active {
+  height: 100vh;
+  background-color: white;
+}
+
+.Active img {
+  opacity: 0;
+}
 
 .Active .line2 {
   opacity: 0;
@@ -199,7 +130,7 @@ border-bottom: 2px solid rgb(201, 18, 18);
 .Active .line1 {
   transform: rotate(45deg);
   position: relative;
-  top: 8px;  
+  top: 8px;
   transition: all 1.2s;
   width: 20px;
 }
@@ -207,15 +138,86 @@ border-bottom: 2px solid rgb(201, 18, 18);
 .Active .line3 {
   transform: rotate(-45deg);
   position: relative;
-  top: -8px; 
+  top: -8px;
   transition: all 1.2s;
   width: 20px;
 }
 
+.Active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.Active ul li a {
+  font-weight: bolder;
+  font-size:clamp(20px,5vw, 36px) !important;
+  margin-top: 20px ;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.Active ul li a:hover {
+  color: rgb(189, 15, 15);
+}
+
+.Active .Nav-consultation-button {
+  background-color: red;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.Active .Nav-consultation-button:hover {
+  margin-left: 10px;
+  transition: margin-left 1s;
+  color: black;
+  border: 3px solid black;
+}
+
+
+@media (max-width: 1199px) {
+  .navBar ul li a {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.Active ul li:nth-child(1) a { animation: slideIn 0.5s 0s forwards; }
+.Active ul li:nth-child(2) a { animation: slideIn 0.5s 0.2s forwards; }
+.Active ul li:nth-child(3) a { animation: slideIn 0.5s 0.4s forwards; }
+.Active ul li:nth-child(4) a { animation: slideIn 0.5s 0.6s forwards; }
+.Active ul li:nth-child(5) a { animation: slideIn 0.5s 0.8s forwards; }
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 @media (min-width: 1200px) {
-  
-  
+  .navBar {
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+  }
+
   .navBar ul {
     display: flex !important;
     flex-direction: row;
@@ -225,46 +227,38 @@ border-bottom: 2px solid rgb(201, 18, 18);
     padding: 0;
     align-items: center;
     height: 100%;
-    margin-left: auto ;
-
+    margin-left: auto;
     font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-
+    font-weight: 400;
+    font-style: italic;
   }
 
   .navBar ul li {
     margin: 0;
-   
   }
 
   .navBar ul li a {
     opacity: 1 !important;
-    
-
-   margin-top: 0;
-   transform: none;
-    color:black;
+    margin-top: 0;
+    transform: none;
+    color: black;
     text-decoration: none;
     animation: none !important;
     z-index: 3;
-   font-size: clamp(20px, 3vw, 25px);
-
+    font-size: clamp(20px, 3vw, 25px);
   }
 
   .navBar ul li a:hover {
-    
-   text-decoration: underline;
-text-decoration-color: rgb(189, 15, 15);
-transition: ease 1.2s;
+    text-decoration: underline;
+    text-decoration-color: rgb(189, 15, 15);
+    transition: ease 1.2s;
   }
 
-  
   .Navbtn {
     display: none;
   }
 
- 
+  
   .Active {
     height: 70px;
   }
@@ -279,12 +273,9 @@ transition: ease 1.2s;
   .Active ul li {
     margin-top: 0;
     line-height: normal;
-   
   }
 
- 
-  .navBar {
-    justify-content: flex-start;
-    background-color: rgb(255, 255, 255);
+  .Active ul li a {
+    font-size: clamp(20px, 3vw, 25px) !important;
   }
 }
