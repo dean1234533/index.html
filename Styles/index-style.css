@@ -117,16 +117,20 @@ h1 .redText {
  
 }
 
+
+
+
 .google-badge {
   display: flex;
- max-width:270px;
-  align-items: right;
-  gap: 5px;
+  width: clamp(140px, 40vw, 200px);
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(3px, 1.5vw, 5px);
   background: #ffffff;
-  padding: 10px 16px;
-  border-radius: 12px;
+  padding: clamp(6px, 2vw, 10px) clamp(10px, 3vw, 16px);
+  border-radius: clamp(8px, 2vw, 12px);
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   font-weight: 600;
   color: #111;
   transition: 0.3s ease;
@@ -134,25 +138,25 @@ h1 .redText {
 
 .google-badge:hover {
   transform: translateY(-3px);
-  
 }
 
 .google-logo {
-  width: 18px;
+  width: clamp(8px, 4vw, 18px);
 }
 
 .rating {
-  font-size: 15px;
+  font-size: clamp(8px, 3vw, 15px);
 }
 
 .stars {
   color: #fbbc05;
-  
+  font-size: clamp(5px, 3vw, 15px);
 }
 
 .count {
   font-weight: 500;
   opacity: 0.7;
+  font-size: clamp(8px, 3vw, 15px);
 }
 
 .insta-grid {
@@ -202,10 +206,12 @@ overflow: hidden;}
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    font-size: clamp(18px, 3vw, 20px);
+    text-align: center;
+    font-size: clamp(12px, 3vw, 20px);
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    width: clamp(200px, 50vw, 280px);
 }
 
 .carouselText {
