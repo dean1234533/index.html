@@ -73,7 +73,7 @@ h1 .redText {
 }
 
 .achieve-your-fitness-goals-text p {
-    padding-block: 40px;
+    padding-block:clamp(10px,3vw, 40px);
 }
 
 .achieve-your-fitness-goals-text span,

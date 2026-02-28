@@ -68,10 +68,11 @@ p {
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    font-size: clamp(18px, 3vw, 20px);
+    font-size: clamp(12px, 3vw, 20px);
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    width: clamp(200px, 50vw, 280px);
 }
 
 .About-Title {
