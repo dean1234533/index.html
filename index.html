@@ -87,7 +87,9 @@
  </div>
 
  <div class="heroImageContainer">
-<video id="heroVideo" width="100%" autoplay muted loop playsinline></video>
+<video id="heroVideo" width="100%" autoplay muted loop playsinline>
+    <source id="heroVideoSource" src="" type="video/mp4">
+</video>
 
 
     <div class="heroContent">
@@ -518,14 +520,27 @@ Nutrition guidance, habit coaching and accountability to make fitness a lifestyl
 
   <script src="./Script/navBar.js"></script>  
 
-<script>
-  const video = document.getElementById('heroVideo');
-  const src = window.innerWidth >= 1024
-    ? './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed.MP4'
-    : './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed.MP4';
-  
-  video.innerHTML = `<source src="${src}" type="video/mp4">`;
-  video.load();
+  <script>
+const video = document.getElementById('heroVideo');
+const source = document.getElementById('heroVideoSource');
+
+const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed.MP4';
+const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed.MP4';
+const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1 4.MP4';
+
+function setVideoSource() {
+    const width = window.innerWidth;
+    let src = width >= 1024 ? desktopSrc : width >= 768 ? ipadSrc : mobileSrc;
+
+    if (source.src !== new URL(src, document.baseURI).href) {
+        source.src = src;
+        video.load();
+    }
+}
+
+
+setVideoSource();
+window.addEventListener('resize', setVideoSource);
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
