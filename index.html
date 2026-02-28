@@ -87,10 +87,9 @@
  </div>
 
   <div class="heroImageContainer">
-    <video id="heroVideo" width="100%" autoplay muted loop playsinline>
-    <source src="./pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed.MP4" media="(min-width: 1024px)" type="video/mp4">
-      <source src="./pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed.MP4" media="(min-width: 768px)" type="video/mp4">
-    <source src="./pics/video-output-9BF8AEBE-E7BD-4259-8367-553A418B9F4C-1-compressed.MP4" type="video/mp4">
+  
+   <video id="heroVideo" width="100%" autoplay muted loop playsinline>
+    <source id="heroVideoSource" src="" type="video/mp4">
 </video>
 
     <div class="heroContent">
@@ -251,7 +250,7 @@ Nutrition guidance, habit coaching and accountability to make fitness a lifestyl
 
   <div class="carouselContainer">
 
-  <div id="carouselClientProgress" class="carousel slide my-carousel" data-bs-ride="carousel">
+  <div  class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -267,11 +266,13 @@ Nutrition guidance, habit coaching and accountability to make fitness a lifestyl
 
 <section class="carouselText"> 
 <p>12 weeks of consistency. The results speak for themselves.
-</section> 
-
 </p>
 
-  <div id="carouselClientProgress" class="carousel slide my-carousel" data-bs-ride="carousel">
+</section> 
+
+
+
+  <div  class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -289,7 +290,7 @@ Nutrition guidance, habit coaching and accountability to make fitness a lifestyl
 <p>Stronger, leaner and more confident than ever.</p>
   </section>
 
-<div id="carouselClientProgress" class="carousel slide my-carousel" data-bs-ride="carousel">
+<div class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -519,8 +520,28 @@ Nutrition guidance, habit coaching and accountability to make fitness a lifestyl
 
   <script src="./Script/navBar.js"></script>  
 
- 
-  
+<script>
+const video = document.getElementById('heroVideo');
+const source = document.getElementById('heroVideoSource');
+
+const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed.MP4';
+const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed.MP4';
+const mobileSrc  = './pics/video-output-9BF8AEBE-E7BD-4259-8367-553A418B9F4C-1-compressed.MP4';
+
+function setVideoSource() {
+    const width = window.innerWidth;
+    let src = width >= 1024 ? desktopSrc : width >= 768 ? ipadSrc : mobileSrc;
+
+    if (source.src !== new URL(src, document.baseURI).href) {
+        source.src = src;
+        video.load();
+    }
+}
+
+setVideoSource();
+window.addEventListener('resize', setVideoSource);
+</script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
