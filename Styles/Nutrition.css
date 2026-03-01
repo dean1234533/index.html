@@ -46,7 +46,7 @@ ol {
     font-style: italic;
 }
 
-
+p{line-height: 1.6rem;text-align: left;}
 
 .content-container {
     background-color: black;
@@ -88,7 +88,7 @@ ol {
 .whiteSpace {
     padding: 2px;
     background-color: white;
-   
+   margin-top: 20px;
 }
 
 .redText {
@@ -158,12 +158,12 @@ footer a {
     }
 
     p{
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
 
     .content-container img {
-        width: 80%;
+        width: 60%;
        
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}

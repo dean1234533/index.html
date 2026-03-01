@@ -46,6 +46,7 @@ ol {
 p {
     margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 1.6rem;
 }
 
 .content-container {
@@ -172,4 +173,10 @@ footer a {
 
 @media (min-width: 1200px) {
     h1,h2,h3{text-align: center;}
+
+    p{width: 60%;
+       
+    }
+
+    .text p{margin: 0 auto;}
 }

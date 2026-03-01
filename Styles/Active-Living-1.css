@@ -44,6 +44,8 @@ ol {
     font-style: italic;
 }
 
+p{line-height: 1.6rem;}
+
 .content-container {
     background-color: black;
     padding: 20px;
@@ -174,7 +176,7 @@ footer a {
     }
 
     .content-container img {
-        width: 80%;
+        width: 60%;
        
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}

@@ -48,7 +48,8 @@ ol {
 p {
     margin-top: 10px;
     margin-bottom: 20px;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
+    text-align: left;
 }
 
 .content-container {
@@ -157,12 +158,12 @@ footer a {
     }
 
     p{
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
     }
 
     .content-container img {
-        width: 80%;
+        width: 60%;
        
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}

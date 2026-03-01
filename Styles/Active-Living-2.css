@@ -38,13 +38,15 @@ h3 {
     font-style: italic;
 }
 
-p,
+
 ol {
     font-size: clamp(16px, 2.5vw, 24px);
     font-family: "Changa One", sans-serif;
     font-weight: 300;
     font-style: italic;
 }
+
+
 
 .content-container {
     background-color: black;
@@ -180,7 +182,7 @@ footer a {
     }
 
     .content-container img {
-        width: 80%;
+        width: 60%;
        
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}

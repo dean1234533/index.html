@@ -38,7 +38,7 @@ h3 {
     font-style: italic;
 }
 
-p,
+
 ol {
     font-size: clamp(16px, 2.5vw, 24px);
     font-family: "Changa One", sans-serif;
@@ -181,4 +181,8 @@ footer a {
        
     }
     ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}
+
+    .Lloyd-Park-container img,
+.Victory-Park-container img,
+.Barking-Riverside-container img{width: 60%;}
 }

@@ -5,7 +5,6 @@
 
 body {
     color: white;
-   
 }
 
 h1 {
@@ -45,7 +44,6 @@ ol {
 }
 
 p {
-    text-align: center;
     width: 90%;
 }
 
@@ -54,11 +52,11 @@ ol {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-
-ol li{list-style: decimal inside;}
+ol li {
+    list-style: decimal inside;
+}
 
 ol li::marker {
     color: #b30018;
@@ -74,6 +72,11 @@ ol li::marker {
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
+}
+
+.content-container p {
+    display: flex;
+    justify-content: center;
 }
 
 .content-container img {
@@ -107,7 +110,6 @@ ol li::marker {
     padding-top: 50px;
     max-width: 650px;
     width: 90%;
-    
 }
 
 .Sessions-Include li {
@@ -133,20 +135,31 @@ ol li::marker {
     height: auto;
 }
 
+
 .custom-card {
     border: 4px solid rgb(238, 241, 237);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: #1f1e1e;
     color: #fbf6f6;
-    max-width: 600px;
+    max-width: 800px;
+    width: 90%;
 }
+
+.custom-card p {
+    width: 100% !important;
+    margin: 0 auto;
+padding: 15px;
+}
+
+
 
 .custom-box {
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .custom-box .discount-text {
@@ -154,12 +167,14 @@ ol li::marker {
     font-weight: bold;
     color: rgba(15, 98, 224, 0.628);
     text-shadow: -1px -1px 0 black;
+    text-align: center;
 }
 
 .discountsContainer {
     display: flex;
     flex-direction: column;
     text-align: center;
+   
 }
 
 .discountsContainer h3 {
@@ -184,9 +199,9 @@ ol li::marker {
     width: 100%;
 }
 
-.consultation-button:hover{
-    background-color: #9c1022;}
-
+.consultation-button:hover {
+    background-color: #9c1022;
+}
 
 .consultation-button {
     display: inline-block;
@@ -196,14 +211,12 @@ ol li::marker {
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-   font-size: clamp(12px, 3vw, 20px);
+    font-size: clamp(12px, 3vw, 20px);
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     width: clamp(200px, 50vw, 280px);
 }
-
-
 
 .redText {
     color: #b30018;
@@ -286,10 +299,6 @@ footer a {
         width: 70%;
     }
 
-    .custom-card p {
-        width: 100%;
-    }
-
     .whiteSection.groupTraing,
     .whiteSection.your-discount {
         width: 100%;
@@ -297,13 +306,11 @@ footer a {
 
     p {
         width: 70%;
-       margin: 0 auto;
+        margin: 0 auto;
     }
-    .navBar ul {
-   
-    margin-left: 60%;
-   
 
-  }
+    .navBar ul {
+        margin-left: 60%;
+    }
 }
 

@@ -24,11 +24,12 @@ h2 {
     font-family: "Changa One", sans-serif;
     font-weight: 500;
     font-style: italic;
+    text-align: center;
 }
 
 p {
     font-size: clamp(16px, 2.5vw, 24px);
-    line-height: 1.9;
+    line-height: 1.6;
     font-family: "Changa One", sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -37,10 +38,16 @@ p {
 .content-container {
     background-color: black;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 .content-container p {
-    margin: 10px;
+
+   margin: 0 auto;
+    
 }
 
 .redText {
@@ -117,7 +124,7 @@ p {
     border: 1px solid black;
     text-align: left;
     font-weight: bold;
-    font-size: clamp(14px, 2.5vw, 40px);
+    font-size: clamp(14px, 2.5vw, 32px);
 }
 
 .table-container tr:nth-child(even) {
@@ -192,6 +199,14 @@ footer a {
    
     margin-left: 60%;
    
-
   }
+
+  .table-container,
+  p{
+    width: 60%;
+
+}
+.table-container{margin-top: 40px;}
+
+.Please-Message-Text{width: 100%;}
 }
