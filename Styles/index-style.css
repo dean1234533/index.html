@@ -194,7 +194,9 @@ overflow: hidden;}
 
 .consultation-btn:hover,
 .consultation-button:hover{
-    background-color: #9c1022;}
+    background-color: #9c1022;
+border: 4px solid white;
+}
 
 .consultation-btn,
 .consultation-button {
@@ -212,6 +214,7 @@ overflow: hidden;}
     cursor: pointer;
     text-decoration: none;
     width: clamp(200px, 50vw, 280px);
+
 }
 
 .carouselText {
@@ -316,6 +319,11 @@ overflow: hidden;}
     padding: 10px;
     font-weight: bolder;
 }
+
+.card1 a:hover,
+.card2 a:hover,
+.card3 a:hover,
+.card4 a:hover{font-size: larger;}
 
 .cardContainer {
     display: flex;
@@ -435,7 +443,9 @@ overflow: hidden;}
 .callBackStickyButton:hover{
     padding-bottom: 65px;
 transition:margin-bottom 2s 1.5s ;
-background-color: #9c1022;}
+background-color: #9c1022;
+border: 3px solid black;
+}
 
 .callBackStickyButton svg {
     color: white;
