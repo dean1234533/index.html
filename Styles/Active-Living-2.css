@@ -38,7 +38,7 @@ h3 {
     font-style: italic;
 }
 
-
+p,
 ol {
     font-size: clamp(16px, 2.5vw, 24px);
     font-family: "Changa One", sans-serif;
@@ -56,8 +56,7 @@ ol {
 
 .content-container h1,
 .content-container h2,
-.content-container h3,
-.content-container p {
+.content-container h3 {
     padding: 20px;
 }
 

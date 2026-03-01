@@ -84,13 +84,18 @@ nav .phone:hover {
   font-size: 30px;
   display: block;
   
+  
 }
 
 .navBar .Nav-consultation-button:hover {
-  background-color: rgb(189, 27, 27);
+  background-color: rgb(161, 24, 24);
   text-decoration: none;
-  border: 3px solid black;
-  transition:  border 0.2s;
+   transform: scale(1.07) rotate(0deg) translate(0px, 0px) skewX(0deg);
+  box-shadow: 0 0px 30px rgba(62, 59, 59, 0.448);
+  opacity: 1;
+  filter: brightness(1.6);
+  color: #ffffff;
+ 
 }
 
 
@@ -189,7 +194,7 @@ nav .phone:hover {
   border-radius: 10px;
   text-decoration: none;
   display: block;
-  
+  border: 2px solid black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 

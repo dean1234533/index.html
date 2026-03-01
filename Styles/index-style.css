@@ -427,8 +427,8 @@ padding: 13px;
 }
 .callBackStickyButton {
     position: fixed;
-    width: clamp(55px, 12vw, 90px);
-    height: clamp(55px, 12vw, 90px);
+    width: clamp(80px, 12vw, 100px);
+    height: clamp(80px, 12vw, 100px);
     z-index: 100;
     right: 20px;
     left: auto;
@@ -449,10 +449,10 @@ padding: 13px;
 
 .callBackStickyButton svg {
     color: white;
-    margin-top: 20%;
-    width: clamp(35px, 8vw, 60px);
-    height: clamp(35px, 8vw, 60px);
-    transform: translateY(-20%);
+    margin-top: 30%;
+    width: clamp(60px, 7vw, 70px);
+    height: clamp(60px, 9vw, 70px);
+    transform: translateY(-30%);
 
 }
 
