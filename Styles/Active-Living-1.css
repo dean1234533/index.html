@@ -5,49 +5,44 @@
 
 body {
     color: white;
-    margin: 0;
     background-color: white;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-    font-size: clamp(25px, 5vw, 49px);
+    overflow-y: hidden;
+    font-size: clamp(40px, 5vw, 48px);
+    font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: "Changa One", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    text-align: center;
 }
 
 h2 {
-    font-size: clamp(21px, 4vw, 36px);
+    overflow-y: hidden;
+    font-size: clamp(30px, 5vw, 34px);
+    font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: "Changa One", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    text-align: center;
 }
 
 h3 {
-    font-size: clamp(19px, 3.5vw, 30px);
+    font-size: clamp(22px, 5vw, 26px);
+    font-weight: 600;
     margin-top: 20px;
-    margin-bottom: 30px;
-    font-family: "Changa One", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    text-align: center;
+    margin-bottom: 20px;
+    overflow-y: hidden;
 }
 
-p,
 ol {
-    font-size: clamp(16px, 2.5vw, 24px);
-    font-family: "Changa One", sans-serif;
-    font-weight: 300;
-    font-style: italic;
+    font-size: clamp(15px, 5vw, 17px);
 }
 
-p{line-height: 1.6rem;}
+p {
+    line-height: 1.6rem;
+}
 
 .content-container {
     background-color: black;
@@ -60,6 +55,9 @@ p{line-height: 1.6rem;}
 .content-container h3,
 .content-container p {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Stratford-Park-container img,
@@ -88,7 +86,7 @@ p{line-height: 1.6rem;}
 }
 
 .List-Container li {
-    line-height:clamp( 1.6rem,3vw,2.2rem);
+    line-height: clamp(1.6rem, 3vw, 2.2rem);
     margin-bottom: 1.8rem;
 }
 
@@ -103,9 +101,10 @@ p{line-height: 1.6rem;}
 }
 
 .whiteSpace {
-    padding: 2px;
-    background-color: white;
-    margin-top: 20px;
+    padding: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.182);
+    margin-top: 10px;
 }
 
 .redText {
@@ -113,40 +112,93 @@ p{line-height: 1.6rem;}
 }
 
 footer {
-    background-color: black;
-    color: white;
-    padding-bottom: 20px;
+    background-color: rgba(188, 173, 173, 0.348);
+    color:black;
+    padding: 40px 20px 20px 20px;
     font-family: "Libre Baskerville", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col p {
+    padding: 0;
+    margin-block: 20px;
+    line-height: 2.6rem;
+}
+
+.footer-columns {
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-heading {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
 footer p {
-    margin: 20px;
-    width: 95%;
+    margin: 0 0 8px 0;
+    width: auto;
     text-align: left;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+    color:black;
     text-align: left;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 0;
+    margin-top: 0;
+    display: block;
+    padding: 4px 0;
+    font-size: clamp(13px, 2vw, 15px);
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #b30018;
+}
+
+.footer-col a img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    text-align: center;
+     border-top:1px solid black ;
 }
 
 .footer-bottom p {
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(10px, 2vw, 13px);
+    color: black;
+    margin: 0;
+    width: auto;
 }
 
-.footer-col {
-    display: flex;
-    flex-direction: column;
+.footer-bottom a {
+    display: inline;
+    color: black;
+    margin-left: 12px;
+    font-size: inherit;
 }
 
-.footer-col img {
-    width: 30px;
+.footer-bottom a:hover {
+    color: #b30018;
 }
 
 .footerItems {
@@ -155,12 +207,15 @@ footer a {
 }
 
 
-
 @media (min-width: 768px) {
     .content-container {
         margin: 0;
     }
-  li {line-height: 40px;}
+
+    li {
+        line-height: 40px;
+    }
+
     .footer-columns {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -168,20 +223,19 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-    
-
-    p{
-       line-height: 2.0rem;
+    p {
+        line-height: 2.0rem;
         width: 80%;
         margin: 0 auto;
-        
     }
 
     .content-container img {
         width: 60%;
-       
     }
-    ol li{margin-top: 40px;overflow-y: hidden;text-align: left;}
 
-  
+    ol li {
+        margin-top: 40px;
+        overflow-y: hidden;
+        text-align: left;
+    }
 }

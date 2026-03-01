@@ -1,13 +1,46 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
-body{
-    color: white;
-    background-color: black;
+body {
+    color: black;
+    background-color: rgba(193, 184, 184, 0.334);
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 400;
+    font-style: normal;
 }
 
+h1 {
+    overflow-y: hidden;
+    font-size: clamp(40px, 5vw, 48px);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #b30018;
+}
+
+h2 {
+    overflow-y: hidden;
+    font-size: clamp(30px, 5vw, 34px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #b30018;
+}
+
+h3 {
+    font-size: clamp(22px, 5vw, 26px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+}
+
+ol {
+    font-size: clamp(15px, 5vw, 17px);
+}
 
 .content-container {
     margin: 0 auto;
@@ -16,57 +49,16 @@ body{
     padding-top: 120px;
 }
 
-h1 {
-    font-size: clamp(25px, 5vw, 49px);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-decoration-color: red;
-    font-family: "Changa One", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-h2 {
-    font-size: clamp(21px, 4vw, 36px);
-    margin-top: 60px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-decoration-color: red;
-    font-family: "Changa One", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-h3 {
-    font-size: clamp(19px, 3.5vw, 30px);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: "Changa One", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-p, ol {
-    font-size: clamp(16px, 2.5vw, 24px);
-    font-family: "Changa One", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-
-
 .List-Container li {
     margin-bottom: 30px;
     line-height: 1.5rem;
 }
 
-.List ol { 
+.List ol {
     max-width: 650px;
     text-align: left;
     margin: 0 auto;
 }
-
 
 .redText {
     color: #b30018;
@@ -74,41 +66,99 @@ p, ol {
 
 .whiteSpace {
     padding: 2px;
-    background-color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.611);
+    margin-top: 10px;
 }
 
-
 footer {
-    background-color: black;
-    color: white;
-    padding-bottom: 20px;
+    background-color: rgba(188, 173, 173, 0.348);
+    color:black;
+    padding: 40px 20px 20px 20px;
     font-family: "Libre Baskerville", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col p {
+    padding: 0;
+    margin-block: 20px;
+    line-height: 2.6rem;
+}
+
+.footer-columns {
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-heading {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
 footer p {
-    margin: 20px;
-    width: 95%;
+    margin: 0 0 8px 0;
+    width: auto;
     text-align: left;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+    color:black;
     text-align: left;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 0;
+    margin-top: 0;
+    display: block;
+    padding: 4px 0;
+    font-size: clamp(13px, 2vw, 15px);
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #b30018;
+}
+
+.footer-col a img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    text-align: center;
+     border-top:1px solid black ;
 }
 
 .footer-bottom p {
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(10px, 2vw, 13px);
+    color: black;
+    margin: 0;
+    width: auto;
 }
 
-.footer-col {
-    display: flex;
-    flex-direction: column;
+.footer-bottom a {
+    display: inline;
+    color: black;
+    margin-left: 12px;
+    font-size: inherit;
+}
+
+.footer-bottom a:hover {
+    color: #b30018;
 }
 
 .footerItems {
@@ -116,6 +166,13 @@ footer a {
     flex-direction: column;
 }
 
+
+@media (min-width: 768px) {
+    .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
    

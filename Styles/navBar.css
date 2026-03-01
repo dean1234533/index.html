@@ -8,25 +8,28 @@ body {
 
 
 .navBar .logoContainer {
-  display: block;
-  
-  
-  transition: transform 1.5s ease, opacity 1.5s ease;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  transition: opacity 1.5s ease;
+  top: 0;
   opacity: 1;
 }
 
 .navBar.Active .logoContainer {
-display: flexbox;
-align-items: center;
+  margin-top: auto;
   opacity: 0;                
 }
 
-nav img {
+
+
+.navBar img {
   width: clamp(70px, 10vw, 90px);
   height: clamp(70px, 10vw, 90px);
-  display: block;
   object-fit: cover;
-  
+  display: flex;
+  justify-content: center;
+ 
 }
 
 nav .phone {
@@ -177,7 +180,7 @@ nav .phone:hover {
 .Active ul li a {
   font-weight: bolder;
   font-size:clamp(20px,5vw, 36px) !important;
-  margin-top: 20px ;
+  margin-top: 0px ;
   line-height: 1.2;
   opacity: 0;
   transform: translateY(-20px);
@@ -219,6 +222,7 @@ nav .phone:hover {
 .Active ul li:nth-child(3) a { animation: slideIn 0.5s 0.4s forwards; }
 .Active ul li:nth-child(4) a { animation: slideIn 0.5s 0.6s forwards; }
 .Active ul li:nth-child(5) a { animation: slideIn 0.5s 0.8s forwards; }
+.Active ul li:nth-child(6) a { animation: slideIn 0.5s 1.0s forwards; }
 
 @keyframes slideIn {
   to {
@@ -244,9 +248,10 @@ nav .phone:hover {
     align-items: center;
     height: 100%;
     margin-left: auto;
-    font-family: "Changa One", sans-serif;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
   }
 
   .navBar ul li {
