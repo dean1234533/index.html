@@ -113,6 +113,7 @@ p {
 .whiteSpace {
     padding: 2px;
     background-color: white;
+    margin-top: 10px;
 }
 
 .redText {
