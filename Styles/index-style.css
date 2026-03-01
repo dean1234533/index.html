@@ -195,7 +195,8 @@ overflow: hidden;}
 .consultation-btn:hover,
 .consultation-button:hover{
     background-color: #9c1022;
-border: 4px solid white;
+padding: 13px;
+
 }
 
 .consultation-btn,
@@ -424,11 +425,10 @@ border: 4px solid white;
 .consultation-Guide-List img {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
-
 .callBackStickyButton {
     position: fixed;
-    width: clamp(75px, 8vw, 100px);
-    height: clamp(75px, 8vw, 100px);
+    width: clamp(55px, 12vw, 90px);
+    height: clamp(55px, 12vw, 90px);
     z-index: 100;
     right: 20px;
     left: auto;
@@ -440,19 +440,20 @@ border: 4px solid white;
     overflow-y: hidden;
 }
 
-.callBackStickyButton:hover{
+.callBackStickyButton:hover {
     padding-bottom: 65px;
-transition:margin-bottom 2s 1.5s ;
-background-color: #9c1022;
-border: 3px solid black;
+    transition: margin-bottom 2s 1.5s;
+    background-color: #9c1022;
+    border: 3px solid black;
 }
 
 .callBackStickyButton svg {
     color: white;
-    margin-top: 50%;
-    transform: translateY(-50%);
-    width: clamp(50px, 6vw, 75px);
-    height: clamp(50px, 8vw, 70px);
+    margin-top: 20%;
+    width: clamp(35px, 8vw, 60px);
+    height: clamp(35px, 8vw, 60px);
+    transform: translateY(-20%);
+
 }
 
 .whiteSpace {
