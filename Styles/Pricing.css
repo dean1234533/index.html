@@ -162,6 +162,16 @@ padding: 15px;
 
 }
 
+.custom-box .card-value {
+  position: relative;
+  left: 72%;
+  top:81px;
+  background-color: #b30018d1;
+  transform: rotate(40deg);
+ max-width: 33%;
+ border-radius: 5px;
+}
+
 .custom-box .discount-text {
     font-size: 2rem;
     font-weight: bold;

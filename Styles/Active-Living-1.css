@@ -69,6 +69,7 @@ p{line-height: 1.6rem;}
     max-height: 600px;
     margin: 0 auto;
     display: block;
+    border-radius: 10px;
 }
 
 .List {
