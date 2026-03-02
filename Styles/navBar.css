@@ -64,6 +64,7 @@ nav .phone:hover {
   top: 0;
   left: 0;
   border-bottom: 2px solid rgb(201, 18, 18);
+  overflow-y: hidden;
 }
 
 .navBar ul {

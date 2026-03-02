@@ -218,6 +218,13 @@ p {
     text-align: center;
 }
 
+.servicesText{
+    margin: 0 auto;
+max-width: 800px;
+margin-top:25px;}
+
+
+
 .redText {
     color: #b30018;
 }
@@ -229,7 +236,10 @@ p {
     margin-top: 10px;
 }
 
-.your-discount p{text-align: center;}
+.your-discount p{
+    text-align: center;
+margin-top: 15px;
+}
 
 .achieve-your-fitness-goals-text span,
 .footer-links a:hover {
@@ -356,7 +366,7 @@ footer a:hover {
 @media (min-width: 1200px) {
     .whiteSection,
     .content-container img {
-        width: 70%;
+        width: 60%;
     }
 
     .whiteSection.groupTraing,
@@ -365,12 +375,20 @@ footer a:hover {
     }
 
     p {
-        width: 70%;
+        max-width: 800px;
         margin: 0 auto;
     }
 
     .navBar ul {
         margin-left: 60%;
     }
+.servicesText{
+   
+width: 100%;
 }
 
+.your-discount p{
+    margin-bottom: 15px;
+}
+    
+}

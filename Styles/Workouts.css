@@ -32,6 +32,7 @@ h3 {
     font-size: clamp(22px, 5vw, 26px);
     font-weight: 600;
     margin-top: 20px;
+    margin-bottom: 15px;
     overflow-y: hidden;
 }
 
@@ -87,6 +88,8 @@ p {
     margin-bottom: 40px;
     line-height: 1.6rem
 }
+
+strong{color: bisque ;}
 
 .whiteSpace {
     padding: 1px;
@@ -234,4 +237,6 @@ footer a:hover {
         overflow-y: hidden;
         text-align: left;
     }
+
+    
 }
