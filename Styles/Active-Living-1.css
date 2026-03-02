@@ -26,6 +26,7 @@ h2 {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
+  
 }
 
 h3 {
@@ -42,23 +43,27 @@ ol {
 
 p {
     line-height: 1.6rem;
+    padding: 20px;
 }
 
 .content-container {
     background-color: black;
     padding: 20px;
     padding-top: 120px;
+    
 }
 
 .content-container h1,
 .content-container h2,
-.content-container h3,
-.content-container p {
+.content-container h3
+ {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
+margin-left: 20px;
+    
+
 }
+
 
 .Stratford-Park-container img,
 .West-Ham-Park-container img,
@@ -225,8 +230,8 @@ footer a:hover {
 @media (min-width: 1200px) {
     p {
         line-height: 2.0rem;
-        width: 80%;
-        margin: 0 auto;
+       width: 60%;
+    
     }
 
     .content-container img {
@@ -238,4 +243,5 @@ footer a:hover {
         overflow-y: hidden;
         text-align: left;
     }
+
 }

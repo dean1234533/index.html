@@ -49,9 +49,8 @@ ol {
 .content-container h2,
 .content-container h3 {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
+
+    
 }
 
 .Wanstead-Flats-container img,
@@ -236,4 +235,6 @@ footer a:hover {
         overflow-y: hidden;
         text-align: left;
     }
+
+    
 }

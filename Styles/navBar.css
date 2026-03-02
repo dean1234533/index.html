@@ -192,11 +192,12 @@ nav .phone:hover {
 
 .Active .Nav-consultation-button {
   background-color: rgb(229, 14, 14);
-  color: white;
+  color: rgb(223, 214, 214);
   padding: 30px;
   border-radius: 10px;
   text-decoration: none;
   display: block;
+ font-weight: bolder;
   border: 2px solid black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
