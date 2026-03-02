@@ -6,7 +6,7 @@
 body {
     color: black;
     background-color: rgba(193, 184, 184, 0.334);
-    font-family: "Bodoni Moda", serif;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(16px, 4vw, 18px);
     font-weight: 400;
     font-style: normal;

@@ -6,7 +6,7 @@
 body {
     color: white;
     background-color: white;
-    font-family: "Bodoni Moda", serif;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(16px, 4vw, 18px);
     font-weight: 400;
     font-style: normal;
@@ -228,6 +228,8 @@ p {
     background-color: rgba(255, 255, 255, 0.182);
     margin-top: 10px;
 }
+
+.your-discount p{text-align: center;}
 
 .achieve-your-fitness-goals-text span,
 .footer-links a:hover {

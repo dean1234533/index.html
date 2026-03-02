@@ -4,16 +4,20 @@
 
 body {
   margin: 0;
+  font-family: "IBM Plex Serif", serif;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .navBar .logoContainer {
   position: absolute;
-  display: flex;
-  align-self: center;
   transition: opacity 1.5s ease;
   top: 0;
   opacity: 1;
+ 
+ 
 }
 
 .navBar.Active .logoContainer {
@@ -22,15 +26,14 @@ body {
 }
 
 
+ 
 
 .navBar img {
   width: clamp(70px, 10vw, 90px);
   height: clamp(70px, 10vw, 90px);
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
  
-}
+
+ }
 
 nav .phone {
   margin: 0 auto;
@@ -199,9 +202,6 @@ nav .phone:hover {
   display: block;;
   border: 2px solid black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-font-family: "IBM Plex Serif", serif !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
   font-size:clamp(20px,5vw, 36px) !important;
 }
 
@@ -214,11 +214,10 @@ font-family: "IBM Plex Serif", serif !important;
 }
 
 
-@media (max-width: 1199px) {
-  .navBar ul li a {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+@media (min-width: 768px) {
+  .navBar img{margin-top: 50%;transform: translateY(-60%);}
+ 
+
 }
 
 .Active ul li:nth-child(1) a { animation: slideIn 0.5s 0s forwards; }
@@ -233,6 +232,8 @@ font-family: "IBM Plex Serif", serif !important;
     opacity: 1;
     transform: translateY(0);
   }
+
+
 }
 
 
@@ -241,6 +242,9 @@ font-family: "IBM Plex Serif", serif !important;
     justify-content: flex-start;
     background-color: rgb(255, 255, 255);
   }
+
+  
+ 
 
   .navBar ul {
     display: flex !important;
