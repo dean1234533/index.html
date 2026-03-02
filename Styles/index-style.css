@@ -67,10 +67,14 @@ h1 .redText {
     color: #b30018;
 }
 
-.achieve-your-fitness-goals-text p {
-    padding-block: clamp(10px, 3vw, 40px);
+.achieve-your-fitness-goals-text .text1 {
+   padding-top: 10px;
     margin: 10px;
 }
+
+.achieve-your-fitness-goals-text .text2{
+    padding-bottom: 10px;
+} 
 
 .achieve-your-fitness-goals-text span,
 .footer-links a:hover {
@@ -637,6 +641,10 @@ footer a:hover {
     .container img {
         margin-top: 40px;
     }
+.consultation-btn {
+    margin-block: 5px !important;
+
+   
 }
 
-
+}
