@@ -7,14 +7,14 @@ body {
     color: white;
     background-color: white;
     font-family: "IBM Plex Serif", serif;
-    font-size: clamp(16px, 2.5vw, 18px);
+    font-size: clamp(16px, 2.5vw, 20px);
     font-weight: 400;
     font-style: normal;
 }
 
 h1 {
     overflow-y: hidden;
-    font-size: clamp(40px, 2.5vw, 48px);
+    font-size: clamp(40px, 5vw, 48px);
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -22,7 +22,7 @@ h1 {
 
 h2 {
     overflow-y: hidden;
-    font-size: clamp(30px, 2.5vw, 34px);
+     font-size: clamp(28px, 4vw, 36px);
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
