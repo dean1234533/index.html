@@ -192,14 +192,17 @@ nav .phone:hover {
 
 .Active .Nav-consultation-button {
   background-color: rgb(229, 14, 14);
-  color: rgb(223, 214, 214);
+  color: white;
   padding: 30px;
   border-radius: 10px;
   text-decoration: none;
-  display: block;
- font-weight: bolder;
+  display: block;;
   border: 2px solid black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+font-family: "Bodoni Moda", serif;
+    font-size: clamp(16px, 10vw, 20px);
+    font-weight: 500;
+    font-style: normal;
 }
 
 

@@ -5,7 +5,7 @@
 
 body {
     color: white;
-    padding-top: 80px;
+    
     font-family: "Bodoni Moda", serif;
     font-size: clamp(16px, 10vw, 20px);
     font-weight: 500;
@@ -38,8 +38,7 @@ h3 {
 .content-container h2 {
     display: block;
     padding: 0;
-    margin-left: 20px;
-    text-align: left;
+    
 }
 
 
@@ -93,9 +92,10 @@ h1 .redText {
     content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99.2%;
     background-color: rgb(0, 0, 0);
     opacity: 0.4;
     z-index: 1;
@@ -385,6 +385,7 @@ h1 .redText {
 .Personal-Training-Sessions h2 {
     display: inline-block;
     padding-bottom: 5px;
+    
 }
 
 .Service-List-Container,
