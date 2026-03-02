@@ -7,8 +7,8 @@ body {
     color: white;
     background-color: white;
     font-family: "IBM Plex Serif", serif;
-    font-size: clamp(16px, 4vw, 18px);
-    font-weight: 400;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -16,39 +16,45 @@ h1 {
     overflow-y: hidden;
     font-size: clamp(40px, 5vw, 48px);
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+   
 }
 
 h2 {
     overflow-y: hidden;
-    font-size: clamp(30px, 5vw, 34px);
+    font-size: clamp(28px, 4vw, 36px);
     font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+   
 }
 
 h3 {
     font-size: clamp(22px, 5vw, 26px);
     font-weight: 600;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     overflow-y: hidden;
 }
 
 ol {
-    font-size: clamp(15px, 5vw, 17px);
+    font-size: clamp(17px, 2vw, 20px);
 }
 
 p {
     line-height: 1.6rem;
-    text-align: left;
+    max-width: 800px;
+    padding: 0 40px;
+     display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .content-container {
     background-color: black;
     padding: 20px;
     padding-top: 120px;
+    
 }
 
 .content-container h1,
@@ -59,20 +65,25 @@ p {
     justify-content: center;
 }
 
+strong{color: rgb(174, 168, 161);}
+
 .Nutrition-Img img {
     width: 100%;
     max-height: 600px;
     border-radius: 10px;
+    display: flex;
+    justify-self: center;
 }
 
 .List {
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .List li {
     list-style-type: disc;
     list-style-position: inside;
+
 }
 
 .List li::marker {
@@ -80,8 +91,10 @@ p {
 }
 
 .List-Container li {
-    margin-bottom: 1.8rem;
-    line-height: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 30px;
+    line-height: clamp(1.6rem, 2.5vw, 1.8rem);
+
+ 
 }
 
 .whiteSpace {
@@ -94,6 +107,8 @@ p {
 .redText {
     color: #b30018;
 }
+
+span{margin-left: 10px;}
 
 footer {
     background-color: rgba(188, 173, 173, 0.348);
@@ -210,23 +225,27 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
-    .content-container {
-        background-color: black;
-        text-align: center;
-    }
+    
+p{margin: 0 auto;
 
-    p {
-        width: 60%;
-        margin: 0 auto;
-    }
-
+}
+    
     .content-container img {
         width: 60%;
+    
     }
 
     ol li {
-        margin-top: 40px;
+        margin-top: 8px;
         overflow-y: hidden;
         text-align: left;
+        
     }
+
+    .List-Container li {
+   
+   margin-bottom:40 px;
+ 
+}
+
 }
