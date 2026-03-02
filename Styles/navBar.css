@@ -199,10 +199,10 @@ nav .phone:hover {
   display: block;;
   border: 2px solid black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-font-family: "Bodoni Moda", serif;
-    font-size: clamp(16px, 10vw, 20px);
-    font-weight: 500;
-    font-style: normal;
+font-family: "IBM Plex Serif", serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size:clamp(20px,5vw, 36px) !important;
 }
 
 
