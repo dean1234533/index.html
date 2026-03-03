@@ -60,8 +60,7 @@ p {
 .content-container h2,
 .content-container h3 {
     padding: 20px;
-    display: flex;
-    justify-content: center;
+   text-align: center;
 }
 
 strong{color: bisque ;}

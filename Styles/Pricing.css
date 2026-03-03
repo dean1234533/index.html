@@ -25,6 +25,7 @@ h2 {
     font-size: clamp(30px, 4vw, 36px);
     font-weight: 600;
     margin-block: 40px;
+  
 }
 
 h3 {
@@ -251,11 +252,15 @@ p {
    display: flex;
 justify-content: center;
 max-width: 800px;
-min-width: 300px;
-padding-left: 40px;
-padding-right: 25px;
-margin-top:25px;}
+text-align: center;
+margin-top: 20px;
+}
 
+.Personal-Training-Sessions h2,
+.Personal-Training-Sessions h3{
+    text-align: center;
+    padding: 10px;
+}
 
 
 .redText {

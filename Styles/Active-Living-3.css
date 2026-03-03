@@ -59,9 +59,7 @@ p {
 .content-container h2,
 .content-container h3 {
     padding: 20px;
-     display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    text-align: center;
 }
 
 .Lloyd-Park-container img,

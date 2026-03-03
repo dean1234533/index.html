@@ -59,9 +59,7 @@ p {
 .content-container h3,
 .content-container p {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
+    text-align: center;
 }
 
 .imgContainer img {

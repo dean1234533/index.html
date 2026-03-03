@@ -246,7 +246,7 @@ h1 .redText {
 .card2,
 .card3,
 .card4 {
-    width: clamp(300px, 45vw, 450px);
+    width: clamp(350px, 45vw, 450px);
     height: 350px;
     margin: 10px;
     border-radius: 48px;
@@ -303,7 +303,7 @@ h1 .redText {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
     margin: 10px;
     font-size: clamp(16px, 2.5vw, 20px);
@@ -316,17 +316,24 @@ h1 .redText {
     position: absolute;
     bottom: 40px;
     text-decoration: none;
-    color: red;
+    color: rgb(251, 1, 1);
     z-index: 2;
     padding: 10px;
     font-weight: bold;
+left: 50%;
+transform: translateX(-50%);
+font-size: clamp(16px, 2.5vw, 20px);
+border:  1px solid cornsilk;
+border-radius: 5px;
 }
 
 .card1 a:hover,
 .card2 a:hover,
 .card3 a:hover,
 .card4 a:hover {
-    font-size: 22px;
+   
+   margin-bottom: 5px;
+   transition: margin-bottom ease 0.2s;
 }
 
 .cardContainer {
