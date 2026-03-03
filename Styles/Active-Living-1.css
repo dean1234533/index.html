@@ -45,7 +45,6 @@ p {
     line-height: 1.6rem;
     max-width: 800px;
     padding: 0 40px;
-     display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
