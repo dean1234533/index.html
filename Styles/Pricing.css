@@ -155,7 +155,7 @@ p {
    
 }
 
-.bookYourBlook, a{text-decoration-color: rgb(190, 13, 13);}
+.bookYourBlock, a{text-decoration-color: rgb(190, 13, 13);}
 
 .custom-card .bookYourBlook {
     color:white;
@@ -393,6 +393,7 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+   .servicesText{max-width: 900px;}
 }
 
 @media (min-width: 1200px) {
