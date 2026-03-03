@@ -37,9 +37,7 @@ ol {
 p {
     line-height: 1.6rem;
     max-width: 800px;
-    padding: 0 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+    padding: 30px;
   margin-top: 10px;
 }
 

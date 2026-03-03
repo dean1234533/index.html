@@ -401,7 +401,7 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-   .servicesText{ width: 90% !important;padding: 0;}
+
 }
 
 @media (min-width: 1200px) {
@@ -423,11 +423,7 @@ footer a:hover {
     .navBar ul {
         margin-left: 60%;
     }
-.servicesText{
-   
-width: 100%;
-padding: 0;
-}
+
 
 .your-discount p{
     margin-bottom: 15px;
