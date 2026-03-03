@@ -361,12 +361,10 @@ h1 .redText {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: auto;
 }
 
-.whiteSection li {
-   
-}
+
 
 .widgetSection {
     background-color: white;
@@ -564,9 +562,7 @@ footer a:hover {
     #carouselClientProgress .carousel-item img {
         max-width: 50vh;
     }
-    .whiteSection li {
-    padding: 10px;
-}
+    
 }
 
 @media (min-width: 768px) {
@@ -602,9 +598,15 @@ footer a:hover {
     margin-left: 8px;
     transform: translateY(-30%);
 }
+
+.whiteSection{
+    margin-block: -10px !important;
+    height: 30%;
+}
  
 .whiteSection li {
-    padding: 20px !important;
+    padding: 15px !important;
+   
 }
     .White-section {
         background-color: black;
