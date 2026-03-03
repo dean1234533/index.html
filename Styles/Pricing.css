@@ -25,7 +25,8 @@ h2 {
     font-size: clamp(30px, 4vw, 36px);
     font-weight: 600;
     margin-block: 40px;
-  
+    text-align: center;
+  padding: 10px;
 }
 
 h3 {
