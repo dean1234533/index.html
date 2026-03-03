@@ -5,7 +5,7 @@
 
 body {
     color: white;
-    
+    height: 100%;
     font-family: "IBM Plex Serif", serif;
     font-size: clamp(16px, 10vw, 20px);
     font-weight: 500;
@@ -91,7 +91,7 @@ h1 .redText {
     position: relative;
     margin-bottom: 30px;
     color: aliceblue;
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 .heroImageContainer::after {
