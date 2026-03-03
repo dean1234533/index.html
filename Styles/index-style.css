@@ -365,7 +365,7 @@ h1 .redText {
 }
 
 .whiteSection li {
-    padding: 10px;
+   
 }
 
 .widgetSection {
@@ -385,7 +385,7 @@ h1 .redText {
     display: block;
 }
 
-.Free-Consultation,
+
 .Locations,
 .Group-Training,
 .Workout-Plans,
@@ -564,6 +564,9 @@ footer a:hover {
     #carouselClientProgress .carousel-item img {
         max-width: 50vh;
     }
+    .whiteSection li {
+    padding: 10px;
+}
 }
 
 @media (min-width: 768px) {
@@ -600,7 +603,9 @@ footer a:hover {
     transform: translateY(-30%);
 }
  
-
+.whiteSection li {
+    padding: 20px !important;
+}
     .White-section {
         background-color: black;
         color: white;
