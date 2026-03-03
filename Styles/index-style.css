@@ -91,8 +91,8 @@ h1 .redText {
     position: relative;
     margin-bottom: 30px;
     color: aliceblue;
-    min-height: 60vh;
-    height: 100%;
+   
+   min-height: 100%;
 }
 
 .heroImageContainer::after {
