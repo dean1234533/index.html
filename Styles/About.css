@@ -223,7 +223,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-
+ .desktopOnly{display: none;} 
 
 @media (max-width: 767px) {
 }
@@ -262,4 +262,5 @@ footer a:hover {
     .Please-Message-Text {
         width: 100%;
     }
+     .desktopOnly{display: block;} 
 }

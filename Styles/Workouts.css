@@ -81,7 +81,7 @@ p {
 }
 
 .List li::marker {
-    color: #b30018;
+    color: white;
 }
 
 .List-Container li {
@@ -118,6 +118,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
+     align-items: start !important; 
 }
 
 .footer-col p {
@@ -198,7 +199,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-
+ .desktopOnly{display: none;} 
 
 
 @media (max-width: 767px) {
@@ -237,6 +238,7 @@ footer a:hover {
         overflow-y: hidden;
         text-align: left;
     }
-
+ .desktopOnly{
+    display: block;} 
     
 }

@@ -137,18 +137,40 @@ p {
     background-color: #1f1e1e;
     color: #fbf6f6;
     max-width: 800px;
-    width: 90%;
+    width: 80%;
+    text-align: left;
+   
 }
+
+.custom-card .text-uppercase{font-size: 28px;}
 
 .custom-card p {
     width: 100% !important;
     margin: 0 auto;
-    padding: 15px;
+    padding: 8px;
+   display: flex;
+   justify-content: flex-start;
+   overflow-y: hidden;
+  line-height: 1;
+   
 }
+
+.bookYourBlook, a{text-decoration-color: rgb(190, 13, 13);}
+
+.custom-card .bookYourBlook {
+    color:white;
+   font-weight: bold;
+
+}
+
+.custom-card span{margin-right: 4px;;}
 
 .custom-box {
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+   
 }
 
 .custom-box .card-value {
@@ -159,14 +181,18 @@ p {
     transform: rotate(40deg);
     max-width: 33%;
     border-radius: 5px;
+   
 }
 
+
+
+
 .custom-box .discount-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgba(15, 98, 224, 0.628);
+    font-size: 52px;
+    font-weight: bolder;
+    color: white;
     text-shadow: -1px -1px 0 black;
-    text-align: center;
+    
 }
 
 .discountsContainer {
@@ -177,22 +203,24 @@ p {
 
 .discountsContainer h3 {
     margin-top: 25px;
+    
 }
 
 .discountsContainer p {
     margin-top: 10px;
+
 }
 
-.Ready-to-tart-your-fitness-journey {
+.Ready-to-start-your-fitness-journey {
     display: flex;
     flex-direction: column;
 }
 
-.Ready-to-tart-your-fitness-journey a {
+.Ready-to-start-your-fitness-journey a {
     margin-block: 40px;
 }
 
-.Ready-to-tart-your-fitness-journey p {
+.Ready-to-start-your-fitness-journey p {
     margin-bottom: 50px;
     width: 100%;
 }
@@ -216,10 +244,12 @@ p {
     text-decoration: none;
     width: clamp(200px, 50vw, 300px);
     text-align: center;
+    
 }
 
 .servicesText{
-    margin: 0 auto;
+   display: flex;
+justify-content: center;
 max-width: 800px;
 margin-top:25px;}
 
@@ -340,6 +370,8 @@ footer a:hover {
     flex-direction: column;
 }
 
+.desktopOnly{display: none;}
+
 @media (max-width: 767px) {
     .navbar {
         margin: 0;
@@ -390,5 +422,5 @@ width: 100%;
 .your-discount p{
     margin-bottom: 15px;
 }
-    
+ .desktopOnly{display: block;}   
 }

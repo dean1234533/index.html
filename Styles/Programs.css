@@ -81,7 +81,7 @@ p {
 }
 
 .List li::marker {
-    color: #b30018;
+    color: white;
 }
 
 .List-Container li {
@@ -152,6 +152,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
+     align-items: start !important; 
 }
 
 .footer-col p {
@@ -233,6 +234,8 @@ footer a:hover {
     flex-direction: column;
 }
 
+.desktopOnly{display: none;}
+
 
 @media (min-width: 768px) {
     .footer-columns {
@@ -253,7 +256,7 @@ footer a:hover {
     .text p {
         margin: 0 auto;
     }
-}
+
 
 .footer-col {
     display: flex;
@@ -318,4 +321,6 @@ footer a:hover {
 
 .footer-bottom a:hover {
     color: #b30018;
+}
+ .desktopOnly{display: block;} 
 }

@@ -167,10 +167,16 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
+ .desktopOnly{display: none;} 
+
 @media (min-width: 768px) {
     .footer-columns {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
+@media (min-width: 1200px) {
+     .desktopOnly{display: block;} 
+}
