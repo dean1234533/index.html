@@ -199,15 +199,17 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
- .desktopOnly{display: none;} 
-
+ .desktopOnly{display: none } 
 
 @media (max-width: 767px) {
     .content-container {
         margin-left: 0;
         margin-right: 0;
     }
+
+
 }
+
 
 @media (min-width: 768px) {
     .footer-columns {

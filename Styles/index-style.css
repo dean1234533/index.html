@@ -363,9 +363,12 @@ h1 .redText {
     justify-content: center;
     min-height: auto;
     margin-bottom: 20px !important;
+    
 }
 
-
+.whiteSection li{
+    padding: 10px;
+}
 
 .widgetSection {
     background-color: white;
