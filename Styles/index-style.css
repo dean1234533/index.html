@@ -348,7 +348,7 @@ h1 .redText {
 .image {
     width: 100%;
     max-height: 650px;
-    margin-top: 10px;
+    margin-top: 10px !important;
     border-radius: 10px;
 }
 
@@ -362,7 +362,7 @@ h1 .redText {
     align-items: center;
     justify-content: center;
     min-height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 
@@ -600,10 +600,7 @@ footer a:hover {
     transform: translateY(-30%);
 }
 
-.whiteSection{
-    margin-block: -10px !important;
-    height: 30%;
-}
+
  
 .whiteSection li {
     padding: 15px !important;
@@ -613,7 +610,7 @@ footer a:hover {
         background-color: black;
         color: white;
         display: block;
-        margin-bottom: -150px;
+       
     }
 
     .footer-columns {
