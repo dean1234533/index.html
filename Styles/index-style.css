@@ -434,6 +434,7 @@ border-radius: 5px;
 }
 
 .consultation-Guide-Container img {
+     height: clamp(20px, 2vw, 30px);
     width: clamp(20px, 2vw, 30px);
     color: #b30018;
 }
