@@ -5,40 +5,42 @@
 body {
   margin: 0;
   font-family: "IBM Plex Serif", serif;
-    font-size: clamp(16px, 4vw, 18px);
-    font-weight: 400;
-    font-style: normal;
+  font-size: clamp(16px, 4vw, 18px);
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* iOS Safari fix — prevents vh jump when browser chrome shows/hides */
+:root {
+  --real-vh: 1vh;
+}
 
 .navBar .logoContainer {
   position: absolute;
   transition: opacity 1.5s ease;
   top: 0;
   opacity: 1;
- 
 }
-
-
 
 .navBar.Active .logoContainer {
   margin-top: auto;
-  opacity: 0;      
-           display: flex;justify-self: center;align-items: center;align-self: center;justify-content: center; 
+  opacity: 0;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
 }
-
-
- 
 
 .navBar img {
   width: clamp(70px, 10vw, 90px);
   height: clamp(70px, 10vw, 90px);
-  display: flex;justify-self: center;align-items: center;align-self: center;justify-content: center; 
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
 }
-
-
-
- 
 
 nav .phone {
   margin: 0 auto;
@@ -61,18 +63,20 @@ nav .phone:hover {
 .navBar {
   display: flex;
   width: 100%;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   height: 80px;
-  transition: all 1.2s;
+  transition: height 1.2s, background-color 1.2s;  /* only transition specific props, not 'all' */
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   border-bottom: 2px solid rgb(201, 18, 18);
   overflow-y: hidden;
-   transform: translateZ(0);          
-    -webkit-transform: translateZ(0);
-    will-change: transform;  
+  /* GPU compositing layer — prevents iOS repaint shift */
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .navBar ul {
@@ -87,10 +91,9 @@ nav .phone:hover {
   padding: 20px;
   color: black;
   display: block;
-  font-size: clamp(17px, 2.5vw, 20px) ;
+  font-size: clamp(17px, 2.5vw, 20px);
   margin-right: 10px;
 }
-
 
 .navBar .Nav-consultation-button {
   background-color: rgb(237, 9, 9);
@@ -99,23 +102,19 @@ nav .phone:hover {
   font-size: 25px;
   display: block;
   border-radius: 5px;
-  border:2px solid black
-  
-  
+  border: 2px solid black;
 }
 
 .navBar .Nav-consultation-button:hover {
   background-color: rgb(161, 24, 24);
   text-decoration: none;
-   transform: scale(1.07) rotate(0deg) translate(0px, 0px) skewX(0deg);
+  transform: scale(1.07) rotate(0deg) translate(0px, 0px) skewX(0deg);
   box-shadow: 0 0px 30px rgba(62, 59, 59, 0.448);
   opacity: 1;
   filter: brightness(1.6);
   color: #ffffff;
- border: none;
-
+  border: none;
 }
-
 
 .Navbtn {
   width: 30px;
@@ -150,11 +149,11 @@ nav .phone:hover {
   transition: all 0.3s;
 }
 
+/* KEY FIX: use calc(var(--real-vh) * 100) instead of 100vh */
 .Active {
-  height: 100vh;
+  height: calc(var(--real-vh, 1vh) * 100);
   background-color: whitesmoke;
 }
-
 
 .Active .line2 {
   opacity: 0;
@@ -194,8 +193,8 @@ nav .phone:hover {
 
 .Active ul li a {
   font-weight: bolder;
-  font-size:clamp(20px,5vw, 36px) !important;
-  margin-top: 0px ;
+  font-size: clamp(20px, 5vw, 36px) !important;
+  margin-top: 0px;
   line-height: 1.2;
   opacity: 0;
   transform: translateY(-20px);
@@ -211,12 +210,11 @@ nav .phone:hover {
   padding: 20px;
   border-radius: 10px;
   text-decoration: none;
-  display: block;;
+  display: block;
   border: 2px solid black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  font-size:clamp(20px,5vw, 36px) !important;
+  font-size: clamp(20px, 5vw, 36px) !important;
 }
-
 
 .Active .Nav-consultation-button:hover {
   margin-left: 10px;
@@ -225,11 +223,11 @@ nav .phone:hover {
   border: 3px solid black;
 }
 
-
 @media (min-width: 768px) {
-  .navBar img{margin-top: 52%;transform: translateY(-60%);}
- 
-
+  .navBar img {
+    margin-top: 52%;
+    transform: translateY(-60%);
+  }
 }
 
 .Active ul li:nth-child(1) a { animation: slideIn 0.5s 0s forwards; }
@@ -244,19 +242,13 @@ nav .phone:hover {
     opacity: 1;
     transform: translateY(0);
   }
-
-
 }
-
 
 @media (min-width: 1200px) {
   .navBar {
     justify-content: flex-start;
     background-color: rgb(255, 255, 255);
   }
-
-  
- 
 
   .navBar ul {
     display: flex !important;
@@ -299,7 +291,6 @@ nav .phone:hover {
     display: none;
   }
 
-  
   .Active {
     height: 70px;
   }
