@@ -3,6 +3,8 @@
     overflow-x: hidden;
 }
 
+html{overflow-y: scroll;}
+
 body {
     color: white;
     
@@ -244,6 +246,7 @@ h1 .redText {
     width: 100%;
     height: auto;
     display: block;
+   
 }
 
 .card1,
