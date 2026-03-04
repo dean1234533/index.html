@@ -223,7 +223,8 @@ h1 .redText {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    width: clamp(220px, 50vw, 280px);
+    width: clamp(220px, 50vw, 280px) !important;
+    height: auto;
 }
 
 .carouselText {
