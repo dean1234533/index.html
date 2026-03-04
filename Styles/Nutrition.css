@@ -34,10 +34,17 @@ h3 {
     margin-top: 20px;
     margin-bottom: 10px;
     overflow-y: hidden;
-    display: flex;
-    justify-content: center;
      padding: 20px;
+    ;
 }
+
+
+.Alcohol-Considerations-container ,
+.Hidden-Sugar-Sources-container ,
+.Processed-Foods-container,
+.Sugar-Loaded-Beverages-container{display: flex;
+flex-wrap: wrap;
+justify-content: center}
 
 ol {
     font-size: clamp(17px, 2vw, 20px);
@@ -56,8 +63,10 @@ p {
     background-color: black;
     padding: 20px;
     padding-top: 120px;
-    
+  
 }
+
+
 
 .content-container h1,
 .content-container h2 {
@@ -235,10 +244,10 @@ p{margin: 0 auto;
 
 }
     
-    .content-container img {
+   .content-container img {
         width: 60%;
-    
-    }
+    max-width: 800px;
+    } 
 
     ol li {
         margin-top: 8px;

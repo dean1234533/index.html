@@ -34,8 +34,10 @@ h3 {
     margin-top: 20px;
     margin-bottom: 15px;
     overflow-y: hidden;
-    display: flex;
-    justify-content: center;
+   display: flex;
+flex-wrap: wrap;
+justify-self: center;
+   
     padding: 20px;
 }
 
