@@ -70,7 +70,7 @@ h2 {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    width: clamp(230px, 45vw, 300px);
+     width: clamp(240px, 65vw, 320px);
 }
 
 .About-Title {
