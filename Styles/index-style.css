@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-   
+    overflow-x: hidden;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 
 body {
     color: white;
-     overflow-x: hidden;
+    
     font-family: "IBM Plex Serif", serif;
     font-size: clamp(16px, 10vw, 20px);
     font-weight: 500;
