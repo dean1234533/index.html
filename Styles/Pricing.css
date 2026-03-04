@@ -246,6 +246,7 @@ p {
     text-decoration: none;
      width: clamp(240px, 65vw, 320px);
     text-align: center;
+    height: auto;
     
 }
 

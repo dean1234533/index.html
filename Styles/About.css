@@ -71,6 +71,7 @@ h2 {
     cursor: pointer;
     text-decoration: none;
      width: clamp(240px, 65vw, 320px);
+     height: auto;
 }
 
 .About-Title {
