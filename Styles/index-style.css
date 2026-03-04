@@ -112,7 +112,10 @@ h1 .redText {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+  
+        object-fit: contain;
+        background: #000; /* fills letterbox bars if using contain */
+  
 }
 .heroImageContainer .heroContent {
     position: absolute;
