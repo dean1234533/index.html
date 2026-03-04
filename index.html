@@ -456,6 +456,7 @@ function setVideoSource() {
 
 
 let resizeTimer; window.addEventListener("resize",()=>{clearTimeout(resizeTimer); resizeTimer = setTimeout(setVideoSource, 300);})
+setVideoSource(); 
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
