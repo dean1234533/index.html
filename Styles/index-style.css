@@ -4,9 +4,7 @@
 }
 
 html {
-    height: -webkit-fill-available; 
-        height: 100%;
-  
+    touch-action: pan-y;
 }
 
 body {
@@ -18,8 +16,6 @@ body {
     font-weight: 500;
     font-style: normal;
     
-  
-    -webkit-overflow-scrolling: touch;
 }
 
 h1 {
