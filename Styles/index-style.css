@@ -1,13 +1,16 @@
 * {
     box-sizing: border-box;
+   
+}
+
+html {
+    scrollbar-gutter: stable;
     overflow-x: hidden;
 }
 
-html{overflow-y: scroll;}
-
 body {
     color: white;
-    
+     overflow-x: hidden;
     font-family: "IBM Plex Serif", serif;
     font-size: clamp(16px, 10vw, 20px);
     font-weight: 500;
