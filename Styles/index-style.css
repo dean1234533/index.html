@@ -183,6 +183,7 @@ h1 .redText {
 .insta-grid a:hover img {
     transform: scale(1.05);
     overflow: hidden;
+   
 }
 
 .videoTestimonialsText {
@@ -240,6 +241,9 @@ h1 .redText {
     max-width: 400px;
     margin: 0 auto;
     overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .card1,
@@ -357,6 +361,8 @@ border-radius: 5px;
     max-height: 650px;
     margin-top: 10px !important;
     border-radius: 10px;
+    height: auto;
+    display: block;
 }
 
 .whiteSection {
@@ -434,6 +440,7 @@ border-radius: 5px;
 
 .consultation-Guide-List img {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    
 }
 
 .callBackStickyButton {
