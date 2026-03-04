@@ -70,7 +70,7 @@
     </div>
 
     <div class="heroImageContainer">
-        <video id="heroVideo" width="100%" autoplay muted loop playsinline>
+        <video id="heroVideo" width="100%" autoplay muted loop playsinline poster="./pics/IMG_8721 2.JPG">
             <source id="heroVideoSource" src="" type="video/mp4">
         </video>
 
@@ -132,7 +132,7 @@
         </section>
 
         <div class="container">
-            <img class="image" src="./pics/IMG_7912_SnapseedCopy.jpg">
+            <img class="image" src="./pics/IMG_8710 2.JPG">
             <h2 class="Services">PT <span class="redText">Services</span> & Expertise</h2>
         </div>
 
@@ -175,10 +175,10 @@
             <div class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./pics/IMG_8609.JPG" class="d-block w-100" alt="Client fitness transformation after outdoor personal training sessions">
+                        <img src="./pics/IMG_8711 2.JPG" class="d-block w-100" alt="Client fitness transformation after outdoor personal training sessions">
                     </div>
                     <div class="carousel-item">
-                        <img src="./pics/IMG_8607.JPG" class="d-block w-100" alt="Outdoor fitness progress results with DB's Workouts personal trainer">
+                        <img src="./pics/IMG_8708 2.JPG" class="d-block w-100" alt="Outdoor fitness progress results with DB's Workouts personal trainer">
                     </div>
                 </div>
             </div>
@@ -190,10 +190,10 @@
             <div class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./pics/IMG_8608.JPG" class="d-block w-100" alt="Client fitness transformation after outdoor personal training sessions">
+                        <img src=".pics/IMG_8706 2.JPG" class="d-block w-100" alt="Client fitness transformation after outdoor personal training sessions">
                     </div>
                     <div class="carousel-item">
-                        <img src="./pics/IMG_8606.JPG" class="d-block w-100" alt="Outdoor fitness progress results with DB's Workouts personal trainer">
+                        <img src="./pics/IMG_8705 2.JPG" class="d-block w-100" alt="Outdoor fitness progress results with DB's Workouts personal trainer">
                     </div>
                 </div>
             </div>
@@ -205,10 +205,10 @@
             <div class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./pics/IMG_8605.JPG" class="d-block w-100" alt="Client fitness transformation after outdoor personal training sessions">
+                        <img src="./pics/IMG_8707 2.JPG" class="d-block w-100" alt="Client fitness transformation after outdoor personal training sessions">
                     </div>
                     <div class="carousel-item">
-                        <img src="./pics/IMG_8610.JPG" class="d-block w-100" alt="Outdoor fitness progress results with DB's Workouts personal trainer">
+                        <img src="./pics/IMG_8709 2.JPG" class="d-block w-100" alt="Outdoor fitness progress results with DB's Workouts personal trainer">
                     </div>
                 </div>
             </div>
@@ -229,13 +229,13 @@
 
             <section class="insta-grid">
                 <a href="https://www.instagram.com/reel/DLXD3pIIffm/">
-                    <img src="./pics/IMG_8637.JPG" alt="Instagram post 1">
+                    <img src="./pics/IMG_8712 2.JPG" alt="Instagram post 1">
                 </a>
                 <a href="https://www.instagram.com/reel/DKrOxfdomSx/">
-                    <img src="./pics/IMG_8635.JPG" alt="Instagram post 2">
+                    <img src="./pics/IMG_8714 2.JPG" alt="Instagram post 2">
                 </a>
                 <a href="https://www.instagram.com/reel/DKaPdh5oSNH/">
-                    <img src="./pics/IMG_8641 2.JPG" alt="Instagram post 3">
+                    <img src="./pics/IMG_8713 2.JPG" alt="Instagram post 3">
                 </a>
             </section>
         </section>
@@ -442,7 +442,7 @@ const source = document.getElementById('heroVideoSource');
 
 const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed.MP4';
 const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed.MP4';
-const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1 4.MP4';
+const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1-compressed.MP4';
 
 function setVideoSource() {
     const width = window.innerWidth;
@@ -455,8 +455,7 @@ function setVideoSource() {
 }
 
 
-setVideoSource();
-window.addEventListener('resize', setVideoSource);
+let resizeTimer; window.addEventListener("resize",()=>{clearTimeout(resizeTimer); resizeTimer = setTimeout(setVideoSource, 300);})
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
