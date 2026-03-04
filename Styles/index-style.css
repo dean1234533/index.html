@@ -4,13 +4,13 @@
 }
 
 html {
-    scrollbar-gutter: stable;
-    overflow-x: hidden;
+    height: -webkit-fill-available;   
 }
 
 body {
     color: white;
-    
+     min-height: 100vh;
+    min-height: -webkit-fill-available;
     font-family: "IBM Plex Serif", serif;
     font-size: clamp(16px, 10vw, 20px);
     font-weight: 500;

@@ -70,6 +70,9 @@ nav .phone:hover {
   left: 0;
   border-bottom: 2px solid rgb(201, 18, 18);
   overflow-y: hidden;
+   transform: translateZ(0);          
+    -webkit-transform: translateZ(0);
+    will-change: transform;  
 }
 
 .navBar ul {
