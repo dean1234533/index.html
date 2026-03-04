@@ -6,7 +6,7 @@
 html {
     height: -webkit-fill-available; 
         height: 100%;
-    overflow: hidden;
+  
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     font-weight: 500;
     font-style: normal;
     
-    overflow-y: scroll;
+  
     -webkit-overflow-scrolling: touch;
 }
 
