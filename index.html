@@ -421,6 +421,22 @@
 
   <script src="./Script/navBar.js"></script>  
 
+<script>
+if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+    document.body.style.top = `-${window.scrollY}px`;
+    
+    window.addEventListener('scroll', () => {
+        document.body.style.position = '';
+        document.body.style.width = '';
+        const scrollY = document.body.style.top;
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }, { once: true }); // only fires once, on first scroll
+}
+</script>
+
   <script>
 const video = document.getElementById('heroVideo');
 const source = document.getElementById('heroVideoSource');
