@@ -421,20 +421,18 @@
   <script defer src="./Script/navBar.js"></script>  
 
 <script>
-function setVideoSource() {
-    const width = window.innerWidth;
-
-    if (width < 768) {
-        video.style.display = "none";
-        return;
-    }
-
-    const src = width >= 1024 ? desktopSrc : ipadSrc;
-
-    if (source.src !== new URL(src, document.baseURI).href) {
-        source.src = src;
-        video.load();
-    }
+if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+    document.body.style.top = `-${window.scrollY}px`;
+    
+    window.addEventListener('scroll', () => {
+        document.body.style.position = '';
+        document.body.style.width = '';
+        const scrollY = document.body.style.top;
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }, { once: true }); 
 }
 </script>
 
@@ -459,13 +457,19 @@ function setVideoSource() {
 const video = document.getElementById('heroVideo');
 const source = document.getElementById('heroVideoSource');
 
-const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed.MP4';
-const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed.MP4';
-const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1-compressed.MP4';
+const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed 2.MP4';
+const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed 2.MP4';
+const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1-compressed 2.MP4';
 
 function setVideoSource() {
     const width = window.innerWidth;
-    let src = width >= 1024 ? desktopSrc : width >= 768 ? ipadSrc : mobileSrc;
+
+    if (width < 768) {
+        video.style.display = "none";
+        return;
+    }
+
+    const src = width >= 1024 ? desktopSrc : ipadSrc;
 
     if (source.src !== new URL(src, document.baseURI).href) {
         source.src = src;
