@@ -43,14 +43,7 @@ ol {
     font-size: clamp(17px, 2vw, 20px);
 }
 
-p {
-    line-height: 1.6rem;
-    max-width: 800px;
-    padding: 0 40px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
+
 
 .content-container {
     background-color: black;

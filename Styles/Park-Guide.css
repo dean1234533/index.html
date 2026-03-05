@@ -46,8 +46,7 @@ p {
     line-height: 1.6rem;
     max-width: 800px;
     padding: 0 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+ justify-content: center;
   margin-top: 10px;
 }
 
@@ -59,8 +58,8 @@ p {
 }
 
 .content-container h1,
-.content-container h2,
-.content-container p {
+.content-container h2
+ {
     padding: 20px;
     text-align: center;
 }
