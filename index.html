@@ -107,8 +107,16 @@
             <source id="heroVideoSource" type="video/mp4">
         </video>
         
-        <script>document.getElementById('heroVideoSource').src = window.__videoSrc;</script>
-
+        <script>
+        (function () {
+            var v = document.getElementById('heroVideo');
+            var s = document.getElementById('heroVideoSource');
+            s.src = window.__videoSrc;
+            v.load();
+            v.play().catch(function () {});
+        })();
+        </script>
+        
         <div class="heroContent">
             <p>OUTDOOR PT . EAST LONDON</p>
             <h1><span class="redText"> Stronger</span>. Leaner<span class="redDot">.</span> Unstoppable</h1>
