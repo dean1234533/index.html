@@ -421,18 +421,20 @@
   <script defer src="./Script/navBar.js"></script>  
 
 <script>
-if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
-    document.body.style.top = `-${window.scrollY}px`;
-    
-    window.addEventListener('scroll', () => {
-        document.body.style.position = '';
-        document.body.style.width = '';
-        const scrollY = document.body.style.top;
-        document.body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    }, { once: true }); 
+function setVideoSource() {
+    const width = window.innerWidth;
+
+    if (width < 768) {
+        video.style.display = "none";
+        return;
+    }
+
+    const src = width >= 1024 ? desktopSrc : ipadSrc;
+
+    if (source.src !== new URL(src, document.baseURI).href) {
+        source.src = src;
+        video.load();
+    }
 }
 </script>
 
