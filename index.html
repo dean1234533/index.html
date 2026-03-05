@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://dbworkouts.co.uk">
     <link rel="apple-touch-icon" sizes="180x180" href="./pics/IMG_8070-removebg-preview.png">
 
-    <!-- OG / Twitter -->
+  
     <meta property="og:title" content="DB's Workouts – Personalized Outdoor Training in East London">
     <meta property="og:description" content="Get fit anywhere with mobile personal training in East London. Outdoor sessions focused on body transformation, strength, and mindset coaching.">
     <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
@@ -27,17 +27,7 @@
     <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
     <title>DB's Workouts – Personalized Outdoor Training in East London</title>
 
-    <!--
-    ============================================================
-     VIDEO: Zero-delay approach
-     1. This inline <script> runs at parse time (before DOM loads)
-     2. It picks the right video src based on screen width
-     3. It injects a <link rel="preload"> so the browser fetches
-        the video file in parallel with all other page resources
-     4. Later in the <body>, the <source> src is set inline
-        so the browser sees it immediately — no JS callback delay
-    ============================================================
-    -->
+    
     <script>
     (function () {
         var w = window.innerWidth;
@@ -54,35 +44,21 @@
     })();
     </script>
 
-    <!-- Google Fonts: non-blocking swap -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:wght@400;700&display=swap"></noscript>
 
-    <!-- Bootstrap CSS: non-blocking -->
+   
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></noscript>
 
-    <!-- Your own stylesheets -->
+   
     <link rel="stylesheet" href="./Styles/index-style.css">
     <link rel="stylesheet" href="./Styles/navBar.css">
 
-    <style>
-        /* Scroll animations — replaces entire AOS library */
-        [data-aos] {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        [data-aos].aos-animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* Prevent layout shift on carousels before Bootstrap loads */
-        .carousel-item { display: none; }
-        .carousel-item.active { display: block; }
-    </style>
+   
 </head>
 
 <body>
@@ -112,15 +88,11 @@
     </div>
 
     <div class="heroImageContainer">
-        <!--
-            preload="metadata" — browser buffers just enough to play instantly (was "none")
-            autoplay attribute — declarative fallback alongside JS play()
-            src is set by the inline script immediately below — zero JS delay
-        -->
+        
         <video id="heroVideo" width="100%" muted autoplay loop playsinline preload="metadata" poster="./pics/IMG_8723.JPG">
             <source id="heroVideoSource" type="video/mp4">
         </video>
-        <!-- Sets src at parse time — browser starts download immediately, no reload flash -->
+        
         <script>document.getElementById('heroVideoSource').src = window.__videoSrc;</script>
 
         <div class="heroContent">
@@ -224,7 +196,7 @@
                 <p>12 weeks of consistency. The results speak for themselves.</p>
             </section>
 
-            <!-- Fixed broken path: was .pics/ now ./pics/ -->
+
             <div class="carouselClientProgress carousel slide my-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -324,7 +296,7 @@
         </div>
     </footer>
 
-    <!-- ===== ALL SCRIPTS — none block rendering ===== -->
+ 
 
     <script type="application/ld+json">
     {
@@ -376,7 +348,7 @@
     <script defer src="https://cdn.shapo.io/js/embed.js" id="shapo-embed-js"></script>
     <script async src="https://www.instagram.com/embed.js"></script>
 
-    <!-- iOS scroll fix -->
+   
     <script>
     if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
         document.body.style.position = 'fixed';
@@ -392,14 +364,14 @@
     }
     </script>
 
-    <!-- Video play — src is already set inline so this fires instantly on DOMContentLoaded -->
+   
     <script>
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('heroVideo').play().catch(function () {});
     });
     </script>
 
-    <!-- Resize handler: swap video src if crossing a breakpoint -->
+   
     <script>
     (function () {
         var srcs = {
@@ -425,7 +397,7 @@
     })();
     </script>
 
-    <!-- Scroll animations (replaces AOS JS) -->
+    
     <script>
     document.addEventListener('DOMContentLoaded', function () {
         var els = document.querySelectorAll('[data-aos]');
