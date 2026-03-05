@@ -457,19 +457,13 @@ if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
 const video = document.getElementById('heroVideo');
 const source = document.getElementById('heroVideoSource');
 
-const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed 2.MP4';
-const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed 2.MP4';
-const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1-compressed 2.MP4';
+const desktopSrc = './pics/video-output-9FAAC37C-51CA-4E0B-9471-AB61A94896B0-1-compressed-2.MP4';
+const ipadSrc    = './pics/video-output-4F491D5C-0B08-4C68-A61C-5FB4DB10DF30-1-compressed-2.MP4';
+const mobileSrc = './pics/video-output-3FEE04C2-B42B-4E8F-82D5-4650DDABACEE-1-compressed-2.MP4';
 
 function setVideoSource() {
     const width = window.innerWidth;
-
-    if (width < 768) {
-        video.style.display = "none";
-        return;
-    }
-
-    const src = width >= 1024 ? desktopSrc : ipadSrc;
+    let src = width >= 1024 ? desktopSrc : width >= 768 ? ipadSrc : mobileSrc;
 
     if (source.src !== new URL(src, document.baseURI).href) {
         source.src = src;
