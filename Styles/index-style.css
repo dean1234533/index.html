@@ -262,6 +262,7 @@ h1 .redText {
     object-position: top;  
     display: block;
    
+   
 }
 
 .card1,
@@ -401,6 +402,7 @@ border-radius: 5px;
 
 .whiteSection li{
     padding: 10px;
+     list-style: none;
 }
 
 .widgetSection {
