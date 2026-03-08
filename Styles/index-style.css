@@ -249,7 +249,7 @@ h1 .redText {
     margin-bottom: 20px;
     max-width: 400px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-y: hidden;
     width: 100%;
     height: auto;
     display: block;
