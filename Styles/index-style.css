@@ -105,6 +105,7 @@ h1 .redText {
     background-color: rgb(0, 0, 0);
     opacity: 0.6;
     z-index: 1;
+  
 }
 
 #heroVideo {
@@ -115,7 +116,7 @@ h1 .redText {
     height: 100%;
   
         object-fit: cover;
-        background: #000; /* fills letterbox bars if using contain */
+        background: #000; 
   
 }
 .heroImageContainer .heroContent {
@@ -237,24 +238,30 @@ h1 .redText {
    
 }
 
+
 .carousel-item {
-    margin-block: 20px;
+    margin-block: 0;
 }
 
-.carouselClientProgress {
-    margin-top: 40px;
+
+#carouselClientProgress {
+    min-height: 450px;
+    overflow: hidden;
 }
+
 
 .carouselClientProgress,
 .carousel-item img {
     margin-bottom: 20px;
     max-width: 400px;
-    margin: 0 auto;
-    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;  
     display: block;
-   
+    border-radius: 10px;
 }
 
 .card1,
@@ -294,6 +301,7 @@ h1 .redText {
     height: 100%;
     background-color: black;
     opacity: 0.6;
+    border-radius: 45px;
 }
 
 .card1 h3,
@@ -616,8 +624,16 @@ footer a:hover {
         margin-bottom: 10px;
     }
 
+    
+    #carouselClientProgress {
+        min-height: 650px;
+    }
+
     #carouselClientProgress .carousel-item img {
         max-width: 600px;
+        height: 600px;
+        object-fit: cover;
+        object-position: top;  
     }
 
     .content-container p {
