@@ -234,7 +234,7 @@ h1 .redText {
 .carouselText {
     background-color: white;
     color: black;
-   padding-top: 15px;
+   
    
 }
 
@@ -261,7 +261,7 @@ h1 .redText {
     object-fit: cover;
     object-position: top;  
     display: block;
-    border-radius: 10px;
+   
 }
 
 .card1,
@@ -396,6 +396,7 @@ border-radius: 5px;
     min-height: auto;
     margin-bottom: 20px !important;
     
+    
 }
 
 .whiteSection li{
@@ -404,6 +405,7 @@ border-radius: 5px;
 
 .widgetSection {
     background-color: white;
+    
 }
 
 .widgetSection .elfsight-app-05dc06ba-bfba-4127-b40c-516ef95a5370 {
@@ -622,6 +624,7 @@ footer a:hover {
     .carousel-item,
     .carousel-item img {
         margin-bottom: 10px;
+          border-radius: 10px;
     }
 
     
@@ -634,6 +637,7 @@ footer a:hover {
         height: 600px;
         object-fit: cover;
         object-position: top;  
+       
     }
 
     .content-container p {
