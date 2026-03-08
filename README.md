@@ -1,36 +1,48 @@
-Personal Training Website
+DB's Workouts — Outdoor Personal Training Website
 
-A modern, high-impact website built for my own personal training business. The site is hosted on my own custom domain and serves as the public-facing platform where potential clients can learn about my services and get in touch easily.
+A modern, conversion-focused fitness website built for DB's Workouts, an outdoor personal training business based in East London. The site was a full redesign of an existing template-style site, rebuilt from scratch to drive consultation bookings and showcase real client results.
 
-⸻
+Live Site: https://dbworkouts.co.uk
+Code: https://github.com/dean1234533/index
 
- Website Key Features
-	•	Bold hero section with full-screen imagery
-	•	Smooth scrolling navigation between all sections
-	•	Mobile-first responsive design for all devices
-	•	Easy contact via WhatsApp, email, and Instagram
-	•	Sleek dark theme with vibrant red accents
-	•	Clear service and location information for local clients
+Overview
 
-⸻
+The original site lacked branding, social proof, and a clear path for visitors to take action. This redesign transforms it into a professional landing page that guides visitors through a logical conversion flow — from the hero section all the way to booking a free consultation.
 
- Built With
-	•	HTML5 & CSS3 using Flexbox and Grid
-	•	JavaScript for interactive elements and animations
-	•	Fully responsive layouts for all screen sizes
-	•	Smart contact form with built-in validation
-	•	Mobile-friendly hamburger navigation menu
+Features
 
-⸻
+Full-screen hero — Bold headline "Stronger. Leaner. Unstoppable." with an instant Book a Free Consultation CTA
+5-step consultation flow — Walks new visitors through exactly how to get started
+4 service sections — Strength Training, Performance, Weight Management, and Wellness Coaching, each with pricing links
+Client transformation gallery — Real before-and-after photos from actual clients
+Video testimonials — Instagram reels embedded directly on the page
+Google review score — 5.0 stars, 68 reviews displayed in the hero for instant social proof
+Direct contact — WhatsApp, email, and Instagram links throughout
+Mobile hamburger nav — Smooth navigation on all screen sizes
 
-Design
-	•	Alternating light and dark visual sections
-	•	Consistent bold red accent color for branding
-	•	Eye-catching call-to-action buttons
-	•	Clean typography and clear layout hierarchy
+Built With
 
-⸻
+HTML5
+CSS3 — Flexbox and Grid
+Vanilla JavaScript
+Google Forms — consultation booking integration
+Deployed on custom domain via cPanel
 
- Purpose
+What I Learned
+How to redesign a real client website with user conversion as the primary goal
+Structuring landing pages to guide visitors toward a single clear action
+Using social proof (reviews, transformations, testimonials) to build trust
+Deploying and managing a production site on a live custom domain
 
-The purpose of this website is to provide my personal training business with a professional online presence. It acts as the first point of contact for potential clients, clearly communicating services and branding while making it effortless to reach out and start a conversation.
+Getting Started
+
+git clone https://github.com/dean1234533/index.git
+cd index
+Open index.html in your browser — no build step or dependencies required.
+
+Contact
+
+Built by Dean Burt
+Email: Deanburt1308@gmail.com
+LinkedIn: https://www.linkedin.com/in/db-s-workouts/
+Portfolio: https://dean1234533.github.io/Project-Portfolio/
