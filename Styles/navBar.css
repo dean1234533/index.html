@@ -8,6 +8,29 @@ body {
   font-size: clamp(16px, 4vw, 18px);
   font-weight: 400;
   font-style: normal;
+  /* Crisper, more professional text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth in-page scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Clean, accessible keyboard focus (only shows for keyboard users) */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #b30018;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Remove grey tap flash on mobile for a more polished feel */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -308,5 +331,81 @@ nav .phone:hover {
 
   .Active ul li a {
     font-size: clamp(20px, 3vw, 25px) !important;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   FOOTER LAYOUT — authoritative, shared across all pages.
+   Uses `footer .x` selectors so it wins over per-page footer CSS
+   regardless of stylesheet load order. Fixes columns that were
+   stacking because .footer-columns had a gap but no display:flex.
+   ════════════════════════════════════════════════════════════════ */
+footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+footer .footer-col {
+  flex: 1 1 200px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer .footer-col > p {
+  margin: 0 0 6px 0;
+  line-height: 1.5;
+}
+
+footer .footer-heading {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer .footer-col a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+footer .footer-bottom {
+  max-width: 1100px;
+  margin: 18px auto 0;
+  text-align: center;
+}
+
+footer .footer-bottom p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px 18px;
+  margin: 0;
+}
+
+footer .footer-bottom a {
+  margin: 0;
+}
+
+/* Stack the columns cleanly on small screens */
+@media (max-width: 600px) {
+  footer .footer-columns {
+    flex-direction: column;
+    gap: 26px;
+  }
+  footer .footer-col {
+    flex-basis: auto;
   }
 }
