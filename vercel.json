@@ -28,6 +28,7 @@
     { "source": "/personal-trainer-forest-gate", "destination": "/personal-trainer-forest-gate.html" },
     { "source": "/personal-trainer-plaistow", "destination": "/personal-trainer-plaistow.html" },
     { "source": "/personal-trainer-chadwell-heath", "destination": "/personal-trainer-chadwell-heath.html" },
-    { "source": "/ai-plans", "destination": "/ai-plans.html" }
+    { "source": "/ai-plans", "destination": "/ai-plans.html" },
+    { "source": "/free-workout-plan", "destination": "/free-workout-plan.html" }
   ]
 }
