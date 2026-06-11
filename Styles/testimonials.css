@@ -80,9 +80,9 @@ h2 { text-align: center; margin-block: 24px; }
 
 .carousel-item img {
   width: 100%;
-  height: 480px;
-  object-fit: cover;
-  object-position: top;
+  height: 600px;
+  object-fit: contain;
+  background: #000;
   display: block;
 }
 
@@ -132,6 +132,86 @@ h2 { text-align: center; margin-block: 24px; }
   max-width: 480px;
   margin: 0 auto;
 }
+
+/* ── Review cards ── */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.review-card {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-card-stars { color: #f5a623; font-size: 16px; letter-spacing: 2px; }
+
+.review-card-text {
+  font-size: clamp(13px, 1.8vw, 15px);
+  color: rgba(255,255,255,0.8);
+  line-height: 1.65;
+  font-style: italic;
+  flex: 1;
+}
+
+.review-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.review-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #b30018;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.review-card-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.2;
+}
+
+.review-card-source {
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-card-source svg { flex-shrink: 0; }
+
+.reviews-cta-link {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.reviews-cta-link:hover { color: #b30018; border-color: #b30018; }
 
 /* ── Video testimonials ── */
 .video-testimonials {
@@ -268,7 +348,7 @@ h2 { text-align: center; margin-block: 24px; }
 @media (max-width: 600px) {
   .page-header { padding: 100px 16px 48px; }
   .transformations-section { padding: 48px 16px; }
-  .carousel-item img { height: 320px; }
+  .carousel-item img { height: 420px; }
   .reviews-section { padding: 48px 16px; }
   .video-testimonials { padding: 48px 16px; }
   .insta-grid a { max-width: none; flex: 1 1 calc(50% - 12px); }
