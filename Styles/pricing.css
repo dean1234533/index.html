@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    color: white;
+    background-color: #0a0a0a;
+    font-family: "IBM Plex Serif", serif;
+   font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    overflow-y: hidden;
+    font-size: clamp(40px, 5vw, 48px);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    overflow-y: hidden;
+    font-size: clamp(30px, 4vw, 36px);
+    font-weight: 600;
+   
+margin-top: 30px;
+
+    text-align: center;
+  padding: 10px;
+}
+
+h3 {
+     font-size: clamp(22px, 5vw, 26px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+}
+
+ol {
+    font-size: clamp(15px, 5vw, 17px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol li {
+    list-style: decimal inside;
+}
+
+ol li::marker {
+    color: #b30018;
+}
+
+p {
+    width: 90%;
+    line-height: 1.6rem;
+}
+
+.Page-content-container {
+    background-color: black;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.content-container p {
+    text-align: center;
+}
+
+.content-container img {
+    max-height: 600px;
+    width: 100%;
+}
+
+.whiteSection {
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.whiteSection p {
+    display: block;
+    text-align: center;
+}
+
+.whiteSection.groupTraing {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whiteSection.list {
+    border-radius: 20px;
+    padding-top: 50px;
+    max-width: 650px;
+    width: 90%;
+}
+
+.Sessions-Include li {
+    padding-bottom: 50px;
+    line-height: 1.6rem;
+}
+
+.carousel-progress-pics {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow-y: hidden;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    overflow: hidden;
+    object-fit: cover;
+    height: auto;
+}
+
+.custom-card {
+    border: 4px solid rgb(238, 241, 237);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #1f1e1e;
+    color: #fbf6f6;
+    max-width: 800px;
+    width: 90%;
+    text-align: left;
+   
+}
+
+.custom-card .text-uppercase{font-size: 28px;}
+
+.custom-card p {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 8px;
+   display: flex;
+   justify-content: flex-start;
+   overflow-y: hidden;
+  line-height: 1;
+   
+}
+
+.bookYourBlock, a{text-decoration-color: rgb(190, 13, 13);}
+
+.custom-card .bookYourBlook {
+    color:white;
+   font-weight: bold;
+
+}
+
+.custom-card span{margin-right: 4px;;}
+
+.custom-box {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.custom-box .card-value {
+    position: absolute;
+    top: 22px;
+    right: -34px;
+    width: 140px;
+    background: #b30018;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 0;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: 10;
+    margin: 0;
+    border-radius: 0;
+    line-height: 1.4;
+}
+
+
+
+
+.custom-box .discount-text {
+    font-size: 52px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -1px -1px 0 black;
+    
+}
+
+.discountsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.discountsContainer h3 {
+    margin-top: 25px;
+    
+}
+
+.discountsContainer p {
+    margin-top: 10px;
+
+}
+
+.Ready-to-start-your-fitness-journey {
+    display: flex;
+    flex-direction: column;
+}
+
+.Ready-to-start-your-fitness-journey a {
+    margin-block: 40px;
+}
+
+.Ready-to-start-your-fitness-journey p {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.consultation-button {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 13px 26px;
+    background-color: #b30018;
+    color: white;
+    border: 2px solid #b30018;
+    border-radius: 4px;
+    font-size: clamp(13px, 2vw, 15px);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    width: min(320px, 90vw);
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+    box-sizing: border-box;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.consultation-button:hover {
+    background-color: #8a0012;
+    border-color: #8a0012;
+}
+
+.servicesText {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.Personal-Training-Sessions h2,
+.Personal-Training-Sessions h3{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.redText {
+    color: #b30018;
+}
+
+.section-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: #b30018;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding: 0;
+    text-align: center;
+}
+
+.whiteSpace {
+    padding: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.182);
+    margin-top: 10px;
+}
+
+.your-discount p{
+    text-align: center;
+margin-top: 15px;
+}
+
+.achieve-your-fitness-goals-text span,
+.footer-links a:hover {
+    color: #b30018;
+}
+
+/* footer styles live in navBar.css */
+
+.desktopOnly{display: none;}
+
+@media (max-width: 767px) {
+    .navbar {
+        margin: 0;
+    }
+
+    .Page-content-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    p {
+        max-width: 800px;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .whiteSection,
+    .content-container img {
+        width: 60%;
+    }
+
+    .whiteSection.groupTraing,
+    .whiteSection.your-discount {
+        width: 100%;
+    }
+
+    p {
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .navBar ul {
+        margin-left: 60%;
+    }
+
+
+.your-discount p{
+    margin-bottom: 15px;
+}
+ .desktopOnly{display: block;}   
+}
+/* ── FAQ SECTION (matches site: IBM Plex Serif + brand red) ──────── */
+.faq-section {
+  padding: 3.25rem 1.25rem;
+}
+.faq-heading {
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1.1rem 0.25rem;
+}
+.faq-item summary {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f1e1e;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  color: #b30018;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p {
+  margin: 0.85rem 0 0;
+  color: #444;
+  line-height: 1.65;
+  font-size: 0.97rem;
+}
+
+/* ── Pricing Comparison Table ── */
+.pricing-comparison-section {
+  padding: 30px 16px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pricing-comparison-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: clamp(13px, 2vw, 16px);
+  text-align: left;
+  color: black;
+}
+
+.pricing-comparison-table thead {
+  background-color: #b30018;
+  color: white;
+}
+
+.pricing-comparison-table th,
+.pricing-comparison-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+}
+
+.pricing-comparison-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pricing-comparison-table tbody tr:hover {
+  background-color: #ffe5e9;
+}
+
+.popular-row {
+  border-left: 4px solid #b30018;
+  font-weight: 600;
+  background-color: #fff5f6 !important;
+}
+
+.saving-highlight {
+  color: #b30018;
+  font-weight: 700;
+}
+
+/* ── Free Consultation Highlight ── */
+.free-consultation-highlight {
+  background: #0d0d0d;
+  border-top: 3px solid #b30018;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 0;
+}
+
+.free-consultation-highlight h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.free-consultation-highlight h2 .redText {
+  color: #b30018;
+}
+
+.free-consultation-highlight p {
+  color: rgba(255,255,255,0.65);
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.free-consult-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 10px !important;
+}
+
+.free-consultation-highlight .consultation-btn {
+  background: #b30018;
+  color: white;
+  border-color: #b30018;
+}
+
+/* ── Mobile Responsive ── */
+@media (max-width: 600px) {
+  h1 { font-size: clamp(28px, 8vw, 40px); }
+  h2 { font-size: clamp(22px, 6vw, 32px); }
+  h3 { font-size: clamp(18px, 5vw, 24px); }
+
+  /* Prevent any element from causing horizontal scroll */
+  * { max-width: 100%; }
+
+  .content-container {
+    padding-top: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  p { width: 100%; padding: 0; }
+
+  /* Group training: stack text + button vertically */
+  .whiteSection.groupTraing {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+  }
+
+  .whiteSection.groupTraing p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Price cards */
+  .custom-card {
+    padding: 20px 14px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .custom-card p {
+    line-height: 1.5;
+    overflow-y: visible;
+  }
+
+  .custom-box {
+    max-width: 100%;
+  }
+
+  /* Consultation button full width on mobile */
+  .consultation-button {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .free-consultation-highlight {
+    padding: 30px 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+
+  .faq-section { padding: 24px 16px; }
+  .faq-item summary { font-size: 0.95rem; }
+
+  .Group-Training-Img { max-height: 260px; object-fit: cover; }
+
+  .discount-text { font-size: 40px; }
+
+  .discountsContainer { padding: 0 16px; }
+}

@@ -1,0 +1,276 @@
+* { box-sizing: border-box; overflow-x: hidden; }
+
+body {
+  color: white;
+  background-color: black;
+  font-family: "IBM Plex Serif", serif;
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 { overflow: visible; }
+h2 { text-align: center; margin-block: 24px; }
+
+.redText { color: #b30018; }
+
+/* ── Page header ── */
+.page-header {
+  padding: 120px 20px 64px;
+  text-align: center;
+  background: #050505;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.page-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.page-title {
+  font-size: clamp(38px, 8vw, 68px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+.page-sub {
+  font-size: clamp(14px, 2vw, 17px);
+  color: rgba(255,255,255,0.5);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Shared section eyebrow ── */
+.section-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-heading {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 40px;
+}
+
+/* ── Transformations ── */
+.transformations-section {
+  padding: 70px 20px;
+  text-align: center;
+  background: #000;
+}
+
+.carouselContainer {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.carouselClientProgress {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.carouselText {
+  background: #080808;
+  border-top: 1px solid #1a1a1a;
+  padding: 18px 24px 48px;
+  text-align: center;
+}
+
+.carouselText p {
+  font-size: clamp(13px, 2vw, 15px);
+  font-style: italic;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+/* ── Reviews ── */
+.reviews-section {
+  padding: 70px 20px;
+  background: #030303;
+  border-top: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+.reviews-intro { margin-bottom: 40px; }
+
+.reviews-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.reviews-title {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin: 0 0 12px;
+}
+
+.reviews-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── Video testimonials ── */
+.video-testimonials {
+  padding: 70px 20px;
+  text-align: center;
+  background: #000;
+  border-top: 1px solid #1a1a1a;
+}
+
+.video-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.video-heading {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 8px;
+}
+
+.video-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 36px;
+}
+
+.insta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.insta-grid a { display: block; flex: 1 1 calc(33% - 12px); max-width: 160px; }
+
+.insta-grid img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  display: block;
+}
+
+.insta-grid a:hover img { transform: scale(1.04); }
+
+/* ── CTA ── */
+.testimonials-cta {
+  padding: 90px 20px;
+  text-align: center;
+  background: #050505;
+  border-top: 1px solid #1a1a1a;
+}
+
+.cta-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.cta-heading {
+  font-size: clamp(30px, 5vw, 48px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin: 0 0 12px;
+}
+
+.cta-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 36px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 13px 26px;
+  background: #b30018;
+  color: white;
+  border: 2px solid #b30018;
+  border-radius: 4px;
+  font-size: clamp(13px, 2vw, 15px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: #8a0012;
+  border-color: #8a0012;
+  color: white;
+}
+
+/* ── Service areas ── */
+.service-areas-bar {
+  background: #070707;
+  border-top: 1px solid #1a1a1a;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.service-areas-bar p {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.service-areas-bar a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-areas-bar a:hover { color: #b30018; }
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .page-header { padding: 100px 16px 48px; }
+  .transformations-section { padding: 48px 16px; }
+  .carousel-item img { height: 320px; }
+  .reviews-section { padding: 48px 16px; }
+  .video-testimonials { padding: 48px 16px; }
+  .insta-grid a { max-width: none; flex: 1 1 calc(50% - 12px); }
+  .testimonials-cta { padding: 60px 16px; }
+}

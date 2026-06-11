@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/Active-Living-1", "destination": "/active-living-1.html" },
+    { "source": "/Active-Living-2", "destination": "/active-living-2.html" },
+    { "source": "/Active-Living-3", "destination": "/active-living-3.html" },
+    { "source": "/Nutrition", "destination": "/nutrition.html" },
+    { "source": "/Park-Guide", "destination": "/park-guide.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/Privacy-Policy", "destination": "/privacy-policy.html" },
+    { "source": "/Programs", "destination": "/programs.html" },
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions.html" },
+    { "source": "/Terms-and-conditions", "destination": "/terms-and-conditions.html" },
+    { "source": "/Workouts", "destination": "/workouts.html" },
+    { "source": "/testimonials", "destination": "/testimonials.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/personal-trainer-stratford", "destination": "/personal-trainer-stratford.html" },
+    { "source": "/outdoor-pt-walthamstow", "destination": "/outdoor-pt-walthamstow.html" },
+    { "source": "/east-london-park-training", "destination": "/east-london-park-training.html" },
+    { "source": "/personal-trainer-ilford", "destination": "/personal-trainer-ilford.html" },
+    { "source": "/personal-trainer-goodmayes", "destination": "/personal-trainer-goodmayes.html" },
+    { "source": "/personal-trainer-wanstead", "destination": "/personal-trainer-wanstead.html" },
+    { "source": "/personal-trainer-romford", "destination": "/personal-trainer-romford.html" },
+    { "source": "/personal-trainer-east-ham", "destination": "/personal-trainer-east-ham.html" },
+    { "source": "/personal-trainer-leytonstone", "destination": "/personal-trainer-leytonstone.html" },
+    { "source": "/personal-trainer-barking", "destination": "/personal-trainer-barking.html" },
+    { "source": "/personal-trainer-forest-gate", "destination": "/personal-trainer-forest-gate.html" },
+    { "source": "/personal-trainer-plaistow", "destination": "/personal-trainer-plaistow.html" },
+    { "source": "/personal-trainer-chadwell-heath", "destination": "/personal-trainer-chadwell-heath.html" }
+  ]
+}
