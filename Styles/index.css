@@ -238,6 +238,10 @@ h1 .redText {
     border-color: #8a0012;
 }
 
+.heroContent .consultation-button {
+    border-color: white;
+}
+
 .carouselText {
     background: #080808;
     border-top: 1px solid #1a1a1a;
