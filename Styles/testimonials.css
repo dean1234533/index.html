@@ -133,21 +133,61 @@ h2 { text-align: center; margin-block: 24px; }
   margin: 0 auto;
 }
 
-/* ── Review cards ── */
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 960px;
+/* ── Review slider ── */
+.reviews-slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 640px;
   margin: 0 auto;
-  text-align: left;
 }
 
+.rev-slider-track {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rev-slider-btn {
+  flex-shrink: 0;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1;
+}
+.rev-slider-btn:hover { background: #b30018; border-color: #b30018; }
+
+.rev-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.rev-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.rev-dot.active { background: #b30018; transform: scale(1.3); }
+
+/* ── Review cards ── */
 .review-card {
   background: #0d0d0d;
   border: 1px solid #222;
   border-radius: 10px;
   padding: 24px;
+  min-width: 100%;
+  text-align: left;
   display: flex;
   flex-direction: column;
   gap: 12px;
