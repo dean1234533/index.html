@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MindFlow App – Booking & Business Management for Personal Trainers | DB's Workouts</title>
-  <meta name="description" content="MindFlow is the all-in-one app for personal trainers. Manage bookings, clients, tasks, fitness and more — built by a PT, for PTs.">
+  <title>MindFlow – Smart Booking, Task & Business Management App | DB's Workouts</title>
+  <meta name="description" content="MindFlow is the all-in-one productivity app for businesses, freelancers and busy professionals. Smart booking links, AI assistant, tasks, meeting notes, expenses and more. Try free today.">
+  <meta name="keywords" content="booking app, business management app, task manager, AI assistant app, meeting notes app, calendar booking software, freelancer productivity, small business app, client management, smart scheduler">
   <meta name="author" content="Dean Burt">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#000000">
@@ -13,16 +14,82 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./pics/IMG_8070-removebg-preview.png">
   <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
 
-  <meta property="og:title" content="MindFlow App – Business Management for Personal Trainers">
-  <meta property="og:description" content="Bookings, clients, tasks, AI assistant and fitness tracking. One app that runs your PT business.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="MindFlow – Smart Booking & Business Management App">
+  <meta property="og:description" content="Bookings, meetings, tasks, AI assistant, expenses and more. One app that keeps your work and life organised.">
   <meta property="og:url" content="https://dbworkouts.co.uk/smart-app">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="DB's Workouts">
   <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MindFlow App – Business Management for Personal Trainers">
-  <meta name="twitter:description" content="Bookings, clients, tasks, AI assistant and fitness tracking. One app that runs your PT business.">
+  <meta name="twitter:title" content="MindFlow – Smart Booking & Business Management App">
+  <meta name="twitter:description" content="Bookings, meetings, tasks, AI assistant, expenses and more. One app that keeps your work and life organised.">
   <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MindFlow",
+    "url": "https://smart-life-app.pages.dev",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "description": "All-in-one productivity app for businesses, freelancers and busy professionals. Smart booking links, AI assistant, tasks, meeting notes, expenses and more.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "price": "9.00",
+        "priceCurrency": "GBP",
+        "priceSpecification": {
+          "@type": "RecurringCharges",
+          "billingDuration": "P1M"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro",
+        "price": "19.00",
+        "priceCurrency": "GBP",
+        "priceSpecification": {
+          "@type": "RecurringCharges",
+          "billingDuration": "P1M"
+        }
+      }
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Dean Burt",
+      "url": "https://dbworkouts.co.uk"
+    },
+    "featureList": [
+      "Smart booking links with Google Calendar sync",
+      "AI-powered smart agent",
+      "Task and note management",
+      "Meeting summaries and contact management",
+      "Expense tracking",
+      "Fitness tracking",
+      "Voice recording and transcription",
+      "Works offline as a PWA"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dbworkouts.co.uk" },
+      { "@type": "ListItem", "position": 2, "name": "Smart App", "item": "https://dbworkouts.co.uk/smart-app" }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -562,6 +629,65 @@
     </div>
 
     <p class="pricing-note">Secure payment via Stripe &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; No hidden fees</p>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:70px 20px; background:#0a0a0a;">
+    <div style="max-width:720px; margin:0 auto;">
+      <p class="section-eyebrow" style="text-align:center;">FAQ</p>
+      <h2 style="text-align:center; margin-bottom:36px;">Common <span class="redText">questions</span></h2>
+
+      <details style="border-bottom:1px solid rgba(255,255,255,0.1); padding:18px 0;">
+        <summary style="font-size:17px; font-weight:700; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          Who is MindFlow for?
+          <span style="color:#b30018; font-size:22px; font-weight:400;">+</span>
+        </summary>
+        <p style="margin-top:12px; color:rgba(255,255,255,0.55); line-height:1.7; font-size:15px;">
+          Anyone who has meetings, bookings, clients, or just a lot to keep track of. Freelancers, personal trainers, coaches, consultants, small business owners, or anyone who wants their tasks, notes and schedule in one organised place.
+        </p>
+      </details>
+
+      <details style="border-bottom:1px solid rgba(255,255,255,0.1); padding:18px 0;">
+        <summary style="font-size:17px; font-weight:700; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          How do the booking links work?
+          <span style="color:#b30018; font-size:22px; font-weight:400;">+</span>
+        </summary>
+        <p style="margin-top:12px; color:rgba(255,255,255,0.55); line-height:1.7; font-size:15px;">
+          You connect your Google Calendar and set the times you're available. MindFlow generates a shareable link. When someone visits it, they only see genuinely free slots — no slots that clash with existing calendar events. No double bookings, no messages back and forth.
+        </p>
+      </details>
+
+      <details style="border-bottom:1px solid rgba(255,255,255,0.1); padding:18px 0;">
+        <summary style="font-size:17px; font-weight:700; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          Does it work on my phone?
+          <span style="color:#b30018; font-size:22px; font-weight:400;">+</span>
+        </summary>
+        <p style="margin-top:12px; color:rgba(255,255,255,0.55); line-height:1.7; font-size:15px;">
+          Yes. MindFlow is a Progressive Web App (PWA) — install it on your iPhone or Android home screen like a native app. It also works fully offline, so your notes and tasks are always available even without signal.
+        </p>
+      </details>
+
+      <details style="border-bottom:1px solid rgba(255,255,255,0.1); padding:18px 0;">
+        <summary style="font-size:17px; font-weight:700; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          What's included in the Pro plan?
+          <span style="color:#b30018; font-size:22px; font-weight:400;">+</span>
+        </summary>
+        <p style="margin-top:12px; color:rgba(255,255,255,0.55); line-height:1.7; font-size:15px;">
+          Pro gives you everything in Starter plus unlimited booking links, the AI smart agent, voice recording and transcription, full contact and meeting management, push notifications, and priority support.
+        </p>
+      </details>
+
+      <details style="border-bottom:1px solid rgba(255,255,255,0.1); padding:18px 0;">
+        <summary style="font-size:17px; font-weight:700; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          Can I cancel anytime?
+          <span style="color:#b30018; font-size:22px; font-weight:400;">+</span>
+        </summary>
+        <p style="margin-top:12px; color:rgba(255,255,255,0.55); line-height:1.7; font-size:15px;">
+          Yes, cancel anytime with no penalty. Your subscription runs to the end of the billing period and you won't be charged again. Payments are handled securely via Stripe.
+        </p>
+      </details>
+
+    </div>
   </section>
 
   <!-- CTA BANNER -->
