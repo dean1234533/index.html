@@ -210,6 +210,79 @@
       letter-spacing: 0.01em;
     }
 
+    /* ── VIDEO CAROUSEL ── */
+    .vid-section {
+      padding: 80px 20px;
+      background: #050505;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .vid-header { text-align: center; margin-bottom: 40px; }
+
+    .vid-wrap {
+      position: relative;
+      max-width: 380px;
+      margin: 0 auto;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.7);
+    }
+    .vid-wrap video {
+      width: 100%;
+      display: block;
+      max-height: 680px;
+      object-fit: cover;
+      background: #000;
+    }
+    .vid-label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 48px 20px 18px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      color: rgba(255,255,255,0.85);
+    }
+    .vid-arrow {
+      position: absolute;
+      top: 50%; transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 50%;
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
+      backdrop-filter: blur(4px);
+      transition: background 0.2s;
+      z-index: 2;
+    }
+    .vid-arrow:hover { background: #b30018; border-color: #b30018; }
+    .vid-arrow.prev { left: 12px; }
+    .vid-arrow.next { right: 12px; }
+
+    .vid-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .vid-dot {
+      height: 8px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: all 0.3s;
+      background: rgba(255,255,255,0.2);
+      width: 8px;
+    }
+    .vid-dot.active { width: 24px; background: #b30018; }
+
     /* ── FEATURES ── */
     .features {
       padding: 90px 20px;
@@ -499,10 +572,22 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
-      .hero { padding: 120px 16px 80px; }
-      .features, .pricing, .faq-section, .cta-section { padding: 60px 16px; }
-      .cta-box { padding: 40px 20px; }
+      .hero { padding: 110px 16px 70px; }
+      .hero h1 { font-size: clamp(30px, 9vw, 42px); }
+      .hero-badge { font-size: 10px; padding: 6px 12px; letter-spacing: 0.1em; text-align: center; white-space: normal; max-width: 280px; }
+      .hero-trust { gap: 12px; font-size: 12px; }
+      .features, .pricing, .faq-section, .cta-section { padding: 56px 16px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .billing-toggle { width: 100%; justify-content: center; }
+      .billing-toggle button { flex: 1; padding: 9px 12px; font-size: 13px; }
+      .price-card { padding: 28px 20px; }
       .plan-price { font-size: 42px; }
+      .cta-box { padding: 36px 16px; }
+      .cta-btns { flex-direction: column; align-items: stretch; }
+      .cta-btns .btn-red, .cta-btns .btn-outline { text-align: center; }
+      summary { font-size: 15px; }
+      .white-strip { font-size: 13px; padding: 16px 16px; }
     }
   </style>
 </head>
@@ -521,9 +606,9 @@
         <li><a href="/testimonials">Testimonials</a></li>
         <li><a href="/Active-Living-1">Blog</a></li>
         <li><a href="/ai-plans">AI Plans</a></li>
-        <li><a href="/smart-app">Smart App</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/contact" class="Nav-consultation-button">Book Now</a></li>
+        <li><a href="/smart-app">Smart App</a></li>
       </ul>
       <button class="Navbtn" aria-label="Open navigation menu">
         <span class="line1"></span>
@@ -565,6 +650,27 @@
   <div class="white-strip">
     Everything you need to stay on top of your work and your life — in one place.
   </div>
+
+  <!-- VIDEO CAROUSEL -->
+  <section class="vid-section">
+    <div class="vid-header">
+      <p class="section-eyebrow">See it in action</p>
+      <h2 class="section-title">Watch how it <span class="red">works</span></h2>
+    </div>
+    <div class="vid-wrap" id="vidWrap">
+      <video id="vidPlayer" autoplay muted loop playsinline>
+        <source id="vidSrc" src="./vids/1.mp4" type="video/mp4">
+      </video>
+      <div class="vid-label" id="vidLabel">Smart Booking</div>
+      <button class="vid-arrow prev" onclick="vidGo(-1)">&#8249;</button>
+      <button class="vid-arrow next" onclick="vidGo(1)">&#8250;</button>
+    </div>
+    <div class="vid-dots" id="vidDots">
+      <button class="vid-dot active" onclick="vidSet(0)"></button>
+      <button class="vid-dot" onclick="vidSet(1)"></button>
+      <button class="vid-dot" onclick="vidSet(2)"></button>
+    </div>
+  </section>
 
   <!-- FEATURES -->
   <section class="features">
@@ -831,6 +937,27 @@
       document.querySelectorAll('.plan-panel').forEach(function(p) { p.classList.remove('active'); });
       document.getElementById('panel-' + type).classList.add('active');
     }
+
+    var VIDS = [
+      { src: './vids/1.mp4', label: 'Smart Booking' },
+      { src: './vids/2.mp4', label: 'AI Assistant' },
+      { src: './vids/3.mp4', label: 'Tasks & Notes' },
+    ];
+    var vidIdx = 0;
+
+    function vidSet(i) {
+      vidIdx = (i + VIDS.length) % VIDS.length;
+      var player = document.getElementById('vidPlayer');
+      document.getElementById('vidSrc').src = VIDS[vidIdx].src;
+      document.getElementById('vidLabel').textContent = VIDS[vidIdx].label;
+      player.load();
+      player.play();
+      document.querySelectorAll('.vid-dot').forEach(function(d, j) {
+        d.classList.toggle('active', j === vidIdx);
+      });
+    }
+
+    function vidGo(dir) { vidSet(vidIdx + dir); }
 
     async function startCheckout(planId, btn) {
       var errEl = document.getElementById('checkout-error');
