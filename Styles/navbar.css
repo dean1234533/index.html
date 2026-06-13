@@ -155,7 +155,6 @@ summary:focus-visible {
 .Active .Navbtn {
   position: absolute;
   top: 36px;
-  transform: none;
 }
 
 .Navbtn .line1,
