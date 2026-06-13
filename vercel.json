@@ -29,6 +29,7 @@
     { "source": "/personal-trainer-plaistow", "destination": "/personal-trainer-plaistow.html" },
     { "source": "/personal-trainer-chadwell-heath", "destination": "/personal-trainer-chadwell-heath.html" },
     { "source": "/ai-plans", "destination": "/ai-plans.html" },
-    { "source": "/free-workout-plan", "destination": "/free-workout-plan.html" }
+    { "source": "/free-workout-plan", "destination": "/free-workout-plan.html" },
+    { "source": "/smart-app", "destination": "/smart-app.html" }
   ]
 }

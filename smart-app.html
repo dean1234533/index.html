@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFlow App – Booking & Business Management for Personal Trainers | DB's Workouts</title>
+  <meta name="description" content="MindFlow is the all-in-one app for personal trainers. Manage bookings, clients, tasks, fitness and more — built by a PT, for PTs.">
+  <meta name="author" content="Dean Burt">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://dbworkouts.co.uk/smart-app">
+  <link rel="apple-touch-icon" sizes="180x180" href="./pics/IMG_8070-removebg-preview.png">
+  <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
+
+  <meta property="og:title" content="MindFlow App – Business Management for Personal Trainers">
+  <meta property="og:description" content="Bookings, clients, tasks, AI assistant and fitness tracking. One app that runs your PT business.">
+  <meta property="og:url" content="https://dbworkouts.co.uk/smart-app">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DB's Workouts">
+  <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MindFlow App – Business Management for Personal Trainers">
+  <meta name="twitter:description" content="Bookings, clients, tasks, AI assistant and fitness tracking. One app that runs your PT business.">
+  <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,700;1,400&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/navbar.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "IBM Plex Serif", "Libre Baskerville", Georgia, serif;
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 400;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; }
+
+    /* ── PAGE HERO ── */
+    .app-hero {
+      padding: 140px 20px 90px;
+      text-align: center;
+      background: #000;
+      position: relative;
+    }
+    .app-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 700px 300px at 50% 50%, rgba(179,0,24,0.12), transparent);
+      pointer-events: none;
+    }
+    .app-hero-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+
+    .section-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: #b30018;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5.5vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: clamp(17px, 2.5vw, 21px);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .redText { color: #b30018; }
+
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+
+    .btn-red {
+      display: inline-block;
+      padding: 13px 28px;
+      background: #b30018;
+      color: #fff;
+      border: 2px solid #b30018;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .btn-red:hover { background: #8a0012; border-color: #8a0012; }
+
+    .btn-outline {
+      display: inline-block;
+      padding: 13px 28px;
+      background: none;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.25);
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: border-color 0.2s ease;
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.6); }
+
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 36px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+    }
+    .hero-trust span { display: flex; align-items: center; gap: 6px; }
+    .hero-trust .dot { width: 6px; height: 6px; background: #b30018; border-radius: 50%; display: inline-block; }
+
+    /* ── FEATURES ── */
+    .features-section {
+      padding: 80px 20px;
+      background: #0a0a0a;
+    }
+    .section-header { text-align: center; margin-bottom: 52px; }
+    .section-header p { color: rgba(255,255,255,0.45); max-width: 500px; margin: 8px auto 0; font-size: 16px; }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 28px 24px;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-color: rgba(179,0,24,0.35); }
+
+    .feature-icon {
+      width: 40px; height: 40px;
+      background: rgba(179,0,24,0.15);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    .feature-card p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+
+    /* ── PRICING ── */
+    .pricing-section {
+      padding: 80px 20px;
+      background: #000;
+    }
+
+    .billing-toggle {
+      display: inline-flex;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      padding: 4px;
+      margin-bottom: 40px;
+    }
+    .billing-toggle button {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      padding: 8px 22px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: "IBM Plex Serif", serif;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .billing-toggle button.active {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .price-card {
+      position: relative;
+      background: #1a1a1a;
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+    }
+    .price-card.popular {
+      background: #1a0305;
+      border-color: #b30018;
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #b30018;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .saving-badge {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: rgba(179,0,24,0.2);
+      color: #b30018;
+      border: 1px solid rgba(179,0,24,0.3);
+      font-size: 11px; font-weight: 700;
+      padding: 3px 8px; border-radius: 3px;
+    }
+
+    .plan-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.3);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .plan-price {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .plan-period { font-size: 14px; color: rgba(255,255,255,0.35); }
+    .plan-desc { font-size: 14px; color: rgba(255,255,255,0.4); margin: 8px 0 20px; }
+
+    .plan-features {
+      list-style: none;
+      flex: 1;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.7);
+    }
+    .plan-features li::before {
+      content: "✓";
+      color: #b30018;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .price-cta {
+      display: block;
+      width: 100%;
+      padding: 13px 20px;
+      text-align: center;
+      font-family: "IBM Plex Serif", serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .price-cta.red { background: #b30018; color: #fff; border: 2px solid #b30018; }
+    .price-cta.red:hover { background: #8a0012; border-color: #8a0012; }
+    .price-cta.outline { background: none; color: #fff; border: 2px solid rgba(255,255,255,0.25); }
+    .price-cta.outline:hover { border-color: rgba(255,255,255,0.6); }
+
+    .pricing-note {
+      text-align: center;
+      font-size: 13px;
+      color: rgba(255,255,255,0.25);
+      margin-top: 20px;
+    }
+
+    /* ── CTA BANNER ── */
+    .cta-section {
+      padding: 80px 20px;
+      text-align: center;
+      background: #0a0a0a;
+    }
+    .cta-box {
+      max-width: 680px;
+      margin: 0 auto;
+      border-top: 3px solid #b30018;
+      background: #0d0d0d;
+      padding: 56px 32px;
+    }
+    .cta-box p { color: rgba(255,255,255,0.5); line-height: 1.65; max-width: 480px; margin: 12px auto 32px; font-size: 16px; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+    /* ── WHITE DIVIDER STRIP ── */
+    .white-strip {
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: clamp(15px, 2vw, 18px);
+    }
+
+    /* ── HIDDEN PANELS ── */
+    .plan-panel { display: none; }
+    .plan-panel.active { display: grid; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .app-hero { padding: 120px 16px 70px; }
+      .features-section, .pricing-section, .cta-section { padding: 60px 16px; }
+      .cta-box { padding: 36px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="navContainer">
+    <nav class="navBar">
+      <div class="logoContainer">
+        <img src="./pics/IMG_8070-removebg-preview.png" alt="DB's Workouts logo" fetchpriority="high">
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/pricing">Services &amp; Pricing</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/Active-Living-1">Blog</a></li>
+        <li><a href="/ai-plans">AI Plans</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/smart-app" class="Nav-consultation-button">Get the App</a></li>
+      </ul>
+      <button class="Navbtn" aria-label="Open navigation menu">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="app-hero">
+    <div class="app-hero-inner">
+      <p class="section-eyebrow">Built by a PT, for PTs</p>
+      <h1>Run your business.<br><span class="redText">Own your time.</span></h1>
+      <p class="hero-sub">
+        Bookings, clients, tasks, AI assistant, fitness tracking and more — one app that runs your personal training business and personal life without the chaos.
+      </p>
+      <div class="hero-btns">
+        <a href="#pricing" class="btn-red">Get Started</a>
+        <a href="https://smart-life-app.pages.dev/login" target="_blank" rel="noopener" class="btn-outline">Sign In to App</a>
+      </div>
+      <div class="hero-trust">
+        <span><span class="dot"></span> Cancel anytime</span>
+        <span><span class="dot"></span> Works offline</span>
+        <span><span class="dot"></span> Google Calendar sync</span>
+        <span><span class="dot"></span> Secure &amp; private</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITE STRIP -->
+  <div class="white-strip">
+    Everything you need to manage your PT business in one place.
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <div class="section-header">
+      <p class="section-eyebrow">What's included</p>
+      <h2>Everything you need to <span class="redText">stay ahead</span></h2>
+      <p>From client bookings to AI-powered task management — built for personal trainers who take their business seriously.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>Smart Booking Links</h3>
+        <p>Share a booking link with clients that shows only your genuinely free slots, synced live with Google Calendar. No double bookings, no back-and-forth messages.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>AI Smart Agent</h3>
+        <p>Your own AI assistant that summarises your day, surfaces follow-ups, and helps you stay on top of client notes, tasks, and priorities automatically.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">✅</div>
+        <h3>Tasks &amp; Notes</h3>
+        <p>Capture everything in one place. Tasks with reminders, rich notes with voice recording, and a timeline that keeps every client and session connected.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💪</div>
+        <h3>Fitness Tracking</h3>
+        <p>Log workouts, track client progress, and build programmes. Built by a PT — designed for how real training sessions actually work.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Client Management</h3>
+        <p>Follow-ups, contacts, and meeting summaries in one place. Always know exactly where each client relationship stands.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Private &amp; Secure</h3>
+        <p>Your data stays in your own account. No third-party sharing, no ads — just a clean tool that works entirely for you and your clients.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-header">
+      <p class="section-eyebrow">Pricing</p>
+      <h2>Simple, <span class="redText">transparent</span> pricing</h2>
+      <p>No hidden fees. Cancel anytime.</p>
+
+      <div class="billing-toggle">
+        <button class="active" onclick="switchBilling('monthly', this)">Monthly</button>
+        <button onclick="switchBilling('annual', this)">Annual &nbsp;<span style="color:#b30018;font-size:12px;">Save 20%</span></button>
+      </div>
+    </div>
+
+    <!-- MONTHLY -->
+    <div class="pricing-grid plan-panel active" id="panel-monthly">
+
+      <div class="price-card">
+        <p class="plan-label">Starter</p>
+        <p class="plan-price">£9</p>
+        <p class="plan-period">per month</p>
+        <p class="plan-desc">For individuals getting organised</p>
+        <ul class="plan-features">
+          <li>Notes, tasks &amp; timeline</li>
+          <li>1 booking link</li>
+          <li>Google Calendar sync</li>
+          <li>Fitness &amp; expense tracking</li>
+          <li>Works offline (PWA)</li>
+        </ul>
+        <a href="https://smart-life-app.pages.dev/landing#pricing" target="_blank" rel="noopener" class="price-cta outline">
+          Get Starter — £9/mo
+        </a>
+      </div>
+
+      <div class="price-card popular">
+        <div class="popular-badge">Most popular</div>
+        <p class="plan-label">Pro</p>
+        <p class="plan-price">£19</p>
+        <p class="plan-period">per month</p>
+        <p class="plan-desc">For personal trainers &amp; professionals</p>
+        <ul class="plan-features">
+          <li>Everything in Starter</li>
+          <li>Unlimited booking links</li>
+          <li>AI smart agent</li>
+          <li>Voice recording &amp; transcription</li>
+          <li>Contacts, follow-ups &amp; meetings</li>
+          <li>Push notifications</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="https://smart-life-app.pages.dev/landing#pricing" target="_blank" rel="noopener" class="price-cta red">
+          Get Pro — £19/mo
+        </a>
+      </div>
+
+    </div>
+
+    <!-- ANNUAL -->
+    <div class="pricing-grid plan-panel" id="panel-annual">
+
+      <div class="price-card">
+        <div class="saving-badge">Save £19</div>
+        <p class="plan-label">Starter</p>
+        <p class="plan-price">£89</p>
+        <p class="plan-period">per year</p>
+        <p class="plan-desc">For individuals getting organised</p>
+        <ul class="plan-features">
+          <li>Notes, tasks &amp; timeline</li>
+          <li>1 booking link</li>
+          <li>Google Calendar sync</li>
+          <li>Fitness &amp; expense tracking</li>
+          <li>Works offline (PWA)</li>
+        </ul>
+        <a href="https://smart-life-app.pages.dev/landing#pricing" target="_blank" rel="noopener" class="price-cta outline">
+          Get Starter — £89/yr
+        </a>
+      </div>
+
+      <div class="price-card popular">
+        <div class="popular-badge">Most popular</div>
+        <div class="saving-badge">Save £49</div>
+        <p class="plan-label">Pro</p>
+        <p class="plan-price">£179</p>
+        <p class="plan-period">per year</p>
+        <p class="plan-desc">For personal trainers &amp; professionals</p>
+        <ul class="plan-features">
+          <li>Everything in Starter</li>
+          <li>Unlimited booking links</li>
+          <li>AI smart agent</li>
+          <li>Voice recording &amp; transcription</li>
+          <li>Contacts, follow-ups &amp; meetings</li>
+          <li>Push notifications</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="https://smart-life-app.pages.dev/landing#pricing" target="_blank" rel="noopener" class="price-cta red">
+          Get Pro — £179/yr
+        </a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note">Secure payment via Stripe &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; No hidden fees</p>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <p class="section-eyebrow">Get started today</p>
+      <h2>Stop managing your business <span class="redText">in your head</span></h2>
+      <p>One app for your bookings, clients, tasks, and fitness. Built for trainers who take their results seriously.</p>
+      <div class="cta-btns">
+        <a href="#pricing" class="btn-red">Choose a plan</a>
+        <a href="https://smart-life-app.pages.dev/login" target="_blank" rel="noopener" class="btn-outline">Sign in</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <p class="footer-brand">DB's Workouts</p>
+        <p class="footer-tagline">Outdoor PT · East London</p>
+        <p class="footer-tagline">★★★★★&nbsp; 5.0 · 69 Reviews</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Pages</p>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/pricing">Services &amp; Pricing</a>
+        <a href="/testimonials">Testimonials</a>
+        <a href="/contact">Contact</a>
+        <a href="/Active-Living-1">Blog</a>
+        <a href="/smart-app">MindFlow App</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Contact</p>
+        <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
+          <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" alt="WhatsApp"> WhatsApp
+        </a>
+        <a href="mailto:dbs_workouts@yahoo.com" target="_blank" rel="noopener">
+          <img src="./pics/mail.png" width="22" height="22" loading="lazy" alt="Email"> Email
+        </a>
+        <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">
+          <img src="./pics/instagram 2.png" width="22" height="22" loading="lazy" alt="Instagram"> Instagram
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DB's Workouts · Dean Burt &nbsp;·&nbsp;
+        <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+  <script defer src="./Script/navbar.js"></script>
+
+  <script>
+    function switchBilling(type, btn) {
+      document.querySelectorAll('.billing-toggle button').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      document.querySelectorAll('.plan-panel').forEach(function(p) { p.classList.remove('active'); });
+      document.getElementById('panel-' + type).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
