@@ -142,10 +142,13 @@ h2 { text-align: center; margin-block: 24px; }
   margin: 0 auto;
 }
 
-.rev-slider-track {
-  display: flex;
+.rev-slider-clip {
   overflow: hidden;
   width: 100%;
+}
+
+.rev-slider-track {
+  display: flex;
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

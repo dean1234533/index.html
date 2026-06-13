@@ -1,13 +1,66 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://db.com/logo_v2.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Base44 APP</title>
+
+    <title>Free Workout & Nutrition Plan Generator | DB's Workouts</title>
+    <meta name="description" content="Get a free personalised workout and nutrition plan in seconds. No login required. Built by Dean Burt — REPs certified East London personal trainer with 69 five-star Google reviews." />
+    <meta name="keywords" content="free workout plan generator, free nutrition plan, free meal plan, personalised workout plan, free fitness plan UK, free training plan, body transformation plan, East London PT, DB's Workouts" />
+    <meta name="author" content="Dean Burt – DB's Workouts" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://dbworkouts.co.uk/free-workout-plan" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DB's Workouts" />
+    <meta property="og:title" content="Free Workout & Nutrition Plan Generator – DB's Workouts" />
+    <meta property="og:description" content="Generate a free personalised workout and nutrition plan instantly. No account needed. Created by Dean Burt, REPs Level 3 certified East London PT." />
+    <meta property="og:url" content="https://dbworkouts.co.uk/free-workout-plan" />
+    <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_GB" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free Workout & Nutrition Plan Generator – DB's Workouts" />
+    <meta name="twitter:description" content="Get a free personalised workout and nutrition plan. No login required. Built by a REPs certified East London PT." />
+    <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG" />
+
+    <link rel="icon" type="image/png" href="https://dbworkouts.co.uk/pics/IMG_8070-removebg-preview.png" />
+    <link rel="apple-touch-icon" href="https://dbworkouts.co.uk/pics/IMG_8070-removebg-preview.png" />
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Free Workout & Nutrition Plan Generator",
+        "url": "https://dbworkouts.co.uk/free-workout-plan",
+        "description": "Free personalised workout and nutrition plan generator. Enter your goal, gender, fitness level and equipment to get a full weekly training schedule and daily nutrition blueprint instantly.",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+        "author": {
+          "@type": "Person",
+          "name": "Dean Burt",
+          "jobTitle": "REPs Level 3 Personal Trainer",
+          "url": "https://dbworkouts.co.uk/about"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is this workout plan generator really free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — completely free. No account, no payment, no email required. Just fill in your details and get your plan instantly." } },
+          { "@type": "Question", "name": "Who made this free plan generator?", "acceptedAnswer": { "@type": "Answer", "text": "Built by Dean Burt — a REPs Level 3 certified personal trainer based in East London with 12+ years experience and 69 five-star Google reviews." } },
+          { "@type": "Question", "name": "What does the free plan include?", "acceptedAnswer": { "@type": "Answer", "text": "You get a full weekly workout schedule and a daily nutrition blueprint tailored to your goal (lose fat, build muscle, maintain, or improve fitness), your gender, fitness level, and available equipment." } },
+          { "@type": "Question", "name": "Can I get a more personalised plan?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — upgrade to DB's AI Plans for AI-powered weekly check-ins, progressive overload tracking, meal swaps, and progress photo analysis from £7.99/month at dbworkouts.co.uk/ai-plans." } }
+        ]
+      }
+    ]
+    </script>
   </head>
   <body>
     <div id="root"></div>

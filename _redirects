@@ -1,0 +1,12 @@
+# Cloudflare Pages serves /page.html at /page automatically (Pretty URLs)
+# Only need explicit rules for case-sensitive paths where URL case differs from filename
+
+/Active-Living-1   /active-living-1.html   200
+/Active-Living-2   /active-living-2.html   200
+/Active-Living-3   /active-living-3.html   200
+/Nutrition         /nutrition.html         200
+/Park-Guide        /park-guide.html        200
+/Programs          /programs.html          200
+/Workouts          /workouts.html          200
+/Privacy-Policy    /privacy-policy.html    200
+/Terms-and-conditions /terms-and-conditions.html 200

@@ -1,21 +1,21 @@
-import Stripe from 'stripe'
+const Stripe = require('stripe')
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const PLANS = {
   personal: {
     priceId: process.env.STRIPE_PERSONAL_PRICE_ID,
-    name: 'DB\'s AI — Personal Plan',
+    name: "DB's AI — Personal Plan",
   },
   pt_pro: {
     priceId: process.env.STRIPE_PT_PRO_PRICE_ID,
-    name: 'DB\'s AI — PT Pro',
+    name: "DB's AI — PT Pro",
   },
 }
 
-const GENERATOR_URL = 'https://pt-ai-helper-63y9umrdw-deans-projects-30127c36.vercel.app'
+const GENERATOR_URL = 'https://pt-ai-helper.pages.dev/#/register'
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Invalid plan' })
   }
 
-  const origin = req.headers.origin || 'https://your-landing-page.vercel.app'
+  const origin = req.headers.origin || 'https://dbworkouts.co.uk'
 
   try {
     const session = await stripe.checkout.sessions.create({
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
         },
       ],
       success_url: `${GENERATOR_URL}?subscription=success&session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/#pricing`,
+      cancel_url: `${origin}/ai-plans`,
       metadata: { plan },
       allow_promotion_codes: true,
     })

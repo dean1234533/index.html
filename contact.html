@@ -11,7 +11,7 @@
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="GB-ENG">
   <meta name="geo.placename" content="East London">
-  <meta name="theme-color" content="#b30018">
+  <meta name="theme-color" content="#000000">
   <link rel="canonical" href="https://dbworkouts.co.uk/contact">
   <link rel="apple-touch-icon" sizes="180x180" href="./pics/IMG_8070-removebg-preview.png">
   <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
@@ -42,7 +42,7 @@
       "image": "https://dbworkouts.co.uk/pics/IMG_8101.JPG",
       "logo": "https://dbworkouts.co.uk/pics/IMG_8070-removebg-preview.png",
       "address": { "@type": "PostalAddress", "addressLocality": "East London", "addressRegion": "Greater London", "addressCountry": "GB" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "68", "bestRating": "5" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "69", "bestRating": "5" },
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+447752300937",
@@ -78,7 +78,7 @@
     <div class="logoContainer">
       <img src="./pics/IMG_8070-removebg-preview.png" alt="DB's Workouts outdoor personal training logo" fetchpriority="high">
     </div>
-    <ul>
+        <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/pricing">Services &amp; Pricing</a></li>
@@ -87,10 +87,13 @@
         <li><a href="/ai-plans">AI Plans</a></li>
         <li><a href="/contact">Contact</a></li>
         <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5r_P-zG-WqhoeYMaX1I1AGRDDh6bSO7NaPxZ3vrH1NwipWw/viewform" class="Nav-consultation-button">Book Now</a>
+          <a href="/contact" class="Nav-consultation-button">Book Now</a>
+        </li>
+        <li>
+          <a href="/smart-app" class="Nav-consultation-button" style="background:#b30018;border-color:#b30018;margin-left:6px;">App</a>
         </li>
       </ul>
-    <button class="Navbtn" aria-label="Open navigation menu">
+        <button class="Navbtn" aria-label="Open navigation menu">
       <span class="line1"></span>
       <span class="line2"></span>
       <span class="line3"></span>
@@ -156,11 +159,12 @@
       <p class="contact-eyebrow">Send a Message</p>
       <h2 class="contact-heading">Let's <span class="redText">Talk</span></h2>
       <p class="contact-sub">Fill in your details and Dean will get back to you within 24 hours.</p>
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-        <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE">
-        <input type="hidden" name="subject" value="New consultation enquiry – DB's Workouts">
-        <input type="hidden" name="redirect" value="https://dbworkouts.co.uk/contact?sent=true">
-        <input type="checkbox" name="botcheck" style="display:none">
+      <form class="contact-form" action="https://formsubmit.co/dbs_workouts@yahoo.com" method="POST" id="contactForm">
+        <input type="hidden" name="_subject" value="New consultation enquiry – DB's Workouts">
+        <input type="hidden" name="_next" value="https://dbworkouts.co.uk/contact?sent=true">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="table">
         <div class="form-row">
           <input type="text" name="name" placeholder="Your Name *" required>
           <input type="email" name="email" placeholder="Your Email *" required>
@@ -225,7 +229,7 @@
     <div class="footer-col">
       <p class="footer-brand">DB's Workouts</p>
       <p class="footer-tagline">Outdoor PT · East London</p>
-      <p class="footer-tagline">★★★★★&nbsp; 5.0 · 68 Reviews</p>
+      <p class="footer-tagline">★★★★★&nbsp; 5.0 · 69 Reviews</p>
     </div>
     <div class="footer-col">
       <p class="footer-heading">Pages</p>
