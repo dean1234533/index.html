@@ -129,10 +129,10 @@ summary:focus-visible {
 
 /* ── Hamburger button ── */
 .Navbtn {
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   position: absolute;
-  right: 12px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -144,11 +144,18 @@ summary:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   overflow: visible;
   -webkit-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.navBar .Navbtn,
+.Active .Navbtn {
+  position: absolute;
+  top: 36px;
+  transform: none;
 }
 
 .Navbtn .line1,
