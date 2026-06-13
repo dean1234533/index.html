@@ -129,40 +129,43 @@ summary:focus-visible {
 
 /* ── Hamburger button ── */
 .Navbtn {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   position: absolute;
-  right: 20px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  overflow: visible;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.navBar .Navbtn,
-.Active .Navbtn {
-  position: absolute;
-  top: 36px;
-}
-
-.line1,
-.line2,
-.line3 {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: rgba(0,0,0,0.75);
+.Navbtn .line1,
+.Navbtn .line2,
+.Navbtn .line3 {
+  display: block !important;
+  width: 26px !important;
+  height: 2px !important;
+  background-color: rgba(0,0,0,0.8) !important;
+  border-radius: 2px;
+  flex-shrink: 0;
+  overflow: visible;
   transition: all 0.3s;
 }
 
-.line2 {
-  background-color: #b30018;
+.Navbtn .line2 {
+  background-color: #b30018 !important;
 }
 
 /* ── Mobile menu (Active state) ── */
@@ -187,24 +190,24 @@ summary:focus-visible {
   to { width: 100%; }
 }
 
-.Active .line2 {
-  opacity: 0;
-  transform: scaleX(0);
+.Active .Navbtn .line2 {
+  opacity: 0 !important;
+  transform: scaleX(0) !important;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.Active .line1 {
-  transform: rotate(45deg) translate(5px, 5px);
+.Active .Navbtn .line1 {
+  transform: rotate(45deg) translate(5px, 5px) !important;
   transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
-  width: 22px;
-  background-color: #b30018;
+  width: 22px !important;
+  background-color: #b30018 !important;
 }
 
-.Active .line3 {
-  transform: rotate(-45deg) translate(5px, -5px);
+.Active .Navbtn .line3 {
+  transform: rotate(-45deg) translate(5px, -5px) !important;
   transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
-  width: 22px;
-  background-color: #b30018;
+  width: 22px !important;
+  background-color: #b30018 !important;
 }
 
 .Active ul {
