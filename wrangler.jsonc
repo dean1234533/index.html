@@ -1,6 +1,9 @@
 {
   "name": "dbworkouts",
-  "pages_build_output_dir": ".",
+  "pages_build_output_dir": "dist",
   "compatibility_date": "2026-06-12",
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
+  "build": {
+    "command": "bash build.sh"
+  }
 }
