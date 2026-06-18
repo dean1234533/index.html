@@ -43,9 +43,11 @@ export async function onRequest(context) {
     });
   }
 
-  // Pass all other responses (JS, CSS, images, JSON) straight through
-  return new Response(res.body, {
-    status: res.status,
-    headers: res.headers,
-  });
+  // Pass other responses (JS, CSS, images, JSON) with a safe header allowlist
+  const safe = new Headers();
+  for (const h of ['content-type', 'content-length', 'cache-control', 'etag', 'last-modified']) {
+    const v = res.headers.get(h);
+    if (v) safe.set(h, v);
+  }
+  return new Response(res.body, { status: res.status, headers: safe });
 }
