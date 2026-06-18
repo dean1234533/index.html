@@ -1,0 +1,111 @@
+* { box-sizing: border-box; overflow-x: hidden; }
+
+body {
+    color: rgba(255,255,255,0.85);
+    background-color: #0a0a0a;
+    font-family: "IBM Plex Serif", serif;
+    font-size: clamp(15px, 2vw, 17px);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+h1, h2, h3 { overflow: visible; }
+
+/* ── Legal page header ── */
+.legal-header {
+    padding: 120px 20px 60px;
+    text-align: center;
+    background: #050505;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.legal-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: #b30018;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.legal-header h1 {
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 900;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    margin: 0 0 16px;
+}
+
+.legal-meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+/* ── Content ── */
+.content-container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+}
+
+.content-container p {
+    color: rgba(255,255,255,0.72);
+    margin-bottom: 20px;
+}
+
+.content-container h2 {
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 700;
+    color: white;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.content-container ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-container ul li {
+    color: rgba(255,255,255,0.72);
+    margin-bottom: 10px;
+    line-height: 1.75;
+}
+
+.content-container ul li::marker {
+    color: #b30018;
+}
+
+.content-container strong {
+    color: white;
+    font-weight: 600;
+}
+
+.content-container a {
+    color: #b30018;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(179,0,24,0.35);
+    transition: border-color 0.2s;
+}
+
+.content-container a:hover {
+    border-bottom-color: #b30018;
+}
+
+.legal-contact {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 14px;
+    color: rgba(255,255,255,0.45) !important;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+    .legal-header { padding: 100px 16px 48px; }
+    .content-container { padding: 40px 16px 60px; }
+    .content-container h2 { font-size: 18px; margin-top: 36px; }
+}

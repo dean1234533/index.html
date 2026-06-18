@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    color: white;
+    background-color: white;
+    font-family: "IBM Plex Serif", serif;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    overflow-y: hidden;
+    font-size: clamp(40px, 5vw, 48px);
+    font-weight: 700;
+    
+   
+}
+
+h2 {
+    overflow-y: hidden;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    margin-top: 30px;
+   
+}
+
+h3 {
+    font-size: clamp(22px, 5vw, 26px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+display: flex;
+justify-content: center;
+    padding: 20px;
+}
+
+ol {
+    font-size: clamp(17px, 2vw, 20px);
+}
+
+p {
+    line-height: 1.6rem;
+    max-width: 800px;
+    padding: 0 40px;
+ justify-content: center;
+  margin-top: 10px;
+}
+
+.content-container {
+    background-color: black;
+    padding: 20px;
+    padding-top: 120px;
+    
+}
+
+.content-container h1,
+.content-container h2
+ {
+    padding: 20px;
+    text-align: center;
+}
+
+.imgContainer img {
+    margin: 0 auto;
+    display: block;
+}
+
+.Outdoor-Gyms-Container img,
+.Childrens-Playgrounds-container img,
+.Sports-Facilities-container img,
+.Seasonal-Considerations-container img,
+.Personal-Training-Recommendations-container img,
+.Conclusion-container img {
+    width: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+}
+
+.List {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.List li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.List li::marker {
+    color:white
+}
+
+.List-Container li {
+    margin-bottom: 1.8rem;
+    line-height: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+strong{color: bisque ;}
+
+.whiteSpace {
+    padding: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.182);
+    margin-top: 10px;
+}
+
+.redText {
+    color: #b30018;
+}
+
+.achieve-your-fitness-goals-text span,
+.footer-links a:hover {
+    color: #b30018;
+}
+
+footer {
+    background-color: rgba(188, 173, 173, 0.348);
+    color:black;
+    padding: 40px 20px 20px 20px;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+     align-items: start !important; 
+}
+
+.footer-col p {
+    padding: 0;
+    margin-block: 20px;
+    line-height: 2.6rem;
+}
+
+.footer-columns {
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-heading {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 0 0 8px 0;
+    width: auto;
+    text-align: left;
+}
+
+footer a {
+    text-decoration: none;
+    color:black;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+    display: block;
+    padding: 4px 0;
+    font-size: clamp(13px, 2vw, 15px);
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #b30018;
+}
+
+.footer-col a img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    text-align: center;
+     border-top:1px solid black ;
+}
+
+.footer-bottom p {
+    font-size: clamp(10px, 2vw, 13px);
+    color: black;
+    margin: 0;
+    width: auto;
+}
+
+.footer-bottom a {
+    display: inline;
+    color: black;
+    margin-left: 12px;
+    font-size: inherit;
+}
+
+.footer-bottom a:hover {
+    color: #b30018;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+}
+
+ .desktopOnly{display: none;} 
+
+@media (max-width: 767px) {
+    .content-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-container {
+        margin: 0;
+    }
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content-container {
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    p {
+        width: 60%;
+        margin: 0 auto;
+        line-height: 2.0rem;
+    }
+
+    .content-container img {
+        width: 60%;
+    }
+
+    ol li {
+        margin-top: 40px;
+        overflow-y: hidden;
+        text-align: left;
+    }
+
+    h1 {
+        margin: 0 auto;
+        width: 60%;
+    }
+     .desktopOnly{display: block;} 
+}

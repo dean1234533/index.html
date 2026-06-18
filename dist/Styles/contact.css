@@ -1,0 +1,326 @@
+* { box-sizing: border-box; overflow-x: hidden; }
+
+body {
+  color: white;
+  background-color: black;
+  font-family: "IBM Plex Serif", serif;
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 { overflow: visible; }
+h2 { text-align: center; margin-block: 24px; }
+
+.redText { color: #b30018; }
+
+/* ── Page header ── */
+.page-header {
+  padding: 120px 20px 64px;
+  text-align: center;
+  background: #050505;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.page-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.page-title {
+  font-size: clamp(32px, 7vw, 60px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+.page-sub {
+  font-size: clamp(14px, 2vw, 17px);
+  color: rgba(255,255,255,0.5);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Steps section ── */
+.steps-section {
+  padding: 70px 20px;
+  background: #000;
+  text-align: center;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.steps-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.steps-heading {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 48px;
+  color: white;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid #1a1a1a;
+  text-align: left;
+}
+
+.step-item:last-child { border-bottom: none; }
+
+.step-num {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #b30018;
+  color: #b30018;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.step-text {
+  color: rgba(255,255,255,0.65);
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.6;
+}
+
+.step-text strong {
+  color: white;
+  display: block;
+  margin-bottom: 3px;
+  font-size: clamp(15px, 2vw, 17px);
+}
+
+/* ── Contact form ── */
+.contact-section {
+  padding: 70px 20px 90px;
+  background: #050505;
+}
+
+.contact-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: #b30018;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.contact-sub {
+  color: rgba(255,255,255,0.5);
+  font-size: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+}
+
+.form-row input,
+.form-row select { flex: 1; }
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  border-radius: 0;
+  color: white;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 15px;
+  padding: 16px 0;
+  width: 100%;
+  transition: border-color 0.25s;
+  margin-bottom: 8px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: rgba(255,255,255,0.35); }
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #b30018;
+  outline: none;
+}
+
+.contact-form select {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.35);
+}
+
+.contact-form select option {
+  background: #111;
+  color: white;
+}
+
+.contact-form textarea {
+  resize: none;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.cta-submit-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #b30018;
+  color: white;
+  border: 2px solid #b30018;
+  border-radius: 4px;
+  font-size: clamp(13px, 2vw, 15px);
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-submit-btn:hover {
+  background: #8a0012;
+  border-color: #8a0012;
+}
+
+.form-alt {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-alt a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── Direct contact cards ── */
+.direct-contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #000;
+  border-top: 1px solid #1a1a1a;
+}
+
+.direct-heading {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0d0d0d;
+  border: 1px solid #1a1a1a;
+  padding: 18px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  transition: border-color 0.2s, color 0.2s;
+  flex: 1 1 180px;
+}
+
+.contact-card:hover {
+  border-color: #b30018;
+  color: white;
+}
+
+.contact-card img { opacity: 0.75; }
+.contact-card:hover img { opacity: 1; }
+
+/* ── Service areas ── */
+.service-areas-bar {
+  background: #070707;
+  border-top: 1px solid #1a1a1a;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.service-areas-bar p {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.service-areas-bar a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-areas-bar a:hover { color: #b30018; }
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .page-header { padding: 100px 16px 48px; }
+  .steps-section { padding: 48px 16px; }
+  .contact-section { padding: 48px 16px 60px; }
+  .form-row { flex-direction: column; gap: 0; }
+  .direct-contact { padding: 48px 16px; }
+  .contact-cards { flex-direction: column; }
+  .contact-card { flex: 1 1 auto; }
+}

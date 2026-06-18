@@ -1,0 +1,31 @@
+const nav = document.querySelector(".navBar")
+const btn = document.querySelector(".Navbtn")
+const waBtn = document.querySelector(".callBackStickyButton")
+
+function dropDown() {
+    nav.classList.toggle("Active")
+    if (waBtn) waBtn.style.display = nav.classList.contains("Active") ? "none" : ""
+}
+
+btn.addEventListener("click", () => {
+    dropDown()
+})
+
+
+let firstTouch = true;
+document.addEventListener('touchstart', function() {
+    if (firstTouch) {
+        firstTouch = false;
+        window.scrollTo(0, 1);
+        setTimeout(() => window.scrollTo(0, 0), 10);
+    }
+}, { passive: true });
+
+
+
+
+
+
+
+
+
