@@ -178,7 +178,6 @@ summary:focus-visible {
 .Active {
   height: calc(var(--real-vh, 1vh) * 100);
   background: #ffffff;
-  overflow-y: auto;
 }
 
 /* Red accent bar that grows in from the left */
@@ -221,26 +220,23 @@ summary:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: absolute;
-  top: 72px;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   margin: 0;
-  padding: 32px 20px 20px;
-  gap: 0;
+  padding: 0 20px;
+  gap: 4px;
   width: 100%;
-  overflow-y: auto;
 }
 
 .Active ul li a {
   font-weight: 700;
-  font-size: clamp(20px, 5.5vw, 28px) !important;
+  font-size: clamp(18px, 5vw, 26px) !important;
   color: rgba(0,0,0,0.0);
-  line-height: 1.25;
-  padding: 9px 14px !important;
+  line-height: 1.4;
   opacity: 0;
   transform: translateX(40px);
   white-space: nowrap;
@@ -253,14 +249,13 @@ summary:focus-visible {
   color: #b30018 !important;
 }
 
-
 .Active .Nav-consultation-button {
   background: #b30018 !important;
   color: white !important;
-  padding: 10px 28px !important;
+  padding: 13px 32px !important;
   border-radius: 4px;
   border: none !important;
-  font-size: clamp(11px, 3vw, 13px) !important;
+  font-size: clamp(13px, 3.5vw, 16px) !important;
   font-weight: 700 !important;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -283,7 +278,6 @@ summary:focus-visible {
 .Active ul li:nth-child(6) a { animation: slideFromRight 0.45s 0.48s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul li:nth-child(7) a { animation: slideFromRight 0.45s 0.54s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul li:nth-child(8) a { animation: slideFromRight 0.45s 0.60s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
-.Active ul li:nth-child(9) a { animation: slideFromRight 0.45s 0.66s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 
 @keyframes slideFromRight {
   to {
@@ -378,13 +372,9 @@ summary:focus-visible {
 
   .Active ul {
     position: static;
-    top: auto;
-    bottom: auto;
     transform: none;
     display: flex !important;
     flex-direction: row;
-    overflow-y: visible;
-    padding: 0 24px 0 0;
     text-align: left;
   }
 
