@@ -163,9 +163,7 @@ export default function OneRepMaxCalculator() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
       <header className="mx-auto max-w-5xl px-4 pb-8 pt-8 sm:pt-12">
         <Link to="/tools" className="inline-flex items-center gap-2.5 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B30018]">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#B30018]">
-            <span className="text-xs font-black text-white">DB</span>
-          </div>
+          <img src="/logo.png" alt="DB's Workouts" className="h-10 w-10 rounded-xl object-cover" />
           <div>
             <p className="text-sm font-black leading-none text-white">DB's Workouts</p>
             <p className="mt-1 text-[11px] font-medium leading-none text-zinc-500">Fitness Tools</p>

@@ -8,9 +8,7 @@ export default function Hero({ onStart }) {
   return (
     <section className="mx-auto max-w-3xl px-4 pb-12 pt-12 text-center sm:pt-16">
       <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }}>
-        <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#B30018]">
-          <span className="text-sm font-black text-white">DB</span>
-        </div>
+        <img src="/logo.png" alt="DB's Workouts" className="mx-auto mb-5 h-12 w-12 rounded-xl object-cover" />
         <h1 className="mx-auto max-w-2xl text-4xl font-black leading-tight tracking-tight text-white sm:text-6xl">
           Free Macro & Calorie Calculator
         </h1>
