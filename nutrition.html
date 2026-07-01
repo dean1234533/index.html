@@ -90,9 +90,7 @@
         <li>
           <a href="/contact" class="Nav-consultation-button">Book Now</a>
         </li>
-        <li>
-          <a href="/smart-app">Smart App</a>
-        </li>
+
       </ul>
             <button class="Navbtn" aria-label="Open navigation menu">
       <span class="line1"></span>
@@ -103,10 +101,21 @@
     </nav>
  </div>
 
-
-       
-
   <div class="content-container">
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="/Active-Living-3" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="page-item"><a class="page-link" href="/Active-Living-1">1</a></li>
+    <li class="page-item"><a class="page-link" href="/Active-Living-2">2</a></li>
+    <li class="page-item"><a class="page-link" href="/Active-Living-3">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="/Workouts">5</a></li>
+    <li class="page-item"><a class="page-link" href="/Programs">6</a></li>
+    <li class="page-item"><a class="page-link" href="/Park-Guide">7</a></li>
+    <li class="page-item"><a class="page-link" href="/blog_post">8</a></li>
+    <li class="page-item"><a class="page-link" href="/Workouts" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+  </ul>
+</nav>
 
     <h1 class="heading-underline">Expert Nutrition & Fat Loss Guide</h1>
 
@@ -207,7 +216,7 @@
   <div class="whiteSpace"></div>
 </div>
 
-    <footer>
+        <footer>
         <div class="footer-columns">
             <div class="footer-col">
                 <p class="footer-brand">DB's Workouts</p>
@@ -223,6 +232,7 @@
                 <a href="/contact">Contact</a>
                 <a href="/Active-Living-1">Blog</a>
                 <a href="/ai-plans">AI Plans</a>
+      <a href="/smart-app">Smart App</a>
             </div>
             <div class="footer-col">
                 <p class="footer-heading">Contact</p>
@@ -244,6 +254,13 @@
 
 <script src="./Script/navbar.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          regs.forEach(function(r) { r.unregister(); });
+        });
+      }
+    </script>
 </body>
 
 </html>             

@@ -101,9 +101,7 @@
         <li>
           <a href="/contact" class="Nav-consultation-button">Book Now</a>
         </li>
-        <li>
-          <a href="/smart-app">Smart App</a>
-        </li>
+
       </ul>
       
 
@@ -327,7 +325,7 @@
   <div class="whiteSpace"></div>
 </div>
 
-    <footer>
+        <footer>
         <div class="footer-columns">
             <div class="footer-col">
                 <p class="footer-brand">DB's Workouts</p>
@@ -343,6 +341,7 @@
                 <a href="/contact">Contact</a>
                 <a href="/Active-Living-1">Blog</a>
                 <a href="/ai-plans">AI Plans</a>
+      <a href="/smart-app">Smart App</a>
             </div>
             <div class="footer-col">
                 <p class="footer-heading">Contact</p>
@@ -529,6 +528,13 @@
 
     
      
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          regs.forEach(function(r) { r.unregister(); });
+        });
+      }
+    </script>
 </body>
 
 </html>

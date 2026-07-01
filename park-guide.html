@@ -89,9 +89,7 @@
         <li>
           <a href="/contact" class="Nav-consultation-button">Book Now</a>
         </li>
-        <li>
-          <a href="/smart-app">Smart App</a>
-        </li>
+
       </ul>
       
 
@@ -104,9 +102,21 @@
     </nav>
  </div>
 
-
-        
   <div class="content-container ">
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="/Programs" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="page-item"><a class="page-link" href="/Active-Living-1">1</a></li>
+    <li class="page-item"><a class="page-link" href="/Active-Living-2">2</a></li>
+    <li class="page-item"><a class="page-link" href="/Active-Living-3">3</a></li>
+    <li class="page-item"><a class="page-link" href="/Nutrition">4</a></li>
+    <li class="page-item"><a class="page-link" href="/Workouts">5</a></li>
+    <li class="page-item"><a class="page-link" href="/Programs">6</a></li>
+    <li class="page-item"><a class="page-link" href="#">7</a></li>
+    <li class="page-item"><a class="page-link" href="/blog_post">8</a></li>
+    <li class="page-item"><a class="page-link" href="/blog_post" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+  </ul>
+</nav>
 
     <h1 class="heading-underline">The Ultimate East London Park Fitness Comparison Guide</h1>
 
@@ -216,46 +226,41 @@
   <div class="whiteSpace"></div>
 </div>
 
-    <footer>
-  <div class="footer-columns">
-
-    <div class="footer-col">
-  
-      <p>Outdoor PT · East London</p>
-    </div>
-
-    <div class="footer-col">
-      <p class="footer-heading redText"> Pages</p>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/pricing">Services & Pricing</a>
-      <a href="/Active-Living-1">Blog</a>
-    </div>
-
-    <div class="footer-col">
-      <p class="footer-heading redText">Contact</p>
-      <a href="https://wa.me/447752300937" target="_blank">Phone
-        <img src="./pics/whatsapp 3.png" width="30" alt="WhatsApp"> 
-      </a>
-      <a href="mailto:dbs-workouts@yahoo.com" target="_blank"> Email
-        <img src="./pics/mail.png" width="30" alt="Email">
-      </a>
-      <a href="https://www.instagram.com/dbs_workouts" target="_blank">Instagram
-        <img src="./pics/instagram 2.png" width="30" alt="Instagram"> 
-      </a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-  <p class="redText">© 2025 DB's Workouts · Dean Burt <a href="/privacy-policy" target="_blank">Privacy Policy </a> <a  href="/terms-and-conditions" target="_blank">Terms & Conditions</a></p>
-</div>
-
-    
-     
-    
-  
-</footer> 
+        <footer>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <p class="footer-brand">DB's Workouts</p>
+                <p class="footer-tagline">Outdoor PT &middot; East London</p>
+                <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 69 Reviews</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Pages</p>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/pricing">Services &amp; Pricing</a>
+                <a href="/testimonials">Testimonials</a>
+                <a href="/contact">Contact</a>
+                <a href="/Active-Living-1">Blog</a>
+                <a href="/ai-plans">AI Plans</a>
+      <a href="/smart-app">Smart App</a>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Contact</p>
+                <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
+                    <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" decoding="async" alt="WhatsApp"> WhatsApp
+                </a>
+                <a href="mailto:dbs-workouts@yahoo.com" target="_blank" rel="noopener">
+                    <img src="./pics/mail.png" width="22" height="22" loading="lazy" decoding="async" alt="Email"> Email
+                </a>
+                <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">
+                    <img src="./pics/instagram 2.png" width="22" height="22" loading="lazy" decoding="async" alt="Instagram"> Instagram
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DB&#39;s Workouts &middot; Dean Burt &nbsp;&middot;&nbsp; <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a></p>
+        </div>
+    </footer> 
     
     
     
@@ -263,6 +268,13 @@
   
   <script src="./Script/navbar.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          regs.forEach(function(r) { r.unregister(); });
+        });
+      }
+    </script>
 </body>
 
 </html>

@@ -344,6 +344,58 @@ margin-top: 15px;
     }
 }
 
+/* ── iPad: stack pricing cards full-width, single column ── */
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Each card box fills the screen width */
+    .custom-box {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 6px;
+        box-sizing: border-box;
+    }
+
+    /* Card itself stretches to full container width */
+    .custom-card {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px 0;
+    }
+
+    /* Bootstrap row/col: override any side-by-side behaviour */
+    .custom-box .row {
+        display: block;
+    }
+
+    .custom-box .row > [class*="col"] {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+        padding: 0;
+    }
+
+    /* Container inside each box: full-width, no shrink */
+    .custom-box .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    /* Price heading and text readable on tablet */
+    .custom-card .text-uppercase { font-size: clamp(20px, 3vw, 26px); }
+    .custom-box .discount-text   { font-size: clamp(42px, 6vw, 56px); }
+
+    /* Ribbon badge position stays correct */
+    .custom-box .card-value {
+        right: -28px;
+        top: 20px;
+    }
+
+    /* Consultation button full width on tablet too */
+    .consultation-button {
+        width: min(380px, 90%);
+    }
+}
+
 @media (min-width: 1200px) {
     .whiteSection,
     .content-container img {

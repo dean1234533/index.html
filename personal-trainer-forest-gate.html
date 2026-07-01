@@ -102,9 +102,7 @@
         <li>
           <a href="/contact" class="Nav-consultation-button">Book Now</a>
         </li>
-        <li>
-          <a href="/smart-app">Smart App</a>
-        </li>
+
       </ul>
           <button class="Navbtn" aria-label="Open navigation menu">
       <span class="line1"></span>
@@ -151,29 +149,49 @@
     <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
   </div>
 
-  <footer class="local-footer">
-    <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/pricing">Pricing</a>
-      <a href="/testimonials">Testimonials</a>
-      <a href="/contact">Contact</a>
-      <a href="/personal-trainer-stratford">PT Stratford</a>
-      <a href="/outdoor-pt-walthamstow">PT Walthamstow</a>
-      <a href="/personal-trainer-ilford">PT Ilford</a>
-      <a href="/personal-trainer-goodmayes">PT Goodmayes</a>
-      <a href="/personal-trainer-wanstead">PT Wanstead</a>
-      <a href="/personal-trainer-romford">PT Romford</a>
-      <a href="/personal-trainer-east-ham">PT East Ham</a>
-      <a href="/personal-trainer-leytonstone">PT Leytonstone</a>
-      <a href="/personal-trainer-barking">PT Barking</a>
-      <a href="/personal-trainer-plaistow">PT Plaistow</a>
-      <a href="/personal-trainer-chadwell-heath">PT Chadwell Heath</a>
-      <a href="/east-london-park-training">East London Park Training</a>
-    </div>
-    <p>© 2026 DB's Workouts · Dean Burt &nbsp;·&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms-and-conditions">Terms &amp; Conditions</a></p>
-  </footer>
+      <footer>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <p class="footer-brand">DB's Workouts</p>
+                <p class="footer-tagline">Outdoor PT &middot; East London</p>
+                <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 69 Reviews</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Pages</p>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/pricing">Services &amp; Pricing</a>
+                <a href="/testimonials">Testimonials</a>
+                <a href="/contact">Contact</a>
+                <a href="/Active-Living-1">Blog</a>
+                <a href="/ai-plans">AI Plans</a>
+      <a href="/smart-app">Smart App</a>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Contact</p>
+                <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
+                    <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" decoding="async" alt="WhatsApp"> WhatsApp
+                </a>
+                <a href="mailto:dbs-workouts@yahoo.com" target="_blank" rel="noopener">
+                    <img src="./pics/mail.png" width="22" height="22" loading="lazy" decoding="async" alt="Email"> Email
+                </a>
+                <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">
+                    <img src="./pics/instagram 2.png" width="22" height="22" loading="lazy" decoding="async" alt="Instagram"> Instagram
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DB&#39;s Workouts &middot; Dean Burt &nbsp;&middot;&nbsp; <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a></p>
+        </div>
+    </footer>
 
   <script defer src="./Script/navbar.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          regs.forEach(function(r) { r.unregister(); });
+        });
+      }
+    </script>
 </body>
 </html>

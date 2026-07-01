@@ -92,6 +92,8 @@ h1 .redText {
     margin-bottom: 0;
     color: aliceblue;
     min-height: 100svh;
+    /* Push the hero down so the fixed nav (72px) never covers it */
+    padding-top: 72px;
     overflow: hidden;
 }
 

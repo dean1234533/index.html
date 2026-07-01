@@ -2,3 +2,8 @@
 node_modules/
 .env*
 .dev.vars
+
+# Build outputs
+dist/
+fitness tool hub/dist/
+.wrangler/

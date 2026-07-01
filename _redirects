@@ -1,6 +1,9 @@
 # Cloudflare Pages serves /page.html at /page automatically (Pretty URLs)
 # Only need explicit rules for case-sensitive paths where URL case differs from filename
 
+# Fitness Tools Hub — SPA rewrite (static files are served before this rule fires)
+/tools/*           /tools/index.html        200
+
 /Active-Living-1   /active-living-1.html   200
 /Active-Living-2   /active-living-2.html   200
 /Active-Living-3   /active-living-3.html   200

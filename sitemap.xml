@@ -60,4 +60,17 @@
   <url><loc>https://dbworkouts.co.uk/privacy-policy</loc><lastmod>2024-01-01</lastmod><changefreq>yearly</changefreq><priority>0.20</priority></url>
   <url><loc>https://dbworkouts.co.uk/terms-and-conditions</loc><lastmod>2024-01-01</lastmod><changefreq>yearly</changefreq><priority>0.20</priority></url>
 
+  <!-- Fitness Tools Hub -->
+  <url><loc>https://dbworkouts.co.uk/tools</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/macro-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/tdee-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/protein-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/bmi-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/body-fat-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/water-intake-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/one-rep-max-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/running-pace-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/calorie-burn-calculator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/tools/outdoor-workout-generator</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
 </urlset>
