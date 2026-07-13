@@ -12,9 +12,7 @@ export default function Footer() {
           <a href="https://dbworkouts.co.uk" target="_blank" rel="noopener" className="text-xs font-semibold text-[#B30018] hover:text-[#D0182E]">
             dbworkouts.co.uk
           </a>
-          <a href="https://www.fazier.com" target="_blank" rel="noopener">
-            <img src="https://www.fazier.com/api/v1/products/db-s-workouts-fitness-tools-hub/badges/embed_image.svg?theme=dark" alt="Launched on Fazier" style={{height: "32px", width: "auto"}} />
-          </a>
+          <a href="https://fazier.com" target="_blank" rel="noopener"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width={120} alt="Fazier badge" /></a>
         </div>
       </div>
     </footer>
