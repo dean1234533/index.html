@@ -7,14 +7,20 @@
   <meta name="description" content="Personalised AI workout and nutrition plans designed by Dean Burt — REPs certified East London PT. Get started from £7.99/month or try the free generator.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dbworkouts.co.uk/ai-plans">
-  <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
   <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
   <meta property="og:title" content="AI Workout & Nutrition Plans | DB's Workouts">
   <meta property="og:description" content="Personalised AI workout and nutrition plans from £7.99/month. Built by Dean Burt, REPs certified East London PT.">
   <meta property="og:url" content="https://dbworkouts.co.uk/ai-plans">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
+  <meta property="og:site_name" content="DB's Workouts">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Workout & Nutrition Plans | DB's Workouts">
+  <meta name="twitter:description" content="Personalised AI workout and nutrition plans from £7.99/month. Built by Dean Burt, REPs certified East London PT.">
+  <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,7 +91,7 @@
       margin: 0 0 24px;
     }
     .ai-hero h1 .line-red  { color: #b30018; display: block; }
-    .ai-hero h1 .line-green { color: #10b981; display: block; }
+    .ai-hero h1 .line-green { color: #b30018; display: block; }
     .ai-hero-sub {
       color: rgba(255,255,255,0.55);
       font-size: clamp(15px, 2vw, 19px);
@@ -123,7 +129,7 @@
       text-decoration: none;
       transition: border-color 0.2s, color 0.2s;
     }
-    .btn-ai-outline:hover { border-color: #10b981; color: #10b981; }
+    .btn-ai-outline:hover { border-color: #b30018; color: #b30018; }
 
     /* Plan preview card */
     .plan-preview {
@@ -308,11 +314,11 @@
     .pricing-card.popular {
       border-color: transparent;
       background: linear-gradient(#0d1322, #0d1322) padding-box,
-                  linear-gradient(135deg, #b30018, #10b981) border-box;
+                  linear-gradient(135deg, #b30018, #b30018) border-box;
     }
     .popular-badge {
       position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
-      background: linear-gradient(90deg, #b30018, #10b981);
+      background: linear-gradient(90deg, #b30018, #b30018);
       color: white; font-size: 10px; font-weight: 700;
       letter-spacing: 0.12em; text-transform: uppercase;
       padding: 5px 16px; border-radius: 100px;
@@ -341,7 +347,7 @@
       font-size: 11px; flex-shrink: 0; margin-top: 1px;
     }
     .tick-red { background: rgba(179,0,24,0.15); color: #b30018; }
-    .tick-green { background: rgba(16,185,129,0.15); color: #10b981; }
+    .tick-green { background: rgba(16,185,129,0.15); color: #b30018; }
     .btn-plan-red {
       width: 100%; padding: 16px;
       background: #b30018; color: white; border: none;
@@ -353,12 +359,12 @@
     .btn-plan-red:disabled { opacity: 0.7; cursor: not-allowed; }
     .btn-plan-green {
       width: 100%; padding: 16px;
-      background: #10b981; color: white; border: none;
+      background: #b30018; color: white; border: none;
       border-radius: 12px; font-size: 15px; font-weight: 700;
       font-family: "IBM Plex Serif", serif; cursor: pointer;
       transition: background 0.2s;
     }
-    .btn-plan-green:hover { background: #059669; }
+    .btn-plan-green:hover { background: #8a0012; }
     .btn-plan-green:disabled { opacity: 0.7; cursor: not-allowed; }
     .pricing-note {
       text-align: center; font-size: 13px;
@@ -396,13 +402,13 @@
     }
     .btn-free {
       display: inline-flex; align-items: center; gap: 8px;
-      border: 2px solid #10b981; color: #10b981;
+      border: 2px solid #b30018; color: #b30018;
       background: transparent; border-radius: 12px;
       padding: 15px 36px; font-size: 15px; font-weight: 700;
       font-family: "IBM Plex Serif", serif; text-decoration: none;
       transition: background 0.2s, color 0.2s;
     }
-    .btn-free:hover { background: #10b981; color: white; }
+    .btn-free:hover { background: #b30018; color: white; }
 
     /* ── Service bar ── */
     .service-bar {
@@ -423,21 +429,25 @@
       .free-tool-card { padding: 48px 24px; }
     }
   </style>
+  <link rel="manifest" href="/manifest.json">
+  <script src="/Script/cookie-consent.js"></script>
 </head>
 <body>
 
 <div class="navContainer">
   <nav class="navBar">
     <div class="logoContainer">
-      <img src="/logo.png" alt="DB's Workouts outdoor personal training logo" fetchpriority="high">
+      <img src="logo.png" alt="DB's Workouts outdoor personal training logo" fetchpriority="high">
     </div>
         <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/pricing">Services &amp; Pricing</a></li>
         <li><a href="/testimonials">Testimonials</a></li>
-        <li><a href="/Active-Living-1">Blog</a></li>
+        <li><a href="/active-living-1">Blog</a></li>
         <li><a href="/ai-plans">AI Plans</a></li>
+
+        <li><a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing</a></li>
         <li><a href="/contact">Contact</a></li>
         <li>
           <a href="/contact" class="Nav-consultation-button">Book Now</a>
@@ -470,7 +480,7 @@
       <button class="btn-ai-primary" id="heroGetStarted" onclick="startCheckout('personal')">
         ⚡ Get Started — £7.99/month →
       </button>
-      <a href="https://dbworkouts-free-generator.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-ai-outline">
+      <a href="/tools/workout-plan-generator" class="btn-ai-outline">
         Try Free Version
       </a>
     </div>
@@ -511,7 +521,7 @@
 <section id="features" class="ai-section features-section">
   <div class="ai-center" style="max-width:1040px;margin:0 auto;">
     <p class="ai-eyebrow" style="color:#3b82f6;">Feature Set</p>
-    <h2 class="ai-section-title">Everything You Need to<br><span style="color:#10b981;">Transform Your Body</span></h2>
+    <h2 class="ai-section-title">Everything You Need to<br><span style="color:#b30018;">Transform Your Body</span></h2>
     <p class="ai-section-sub">Six powerful tools working together like your own personal training team.</p>
   </div>
   <div class="features-grid">
@@ -564,7 +574,7 @@
       </div>
     </div>
     <div class="credibility-text">
-      <p class="ai-eyebrow" style="color:#10b981;">The Human Behind The AI</p>
+      <p class="ai-eyebrow" style="color:#b30018;">The Human Behind The AI</p>
       <h2 class="ai-section-title" style="margin-bottom:24px;">Built By a Real PT,<br><span style="color:rgba(255,255,255,0.5);">Not Just a Developer</span></h2>
       <p>I'm <strong style="color:#b30018;">Dean</strong>, a REPs Level 3 qualified personal trainer based in East London with 12+ years of experience and over 69 five-star Google reviews.</p>
       <p>I built DB's AI to give everyone access to professional-level planning at a fraction of the cost. Every workout, every meal plan, every check-in is built on the same principles I use with my in-person clients.</p>
@@ -578,7 +588,7 @@
         </div>
         <div class="stat-card">
           <div>
-            <div style="font-size:24px; color:#10b981;">🏆</div>
+            <div style="font-size:24px; color:#b30018;">🏆</div>
             <div class="stat-label">12+ Years</div>
             <div class="stat-sub">Personal Training</div>
           </div>
@@ -632,16 +642,16 @@
     </div>
   </div>
   <p class="pricing-note">No contracts. Cancel anytime. Secure payment via Stripe.</p>
-  <p class="pricing-note" style="margin-top:10px;">Already have an account? <a href="https://pt-ai-helper.pages.dev/#/login" target="_blank" rel="noopener" style="color:#b30018;text-decoration:underline;">Log in here →</a> &nbsp;·&nbsp; New user? <a href="https://pt-ai-helper.pages.dev/#/register" target="_blank" rel="noopener" style="color:#10b981;text-decoration:underline;">Create account →</a></p>
+  <p class="pricing-note" style="margin-top:10px;">Already have an account? <a href="https://pt-ai-helper.pages.dev/#/login" target="_blank" rel="noopener" style="color:#b30018;text-decoration:underline;">Log in here →</a> &nbsp;·&nbsp; New user? <a href="https://pt-ai-helper.pages.dev/#/register" target="_blank" rel="noopener" style="color:#b30018;text-decoration:underline;">Create account →</a></p>
 </section>
 
 <!-- Free tool CTA -->
 <section class="ai-section free-tool-section">
   <div class="free-tool-card">
     <div class="free-tool-icon">✨</div>
-    <h2>Not Ready to Commit?<br><span style="color:#10b981;">Try the Free Version First</span></h2>
+    <h2>Not Ready to Commit?<br><span style="color:#b30018;">Try the Free Version First</span></h2>
     <p>Get a solid workout and nutrition plan completely free — no account needed.</p>
-    <a href="https://dbworkouts-free-generator.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-free">
+    <a href="/tools/workout-plan-generator" class="btn-free">
       Try Free Plan Generator →
     </a>
   </div>
@@ -665,9 +675,10 @@
                 <a href="/pricing">Services &amp; Pricing</a>
                 <a href="/testimonials">Testimonials</a>
                 <a href="/contact">Contact</a>
-                <a href="/Active-Living-1">Blog</a>
+                <a href="/active-living-1">Blog</a>
                 <a href="/ai-plans">AI Plans</a>
-      <a href="/smart-app">Smart App</a>
+                <a href="/tools">Free Fitness Tools</a>
+                <a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing – DeanTBStudio by DB's Workouts</a>
             </div>
             <div class="footer-col">
                 <p class="footer-heading">Contact</p>
@@ -719,5 +730,31 @@
         });
       }
     </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI Workout & Nutrition Plans",
+  "description": "Personalised AI-powered workout and nutrition plans designed by Dean Burt, REPs certified personal trainer in East London.",
+  "provider": { "@type": "LocalBusiness", "name": "DB's Workouts", "url": "https://dbworkouts.co.uk" },
+  "url": "https://dbworkouts.co.uk/ai-plans",
+  "areaServed": "East London",
+  "offers": [
+    { "@type": "Offer", "name": "Monthly AI Plan", "price": "7.99", "priceCurrency": "GBP", "description": "Monthly personalised AI workout and nutrition plan" },
+    { "@type": "Offer", "name": "Free Plan Generator", "price": "0", "priceCurrency": "GBP", "description": "Free one-time workout and nutrition plan" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dbworkouts.co.uk/" },
+    { "@type": "ListItem", "position": 2, "name": "AI Plans", "item": "https://dbworkouts.co.uk/ai-plans" }
+  ]
+}
+</script>
 </body>
 </html>
