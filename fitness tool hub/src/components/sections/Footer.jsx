@@ -8,12 +8,9 @@ export default function Footer() {
           <img src={import.meta.env.BASE_URL + 'logo.png'} alt="DB's Workouts" className="h-7 w-7 rounded object-cover" />
           <span className="text-xs text-zinc-500">© {new Date().getFullYear()} DB's Workouts</span>
         </div>
-        <div className="flex items-center gap-3">
-          <a href="https://dbworkouts.co.uk" target="_blank" rel="noopener" className="text-xs font-semibold text-[#B30018] hover:text-[#D0182E]">
+        <a href="https://dbworkouts.co.uk" target="_blank" rel="noopener" className="text-xs font-semibold text-[#B30018] hover:text-[#D0182E]">
             dbworkouts.co.uk
           </a>
-          <a href="https://fazier.com" target="_blank" rel="noopener"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width={120} alt="Fazier badge" /></a>
-        </div>
       </div>
     </footer>
   );
