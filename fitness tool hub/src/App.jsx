@@ -4,12 +4,15 @@ import { queryClientInstance } from '@/lib/query-client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
+import Analytics from '@/components/Analytics';
+import CookieConsent from '@/components/CookieConsent';
 import BMICalculator from '@/pages/BMICalculator';
 import BodyFatCalculator from '@/pages/BodyFatCalculator';
 import CalorieBurnCalculator from '@/pages/CalorieBurnCalculator';
 import Home from '@/pages/Home';
 import OneRepMaxCalculator from '@/pages/OneRepMaxCalculator';
 import OutdoorWorkoutGenerator from '@/pages/OutdoorWorkoutGenerator';
+import WorkoutPlanGenerator from '@/pages/WorkoutPlanGenerator';
 import ProteinCalculator from '@/pages/ProteinCalculator';
 import RunningPaceCalculator from '@/pages/RunningPaceCalculator';
 import TDEECalculator from '@/pages/TDEECalculator';
@@ -31,6 +34,7 @@ const AppRoutes = () => {
       <Route path="/tools/body-fat-calculator" element={<BodyFatCalculator />} />
       <Route path="/tools/calorie-burn-calculator" element={<CalorieBurnCalculator />} />
       <Route path="/tools/outdoor-workout-generator" element={<OutdoorWorkoutGenerator />} />
+      <Route path="/tools/workout-plan-generator" element={<WorkoutPlanGenerator />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
@@ -42,7 +46,9 @@ function App() {
     <QueryClientProvider client={queryClientInstance}>
       <Router>
         <ScrollToTop />
+        <Analytics />
         <AppRoutes />
+        <CookieConsent />
       </Router>
       <Toaster />
     </QueryClientProvider>
