@@ -1,19 +1,30 @@
-* {
+/* ═══════════════════════════════════════════════════════════
+   DB's Workouts — Shared Navbar + Global Dark Theme
+   Applied to all pages via their <link rel="stylesheet" href="./Styles/navbar.css">
+═══════════════════════════════════════════════════════════ */
+
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: "IBM Plex Serif", serif;
+  font-family: 'Inter', 'IBM Plex Serif', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(15px, 2vw, 17px);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
 }
 
-html {
-  scroll-behavior: smooth;
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:focus-visible,
@@ -24,37 +35,19 @@ summary:focus-visible {
   border-radius: 2px;
 }
 
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
 :root {
   --real-vh: 1vh;
+  --nav-bg: rgba(8, 8, 8, 0.96);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --nav-text: rgba(255, 255, 255, 0.65);
+  --nav-text-hover: #f0f0f0;
+  --accent: #B30018;
 }
 
-/* ── Logo ── */
-.navBar .logoContainer {
-  position: absolute;
-  top: 0;
-  opacity: 1;
-  transition: opacity 1.5s ease;
-}
+/* ════════════════════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════════════════════ */
 
-.navBar.Active .logoContainer {
-  margin-top: auto;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navBar img {
-  width: clamp(60px, 8vw, 76px);
-  height: clamp(60px, 8vw, 76px);
-  display: block;
-}
-
-/* ── Core nav bar ── */
 .navContainer {
   width: 100%;
   height: 100%;
@@ -62,23 +55,55 @@ summary:focus-visible {
 
 .navBar {
   display: flex;
+  align-items: center;
   width: 100%;
-  background: #ffffff;
-  border-bottom: 2px solid #b30018;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
   height: 72px;
   position: fixed;
-  z-index: 100;
+  z-index: 900;
   top: 0;
   left: 0;
-  transition: height 0.5s cubic-bezier(0.77, 0, 0.175, 1), background-color 0.3s ease;
+  transition: height 0.5s cubic-bezier(0.77, 0, 0.175, 1), background 0.3s ease;
   overflow-y: hidden;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-/* ── Desktop link list (hidden on mobile) ── */
+/* ── Logo ── */
+.navBar .logoContainer {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBar.Active .logoContainer {
+  opacity: 0.6;
+}
+
+.navBar img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.navBar .logo-text {
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #f0f0f0;
+  white-space: nowrap;
+}
+
+/* ── Desktop link list ── */
 .navBar ul {
   display: none;
   margin: 0;
@@ -89,48 +114,45 @@ summary:focus-visible {
 .navBar ul li a {
   text-decoration: none;
   padding: 10px 14px;
-  color: rgba(0,0,0,0.65);
+  color: var(--nav-text);
   display: block;
-  font-family: "IBM Plex Serif", serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   transition: color 0.2s ease;
   white-space: nowrap;
 }
 
 .navBar ul li a:hover {
-  color: #b30018;
+  color: var(--nav-text-hover);
 }
 
-/* ── Book Now CTA ── */
+/* ── Book Now CTA button ── */
 .navBar .Nav-consultation-button {
-  background: #b30018;
+  background: var(--accent) !important;
   color: white !important;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 10px 20px !important;
+  border-radius: 6px;
   font-size: 12px !important;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   border: none;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .navBar .Nav-consultation-button:hover {
-  background: #8a0012;
+  background: #cc001e !important;
   color: white !important;
-  transform: none;
-  box-shadow: none;
-  filter: none;
-  opacity: 1;
-  border: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(179, 0, 24, 0.3);
 }
 
 /* ── Hamburger button ── */
 .Navbtn {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   position: absolute;
   right: 20px;
   top: 50%;
@@ -161,34 +183,35 @@ summary:focus-visible {
 .Navbtn .line2,
 .Navbtn .line3 {
   display: block !important;
-  width: 26px !important;
+  width: 24px !important;
   height: 2px !important;
-  background-color: rgba(0,0,0,0.8) !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
   border-radius: 2px;
   flex-shrink: 0;
   overflow: visible;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .Navbtn .line2 {
-  background-color: #b30018 !important;
+  background-color: var(--accent) !important;
 }
 
 /* ── Mobile menu (Active state) ── */
 .Active {
   height: calc(var(--real-vh, 1vh) * 100);
-  background: #ffffff;
+  background: rgba(6, 6, 6, 0.98) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
-/* Red accent bar that grows in from the left */
 .Active::before {
   content: "";
   position: absolute;
   left: 0;
   top: 72px;
   width: 0;
-  height: 3px;
-  background: #b30018;
+  height: 2px;
+  background: var(--accent);
   animation: accentLine 0.6s 0.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
@@ -206,14 +229,14 @@ summary:focus-visible {
   transform: rotate(45deg) translate(5px, 5px) !important;
   transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
   width: 22px !important;
-  background-color: #b30018 !important;
+  background-color: var(--accent) !important;
 }
 
 .Active .Navbtn .line3 {
   transform: rotate(-45deg) translate(5px, -5px) !important;
   transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
   width: 22px !important;
-  background-color: #b30018 !important;
+  background-color: var(--accent) !important;
 }
 
 .Active ul {
@@ -235,18 +258,19 @@ summary:focus-visible {
 .Active ul > li > a {
   font-weight: 700;
   font-size: clamp(18px, 5vw, 26px) !important;
-  color: rgba(0,0,0,0.0);
+  color: rgba(255, 255, 255, 0.0);
   line-height: 1.4;
   opacity: 0;
   transform: translateX(40px);
   white-space: nowrap;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   transition: color 0.2s ease;
   display: inline-block;
+  font-family: 'Montserrat', 'Inter', sans-serif;
 }
 
 .Active ul > li > a:hover {
-  color: #b30018 !important;
+  color: var(--accent) !important;
 }
 
 /* ── Blog dropdown ── */
@@ -262,41 +286,42 @@ summary:focus-visible {
   padding: 6px 0 2px;
 }
 .nav-dropdown.open .nav-dropdown-menu { display: flex; }
+
 .nav-dropdown-menu a {
-  font-family: "IBM Plex Serif", serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(13px, 3.5vw, 16px);
   font-weight: 600;
-  color: rgba(0,0,0,0.45);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   padding: 3px 10px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   transition: color 0.2s;
   white-space: nowrap;
   display: block;
 }
-.nav-dropdown-menu a:hover { color: #b30018; }
+.nav-dropdown-menu a:hover { color: var(--accent); }
 
 .Active .Nav-consultation-button {
-  background: #b30018 !important;
+  background: var(--accent) !important;
   color: white !important;
   padding: 13px 32px !important;
-  border-radius: 4px;
+  border-radius: 6px;
   border: none !important;
   font-size: clamp(13px, 3.5vw, 16px) !important;
   font-weight: 700 !important;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0;
   transform: translateX(40px);
 }
 
 .Active .Nav-consultation-button:hover {
-  background: #8a0012 !important;
+  background: #cc001e !important;
   color: white !important;
   border: none !important;
 }
 
-/* ── Staggered slide-from-right animation (8 items) ── */
+/* ── Staggered slide-from-right animation ── */
 .Active ul > li:nth-child(1) > a { animation: slideFromRight 0.45s 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul > li:nth-child(2) > a { animation: slideFromRight 0.45s 0.24s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul > li:nth-child(3) > a { animation: slideFromRight 0.45s 0.30s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
@@ -305,20 +330,20 @@ summary:focus-visible {
 .Active ul > li:nth-child(6) > a { animation: slideFromRight 0.45s 0.48s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul > li:nth-child(7) > a { animation: slideFromRight 0.45s 0.54s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul > li:nth-child(8) > a { animation: slideFromRight 0.45s 0.60s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
+.Active ul > li:nth-child(9) > a { animation: slideFromRight 0.45s 0.66s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 
 @keyframes slideFromRight {
   to {
     opacity: 1;
-    color: rgba(0,0,0,0.8);
+    color: rgba(255, 255, 255, 0.88);
     transform: translateX(0);
   }
 }
 
-/* ── Tablet image fix ── */
 @media (min-width: 768px) {
-  .navBar img {
-    margin-top: 50%;
-    transform: translateY(-60%);
+  .navBar.Active .logoContainer {
+    top: auto;
+    transform: none;
   }
 }
 
@@ -326,7 +351,6 @@ summary:focus-visible {
 @media (min-width: 1200px) {
   .navBar {
     justify-content: flex-start;
-    background: #ffffff;
   }
 
   .navBar ul {
@@ -350,8 +374,8 @@ summary:focus-visible {
     animation: none !important;
     font-size: 13px;
     padding: 10px 12px;
-    color: rgba(0,0,0,0.6);
-    letter-spacing: 0.06em;
+    color: var(--nav-text);
+    letter-spacing: 0.04em;
     font-weight: 500;
     position: relative;
   }
@@ -363,14 +387,14 @@ summary:focus-visible {
     left: 12px;
     right: 12px;
     height: 1px;
-    background: #b30018;
+    background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.25s ease;
   }
 
   .navBar ul li a:hover {
-    color: #0d0d0d;
+    color: var(--nav-text-hover);
     text-decoration: none;
   }
 
@@ -385,11 +409,11 @@ summary:focus-visible {
     top: calc(100% + 4px);
     left: 50%;
     transform: translateX(-50%);
-    background: white;
-    border: 1px solid rgba(0,0,0,0.08);
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     min-width: 170px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
     z-index: 200;
     padding: 8px 0;
     flex-direction: column;
@@ -397,20 +421,21 @@ summary:focus-visible {
   }
   .nav-dropdown:hover .nav-dropdown-menu,
   .nav-dropdown.open .nav-dropdown-menu { display: flex; }
+
   .nav-dropdown-menu a {
     font-size: 12px;
-    color: rgba(0,0,0,0.65);
+    color: rgba(255, 255, 255, 0.55);
     padding: 9px 18px;
     white-space: nowrap;
     width: 100%;
   }
-  .nav-dropdown-menu a:hover { color: #b30018; background: rgba(179,0,24,0.04); }
+  .nav-dropdown-menu a:hover { color: var(--accent); background: rgba(179, 0, 24, 0.06); }
   .nav-dropdown-menu a::after { display: none !important; }
 
   .navBar .Nav-consultation-button {
     font-size: 11px !important;
-    padding: 9px 18px;
-    letter-spacing: 0.12em;
+    padding: 9px 18px !important;
+    letter-spacing: 0.1em;
     margin-left: 8px;
   }
 
@@ -436,20 +461,56 @@ summary:focus-visible {
 
   .Active ul li a {
     font-size: 13px !important;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
 }
 
-/* ════════════════════════════════════════════════════════════════
-   FOOTER — dark premium, shared across all pages
-   ════════════════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════════
+   GLOBAL DARK THEME OVERRIDES
+   Force Bootstrap and page content into dark theme
+════════════════════════════════════════════════════════ */
+
+/* Override Bootstrap white containers */
+.container, .container-fluid, .container-sm,
+.container-md, .container-lg, .container-xl {
+  color: #f0f0f0;
+}
+
+.card {
+  background-color: #141414 !important;
+  border-color: rgba(255,255,255,0.08) !important;
+  color: #f0f0f0 !important;
+}
+
+.card-body { color: #f0f0f0 !important; }
+
+.bg-white, .bg-light {
+  background-color: #111111 !important;
+  color: #f0f0f0 !important;
+}
+
+.text-dark, .text-body { color: #f0f0f0 !important; }
+.text-muted { color: #888 !important; }
+
+/* Page content padding for fixed nav */
+.content-container,
+main,
+article,
+.page-content {
+  padding-top: 72px;
+}
+
+/* ════════════════════════════════════════════════════════
+   FOOTER — shared across all inner pages
+════════════════════════════════════════════════════════ */
 
 footer {
-  background: #0d0d0d !important;
+  background: #0a0a0a !important;
   color: rgba(255,255,255,0.55) !important;
-  padding: 48px 24px 28px !important;
-  font-family: "IBM Plex Serif", serif;
+  padding: 56px 24px 28px !important;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.07) !important;
 }
 
 footer .footer-columns {
@@ -461,7 +522,7 @@ footer .footer-columns {
   max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
 }
 
 footer .footer-col {
@@ -480,9 +541,9 @@ footer .footer-col > p {
 footer .footer-heading {
   font-size: 11px !important;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.35) !important;
+  color: rgba(255,255,255,0.3) !important;
   margin-bottom: 14px !important;
 }
 
@@ -492,11 +553,12 @@ footer .footer-brand {
   color: white !important;
   margin-bottom: 6px !important;
   line-height: 1.2 !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer .footer-tagline {
   font-size: 12px !important;
-  color: rgba(255,255,255,0.38) !important;
+  color: rgba(255,255,255,0.35) !important;
   letter-spacing: 0.04em;
   margin: 0 !important;
   padding: 0 !important;
@@ -508,18 +570,18 @@ footer .footer-col a {
   align-items: center;
   gap: 10px;
   padding: 4px 0;
-  color: rgba(255,255,255,0.55) !important;
+  color: rgba(255,255,255,0.5) !important;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s;
 }
 
 footer .footer-col a:hover {
-  color: #b30018 !important;
+  color: var(--accent) !important;
 }
 
 footer .footer-col a img {
-  opacity: 0.65;
+  opacity: 0.6;
   transition: opacity 0.2s;
   flex-shrink: 0;
 }
@@ -536,14 +598,14 @@ footer .footer-bottom {
 
 footer .footer-bottom p {
   font-size: 12px;
-  color: rgba(255,255,255,0.28) !important;
+  color: rgba(255,255,255,0.25) !important;
   margin: 0;
   width: auto;
   text-align: center;
 }
 
 footer .footer-bottom a {
-  color: rgba(255,255,255,0.35) !important;
+  color: rgba(255,255,255,0.3) !important;
   text-decoration: none;
   transition: color 0.2s;
   display: inline;
@@ -553,10 +615,9 @@ footer .footer-bottom a {
 }
 
 footer .footer-bottom a:hover {
-  color: #b30018 !important;
+  color: var(--accent) !important;
 }
 
-/* Stack footer on small screens */
 @media (max-width: 600px) {
   footer .footer-columns {
     flex-direction: column;
