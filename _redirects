@@ -1,15 +1,37 @@
-# Cloudflare Pages serves /page.html at /page automatically (Pretty URLs)
-# Only need explicit rules for case-sensitive paths where URL case differs from filename
-
 # Fitness Tools Hub — SPA rewrite (static files are served before this rule fires)
-/tools/*           /tools/index.html        200
+/tools/*                    /tools/index.html           200
 
-/Active-Living-1   /active-living-1.html   200
-/Active-Living-2   /active-living-2.html   200
-/Active-Living-3   /active-living-3.html   200
-/Nutrition         /nutrition.html         200
-/Park-Guide        /park-guide.html        200
-/Programs          /programs.html          200
-/Workouts          /workouts.html          200
-/Privacy-Policy    /privacy-policy.html    200
-/Terms-and-conditions /terms-and-conditions.html 200
+# Old blog_post URL (underscore) → new blog-post (hyphen)
+/blog_post                  /blog-post                  301
+
+# Capital-letter old URLs → lowercase canonical (301 so Google stops crawling the capital versions)
+/Active-Living-1            /active-living-1            301
+/Active-Living-2            /active-living-2            301
+/Active-Living-3            /active-living-3            301
+/Nutrition                  /nutrition                  301
+/Park-Guide                 /park-guide                 301
+/Programs                   /programs                   301
+/Workouts                   /workouts                   301
+/Privacy-Policy             /privacy-policy             301
+/Terms-and-conditions       /terms-and-conditions       301
+
+# Previously removed pages — send to closest relevant page to fix 404s
+/smart-life-app             /ai-plans                   301
+/clothing                   /about                      301
+/DeanTBStudio               /blog-post                  301
+/deantbstudio               /blog-post                  301
+/shop                       /blog-post                  301
+/smart-life                 /ai-plans                   301
+/plans                      /pricing                    301
+/blog                       /blog-post                  301
+/services                   /pricing                    301
+/fitness-tools              /tools                      301
+
+# Old nutrition store (previous site) → nutrition page
+/nutrition-store/*          /nutrition                  301
+/nutrition-store            /nutrition                  301
+
+# Old Blog.html (capital B, previous site) → blog-post
+/Blog.html                  /blog-post                  301
+/Blog.html/                 /blog-post                  301
+/Blog                       /blog-post                  301

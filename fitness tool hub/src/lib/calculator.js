@@ -1,4 +1,4 @@
-const ACTIVITY_MULTIPLIERS = {
+export const ACTIVITY_MULTIPLIERS = {
   sedentary: 1.2,
   lightly_active: 1.375,
   moderately_active: 1.55,

@@ -2,11 +2,16 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Calculator, HeartPulse, Ruler, Scale, ShieldCheck, Target, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("bmi-calculator");
 
 const FAQS = [
   {
@@ -156,6 +161,7 @@ export default function BMICalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateBmi(form));
+    track('tool_calculation', { tool_name: 'bmi_calculator' });
   };
 
   const resultCards = results ? [
@@ -249,6 +255,8 @@ export default function BMICalculator() {
             BMI is calculated by dividing weight in kilograms by height in metres squared. This tool also shows the adult healthy BMI range and the weight range that would place you inside that range for your height.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="bmi-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

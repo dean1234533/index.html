@@ -2,11 +2,16 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Calculator, CloudSun, Droplets, FlaskConical, GlassWater, Timer, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("water-intake-calculator");
 
 const WEATHER_OPTIONS = {
   cool: "Cool / mild",
@@ -202,6 +207,7 @@ export default function WaterIntakeCalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateWater(form));
+    track('tool_calculation', { tool_name: 'water_intake_calculator' });
   };
 
   const resultCards = results ? [
@@ -326,6 +332,8 @@ export default function WaterIntakeCalculator() {
             This calculator starts with a body-weight hydration baseline, then adds extra fluid for exercise, warm weather and your goal. Longer sessions, hot conditions and performance-focused training increase the chance that electrolytes will be useful alongside water.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="water-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

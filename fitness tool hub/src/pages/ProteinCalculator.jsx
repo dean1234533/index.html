@@ -2,12 +2,17 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Beef, Calculator, Egg, Salad, Target, Utensils, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
 import { ACTIVITY_LABELS } from "@/lib/calculator";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("protein-calculator");
 
 const GOALS = {
   fat_loss: "Fat Loss",
@@ -196,6 +201,7 @@ export default function ProteinCalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateProtein(form));
+    track('tool_calculation', { tool_name: 'protein_calculator' });
   };
 
   const resultCards = results ? [
@@ -323,6 +329,8 @@ export default function ProteinCalculator() {
             This calculator estimates protein from your body weight, goal and activity level. Fat loss and body recomposition use higher targets to support muscle retention, muscle gain uses a strong recovery target, and maintenance uses a practical baseline for general training.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="protein-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

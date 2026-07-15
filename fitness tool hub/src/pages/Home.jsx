@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { track } from "@/lib/analytics";
 
 import CalculatorWizard from "@/components/calculator/CalculatorWizard";
 import Hero from "@/components/calculator/Hero";
@@ -6,8 +7,12 @@ import Results from "@/components/calculator/Results";
 import CTA from "@/components/sections/CTA";
 import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
 import { calculateResults } from "@/lib/calculator";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("macro-calculator");
 
 const SUBMISSIONS_KEY = "db_workouts_calculator_submissions";
 const pageSchema = {
@@ -96,6 +101,7 @@ export default function Home() {
     window.setTimeout(() => {
       const calculated = calculateResults(data);
       setResults(calculated);
+      track('tool_calculation', { tool_name: 'macro_calculator' });
       setIsCalculating(false);
 
       const shareData = { ...data, ...calculated };
@@ -129,6 +135,9 @@ export default function Home() {
       </main>
 
       <FAQSection />
+      <div className="mx-auto max-w-5xl px-4 pb-6">
+        <RelatedTools tools={RELATED} />
+      </div>
       <Footer />
     </div>
   );

@@ -2,11 +2,16 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Copy, Download, Map, Printer, RefreshCw, Share2, Timer, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("outdoor-workout-generator");
 
 const GOALS = {
   fat_loss: "Fat Loss",
@@ -297,6 +302,7 @@ export default function OutdoorWorkoutGenerator() {
     if (!isValid) return;
     setWorkout(generateWorkout(form));
     setStatus("Workout generated.");
+    track('tool_calculation', { tool_name: 'outdoor_workout_generator' });
   };
 
   const handleShare = async () => {
@@ -305,12 +311,14 @@ export default function OutdoorWorkoutGenerator() {
     window.history.replaceState({}, "", url);
     await navigator.clipboard?.writeText(url);
     setStatus("Share link copied.");
+    track('share_link_copy', { tool_name: 'outdoor_workout_generator' });
   };
 
   const handleCopy = async () => {
     if (!workoutText) return;
     await navigator.clipboard?.writeText(workoutText);
     setStatus("Workout copied.");
+    track('copy_workout', { tool_name: 'outdoor_workout_generator' });
   };
 
   const handlePrint = () => {
@@ -328,6 +336,7 @@ export default function OutdoorWorkoutGenerator() {
     doc.text(lines, 14, 28);
     doc.save("db-workouts-outdoor-workout.pdf");
     setStatus("PDF downloaded.");
+    track('pdf_download', { tool_name: 'outdoor_workout_generator' });
   };
 
   return (
@@ -481,6 +490,8 @@ export default function OutdoorWorkoutGenerator() {
             The generator matches outdoor-friendly exercises to your goal, fitness level, workout length, equipment and location. Each new workout reshuffles the session structure so you can train outside without repeating the same plan.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="outdoor-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

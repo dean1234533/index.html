@@ -2,11 +2,16 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Calculator, Gauge, Ruler, Scale, ShieldCheck, Target, User, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("body-fat-calculator");
 
 const FAQS = [
   {
@@ -198,6 +203,7 @@ export default function BodyFatCalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateBodyFat(form));
+    track('tool_calculation', { tool_name: 'body_fat_calculator' });
   };
 
   const resultCards = results ? [
@@ -334,6 +340,8 @@ export default function BodyFatCalculator() {
             This calculator uses the US Navy circumference method. Men use height, neck and waist measurements. Women use height, neck, waist and hip measurements. Weight is then used to estimate lean body mass and fat mass.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="body-fat-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

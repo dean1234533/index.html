@@ -1,94 +1,17 @@
-import React from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Activity,
-  Calculator,
-  Droplets,
-  Flame,
-  HeartPulse,
-  Lock,
-  Map,
-  Route,
-  Ruler,
-  Scale,
-  Target,
-  TrendingUp,
-} from "lucide-react";
+import { HeartPulse, Lock, Search } from "lucide-react";
 
 import Footer from "@/components/sections/Footer";
+import { TOOLS_DATA } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
 
-const TOOLS = [
-  {
-    name: "Macro Calculator",
-    description: "Calculate daily calories, macros and training recommendations.",
-    href: "/tools/macro-calculator",
-    icon: Calculator,
-    active: true,
-  },
-  {
-    name: "TDEE Calculator",
-    description: "Estimate your total daily energy expenditure.",
-    href: "/tools/tdee-calculator",
-    icon: Flame,
-    active: true,
-  },
-  {
-    name: "Protein Calculator",
-    description: "Find a practical daily protein target for your goal.",
-    href: "/tools/protein-calculator",
-    icon: Target,
-    active: true,
-  },
-  {
-    name: "BMI Calculator",
-    description: "Check body mass index using height and weight.",
-    href: "/tools/bmi-calculator",
-    icon: Scale,
-    active: true,
-  },
-  {
-    name: "Body Fat Calculator",
-    description: "Estimate body fat using simple body measurements.",
-    href: "/tools/body-fat-calculator",
-    icon: Ruler,
-    active: true,
-  },
-  {
-    name: "Water Intake Calculator",
-    description: "Calculate a daily hydration target for training days.",
-    href: "/tools/water-intake-calculator",
-    icon: Droplets,
-    active: true,
-  },
-  {
-    name: "One Rep Max Calculator",
-    description: "Estimate strength targets from reps and load.",
-    href: "/tools/one-rep-max-calculator",
-    icon: TrendingUp,
-    active: true,
-  },
-  {
-    name: "Running Pace Calculator",
-    description: "Convert distance and time into pace splits.",
-    href: "/tools/running-pace-calculator",
-    icon: Route,
-    active: true,
-  },
-  {
-    name: "Calorie Burn Calculator",
-    description: "Estimate calories burned from common activities.",
-    href: "/tools/calorie-burn-calculator",
-    icon: Activity,
-    active: true,
-  },
-  {
-    name: "Outdoor Workout Generator",
-    description: "Create a simple outdoor session from your kit and time.",
-    href: "/tools/outdoor-workout-generator",
-    icon: Map,
-    active: true,
-  },
+const CATEGORIES = [
+  { id: "all", label: "All" },
+  { id: "nutrition", label: "Nutrition" },
+  { id: "body", label: "Body" },
+  { id: "hydration", label: "Hydration" },
+  { id: "training", label: "Training" },
 ];
 
 const schema = {
@@ -104,11 +27,11 @@ const schema = {
   },
   mainEntity: {
     "@type": "ItemList",
-    itemListElement: TOOLS.map((tool, index) => ({
+    itemListElement: TOOLS_DATA.map((tool, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: tool.name,
-      url: tool.href ? `https://dbworkouts.co.uk${tool.href}` : undefined,
+      url: `https://dbworkouts.co.uk${tool.href}`,
     })),
   },
 };
@@ -161,12 +84,24 @@ function ToolCard({ tool }) {
 }
 
 export default function Tools() {
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("all");
+
   usePageSeo({
     title: "Fitness Tools | DB's Workouts",
-    description: "Free DB's Workouts fitness tools for calories, macros, TDEE, protein, BMI, hydration, running pace and training.",
+    description: "Free DB's Workouts fitness tools for calories, macros, TDEE, protein, BMI, body fat, hydration, running pace and training.",
     canonical: "https://dbworkouts.co.uk/tools",
     schema,
   });
+
+  const filtered = useMemo(() => {
+    const q = query.toLowerCase();
+    return TOOLS_DATA.filter((tool) => {
+      const matchesQuery = !q || tool.name.toLowerCase().includes(q) || tool.description.toLowerCase().includes(q);
+      const matchesCategory = category === "all" || tool.category === category;
+      return matchesQuery && matchesCategory;
+    });
+  }, [query, category]);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -194,11 +129,47 @@ export default function Tools() {
       </header>
 
       <main className="mx-auto max-w-6xl px-4 pb-14">
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {TOOLS.map((tool) => (
-            <ToolCard key={tool.name} tool={tool} />
-          ))}
+        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="relative flex-1">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500" aria-hidden="true" />
+            <input
+              type="search"
+              placeholder="Search tools…"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              aria-label="Search fitness tools"
+              className="h-11 w-full rounded-lg border border-zinc-800 bg-zinc-900 pl-9 pr-3 text-sm font-semibold text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-[#B30018] focus:ring-2 focus:ring-[#B30018]/30"
+            />
+          </div>
+          <div className="flex gap-2 overflow-x-auto pb-1 sm:pb-0" role="group" aria-label="Filter by category">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setCategory(cat.id)}
+                aria-pressed={category === cat.id}
+                className={`flex-shrink-0 rounded-lg border px-3 py-2 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B30018] ${
+                  category === cat.id
+                    ? "border-[#B30018] bg-[#B30018] text-white"
+                    : "border-zinc-800 bg-zinc-900/70 text-zinc-400 hover:border-zinc-600"
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
         </div>
+
+        {filtered.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-zinc-800 bg-zinc-900/30 p-10 text-center">
+            <p className="text-sm text-zinc-500">No tools match your search. <button className="font-bold text-[#D0182E] hover:text-white" onClick={() => { setQuery(""); setCategory("all"); }}>Clear filters</button></p>
+          </div>
+        ) : (
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))}
+          </div>
+        )}
       </main>
 
       <Footer />

@@ -2,11 +2,16 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Activity, Calculator, Flame, Gauge, Target, Timer, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("calorie-burn-calculator");
 
 const ACTIVITIES = {
   walking: { label: "Walking", met: 3.5 },
@@ -168,6 +173,7 @@ export default function CalorieBurnCalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateCaloriesBurned(form));
+    track('tool_calculation', { tool_name: 'calorie_burn_calculator' });
   };
 
   const resultCards = results ? [
@@ -285,6 +291,8 @@ export default function CalorieBurnCalculator() {
             This calculator uses MET values to estimate calories burned from body weight and activity duration. It gives a useful training estimate, but real calorie burn changes with intensity, fitness level, terrain, rest periods and technique.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="calorie-burn-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

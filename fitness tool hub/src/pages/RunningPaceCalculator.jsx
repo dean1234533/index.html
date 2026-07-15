@@ -2,11 +2,16 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Calculator, Clock, Flag, Gauge, Map, Route, Timer, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("running-pace-calculator");
 
 const RACES = [
   { label: "5K", distance: 5 },
@@ -168,6 +173,7 @@ export default function RunningPaceCalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateRunningPace(form));
+    track('tool_calculation', { tool_name: 'running_pace_calculator' });
   };
 
   const predictions = results?.predictions || [];
@@ -290,6 +296,8 @@ export default function RunningPaceCalculator() {
             Pace is calculated by dividing your total run time by distance. Race predictions use the Riegel formula, which estimates how performance changes as race distance increases.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="running-pace-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

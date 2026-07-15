@@ -2,20 +2,17 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Beef, Calculator, Flame, HeartPulse, Scale, Target, TrendingUp, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
-import { ACTIVITY_LABELS } from "@/lib/calculator";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { ACTIVITY_LABELS, ACTIVITY_MULTIPLIERS } from "@/lib/calculator";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
 
-const ACTIVITY_MULTIPLIERS = {
-  sedentary: 1.2,
-  lightly_active: 1.375,
-  moderately_active: 1.55,
-  very_active: 1.725,
-  extremely_active: 1.9,
-};
+const RELATED = getRelatedTools("tdee-calculator");
 
 const FAQS = [
   {
@@ -172,6 +169,7 @@ export default function TDEECalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(calculateTdee(form));
+    track('tool_calculation', { tool_name: 'tdee_calculator' });
   };
 
   const resultCards = results ? [
@@ -278,6 +276,8 @@ export default function TDEECalculator() {
             This calculator estimates your basal metabolic rate using the Mifflin-St Jeor equation, then multiplies it by your selected activity level. The result is your estimated TDEE, which is also your maintenance calories. Fat loss calories use a moderate deficit, muscle gain calories use a controlled surplus, and protein is set high enough to support training and recovery.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="tdee-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

@@ -2,11 +2,16 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Calculator, Dumbbell, Gauge, Target, TrendingUp, Zap } from "lucide-react";
+import { track } from "@/lib/analytics";
 
 import ResultCard from "@/components/calculator/ResultCard";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import RelatedTools from "@/components/sections/RelatedTools";
+import { getRelatedTools } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
+
+const RELATED = getRelatedTools("one-rep-max-calculator");
 
 const FAQS = [
   {
@@ -149,6 +154,7 @@ export default function OneRepMaxCalculator() {
     setSubmitted(true);
     if (!isValid) return;
     setResults(estimateOneRepMax(form));
+    track('tool_calculation', { tool_name: 'one_rep_max_calculator' });
   };
 
   const resultCards = results ? [
@@ -261,6 +267,8 @@ export default function OneRepMaxCalculator() {
             This calculator uses the Epley formula to estimate your one rep max from a recent set. It is best used with controlled reps and solid technique, then applied to training percentages for strength, volume and technique work.
           </p>
         </section>
+
+        <RelatedTools tools={RELATED} />
 
         <section className="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6" aria-labelledby="one-rep-max-faq">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B30018]">FAQ</p>

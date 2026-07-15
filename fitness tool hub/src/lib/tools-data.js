@@ -1,0 +1,122 @@
+import { Activity, Calculator, ClipboardList, Droplets, Flame, Map, Route, Ruler, Scale, Target, TrendingUp } from "lucide-react";
+
+export const TOOLS_DATA = [
+  {
+    id: "macro-calculator",
+    name: "Macro Calculator",
+    description: "Calculate daily calories, macros and personalised training recommendations.",
+    href: "/tools/macro-calculator",
+    icon: Calculator,
+    category: "nutrition",
+    active: true,
+  },
+  {
+    id: "tdee-calculator",
+    name: "TDEE Calculator",
+    description: "Estimate total daily energy expenditure based on your stats and activity.",
+    href: "/tools/tdee-calculator",
+    icon: Flame,
+    category: "nutrition",
+    active: true,
+  },
+  {
+    id: "protein-calculator",
+    name: "Protein Calculator",
+    description: "Find a practical daily protein target based on your goal and activity.",
+    href: "/tools/protein-calculator",
+    icon: Target,
+    category: "nutrition",
+    active: true,
+  },
+  {
+    id: "bmi-calculator",
+    name: "BMI Calculator",
+    description: "Check body mass index, healthy range and ideal weight range for your height.",
+    href: "/tools/bmi-calculator",
+    icon: Scale,
+    category: "body",
+    active: true,
+  },
+  {
+    id: "body-fat-calculator",
+    name: "Body Fat Calculator",
+    description: "Estimate body fat percentage and lean mass using the US Navy method.",
+    href: "/tools/body-fat-calculator",
+    icon: Ruler,
+    category: "body",
+    active: true,
+  },
+  {
+    id: "water-intake-calculator",
+    name: "Water Intake Calculator",
+    description: "Calculate a daily hydration target including exercise and weather adjustments.",
+    href: "/tools/water-intake-calculator",
+    icon: Droplets,
+    category: "hydration",
+    active: true,
+  },
+  {
+    id: "one-rep-max-calculator",
+    name: "One Rep Max Calculator",
+    description: "Estimate strength targets from your reps and load at any rep range.",
+    href: "/tools/one-rep-max-calculator",
+    icon: TrendingUp,
+    category: "training",
+    active: true,
+  },
+  {
+    id: "running-pace-calculator",
+    name: "Running Pace Calculator",
+    description: "Convert distance and time into per-kilometre pace splits for any race.",
+    href: "/tools/running-pace-calculator",
+    icon: Route,
+    category: "training",
+    active: true,
+  },
+  {
+    id: "calorie-burn-calculator",
+    name: "Calorie Burn Calculator",
+    description: "Estimate calories burned from common activities using MET values.",
+    href: "/tools/calorie-burn-calculator",
+    icon: Activity,
+    category: "training",
+    active: true,
+  },
+  {
+    id: "outdoor-workout-generator",
+    name: "Outdoor Workout Generator",
+    description: "Generate a simple outdoor session from your available kit and time.",
+    href: "/tools/outdoor-workout-generator",
+    icon: Map,
+    category: "training",
+    active: true,
+  },
+  {
+    id: "workout-plan-generator",
+    name: "Workout & Nutrition Plan",
+    description: "Get a full weekly training schedule and daily nutrition blueprint — free, no login.",
+    href: "/tools/workout-plan-generator",
+    icon: ClipboardList,
+    category: "training",
+    active: true,
+  },
+];
+
+const RELATED_MAP = {
+  "macro-calculator": ["tdee-calculator", "protein-calculator", "workout-plan-generator"],
+  "tdee-calculator": ["macro-calculator", "protein-calculator", "body-fat-calculator"],
+  "protein-calculator": ["macro-calculator", "tdee-calculator", "workout-plan-generator"],
+  "bmi-calculator": ["body-fat-calculator", "tdee-calculator"],
+  "body-fat-calculator": ["bmi-calculator", "tdee-calculator", "protein-calculator"],
+  "water-intake-calculator": ["tdee-calculator", "calorie-burn-calculator", "running-pace-calculator"],
+  "one-rep-max-calculator": ["workout-plan-generator", "calorie-burn-calculator"],
+  "running-pace-calculator": ["calorie-burn-calculator", "water-intake-calculator"],
+  "calorie-burn-calculator": ["running-pace-calculator", "water-intake-calculator", "tdee-calculator"],
+  "outdoor-workout-generator": ["calorie-burn-calculator", "workout-plan-generator", "running-pace-calculator"],
+  "workout-plan-generator": ["macro-calculator", "protein-calculator", "tdee-calculator"],
+};
+
+export function getRelatedTools(currentId) {
+  const ids = RELATED_MAP[currentId] || [];
+  return ids.map((id) => TOOLS_DATA.find((t) => t.id === id)).filter(Boolean);
+}
