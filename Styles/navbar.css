@@ -1,31 +1,24 @@
 /* ═══════════════════════════════════════════════════════════
-   DB's Workouts — Shared Navbar + Global Dark Theme
-   Applied to all pages via their <link rel="stylesheet" href="./Styles/navbar.css">
+   DB's Workouts — Shared dark navbar (all inner pages)
+   Content theming is handled per-page. This file only controls
+   the fixed nav bar and the shared footer.
 ═══════════════════════════════════════════════════════════ */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: 'Inter', 'IBM Plex Serif', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "IBM Plex Serif", serif;
   font-size: clamp(15px, 2vw, 17px);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background-color: #0a0a0a;
-  color: #f0f0f0;
 }
 
-* {
-  -webkit-tap-highlight-color: transparent;
-}
+* { -webkit-tap-highlight-color: transparent; }
 
 a:focus-visible,
 button:focus-visible,
@@ -37,17 +30,12 @@ summary:focus-visible {
 
 :root {
   --real-vh: 1vh;
-  --nav-bg: rgba(8, 8, 8, 0.96);
-  --nav-border: rgba(255, 255, 255, 0.08);
-  --nav-text: rgba(255, 255, 255, 0.65);
-  --nav-text-hover: #f0f0f0;
   --accent: #B30018;
 }
 
 /* ════════════════════════════════════════════════════════
-   NAVBAR
+   NAV CONTAINER
 ════════════════════════════════════════════════════════ */
-
 .navContainer {
   width: 100%;
   height: 100%;
@@ -57,8 +45,8 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   width: 100%;
-  background: var(--nav-bg);
-  border-bottom: 1px solid var(--nav-border);
+  background: rgba(6, 6, 6, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   height: 72px;
   position: fixed;
   z-index: 900;
@@ -73,37 +61,30 @@ summary:focus-visible {
 /* ── Logo ── */
 .navBar .logoContainer {
   position: absolute;
-  left: 24px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
   opacity: 1;
-  transition: opacity 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  transition: opacity 1.5s ease;
 }
 
 .navBar.Active .logoContainer {
-  opacity: 0.6;
+  margin-top: auto;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBar img {
-  width: 40px;
-  height: 40px;
+  width: clamp(44px, 6vw, 52px);
+  height: clamp(44px, 6vw, 52px);
   display: block;
   border-radius: 8px;
   object-fit: cover;
 }
 
-.navBar .logo-text {
-  font-family: 'Montserrat', 'Inter', sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
-  color: #f0f0f0;
-  white-space: nowrap;
-}
-
-/* ── Desktop link list ── */
+/* ── Desktop link list (hidden on mobile) ── */
 .navBar ul {
   display: none;
   margin: 0;
@@ -114,25 +95,25 @@ summary:focus-visible {
 .navBar ul li a {
   text-decoration: none;
   padding: 10px 14px;
-  color: var(--nav-text);
+  color: rgba(255, 255, 255, 0.6);
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: "IBM Plex Serif", serif;
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   transition: color 0.2s ease;
   white-space: nowrap;
 }
 
 .navBar ul li a:hover {
-  color: var(--nav-text-hover);
+  color: rgba(255, 255, 255, 0.95);
 }
 
-/* ── Book Now CTA button ── */
+/* ── Book Now CTA ── */
 .navBar .Nav-consultation-button {
-  background: var(--accent) !important;
+  background: #b30018;
   color: white !important;
-  padding: 10px 20px !important;
+  padding: 9px 18px;
   border-radius: 6px;
   font-size: 12px !important;
   font-weight: 700;
@@ -146,10 +127,10 @@ summary:focus-visible {
   background: #cc001e !important;
   color: white !important;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(179, 0, 24, 0.3);
+  box-shadow: 0 4px 14px rgba(179, 0, 24, 0.35);
 }
 
-/* ── Hamburger button ── */
+/* ── Hamburger ── */
 .Navbtn {
   width: 36px;
   height: 36px;
@@ -160,17 +141,14 @@ summary:focus-visible {
   background: none;
   border: none;
   padding: 0;
-  margin: 0;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  overflow: visible;
   -webkit-appearance: none;
   appearance: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .navBar .Navbtn,
@@ -188,18 +166,17 @@ summary:focus-visible {
   background-color: rgba(255, 255, 255, 0.85) !important;
   border-radius: 2px;
   flex-shrink: 0;
-  overflow: visible;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
 }
 
 .Navbtn .line2 {
-  background-color: var(--accent) !important;
+  background-color: #b30018 !important;
 }
 
-/* ── Mobile menu (Active state) ── */
+/* ── Mobile menu open (Active) ── */
 .Active {
   height: calc(var(--real-vh, 1vh) * 100);
-  background: rgba(6, 6, 6, 0.98) !important;
+  background: rgba(5, 5, 5, 0.98) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -211,7 +188,7 @@ summary:focus-visible {
   top: 72px;
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: #b30018;
   animation: accentLine 0.6s 0.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
@@ -222,21 +199,20 @@ summary:focus-visible {
 .Active .Navbtn .line2 {
   opacity: 0 !important;
   transform: scaleX(0) !important;
-  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .Active .Navbtn .line1 {
   transform: rotate(45deg) translate(5px, 5px) !important;
   transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
   width: 22px !important;
-  background-color: var(--accent) !important;
+  background-color: #b30018 !important;
 }
 
 .Active .Navbtn .line3 {
   transform: rotate(-45deg) translate(5px, -5px) !important;
   transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
   width: 22px !important;
-  background-color: var(--accent) !important;
+  background-color: #b30018 !important;
 }
 
 .Active ul {
@@ -258,19 +234,17 @@ summary:focus-visible {
 .Active ul > li > a {
   font-weight: 700;
   font-size: clamp(18px, 5vw, 26px) !important;
-  color: rgba(255, 255, 255, 0.0);
-  line-height: 1.4;
+  color: rgba(255, 255, 255, 0);
   opacity: 0;
   transform: translateX(40px);
   white-space: nowrap;
   letter-spacing: 0.02em;
   transition: color 0.2s ease;
   display: inline-block;
-  font-family: 'Montserrat', 'Inter', sans-serif;
 }
 
 .Active ul > li > a:hover {
-  color: var(--accent) !important;
+  color: #b30018 !important;
 }
 
 /* ── Blog dropdown ── */
@@ -288,25 +262,22 @@ summary:focus-visible {
 .nav-dropdown.open .nav-dropdown-menu { display: flex; }
 
 .nav-dropdown-menu a {
-  font-family: 'Inter', sans-serif;
   font-size: clamp(13px, 3.5vw, 16px);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.45);
   text-decoration: none;
   padding: 3px 10px;
-  letter-spacing: 0.02em;
   transition: color 0.2s;
   white-space: nowrap;
   display: block;
 }
-.nav-dropdown-menu a:hover { color: var(--accent); }
+.nav-dropdown-menu a:hover { color: #b30018; }
 
 .Active .Nav-consultation-button {
-  background: var(--accent) !important;
+  background: #b30018 !important;
   color: white !important;
   padding: 13px 32px !important;
   border-radius: 6px;
-  border: none !important;
   font-size: clamp(13px, 3.5vw, 16px) !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em;
@@ -317,11 +288,9 @@ summary:focus-visible {
 
 .Active .Nav-consultation-button:hover {
   background: #cc001e !important;
-  color: white !important;
-  border: none !important;
 }
 
-/* ── Staggered slide-from-right animation ── */
+/* ── Staggered link animations ── */
 .Active ul > li:nth-child(1) > a { animation: slideFromRight 0.45s 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul > li:nth-child(2) > a { animation: slideFromRight 0.45s 0.24s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
 .Active ul > li:nth-child(3) > a { animation: slideFromRight 0.45s 0.30s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
@@ -347,7 +316,7 @@ summary:focus-visible {
   }
 }
 
-/* ── Desktop horizontal nav ── */
+/* ── Desktop ── */
 @media (min-width: 1200px) {
   .navBar {
     justify-content: flex-start;
@@ -364,18 +333,14 @@ summary:focus-visible {
     height: 100%;
   }
 
-  .navBar ul li {
-    margin: 0;
-  }
-
   .navBar ul li a {
     opacity: 1 !important;
     transform: none;
     animation: none !important;
     font-size: 13px;
     padding: 10px 12px;
-    color: var(--nav-text);
-    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.58);
+    letter-spacing: 0.05em;
     font-weight: 500;
     position: relative;
   }
@@ -387,33 +352,30 @@ summary:focus-visible {
     left: 12px;
     right: 12px;
     height: 1px;
-    background: var(--accent);
+    background: #b30018;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.25s ease;
   }
 
   .navBar ul li a:hover {
-    color: var(--nav-text-hover);
+    color: rgba(255, 255, 255, 0.95);
     text-decoration: none;
   }
 
-  .navBar ul li a:hover::after {
-    transform: scaleX(1);
-  }
+  .navBar ul li a:hover::after { transform: scaleX(1); }
 
-  /* Desktop blog dropdown */
   .nav-dropdown-menu {
     display: none;
     position: absolute;
     top: calc(100% + 4px);
     left: 50%;
     transform: translateX(-50%);
-    background: #111111;
+    background: #111;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     min-width: 170px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
     z-index: 200;
     padding: 8px 0;
     flex-direction: column;
@@ -421,15 +383,14 @@ summary:focus-visible {
   }
   .nav-dropdown:hover .nav-dropdown-menu,
   .nav-dropdown.open .nav-dropdown-menu { display: flex; }
-
   .nav-dropdown-menu a {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.5);
     padding: 9px 18px;
     white-space: nowrap;
     width: 100%;
   }
-  .nav-dropdown-menu a:hover { color: var(--accent); background: rgba(179, 0, 24, 0.06); }
+  .nav-dropdown-menu a:hover { color: #b30018; background: rgba(179, 0, 24, 0.05); }
   .nav-dropdown-menu a::after { display: none !important; }
 
   .navBar .Nav-consultation-button {
@@ -438,79 +399,32 @@ summary:focus-visible {
     letter-spacing: 0.1em;
     margin-left: 8px;
   }
+  .navBar .Nav-consultation-button::after { display: none; }
 
-  .navBar .Nav-consultation-button::after {
-    display: none;
-  }
+  .Navbtn { display: none; }
 
-  .Navbtn {
-    display: none;
-  }
-
-  .Active {
-    height: 72px;
-  }
-
+  .Active { height: 72px; }
   .Active ul {
     position: static;
     transform: none;
     display: flex !important;
     flex-direction: row;
-    text-align: left;
   }
-
   .Active ul li a {
     font-size: 13px !important;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
   }
-}
-
-/* ════════════════════════════════════════════════════════
-   GLOBAL DARK THEME OVERRIDES
-   Force Bootstrap and page content into dark theme
-════════════════════════════════════════════════════════ */
-
-/* Override Bootstrap white containers */
-.container, .container-fluid, .container-sm,
-.container-md, .container-lg, .container-xl {
-  color: #f0f0f0;
-}
-
-.card {
-  background-color: #141414 !important;
-  border-color: rgba(255,255,255,0.08) !important;
-  color: #f0f0f0 !important;
-}
-
-.card-body { color: #f0f0f0 !important; }
-
-.bg-white, .bg-light {
-  background-color: #111111 !important;
-  color: #f0f0f0 !important;
-}
-
-.text-dark, .text-body { color: #f0f0f0 !important; }
-.text-muted { color: #888 !important; }
-
-/* Page content padding for fixed nav */
-.content-container,
-main,
-article,
-.page-content {
-  padding-top: 72px;
 }
 
 /* ════════════════════════════════════════════════════════
    FOOTER — shared across all inner pages
 ════════════════════════════════════════════════════════ */
-
 footer {
-  background: #0a0a0a !important;
+  background: #0d0d0d !important;
   color: rgba(255,255,255,0.55) !important;
-  padding: 56px 24px 28px !important;
-  font-family: 'Inter', sans-serif;
+  padding: 48px 24px 28px !important;
+  font-family: "IBM Plex Serif", serif;
   font-size: 14px;
-  border-top: 1px solid rgba(255,255,255,0.07) !important;
 }
 
 footer .footer-columns {
@@ -522,7 +436,7 @@ footer .footer-columns {
   max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 footer .footer-col {
@@ -541,9 +455,9 @@ footer .footer-col > p {
 footer .footer-heading {
   font-size: 11px !important;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3) !important;
+  color: rgba(255,255,255,0.35) !important;
   margin-bottom: 14px !important;
 }
 
@@ -553,12 +467,11 @@ footer .footer-brand {
   color: white !important;
   margin-bottom: 6px !important;
   line-height: 1.2 !important;
-  font-family: 'Montserrat', sans-serif;
 }
 
 footer .footer-tagline {
   font-size: 12px !important;
-  color: rgba(255,255,255,0.35) !important;
+  color: rgba(255,255,255,0.38) !important;
   letter-spacing: 0.04em;
   margin: 0 !important;
   padding: 0 !important;
@@ -570,25 +483,21 @@ footer .footer-col a {
   align-items: center;
   gap: 10px;
   padding: 4px 0;
-  color: rgba(255,255,255,0.5) !important;
+  color: rgba(255,255,255,0.55) !important;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s;
 }
 
-footer .footer-col a:hover {
-  color: var(--accent) !important;
-}
+footer .footer-col a:hover { color: #b30018 !important; }
 
 footer .footer-col a img {
-  opacity: 0.6;
+  opacity: 0.65;
   transition: opacity 0.2s;
   flex-shrink: 0;
 }
 
-footer .footer-col a:hover img {
-  opacity: 1;
-}
+footer .footer-col a:hover img { opacity: 1; }
 
 footer .footer-bottom {
   max-width: 1100px;
@@ -598,14 +507,13 @@ footer .footer-bottom {
 
 footer .footer-bottom p {
   font-size: 12px;
-  color: rgba(255,255,255,0.25) !important;
+  color: rgba(255,255,255,0.28) !important;
   margin: 0;
-  width: auto;
   text-align: center;
 }
 
 footer .footer-bottom a {
-  color: rgba(255,255,255,0.3) !important;
+  color: rgba(255,255,255,0.35) !important;
   text-decoration: none;
   transition: color 0.2s;
   display: inline;
@@ -614,16 +522,9 @@ footer .footer-bottom a {
   padding: 0;
 }
 
-footer .footer-bottom a:hover {
-  color: var(--accent) !important;
-}
+footer .footer-bottom a:hover { color: #b30018 !important; }
 
 @media (max-width: 600px) {
-  footer .footer-columns {
-    flex-direction: column;
-    gap: 28px;
-  }
-  footer .footer-col {
-    flex-basis: auto;
-  }
+  footer .footer-columns { flex-direction: column; gap: 28px; }
+  footer .footer-col { flex-basis: auto; }
 }
