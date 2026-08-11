@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,17 +8,18 @@
 
   <meta name="description" content="Train smart, play hard, and keep moving with outdoor fitness in East London parks. Expert guide to park-based training, bodyweight exercises, and all-weather workouts across Stratford and beyond.">
   <meta name="keywords" content="personal trainer East London parks, outdoor workout sessions London, park-based fitness classes East London, green exercise benefits London, outdoor personal training Stratford, park workout programs London, East London outdoor fitness tips, all-weather park workouts London, bodyweight exercises outdoor settings, nature-based fitness East London">
-<meta name="author" content="Dean Burt">
-<meta name="robots" content="index, follow">
-<meta name="geo.region" content="GB-ENG">
-<meta name="geo.placename" content="East London">
-<meta name="theme-color" content="#000000">
+  <meta name="author" content="Dean Burt">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="GB-ENG">
+  <meta name="geo.placename" content="East London">
+  <meta name="theme-color" content="#000000">
 
   <link rel="canonical" href="https://dbworkouts.co.uk/active-living-3">
 
-<link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-<link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">  
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+  <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
 
+  <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Train, Play, Repeat: East London Parks Fitness Guide Part 3">
   <meta property="og:description" content="Train smart, play hard, and keep moving with outdoor fitness in East London parks. Expert guide to park-based training and bodyweight exercises.">
   <meta property="og:url" content="https://dbworkouts.co.uk/active-living-3">
@@ -27,6 +28,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="DB's Workouts">
+
   <script type="application/ld+json">
   [
     {
@@ -43,232 +45,264 @@
         "name": "DB's Workouts",
         "logo": { "@type": "ImageObject", "url": "https://dbworkouts.co.uk/logo.png" }
       },
-      "mainEntityOfPage": "https://dbworkouts.co.uk/Active-Living-3"
+      "mainEntityOfPage": "https://dbworkouts.co.uk/active-living-3"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dbworkouts.co.uk" },
-        { "@type": "ListItem", "position": 2, "name": "East London Parks Guide Part 3", "item": "https://dbworkouts.co.uk/Active-Living-3" }
+        { "@type": "ListItem", "position": 2, "name": "East London Parks Guide Part 3", "item": "https://dbworkouts.co.uk/active-living-3" }
       ]
     }
   ]
   </script>
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Train, Play, Repeat: East London Parks Fitness Guide">
   <meta name="twitter:description" content="Train smart, play hard with outdoor fitness in East London parks. Expert guide to park-based training and bodyweight exercises.">
   <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./Styles/active-living-3.css">
-  <link rel="stylesheet" href="./Styles/navbar.css">
-  <link rel="manifest" href="/manifest.json">
-  <script src="/Script/cookie-consent.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="Styles/db.css?v=9">
+
   <style>
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; }
-    h1,h2,h3,h4,h5,h6 { font-family: 'Inter', sans-serif !important; font-weight: 700 !important; }
-    [data-bs-theme="dark"] { --bs-body-bg: #0a0a0a; --bs-body-color: #e8e8e8; }
-    [data-bs-theme="dark"] .card { background-color: #141414 !important; border-color: rgba(255,255,255,0.07) !important; }
-    [data-bs-theme="dark"] .bg-light, [data-bs-theme="dark"] .bg-white { background-color: #111 !important; }
-    [data-bs-theme="dark"] a { color: #e8e8e8; }
-    [data-bs-theme="dark"] a:hover { color: #fff; }
-    [data-bs-theme="dark"] h1,
-    [data-bs-theme="dark"] h2,
-    [data-bs-theme="dark"] h3 { color: #ffffff; }
+    .article-hero{height:480px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+    .article-hero-bg{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;filter:brightness(.42)}
+    .article-hero-content{position:relative;z-index:1;max-width:1200px;margin:0 auto;width:100%;padding:0 24px 52px}
+    .article-body{max-width:760px;margin:0 auto;padding:64px 24px}
+    .article-body h2{font-size:1.45rem;margin:44px 0 14px;padding-top:14px;border-top:1px solid var(--border)}
+    .article-body h2:first-child{border-top:none;margin-top:0}
+    .article-body p{color:var(--text-dim);line-height:1.85;margin-bottom:16px;font-size:.97rem}
+    .article-body ul{margin:16px 0 20px;display:flex;flex-direction:column;gap:8px}
+    .article-body ul li{color:var(--text-dim);font-size:.92rem;padding-left:20px;position:relative;line-height:1.6}
+    .article-body ul li::before{content:'→';color:var(--accent);position:absolute;left:0;font-weight:700}
+    .article-img{width:100%;border-radius:14px;margin:28px 0;border:1px solid var(--border);object-fit:cover;max-height:420px}
+    .article-callout{background:rgba(179,0,24,.06);border:1px solid rgba(179,0,24,.25);border-radius:14px;padding:28px 32px;margin:40px 0}
+    .article-callout h3{font-size:1.05rem;margin-bottom:8px}
+    .article-callout p{color:var(--text-dim);font-size:.9rem;margin-bottom:16px!important}
+    .article-author{display:flex;align-items:center;gap:20px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin:48px 0}
+    .article-author img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--border)}
+    .article-author-name{font-weight:700;font-size:1rem}
+    .article-author-role{font-size:.8rem;color:var(--text-muted);margin-top:2px}
+    .article-author-bio{font-size:.88rem;color:var(--text-dim);margin-top:8px;line-height:1.6}
+    .article-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:40px 0 0}
+    .article-nav a{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;transition:border-color .2s,transform .2s;display:block}
+    .article-nav a:hover{border-color:var(--border-h);transform:translateY(-3px)}
+    .article-nav-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted)}
+    .article-nav-title{font-size:.95rem;font-weight:700;margin-top:4px}
+    .article-meta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px}
+    .article-meta span{font-size:.8rem;color:rgba(255,255,255,.5)}
+    .series-badge{background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:100px;padding:5px 14px;font-size:.75rem;font-weight:600;color:var(--text-dim)}
+    .article-series-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:48px 0 0}
+    .article-series-nav a{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;transition:border-color .2s,transform .2s;display:block;text-align:center}
+    .article-series-nav a:hover{border-color:var(--border-h);transform:translateY(-3px)}
+    .article-series-nav a.current{border-color:var(--accent);background:rgba(179,0,24,.06)}
+    .series-nav-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block}
+    .series-nav-title{font-size:.85rem;font-weight:700;margin-top:4px;display:block}
+    @media(max-width:600px){.article-hero{height:380px}.article-nav{grid-template-columns:1fr}.article-series-nav{grid-template-columns:1fr}}
   </style>
+<style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
 </head>
 
 <body>
-  <section class="section1">
-   
-     <div class="navContainer">
-    <nav class="navBar">
-        <div class="logoContainer">
-            <img src="logo.png" alt="DB's Workouts outdoor personal training logo" fetchpriority="high">
+
+<nav class="db-nav" id="dbNav">
+  <div class="db-nav-inner">
+    <a href="index.html" class="db-nav-logo"><img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy"><span>DB's Workouts</span></a>
+    <div class="db-nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
+    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="db-mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
+  </div>
+</nav>
+<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
+
+<!-- Article Hero -->
+<header class="article-hero" data-reveal>
+  <img src="./pics/IMG_8096.JPG" alt="Group dumbbell training outdoors during a DB's Workouts park session in East London" class="article-hero-bg" loading="eager">
+  <div class="article-hero-content">
+    <span class="series-badge">Part 3 of 3 — East London Parks Fitness Guide</span>
+    <h1 style="font-family:'Montserrat',sans-serif;font-size:clamp(1.6rem,4vw,2.8rem);font-weight:900;color:#fff;line-height:1.15;margin-top:16px;margin-bottom:0">Train, Play, Repeat: Your Ultimate Guide to Outdoor Fitness &amp; Recreation</h1>
+    <div class="article-meta">
+      <span>By Dean Burt</span>
+      <span>·</span>
+      <span>March 2024</span>
+      <span>·</span>
+      <span>5 min read</span>
+    </div>
+  </div>
+</header>
+
+<!-- Article Body -->
+<article class="article-body">
+
+  <p>This final part of the East London parks series covers three brilliant spaces — each suited to a different kind of training. Whether you want a full outdoor gym, calisthenics bars, or riverside endurance running, these parks deliver.</p>
+
+  <!-- Lloyd Park -->
+  <h2>Lloyd Park Walthamstow: Training &amp; Facilities</h2>
+  <p><strong>Premium Outdoor Exercise &amp; Community Amenities</strong></p>
+  <ul>
+    <li>A modern, well-maintained outdoor gym equipped with essential resistance machines for full-body strength training.</li>
+    <li>Professional tennis courts and lawn bowling greens that are easily bookable through the Waltham Forest council website.</li>
+    <li>Expansive green spaces perfectly suited for high-intensity circuit training, sports drills, and large group fitness classes.</li>
+    <li>A state-of-the-art children's playground designed for inclusive play, allowing parents to stay active while kids explore.</li>
+    <li>Clean and accessible public toilet facilities that are consistently maintained throughout the park's opening hours.</li>
+    <li>Peaceful landscaped gardens providing the perfect natural backdrop for cool-down routines, yoga, or a healthy picnic.</li>
+    <li>An on-site café offering a variety of fresh refreshments, artisan coffee, and healthy post-workout snack options.</li>
+  </ul>
+
+  <img src="./pics/IMG_7860 3.jpg" loading="lazy" alt="Group TRX suspension training session during an outdoor personal training class in East London" class="article-img">
+
+  <!-- Victory Park -->
+  <h2>Victory Park: Community Fitness &amp; Calisthenics</h2>
+  <p><strong>Local Training Spots for Bodyweight &amp; Running</strong></p>
+  <ul>
+    <li>Specialized outdoor fitness equipment featuring pull-up and dip bars, perfect for calisthenics and upper-body conditioning.</li>
+    <li>Flat, versatile open areas that serve as the ideal foundation for bodyweight exercises, agility drills, and personal training.</li>
+    <li>A dedicated small-sided football court perfect for practicing footwork, shooting skills, or a casual game with friends.</li>
+    <li>A classic children's playground featuring swings and slides, providing a safe space for local families to enjoy.</li>
+    <li>A lack of permanent on-site toilet facilities means users should plan their training sessions accordingly.</li>
+    <li>Strategic picnic spots and wooden benches positioned around the park for resting between sets or enjoying the outdoors.</li>
+    <li>A network of well-maintained pathways that provide a smooth surface for running loops, sprints, and interval training.</li>
+  </ul>
+
+  <img src="./pics/IMG_7911_SnapseedCopy.jpg" loading="lazy" alt="Group performing crunches on grass during an outdoor fitness session in East London" class="article-img">
+
+  <div class="article-callout">
+    <h3>Pro Tip: Victory Park for Calisthenics Beginners</h3>
+    <p>Victory Park's pull-up and dip bars are some of the best-positioned I've found in East London — great sightlines for coaching form. I bring clients here specifically for bodyweight progressions. The flat open areas alongside mean you can pair bar work with ground-based circuits without moving location.</p>
+    <a href="contact.html" style="display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:.85rem;padding:10px 22px;border-radius:100px;text-decoration:none">Book a Session Here</a>
+  </div>
+
+  <!-- Barking Riverside -->
+  <h2>Barking Riverside: Little Bee Park Training</h2>
+  <p><strong>Modern Riverside Fitness &amp; Endurance Running</strong></p>
+  <ul>
+    <li>Expansive open-plan areas that offer plenty of room for high-intensity interval training (HIIT) and group bodyweight circuits.</li>
+    <li>A creatively designed, bee-themed children's playground equipped with engaging climbing frames and interactive elements.</li>
+    <li>The park lacks on-site toilet facilities, so it is best suited for shorter, high-impact training sessions.</li>
+    <li>Designated picnic areas with sturdy wooden benches, offering a place to recharge after a riverside workout.</li>
+    <li>Excellent running connectivity, with paths leading directly onto the Thames Path for those seeking long-distance endurance training.</li>
+    <li>As the park has limited natural shade, we recommend planning your outdoor workouts for the cooler morning or evening hours during summer.</li>
+  </ul>
+
+  <img src="./pics/IMG_8723.JPG" loading="lazy" alt="Dean Burt coaching a client on boxing pads during a one-to-one outdoor personal training session" class="article-img">
+
+  <!-- Author Bio -->
+  <div class="article-author" data-reveal>
+    <img src="./pics/dean-photo-web.jpg" alt="Dean Burt — DB's Workouts personal trainer">
+    <div>
+      <div class="article-author-name">Dean Burt</div>
+      <div class="article-author-role">REPs Certified Personal Trainer · East London &amp; Essex</div>
+      <p class="article-author-bio">Dean has been training clients across East London parks since 2016 He knows every inch of these green spaces and exactly how to get the most from each one.</p>
+    </div>
+  </div>
+
+  <!-- Series Navigation -->
+  <div>
+    <p style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px">East London Parks Fitness Guide — Full Series</p>
+    <div class="article-series-nav">
+      <a href="active-living-1.html">
+        <span class="series-nav-label">Part 1</span>
+        <span class="series-nav-title">Best Parks for Outdoor Fitness in East London</span>
+      </a>
+      <a href="active-living-2.html">
+        <span class="series-nav-label">Part 2</span>
+        <span class="series-nav-title">More Outdoor Fitness Parks: Your Training Guide</span>
+      </a>
+      <a href="active-living-3.html" class="current">
+        <span class="series-nav-label">Part 3 — You are here</span>
+        <span class="series-nav-title">Train, Play, Repeat: Ultimate Guide to Outdoor Fitness</span>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<!-- CTA Band -->
+<section class="db-cta-band">
+  <div class="db-container">
+    <p class="eyebrow" style="margin-bottom:12px">Get Started</p>
+    <h2>Start Training in <span class="accent-text">East London's Parks</span></h2>
+    <p>Book a free consultation with Dean and get a personalised plan built around the parks closest to you.</p>
+    <div class="db-cta-band-actions">
+      <a href="contact.html" class="db-btn db-btn-primary db-btn-lg">Book Free Consultation</a>
+      <a href="https://wa.me/447752300937" class="db-btn db-btn-wa db-btn-lg" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.55 4.123 1.511 5.863L.057 23.01a.5.5 0 00.633.633l5.183-1.461A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.654-.49-5.193-1.349l-.371-.219-3.838 1.082 1.093-3.783-.238-.39A9.943 9.943 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp Dean
+      </a>
+    </div>
+    <div class="db-cta-trust">
+      <span>Free &amp; no commitment</span><span>·</span><span>REPs certified</span><span>·</span><span>★★★★★ Google rated</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- MORE ARTICLES -->
+<section style="background:var(--surface);border-top:1px solid var(--border);padding:72px 24px">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">More From the Blog</div>
+    <h2 style="font-family:'Montserrat',sans-serif;font-size:1.6rem;font-weight:800;margin:0 0 40px;color:var(--text)">Keep Reading</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px">
+      <a href="active-living-1.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='rgba(179,0,24,.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
+        <div style="height:160px;overflow:hidden"><img src="./pics/IMG_7889 2.jpg" alt="Active Living in East London: The Complete Park Training Guide" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:16px 18px 20px">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Outdoor</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;line-height:1.35;color:var(--text)">Active Living in East London: The Complete Park Training Guide</div>
         </div>
-                    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/pricing">Services &amp; Pricing</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
-        <li><a href="/active-living-1">Blog</a></li>
-        <li><a href="/ai-plans">AI Plans</a></li>
-
-        <li><a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li>
-          <a href="/contact" class="Nav-consultation-button">Book Now</a>
-        </li>
-
-      </ul>
-            <button class="Navbtn" aria-label="Open navigation menu">
-      <span class="line1"></span>
-      <span class="line2"></span>
-      <span class="line3"></span>
-    </button>
-    </nav>
- </div>
-
-    <div class="content-container ">
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="/active-living-2" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="/active-living-1">1</a></li>
-          <li class="page-item"><a class="page-link" href="/active-living-2">2</a></li>
-          <li class="page-item"><a class="page-link" href="/active-living-3">3</a></li>
-          <li class="page-item"><a class="page-link" href="/nutrition">4</a></li>
-          <li class="page-item"><a class="page-link" href="/workouts">5</a></li>
-          <li class="page-item"><a class="page-link" href="/programs">6</a></li>
-          <li class="page-item"><a class="page-link" href="/park-guide">7</a></li>
-          <li class="page-item"><a class="page-link" href="/blog-post">8</a></li>
-          <li class="page-item">
-            <a class="page-link" href="/nutrition" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-
-      <h1 >Train, Play, Repeat: Your Ultimate Guide to Outdoor Fitness & Recreation</h1>
-
-      <br>
-
-      <div class="Lloyd-Park-container">
-        <h2><span class="redText">Lloyd Park Walthamstow:</span> Training & Facilities </h2>
-
-        <img src="./pics/IMG_7857 3.jpg" alt="Outdoor basketball court and community fitness facilities at Lloyd Park Walthamstow East London">
-        <h3 class="redText">Premium Outdoor Exercise & Community Amenities</h3>
-
-
-        
-
-         <div class="List-Container">
-          <ol class="List">
-            <li>A modern, well-maintained outdoor gym equipped with essential resistance machines for full-body strength training.</li>
-            <li>Professional tennis courts and lawn bowling greens that are easily bookable through the Waltham Forest council website.</li>
-            <li>Expansive green spaces perfectly suited for high-intensity circuit training, sports drills, and large group fitness classes.</li>
-            <li>A state-of-the-art children’s playground designed for inclusive play, allowing parents to stay active while kids explore.</li>
-            <li>Clean and accessible public toilet facilities that are consistently maintained throughout the park's opening hours.</li>
-            <li>Peaceful landscaped gardens providing the perfect natural backdrop for cool-down routines, yoga, or a healthy picnic.</li>
-            <li>An on-site café offering a variety of fresh refreshments, artisan coffee, and healthy post-workout snack options.</li>
-          </ol>
+      </a>
+      <a href="east-london-park-training.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='rgba(179,0,24,.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
+        <div style="height:160px;overflow:hidden"><img src="./pics/IMG_7860 3.jpg" alt="Outdoor Park Personal Training East London" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:16px 18px 20px">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Outdoor</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;line-height:1.35;color:var(--text)">Outdoor Park Personal Training East London</div>
         </div>
-
-      </div>
-
-      <div class="Victory-Park-container">
-        <h2><span class="redText">Victory Park:</span> Community Fitness & Calisthenics</h2>
-
-        <img src="./pics/IMG_7860 3.jpg" alt="Group personal training session and outdoor bodyweight exercises at Victory Park East London">
-        <h3 class="redText">Local Training Spots for Bodyweight & Running</h3>
-
-
-        
-
-         <div class="List-Container">
-          <ol class="List">
-            <li>Specialized outdoor fitness equipment featuring pull-up and dip bars, perfect for calisthenics and upper-body conditioning.</li>
-            <li>Flat, versatile open areas that serve as the ideal foundation for bodyweight exercises, agility drills, and personal training.</li>
-            <li>A dedicated small-sided football court perfect for practicing footwork, shooting skills, or a casual game with friends.</li>
-            <li>A classic children’s playground featuring swings and slides, providing a safe space for local families to enjoy.</li>
-            <li>A lack of permanent on-site toilet facilities means users should plan their training sessions accordingly.</li>
-            <li>Strategic picnic spots and wooden benches positioned around the park for resting between sets or enjoying the outdoors.</li>
-            <li>A network of well-maintained pathways that provide a smooth surface for running loops, sprints, and interval training.</li>
-          </ol>
+      </a>
+      <a href="workouts.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='rgba(179,0,24,.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
+        <div style="height:160px;overflow:hidden"><img src="./pics/IMG_8710 2.JPG" alt="The Ultimate Park & Home Workout Guide" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:16px 18px 20px">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Training</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;line-height:1.35;color:var(--text)">The Ultimate Park & Home Workout Guide</div>
         </div>
+      </a>
+    </div>
+    <div style="margin-top:36px;text-align:center">
+      <a href="blog.html" style="display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);color:var(--text-dim);background:transparent;border-radius:12px;padding:14px 28px;font-size:.88rem;font-weight:700;text-decoration:none">← Back to All Articles</a>
+    </div>
+  </div>
+</section>
+<footer class="db-footer">
+  <div class="db-footer-inner">
+    <div><div class="db-footer-brand"><img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy"><div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">★★★★★ Google Rated</span></div></div><p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2016.</p></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Pages</div><a href="about.html">About Dean</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Locations</div><a href="outdoor-pt-walthamstow.html">Walthamstow</a><a href="personal-trainer-ilford.html">Ilford</a><a href="personal-trainer-hackney.html">Hackney</a><a href="personal-trainer-chingford.html">Chingford</a><a href="personal-trainer-dagenham.html">Dagenham</a></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Get In Touch</div><a href="tel:+447752300937" class="db-footer-contact-item">07752 300937</a><a href="mailto:dbs-workouts@yahoo.com" class="db-footer-contact-item">dbs-workouts@yahoo.com</a><a href="https://wa.me/447752300937" class="db-footer-contact-item" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+  <div class="db-footer-bottom"><p>© 2025 DB's Workouts. All rights reserved. · <a href="privacy-policy.html">Privacy Policy</a></p></div>
+</footer>
 
-      </div>
+<a href="https://wa.me/447752300937" class="db-wa-fab" aria-label="WhatsApp Dean" target="_blank" rel="noopener"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.55 4.123 1.511 5.863L.057 23.01a.5.5 0 00.633.633l5.183-1.461A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.654-.49-5.193-1.349l-.371-.219-3.838 1.082 1.093-3.783-.238-.39A9.943 9.943 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
 
-      <div class="Barking-Riverside-container">
-        <h2><span class="redText">Barking Riverside:</span> Little Bee Park Training</h2>
-<img src="./pics/IMG_8670 2.jpg" alt="Outdoor training at Little Bee Park  East London">
+<script src="Script/cookie-consent.js" defer></script>
+<script>
+  var nav=document.getElementById('dbNav'),tog=document.getElementById('navToggle'),mob=document.getElementById('mobileMenu');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);},{passive:true});
+  tog.addEventListener('click',function(){var o=mob.classList.toggle('open');tog.classList.toggle('active',o);document.body.style.overflow=o?'hidden':'';});
+  var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');ro.unobserve(x.target);}});},{threshold:.1});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ro.observe(el);});
+</script>
 
-        <h3 class="redText">Modern Riverside Fitness & Endurance Running</h3>
-
-
-        
-
-         <div class="List-Container">
-          <ol class="List">
-            <li>Expansive open-plan areas that offer plenty of room for high-intensity interval training (HIIT) and group bodyweight circuits.</li>
-            <li>A creatively designed, bee-themed children’s playground equipped with engaging climbing frames and interactive elements.</li>
-            <li>The park lacks on-site toilet facilities, so it is best suited for shorter, high-impact training sessions.</li>
-            <li>Designated picnic areas with sturdy wooden benches, offering a place to recharge after a riverside workout.</li>
-            <li>Excellent running connectivity, with paths leading directly onto the Thames Path for those seeking long-distance endurance training.</li>
-            <li>As the park has limited natural shade, we recommend planning your outdoor workouts for the cooler morning or evening hours during summer.</li>
-          </ol>
-        </div>
-
-      </div>
-</div>
-
-
-<div class="desktopOnly">
-  <div class="whiteSpace"></div>
-</div>
-
-        <footer>
-        <div class="footer-columns">
-            <div class="footer-col">
-                <p class="footer-brand">DB's Workouts</p>
-                <p class="footer-tagline">Outdoor PT &middot; East London</p>
-                <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 69 Reviews</p>
-            </div>
-            <div class="footer-col">
-                <p class="footer-heading">Pages</p>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/pricing">Services &amp; Pricing</a>
-                <a href="/testimonials">Testimonials</a>
-                <a href="/contact">Contact</a>
-                <a href="/active-living-1">Blog</a>
-                <a href="/ai-plans">AI Plans</a>
-                <a href="/tools">Free Fitness Tools</a>
-                <a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing – DeanTBStudio by DB's Workouts</a>
-            </div>
-            <div class="footer-col">
-                <p class="footer-heading">Contact</p>
-                <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
-                    <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" decoding="async" alt="WhatsApp"> WhatsApp
-                </a>
-                <a href="mailto:dbs-workouts@yahoo.com" target="_blank" rel="noopener">
-                    <img src="./pics/mail.png" width="22" height="22" loading="lazy" decoding="async" alt="Email"> Email
-                </a>
-                <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">
-                    <img src="./pics/instagram 2.png" width="22" height="22" loading="lazy" decoding="async" alt="Instagram"> Instagram
-                </a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DB&#39;s Workouts &middot; Dean Burt &nbsp;&middot;&nbsp; <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a></p>
-        </div>
-    </footer>
-
-<script src="./Script/navbar.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(regs) {
-          regs.forEach(function(r) { r.unregister(); });
-        });
-      }
-    </script>
 </body>
-
 </html>

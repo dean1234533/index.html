@@ -1,34 +1,58 @@
+// ── New db-nav system (location pages + newer pages)
+var dbToggle = document.getElementById('navToggle')
+var dbMenu = document.getElementById('mobileMenu')
+if (dbToggle && dbMenu) {
+    var dbOpen = false
+    dbToggle.addEventListener('click', function() {
+        dbOpen = !dbOpen
+        dbToggle.classList.toggle('active', dbOpen)
+        dbMenu.classList.toggle('open', dbOpen)
+        dbToggle.setAttribute('aria-expanded', dbOpen)
+        dbMenu.setAttribute('aria-hidden', !dbOpen)
+    })
+    dbMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+            dbOpen = false
+            dbToggle.classList.remove('active')
+            dbMenu.classList.remove('open')
+        })
+    })
+}
+
+// ── Old navBar system (older pages)
 const nav = document.querySelector(".navBar")
 const btn = document.querySelector(".Navbtn")
 const waBtn = document.querySelector(".callBackStickyButton")
 
-function dropDown() {
-    nav.classList.toggle("Active")
-    if (waBtn) waBtn.style.display = nav.classList.contains("Active") ? "none" : ""
-}
+if (nav && btn) {
+    function dropDown() {
+        nav.classList.toggle("Active")
+        if (waBtn) waBtn.style.display = nav.classList.contains("Active") ? "none" : ""
+    }
 
-btn.addEventListener("click", () => {
-    dropDown()
-})
+    btn.addEventListener("click", () => {
+        dropDown()
+    })
 
-// Blog dropdown — tap to toggle on mobile
-const blogToggle = document.querySelector(".nav-dropdown-toggle")
-if (blogToggle) {
-    blogToggle.addEventListener("click", function(e) {
-        if (window.innerWidth < 1200) {
-            e.preventDefault()
-            this.closest(".nav-dropdown").classList.toggle("open")
+    // Blog dropdown — tap to toggle on mobile
+    const blogToggle = document.querySelector(".nav-dropdown-toggle")
+    if (blogToggle) {
+        blogToggle.addEventListener("click", function(e) {
+            if (window.innerWidth < 1200) {
+                e.preventDefault()
+                this.closest(".nav-dropdown").classList.toggle("open")
+            }
+        })
+    }
+
+    // Close dropdown when nav closes
+    btn.addEventListener("click", () => {
+        if (!nav.classList.contains("Active")) {
+            const dropdown = document.querySelector(".nav-dropdown")
+            if (dropdown) dropdown.classList.remove("open")
         }
     })
 }
-
-// Close dropdown when nav closes
-btn.addEventListener("click", () => {
-    if (!nav.classList.contains("Active")) {
-        const dropdown = document.querySelector(".nav-dropdown")
-        if (dropdown) dropdown.classList.remove("open")
-    }
-})
 
 
 let firstTouch = true;

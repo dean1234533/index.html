@@ -52,25 +52,40 @@
 
   function showBanner() {
     var style = document.createElement('style');
-    style.textContent = '#dbw-cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#18181b;border-top:1px solid #3f3f46;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between;font-family:inherit}#dbw-cookie-banner p{margin:0;color:#d4d4d8;font-size:13px;max-width:680px;line-height:1.5}#dbw-cookie-banner a{color:#B30018}#dbw-cookie-btns{display:flex;gap:8px;flex-shrink:0}#dbw-cookie-decline{padding:7px 14px;border-radius:6px;border:1px solid #52525b;background:transparent;color:#a1a1aa;font-size:13px;cursor:pointer}#dbw-cookie-accept{padding:7px 14px;border-radius:6px;border:none;background:#B30018;color:#fff;font-size:13px;font-weight:600;cursor:pointer}';
+    style.textContent = '#dbw-cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#18181b;border-top:1px solid #3f3f46;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between;font-family:inherit}#dbw-cookie-banner p{margin:0;color:#d4d4d8;font-size:13px;max-width:680px;line-height:1.5}#dbw-cookie-banner a{color:#ff5a6e;display:inline-flex;align-items:center;min-height:24px}#dbw-cookie-btns{display:flex;gap:8px;flex-shrink:0}#dbw-cookie-decline{padding:7px 14px;border-radius:6px;border:1px solid #71717a;background:transparent;color:#d4d4d8;font-size:13px;cursor:pointer}#dbw-cookie-accept{padding:7px 14px;border-radius:6px;border:none;background:#B30018;color:#fff;font-size:13px;font-weight:600;cursor:pointer}';
     document.head.appendChild(style);
 
     var banner = document.createElement('div');
     banner.id = 'dbw-cookie-banner';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Cookie consent');
-    banner.innerHTML = '<p>We use analytics cookies (Google Analytics &amp; Microsoft Clarity) to improve this site. Your data stays on your device. <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></p><div id="dbw-cookie-btns"><button id="dbw-cookie-decline">Decline</button><button id="dbw-cookie-accept">Accept</button></div>';
+    banner.innerHTML = '<p>We use analytics cookies (Google Analytics &amp; Microsoft Clarity) to improve this site. Your data stays on your device. <a href="/privacy-policy" target="_blank" rel="noopener" aria-label="Read the privacy policy">Privacy Policy</a></p><div id="dbw-cookie-btns"><button id="dbw-cookie-decline" aria-label="Decline analytics cookies">Decline</button><button id="dbw-cookie-accept" aria-label="Accept analytics cookies">Accept</button></div>';
     document.body.appendChild(banner);
+
+    function dismissBanner() {
+      var fab = document.querySelector('.db-wa-fab');
+      if (fab) fab.style.bottom = '';
+      banner.remove();
+    }
+
+    // push FAB above the banner
+    requestAnimationFrame(function() {
+      var fab = document.querySelector('.db-wa-fab');
+      if (fab) {
+        var bannerH = banner.offsetHeight || 70;
+        fab.style.bottom = (bannerH + 12) + 'px';
+      }
+    });
 
     document.getElementById('dbw-cookie-accept').addEventListener('click', function () {
       setConsent('accepted');
-      banner.remove();
+      dismissBanner();
       loadAnalytics();
     });
 
     document.getElementById('dbw-cookie-decline').addEventListener('click', function () {
       setConsent('declined');
-      banner.remove();
+      dismissBanner();
     });
   }
 

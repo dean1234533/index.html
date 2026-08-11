@@ -1,5 +1,6 @@
 // @ts-nocheck
 import React, { useState, useRef } from "react";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { track } from "@/lib/analytics";
@@ -104,7 +105,7 @@ function NumInput({ value, onChange, placeholder, error }) {
 // ─── INPUT FORM ────────────────────────────────────────────────────────────────
 
 function InputForm({ onGenerate }) {
-  const [form, setForm] = useState({
+  const [form, setForm] = useLocalStorage('db_tool_workout_plan', {
     goal: "", gender: "", age: "", weight: "", height: "",
     level: "", trainingDays: 3, injuries: "",
   });
@@ -468,7 +469,7 @@ export default function WorkoutPlanGenerator() {
             to="/tools"
             className="inline-flex items-center gap-2 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B30018]"
           >
-            <img src={import.meta.env.BASE_URL + "logo.png"} alt="DB's Workouts" className="h-9 w-9 rounded-xl object-cover" />
+            <img src={import.meta.env.BASE_URL + "logo.png"} alt="DB's Workouts" className="h-14 w-14 object-contain" />
             <div className="text-left">
               <p className="text-sm font-black leading-none text-white">DB's Workouts</p>
               <p className="mt-0.5 text-[11px] font-medium leading-none text-zinc-500">← Back to Fitness Tools</p>

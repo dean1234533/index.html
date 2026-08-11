@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,25 +8,24 @@
 
   <meta name="description" content="Get fit anywhere with no gym required. Complete guide to bodyweight exercises, park workouts, and HIIT routines for all fitness levels in East London.">
   <meta name="keywords" content="no gym workouts, park exercise guide, home workout routines, outdoor fitness training, equipment-free exercises, bodyweight workout plan">
-<meta name="author" content="Dean Burt">
-<meta name="robots" content="index, follow">
-<meta name="geo.region" content="GB-ENG">
-<meta name="geo.placename" content="East London">
-<meta name="theme-color" content="#000000">
+  <meta name="author" content="Dean Burt">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="GB-ENG">
+  <meta name="geo.placename" content="East London">
+  <meta name="theme-color" content="#000000">
 
   <link rel="canonical" href="https://dbworkouts.co.uk/workouts">
 
-<link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-<link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">  
-
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+  <link rel="icon" href="./pics/IMG_8101.JPG" type="image/png" sizes="128x128">
 
   <meta property="og:title" content="Park & Home Workout Guide: No Gym Required | DB's Workouts">
   <meta property="og:description" content="Get fit anywhere with no gym required. Complete guide to bodyweight exercises, park workouts, and HIIT routines for all fitness levels.">
   <meta property="og:url" content="https://dbworkouts.co.uk/workouts">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="DB's Workouts">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -63,196 +62,193 @@
   ]
   </script>
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Styles/workouts.css">
-  <link rel="stylesheet" href="./Styles/navbar.css">
-  <link rel="manifest" href="/manifest.json">
-  <script src="/Script/cookie-consent.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/db.css?v=9">
+
   <style>
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; }
-    h1,h2,h3,h4,h5,h6 { font-family: 'Inter', sans-serif !important; font-weight: 700 !important; }
-    [data-bs-theme="dark"] { --bs-body-bg: #0a0a0a; --bs-body-color: #e8e8e8; }
-    [data-bs-theme="dark"] .card { background-color: #141414 !important; border-color: rgba(255,255,255,0.07) !important; }
-    [data-bs-theme="dark"] .bg-light, [data-bs-theme="dark"] .bg-white { background-color: #111 !important; }
-    [data-bs-theme="dark"] a { color: #e8e8e8; }
-    [data-bs-theme="dark"] a:hover { color: #fff; }
-    [data-bs-theme="dark"] h1,
-    [data-bs-theme="dark"] h2,
-    [data-bs-theme="dark"] h3 { color: #ffffff; }
+    .article-hero{height:460px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+    .article-hero-bg{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;filter:brightness(.42)}
+    .article-hero-content{position:relative;z-index:1;max-width:1200px;margin:0 auto;width:100%;padding:0 24px 52px}
+    .article-body{max-width:760px;margin:0 auto;padding:64px 24px}
+    .article-body h2{font-size:1.4rem;margin:44px 0 14px;padding-top:14px;border-top:1px solid var(--border)}
+    .article-body p{color:var(--text-dim);line-height:1.85;margin-bottom:16px;font-size:.97rem}
+    .article-body ul{margin:16px 0 20px;display:flex;flex-direction:column;gap:8px}
+    .article-body ul li{color:var(--text-dim);font-size:.92rem;padding-left:20px;position:relative;line-height:1.6}
+    .article-body ul li::before{content:'→';color:var(--accent);position:absolute;left:0;font-weight:700}
+    .article-img{width:100%;border-radius:14px;margin:28px 0;border:1px solid var(--border);object-fit:cover;max-height:400px;display:block}
+    .article-callout{background:rgba(179,0,24,.06);border:1px solid rgba(179,0,24,.25);border-radius:14px;padding:28px 32px;margin:40px 0}
+    .article-author{display:flex;align-items:center;gap:20px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin:48px 0}
+    .article-author img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0}
+    .article-meta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px}
+    .article-meta span{font-size:.8rem;color:rgba(255,255,255,.5)}
+    @media(max-width:600px){.article-hero{height:360px}}
   </style>
+<style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
 </head>
 
 <body>
-  
-   
-   <div class="navContainer">
-  <nav class="navBar">
-        <div class="logoContainer">
-            <img src="logo.png" alt="DB's Workouts outdoor personal training logo" fetchpriority="high">
-        </div>
-                    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/pricing">Services &amp; Pricing</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
-        <li><a href="/active-living-1">Blog</a></li>
-        <li><a href="/ai-plans">AI Plans</a></li>
 
-        <li><a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li>
-          <a href="/contact" class="Nav-consultation-button">Book Now</a>
-        </li>
-
-      </ul>
-            <button class="Navbtn" aria-label="Open navigation menu">
-      <span class="line1"></span>
-      <span class="line2"></span>
-      <span class="line3"></span>
-    </button>
-
-    </nav>
- </div>
-
-    <div class="content-container ">
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="/nutrition" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li class="page-item"><a class="page-link" href="/active-living-1">1</a></li>
-    <li class="page-item"><a class="page-link" href="/active-living-2">2</a></li>
-    <li class="page-item"><a class="page-link" href="/active-living-3">3</a></li>
-    <li class="page-item"><a class="page-link" href="/nutrition">4</a></li>
-    <li class="page-item"><a class="page-link" href="#">5</a></li>
-    <li class="page-item"><a class="page-link" href="/programs">6</a></li>
-    <li class="page-item"><a class="page-link" href="/park-guide">7</a></li>
-    <li class="page-item"><a class="page-link" href="/blog-post">8</a></li>
-    <li class="page-item"><a class="page-link" href="/programs" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-  </ul>
+<nav class="db-nav" id="dbNav">
+  <div class="db-nav-inner">
+    <a href="index.html" class="db-nav-logo"><img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy"><span>DB's Workouts</span></a>
+    <div class="db-nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
+    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="db-mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
+  </div>
 </nav>
+<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
 
-      <h1 >The Ultimate  Park & Home Workout Guide</h1> 
-      
-      <h2 class="redText">Professional Fitness with No Gym Required
-</h2>
-        <a href="#" class="Workout-img">
-            <img src="./pics/IMG_8096.JPG" alt="Fitness enthusiasts doing a bicep exercise using training equipment at eastham central park">
-          </a>
+<header class="article-hero">
+  <img class="article-hero-bg" src="./pics/IMG_8710 2.JPG" alt="Squat exercise outdoors – no gym workout guide" loading="eager">
+  <div class="article-hero-content">
+    <div class="article-meta">
+      <span>Blog</span>
+      <span>·</span>
+      <span>Workout Guide</span>
+      <span>·</span>
+      <span>8 min read</span>
+    </div>
+    <h1 style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(1.6rem,4vw,2.6rem);color:#fff;margin:12px 0 0;line-height:1.15;max-width:700px">The Ultimate Park &amp; Home Workout Guide: No Gym Required</h1>
+  </div>
+</header>
 
-      
-      <p>As a personal trainer, I'm often asked how to stay fit without access to a full gym. The truth is, some of the most effective workouts can be done right in your local park or living room. Whether you're looking to save on gym fees or simply prefer the convenience of working out on your own terms, I've compiled my top bodyweight exercises to get you results anywhere.</p>
+<main class="article-body">
 
-      <h2><span class="redText">Elite Bodyweight Training:</span> No Equipment Needed</h2>
-      
-       
+  <section data-reveal>
+    <p>As a personal trainer, I'm often asked how to stay fit without access to a full gym. The truth is, some of the most effective workouts can be done right in your local park or living room. Whether you're looking to save on gym fees or simply prefer the convenience of working out on your own terms, I've compiled my top bodyweight exercises to get you results anywhere.</p>
+  </section>
 
-      <p class="Centered-Text">Master these fundamental movements to build strength and endurance using nothing but your own body weight.</p>
+  <section data-reveal>
+    <h2>Elite Bodyweight Training: No Equipment Needed</h2>
 
-      <h3>Upper Body: <span class="redText">Push-Up Variations</span></h3>
-     
-       <div class="List-Container">
-        <ol class="List">
-          <li><strong>Classic Push-Ups:</strong> A foundational movement targeting the chest, anterior deltoids, and triceps while engaging the core.</li>
-          <li><strong>Decline Push-Ups:</strong> By placing your feet on a park bench or step, you shift more weight to your upper chest and shoulders for a harder challenge.</li>
-          <li><strong>Diamond Push-Ups:</strong> Position your hands close together to form a diamond shape; this narrow grip places maximum emphasis on the triceps.</li>
-        </ol>
-      </div>
+    <p>Master these fundamental movements to build strength and endurance using nothing but your own body weight.</p>
 
-      <h3><span class="redText">Strength & Posture:</span> Pull Exercise Options</h3>
-      
-      <div class="List-Container">
-        <ol class="List">
-          <li><strong>Inverted Rows:</strong> Using a sturdy park table or low horizontal bar, pull your chest toward the surface to build thick back muscles and better posture.</li>
-          <li><strong>Pull-Ups:</strong> Utilize park bars or a home doorway bar to master this essential vertical pulling movement for back and arm development.</li>
-          <li><strong>Reverse Grip (Chin-ups):</strong> Changing your hand position to palms-facing-you allows the biceps to contribute more, helping you build pull-up strength.</li>
-        </ol>
-      </div>
+    <img class="article-img" src="./pics/IMG_7889 2.jpg" alt="Running outdoors in East London park – cardio training" loading="lazy">
 
-      <h3>Lower Body Builders: <span class="redText">Calisthenics for Legs</span></h3>
-      
-      <div class="List-Container">
-        <ol class="List">
-          <li><strong>Bodyweight Squats:</strong> The fundamental movement for building functional leg strength and improving joint mobility.</li>
-          <li><strong>Bulgarian Split Squats:</strong> Elevate one foot on a park bench; this unilateral exercise fixes muscle imbalances and hits the quads and glutes hard.</li>
-          <li><strong>Walking Lunges:</strong> Perfect for covering distance on park paths while building stability and single-leg strength.</li>
-          <li><strong>Jump Squats:</strong> Incorporate explosive plyometrics to increase your heart rate and build powerful fast-twitch muscle fibers.</li>
-          <li><strong>Glute Bridges:</strong> Focused isolation for the posterior chain; drive through the heels to strengthen the glutes and lower back.</li>
-        </ol>
-      </div>
+    <h2>Upper Body: Push-Up Variations</h2>
 
-      <h3><span class="redText">Core Crushers:</span> Functional Midsection Training</h3>
-      
-       <div class="List-Container">
-        <ol class="List">
-          <li><strong>Planks:</strong> Hold a rigid position to build endurance in the deep abdominal muscles and protect your spine during other exercises.</li>
-          <li><strong>Mountain Climbers:</strong> A dynamic movement that challenges your core stability while providing a significant cardiovascular boost.</li>
-          <li><strong>Bicycle Crunches:</strong> The most effective way to target the obliques and upper abdominal wall simultaneously through rotation.</li>
-        </ol>
-      </div>
- </div>
-     
-<div class="desktopOnly">
-  <div class="whiteSpace"></div>
-</div>
+    <ul>
+      <li><strong>Classic Push-Ups:</strong> A foundational movement targeting the chest, anterior deltoids, and triceps while engaging the core.</li>
+      <li><strong>Decline Push-Ups:</strong> By placing your feet on a park bench or step, you shift more weight to your upper chest and shoulders for a harder challenge.</li>
+      <li><strong>Diamond Push-Ups:</strong> Position your hands close together to form a diamond shape; this narrow grip places maximum emphasis on the triceps.</li>
+    </ul>
+  </section>
 
-    <section class="home-cta-section">
-        <h2 class="home-cta-title">Ready to <span class="redText">Train With Dean?</span></h2>
-        <p class="home-cta-sub">Book your free no-commitment consultation today. No contract. No pressure.</p>
-        <a href="/contact" class="consultation-btn">Book Free Consultation</a>
-    </section>
+  <section data-reveal>
+    <h2>Strength &amp; Posture: Pull Exercise Options</h2>
 
-        <footer>
-        <div class="footer-columns">
-            <div class="footer-col">
-                <p class="footer-brand">DB's Workouts</p>
-                <p class="footer-tagline">Outdoor PT &middot; East London</p>
-                <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 69 Reviews</p>
-            </div>
-            <div class="footer-col">
-                <p class="footer-heading">Pages</p>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/pricing">Services &amp; Pricing</a>
-                <a href="/testimonials">Testimonials</a>
-                <a href="/contact">Contact</a>
-                <a href="/active-living-1">Blog</a>
-                <a href="/ai-plans">AI Plans</a>
-                <a href="/tools">Free Fitness Tools</a>
-                <a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing – DeanTBStudio by DB's Workouts</a>
-            </div>
-            <div class="footer-col">
-                <p class="footer-heading">Contact</p>
-                <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
-                    <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" decoding="async" alt="WhatsApp"> WhatsApp
-                </a>
-                <a href="mailto:dbs-workouts@yahoo.com" target="_blank" rel="noopener">
-                    <img src="./pics/mail.png" width="22" height="22" loading="lazy" decoding="async" alt="Email"> Email
-                </a>
-                <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">
-                    <img src="./pics/instagram 2.png" width="22" height="22" loading="lazy" decoding="async" alt="Instagram"> Instagram
-                </a>
-            </div>
+    <ul>
+      <li><strong>Inverted Rows:</strong> Using a sturdy park table or low horizontal bar, pull your chest toward the surface to build thick back muscles and better posture.</li>
+      <li><strong>Pull-Ups:</strong> Utilise park bars or a home doorway bar to master this essential vertical pulling movement for back and arm development.</li>
+      <li><strong>Reverse Grip (Chin-ups):</strong> Changing your hand position to palms-facing-you allows the biceps to contribute more, helping you build pull-up strength.</li>
+    </ul>
+  </section>
+
+  <section data-reveal>
+    <h2>Lower Body Builders: Calisthenics for Legs</h2>
+
+    <img class="article-img" src="./pics/IMG_7911_SnapseedCopy.jpg" alt="Crunch exercise – core training outdoors" loading="lazy">
+
+    <ul>
+      <li><strong>Bodyweight Squats:</strong> The fundamental movement for building functional leg strength and improving joint mobility.</li>
+      <li><strong>Bulgarian Split Squats:</strong> Elevate one foot on a park bench; this unilateral exercise fixes muscle imbalances and hits the quads and glutes hard.</li>
+      <li><strong>Walking Lunges:</strong> Perfect for covering distance on park paths while building stability and single-leg strength.</li>
+      <li><strong>Jump Squats:</strong> Incorporate explosive plyometrics to increase your heart rate and build powerful fast-twitch muscle fibers.</li>
+      <li><strong>Glute Bridges:</strong> Focused isolation for the posterior chain; drive through the heels to strengthen the glutes and lower back.</li>
+    </ul>
+  </section>
+
+  <div class="article-callout" data-reveal>
+    <h2 style="margin:0 0 16px;padding:0;border:none;font-size:1.15rem">Core Crushers: Functional Midsection Training</h2>
+    <ul>
+      <li><strong>Planks:</strong> Hold a rigid position to build endurance in the deep abdominal muscles and protect your spine during other exercises.</li>
+      <li><strong>Mountain Climbers:</strong> A dynamic movement that challenges your core stability while providing a significant cardiovascular boost.</li>
+      <li><strong>Bicycle Crunches:</strong> The most effective way to target the obliques and upper abdominal wall simultaneously through rotation.</li>
+    </ul>
+  </div>
+
+  <section data-reveal>
+    <h2>Train Anywhere with Dean</h2>
+
+    <img class="article-img" src="./pics/IMG_7858 3.jpg" alt="Boxing training outdoors – East London personal trainer" loading="lazy">
+
+    <p>These movements form the core of every park and home programme I run with clients across East London. Whether you're training in Walthamstow, Ilford, or your back garden, there is no excuse not to get a great session in. No gym, no problem.</p>
+
+    <p>If you want a structured programme tailored to your goals, book a free consultation and I'll build a plan around what works for your schedule and fitness level.</p>
+  </section>
+
+  <div class="article-author" data-reveal>
+    <img src="./logo.png" alt="Dean Burt – DB's Workouts">
+    <div>
+      <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:1rem;margin-bottom:6px">Dean Burt</div>
+      <div style="font-size:.85rem;color:var(--text-dim);line-height:1.6">REPs certified personal trainer based in East London. Specialist in outdoor and bodyweight training with REPs certified since 2016.</div>
+      <a href="contact.html" style="display:inline-block;margin-top:10px;font-size:.8rem;color:var(--accent);font-weight:600">Book a free consultation →</a>
+    </div>
+  </div>
+
+</main>
+
+
+<!-- MORE ARTICLES -->
+<section style="background:var(--surface);border-top:1px solid var(--border);padding:72px 24px">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">More From the Blog</div>
+    <h2 style="font-family:'Montserrat',sans-serif;font-size:1.6rem;font-weight:800;margin:0 0 40px;color:var(--text)">Keep Reading</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px">
+      <a href="active-living-1.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='rgba(179,0,24,.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
+        <div style="height:160px;overflow:hidden"><img src="./pics/IMG_7889 2.jpg" alt="Active Living in East London: The Complete Park Training Guide" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:16px 18px 20px">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Outdoor</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;line-height:1.35;color:var(--text)">Active Living in East London: The Complete Park Training Guide</div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DB&#39;s Workouts &middot; Dean Burt &nbsp;&middot;&nbsp; <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a></p>
+      </a>
+      <a href="east-london-park-training.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='rgba(179,0,24,.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
+        <div style="height:160px;overflow:hidden"><img src="./pics/IMG_7860 3.jpg" alt="Outdoor Park Personal Training East London" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:16px 18px 20px">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Outdoor</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;line-height:1.35;color:var(--text)">Outdoor Park Personal Training East London</div>
         </div>
-    </footer>
+      </a>
+      <a href="park-guide.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='rgba(179,0,24,.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
+        <div style="height:160px;overflow:hidden"><img src="./pics/IMG_7933.jpg" alt="Park & Home Workout Guide for East London" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:16px 18px 20px">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Outdoor</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;line-height:1.35;color:var(--text)">Park & Home Workout Guide for East London</div>
+        </div>
+      </a>
+    </div>
+    <div style="margin-top:36px;text-align:center">
+      <a href="blog.html" style="display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);color:var(--text-dim);background:transparent;border-radius:12px;padding:14px 28px;font-size:.88rem;font-weight:700;text-decoration:none">← Back to All Articles</a>
+    </div>
+  </div>
+</section>
+<footer class="db-footer">
+  <div class="db-footer-inner">
+    <div><div class="db-footer-brand"><img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy"><div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">★★★★★ Google Rated</span></div></div><p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2016.</p></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Pages</div><a href="about.html">About Dean</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Locations</div><a href="outdoor-pt-walthamstow.html">Walthamstow</a><a href="personal-trainer-ilford.html">Ilford</a><a href="personal-trainer-hackney.html">Hackney</a><a href="personal-trainer-chingford.html">Chingford</a><a href="personal-trainer-dagenham.html">Dagenham</a></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Get In Touch</div><a href="tel:+447752300937" class="db-footer-contact-item">07752 300937</a><a href="mailto:dbs-workouts@yahoo.com" class="db-footer-contact-item">dbs-workouts@yahoo.com</a><a href="https://wa.me/447752300937" class="db-footer-contact-item" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+  <div class="db-footer-bottom"><p>© 2025 DB's Workouts. All rights reserved. · <a href="privacy-policy.html">Privacy Policy</a></p></div>
+</footer>
+<a href="https://wa.me/447752300937" class="db-wa-fab" aria-label="WhatsApp Dean" target="_blank" rel="noopener"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.55 4.123 1.511 5.863L.057 23.01a.5.5 0 00.633.633l5.183-1.461A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.654-.49-5.193-1.349l-.371-.219-3.838 1.082 1.093-3.783-.238-.39A9.943 9.943 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
 
-<script src="./Script/navbar.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(regs) {
-          regs.forEach(function(r) { r.unregister(); });
-        });
-      }
-    </script>
+<script src="Script/cookie-consent.js" defer></script>
+<script>
+  var nav=document.getElementById('dbNav'),tog=document.getElementById('navToggle'),mob=document.getElementById('mobileMenu');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);},{passive:true});
+  tog.addEventListener('click',function(){var o=mob.classList.toggle('open');tog.classList.toggle('active',o);document.body.style.overflow=o?'hidden':'';});
+  var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');ro.unobserve(x.target);}});},{threshold:.1});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ro.observe(el);});
+</script>
+
 </body>
-
-</html>               
+</html>

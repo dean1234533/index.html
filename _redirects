@@ -23,7 +23,6 @@
 /shop                       /blog-post                  301
 /smart-life                 /ai-plans                   301
 /plans                      /pricing                    301
-/blog                       /blog-post                  301
 /services                   /pricing                    301
 /fitness-tools              /tools                      301
 
@@ -35,3 +34,8 @@
 /Blog.html                  /blog-post                  301
 /Blog.html/                 /blog-post                  301
 /Blog                       /blog-post                  301
+/Blog%20page%204.html       /blog-post                  301
+
+# Old URLs with spaces (encoded) → clean canonical URLs
+/Privacy%20Policy.html      /privacy-policy             301
+/Terms%20and%20conditions.html /terms-and-conditions    301

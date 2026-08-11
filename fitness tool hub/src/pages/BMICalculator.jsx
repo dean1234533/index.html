@@ -1,5 +1,6 @@
 // @ts-nocheck
 import React, { useMemo, useState } from "react";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { Link } from "react-router-dom";
 import { Calculator, HeartPulse, Ruler, Scale, ShieldCheck, Target, Zap } from "lucide-react";
 import { track } from "@/lib/analytics";
@@ -131,7 +132,7 @@ function NumberInput(props) {
 }
 
 export default function BMICalculator() {
-  const [form, setForm] = useState(initialForm);
+  const [form, setForm] = useLocalStorage('db_tool_bmi', initialForm);
   const [submitted, setSubmitted] = useState(false);
   const [results, setResults] = useState(null);
 
@@ -175,7 +176,7 @@ export default function BMICalculator() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
       <header className="mx-auto max-w-5xl px-4 pb-8 pt-8 sm:pt-12">
         <Link to="/tools" className="inline-flex items-center gap-2.5 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B30018]">
-          <img src={import.meta.env.BASE_URL + 'logo.png'} alt="DB's Workouts" className="h-10 w-10 rounded-xl object-cover" />
+          <img src={import.meta.env.BASE_URL + 'logo.png'} alt="DB's Workouts" className="h-14 w-14 object-contain" />
           <div>
             <p className="text-sm font-black leading-none text-white">DB's Workouts</p>
             <p className="mt-1 text-[11px] font-medium leading-none text-zinc-500">Fitness Tools</p>

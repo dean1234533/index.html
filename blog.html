@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog & Guides | DB's Workouts — East London Personal Trainer</title>
+  <meta name="description" content="Free fitness guides, workout plans, nutrition advice and park training tips from Dean Burt — REPs certified personal trainer in East London.">
+  <meta name="keywords" content="fitness blog east london, personal trainer blog, park workout guide, nutrition tips, outdoor training london">
+  <link rel="canonical" href="https://dbworkouts.co.uk/blog.html">
+  <meta property="og:title" content="Blog & Guides | DB's Workouts">
+  <meta property="og:description" content="Free fitness guides, workout plans, nutrition advice and park training tips from Dean Burt.">
+  <meta property="og:url" content="https://dbworkouts.co.uk/blog.html">
+  <meta property="og:image" content="https://dbworkouts.co.uk/pics/IMG_7860 3.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/db.css?v=9">
+  <style>
+    /* ── Blog hero ── */
+    .blog-hero{
+      padding:128px 24px 80px;text-align:center;position:relative;overflow:hidden;
+      background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(179,0,24,.1) 0%,transparent 65%)
+    }
+    .blog-hero::before{
+      content:'';position:absolute;inset:0;
+      background:radial-gradient(circle at 1px 1px,rgba(255,255,255,.035) 1px,transparent 0) 0 0 / 28px 28px;
+      pointer-events:none
+    }
+    .blog-hero h1{
+      font-family:'Montserrat',sans-serif;font-size:clamp(2.2rem,5vw,3.6rem);
+      font-weight:900;letter-spacing:-.02em;margin-bottom:16px;position:relative
+    }
+    .blog-hero p{
+      color:var(--text-dim);font-size:1.05rem;max-width:520px;
+      margin:0 auto 40px;line-height:1.78;position:relative
+    }
+
+    /* ── Category filter pills ── */
+    .blog-cats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;position:relative}
+    .blog-cat{
+      padding:9px 22px;border-radius:999px;border:1px solid var(--border);
+      font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+      color:var(--text-dim);cursor:pointer;background:transparent;
+      transition:border-color .2s,color .2s,background .2s,box-shadow .2s
+    }
+    .blog-cat:hover{border-color:rgba(179,0,24,.4);color:rgba(220,80,80,.9);background:rgba(179,0,24,.06)}
+    .blog-cat.active{
+      border-color:rgba(179,0,24,.55);color:#fff;
+      background:linear-gradient(135deg,rgba(179,0,24,.25) 0%,rgba(120,0,14,.18) 100%);
+      box-shadow:0 0 0 1px rgba(179,0,24,.2) inset,0 4px 16px rgba(179,0,24,.15)
+    }
+    .blog-card.hidden{display:none}
+
+    /* ── Blog grid ── */
+    .blog-grid-section{max-width:1200px;margin:0 auto;padding:64px 24px 100px}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:28px}
+
+    /* ── Blog cards ── */
+    .blog-card{
+      background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);
+      overflow:hidden;display:flex;flex-direction:column;
+      transition:transform .3s,border-color .3s,box-shadow .3s;
+      text-decoration:none;color:inherit
+    }
+    .blog-card:hover{
+      transform:translateY(-5px);border-color:rgba(179,0,24,.28);
+      box-shadow:0 16px 48px rgba(0,0,0,.55),0 0 0 1px rgba(179,0,24,.1)
+    }
+    .blog-card-img{height:220px;overflow:hidden;flex-shrink:0;position:relative}
+    .blog-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s,filter .45s;filter:brightness(.88)}
+    .blog-card:hover .blog-card-img img{transform:scale(1.05);filter:brightness(1)}
+
+    /* Premium frosted tag badge */
+    .blog-card-tag{
+      position:absolute;top:14px;left:14px;
+      background:rgba(5,5,12,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+      color:rgba(255,130,130,.95);font-size:.68rem;font-weight:700;letter-spacing:.08em;
+      text-transform:uppercase;padding:5px 13px;border-radius:999px;
+      border:1px solid rgba(179,0,24,.45)
+    }
+
+    .blog-card-body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1}
+    .blog-card-meta{font-size:.73rem;color:var(--text-muted);margin-bottom:10px;letter-spacing:.05em;text-transform:uppercase}
+    .blog-card-title{font-family:'Montserrat',sans-serif;font-size:1.15rem;font-weight:800;line-height:1.35;margin-bottom:12px;color:var(--text)}
+    .blog-card-excerpt{font-size:.88rem;color:var(--text-dim);line-height:1.72;flex:1;margin-bottom:22px}
+    .blog-card-cta{
+      font-size:.8rem;font-weight:700;color:var(--accent);letter-spacing:.05em;
+      text-transform:uppercase;display:inline-flex;align-items:center;gap:6px;
+      border-bottom:1px solid transparent;transition:border-color .2s;width:fit-content
+    }
+    .blog-card-cta::after{content:'→';transition:transform .2s}
+    .blog-card:hover .blog-card-cta{border-color:rgba(179,0,24,.4)}
+    .blog-card:hover .blog-card-cta::after{transform:translateX(5px)}
+
+    /* ── Featured card ── */
+    .featured-card{grid-column:1/-1}
+    .featured-card .blog-card-img{height:400px}
+    .featured-card .blog-card-title{font-size:1.65rem}
+    @media(max-width:720px){
+      .featured-card{grid-column:auto}
+      .featured-card .blog-card-img{height:240px}
+      .featured-card .blog-card-title{font-size:1.2rem}
+    }
+    @media(max-width:500px){.blog-grid{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"DB's Workouts Blog","url":"https://dbworkouts.co.uk/blog.html","description":"Fitness guides, workout plans and nutrition advice from Dean Burt, REPs certified personal trainer in East London","author":{"@type":"Person","name":"Dean Burt","url":"https://dbworkouts.co.uk/about.html"}}
+  </script>
+<style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
+</head>
+<body>
+
+<nav class="db-nav" id="dbNav">
+  <div class="db-nav-inner">
+    <a href="index.html" class="db-nav-logo"><img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy"><span>DB's Workouts</span></a>
+    <div class="db-nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
+    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="db-mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
+  </div>
+</nav>
+<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
+
+<section class="blog-hero">
+  <h1>Guides &amp; Blog</h1>
+  <p>Free training advice, workout plans, nutrition tips and park fitness guides — straight from Dean's decade of coaching in East London.</p>
+  <div class="blog-cats">
+    <button class="blog-cat active" data-filter="all">All</button>
+    <button class="blog-cat" data-filter="training">Training</button>
+    <button class="blog-cat" data-filter="nutrition">Nutrition</button>
+    <button class="blog-cat" data-filter="outdoor">Outdoor</button>
+    <button class="blog-cat" data-filter="lifestyle">Lifestyle</button>
+    <button class="blog-cat" data-filter="tools">Tools</button>
+  </div>
+</section>
+
+<section class="blog-grid-section">
+  <div class="blog-grid">
+
+    <!-- FEATURED -->
+    <a href="active-living-1.html" class="blog-card featured-card" data-cat="outdoor">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_7889 2.jpg" alt="Women running in East London park" loading="lazy">
+        <span class="blog-card-tag">Series</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Outdoor Training · 3-Part Series</div>
+        <div class="blog-card-title">Active Living in East London: The Complete Park Training Guide</div>
+        <div class="blog-card-excerpt">Dean's definitive guide to training across 20+ East London parks — covering Hackney Marshes to Valentines Park, Victoria Park to Lloyd Park. Real locations, real workouts, zero gym fees.</div>
+        <span class="blog-card-cta">Read Part 1</span>
+      </div>
+    </a>
+
+    <!-- ACTIVE LIVING 2 -->
+    <a href="active-living-2.html" class="blog-card" data-cat="outdoor">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_7856 3.jpg" alt="Group lunges in autumn park" loading="lazy">
+        <span class="blog-card-tag">Series · Part 2</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Outdoor Training · Part 2 of 3</div>
+        <div class="blog-card-title">Active Living Part 2: Wanstead, Valentines Park & More</div>
+        <div class="blog-card-excerpt">Wanstead Flats, Wanstead George Green, Valentines Park Ilford, Central Park East Ham, Plashet Park, and Plaistow Park — all 6 covered in depth.</div>
+        <span class="blog-card-cta">Read Part 2</span>
+      </div>
+    </a>
+
+    <!-- ACTIVE LIVING 3 -->
+    <a href="active-living-3.html" class="blog-card" data-cat="outdoor">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_7911_SnapseedCopy.jpg" alt="Group crunches on park grass" loading="lazy">
+        <span class="blog-card-tag">Series · Part 3</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Outdoor Training · Part 3 of 3</div>
+        <div class="blog-card-title">Active Living Part 3: Lloyd Park, Victory Park & Barking Riverside</div>
+        <div class="blog-card-excerpt">The final chapter — Lloyd Park Walthamstow, Victory Park Romford, and Barking Riverside's Little Bee Park all broken down for outdoor PT sessions.</div>
+        <span class="blog-card-cta">Read Part 3</span>
+      </div>
+    </a>
+
+    <!-- EAST LONDON PARK TRAINING -->
+    <a href="east-london-park-training.html" class="blog-card" data-cat="outdoor">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_7860 3.jpg" alt="Outdoor park personal training session" loading="lazy">
+        <span class="blog-card-tag">Outdoor</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Outdoor Training</div>
+        <div class="blog-card-title">Outdoor Park Personal Training East London</div>
+        <div class="blog-card-excerpt">Why East London parks are the best gym in the city — and how Dean uses them for 1-2-1 sessions, group training and bootcamps across 12+ locations.</div>
+        <span class="blog-card-cta">Read Article</span>
+      </div>
+    </a>
+
+    <!-- WORKOUTS -->
+    <a href="workouts.html" class="blog-card" data-cat="training">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_8710 2.JPG" alt="Group outdoor workout session" loading="lazy">
+        <span class="blog-card-tag">Training</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Training Guide</div>
+        <div class="blog-card-title">The Ultimate Park & Home Workout Guide: No Gym Required</div>
+        <div class="blog-card-excerpt">Full bodyweight workout programme you can do in any park or at home. Warmups, circuits, cool-downs — all structured and progressive.</div>
+        <span class="blog-card-cta">Read Article</span>
+      </div>
+    </a>
+
+    <!-- PARK GUIDE -->
+    <a href="park-guide.html" class="blog-card" data-cat="outdoor">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_7933.jpg" alt="Group side plank exercise in park" loading="lazy">
+        <span class="blog-card-tag">Outdoor</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Park Guide</div>
+        <div class="blog-card-title">Park & Home Workout Guide for East London</div>
+        <div class="blog-card-excerpt">The top parks, outdoor gyms, and open spaces for training in East London — ranked by facilities, space, and atmosphere.</div>
+        <span class="blog-card-cta">Read Article</span>
+      </div>
+    </a>
+
+    <!-- NUTRITION -->
+    <a href="nutrition.html" class="blog-card" data-cat="nutrition">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_8091.JPG" alt="Healthy nutrition - salmon, avocado and fruit" loading="lazy">
+        <span class="blog-card-tag">Nutrition</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Nutrition Guide</div>
+        <div class="blog-card-title">Nutrition for Weight Loss: What to Cut and Why</div>
+        <div class="blog-card-excerpt">The honest guide to eating for fat loss — what's really holding you back, the hidden sugars destroying your progress, and simple swaps that actually work.</div>
+        <span class="blog-card-cta">Read Article</span>
+      </div>
+    </a>
+
+    <!-- BLOG POST (Lifestyle) -->
+    <a href="blog-post.html" class="blog-card" data-cat="lifestyle">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_7853 3.jpg" alt="Sunrise athlete silhouette" loading="lazy">
+        <span class="blog-card-tag">Lifestyle</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Lifestyle · DeanTBStudio</div>
+        <div class="blog-card-title">There Is More to Life Than Gym</div>
+        <div class="blog-card-excerpt">Dean's thoughts on creativity, self-expression, and building something beyond the weight rack — plus a look at the DeanTBStudio clothing brand.</div>
+        <span class="blog-card-cta">Read Article</span>
+      </div>
+    </a>
+
+    <!-- AI PLANS -->
+    <a href="ai-plans.html" class="blog-card" data-cat="tools">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_8723.JPG" alt="Dean coaching boxing pad work" loading="lazy">
+        <span class="blog-card-tag">Tools</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">AI Fitness Tools</div>
+        <div class="blog-card-title">AI Workout & Nutrition Plans — Personalised in Seconds</div>
+        <div class="blog-card-excerpt">Get a fully personalised workout and nutrition plan powered by AI — built around your goals, schedule, and equipment. From £7.99.</div>
+        <span class="blog-card-cta">Get Your Plan</span>
+      </div>
+    </a>
+
+    <!-- FREE WORKOUT PLAN -->
+    <a href="free-workout-plan.html" class="blog-card" data-cat="tools">
+      <div class="blog-card-img">
+        <img src="./pics/IMG_8096.JPG" alt="Group dumbbell training outdoors" loading="lazy">
+        <span class="blog-card-tag">Free Tool</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">Free Resource</div>
+        <div class="blog-card-title">Free Workout & Nutrition Plan Generator</div>
+        <div class="blog-card-excerpt">Answer a few quick questions and get a customised workout and nutrition plan — free, no email required. Powered by Dean's decade of programming experience.</div>
+        <span class="blog-card-cta">Generate Free Plan</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section style="background:var(--bg);border-top:1px solid var(--border);padding:96px 24px;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:500px;background:radial-gradient(ellipse at center,rgba(179,0,24,.13) 0%,transparent 65%);pointer-events:none"></div>
+  <div style="position:relative;z-index:1">
+    <p style="font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:14px">Take the Next Step</p>
+    <h2 style="font-family:'Montserrat',sans-serif;font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:900;color:var(--text);margin-bottom:18px;line-height:1.1">Ready to stop reading<br><span style="color:var(--accent)">and start training?</span></h2>
+    <p style="color:var(--text-dim);font-size:1rem;margin-bottom:44px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.72">Book a free consultation with Dean and get a plan built around your life, schedule, and goals.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+      <a href="contact.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:800;font-size:.95rem;padding:18px 44px;border-radius:14px;text-decoration:none;letter-spacing:.03em;box-shadow:0 4px 28px rgba(179,0,24,.36)">Book Free Consultation</a>
+      <a href="ai-plans.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--card);color:var(--text);font-weight:700;font-size:.92rem;padding:16px 36px;border-radius:14px;text-decoration:none;border:1px solid var(--border)">Try AI Plans →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="db-footer">
+  <div class="db-footer-inner">
+    <div><div class="db-footer-brand"><img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy"><div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">★★★★★ Google Rated</span></div></div><p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2016.</p></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Pages</div><a href="about.html">About Dean</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Locations</div><a href="outdoor-pt-walthamstow.html">Walthamstow</a><a href="personal-trainer-ilford.html">Ilford</a><a href="personal-trainer-hackney.html">Hackney</a><a href="personal-trainer-chingford.html">Chingford</a><a href="personal-trainer-dagenham.html">Dagenham</a></div>
+    <div class="db-footer-col"><div class="db-footer-heading">Get In Touch</div><a href="tel:+447752300937" class="db-footer-contact-item">07752 300937</a><a href="mailto:dbs-workouts@yahoo.com" class="db-footer-contact-item">dbs-workouts@yahoo.com</a><a href="https://wa.me/447752300937" class="db-footer-contact-item" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+  <div class="db-footer-bottom"><p>© 2025 DB's Workouts. All rights reserved. · <a href="privacy-policy.html">Privacy Policy</a></p></div>
+</footer>
+<a href="https://wa.me/447752300937" class="db-wa-fab" aria-label="WhatsApp Dean" target="_blank" rel="noopener"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.55 4.123 1.511 5.863L.057 23.01a.5.5 0 00.633.633l5.183-1.461A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.654-.49-5.193-1.349l-.371-.219-3.838 1.082 1.093-3.783-.238-.39A9.943 9.943 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+
+<script src="Script/cookie-consent.js" defer></script>
+<script>
+  var nav=document.getElementById('dbNav'),tog=document.getElementById('navToggle'),mob=document.getElementById('mobileMenu');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);},{passive:true});
+  tog.addEventListener('click',function(){var o=mob.classList.toggle('open');tog.classList.toggle('active',o);document.body.style.overflow=o?'hidden':'';});
+
+  // Category filter
+  document.querySelectorAll('.blog-cat').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var filter=this.dataset.filter;
+      document.querySelectorAll('.blog-cat').forEach(function(b){b.classList.remove('active');});
+      this.classList.add('active');
+      document.querySelectorAll('.blog-card').forEach(function(card){
+        if(filter==='all'||card.dataset.cat===filter){
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

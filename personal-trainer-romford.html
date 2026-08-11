@@ -88,50 +88,42 @@
   <script src="/Script/cookie-consent.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; }
-    h1,h2,h3,h4,h5,h6 { font-family: 'Inter', sans-serif !important; font-weight: 700 !important; }
-    [data-bs-theme="dark"] { --bs-body-bg: #0a0a0a; --bs-body-color: #e8e8e8; }
-    [data-bs-theme="dark"] .card { background-color: #141414 !important; border-color: rgba(255,255,255,0.07) !important; }
-    [data-bs-theme="dark"] .bg-light, [data-bs-theme="dark"] .bg-white { background-color: #111 !important; }
-    [data-bs-theme="dark"] a { color: #e8e8e8; }
-    [data-bs-theme="dark"] a:hover { color: #fff; }
-    [data-bs-theme="dark"] h1,
-    [data-bs-theme="dark"] h2,
-    [data-bs-theme="dark"] h3 { color: #ffffff; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700;800;900:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/db.css?v=9">
+<style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
 </head>
 <body>
-  <div class="navContainer">
-    <nav class="navBar">
-      <div class="logoContainer">
-        <img src="logo.png" alt="DB's Workouts outdoor personal training logo" fetchpriority="high">
-      </div>
-          <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/pricing">Services &amp; Pricing</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
-        <li><a href="/active-living-1">Blog</a></li>
-        <li><a href="/ai-plans">AI Plans</a></li>
-
-        <li><a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li>
-          <a href="/contact" class="Nav-consultation-button">Book Now</a>
-        </li>
-
-      </ul>
-          <button class="Navbtn" aria-label="Open navigation menu">
-      <span class="line1"></span>
-      <span class="line2"></span>
-      <span class="line3"></span>
+  <nav class="db-nav" id="dbNav">
+  <div class="db-nav-inner">
+    <a href="index.html" class="db-nav-logo">
+      <img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy">
+      <span>DB's Workouts</span>
+    </a>
+    <div class="db-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Results</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
+    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
     </button>
-    </nav>
   </div>
-
-  <div class="hero-local">
+  <div class="db-mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="testimonials.html">Results</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
+  </div>
+</nav>
+<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
+<div class="hero-local">
     <p>OUTDOOR PT · ROMFORD</p>
     <h1>Personal Trainer in <span class="redText">Romford</span></h1>
     <p>Outdoor PT &amp; strength coaching sessions in Romford parks, RM1 &amp; RM6. Expert coaching — no gym required.</p>
@@ -168,42 +160,43 @@
     <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
   </div>
 
-      <footer>
-        <div class="footer-columns">
-            <div class="footer-col">
-                <p class="footer-brand">DB's Workouts</p>
-                <p class="footer-tagline">Outdoor PT &middot; East London</p>
-                <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 69 Reviews</p>
-            </div>
-            <div class="footer-col">
-                <p class="footer-heading">Pages</p>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/pricing">Services &amp; Pricing</a>
-                <a href="/testimonials">Testimonials</a>
-                <a href="/contact">Contact</a>
-                <a href="/active-living-1">Blog</a>
-                <a href="/ai-plans">AI Plans</a>
-                <a href="/tools">Free Fitness Tools</a>
-                <a href="https://www.etsy.com/shop/DeanTBStudio" target="_blank" rel="noopener">Clothing – DeanTBStudio by DB's Workouts</a>
-            </div>
-            <div class="footer-col">
-                <p class="footer-heading">Contact</p>
-                <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
-                    <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" decoding="async" alt="WhatsApp"> WhatsApp
-                </a>
-                <a href="mailto:dbs-workouts@yahoo.com" target="_blank" rel="noopener">
-                    <img src="./pics/mail.png" width="22" height="22" loading="lazy" decoding="async" alt="Email"> Email
-                </a>
-                <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">
-                    <img src="./pics/instagram 2.png" width="22" height="22" loading="lazy" decoding="async" alt="Instagram"> Instagram
-                </a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DB&#39;s Workouts &middot; Dean Burt &nbsp;&middot;&nbsp; <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a></p>
-        </div>
-    </footer>
+      <footer class="db-footer">
+  <div class="db-footer-inner">
+    <div>
+      <div class="db-footer-brand">
+        <img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy">
+        <div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">&#9733;&#9733;&#9733;&#9733;&#9733; Google Rated</span></div>
+      </div>
+      <p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2016.</p>
+    </div>
+    <div class="db-footer-col">
+      <div class="db-footer-heading">Pages</div>
+      <a href="about.html">About Dean</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Results</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="db-footer-col">
+      <div class="db-footer-heading">Locations</div>
+      <a href="outdoor-pt-walthamstow.html">Walthamstow</a>
+      <a href="personal-trainer-ilford.html">Ilford</a>
+      <a href="personal-trainer-hackney.html">Hackney</a>
+      <a href="personal-trainer-chingford.html">Chingford</a>
+      <a href="personal-trainer-dagenham.html">Dagenham</a>
+    </div>
+    <div class="db-footer-col">
+      <div class="db-footer-heading">Get In Touch</div>
+      <a href="tel:+447752300937" class="db-footer-contact-item">07752 300937</a>
+      <a href="mailto:dbs-workouts@yahoo.com" class="db-footer-contact-item">dbs-workouts@yahoo.com</a>
+      <a href="https://wa.me/447752300937" class="db-footer-contact-item" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="db-footer-bottom"><p>&#169; 2025 DB's Workouts. All rights reserved. &middot; <a href="privacy-policy.html">Privacy Policy</a></p></div>
+</footer>
+<a href="https://wa.me/447752300937" class="db-wa-fab" aria-label="WhatsApp Dean" target="_blank" rel="noopener">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.55 4.123 1.511 5.863L.057 23.01a.5.5 0 00.633.633l5.183-1.461A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.654-.49-5.193-1.349l-.371-.219-3.838 1.082 1.093-3.783-.238-.39A9.943 9.943 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
 
   <script defer src="./Script/navbar.js"></script>
     <script>

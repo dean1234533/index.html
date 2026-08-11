@@ -1,4 +1,5 @@
-* { box-sizing: border-box; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; }
 
 body {
     color: rgba(255,255,255,0.85);
