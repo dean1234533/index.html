@@ -254,7 +254,7 @@ FOOTER_HTML = """  <footer>
       <div class="footer-col">
         <p class="footer-brand">DB's Workouts</p>
         <p class="footer-tagline">Outdoor PT &middot; East London</p>
-        <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 69 Reviews</p>
+        <p class="footer-tagline">&#9733;&#9733;&#9733;&#9733;&#9733;&nbsp; 5.0 &middot; 70 Reviews</p>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Pages</p>
@@ -381,7 +381,7 @@ def build_page(loc):
       "image": "https://dbworkouts.co.uk/pics/IMG_8101.JPG",
       "logo": "https://dbworkouts.co.uk/pics/IMG_8070-removebg-preview.png",
       "address": {{"@type": "PostalAddress", "addressLocality": "{name}", "addressRegion": "{region}", "postalCode": "{postcode}", "addressCountry": "GB"}},
-      "aggregateRating": {{"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "69", "bestRating": "5"}},
+      "aggregateRating": {{"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "70", "bestRating": "5"}},
       "areaServed": [{schema_area}],
       "sameAs": ["https://www.facebook.com/dbs.workouts1","https://www.instagram.com/dbs_workouts","https://www.linkedin.com/in/db-s-workouts-2aa057214"]
     }},
