@@ -237,7 +237,7 @@ NAV_HTML = """  <div class="navContainer">
         <li><a href="/pricing">Services &amp; Pricing</a></li>
         <li><a href="/testimonials">Testimonials</a></li>
         <li><a href="/Active-Living-1">Blog</a></li>
-        <li><a href="/ai-plans">AI Plans</a></li>
+        <li><a href="https://app.dbworkouts.co.uk/">AI Plans</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/contact" class="Nav-consultation-button">Book Now</a></li>
       </ul>
@@ -264,7 +264,7 @@ FOOTER_HTML = """  <footer>
         <a href="/testimonials">Testimonials</a>
         <a href="/contact">Contact</a>
         <a href="/Active-Living-1">Blog</a>
-        <a href="/ai-plans">AI Plans</a>
+        <a href="https://app.dbworkouts.co.uk/">AI Plans</a>
         <a href="/smart-app">Smart App</a>
       </div>
       <div class="footer-col">
