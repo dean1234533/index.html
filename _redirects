@@ -1,10 +1,6 @@
 # Fitness Tools Hub — SPA rewrite (static files are served before this rule fires)
 /tools/*                    /tools/index.html           200
 
-# AI coaching now lives in the app. Keep old bookmarks and search results valid.
-/ai-plans                   https://app.dbworkouts.co.uk/ 301
-/ai-plans.html              https://app.dbworkouts.co.uk/ 301
-
 # Old blog_post URL (underscore) → new blog-post (hyphen)
 /blog_post                  /blog-post                  301
 
