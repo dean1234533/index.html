@@ -5,8 +5,8 @@ const PLANS = {
   pt_pro:   { name: "DB's AI — PT Pro" },
 }
 
-const SUCCESS_URL = 'https://app.dbworkouts.co.uk/register'
-const CANCEL_URL  = 'https://app.dbworkouts.co.uk/pricing'
+const SUCCESS_URL = 'https://pt-ai-helper.pages.dev/#/register'
+const CANCEL_URL  = 'https://dbworkouts.co.uk/ai-plans'
 
 export async function onRequestPost(context) {
   const { request, env } = context

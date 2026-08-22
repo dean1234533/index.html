@@ -1,8 +1,8 @@
 // Catch-all: forwards any /api/* call that doesn't match a specific website
-// function to the DB's Workouts app API on its canonical domain.
+// function (e.g. create-checkout-session) to the PT AI Helper app's API.
 export async function onRequest(context) {
   const url = new URL(context.request.url);
-  const targetUrl = `https://app.dbworkouts.co.uk${url.pathname}${url.search}`;
+  const targetUrl = `https://pt-ai-helper.pages.dev${url.pathname}${url.search}`;
 
   const reqHeaders = new Headers();
   for (const h of ['content-type', 'authorization', 'x-api-key', 'accept', 'user-agent']) {

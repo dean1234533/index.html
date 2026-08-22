@@ -13,7 +13,7 @@ const PLANS = {
   },
 }
 
-const GENERATOR_URL = 'https://app.dbworkouts.co.uk/register'
+const GENERATOR_URL = 'https://pt-ai-helper.pages.dev/#/register'
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -39,7 +39,7 @@ module.exports = async function handler(req, res) {
         },
       ],
       success_url: `${GENERATOR_URL}?subscription=success&session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: 'https://app.dbworkouts.co.uk/pricing',
+      cancel_url: `${origin}/ai-plans`,
       metadata: { plan },
       allow_promotion_codes: true,
     })
