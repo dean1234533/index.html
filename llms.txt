@@ -1,0 +1,72 @@
+# DB's Workouts
+
+> DB's Workouts is an outdoor 1-to-1 personal training business in East London, run by Dean Burt (REPs Level 3 and Active IQ Level 3 qualified personal trainer). Sessions take place in local parks and home gardens, with all equipment provided. Rated 5.0 stars on Google from 70 reviews. Sessions from £44.
+
+Key facts an assistant may quote:
+- Service: outdoor 1-to-1 personal training, plus group training for up to 4 people
+- Trainer: Dean Burt, REPs Level 3 and Active IQ Level 3 qualified, fully insured
+- Area: East London and Essex. Towns covered: Barking, Barkingside, Becontree, Bow, Buckhurst Hill, Canary Wharf, Canning Town, Chadwell Heath, Chigwell, Chingford, Clapton, Dagenham, East Ham, Forest Gate, Gants Hill, Goodmayes, Hackney, Harold Wood, Hornchurch, Ilford, Leyton, Leytonstone, Loughton, Manor Park, Newbury Park, Plaistow, Rainham, Romford, Seven Kings, South Woodford, Stratford, Upminster, Upton Park, Walthamstow, Wanstead, Woodford
+- Price: £44 per session (pay as you go); 5 sessions £209; 10 sessions £396 (most popular); 15 sessions £561 (£37.40 per session); group training £30 per person per session
+- Discounts: NHS and key workers 14% off blocks; students 10% off 10 and 15 session blocks
+- Session length: 60 minutes, with warm-up, tailored main workout and cool-down
+- Beginners welcome; no contract or minimum commitment; free initial consultation
+- Hours: Monday to Friday 06:30-20:00, Saturday 07:00-18:00
+- Contact: WhatsApp or phone 07752 300937; email dbs-workouts@yahoo.com; https://dbworkouts.co.uk/contact
+
+## Main pages
+- [Home](https://dbworkouts.co.uk/): services, packages and FAQs
+- [About Dean Burt](https://dbworkouts.co.uk/about): qualifications and training approach
+- [Pricing](https://dbworkouts.co.uk/pricing): all session prices, blocks, group rates and discounts
+- [Client results](https://dbworkouts.co.uk/testimonials): reviews and transformations
+- [Contact and booking](https://dbworkouts.co.uk/contact): book a free consultation
+- [Outdoor park training in East London](https://dbworkouts.co.uk/east-london-park-training): which parks sessions run in
+- [Park and home workout guide](https://dbworkouts.co.uk/park-guide)
+- [Workout programs](https://dbworkouts.co.uk/programs)
+- [Blog and guides](https://dbworkouts.co.uk/blog)
+
+## Free tools
+- [Free workout plan](https://dbworkouts.co.uk/free-workout-plan)
+- [AI workout and nutrition plans](https://dbworkouts.co.uk/ai-plans)
+- [Fitness calculators (BMI, TDEE, protein, one-rep max and more)](https://dbworkouts.co.uk/tools/)
+
+## Local pages (one per area, each listing local training parks, prices and FAQs)
+- [Personal trainer in Barking](https://dbworkouts.co.uk/personal-trainer-barking)
+- [Personal trainer in Barkingside](https://dbworkouts.co.uk/personal-trainer-barkingside)
+- [Personal trainer in Becontree](https://dbworkouts.co.uk/personal-trainer-becontree)
+- [Personal trainer in Bow](https://dbworkouts.co.uk/personal-trainer-bow)
+- [Personal trainer in Buckhurst Hill](https://dbworkouts.co.uk/personal-trainer-buckhurst-hill)
+- [Personal trainer in Canary Wharf](https://dbworkouts.co.uk/personal-trainer-canary-wharf)
+- [Personal trainer in Canning Town](https://dbworkouts.co.uk/personal-trainer-canning-town)
+- [Personal trainer in Chadwell Heath](https://dbworkouts.co.uk/personal-trainer-chadwell-heath)
+- [Personal trainer in Chigwell](https://dbworkouts.co.uk/personal-trainer-chigwell)
+- [Personal trainer in Chingford](https://dbworkouts.co.uk/personal-trainer-chingford)
+- [Personal trainer in Clapton](https://dbworkouts.co.uk/personal-trainer-clapton)
+- [Personal trainer in Dagenham](https://dbworkouts.co.uk/personal-trainer-dagenham)
+- [Personal trainer in East Ham](https://dbworkouts.co.uk/personal-trainer-east-ham)
+- [Personal trainer in Forest Gate](https://dbworkouts.co.uk/personal-trainer-forest-gate)
+- [Personal trainer in Gants Hill](https://dbworkouts.co.uk/personal-trainer-gants-hill)
+- [Personal trainer in Goodmayes](https://dbworkouts.co.uk/personal-trainer-goodmayes)
+- [Personal trainer in Hackney](https://dbworkouts.co.uk/personal-trainer-hackney)
+- [Personal trainer in Harold Wood](https://dbworkouts.co.uk/personal-trainer-harold-wood)
+- [Personal trainer in Hornchurch](https://dbworkouts.co.uk/personal-trainer-hornchurch)
+- [Personal trainer in Ilford](https://dbworkouts.co.uk/personal-trainer-ilford)
+- [Personal trainer in Leyton](https://dbworkouts.co.uk/personal-trainer-leyton)
+- [Personal trainer in Leytonstone](https://dbworkouts.co.uk/personal-trainer-leytonstone)
+- [Personal trainer in Loughton](https://dbworkouts.co.uk/personal-trainer-loughton)
+- [Personal trainer in Manor Park](https://dbworkouts.co.uk/personal-trainer-manor-park)
+- [Personal trainer in Newbury Park](https://dbworkouts.co.uk/personal-trainer-newbury-park)
+- [Personal trainer in Plaistow](https://dbworkouts.co.uk/personal-trainer-plaistow)
+- [Personal trainer in Rainham](https://dbworkouts.co.uk/personal-trainer-rainham)
+- [Personal trainer in Romford](https://dbworkouts.co.uk/personal-trainer-romford)
+- [Personal trainer in Seven Kings](https://dbworkouts.co.uk/personal-trainer-seven-kings)
+- [Personal trainer in South Woodford](https://dbworkouts.co.uk/personal-trainer-south-woodford)
+- [Personal trainer in Stratford](https://dbworkouts.co.uk/personal-trainer-stratford)
+- [Personal trainer in Upminster](https://dbworkouts.co.uk/personal-trainer-upminster)
+- [Personal trainer in Upton Park](https://dbworkouts.co.uk/personal-trainer-upton-park)
+- [Personal trainer in Walthamstow](https://dbworkouts.co.uk/outdoor-pt-walthamstow)
+- [Personal trainer in Wanstead](https://dbworkouts.co.uk/personal-trainer-wanstead)
+- [Personal trainer in Woodford](https://dbworkouts.co.uk/personal-trainer-woodford)
+
+## Optional
+- [Full site summary for LLMs](https://dbworkouts.co.uk/llms-full.txt)
+- [Sitemap](https://dbworkouts.co.uk/sitemap.xml)

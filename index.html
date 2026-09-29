@@ -844,10 +844,17 @@
      SCHEMA MARKUP
 ══════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://dbworkouts.co.uk/#website","url":"https://dbworkouts.co.uk/","name":"DB's Workouts","description":"Outdoor 1-to-1 personal training in East London with Dean Burt.","publisher":{"@id":"https://dbworkouts.co.uk/#business"},"inLanguage":"en-GB"}
+</script>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness","HealthClub"],
+  "@id": "https://dbworkouts.co.uk/#business",
   "name": "DB's Workouts",
+  "founder": {"@type": "Person", "@id": "https://dbworkouts.co.uk/#dean", "name": "Dean Burt"},
+  "knowsAbout": ["Outdoor personal training","Strength training","Weight loss","HIIT","Boxing fitness","Group fitness"],
+  "slogan": "Outdoor personal training in East London",
   "image": "https://dbworkouts.co.uk/logo.png",
   "description": "REPs Level 3 certified outdoor personal trainer offering 1-to-1 sessions across East London including Stratford, Ilford, Walthamstow, Goodmayes, Wanstead and Romford.",
   "url": "https://dbworkouts.co.uk",
@@ -1014,15 +1021,7 @@ document.addEventListener('DOMContentLoaded', function () {
       range.value = pct;
     }
 
-    function pctFromEvent(e) {
-      var rect = s.getBoundingClientRect();
-      var clientX = e.touches ? e.touches[0].clientX : e.clientX;
-      return ((clientX - rect.left) / rect.width) * 100;
-    }
-
     range.addEventListener('input', function () { update(parseFloat(this.value)); });
-    s.addEventListener('touchstart', function (e) { e.preventDefault(); update(pctFromEvent(e)); }, { passive: false });
-    s.addEventListener('touchmove', function (e) { e.preventDefault(); update(pctFromEvent(e)); }, { passive: false });
     update(50);
   });
 });
