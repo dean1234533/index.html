@@ -7,7 +7,9 @@ const BADGE = '<a href="https://fazier.com" target="_blank"><img src="https://fa
 async function loadToolPage(context, url) {
   const slug = url.pathname.replace(/^\/tools\/?/, "").replace(/\/+$/, "");
   if (!/^[a-z0-9-]+$/.test(slug)) return null;
-  const pageUrl = new URL(`/tools/${slug}.html`, url);
+  // Ask for the clean URL: ASSETS answers /tools/<slug>.html with a 308 redirect to /tools/<slug>
+  // (and does not follow it), which used to make every tool fall through to the hub page.
+  const pageUrl = new URL(`/tools/${slug}`, url);
   const res = await context.env.ASSETS.fetch(pageUrl.toString());
   if (!res.ok) return null;
   const html = await res.text();
