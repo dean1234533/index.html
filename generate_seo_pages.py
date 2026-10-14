@@ -371,19 +371,14 @@ def build_page(loc):
   [
     {{
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://dbworkouts.co.uk/#business",
-      "name": "DB's Workouts – Personal Trainer {name}",
-      "description": "Outdoor 1-to-1 personal training sessions in {name}, {region}. REPs Level 3 certified PT Dean Burt. Sessions at {park_hero} and surrounding areas {pc_str}.",
+      "@type": "Service",
+      "@id": "https://dbworkouts.co.uk/personal-trainer-{slug}#service",
+      "name": "Outdoor personal training in {name}",
+      "serviceType": "Outdoor personal training",
+      "description": "1-to-1 outdoor personal training in {name} with Dean Burt, qualified since 2019.",
       "url": "https://dbworkouts.co.uk/personal-trainer-{slug}",
-      "telephone": "+447752300937",
-      "priceRange": "££",
-      "image": "https://dbworkouts.co.uk/pics/IMG_8101.JPG",
-      "logo": "https://dbworkouts.co.uk/pics/IMG_8070-removebg-preview.png",
-      "address": {{"@type": "PostalAddress", "addressLocality": "{name}", "addressRegion": "{region}", "postalCode": "{postcode}", "addressCountry": "GB"}},
-      "aggregateRating": {{"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "70", "bestRating": "5"}},
-      "areaServed": [{schema_area}],
-      "sameAs": ["https://www.facebook.com/dbs.workouts1","https://www.instagram.com/dbs_workouts","https://www.linkedin.com/in/db-s-workouts-2aa057214"]
+      "provider": {{"@type": "LocalBusiness", "@id": "https://dbworkouts.co.uk/#business", "name": "DB's Workouts", "url": "https://dbworkouts.co.uk/"}},
+      "areaServed": [{schema_area}]
     }},
     {{
       "@context": "https://schema.org",
@@ -417,7 +412,7 @@ def build_page(loc):
 
   <div class="page-content">
     <h2>Outdoor Personal Training in <span class="redText">{name}</span>, {region}</h2>
-    <p>If you're searching for a personal trainer in {name}, DB's Workouts brings expert outdoor fitness coaching straight to your local park. Dean Burt is a REPs Level 3 certified personal trainer with over 12 years of experience delivering results-driven 1-to-1 sessions across {pc_str}. No gym membership, no commute — just effective training in the fresh air.</p>
+    <p>If you're searching for a personal trainer in {name}, DB's Workouts brings expert outdoor fitness coaching straight to your local park. Dean Burt is a REPs Level 3 certified personal trainer qualified since 2019 delivering results-driven 1-to-1 sessions across {pc_str}. No gym membership, no commute — just effective training in the fresh air.</p>
 
     <div class="info-block">
       <h2 style="font-size:22px;margin-top:0;">Training Locations in {name}</h2>
@@ -441,6 +436,11 @@ def build_page(loc):
     <h2>Pricing for <span class="redText">{name} PT Sessions</span></h2>
     <p>Sessions from <strong>£45</strong> per session. Block bookings available from £38.40/session. <a href="/pricing" style="color:#b30018;">View full pricing.</a></p>
 
+<div class="info-block" id="training-options"><h2>Personal training for your goals</h2><p>Choose the focus for your sessions, then discuss your starting point and preferred location with Dean.</p><div class="areas-grid"><a href="/boxing-fitness-east-london">Boxing Fitness</a>
+<a href="/weight-loss-personal-trainer-east-london">Weight Loss Coaching</a>
+<a href="/personal-training-for-beginners-east-london">Beginner Personal Training</a>
+<a href="/mobile-personal-trainer-east-london">Mobile Personal Training</a>
+<a href="/small-group-personal-training-east-london">Small Group Training</a></div></div>
     <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
   </div>
 

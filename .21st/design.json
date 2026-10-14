@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "project": {
+    "name": "dbworkouts",
+    "productType": "Local personal training website",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "Styles/index.css",
+      "Styles/db.css",
+      "Styles/navbar.css"
+    ],
+    "components": [],
+    "assets": [],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "unknown",
+    "colors": {},
+    "typography": {},
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": [
+      "hero-local",
+      "page-content",
+      "info-block",
+      "cta-btn",
+      "areas-grid",
+      "tools-grid"
+    ]
+  },
+  "constraints": {
+    "must": [
+      "Reuse existing page templates, navigation, footer and CSS.",
+      "Keep booking CTAs and mobile layout."
+    ],
+    "avoid": [
+      "Invented credentials, new service claims or ranking guarantees."
+    ]
+  },
+  "decisions": [],
+  "evidence": [],
+  "generatedAt": "2026-10-14T06:24:46.230Z"
+}
