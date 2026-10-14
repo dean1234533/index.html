@@ -1762,6 +1762,7 @@ ul { list-style: none; }
 }
 
 .mobile-sticky-cta.hidden { transform: translateY(110%); }
+.mobile-sticky-cta[hidden] { display: none !important; }
 
 @media (min-width: 1024px) {
   .mobile-sticky-cta { display: none; }

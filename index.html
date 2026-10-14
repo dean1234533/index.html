@@ -841,7 +841,7 @@
 
 
 <!-- Sticky mobile CTA -->
-<div class="mobile-sticky-cta" id="mobileStickyCtaBar">
+<div class="mobile-sticky-cta" id="mobileStickyCtaBar" hidden>
   <a href="/contact">Book Your Free Consultation →</a>
 </div>
 
@@ -1230,7 +1230,36 @@ document.getElementById('leadMagnetForm').addEventListener('submit', function (e
 </script>
 
 <script>
-// ── Mobile sticky CTA — hide once past hero
+// Show the mobile booking bar only between the hero and final booking section.
+(function () {
+  var bar = document.getElementById('mobileStickyCtaBar');
+  var hero = document.getElementById('hero');
+  var finalSection = document.querySelector('.final-cta-section');
+  var footer = document.querySelector('footer');
+  if (!bar || !hero || !finalSection) return;
+
+  var pending = false;
+  function update() {
+    pending = false;
+    var height = window.innerHeight;
+    bar.hidden = hero.getBoundingClientRect().bottom > 0 ||
+      finalSection.getBoundingClientRect().top < height ||
+      (footer && footer.getBoundingClientRect().top < height);
+  }
+  function scheduleUpdate() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(update);
+  }
+
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  window.addEventListener('pageshow', scheduleUpdate);
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(scheduleUpdate).observe(document.body);
+  }
+  update();
+})();
 </script>
 
 <script>
