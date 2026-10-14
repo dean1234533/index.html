@@ -168,7 +168,7 @@ def build_page(service, template):
 </div>
 </main>
 '''
-    return head + '\n<body>\n' + nav + content + footer
+    return '\n'.join(line.rstrip() for line in (head + '\n<body>\n' + nav + content + footer).splitlines()) + '\n'
 
 
 def main():
