@@ -8,3 +8,6 @@
 /* Keep the inherited footer legible and consistent on this page. */
 body:has(.boxing-page) .db-footer{font-family:Inter,sans-serif}body:has(.boxing-page) .db-footer a,body:has(.boxing-page) .db-footer p,body:has(.boxing-page) .db-footer .db-fb-tag{color:var(--text-dim)}body:has(.boxing-page) .db-footer-heading{color:var(--text);font-family:Montserrat,sans-serif}
 .boxing-coach .boxing-kicker,.boxing-location .boxing-kicker{color:var(--boxing-accent-text)}
+
+/* Show the entire portrait on desktop, without a landscape crop. */
+@media(min-width:701px){.boxing-coach-photo{width:100%;max-width:420px;height:auto;object-fit:contain;justify-self:center}}
