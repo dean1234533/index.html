@@ -174,6 +174,10 @@ def build_page(service, template):
 def main():
     template = (ROOT / 'personal-trainer-ilford.html').read_text()
     for service in SERVICES:
+        # Preserve the bespoke boxing page; it is maintained directly in HTML.
+        if service["slug"] == "boxing-fitness-east-london":
+            print("Preserved bespoke page:", service["slug"])
+            continue
         (ROOT / (service['slug'] + '.html')).write_text(build_page(service, template))
         print('Created:', service['slug'])
 

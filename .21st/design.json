@@ -50,7 +50,13 @@
       "Invented credentials, new service claims or ranking guarantees."
     ]
   },
-  "decisions": [],
+  "decisions": [
+    {
+      "date": "2026-10-21",
+      "scope": "Boxing fitness page",
+      "choice": "Real outdoor training photography, charcoal and brand red, split hero, session steps, price grid and native FAQ disclosures. Reuses shared navigation, footer and buttons."
+    }
+  ],
   "evidence": [],
   "generatedAt": "2026-10-14T06:24:46.230Z"
 }
