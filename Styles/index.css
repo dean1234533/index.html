@@ -1408,6 +1408,15 @@ ul { list-style: none; }
   .tools-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
+
+/* Five service links stay together instead of leaving an orphaned fifth card. */
+@media (min-width: 900px) {
+  #personal-training-services .tools-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+#personal-training-services .tool-card { min-width: 0; }
+
 .tool-card {
   display: flex;
   flex-direction: column;
