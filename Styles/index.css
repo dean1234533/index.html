@@ -700,15 +700,15 @@ ul { list-style: none; }
 }
 
 .about-img-badge {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(6, 6, 6, 0.82);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--card);
+  border-top: 1px solid var(--border);
   padding: 14px 20px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  line-height: 1.4;
 }
 
 .aib-label {
@@ -718,7 +718,7 @@ ul { list-style: none; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-text);
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 
 .aib-level {
