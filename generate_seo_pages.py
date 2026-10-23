@@ -272,7 +272,7 @@ FOOTER_HTML = """  <footer>
         <a href="https://wa.me/447752300937" target="_blank" rel="noopener">
           <img src="./pics/whatsapp 3.png" width="22" height="22" loading="lazy" decoding="async" alt="WhatsApp"> WhatsApp
         </a>
-        <a href="mailto:dbs-workouts@yahoo.com" target="_blank" rel="noopener">
+        <a href="mailto:dbs_workouts@yahoo.com" target="_blank" rel="noopener">
           <img src="./pics/mail.png" width="22" height="22" loading="lazy" decoding="async" alt="Email"> Email
         </a>
         <a href="https://www.instagram.com/dbs_workouts" target="_blank" rel="noopener">

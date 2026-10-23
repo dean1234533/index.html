@@ -71,7 +71,7 @@ NEW_FOOTER = '''<footer class="db-footer">
     <div class="db-footer-col">
       <div class="db-footer-heading">Get In Touch</div>
       <a href="tel:+447752300937" class="db-footer-contact-item">07752 300937</a>
-      <a href="mailto:dbs-workouts@yahoo.com" class="db-footer-contact-item">dbs-workouts@yahoo.com</a>
+      <a href="mailto:dbs_workouts@yahoo.com" class="db-footer-contact-item">dbs_workouts@yahoo.com</a>
       <a href="https://wa.me/447752300937" class="db-footer-contact-item" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
