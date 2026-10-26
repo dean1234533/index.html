@@ -599,6 +599,10 @@
             <option value="Other">Other</option>
           </select>
           <textarea name="message" placeholder="Tell Dean a bit about yourself and your goals…" rows="5"></textarea>
+          <label style="display:flex;gap:10px;align-items:flex-start;font-size:.9rem;line-height:1.4;margin:4px 0 2px">
+            <input type="checkbox" name="privacy" value="yes" required style="margin-top:3px;flex:none">
+            <span>I agree to my details being used to reply to my enquiry and arrange training, as explained in the <a href="/privacy-policy" target="_blank" rel="noopener">privacy policy</a>.</span>
+          </label>
           <button type="submit" class="db-btn db-btn-primary" style="width:100%;">Send Message</button>
         </form>
 
@@ -879,15 +883,55 @@
 <script>
   var form = document.getElementById('contactForm');
   var success = document.getElementById('formSuccess');
+  // Set this to your booking app's address once it is deployed, e.g. 'https://app.dbworkouts.co.uk/api/public/enquiries'.
+  // While it still contains REPLACE, the form keeps using Formspree exactly as before.
+  var ENQUIRY_API = 'https://coach.dbworkouts.co.uk/api/public/enquiries';
+  var useApp = ENQUIRY_API.indexOf('REPLACE') === -1;
+  var submissionId = (window.crypto && crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(36).slice(2)).replace(/-/g, '');
+  var startedAt = Date.now();
   if (form) {
+    var errBox = document.createElement('p');
+    errBox.setAttribute('role', 'alert');
+    errBox.style.cssText = 'display:none;color:#ff6b6b;margin:10px 0 0;font-size:.95rem';
+    var hp = document.createElement('input');
+    hp.type = 'text'; hp.name = 'hp_check'; hp.tabIndex = -1; hp.autocomplete = 'off'; hp.setAttribute('aria-hidden', 'true');
+    hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0';
+    form.appendChild(hp);
+    form.appendChild(errBox);
+    var btn = form.querySelector('button[type=submit]');
+    var btnLabel = btn ? btn.textContent : '';
+    var fail = function(msg) {
+      errBox.textContent = msg + ' Your details are still here. Press the button to try again, or call/WhatsApp Dean.';
+      errBox.style.display = 'block';
+      if (btn) { btn.disabled = false; btn.textContent = 'Try again'; }
+    };
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+      errBox.style.display = 'none';
+      if (!form.querySelector('input[name=privacy]').checked) { fail('Please tick the box to agree to the privacy policy.'); return; }
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
       var data = new FormData(form);
-      fetch('https://formspree.io/f/mjgzzowv', {
-        method: 'POST', body: data,
-        headers: { 'Accept': 'application/json' }
-      }).then(function(r) {
-        if (r.ok) { form.style.display = 'none'; success.style.display = 'block'; }
+      var req;
+      if (useApp) {
+        // Saved straight into Dean's dashboard. The thank-you only shows once the server confirms it was saved.
+        var goal = data.get('goal') || '';
+        req = fetch(ENQUIRY_API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            submissionId: submissionId, startedAt: startedAt, hp_check: data.get('hp_check') || '', privacyAccepted: data.get('privacy') === 'yes',
+            name: data.get('name') || '', email: data.get('email') || '', phone: data.get('phone') || '',
+            goals: goal ? 'Main goal: ' + goal : '', message: data.get('message') || ''
+          })
+        }).then(function(r) { return r.json().catch(function() { return {}; }).then(function(j) { if (!r.ok) throw new Error(j.error || 'Something went wrong.'); }); });
+      } else {
+        req = fetch('https://formspree.io/f/mjgzzowv', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+          .then(function(r) { if (!r.ok) throw new Error('Something went wrong.'); });
+      }
+      req.then(function() {
+        form.style.display = 'none'; success.style.display = 'block';
+      }).catch(function(err) {
+        fail(err instanceof TypeError ? "We couldn't reach the server." : (err.message || 'Something went wrong.'));
       });
     });
   }
