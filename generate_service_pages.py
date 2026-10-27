@@ -3,6 +3,7 @@
 Run after generate_seo_pages.py. Copy is based on existing services and prices;
 the shared navigation, footer and styles come from personal-trainer-ilford.html.
 """
+from refresh_seo_design import refresh_html
 from pathlib import Path
 from html import escape
 import json
@@ -92,26 +93,44 @@ SERVICES = [
             ("How much does mobile personal training cost?", "Pay as you go is £45 per session. Blocks are £214 for 5, £406 for 10 or £576 for 15 sessions. Confirm your location and availability before booking."),
         ],
     },
-    {
-        "slug": "small-group-personal-training-east-london",
-        "name": "Small Group Training",
-        "title": "Small Group Personal Training East London | DB's Workouts",
-        "description": "Outdoor small group personal training in East London for up to 4 people. Train with friends from £31 per person per session. Free consultation.",
-        "heading": "Small Group Personal Training in East London",
-        "intro": "Train outdoors with friends and share the motivation. Coached sessions for up to four people, from £31 per person per session.",
-        "sections": [
-            ("Outdoor training with people you know", "Small group personal training combines Dean's coaching with the encouragement of training together. Arrange a group of up to four people and discuss your goals, starting fitness levels and preferred East London location. It is an option for friends who want to build a regular routine while sharing the cost of a coached session."),
-            ("Different fitness levels in one session", "Tell Dean about each person's experience and what they want from training during the consultation. Exercises can be adjusted to individual ability so the group can train together. Outdoor sessions can use circuits, bodyweight movements and portable equipment, with coaching to help everyone work at an appropriate level."),
-            ("Choose your group and your location", "Agree a local park and a time that works for your group. Dean brings the session equipment. Before booking, confirm who is attending and discuss any limitations or training preferences, including whether you want boxing pads or strength work in the session. Check availability directly with Dean."),
-            ("Group personal training prices", "Group training for up to four people starts at £31 per person per session. The pricing page sets out the available group blocks and current offers. If you prefer individual attention, 1-to-1 personal training is £45 pay as you go. A free consultation helps you decide which format suits your goals."),
-        ],
-        "faqs": [
-            ("How many people can join a small group session?", "DB's Workouts offers small group personal training for up to four people. Confirm your group size and availability with Dean before booking."),
-            ("How much is small group personal training?", "Group sessions start at £31 per person per session. See the pricing page for current group block prices and offers."),
-            ("Can friends with different fitness levels train together?", "Discuss everyone's starting fitness and goals with Dean. Exercises can be adapted so the group can train together at appropriate levels."),
-            ("Do we need to bring equipment?", "No. Dean provides the session equipment. Bring water and wear comfortable training clothes and suitable footwear."),
-        ],
-    },
+    {'slug': 'pair-personal-training-east-london',
+     'name': 'Pair Personal Training',
+     'title': "Pair Personal Training East London | DB's Workouts",
+     'description': 'Outdoor pair personal training in East London. Two people train together for 1.5 times the '
+                    'one-person price: £67.50 total pay as you go. Free consultation.',
+     'heading': 'Pair Personal Training in East London',
+     'intro': 'Train outdoors with a friend or partner. Personal coaching for two people, at 1.5 times the '
+              'corresponding one-person price. Pay as you go is £67.50 total for the pair.',
+     'sections': [('Two people. One shared session.',
+                   "Pair personal training combines Dean's coaching with the encouragement of training alongside "
+                   'a friend or partner. Discuss both of your goals, starting fitness levels and preferred East '
+                   'London location during your free consultation.'),
+                  ('Different starting points, personal coaching',
+                   'Tell Dean about your individual experience and goals. Exercises and pace can be adapted so '
+                   'you can train together while working at levels that suit you. Sessions can include '
+                   'bodyweight movements, strength work and portable equipment.'),
+                  ('Choose a location that works for both of you',
+                   'Agree a local park or suitable home garden and a time that suits you both. Dean brings the '
+                   'equipment. Discuss any limitations and training preferences before booking, and check '
+                   'availability directly with Dean.'),
+                  ('Clear pricing for the pair',
+                   'Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay '
+                   'as you go is £67.50 total for both people per session. A one-person pay-as-you-go session is '
+                   '£45, so the pair pays £45 × 1.5 = £67.50 together. The same 1.5-times rule applies to the '
+                   'corresponding one-person session block. See the pricing page or message Dean to arrange your '
+                   'sessions.')],
+     'faqs': [('How many people can train in a pair session?',
+               'Two people train together with Dean. Pair sessions are designed for a friend or partner joining '
+               'you.'),
+              ('How much does a pair session cost?',
+               'Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as '
+               'you go is £67.50 total for both people per session.'),
+              ('Can we train together with different fitness levels?',
+               'Yes. Discuss both of your starting points and goals with Dean. Exercises and pace can be adapted '
+               "to each person's level."),
+              ('Do we need to bring equipment?',
+               'No. Dean provides the session equipment. Bring water and wear comfortable training clothes and '
+               'suitable footwear.')]},
 ]
 
 
@@ -137,7 +156,8 @@ def build_page(service, template):
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in service["faqs"]]},
     ]}
     head += '\n<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False) + '</script>\n</head>'
-    nav = template.split('<body>', 1)[1].split('<div class="hero-local">', 1)[0]
+    nav = re.split(r'<main\b|<div class="hero-local">', template.split('<body>', 1)[1], maxsplit=1)[0]
+    nav = re.sub(r'<a class="seo-skip".*?</a>', '', nav)
     footer = '      <footer' + template.split('      <footer', 1)[1]
     sections = '\n'.join(f'<h2>{escape(h)}</h2><p>{escape(p)}</p>' for h, p in service["sections"])
     faqs = '\n'.join(f'<h3>{escape(q)}</h3><p>{escape(a)}</p>' for q, a in service["faqs"])
@@ -161,14 +181,16 @@ def build_page(service, template):
   </div>
   <h2>Book with Dean Burt</h2>
   <p>Dean is a REPs Level 3 certified personal trainer, qualified since 2019. Start with a free consultation to discuss your goals and the right session format. <a href="/about">Meet Dean</a> and <a href="/testimonials">read client reviews</a>.</p>
-  <p>1-to-1 prices are £45 pay as you go, £214 for 5 sessions, £406 for 10 or £576 for 15 (£38.40 per session). Session blocks include free app nutrition and workout plans. Small group sessions start at £31 per person. <a href="/pricing">See full personal training prices and packages</a>.</p>
+  <p>1-to-1 prices are £45 pay as you go, £214 for 5 sessions, £406 for 10 or £576 for 15 (£38.40 per session). Session blocks include free app nutrition and workout plans. Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as you go is £67.50 total for both people per session. <a href="/pricing">See full personal training prices and packages</a>.</p>
   <div class="info-block"><h2>Your questions answered</h2>{faqs}</div>
   <div class="info-block"><h2>Explore your training options</h2><div class="areas-grid">{service_links()}</div></div>
   <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
 </div>
 </main>
 '''
-    return '\n'.join(line.rstrip() for line in (head + '\n<body>\n' + nav + content + footer).splitlines()) + '\n'
+    output = '\n'.join(line.rstrip() for line in (head + '\n<body>\n' + nav + content + footer).splitlines()) + '\n'
+    output = re.sub(r'<link rel="stylesheet" href="/Styles/seo-pages.css[^"]*">', '', output)
+    return refresh_html(output)
 
 
 def main():

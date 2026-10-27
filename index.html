@@ -52,45 +52,20 @@
     [data-reveal],[data-reveal-child]{opacity:1!important;transform:none!important;transition:none!important}
   }
 </style>
+<link rel="stylesheet" href="/Styles/site-navigation.css?v=1">
+<script defer src="/Script/site-navigation.js?v=1"></script>
 </head>
 <body>
 
 <!-- ═══════════════════════════════════════════════════
      NAVBAR
 ══════════════════════════════════════════════════════ -->
-<header class="site-nav" id="siteNav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="DB's Workouts Home">
-      <img src="./pics/optimized/logo-160.webp" alt="DB's Workouts logo" width="68" height="68" decoding="async">
-      <span>DB's Workouts</span>
-    </a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="/about">About</a>
-      <a href="/pricing">Pricing</a>
-      <a href="/boxing-fitness-east-london">Boxing Fitness</a>
-      <a href="/testimonials">Results</a>
-      <a href="/active-living-1">Blog</a>
-      <a href="/tools">Free Tools</a>
-      <a href="/contact">Contact</a>
-    </nav>
-    <a href="/contact" class="nav-cta">Book Free Consultation</a>
-    <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <!-- Mobile menu -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="/about">About</a>
-    <a href="/pricing">Pricing</a>
-      <a href="/boxing-fitness-east-london">Boxing Fitness</a>
-    <a href="/testimonials">Results</a>
-    <a href="/active-living-1">Blog</a>
-    <a href="/tools">Free Tools</a>
-    <a href="https://app.dbworkouts.co.uk/">AI Plans</a>
-    <a href="/contact">Contact</a>
-    <a href="/contact" class="mobile-cta">Book Free Consultation</a>
-  </div>
-</header>
+<header class="primary-nav" id="primaryNav">
+<div class="primary-nav-inner">
+<a class="primary-brand" href="/" aria-label="DB's Workouts home"><img src="/pics/optimized/logo-160.webp" alt="" width="56" height="56" decoding="async"><span>DB's Workouts</span></a>
+<button class="primary-toggle" id="navigationToggle" type="button" aria-label="Open navigation" aria-controls="navigationPanel" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="primary-links" id="navigationPanel" aria-label="Main navigation"><details class="primary-dropdown"><summary>Training<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/" aria-current="page">One-to-one training</a><a href="/boxing-fitness-east-london">Boxing fitness</a><a href="/weight-loss-personal-trainer-east-london">Weight loss coaching</a><a href="/personal-training-for-beginners-east-london">Training for beginners</a><a href="/mobile-personal-trainer-east-london">Mobile personal training</a><a href="/pair-personal-training-east-london">Pair sessions</a></div></details><a href="/personal-trainer-east-london-areas">Areas</a><a href="/pricing">Pricing</a><a href="/testimonials">Results</a><a href="/about">About Dean</a><details class="primary-dropdown"><summary>More<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/blog">Blog</a><a href="/tools">Free fitness tools</a><a href="https://app.dbworkouts.co.uk/">AI plans</a><a href="/contact">Contact Dean</a></div></details><a class="primary-book" href="/contact">Book free consultation <span aria-hidden="true">↗</span></a></nav>
+</div></header>
 
 <!-- ═══════════════════════════════════════════════════
      HERO
@@ -107,7 +82,7 @@
       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.7 1.22 9.2 3.6l6.9-6.9C35.6 2.2 30.2 0 24 0 14.8 0 6.8 5.4 3.2 13.2l8 6.2C13.2 13.1 18.2 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24c0-1.6-.15-3.1-.43-4.5H24v9h12.7c-.55 3-2.2 5.6-4.7 7.3l7.3 5.7C43.9 37.2 46.5 31.1 46.5 24z"/><path fill="#FBBC05" d="M11.2 28.4c-.5-1.5-.8-3-.8-4.4s.3-3 .8-4.4l-8-6.2C1.2 16.7 0 20.2 0 24s1.2 7.3 3.2 10.6l8-6.2z"/><path fill="#34A853" d="M24 48c6.2 0 11.6-2 15.4-5.5l-7.3-5.7c-2 1.4-4.6 2.2-8.1 2.2-5.8 0-10.8-3.6-12.6-8.9l-8 6.2C6.8 42.6 14.8 48 24 48z"/></svg>
       <span class="hero-stars">★★★★★</span>
       <strong>5.0</strong>
-      <span>· 70 Google Reviews</span>
+      <span><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">· 70 Google Reviews</a></span>
     </div>
     <h1 class="hero-heading">
       Outdoor Personal<br>
@@ -258,7 +233,7 @@
           </div>
           <div class="about-cred">
             <span class="ac-icon">⭐</span>
-            <div><strong>70 five-star reviews</strong><span>5.0 rating on Google</span></div>
+            <div><strong>70 five-star reviews</strong><span><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">5.0 rating on Google</a></span></div>
           </div>
           <div class="about-cred">
             <span class="ac-icon">📍</span>
@@ -379,7 +354,7 @@
           <p class="rv-text">"Really enjoy these classes for a full body workout! Dean is a great instructor, friendly and will help you get the most out of the class."</p>
           <div class="rv-author">
             <div class="rv-avatar">S</div>
-            <div><strong>Sean Bree</strong><span>Google Review</span></div>
+            <div><strong>Sean Bree</strong><span><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review</a></span></div>
           </div>
         </div>
         <div class="review-card">
@@ -387,7 +362,7 @@
           <p class="rv-text">"Dean is an attentive and professional trainer who is able to adapt group work to suit the fitness levels of those he is training."</p>
           <div class="rv-author">
             <div class="rv-avatar">D</div>
-            <div><strong>D.</strong><span>Google Review</span></div>
+            <div><strong>D.</strong><span><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review</a></span></div>
           </div>
         </div>
         <div class="review-card">
@@ -395,7 +370,7 @@
           <p class="rv-text">"I would highly recommend Dean to anyone looking for a knowledgeable and committed personal trainer. He designed workouts around my injuries and got me fitter and stronger — creative and fun."</p>
           <div class="rv-author">
             <div class="rv-avatar">G</div>
-            <div><strong>Google Reviewer</strong><span>Verified Review</span></div>
+            <div><strong><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Reviewer</a></strong><span>Verified Review</span></div>
           </div>
         </div>
         <div class="review-card">
@@ -403,7 +378,7 @@
           <p class="rv-text">"Loved working with Dean, he was really reassuring and helped me build the confidence to go and have my own independent fitness journey."</p>
           <div class="rv-author">
             <div class="rv-avatar">G</div>
-            <div><strong>Google Reviewer</strong><span>Verified Review</span></div>
+            <div><strong><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Reviewer</a></strong><span>Verified Review</span></div>
           </div>
         </div>
         <div class="review-card">
@@ -411,7 +386,7 @@
           <p class="rv-text">"Dean is extremely professional and kept me moving and motivated during my first HIIT class. Would absolutely recommend to anyone."</p>
           <div class="rv-author">
             <div class="rv-avatar">G</div>
-            <div><strong>Google Reviewer</strong><span>Verified Review</span></div>
+            <div><strong><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Reviewer</a></strong><span>Verified Review</span></div>
           </div>
         </div>
       </div>
@@ -428,7 +403,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:16px">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=DB%27s+Workouts%2C+East+London" target="_blank" rel="noopener" class="google-link" aria-label="View DB's Workouts Google Business Profile and reviews">
+      <a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" class="google-link" aria-label="View DB's Workouts Google Business Profile and reviews">
         <svg width="16" height="16" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.7 1.22 9.2 3.6l6.9-6.9C35.6 2.2 30.2 0 24 0 14.8 0 6.8 5.4 3.2 13.2l8 6.2C13.2 13.1 18.2 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24c0-1.6-.15-3.1-.43-4.5H24v9h12.7c-.55 3-2.2 5.6-4.7 7.3l7.3 5.7C43.9 37.2 46.5 31.1 46.5 24z"/><path fill="#FBBC05" d="M11.2 28.4c-.5-1.5-.8-3-.8-4.4s.3-3 .8-4.4l-8-6.2C1.2 16.7 0 20.2 0 24s1.2 7.3 3.2 10.6l8-6.2z"/><path fill="#34A853" d="M24 48c6.2 0 11.6-2 15.4-5.5l-7.3-5.7c-2 1.4-4.6 2.2-8.1 2.2-5.8 0-10.8-3.6-12.6-8.9l-8 6.2C6.8 42.6 14.8 48 24 48z"/></svg>
         Read all 70 reviews on Google
       </a>
@@ -568,7 +543,7 @@
 <a class="tool-card" href="/weight-loss-personal-trainer-east-london"><span class="tool-name">Weight Loss Coaching</span></a>
 <a class="tool-card" href="/personal-training-for-beginners-east-london"><span class="tool-name">Beginner Personal Training</span></a>
 <a class="tool-card" href="/mobile-personal-trainer-east-london"><span class="tool-name">Mobile Personal Training</span></a>
-<a class="tool-card" href="/small-group-personal-training-east-london"><span class="tool-name">Small Group Training</span></a></div>
+<a class="tool-card" href="/pair-personal-training-east-london"><span class="tool-name">Pair Personal Training</span></a></div>
   </div>
 </section>
 
@@ -720,6 +695,10 @@
         <span class="loc-name">Forest Gate</span>
         <span class="loc-arrow">→</span>
       </a>
+      <a href="/personal-trainer-east-london-areas" class="loc-card" aria-label="See all areas covered">
+        <span class="loc-name">All 126 areas</span>
+        <span class="loc-arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
@@ -742,7 +721,7 @@
         title="Map showing DB's Workouts outdoor personal training area in East London"></iframe>
     </div>
     <div class="map-actions">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=DB%27s+Workouts%2C+East+London" target="_blank" rel="noopener" class="btn-secondary" aria-label="Open DB's Workouts Google Business Profile">View Google Business Profile</a>
+      <a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" class="btn-secondary" aria-label="Open DB's Workouts Google Business Profile">View Google Business Profile</a>
     </div>
   </div>
 </section>
@@ -764,7 +743,7 @@
         </a>
       </div>
       <div class="fca-trust">
-        <span>★★★★★ 70 Google Reviews</span>
+        <span><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">★★★★★ 70 Google Reviews</a></span>
         <span>·</span>
         <span>REPs Level 3 Certified</span>
         <span>·</span>
@@ -822,7 +801,7 @@
         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         @dbs_workouts
       </a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=DB%27s+Workouts%2C+East+London" target="_blank" rel="noopener" class="footer-contact-item" aria-label="View DB's Workouts Google Business Profile and reviews">
+      <a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" class="footer-contact-item" aria-label="View DB's Workouts Google Business Profile and reviews">
         <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.7 1.22 9.2 3.6l6.9-6.9C35.6 2.2 30.2 0 24 0 14.8 0 6.8 5.4 3.2 13.2l8 6.2C13.2 13.1 18.2 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24c0-1.6-.15-3.1-.43-4.5H24v9h12.7c-.55 3-2.2 5.6-4.7 7.3l7.3 5.7C43.9 37.2 46.5 31.1 46.5 24z"/><path fill="#FBBC05" d="M11.2 28.4c-.5-1.5-.8-3-.8-4.4s.3-3 .8-4.4l-8-6.2C1.2 16.7 0 20.2 0 24s1.2 7.3 3.2 10.6l8-6.2z"/><path fill="#34A853" d="M24 48c6.2 0 11.6-2 15.4-5.5l-7.3-5.7c-2 1.4-4.6 2.2-8.1 2.2-5.8 0-10.8-3.6-12.6-8.9l-8 6.2C6.8 42.6 14.8 48 24 48z"/></svg>
         ★★★★★ 5.0 · 70 Reviews on Google
       </a>
@@ -832,6 +811,7 @@
   <div class="footer-bottom">
     <p>© 2026 DB's Workouts · Dean Burt &nbsp;·&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms-and-conditions">Terms</a></p>
   </div>
+
 </footer>
 
 <!-- ═══════════════════════════════════════════════════
@@ -878,7 +858,7 @@
   "@id": "https://dbworkouts.co.uk/#business",
   "name": "DB's Workouts",
   "founder": {"@type": "Person", "@id": "https://dbworkouts.co.uk/#dean", "name": "Dean Burt"},
-  "knowsAbout": ["Outdoor personal training","Strength training","Weight loss","HIIT","Boxing fitness","Group fitness"],
+  "knowsAbout": ["Outdoor personal training","Strength training","Weight loss","HIIT","Boxing fitness","Pair personal training"],
   "slogan": "Outdoor personal training in East London",
   "image": "https://dbworkouts.co.uk/logo.png",
   "description": "REPs Level 3 certified outdoor personal trainer offering 1-to-1 sessions across East London including Stratford, Ilford, Walthamstow, Goodmayes, Wanstead and Romford.",
@@ -909,7 +889,7 @@
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "15 Session Block","description": "15 outdoor personal training sessions with a free personalised nutrition and workout plan in the DB's Workouts app."},"price": "576.00","priceCurrency": "GBP"}
     ]
   },
-  "sameAs": ["https://www.instagram.com/dbs_workouts","https://www.facebook.com/dbs.workouts1","https://www.google.com/maps/search/?api=1&query=DB%27s+Workouts%2C+East+London"]
+  "sameAs": ["https://www.instagram.com/dbs_workouts","https://www.facebook.com/dbs.workouts1","https://maps.google.com/?cid=5699876526247742243"]
 }
 </script>
 <script type="application/ld+json">
@@ -968,35 +948,7 @@
 })();
 </script>
 
-<script>
-// ── Nav scroll behaviour
-(function () {
-  var nav = document.getElementById('siteNav');
-  var toggle = document.getElementById('navToggle');
-  var menu = document.getElementById('mobileMenu');
-  var open = false;
 
-  window.addEventListener('scroll', function () {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
-  }, { passive: true });
-
-  toggle.addEventListener('click', function () {
-    open = !open;
-    toggle.classList.toggle('active', open);
-    menu.classList.toggle('open', open);
-    toggle.setAttribute('aria-expanded', open);
-    menu.setAttribute('aria-hidden', !open);
-  });
-
-  menu.querySelectorAll('a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      open = false;
-      toggle.classList.remove('active');
-      menu.classList.remove('open');
-    });
-  });
-})();
-</script>
 
 <script>
 // ── Scroll reveal
@@ -1270,6 +1222,24 @@ document.getElementById('leadMagnetForm').addEventListener('submit', function (e
   }
 </script>
 <script defer src="./Script/navbar.js"></script>
-<a href="https://wa.me/447752300937" class="db-wa-fab" aria-label="WhatsApp Dean" target="_blank" rel="noopener"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.55 4.123 1.511 5.863L.057 23.01a.5.5 0 00.633.633l5.183-1.461A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.654-.49-5.193-1.349l-.371-.219-3.838 1.082 1.093-3.783-.238-.39A9.943 9.943 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+<!-- db-mobile-bar -->
+<style>
+#dbMobileBar{display:none}
+@media(max-width:767px){
+  body{padding-bottom:68px}
+  #dbMobileBar{display:grid;transform:translateY(110%);transition:transform .25s ease;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:99990;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:#0d0d0d;border-top:1px solid rgba(255,255,255,.12);box-shadow:0 -4px 18px rgba(0,0,0,.5)}
+  #dbMobileBar.show{transform:none}
+  #dbMobileBar a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border-radius:8px;font:700 14px/1 Inter,Arial,sans-serif;text-decoration:none;color:#fff}
+  #dbMobileBar .mb-call{background:#1f1f1f;border:1px solid rgba(255,255,255,.25)}
+  #dbMobileBar .mb-wa{background:#25D366;color:#06210f}
+  #dbMobileBar .mb-book{background:#b30018;border:1px solid #fff}
+}
+</style>
+<div id="dbMobileBar" role="navigation" aria-label="Contact Dean">
+  <a class="mb-call" href="tel:+447752300937" aria-label="Call Dean">Call</a>
+  <a class="mb-wa" href="https://wa.me/447752300937?text=Hi%20Dean%2C%20I%20found%20you%20online%20and%20I%27d%20like%20a%20free%20consultation%20in%20East%20London." target="_blank" rel="noopener" aria-label="WhatsApp Dean">WhatsApp</a>
+  <a class="mb-book" href="/contact">Book Free</a>
+</div>
+<script>(function(){var b=document.getElementById('dbMobileBar');if(!b)return;var h=document.querySelector('.seo-hero,.about-hero,.db-page-hero,.fp-hero,section.hero,.hero-local');function u(){var end=h?h.getBoundingClientRect().bottom+window.scrollY-60:window.innerHeight*0.9;b.classList.toggle('show',window.scrollY>end);}u();window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);})();</script>
 </body>
 </html>

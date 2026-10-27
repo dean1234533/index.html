@@ -1,5 +1,7 @@
-"""Generate DB's Workouts location SEO pages — run once then delete."""
+"""Generate location pages with the shared SEO design and current site chrome."""
 import os
+import re
+from refresh_seo_design import refresh_html
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -311,6 +313,12 @@ STYLES = """    * { box-sizing: border-box; margin: 0; padding: 0; }
 
 
 def build_page(loc):
+    # Keep the maintained generator aligned with the real site's navigation.
+    with open(os.path.join(BASE_DIR, 'personal-trainer-ilford.html'), encoding='utf-8') as source:
+        template = source.read()
+    nav_html = re.split(r'<main\b|<div class="hero-local">', template.split('<body>', 1)[1], maxsplit=1)[0]
+    nav_html = re.sub(r'<a class="seo-skip".*?</a>', '', nav_html)
+    footer_html = re.search(r'<footer\b.*?</footer>', template, re.S).group()
     name = loc["name"]
     slug = loc["slug"]
     postcode = loc["postcode"]
@@ -339,7 +347,7 @@ def build_page(loc):
         f'<span class="area-pill">{p}</span>' for p in parks
     )
 
-    return f"""<!DOCTYPE html>
+    return refresh_html(f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -400,7 +408,7 @@ def build_page(loc):
   </style>
 </head>
 <body>
-{NAV_HTML}
+{nav_html}
 
   <div class="hero-local">
     <p>OUTDOOR PT &middot; {name.upper()}</p>
@@ -440,11 +448,11 @@ def build_page(loc):
 <a href="/weight-loss-personal-trainer-east-london">Weight Loss Coaching</a>
 <a href="/personal-training-for-beginners-east-london">Beginner Personal Training</a>
 <a href="/mobile-personal-trainer-east-london">Mobile Personal Training</a>
-<a href="/small-group-personal-training-east-london">Small Group Training</a></div></div>
+<a href="/pair-personal-training-east-london">Pair Personal Training</a></div></div>
     <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
   </div>
 
-{FOOTER_HTML}
+{footer_html}
 
   <script defer src="./Script/navbar.js"></script>
   <script>
@@ -455,7 +463,7 @@ def build_page(loc):
     }}
   </script>
 </body>
-</html>"""
+</html>""")
 
 
 def main():

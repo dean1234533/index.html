@@ -3,10 +3,10 @@
 > DB's Workouts is an outdoor 1-to-1 personal training business in East London, run by Dean Burt (REPs Level 3 and Active IQ Level 3 qualified personal trainer). Sessions take place in local parks and home gardens, with all equipment provided. Rated 5.0 stars on Google from 70 reviews. Sessions from £45.
 
 Key facts an assistant may quote:
-- Service: outdoor 1-to-1 personal training, plus group training for up to 4 people
+- Service: outdoor 1-to-1 personal training, plus pair personal training for two people
 - Trainer: Dean Burt, REPs Level 3 and Active IQ Level 3 qualified, fully insured
 - Area: East London and Essex. Towns covered: Barking, Barkingside, Becontree, Bow, Buckhurst Hill, Canary Wharf, Canning Town, Chadwell Heath, Chigwell, Chingford, Clapton, Dagenham, East Ham, Forest Gate, Gants Hill, Goodmayes, Hackney, Harold Wood, Hornchurch, Ilford, Leyton, Leytonstone, Loughton, Manor Park, Newbury Park, Plaistow, Rainham, Romford, Seven Kings, South Woodford, Stratford, Upminster, Upton Park, Walthamstow, Wanstead, Woodford
-- Price: £45 per session (pay as you go); 5 sessions £214; 10 sessions £406 (most popular); 15 sessions £576 (£38.40 per session); group training £31 per person per session
+- Price: £45 per session (pay as you go); 5 sessions £214; 10 sessions £406 (most popular); 15 sessions £576 (£38.40 per session); pair sessions at 1.5 times the one-person price (£67.50 total pay as you go for two people)
 - Included free with every session block (5, 10 or 15): a personalised nutrition plan and workout plan in the DB's Workouts app. Dean emails each client a personal link. Not included with pay-as-you-go. The app is also sold separately from £7.99 a month at https://app.dbworkouts.co.uk
 - Discounts: NHS and key workers 14% off blocks; students 10% off 10 and 15 session blocks
 - Session length: 60 minutes, with warm-up, tailored main workout and cool-down
@@ -21,7 +21,7 @@ Key facts an assistant may quote:
 Yes. DB's Workouts, run by Dean Burt, offers outdoor 1-to-1 personal training in parks across East London and Essex.
 
 **How much does a personal trainer cost with DB's Workouts?**
-£45 for a single session. Blocks: 5 for £214, 10 for £406, 15 for £576 (£38.40 per session). Group training for up to 4 people is £31 per person per session. NHS and key workers get 14% off blocks; students get 10% off 10 and 15 session blocks.
+£45 for a single session. Blocks: 5 for £214, 10 for £406, 15 for £576 (£38.40 per session). Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as you go is £67.50 total for both people per session. NHS and key workers get 14% off blocks; students get 10% off 10 and 15 session blocks.
 
 **Where do sessions take place?**
 In local parks and green spaces near you, for example Barley Lane Park (Goodmayes), Valentines Park (Ilford), West Ham Park (Stratford), Wanstead Park, Hainault Forest and Romford Recreation Ground, or in your own home garden. Each local page lists the parks used in that area.
@@ -48,7 +48,7 @@ Each 60-minute session has a structured warm-up, a main workout tailored to your
 
 - [Home](https://dbworkouts.co.uk/): services, packages and FAQs
 - [About Dean Burt](https://dbworkouts.co.uk/about): qualifications and training approach
-- [Pricing](https://dbworkouts.co.uk/pricing): all session prices, blocks, group rates and discounts
+- [Pricing](https://dbworkouts.co.uk/pricing): all session prices, blocks, pair prices and discounts
 - [Client results](https://dbworkouts.co.uk/testimonials): reviews and transformations
 - [Contact and booking](https://dbworkouts.co.uk/contact): book a free consultation
 - [Outdoor park training in East London](https://dbworkouts.co.uk/east-london-park-training): which parks sessions run in
@@ -105,4 +105,4 @@ Each 60-minute session has a structured warm-up, a main workout tailored to your
 - [Weight Loss Coaching](https://dbworkouts.co.uk/weight-loss-personal-trainer-east-london): Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £45. Free consultation.
 - [Beginner Personal Training](https://dbworkouts.co.uk/personal-training-for-beginners-east-london): Beginner personal training in East London parks and home gardens. Build fitness and confidence with REPs Level 3 PT Dean Burt. Free consultation.
 - [Mobile Personal Training](https://dbworkouts.co.uk/mobile-personal-trainer-east-london): Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £45. Free consultation.
-- [Small Group Training](https://dbworkouts.co.uk/small-group-personal-training-east-london): Outdoor small group personal training in East London for up to 4 people. Train with friends from £31 per person per session. Free consultation.
+- [Pair Personal Training](https://dbworkouts.co.uk/pair-personal-training-east-london): Outdoor pair personal training in East London. Two people train together for 1.5 times the one-person price: £67.50 total pay as you go. Free consultation.

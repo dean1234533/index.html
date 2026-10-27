@@ -23,40 +23,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700;800;900:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Styles/db.css?v=9">
 <style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
+<link rel="stylesheet" href="/Styles/site-navigation.css?v=1">
+<script defer src="/Script/site-navigation.js?v=1"></script>
 </head>
 
 <body>
 
-  <nav class="db-nav" id="dbNav">
-  <div class="db-nav-inner">
-    <a href="index.html" class="db-nav-logo">
-      <img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy">
-      <span>DB's Workouts</span>
-    </a>
-    <div class="db-nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="testimonials.html">Results</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
-    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="db-mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="testimonials.html">Results</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
-  </div>
-</nav>
-<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
+  <header class="primary-nav" id="primaryNav">
+<div class="primary-nav-inner">
+<a class="primary-brand" href="/" aria-label="DB's Workouts home"><img src="/pics/optimized/logo-160.webp" alt="" width="56" height="56" decoding="async"><span>DB's Workouts</span></a>
+<button class="primary-toggle" id="navigationToggle" type="button" aria-label="Open navigation" aria-controls="navigationPanel" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="primary-links" id="navigationPanel" aria-label="Main navigation"><details class="primary-dropdown"><summary>Training<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/">One-to-one training</a><a href="/boxing-fitness-east-london">Boxing fitness</a><a href="/weight-loss-personal-trainer-east-london">Weight loss coaching</a><a href="/personal-training-for-beginners-east-london">Training for beginners</a><a href="/mobile-personal-trainer-east-london">Mobile personal training</a><a href="/pair-personal-training-east-london">Pair sessions</a></div></details><a href="/personal-trainer-east-london-areas">Areas</a><a href="/pricing">Pricing</a><a href="/testimonials">Results</a><a href="/about">About Dean</a><details class="primary-dropdown"><summary>More<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/blog">Blog</a><a href="/tools">Free fitness tools</a><a href="https://app.dbworkouts.co.uk/">AI plans</a><a href="/contact">Contact Dean</a></div></details><a class="primary-book" href="/contact">Book free consultation <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+
 <div class="legal-header">
     <p class="legal-eyebrow">Legal</p>
     <h1>Terms &amp; Conditions</h1>
@@ -68,7 +47,7 @@
     <p>Welcome to DB's Workouts. These Terms and Conditions govern your use of our website dbworkouts.co.uk and our personal training services. By using our website or booking our services, you agree to be bound by these terms. Please read them carefully.</p>
 
     <h2>1. Services Provided</h2>
-    <p>DB's Workouts offers personal training services including one-to-one coaching, group training, fitness consultations, and online programming. All sessions are delivered outdoors across East London unless otherwise agreed in writing.</p>
+    <p>DB's Workouts offers personal training services including one-to-one coaching, pair personal training, fitness consultations, and online programming. All sessions are delivered outdoors across East London unless otherwise agreed in writing.</p>
 
     <h2>2. Booking &amp; Payments</h2>
     <ul>
@@ -133,7 +112,7 @@
     <div>
       <div class="db-footer-brand">
         <img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy">
-        <div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">&#9733;&#9733;&#9733;&#9733;&#9733; Google Rated</span></div>
+        <div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">&#9733;&#9733;&#9733;&#9733;&#9733; Google Rated</a></span></div>
       </div>
       <p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2019.</p>
     </div>
@@ -176,5 +155,24 @@
         });
       }
     </script>
+<!-- db-mobile-bar -->
+<style>
+#dbMobileBar{display:none}
+@media(max-width:767px){
+  body{padding-bottom:68px}
+  #dbMobileBar{display:grid;transform:translateY(110%);transition:transform .25s ease;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:99990;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:#0d0d0d;border-top:1px solid rgba(255,255,255,.12);box-shadow:0 -4px 18px rgba(0,0,0,.5)}
+  #dbMobileBar.show{transform:none}
+  #dbMobileBar a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border-radius:8px;font:700 14px/1 Inter,Arial,sans-serif;text-decoration:none;color:#fff}
+  #dbMobileBar .mb-call{background:#1f1f1f;border:1px solid rgba(255,255,255,.25)}
+  #dbMobileBar .mb-wa{background:#25D366;color:#06210f}
+  #dbMobileBar .mb-book{background:#b30018;border:1px solid #fff}
+}
+</style>
+<div id="dbMobileBar" role="navigation" aria-label="Contact Dean">
+  <a class="mb-call" href="tel:+447752300937" aria-label="Call Dean">Call</a>
+  <a class="mb-wa" href="https://wa.me/447752300937?text=Hi%20Dean%2C%20I%20found%20you%20online%20and%20I%27d%20like%20a%20free%20consultation." target="_blank" rel="noopener" aria-label="WhatsApp Dean">WhatsApp</a>
+  <a class="mb-book" href="/contact">Book Free</a>
+</div>
+<script>(function(){var b=document.getElementById('dbMobileBar');if(!b)return;var h=document.querySelector('.seo-hero,.about-hero,.db-page-hero,.fp-hero,section.hero,.hero-local');function u(){var end=h?h.getBoundingClientRect().bottom+window.scrollY-60:window.innerHeight*0.9;b.classList.toggle('show',window.scrollY>end);}u();window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);})();</script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+/* Shared site navigation. Scoped to avoid conflicts with legacy page styles. */
+.primary-nav{position:fixed;inset:0 0 auto;z-index:999;background:var(--bg,#080808);border-bottom:1px solid var(--border,rgba(255,255,255,.1));font-family:Inter,sans-serif;color:var(--text,#f0f0f0);line-height:1.5}
+.primary-nav *{box-sizing:border-box}
+.primary-nav-inner{max-width:1248px;margin:auto;padding:0 24px;min-height:80px;display:flex;align-items:center;gap:28px}
+.primary-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;text-decoration:none;color:inherit;font-family:Montserrat,Inter,sans-serif;font-weight:800;font-size:15px;white-space:nowrap}
+.primary-brand img{width:56px;height:56px;object-fit:contain;display:block}
+.primary-links{display:flex;align-items:center;gap:24px;margin-left:auto}
+.primary-links>a,.primary-dropdown summary{font:500 13px/1.5 Inter,sans-serif;color:var(--text-dim,#aaa);text-decoration:none;white-space:nowrap;padding:14px 0;cursor:pointer}
+.primary-links a:hover,.primary-links a[aria-current],.primary-dropdown[open]>summary,.primary-dropdown summary:hover{color:var(--text,#f0f0f0)}
+.primary-dropdown{position:relative;margin:0}
+.primary-dropdown summary{display:flex;gap:8px;align-items:center;list-style:none}
+.primary-dropdown summary::-webkit-details-marker{display:none}
+.primary-dropdown summary>span{font-size:16px;transition:transform .15s}
+.primary-dropdown[open] summary>span{transform:rotate(180deg)}
+.primary-dropdown-links{position:absolute;top:calc(100% + 8px);left:-20px;width:264px;padding:10px;background:var(--card,#141414);border:1px solid var(--border-h,rgba(255,255,255,.14));border-radius:var(--r-sm,8px);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.primary-dropdown-links a{display:block;padding:12px;font-size:13px;color:var(--text-dim,#aaa);text-decoration:none;border-radius:4px;white-space:normal}
+.primary-dropdown-links a:hover,.primary-dropdown-links a[aria-current]{background:var(--surface,#0f0f0f);color:var(--text,#f0f0f0)}
+.primary-links .primary-book{background:var(--accent,#b30018);border-radius:var(--r-sm,8px);color:white;padding:13px 18px;font-size:12px;font-weight:700;display:flex;gap:14px;align-items:center;min-height:46px}
+.primary-links .primary-book:hover{background:var(--accent-h,#cc001e);color:white}
+.primary-toggle{display:none}
+.primary-nav a:focus-visible,.primary-nav button:focus-visible,.primary-nav summary:focus-visible{outline:2px solid var(--text,#f0f0f0);outline-offset:4px}
+@media(max-width:1099px){
+ .primary-nav-inner{padding-inline:20px;gap:16px}
+ .primary-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;margin-left:auto;width:44px;height:44px;padding:10px;background:transparent;border:1px solid var(--border-h,rgba(255,255,255,.14));border-radius:var(--r-sm,8px);cursor:pointer}
+ .primary-toggle span{display:block;height:2px;width:22px;background:var(--text,#f0f0f0);transition:transform .15s,opacity .15s}
+ .primary-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ .primary-toggle[aria-expanded=true] span:nth-child(2){opacity:0}
+ .primary-toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+ .primary-links{position:absolute;top:80px;left:0;right:0;display:flex;flex-direction:column;align-items:stretch;gap:0;background:var(--bg,#080808);padding:8px 20px 28px;max-height:calc(100dvh - 80px);overflow-y:auto;overscroll-behavior:contain;border-bottom:1px solid var(--border-h,rgba(255,255,255,.14));visibility:hidden;pointer-events:none}
+ .primary-links.is-open{visibility:visible;pointer-events:auto}
+ .primary-links>a,.primary-dropdown summary{padding:17px 0;font-size:15px;border-bottom:1px solid var(--border,rgba(255,255,255,.1));min-height:54px}
+ .primary-dropdown summary{justify-content:space-between}
+ .primary-dropdown-links{position:static;width:auto;padding:4px 0 12px 14px;margin-bottom:4px;background:none;box-shadow:none;border:0;border-radius:0;border-left:2px solid var(--accent,#b30018)}
+ .primary-dropdown-links a{font-size:14px;padding:13px 12px}
+ .primary-links .primary-book{justify-content:center;margin-top:20px;font-size:13px;min-height:50px;border:0}
+}
+@media(prefers-reduced-motion:reduce){.primary-nav *{transition:none!important}}

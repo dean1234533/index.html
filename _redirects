@@ -43,3 +43,7 @@
 # Old URLs with spaces (encoded) → clean canonical URLs
 /Privacy%20Policy.html      /privacy-policy             301
 /Terms%20and%20conditions.html /terms-and-conditions    301
+
+# Pair sessions replace the incorrectly advertised group-training service.
+/small-group-personal-training-east-london /pair-personal-training-east-london 301
+/small-group-personal-training-east-london.html /pair-personal-training-east-london 301

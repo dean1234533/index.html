@@ -110,24 +110,18 @@
     }
   </style>
 <style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
+<link rel="stylesheet" href="/Styles/site-navigation.css?v=1">
+<script defer src="/Script/site-navigation.js?v=1"></script>
 </head>
 <body>
 
-<nav class="db-nav" id="dbNav">
-  <div class="db-nav-inner">
-    <a href="index.html" class="db-nav-logo"><img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy"><span>DB's Workouts</span></a>
-    <div class="db-nav-links">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
-    </div>
-    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
-    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="db-mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
-    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
-  </div>
-</nav>
-<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
+<header class="primary-nav" id="primaryNav">
+<div class="primary-nav-inner">
+<a class="primary-brand" href="/" aria-label="DB's Workouts home"><img src="/pics/optimized/logo-160.webp" alt="" width="56" height="56" decoding="async"><span>DB's Workouts</span></a>
+<button class="primary-toggle" id="navigationToggle" type="button" aria-label="Open navigation" aria-controls="navigationPanel" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="primary-links" id="navigationPanel" aria-label="Main navigation"><details class="primary-dropdown"><summary>Training<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/">One-to-one training</a><a href="/boxing-fitness-east-london">Boxing fitness</a><a href="/weight-loss-personal-trainer-east-london">Weight loss coaching</a><a href="/personal-training-for-beginners-east-london">Training for beginners</a><a href="/mobile-personal-trainer-east-london">Mobile personal training</a><a href="/pair-personal-training-east-london">Pair sessions</a></div></details><a href="/personal-trainer-east-london-areas">Areas</a><a href="/pricing">Pricing</a><a href="/testimonials">Results</a><a href="/about">About Dean</a><details class="primary-dropdown"><summary>More<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/blog">Blog</a><a href="/tools">Free fitness tools</a><a href="https://app.dbworkouts.co.uk/">AI plans</a><a href="/contact">Contact Dean</a></div></details><a class="primary-book" href="/contact">Book free consultation <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+
 
 <!-- Hero -->
 <header class="fp-hero">
@@ -279,7 +273,7 @@
         Who built this plan generator?
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
-      <div class="faq-a">Dean Burt — a REPs Level 3 certified personal trainer based in East London with 12+ years experience and 70 five-star Google reviews. The programming logic is built on the same principles Dean uses with his in-person clients.</div>
+      <div class="faq-a">Dean Burt — a REPs Level 3 certified personal trainer based in East London with 12+ years experience and <a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">70 five-star Google reviews</a>. The programming logic is built on the same principles Dean uses with his in-person clients.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
@@ -325,7 +319,7 @@
       <span>·</span>
       <span>Instant results</span>
       <span>·</span>
-      <span>★★★★★ Google rated</span>
+      <span><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">★★★★★ Google rated</a></span>
     </div>
   </div>
 </section>
@@ -335,9 +329,66 @@
   <p>Serving: <a href="personal-trainer-stratford.html">Stratford</a> · <a href="outdoor-pt-walthamstow.html">Walthamstow</a> · <a href="personal-trainer-ilford.html">Ilford</a> · <a href="personal-trainer-goodmayes.html">Goodmayes</a> · <a href="personal-trainer-wanstead.html">Wanstead</a> · <a href="personal-trainer-romford.html">Romford</a> · <a href="personal-trainer-east-ham.html">East Ham</a> · <a href="personal-trainer-leytonstone.html">Leytonstone</a> · <a href="personal-trainer-barking.html">Barking</a></p>
 </div>
 
+<!-- db-lead-form -->
+<div class="info-block" id="free-consultation" style="margin-top:28px;">
+  <style>
+    #free-consultation{background:#111;border-left:4px solid #b30018;border-radius:0 6px 6px 0;padding:20px;margin:24px auto;max-width:800px;color:#fff;font-family:"IBM Plex Serif",serif}
+    #free-consultation .redText{color:#b30018}
+    #leadForm{display:grid;gap:10px;margin-top:12px}
+    #leadForm input,#leadForm select{width:100%;padding:12px 14px;border-radius:6px;border:1px solid rgba(255,255,255,.25);background:#0a0a0a;color:#fff;font:inherit;font-size:16px}
+    #leadForm .lf-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    #leadForm button{padding:14px;border-radius:6px;border:2px solid #fff;background:#b30018;color:#fff;font:700 17px/1 inherit;cursor:pointer}
+    #leadForm button:disabled{opacity:.6;cursor:wait}
+    .lf-alt{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .lf-alt a{padding:11px 16px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px}
+    #leadMsg{display:none;margin-top:12px;font-weight:700}
+    @media(max-width:560px){#leadForm .lf-row{grid-template-columns:1fr}}
+  </style>
+  <h2 style="font-size:clamp(18px,3vw,24px);margin-top:0;">Get your <span class="redText">free consultation</span></h2>
+  <p>Leave your details and Dean will get back to you within 2 hours. Free, no commitment.</p>
+  <form id="leadForm" action="https://formspree.io/f/mjgzzowv" method="POST">
+    <div class="lf-row">
+      <input type="text" name="name" placeholder="Your name *" required autocomplete="name">
+      <input type="email" name="email" placeholder="Email address *" required autocomplete="email">
+    </div>
+    <input type="tel" name="phone" placeholder="Phone or WhatsApp (optional)" autocomplete="tel">
+    <select name="goal" required>
+      <option value="" disabled selected>What's your main goal?</option>
+      <option>Weight Loss</option><option>Build Muscle</option><option>Improve Fitness</option><option>Sports Performance</option><option>General Health</option><option>Other</option>
+    </select>
+    <input type="hidden" name="source" value="">
+    <input type="hidden" name="_subject" value="New enquiry from website page">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+    <button type="submit">Book My Free Consultation</button>
+  </form>
+  <p id="leadMsg" role="status"></p>
+  <div class="lf-alt">
+    <a href="https://wa.me/447752300937" target="_blank" rel="noopener" style="background:#25D366;color:#06210f;">WhatsApp Dean</a>
+    <a href="tel:+447752300937" style="border:1px solid rgba(255,255,255,.35);">Call 07752 300937</a>
+  </div>
+  <script>
+  (function(){
+    var f=document.getElementById('leadForm'),m=document.getElementById('leadMsg');
+    if(!f)return;
+    f.querySelector('[name=source]').value=location.href;
+    f.querySelector('[name=_subject]').value='New enquiry from '+(document.title.split('|')[0].trim()||'website');
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';
+      fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+        .then(function(r){
+          m.style.display='block';
+          if(r.ok){f.style.display='none';m.style.color='#25D366';m.textContent='Thanks! Dean will be in touch within 2 hours. Check your inbox, including spam.';}
+          else throw new Error('x');
+        })
+        .catch(function(){b.disabled=false;b.textContent='Book My Free Consultation';m.style.display='block';m.style.color='#ff5a6e';m.textContent='Something went wrong. Please WhatsApp or call Dean on 07752 300937.';});
+    });
+  })();
+  </script>
+</div>
 <footer class="db-footer">
   <div class="db-footer-inner">
-    <div><div class="db-footer-brand"><img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy"><div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">★★★★★ Google Rated</span></div></div><p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2019.</p></div>
+    <div><div class="db-footer-brand"><img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy"><div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">★★★★★ Google Rated</a></span></div></div><p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2019.</p></div>
     <div class="db-footer-col"><div class="db-footer-heading">Pages</div><a href="about.html">About Dean</a><a href="pricing.html">Pricing</a><a href="testimonials.html">Results</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
     <div class="db-footer-col"><div class="db-footer-heading">Locations</div><a href="outdoor-pt-walthamstow.html">Walthamstow</a><a href="personal-trainer-ilford.html">Ilford</a><a href="personal-trainer-hackney.html">Hackney</a><a href="personal-trainer-chingford.html">Chingford</a><a href="personal-trainer-dagenham.html">Dagenham</a></div>
     <div class="db-footer-col"><div class="db-footer-heading">Get In Touch</div><a href="tel:+447752300937" class="db-footer-contact-item">07752 300937</a><a href="mailto:dbs_workouts@yahoo.com" class="db-footer-contact-item">dbs_workouts@yahoo.com</a><a href="https://wa.me/447752300937" class="db-footer-contact-item" target="_blank" rel="noopener">WhatsApp</a></div>
@@ -348,10 +399,7 @@
 
 <script src="Script/cookie-consent.js" defer></script>
 <script>
-  var nav=document.getElementById('dbNav'),tog=document.getElementById('navToggle'),mob=document.getElementById('mobileMenu');
-  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);},{passive:true});
-  tog.addEventListener('click',function(){var o=mob.classList.toggle('open');tog.classList.toggle('active',o);document.body.style.overflow=o?'hidden':'';});
-  var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');ro.unobserve(x.target);}});},{threshold:.1});
+var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');ro.unobserve(x.target);}});},{threshold:.1});
   document.querySelectorAll('[data-reveal]').forEach(function(el){ro.observe(el);});
   function toggleFaq(btn){
     var a=btn.nextElementSibling;
@@ -360,5 +408,24 @@
     if(!isOpen){a.classList.add('open');btn.classList.add('open');}
   }
 </script>
+<!-- db-mobile-bar -->
+<style>
+#dbMobileBar{display:none}
+@media(max-width:767px){
+  body{padding-bottom:68px}
+  #dbMobileBar{display:grid;transform:translateY(110%);transition:transform .25s ease;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:99990;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:#0d0d0d;border-top:1px solid rgba(255,255,255,.12);box-shadow:0 -4px 18px rgba(0,0,0,.5)}
+  #dbMobileBar.show{transform:none}
+  #dbMobileBar a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border-radius:8px;font:700 14px/1 Inter,Arial,sans-serif;text-decoration:none;color:#fff}
+  #dbMobileBar .mb-call{background:#1f1f1f;border:1px solid rgba(255,255,255,.25)}
+  #dbMobileBar .mb-wa{background:#25D366;color:#06210f}
+  #dbMobileBar .mb-book{background:#b30018;border:1px solid #fff}
+}
+</style>
+<div id="dbMobileBar" role="navigation" aria-label="Contact Dean">
+  <a class="mb-call" href="tel:+447752300937" aria-label="Call Dean">Call</a>
+  <a class="mb-wa" href="https://wa.me/447752300937?text=Hi%20Dean%2C%20I%20found%20you%20online%20and%20I%27d%20like%20a%20free%20consultation." target="_blank" rel="noopener" aria-label="WhatsApp Dean">WhatsApp</a>
+  <a class="mb-book" href="/contact">Book Free</a>
+</div>
+<script>(function(){var b=document.getElementById('dbMobileBar');if(!b)return;var h=document.querySelector('.seo-hero,.about-hero,.db-page-hero,.fp-hero,section.hero,.hero-local');function u(){var end=h?h.getBoundingClientRect().bottom+window.scrollY-60:window.innerHeight*0.9;b.classList.toggle('show',window.scrollY>end);}u();window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);})();</script>
 </body>
 </html>

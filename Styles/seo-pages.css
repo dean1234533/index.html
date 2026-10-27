@@ -1,0 +1,90 @@
+/* SEO landing pages: shared DB tokens, real photography and static content. */
+.seo-page{--seo-accent:#f0142f;font-size:16px}
+.seo-wrap{width:min(1200px,calc(100% - 64px));margin-inline:auto}
+.seo-page h1,.seo-page h2,.seo-page h3{margin:0}
+.seo-page p{margin:0;line-height:1.8}
+.seo-page .redText{color:var(--seo-accent)}
+.seo-page h2{font-size:clamp(26px,3.2vw,38px);line-height:1.2;letter-spacing:-.035em}
+.seo-page h3{font-size:17px;line-height:1.4}
+.seo-kicker{font-size:10px!important;letter-spacing:.17em;font-weight:700;color:var(--seo-accent);margin-bottom:18px!important;text-transform:uppercase}
+.seo-hero{padding:132px 0 56px}
+.seo-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.seo-hero h1{font-size:clamp(36px,4.1vw,60px);line-height:1.1;letter-spacing:-.05em}
+.seo-lead{font-size:16px;color:var(--text-dim);margin-top:24px!important;max-width:520px}
+.seo-actions{display:flex;align-items:center;flex-wrap:wrap;gap:22px;margin-top:30px}
+.seo-page .db-btn{white-space:normal;font-size:12px;letter-spacing:0;min-height:48px;text-align:center;padding:16px 22px;gap:16px}
+.seo-text-link{display:inline-flex;align-items:center;gap:14px;font-size:13px;font-weight:600;text-decoration:none;min-height:44px}
+.seo-text-link:hover{color:var(--seo-accent)}
+.seo-note{font-size:12px;color:var(--text-dim);margin-top:22px!important}
+.seo-hero-photo{margin:0;position:relative;overflow:hidden;border-radius:var(--r) var(--r) 64px var(--r);height:440px;background:var(--surface)}
+.seo-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:60% center;display:block}
+.seo-hero-photo:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.9))}
+.seo-hero-photo figcaption{position:absolute;bottom:28px;left:28px;right:24px;z-index:1}
+.seo-hero-photo figcaption span{display:block;font-size:9px;letter-spacing:.14em;margin-bottom:10px}
+.seo-hero-photo figcaption strong{font-family:Montserrat,sans-serif;font-size:23px;line-height:1.3;display:block}
+.seo-trust{background:var(--surface);border-block:1px solid var(--border-h)}
+.seo-trust>.seo-wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding-block:24px}
+.seo-trust span,.seo-trust a{font-size:11px;color:var(--text-dim)}
+.seo-trust b{display:block;font-size:13px;color:var(--text);margin-bottom:5px;font-weight:600}
+.seo-trust a:hover b{color:var(--seo-accent)}
+.seo-content{padding-top:56px}
+.seo-section{padding-block:42px;border-bottom:1px solid var(--border-h)}
+.seo-section>p,.seo-section>div>p{max-width:80ch;color:var(--text-dim);margin-top:20px}
+.seo-section p a:not(.db-btn){color:var(--text);text-decoration:underline;text-underline-offset:4px}
+.seo-section .info-block{background:none;border:none;padding:0;margin:0;border-radius:0}
+.seo-section .info-block h2{font-size:clamp(26px,3.2vw,38px)!important;line-height:1.2;margin:0!important}
+.seo-section .info-block>p{color:var(--text-dim);margin-top:20px;max-width:80ch}
+.seo-section .areas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;margin:26px 0 0}
+.seo-section .area-pill{background:none;border:0;border-bottom:1px solid var(--border-h);border-radius:0;padding:17px 0;font-size:14px;color:var(--text);line-height:1.5;display:block}
+.seo-section a.area-pill:after{content:'↗';float:right;color:var(--seo-accent);margin-left:12px}
+.seo-section a.area-pill:hover{color:var(--seo-accent);background:none}
+.seo-quick{border-left:2px solid var(--accent);padding:6px 0 6px 24px;margin:0 0 12px}
+.seo-quick h2{font-size:16px!important;margin:0!important;line-height:1.5}
+.seo-quick p{font-size:13px;color:var(--text-dim);max-width:90ch}
+.seo-proof{display:grid;grid-template-columns:minmax(0,1fr) 200px minmax(0,1fr);gap:40px;align-items:center;padding-block:64px}
+.seo-proof h2{font-size:29px}
+.seo-proof>div>p:not(.seo-kicker){font-size:14px;margin-top:20px;color:var(--text-dim)}
+.seo-proof .seo-text-link{margin-top:16px}
+.seo-proof>img{width:100%;height:auto;max-height:300px;object-fit:contain;border-radius:var(--r-sm)}
+.seo-proof blockquote{padding-left:32px;border-left:1px solid var(--border-h);margin:0}
+.seo-stars{color:var(--seo-accent);letter-spacing:3px;font-size:16px}
+.seo-proof blockquote p{font-size:16px;line-height:1.8;margin:18px 0}
+.seo-proof cite{font-size:11px;font-style:normal;color:var(--text-dim);display:block}
+.seo-session{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.seo-session>div>p{color:var(--text-dim);font-size:14px;margin-top:20px}
+.seo-session figure{margin:0}
+.seo-session figure img{width:100%;height:400px;object-fit:cover;border-radius:var(--r);display:block}
+.seo-session figcaption{font-size:11px;color:var(--text-dim);margin-top:12px}
+.seo-steps{list-style:none;margin:24px 0 0;padding:0}
+.seo-steps li{display:flex;gap:18px;border-top:1px solid var(--border-h);padding:18px 0}
+.seo-steps li>span{font-size:11px;color:var(--seo-accent);font-weight:700;padding-top:4px}
+.seo-steps h3{font-size:15px}
+.seo-steps p{font-size:12px;color:var(--text-dim);margin-top:5px}
+.seo-prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:30px}
+.seo-prices article{background:var(--surface);border:1px solid var(--border-h);border-radius:var(--r-sm);padding:26px;display:flex;align-items:flex-start;flex-direction:column}
+.seo-prices article:nth-child(2){border-top:2px solid var(--accent)}
+.seo-prices .seo-price{font-family:Montserrat,sans-serif;font-size:34px;font-weight:800;color:var(--text);margin-top:16px}
+.seo-price span{font-family:Inter,sans-serif;font-size:11px;font-weight:400;color:var(--text-dim)}
+.seo-prices article>p:not(.seo-price):not(.seo-kicker){font-size:13px;color:var(--text-dim);margin-top:10px;margin-bottom:18px}
+.seo-prices article .seo-text-link{margin-top:auto;font-size:12px}
+.seo-faq h2{max-width:26ch;margin-bottom:28px!important}
+.seo-faq details{border-bottom:1px solid var(--border-h)}
+.seo-faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:23px 0;font-size:14px;font-weight:600;line-height:1.6}
+.seo-faq summary::-webkit-details-marker{display:none}
+.seo-faq summary span{font-size:24px;color:var(--seo-accent);font-weight:400;flex-shrink:0}
+.seo-faq details[open] summary span{transform:rotate(45deg)}
+.seo-faq details p{font-size:14px;color:var(--text-dim);padding-bottom:24px;max-width:90ch}
+.seo-final{text-align:center;padding-block:88px}
+.seo-final h2{font-size:clamp(32px,4vw,48px)}
+.seo-final>p:not(.seo-kicker){color:var(--text-dim);margin-top:22px}
+.seo-final .seo-actions{justify-content:center}
+.seo-skip{position:fixed;left:16px;top:-80px;padding:12px 20px;background:white;color:black;z-index:10001}
+.seo-skip:focus{top:16px}
+.seo-page a:focus-visible,.seo-page summary:focus-visible,body:has(.seo-page) .db-nav a:focus-visible,body:has(.seo-page) .db-nav button:focus-visible{outline:3px solid var(--seo-accent,#f0142f);outline-offset:5px}
+.seo-content{scroll-margin-top:90px}
+body:has(.seo-page) .db-footer{font-family:Inter,sans-serif}
+body:has(.seo-page) .db-footer a,body:has(.seo-page) .db-footer p,body:has(.seo-page) .db-footer .db-fb-tag{color:var(--text-dim)}
+body:has(.seo-page) .db-footer-heading{color:var(--text);font-family:Montserrat,sans-serif}
+@media(max-width:1000px){.seo-hero-grid,.seo-session{gap:36px}.seo-hero-photo{height:420px}.seo-proof{grid-template-columns:minmax(0,1fr) 180px;gap:32px}.seo-proof blockquote{grid-column:1/-1;max-width:70ch}.seo-prices article{padding:20px}.seo-prices .seo-price{font-size:28px}}
+@media(max-width:700px){.seo-wrap{width:calc(100% - 40px)}.seo-hero{padding:110px 0 32px}.seo-hero-grid,.seo-session{grid-template-columns:minmax(0,1fr);gap:30px}.seo-hero h1{font-size:clamp(34px,8.5vw,46px)}.seo-lead{font-size:15px;margin-top:20px!important}.seo-hero-photo{height:300px;border-bottom-right-radius:48px}.seo-hero-photo figcaption{left:22px;bottom:22px}.seo-hero-photo figcaption strong{font-size:21px}.seo-hero-photo figcaption span{font-size:8px}.seo-actions{gap:12px;margin-top:24px}.seo-note{font-size:11px}.seo-trust>.seo-wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.seo-trust b{font-size:12px}.seo-trust span,.seo-trust a{font-size:10px}.seo-content{padding-top:32px}.seo-section{padding-block:32px}.seo-section .areas-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}.seo-section .area-pill{font-size:12px}.seo-proof{grid-template-columns:minmax(0,1fr) 110px;gap:24px}.seo-proof h2{font-size:23px}.seo-proof>div>p:not(.seo-kicker){font-size:13px}.seo-proof blockquote{padding-left:20px}.seo-session figure img{height:280px}.seo-prices{grid-template-columns:minmax(0,1fr);gap:14px}.seo-prices article{padding:24px}.seo-prices .seo-price{font-size:32px}.seo-faq summary{font-size:13px;padding-block:20px}.seo-faq details p{font-size:13px}.seo-final{padding-block:60px}.seo-quick{padding-left:18px}.seo-quick p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.seo-page *{transition:none!important}}

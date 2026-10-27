@@ -98,40 +98,19 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dbworkouts.co.uk"},{"@type":"ListItem","position":2,"name":"Results","item":"https://dbworkouts.co.uk/testimonials"}]}
   </script>
 <style>@media(max-width:767px){.db-wa-fab{display:none!important}.training-scroll{position:relative!important;overflow:hidden!important}.training-scroll-inner{animation-play-state:running!important;-webkit-animation-play-state:running!important}.training-scroll-inner img{-webkit-transform:translateZ(0);transform:translateZ(0);will-change:transform}.carousel-slide{min-width:100%!important}}</style>
+<link rel="stylesheet" href="/Styles/site-navigation.css?v=1">
+<script defer src="/Script/site-navigation.js?v=1"></script>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="db-nav" id="dbNav">
-  <div class="db-nav-inner">
-    <a href="index.html" class="db-nav-logo">
-      <img src="./logo.png" alt="DB's Workouts" width="68" height="68" loading="lazy">
-      <span>DB's Workouts</span>
-    </a>
-    <div class="db-nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="testimonials.html" class="active">Results</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
-    <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="db-mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="testimonials.html">Results</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
-  </div>
-</nav>
-<script>(function(){var t=document.getElementById("navToggle"),m=document.getElementById("mobileMenu");if(!t||!m)return;var o=false;t.addEventListener("click",function(){o=!o;t.classList.toggle("active",o);m.classList.toggle("open",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){o=false;t.classList.remove("active");m.classList.remove("open");});});})();</script>
+<header class="primary-nav" id="primaryNav">
+<div class="primary-nav-inner">
+<a class="primary-brand" href="/" aria-label="DB's Workouts home"><img src="/pics/optimized/logo-160.webp" alt="" width="56" height="56" decoding="async"><span>DB's Workouts</span></a>
+<button class="primary-toggle" id="navigationToggle" type="button" aria-label="Open navigation" aria-controls="navigationPanel" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="primary-links" id="navigationPanel" aria-label="Main navigation"><details class="primary-dropdown"><summary>Training<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/">One-to-one training</a><a href="/boxing-fitness-east-london">Boxing fitness</a><a href="/weight-loss-personal-trainer-east-london">Weight loss coaching</a><a href="/personal-training-for-beginners-east-london">Training for beginners</a><a href="/mobile-personal-trainer-east-london">Mobile personal training</a><a href="/pair-personal-training-east-london">Pair sessions</a></div></details><a href="/personal-trainer-east-london-areas">Areas</a><a href="/pricing">Pricing</a><a href="/testimonials" aria-current="page">Results</a><a href="/about">About Dean</a><details class="primary-dropdown"><summary>More<span aria-hidden="true">⌄</span></summary><div class="primary-dropdown-links"><a href="/blog">Blog</a><a href="/tools">Free fitness tools</a><a href="https://app.dbworkouts.co.uk/">AI plans</a><a href="/contact">Contact Dean</a></div></details><a class="primary-book" href="/contact">Book free consultation <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+
 
 <!-- HERO -->
 <section class="db-page-hero">
@@ -156,7 +135,7 @@
   <div class="db-trust-strip-inner">
     <div class="db-trust-item"><span class="db-trust-num" data-count="70">70</span><span class="db-trust-label">Clients Trained</span></div>
     <div class="db-trust-divider"></div>
-    <div class="db-trust-item"><span class="db-trust-num">5.0★</span><span class="db-trust-label">Google Rating</span></div>
+    <div class="db-trust-item"><span class="db-trust-num">5.0★</span><span class="db-trust-label"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Rating</a></span></div>
     <div class="db-trust-divider"></div>
     <div class="db-trust-item"><span class="db-trust-num" data-count="7">7</span><span class="db-trust-label">Years Experience</span></div>
     <div class="db-trust-divider"></div>
@@ -242,7 +221,7 @@
 <section class="review-carousel-section">
   <div class="db-container">
     <div class="db-section-header" data-reveal>
-      <div class="eyebrow">Google Reviews</div>
+      <div class="eyebrow"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Reviews</a></div>
       <h2 style="margin-top:12px">What Clients Are Saying</h2>
       <p class="db-section-sub">Every review is genuine — from real people who have trained with Dean across East London and Essex.</p>
     </div>
@@ -254,7 +233,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Dean completely transformed my body and my mindset. In 12 weeks I lost 14lbs and built strength I never thought possible. His outdoor sessions are tough but incredibly motivating. Best decision I ever made."</p>
-              <div class="db-review-author"><div class="db-review-avatar">S</div><div><div class="db-review-name">Sarah M.</div><div class="db-review-source">Google Review · Walthamstow</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">S</div><div><div class="db-review-name">Sarah M.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Walthamstow</a></div></div></div>
             </div>
           </div>
 
@@ -262,7 +241,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Best investment I've ever made in myself. Dean's knowledge is outstanding and his ability to push you past your limits while keeping it safe and fun is something else. My fitness has changed completely."</p>
-              <div class="db-review-author"><div class="db-review-avatar">J</div><div><div class="db-review-name">James T.</div><div class="db-review-source">Google Review · Ilford</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">J</div><div><div class="db-review-name">James T.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Ilford</a></div></div></div>
             </div>
           </div>
 
@@ -270,7 +249,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"I was sceptical about outdoor training at first but Dean made it the most enjoyable way to get fit I've ever experienced. Two years on and I'm still going strong. He's genuinely changed my life."</p>
-              <div class="db-review-author"><div class="db-review-avatar">A</div><div><div class="db-review-name">Aisha K.</div><div class="db-review-source">Google Review · Hackney</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">A</div><div><div class="db-review-name">Aisha K.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Hackney</a></div></div></div>
             </div>
           </div>
 
@@ -278,7 +257,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Lost 22lbs in 15 weeks. Dean's programme was incredibly well structured and the nutrition guidance was genuinely eye-opening. I've completely changed the way I eat and train."</p>
-              <div class="db-review-author"><div class="db-review-avatar">M</div><div><div class="db-review-name">Marcus B.</div><div class="db-review-source">Google Review · Chingford</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">M</div><div><div class="db-review-name">Marcus B.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Chingford</a></div></div></div>
             </div>
           </div>
 
@@ -286,7 +265,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"I came back to fitness after 5 years away. Dean met me exactly where I was, built me up gradually, and now I'm fitter at 42 than I was at 30. Extraordinary coaching from an extraordinary person."</p>
-              <div class="db-review-author"><div class="db-review-avatar">R</div><div><div class="db-review-name">Rebecca O.</div><div class="db-review-source">Google Review · Leyton</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">R</div><div><div class="db-review-name">Rebecca O.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Leyton</a></div></div></div>
             </div>
           </div>
 
@@ -294,7 +273,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Dean's sessions are unlike anything I've done before. Every workout is fresh, targeted, and absolutely brutal in the best possible way. My body has completely changed in just 10 sessions."</p>
-              <div class="db-review-author"><div class="db-review-avatar">D</div><div><div class="db-review-name">Daniel W.</div><div class="db-review-source">Google Review · Dagenham</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">D</div><div><div class="db-review-name">Daniel W.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Dagenham</a></div></div></div>
             </div>
           </div>
 
@@ -302,7 +281,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"The boxing sessions are an absolute game changer. Great cardio, great technique, and incredibly fun. Dean is so motivating and professional. Will be training with him for years to come."</p>
-              <div class="db-review-author"><div class="db-review-avatar">T</div><div><div class="db-review-name">Tanya F.</div><div class="db-review-source">Google Review · Forest Gate</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">T</div><div><div class="db-review-name">Tanya F.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Forest Gate</a></div></div></div>
             </div>
           </div>
 
@@ -310,7 +289,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"After a knee injury I thought my fitness days were behind me. Dean adapted every session carefully, rebuilt my strength from scratch, and now I'm pain-free and fitter than before. Absolute legend."</p>
-              <div class="db-review-author"><div class="db-review-avatar">P</div><div><div class="db-review-name">Paul H.</div><div class="db-review-source">Google Review · Barking</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">P</div><div><div class="db-review-name">Paul H.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Barking</a></div></div></div>
             </div>
           </div>
 
@@ -318,7 +297,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Dean genuinely cares about your progress. He checks in between sessions, adjusts your plan when needed, and celebrates every milestone. I've lost 18lbs and feel the best I have in a decade."</p>
-              <div class="db-review-author"><div class="db-review-avatar">L</div><div><div class="db-review-name">Laura J.</div><div class="db-review-source">Google Review · Manor Park</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">L</div><div><div class="db-review-name">Laura J.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Manor Park</a></div></div></div>
             </div>
           </div>
 
@@ -326,7 +305,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"I started with Dean not knowing what to expect. Within a month I was hooked. The outdoor environment makes such a difference — you push harder, recover faster, and actually enjoy working out."</p>
-              <div class="db-review-author"><div class="db-review-avatar">C</div><div><div class="db-review-name">Chris M.</div><div class="db-review-source">Google Review · Wanstead</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">C</div><div><div class="db-review-name">Chris M.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Wanstead</a></div></div></div>
             </div>
           </div>
 
@@ -334,7 +313,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Trained with Dean for 6 months. Down 20lbs, running 5K three times a week, and sleeping better than I have in years. The investment in yourself is worth every penny. Don't hesitate."</p>
-              <div class="db-review-author"><div class="db-review-avatar">N</div><div><div class="db-review-name">Natasha R.</div><div class="db-review-source">Google Review · Stratford</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">N</div><div><div class="db-review-name">Natasha R.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Stratford</a></div></div></div>
             </div>
           </div>
 
@@ -342,7 +321,7 @@
             <div class="db-review-card" style="height:100%">
               <div class="db-review-stars">★★★★★</div>
               <p class="db-review-text">"Honestly the best personal trainer I've ever worked with. Dean is professional, knowledgeable, fun, and gets results. The outdoor training sets him apart from every gym-based PT I've tried."</p>
-              <div class="db-review-author"><div class="db-review-avatar">K</div><div><div class="db-review-name">Kofi A.</div><div class="db-review-source">Google Review · Newbury Park</div></div></div>
+              <div class="db-review-author"><div class="db-review-avatar">K</div><div><div class="db-review-name">Kofi A.</div><div class="db-review-source"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">Google Review · Newbury Park</a></div></div></div>
             </div>
           </div>
 
@@ -485,7 +464,7 @@
     <div>
       <div class="db-footer-brand">
         <img src="./logo.png" alt="DB's Workouts logo" width="68" height="68" loading="lazy">
-        <div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars">★★★★★ Google Rated</span></div>
+        <div><div class="db-fb-name">DB's Workouts</div><span class="db-fb-tag">East London Personal Trainer</span><span class="db-fb-stars"><a href="https://maps.google.com/?cid=5699876526247742243" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px" aria-label="Read our Google reviews">★★★★★ Google Rated</a></span></div>
       </div>
       <p style="font-size:.85rem;max-width:280px;line-height:1.7;color:var(--text-muted);margin-top:24px">Premium personal training across East London &amp; Essex parks. REPs certified since 2019.</p>
     </div>
@@ -521,13 +500,7 @@
 
 <script src="Script/cookie-consent.js" defer></script>
 <script>
-  /* Nav */
-  var nav=document.getElementById('dbNav'),tog=document.getElementById('navToggle'),mob=document.getElementById('mobileMenu');
-  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);},{passive:true});
-  tog.addEventListener('click',function(){var o=mob.classList.toggle('open');tog.classList.toggle('active',o);document.body.style.overflow=o?'hidden':'';});
-
-  /* Reveal */
-  var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');ro.unobserve(x.target);}});},{threshold:.1});
+var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');ro.unobserve(x.target);}});},{threshold:.1});
   document.querySelectorAll('[data-reveal]').forEach(function(el){ro.observe(el);});
 
   /* Counter */
@@ -619,5 +592,24 @@
     init();
   })();
 </script>
+<!-- db-mobile-bar -->
+<style>
+#dbMobileBar{display:none}
+@media(max-width:767px){
+  body{padding-bottom:68px}
+  #dbMobileBar{display:grid;transform:translateY(110%);transition:transform .25s ease;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:99990;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:#0d0d0d;border-top:1px solid rgba(255,255,255,.12);box-shadow:0 -4px 18px rgba(0,0,0,.5)}
+  #dbMobileBar.show{transform:none}
+  #dbMobileBar a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border-radius:8px;font:700 14px/1 Inter,Arial,sans-serif;text-decoration:none;color:#fff}
+  #dbMobileBar .mb-call{background:#1f1f1f;border:1px solid rgba(255,255,255,.25)}
+  #dbMobileBar .mb-wa{background:#25D366;color:#06210f}
+  #dbMobileBar .mb-book{background:#b30018;border:1px solid #fff}
+}
+</style>
+<div id="dbMobileBar" role="navigation" aria-label="Contact Dean">
+  <a class="mb-call" href="tel:+447752300937" aria-label="Call Dean">Call</a>
+  <a class="mb-wa" href="https://wa.me/447752300937?text=Hi%20Dean%2C%20I%20found%20you%20online%20and%20I%27d%20like%20a%20free%20consultation." target="_blank" rel="noopener" aria-label="WhatsApp Dean">WhatsApp</a>
+  <a class="mb-book" href="/contact">Book Free</a>
+</div>
+<script>(function(){var b=document.getElementById('dbMobileBar');if(!b)return;var h=document.querySelector('.seo-hero,.about-hero,.db-page-hero,.fp-hero,section.hero,.hero-local');function u(){var end=h?h.getBoundingClientRect().bottom+window.scrollY-60:window.innerHeight*0.9;b.classList.toggle('show',window.scrollY>end);}u();window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);})();</script>
 </body>
 </html>

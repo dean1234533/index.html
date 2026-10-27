@@ -55,15 +55,6 @@ if (nav && btn) {
 }
 
 
-let firstTouch = true;
-document.addEventListener('touchstart', function() {
-    if (firstTouch) {
-        firstTouch = false;
-        window.scrollTo(0, 1);
-        setTimeout(() => window.scrollTo(0, 0), 10);
-    }
-}, { passive: true });
-
 // GA4 event helper — safe to call even before gtag loads
 function gaEvent(name, params) {
     if (typeof gtag === 'function') gtag('event', name, params);
