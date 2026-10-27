@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "wrangler": "^3.0.0"
+  },
+  "scripts": {
+    "postinstall": "[ -z \"$CI\" ] || (cd \"fitness tool hub\" && npm ci && npm run build && mkdir -p ../tools && cp -R dist/. ../tools/)"
   }
 }
