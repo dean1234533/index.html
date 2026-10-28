@@ -407,6 +407,7 @@ LIST_CSS = """<style>
 .seo-section>ul li:last-child{border-bottom:1px solid var(--border-h)}
 .seo-section>ul li::before{content:'→';position:absolute;left:0;top:12px;color:var(--seo-accent,#e0364c);font-weight:700}
 .seo-section>p+ul{margin-top:20px}
+.seo-section .area-pill{white-space:normal;overflow-wrap:anywhere}
 </style>"""
 
 
