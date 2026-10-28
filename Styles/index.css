@@ -1272,6 +1272,28 @@ ul { list-style: none; }
 .pricing-note a { color: var(--text-dim); text-decoration: underline; }
 .pricing-note a:hover { color: var(--text); }
 
+/* Online training strip under the pricing cards */
+.pricing-online {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: border-color var(--transition);
+}
+.pricing-online:hover { border-color: var(--border-hover); }
+.pricing-online h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.25rem; margin: 8px 0 6px; color: var(--text); }
+.pricing-online p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0; max-width: 56ch; }
+.pricing-online .pc-price { margin: 0; }
+.pricing-online .btn-primary-card { width: auto; white-space: nowrap; }
+@media (min-width: 900px) {
+  .pricing-online { grid-template-columns: 1fr auto auto; gap: 36px; padding: 28px 36px; }
+}
+
 /* ════════════════════════════════════════════════════════
    LEAD MAGNET
 ════════════════════════════════════════════════════════ */

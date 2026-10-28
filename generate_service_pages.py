@@ -131,6 +131,8 @@ SERVICES = [
               ('Do we need to bring equipment?',
                'No. Dean provides the session equipment. Bring water and wear comfortable training clothes and '
                'suitable footwear.')]},
+    # Hand-written page (maintained directly in HTML); listed in the option pills only.
+    {'slug': 'online-personal-training', 'name': 'Online Personal Training', 'bespoke': True},
 ]
 
 
@@ -197,7 +199,7 @@ def main():
     template = (ROOT / 'personal-trainer-ilford.html').read_text()
     for service in SERVICES:
         # Preserve the bespoke boxing page; it is maintained directly in HTML.
-        if service["slug"] == "boxing-fitness-east-london":
+        if service["slug"] == "boxing-fitness-east-london" or service.get("bespoke"):
             print("Preserved bespoke page:", service["slug"])
             continue
         (ROOT / (service['slug'] + '.html')).write_text(build_page(service, template))

@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://dbworkouts.co.uk/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
+  <url><loc>https://dbworkouts.co.uk/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
   <url><loc>https://dbworkouts.co.uk/about</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
-  <url><loc>https://dbworkouts.co.uk/pricing</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dbworkouts.co.uk/pricing</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
   <url><loc>https://dbworkouts.co.uk/testimonials</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://dbworkouts.co.uk/contact</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
   <url><loc>https://dbworkouts.co.uk/blog-post</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
@@ -84,6 +84,15 @@
   <url><loc>https://dbworkouts.co.uk/personal-training-for-beginners-east-london</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://dbworkouts.co.uk/mobile-personal-trainer-east-london</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://dbworkouts.co.uk/pair-personal-training-east-london</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-training</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-trainer-uk</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-trainer-london</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-weight-loss-personal-training</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-training-for-beginners</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-training-at-home</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-strength-training-coach</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-training-with-nutrition-plan</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dbworkouts.co.uk/online-personal-trainer-cost-uk</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
 
   <!-- Local landing pages — East London area expansion (2026-10-24) -->
   <url><loc>https://dbworkouts.co.uk/personal-trainer-aldersbrook</loc><lastmod>2026-10-24</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
