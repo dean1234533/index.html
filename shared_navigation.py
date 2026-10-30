@@ -11,6 +11,7 @@ TRAINING = [
     ('/personal-training-for-beginners-east-london', 'Training for beginners'),
     ('/mobile-personal-trainer-east-london', 'Mobile personal training'),
     ('/pair-personal-training-east-london', 'Pair sessions'),
+    ('/mobile-sports-massage-east-london', 'Mobile sports massage'),
     ('/online-personal-training', 'Online personal training'),
 ]
 MORE = [('/blog', 'Blog'), ('/tools', 'Free fitness tools'), ('https://app.dbworkouts.co.uk/', 'AI plans'), ('/contact', 'Contact Dean')]

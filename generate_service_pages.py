@@ -131,7 +131,8 @@ SERVICES = [
               ('Do we need to bring equipment?',
                'No. Dean provides the session equipment. Bring water and wear comfortable training clothes and '
                'suitable footwear.')]},
-    # Hand-written page (maintained directly in HTML); listed in the option pills only.
+    # Hand-written pages (maintained directly in HTML); listed in the option pills only.
+    {'slug': 'mobile-sports-massage-east-london', 'name': 'Mobile Sports Massage', 'bespoke': True},
     {'slug': 'online-personal-training', 'name': 'Online Personal Training', 'bespoke': True},
 ]
 
