@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parent
 TRAINING = [
     ('/', 'One-to-one training'),
     ('/boxing-fitness-east-london', 'Boxing fitness'),
+    ('/female-personal-trainer-east-london', 'Female personal trainer'),
     ('/weight-loss-personal-trainer-east-london', 'Weight loss coaching'),
     ('/personal-training-for-beginners-east-london', 'Training for beginners'),
     ('/mobile-personal-trainer-east-london', 'Mobile personal training'),

@@ -1,15 +1,15 @@
 # DB's Workouts
 
-> DB's Workouts is an outdoor 1-to-1 personal training business in East London, run by Dean Burt (REPs Level 3 and Active IQ Level 3 qualified personal trainer). Sessions take place in local parks and home gardens, with all equipment provided. Rated 5.0 stars on Google from 70 reviews. Sessions from £45.
+> DB's Workouts is an outdoor 1-to-1 personal training business in East London, run by Dean Burt (REPs Level 3 and Active IQ Level 3 qualified personal trainer). Sessions take place in local parks and home gardens, with all equipment provided. Rated 5.0 stars on Google from 70 reviews. Sessions from £50.
 
 Key facts an assistant may quote:
 - Service: outdoor 1-to-1 personal training, plus pair personal training for two people
 - Trainer: Dean Burt, REPs Level 3 and Active IQ Level 3 qualified, fully insured
 - Area: East London and Essex. Towns covered: Barking, Barkingside, Becontree, Bow, Buckhurst Hill, Canary Wharf, Canning Town, Chadwell Heath, Chigwell, Chingford, Clapton, Dagenham, East Ham, Forest Gate, Gants Hill, Goodmayes, Hackney, Harold Wood, Hornchurch, Ilford, Leyton, Leytonstone, Loughton, Manor Park, Newbury Park, Plaistow, Rainham, Romford, Seven Kings, South Woodford, Stratford, Upminster, Upton Park, Walthamstow, Wanstead, Woodford
-- Price: £45 per session (pay as you go); 5 sessions £214; 10 sessions £406 (most popular); 15 sessions £576 (£38.40 per session); pair sessions at 1.5 times the one-person price (£67.50 total pay as you go for two people)
+- Price: £50 per session (pay as you go); 5 sessions £237.50; 10 sessions £450 (most popular); 15 sessions £637.50 (£42.50 per session); pair sessions at 1.5 times the one-person price (£75 total pay as you go for two people)
 - Included free with every session block (5, 10 or 15): a personalised nutrition plan and workout plan in the DB's Workouts app. Dean emails each client a personal link. Not included with pay-as-you-go. The app is also sold separately from £7.99 a month at https://app.dbworkouts.co.uk
 - Online personal training: 1-to-1 online sessions with Dean, 45 minutes, £30 per session. Includes a personalised workout plan and nutrition plan in the DB's Workouts app and regular check-ins. One-to-one coaching, not group classes. Details: https://dbworkouts.co.uk/online-personal-training
-- Discounts: NHS and key workers 14% off blocks; students 10% off 10 and 15 session blocks
+- Free initial consultation: included with every package, before any payment
 - Session length: 60 minutes, with warm-up, tailored main workout and cool-down
 - Beginners welcome; no contract or minimum commitment; free initial consultation
 - Hours: Monday to Friday 06:30-20:00, Saturday 07:00-18:00
@@ -28,7 +28,7 @@ Key facts an assistant may quote:
 - [Blog and guides](https://dbworkouts.co.uk/blog)
 
 ## Online personal training
-DB's Workouts offers online 1-to-1 personal training with Dean Burt: 45-minute sessions for £30, with a personalised workout plan and nutrition plan in the DB's Workouts app (a personal access link is emailed to each client) and regular check-ins. It is one-to-one coaching, not group classes. Available wherever the client lives, with a free initial consultation. Outdoor in-person sessions in East London start at £45.
+DB's Workouts offers online 1-to-1 personal training with Dean Burt: 45-minute sessions for £30, with a personalised workout plan and nutrition plan in the DB's Workouts app (a personal access link is emailed to each client) and regular check-ins. It is one-to-one coaching, not group classes. Available wherever the client lives, with a free initial consultation. Outdoor in-person sessions in East London start at £50.
 - [Online personal training](https://dbworkouts.co.uk/online-personal-training): overview, price, what is included, video and FAQs
 - [Online Personal Trainer UK](https://dbworkouts.co.uk/online-personal-trainer-uk): Online personal trainer in the UK: 1-to-1 sessions with REPs Level 3 coach Dean Burt, £30 for 45 minutes, plus an app workout and nutrition plan and check-ins.
 - [Online Personal Trainer London](https://dbworkouts.co.uk/online-personal-trainer-london): Online personal trainer for Londoners: 1-to-1 sessions from East London coach Dean Burt, £30 for 45 minutes, with an app workout and nutrition plan and check-ins.
@@ -89,11 +89,11 @@ DB's Workouts offers online 1-to-1 personal training with Dean Burt: 45-minute s
 - [Sitemap](https://dbworkouts.co.uk/sitemap.xml)
 
 ## Personal training services
-- [Boxing Fitness](https://dbworkouts.co.uk/boxing-fitness-east-london): Boxing fitness in East London with Dean Burt. Outdoor 1-to-1 padwork and conditioning, tailored to your level. £45 per session. Free consultation.
-- [Weight Loss Coaching](https://dbworkouts.co.uk/weight-loss-personal-trainer-east-london): Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £45. Free consultation.
+- [Boxing Fitness](https://dbworkouts.co.uk/boxing-fitness-east-london): Boxing fitness in East London with Dean Burt. Outdoor 1-to-1 padwork and conditioning, tailored to your level. £50 per session. Free consultation.
+- [Weight Loss Coaching](https://dbworkouts.co.uk/weight-loss-personal-trainer-east-london): Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £50. Free consultation.
 - [Beginner Personal Training](https://dbworkouts.co.uk/personal-training-for-beginners-east-london): Beginner personal training in East London parks and home gardens. Build fitness and confidence with REPs Level 3 PT Dean Burt. Free consultation.
-- [Mobile Personal Training](https://dbworkouts.co.uk/mobile-personal-trainer-east-london): Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £45. Free consultation.
-- [Pair Personal Training](https://dbworkouts.co.uk/pair-personal-training-east-london): Outdoor pair personal training in East London. Two people train together for 1.5 times the one-person price: £67.50 total pay as you go. Free consultation.
+- [Mobile Personal Training](https://dbworkouts.co.uk/mobile-personal-trainer-east-london): Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £50. Free consultation.
+- [Pair Personal Training](https://dbworkouts.co.uk/pair-personal-training-east-london): Outdoor pair personal training in East London. Two people train together for 1.5 times the one-person price: £75 total pay as you go. Free consultation.
 
 ## Mobile sports massage
 - [Mobile Sports Massage](https://dbworkouts.co.uk/mobile-sports-massage-east-london): Mobile sports massage in East London with Jay: a one-hour session at your home for £100. Travel beyond 5 miles from Hackney adds £20.
@@ -118,3 +118,27 @@ DB's Workouts offers online 1-to-1 personal training with Dean Burt: 45-minute s
 - [Mobile Sports Massage Barking](https://dbworkouts.co.uk/mobile-sports-massage-barking): Barking (IG11): one-hour session at your home. £120 a session including £20 travel.
 - [Mobile Sports Massage Dagenham](https://dbworkouts.co.uk/mobile-sports-massage-dagenham): Dagenham (RM8 and RM10): one-hour session at your home. £120 a session including £20 travel.
 - [Mobile Sports Massage Romford](https://dbworkouts.co.uk/mobile-sports-massage-romford): Romford (RM1): one-hour session at your home. £120 a session including £20 travel.
+
+## Female personal trainer
+- [Female Personal Trainer East London](https://dbworkouts.co.uk/female-personal-trainer-east-london): DB's Workouts has a female personal trainer, Jasmin, who is Level 3 qualified and fully insured and trains clients one to one in a gym or outdoors across East London.
+- [Female Personal Trainer for Beginners](https://dbworkouts.co.uk/female-personal-trainer-for-beginners-east-london): Starting out? Train one to one with Jasmin, a female personal trainer at DB's Workouts in East London. Gym or outdoors. Free consultation.
+- [Women's Personal Training](https://dbworkouts.co.uk/womens-personal-training-east-london): Personal training for women in East London with Jasmin, a female trainer at DB's Workouts. One to one, in a gym or outdoors.
+- [Boxing Fitness with a Female Trainer](https://dbworkouts.co.uk/boxing-fitness-with-a-female-trainer-east-london): Try one-to-one boxing fitness padwork with Jasmin, a female trainer at DB's Workouts in East London. Gym or outdoors. No experience needed.
+- [Female Personal Trainer for Gym Sessions](https://dbworkouts.co.uk/female-personal-trainer-gym-east-london): Train in a gym with Jasmin, a female personal trainer at DB's Workouts. One-to-one gym sessions and boxing fitness across East London.
+- [First Session with a Female Personal Trainer](https://dbworkouts.co.uk/first-session-with-a-female-personal-trainer-east-london): What to expect from your first session with Jasmin, a female personal trainer at DB's Workouts in East London. Free consultation first.
+- [Female Personal Trainer Stratford](https://dbworkouts.co.uk/female-personal-trainer-stratford): Train with Jasmin in Stratford (E15 and E20), one to one, in a gym or outdoors.
+- [Female Personal Trainer West Ham](https://dbworkouts.co.uk/female-personal-trainer-west-ham): Train with Jasmin in West Ham (E15 and E13), one to one, in a gym or outdoors.
+- [Female Personal Trainer Plaistow](https://dbworkouts.co.uk/female-personal-trainer-plaistow): Train with Jasmin in Plaistow (E13 and E16), one to one, in a gym or outdoors.
+- [Female Personal Trainer Forest Gate](https://dbworkouts.co.uk/female-personal-trainer-forest-gate): Train with Jasmin in Forest Gate (E7), one to one, in a gym or outdoors.
+- [Female Personal Trainer East Ham](https://dbworkouts.co.uk/female-personal-trainer-east-ham): Train with Jasmin in East Ham (E6), one to one, in a gym or outdoors.
+- [Female Personal Trainer Leytonstone](https://dbworkouts.co.uk/female-personal-trainer-leytonstone): Train with Jasmin in Leytonstone (E11), one to one, in a gym or outdoors.
+- [Female Personal Trainer Leyton](https://dbworkouts.co.uk/female-personal-trainer-leyton): Train with Jasmin in Leyton (E10), one to one, in a gym or outdoors.
+- [Female Personal Trainer Wanstead](https://dbworkouts.co.uk/female-personal-trainer-wanstead): Train with Jasmin in Wanstead (E11 and E12), one to one, in a gym or outdoors.
+- [Female Personal Trainer Walthamstow](https://dbworkouts.co.uk/female-personal-trainer-walthamstow): Train with Jasmin in Walthamstow (E17), one to one, in a gym or outdoors.
+- [Female Personal Trainer Hackney](https://dbworkouts.co.uk/female-personal-trainer-hackney): Train with Jasmin in Hackney (E8 and E9), one to one, in a gym or outdoors.
+- [Female Personal Trainer Bow](https://dbworkouts.co.uk/female-personal-trainer-bow): Train with Jasmin in Bow (E3 and E2), one to one, in a gym or outdoors.
+- [Female Personal Trainer Canning Town](https://dbworkouts.co.uk/female-personal-trainer-canning-town): Train with Jasmin in Canning Town (E16), one to one, in a gym or outdoors.
+- [Female Personal Trainer Ilford](https://dbworkouts.co.uk/female-personal-trainer-ilford): Train with Jasmin in Ilford (IG1 and IG3), one to one, in a gym or outdoors.
+- [Female Personal Trainer Barking](https://dbworkouts.co.uk/female-personal-trainer-barking): Train with Jasmin in Barking (IG11), one to one, in a gym or outdoors.
+- [Female Personal Trainer Dagenham](https://dbworkouts.co.uk/female-personal-trainer-dagenham): Train with Jasmin in Dagenham (RM8 and RM10), one to one, in a gym or outdoors.
+- [Female Personal Trainer Romford](https://dbworkouts.co.uk/female-personal-trainer-romford): Train with Jasmin in Romford (RM1), one to one, in a gym or outdoors.

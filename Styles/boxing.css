@@ -11,3 +11,14 @@ body:has(.boxing-page) .db-footer{font-family:Inter,sans-serif}body:has(.boxing-
 
 /* Show the entire portrait on desktop, without a landscape crop. */
 @media(min-width:701px){.boxing-coach-photo{width:100%;max-width:420px;height:auto;object-fit:contain;justify-self:center}}
+
+/* Meet Jasmin */
+.boxing-jasmin{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.boxing-jasmin .boxing-kicker{color:var(--boxing-accent-text)}
+.boxing-jasmin h2{margin-bottom:24px!important}
+.boxing-jasmin-copy p+p{margin-top:16px}
+.boxing-jasmin-name{font-weight:700;margin-top:24px!important}
+.boxing-jasmin-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.boxing-jasmin-photos img{width:100%;height:auto;border-radius:var(--r-sm,8px);display:block}
+.boxing-jasmin-photos img:nth-child(2){margin-top:32px}
+@media(max-width:700px){.boxing-jasmin{grid-template-columns:minmax(0,1fr);gap:28px}.boxing-jasmin-photos{gap:12px}.boxing-jasmin-photos img:nth-child(2){margin-top:20px}}

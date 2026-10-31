@@ -353,7 +353,7 @@ def build_page(loc):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Trainer {name} | DB's Workouts – Outdoor PT {region}</title>
-  <meta name="description" content="Looking for a personal trainer in {name}? DB's Workouts offers outdoor 1-to-1 PT sessions at {park_hero} and local parks ({pc_str}). From £45. Book a free consultation.">
+  <meta name="description" content="Looking for a personal trainer in {name}? DB's Workouts offers outdoor 1-to-1 PT sessions at {park_hero} and local parks ({pc_str}). From £50. Book a free consultation.">
   <meta name="keywords" content="{keywords}">
   <meta name="author" content="Dean Burt">
   <meta name="robots" content="index, follow">
@@ -373,7 +373,7 @@ def build_page(loc):
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Personal Trainer {name} | DB's Workouts – Outdoor PT">
-  <meta name="twitter:description" content="Outdoor PT in {name} {pc_str}. Sessions from £45. REPs certified. {park_hero} and local parks. Free consultation available.">
+  <meta name="twitter:description" content="Outdoor PT in {name} {pc_str}. Sessions from £50. REPs certified. {park_hero} and local parks. Free consultation available.">
   <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
   <script type="application/ld+json">
   [
@@ -442,7 +442,7 @@ def build_page(loc):
     <p style="margin-top:16px;">Dean holds a REPs Level 3 Personal Training qualification and has worked with hundreds of clients across East London — from complete beginners to experienced gym-goers looking for a new challenge. His approach is straightforward: understand your goals, design a programme that works, and hold you accountable every session.</p>
 
     <h2>Pricing for <span class="redText">{name} PT Sessions</span></h2>
-    <p>Sessions from <strong>£45</strong> per session. Block bookings available from £38.40/session. <a href="/pricing" style="color:#b30018;">View full pricing.</a></p>
+    <p>Sessions from <strong>£50</strong> per session. Block bookings available from £42.50/session. <a href="/pricing" style="color:#b30018;">View full pricing.</a></p>
 
 <div class="info-block" id="training-options"><h2>Personal training for your goals</h2><p>Choose the focus for your sessions, then discuss your starting point and preferred location with Dean.</p><div class="areas-grid"><a href="/boxing-fitness-east-london">Boxing Fitness</a>
 <a href="/weight-loss-personal-trainer-east-london">Weight Loss Coaching</a>

@@ -8,7 +8,7 @@ generate_service_pages.py to rebuild them, it keeps them as bespoke pages.
 Facts used (keep copy to these): 45-minute 1-to-1 online sessions at £30,
 a personalised workout and nutrition plan in the DB's Workouts app (personal
 access link sent by email), regular check-ins, free consultation, REPs Level 3
-since 2019, 5.0 stars from 70 Google reviews. Outdoor sessions from £45.
+since 2019, 5.0 stars from 70 Google reviews. Outdoor sessions from £50.
 """
 import json
 import re
@@ -89,13 +89,13 @@ PAGES = [
             ("Small flat? No problem", [
                 "You do not need a gym or a spare room. Tell Dean what space and equipment you have, whether that is a living-room floor and a pair of dumbbells or a full home gym, and the training is planned around it."]),
             ("Prefer to train outside?", [
-                "If you would rather train in person, Dean also offers outdoor sessions in East London parks and gardens from £45. Compare them on the [pricing page](/pricing) or read about [mobile personal training](/mobile-personal-trainer-east-london)."]),
+                "If you would rather train in person, Dean also offers outdoor sessions in East London parks and gardens from £50. Compare them on the [pricing page](/pricing) or read about [mobile personal training](/mobile-personal-trainer-east-london)."]),
             ("What you get", ["__INCLUDES__"]),
         ],
         "faqs": [
             ("Do you offer online personal training in London?", "Yes. Online 1-to-1 personal training with DB's Workouts is available to anyone in London, with 45-minute sessions at £30 each."),
             ("How much does an online personal trainer cost in London?", "DB's Workouts online sessions cost £30 per 45-minute session, with your workout and nutrition plan in the app and regular check-ins included."),
-            ("Can I train outdoors with Dean instead?", "Yes. Dean also offers outdoor personal training in East London parks and suitable home gardens, with pay-as-you-go sessions from £45."),
+            ("Can I train outdoors with Dean instead?", "Yes. Dean also offers outdoor personal training in East London parks and suitable home gardens, with pay-as-you-go sessions from £50."),
             ("Do I need a gym membership or equipment?", "No. Tell Dean what space and equipment you have access to and he builds the plan around it."),
             ("Which parts of London do you cover?", "Online training works anywhere in London. Dean's outdoor sessions are in East London, including Ilford, Stratford, Wanstead, Walthamstow and Romford."),
         ],
@@ -281,14 +281,14 @@ PAGES = [
             ("How to compare online personal trainers", [
                 "Ask each coach what is included in the price, whether you train one-to-one, whether they are qualified and registered (look for REPs), and how check-ins work. Dean is a REPs Level 3 certified personal trainer, qualified since 2019, with a 5.0 rating from 70 Google reviews."]),
             ("Online or in person?", [
-                "Online sessions are £30 for 45 minutes. Outdoor sessions in East London are £45 for 60 minutes pay as you go, with blocks of 5, 10 or 15 sessions from £38.40 per session. See the [full pricing page](/pricing)."]),
+                "Online sessions are £30 for 45 minutes. Outdoor sessions in East London are £50 for 60 minutes pay as you go, with blocks of 5, 10 or 15 sessions from £42.50 per session. See the [full pricing page](/pricing)."]),
         ],
         "faqs": [
             ("How much does an online personal trainer cost in the UK?", "Prices vary by coach. With DB's Workouts, online 1-to-1 personal training costs £30 per 45-minute session, with your workout and nutrition plan in the app and regular check-ins included."),
             ("What is included in the £30 online session?", "A 45-minute 1-to-1 online session with Dean, a personalised workout and nutrition plan in the DB's Workouts app, and regular check-ins."),
             ("Is there a free consultation?", "Yes. You can talk through your goals with Dean before you start, with no commitment."),
             ("How much is online training once a week?", "One session a week is four sessions over four weeks, which is £120 at £30 per session."),
-            ("Is online personal training cheaper than in person?", "Per session, yes: online is £30 for 45 minutes, and outdoor pay-as-you-go sessions are £45 for 60 minutes. Outdoor blocks lower the per-session price."),
+            ("Is online personal training cheaper than in person?", "Per session, yes: online is £30 for 45 minutes, and outdoor pay-as-you-go sessions are £50 for 60 minutes. Outdoor blocks lower the per-session price."),
         ],
     },
 ]
@@ -323,12 +323,12 @@ PRICE_CARDS = (
     '<p>Includes your workout and nutrition plan in the app and regular check-ins.</p>'
     '<a href="/contact" class="seo-text-link">Book a free consultation ↗</a></article>'
     '<article><p class="seo-kicker">PREFER IN PERSON?</p><h3>Outdoor pay as you go</h3>'
-    '<p class="seo-price">£45<span> / 60-min session</span></p>'
+    '<p class="seo-price">£50<span> / 60-min session</span></p>'
     '<p>One-to-one coaching in an East London park or home garden.</p>'
     '<a href="/mobile-personal-trainer-east-london" class="seo-text-link">Explore outdoor training ↗</a></article>'
     '<article><p class="seo-kicker">BUILD YOUR ROUTINE</p><h3>Outdoor 10-session block</h3>'
-    '<p class="seo-price">£406<span> / block</span></p>'
-    '<p>£40.60 per session. Includes app nutrition and workout plans.</p>'
+    '<p class="seo-price">£450<span> / block</span></p>'
+    '<p>£45 per session. Includes app nutrition and workout plans.</p>'
     '<a href="/pricing" class="seo-text-link">Compare all packages ↗</a></article></div>'
 )
 

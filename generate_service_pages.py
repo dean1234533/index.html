@@ -16,7 +16,7 @@ SERVICES = [
         "slug": "boxing-fitness-east-london",
         "name": "Boxing Fitness",
         "title": "Boxing Fitness East London | 1-to-1 Padwork | DB's Workouts",
-        "description": "Boxing fitness in East London with Dean Burt. Outdoor 1-to-1 padwork and conditioning, tailored to your level. £45 per session. Free consultation.",
+        "description": "Boxing fitness in East London with Dean Burt. Outdoor 1-to-1 padwork and conditioning, tailored to your level. £50 per session. Free consultation.",
         "heading": "Boxing Fitness in East London",
         "intro": "Build fitness and confidence with 1-to-1 boxing padwork and conditioning in your local park. A personalised session with Dean, at your pace.",
         "sections": [
@@ -30,14 +30,14 @@ SERVICES = [
             ("Can beginners book boxing fitness sessions?", "Yes. Dean adapts padwork and conditioning to your starting fitness level and experience. You do not need previous boxing fitness experience."),
             ("Is this boxing fitness or competitive boxing coaching?", "These sessions focus on fitness, padwork and conditioning. If you want sparring or competitive boxing preparation, discuss that separately with Dean before booking."),
             ("Do I need to bring boxing equipment?", "Dean provides the training equipment. Wear comfortable training clothes and suitable footwear, and confirm any personal equipment requirements during your consultation."),
-            ("How much does boxing fitness cost?", "A 1-to-1 session costs £45 pay as you go. Blocks cost £214 for 5, £406 for 10 or £576 for 15 sessions. Arrange the boxing fitness focus with Dean when booking."),
+            ("How much does boxing fitness cost?", "A 1-to-1 session costs £50 pay as you go. Blocks cost £237.50 for 5, £450 for 10 or £637.50 for 15 sessions. Arrange the boxing fitness focus with Dean when booking."),
         ],
     },
     {
         "slug": "weight-loss-personal-trainer-east-london",
         "name": "Weight Loss Coaching",
         "title": "Weight Loss Personal Trainer East London | DB's Workouts",
-        "description": "Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £45. Free consultation.",
+        "description": "Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £50. Free consultation.",
         "heading": "Weight Loss Personal Training in East London",
         "intro": "Outdoor strength and cardio sessions, practical nutrition support and a programme you can keep following. Start with a free conversation about your goals.",
         "sections": [
@@ -64,12 +64,12 @@ SERVICES = [
             ("You can start from where you are", "You do not need to be fit, confident or experienced before your first session. Dean begins with a conversation about your goals, fitness history and any limitations you want him to understand. An assessment helps shape the programme, so the exercises and pace reflect your starting point rather than someone else's routine."),
             ("What your first personal training session involves", "Your session includes a warm-up, a main workout adapted to your level and a cool-down. Dean explains the movements and coaches you through them. Exercises can use bodyweight, resistance bands and portable kit. As you learn the movements, the programme can build towards more strength, stamina and confidence."),
             ("Returning to exercise after a break", "If you have had time away from training, share what has changed and what you want to work towards. Dean can adjust the workload and help you build consistency gradually. You can choose a local park or discuss a suitable home garden, making training easier to fit around work and family commitments."),
-            ("Support between your sessions", "Session blocks include personalised workout and nutrition plans in the DB's Workouts app. These give you a programme to follow between coached sessions. Start with a £45 pay-as-you-go session or discuss a block after your free consultation. There is no contract or minimum commitment."),
+            ("Support between your sessions", "Session blocks include personalised workout and nutrition plans in the DB's Workouts app. These give you a programme to follow between coached sessions. Start with a £50 pay-as-you-go session or discuss a block after your free consultation. There is no contract or minimum commitment."),
         ],
         "faqs": [
             ("Do I need to get fit before booking a personal trainer?", "No. Dean builds sessions around your starting ability. Beginners and people returning after a break are welcome."),
             ("What should I bring to an outdoor PT session?", "Wear comfortable training clothes and suitable footwear, and bring water. Dean provides the session equipment."),
-            ("Can I try a session without buying a block?", "Yes. Pay-as-you-go personal training is £45 per session. You can start there without a contract or minimum commitment."),
+            ("Can I try a session without buying a block?", "Yes. Pay-as-you-go personal training is £50 per session. You can start there without a contract or minimum commitment."),
             ("What happens in the free consultation?", "It is a 20-minute conversation, in person or by phone, about your goals, fitness history and whether Dean's outdoor personal training is a good fit."),
         ],
     },
@@ -77,7 +77,7 @@ SERVICES = [
         "slug": "mobile-personal-trainer-east-london",
         "name": "Mobile Personal Training",
         "title": "Mobile Personal Trainer East London | Park & Garden PT",
-        "description": "Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £45. Free consultation.",
+        "description": "Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £50. Free consultation.",
         "heading": "Mobile Personal Trainer in East London",
         "intro": "Dean comes to your local park or suitable home garden with the equipment. Personalised 1-to-1 coaching, without a gym membership or a trip to a studio.",
         "sections": [
@@ -90,17 +90,17 @@ SERVICES = [
             ("Which areas does your mobile personal trainer cover?", "DB's Workouts covers East London, including Ilford, Goodmayes, Stratford, Wanstead, Walthamstow, Romford, Barking and nearby areas. Send your postcode to Dean to confirm a venue and availability."),
             ("Can you train me in my home garden?", "Yes, a suitable home garden is an outdoor training option. Discuss the available space with Dean during your consultation."),
             ("Do I need a gym membership or my own equipment?", "No. Dean provides portable training equipment for your outdoor session. A gym membership is not required."),
-            ("How much does mobile personal training cost?", "Pay as you go is £45 per session. Blocks are £214 for 5, £406 for 10 or £576 for 15 sessions. Confirm your location and availability before booking."),
+            ("How much does mobile personal training cost?", "Pay as you go is £50 per session. Blocks are £237.50 for 5, £450 for 10 or £637.50 for 15 sessions. Confirm your location and availability before booking."),
         ],
     },
     {'slug': 'pair-personal-training-east-london',
      'name': 'Pair Personal Training',
      'title': "Pair Personal Training East London | DB's Workouts",
      'description': 'Outdoor pair personal training in East London. Two people train together for 1.5 times the '
-                    'one-person price: £67.50 total pay as you go. Free consultation.',
+                    'one-person price: £75 total pay as you go. Free consultation.',
      'heading': 'Pair Personal Training in East London',
      'intro': 'Train outdoors with a friend or partner. Personal coaching for two people, at 1.5 times the '
-              'corresponding one-person price. Pay as you go is £67.50 total for the pair.',
+              'corresponding one-person price. Pay as you go is £75 total for the pair.',
      'sections': [('Two people. One shared session.',
                    "Pair personal training combines Dean's coaching with the encouragement of training alongside "
                    'a friend or partner. Discuss both of your goals, starting fitness levels and preferred East '
@@ -115,8 +115,8 @@ SERVICES = [
                    'availability directly with Dean.'),
                   ('Clear pricing for the pair',
                    'Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay '
-                   'as you go is £67.50 total for both people per session. A one-person pay-as-you-go session is '
-                   '£45, so the pair pays £45 × 1.5 = £67.50 together. The same 1.5-times rule applies to the '
+                   'as you go is £75 total for both people per session. A one-person pay-as-you-go session is '
+                   '£50, so the pair pays £50 × 1.5 = £75 together. The same 1.5-times rule applies to the '
                    'corresponding one-person session block. See the pricing page or message Dean to arrange your '
                    'sessions.')],
      'faqs': [('How many people can train in a pair session?',
@@ -124,7 +124,7 @@ SERVICES = [
                'you.'),
               ('How much does a pair session cost?',
                'Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as '
-               'you go is £67.50 total for both people per session.'),
+               'you go is £75 total for both people per session.'),
               ('Can we train together with different fitness levels?',
                'Yes. Discuss both of your starting points and goals with Dean. Exercises and pace can be adapted '
                "to each person's level."),
@@ -184,7 +184,7 @@ def build_page(service, template):
   </div>
   <h2>Book with Dean Burt</h2>
   <p>Dean is a REPs Level 3 certified personal trainer, qualified since 2019. Start with a free consultation to discuss your goals and the right session format. <a href="/about">Meet Dean</a> and <a href="/testimonials">read client reviews</a>.</p>
-  <p>1-to-1 prices are £45 pay as you go, £214 for 5 sessions, £406 for 10 or £576 for 15 (£38.40 per session). Session blocks include free app nutrition and workout plans. Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as you go is £67.50 total for both people per session. <a href="/pricing">See full personal training prices and packages</a>.</p>
+  <p>1-to-1 prices are £50 pay as you go, £237.50 for 5 sessions, £450 for 10 or £637.50 for 15 (£42.50 per session). Session blocks include free app nutrition and workout plans. Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as you go is £75 total for both people per session. <a href="/pricing">See full personal training prices and packages</a>.</p>
   <div class="info-block"><h2>Your questions answered</h2>{faqs}</div>
   <div class="info-block"><h2>Explore your training options</h2><div class="areas-grid">{service_links()}</div></div>
   <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
