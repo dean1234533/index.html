@@ -501,6 +501,15 @@
       border: 1px solid var(--border);
       border-radius: var(--r);
     }
+    @media (max-width: 640px) {
+      .compare-wrap { overflow-x: hidden; }
+      .compare-table { table-layout: fixed; font-size: .8rem; }
+      .compare-table thead th { font-size: .7rem; padding: 12px 6px; letter-spacing: 0; }
+      .compare-table tbody td { padding: 12px 6px; }
+      .compare-table thead th:first-child, .compare-table tbody td:first-child { width: 52%; padding-left: 12px; overflow-wrap: anywhere; }
+      .compare-table thead th:nth-child(2), .compare-table thead th:nth-child(3),
+      .compare-table tbody td:nth-child(2), .compare-table tbody td:nth-child(3) { width: 24%; overflow-wrap: anywhere; }
+    }
 
     /* ── Discounts strip ──────────────────────────────────── */
     .discounts-row {
@@ -946,7 +955,7 @@
 <section class="db-cta-band" data-reveal>
   <div class="db-container">
     <p class="eyebrow" style="margin-bottom:12px">Start Today</p>
-    <h2>Your First Session Is<br><span class="accent-text">On Us</span></h2>
+    <h2>Your Consultation Is<br><span class="accent-text">On Us</span></h2>
     <p>Not sure which package is right for you? Book a free, no-commitment consultation. Dean will talk through your goals and recommend the best plan — before you spend a penny.</p>
     <div class="db-cta-band-actions">
       <a href="contact.html" class="db-btn db-btn-primary db-btn-lg">Book Free Consultation</a>
