@@ -145,7 +145,7 @@ def refresh_html(html):
             end += after.end()
     html = html[:start] + hero_new + '\n'.join(sections) + final + html[end:]
     shared = '' if 'Styles/db.css' in html else '<link rel="stylesheet" href="/Styles/db.css?v=9">\n'
-    html = html.replace('</head>', shared + '<link rel="stylesheet" href="/Styles/seo-pages.css?v=1">\n</head>', 1)
+    html = html.replace('</head>', shared + '<link rel="stylesheet" href="/Styles/seo-pages.css?v=2">\n</head>', 1)
     # Repair the malformed legacy font URL on these pages only.
     html = html.replace('family=Inter&family=Montserrat:wght@700;800;900:wght@400;500;600;700', 'family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900')
     html = html.replace('<body>', '<body>\n<a class="seo-skip" href="#main-content">Skip to content</a>', 1)

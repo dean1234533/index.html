@@ -1986,3 +1986,11 @@ textarea:focus-visible,
   .mobile-sticky-cta { display: block; }
   body { padding-bottom: 72px; }
 }
+
+/* Centre the last two cards when they sit under a row of three */
+@media (min-width: 640px) and (max-width: 899px) {
+  .tools-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .tools-grid > * { grid-column: span 2; min-width: 0; }
+  .tools-grid > :nth-last-child(2):nth-child(3n+1) { grid-column: 2 / span 2; }
+  .tools-grid > :last-child:nth-child(3n+2) { grid-column: 4 / span 2; }
+}
