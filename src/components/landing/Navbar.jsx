@@ -8,7 +8,7 @@ const navLinks = [
   { label: "About", href: "#credibility" },
 ];
 
-const GENERATOR_URL = "https://pt-ai-helper-63y9umrdw-deans-projects-30127c36.vercel.app";
+const GENERATOR_URL = "https://dbworkouts-free-generator.vercel.app";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

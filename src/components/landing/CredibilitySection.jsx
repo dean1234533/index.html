@@ -72,7 +72,7 @@ export default function CredibilitySection() {
           >
             <p className="text-white/90 text-lg md:text-xl leading-relaxed">
               I'm <span className="text-[#b30018] font-semibold">Dean</span>, a REPs Level 3 qualified personal trainer based in East London
-              with 12+ years of experience and over 68 five-star Google reviews.
+              with 12+ years of experience and over 69 five-star Google reviews.
             </p>
             <p className="text-[#94a3b8] text-base md:text-lg leading-relaxed">
               I built DB's AI to give everyone access to professional-level planning
@@ -89,7 +89,7 @@ export default function CredibilitySection() {
                 </div>
                 <div>
                   <p className="text-white font-bold text-sm">5.0 Rating</p>
-                  <p className="text-[#94a3b8] text-xs">68 Google Reviews</p>
+                  <p className="text-[#94a3b8] text-xs">69 Google Reviews</p>
                 </div>
               </div>
 

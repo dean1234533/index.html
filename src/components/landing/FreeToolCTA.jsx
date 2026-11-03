@@ -36,7 +36,7 @@ export default function FreeToolCTA() {
             </p>
 
             <a
-              href="https://pt-ai-helper-63y9umrdw-deans-projects-30127c36.vercel.app"
+              href="https://dbworkouts-free-generator.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 border-2 border-[#10b981] hover:bg-[#10b981] text-[#10b981] hover:text-white font-semibold text-base px-8 py-4 rounded-xl transition-all duration-300 min-h-[48px]"
