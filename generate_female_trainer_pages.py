@@ -107,7 +107,7 @@ def updated_line():
 
 def trust():
     return gm.trust_bar([("Level 3 qualified", "Fully insured trainer"), ("Gym or outdoors", "Your choice"),
-                         ("One to one", "Built around you"), ("Free consultation", "Message us to start")])
+                         ("One to one", "Built around you"), ("Free consultation call", "Message us to start")])
 
 
 def final(h2, text="Message us and ask for Jasmin. We will confirm availability and the details before your first session."):
@@ -150,10 +150,10 @@ def render(slug, title, description, main, graph, og=PHOTO_1, placename="East Lo
 GUIDES = [
     dict(slug="female-personal-trainer-for-beginners-east-london",
          title="Female Personal Trainer for Beginners East London",
-         description="Starting out? Train one to one with Jasmin, a female personal trainer at DB's Workouts in East London. Gym or outdoors. Free consultation.",
+         description="Starting out? Train one to one with Jasmin, a female personal trainer at DB's Workouts in East London. Gym or outdoors. Free consultation call.",
          name="Female Personal Trainer for Beginners", h1="Female Personal Trainer for Beginners in East London", photo=1,
          lead="Never trained before, or coming back after a break? Start at your own pace with Jasmin, one to one.",
-         quick="A female personal trainer for beginners in East London: Jasmin at DB's Workouts trains you one to one in a gym or outdoors, at a pace that suits you. You do not need experience. Message us to book a free consultation.",
+         quick="A female personal trainer for beginners in East London: Jasmin at DB's Workouts trains you one to one in a gym or outdoors, at a pace that suits you. You do not need experience. Message us to book a free consultation call.",
          sections=[
              ("Starting out with a female personal trainer",
               "Walking into a gym or a park session for the first time can feel like a big step. Some people find it easier to start with a woman beside them, and that is a perfectly good reason to ask for Jasmin. Sessions are one to one, so the focus is on you and what you want to achieve, not on keeping up with anyone else."),
@@ -167,7 +167,7 @@ GUIDES = [
          faqs=[
              ("Do I need to be fit to start?", "No. Sessions are one to one and built around where you are now. Tell us about your experience and any worries when you message us."),
              ("Can I train in a gym with Jasmin?", "Yes. Jasmin can train you in a gym as well as outdoors. Tell us your preference and area when you book."),
-             ("Is the first step a free consultation?", "DB's Workouts offers a free consultation. Message us to arrange one and ask for Jasmin."),
+             ("Is the first step a free consultation call?", "DB's Workouts offers a free consultation call. Message us to arrange one and ask for Jasmin."),
              ("Can I try boxing fitness as a beginner?", "Yes. Boxing fitness padwork suits beginners because it is one to one and you work at your own pace."),
          ]),
     dict(slug="womens-personal-training-east-london",
@@ -197,7 +197,7 @@ GUIDES = [
          description="Try one-to-one boxing fitness padwork with Jasmin, a female trainer at DB's Workouts in East London. Gym or outdoors. No experience needed.",
          name="Boxing Fitness with a Female Trainer", h1="Boxing Fitness with a Female Trainer in East London", photo=1,
          lead="Padwork, one to one, with Jasmin. A workout that meets you where you are, in a gym or outdoors.",
-         quick="Boxing fitness with a female trainer in East London: Jasmin at DB's Workouts offers one-to-one boxing padwork in a gym or outdoors. You do not need any boxing experience. Message us to book a free consultation.",
+         quick="Boxing fitness with a female trainer in East London: Jasmin at DB's Workouts offers one-to-one boxing padwork in a gym or outdoors. You do not need any boxing experience. Message us to book a free consultation call.",
          sections=[
              ("One-to-one boxing fitness",
               "Boxing fitness is padwork and conditioning rather than fighting. You wear gloves, your trainer holds the pads, and you work through combinations at your own pace. Jasmin trains you one to one, so each session is built around you."),
@@ -212,14 +212,14 @@ GUIDES = [
              ("Do I need boxing experience?", "No. Boxing fitness padwork suits beginners and experienced clients alike."),
              ("Is it a fighting class?", "No. It is a fitness session using gloves and focus pads, one to one with your trainer."),
              ("Can I do boxing fitness in a gym?", "Yes. Jasmin can train you in a gym as well as outdoors."),
-             ("How do I start?", "Message us, ask for Jasmin and we will arrange your free consultation."),
+             ("How do I start?", "Message us, ask for Jasmin and we will arrange your free consultation call."),
          ]),
     dict(slug="female-personal-trainer-gym-east-london",
          title="Female Personal Trainer for Gym Sessions East London",
          description="Train in a gym with Jasmin, a female personal trainer at DB's Workouts. One-to-one gym sessions and boxing fitness across East London.",
          name="Female Personal Trainer for Gym Sessions", h1="Female Personal Trainer for Gym Sessions in East London", photo=2,
          lead="Prefer to train indoors? Jasmin can train you one to one in a gym as well as outdoors.",
-         quick="A female personal trainer for gym sessions in East London: Jasmin at DB's Workouts can train you one to one in a gym, and also outdoors. Tell us your area and message us to arrange a free consultation.",
+         quick="A female personal trainer for gym sessions in East London: Jasmin at DB's Workouts can train you one to one in a gym, and also outdoors. Tell us your area and message us to arrange a free consultation call.",
          sections=[
              ("Gym sessions with a female personal trainer",
               "If you would rather train indoors, Jasmin can train you in a gym. Sessions are one to one, so you have a trainer's attention for the whole session instead of working it out on your own."),
@@ -238,13 +238,13 @@ GUIDES = [
          ]),
     dict(slug="first-session-with-a-female-personal-trainer-east-london",
          title="First Session with a Female Personal Trainer | East London",
-         description="What to expect from your first session with Jasmin, a female personal trainer at DB's Workouts in East London. Free consultation first.",
+         description="What to expect from your first session with Jasmin, a female personal trainer at DB's Workouts in East London. Free consultation call first.",
          name="First Session with a Female Personal Trainer", h1="What to Expect From Your First Session With a Female Personal Trainer", photo=1,
          lead="Nervous about a first session? Here is what to expect when you train one to one with Jasmin.",
-         quick="Your first session with a female personal trainer at DB's Workouts starts with a free consultation. You tell Jasmin your goals and any injuries, then train one to one in a gym or outdoors at a pace that suits you.",
+         quick="Your first session with a female personal trainer at DB's Workouts starts with a free consultation call. You tell Jasmin your goals and any injuries, then train one to one in a gym or outdoors at a pace that suits you.",
          sections=[
-             ("Start with a free consultation",
-              "DB's Workouts begins with a free consultation. You talk through your goals, your experience and anything you are worried about, and ask for Jasmin if you would like to train with a female trainer."),
+             ("Start with a free consultation call",
+              "DB's Workouts begins with a free consultation call. You talk through your goals, your experience and anything you are worried about, and ask for Jasmin if you would like to train with a female trainer."),
              ("Tell us about injuries and health",
               "Mention any injuries, health conditions or areas of concern before you start. If something worries you, speak to your GP or a physiotherapist first."),
              ("Your first session",
@@ -272,7 +272,7 @@ HUB_FAQS = [
     ("Can I try boxing fitness with Jasmin?", "Yes. Jasmin offers boxing fitness padwork. No boxing experience is needed."),
     ("Do I need to be fit to start?", "No. Jasmin works with a variety of clients, including beginners. Tell us where you are starting from."),
     ("How much does it cost?", "We confirm the price and the details when you book. Current DB's Workouts session prices are on the pricing page."),
-    ("How do I book a session with Jasmin?", "Message us through the contact page or WhatsApp (07752 300937) and ask for Jasmin. A free consultation comes first."),
+    ("How do I book a session with Jasmin?", "Message us through the contact page or WhatsApp (07752 300937) and ask for Jasmin. A free consultation call comes first."),
     ("Is this medical advice?", "No. It is personal training. If you have an injury, a health condition or pain that worries you, speak to your GP or a physiotherapist and tell us when you book."),
 ]
 
@@ -298,15 +298,15 @@ def build_hub():
              '<tr><th scope="row">Training</th><td>One-to-one personal training and boxing fitness</td></tr>'
              '<tr><th scope="row">Where</th><td>In a gym or outdoors across East London</td></tr>'
              '<tr><th scope="row">Price</th><td>Confirmed when you book (see the pricing page)</td></tr>'
-             '<tr><th scope="row">First step</th><td>Free consultation</td></tr>'
+             '<tr><th scope="row">First step</th><td>Free consultation call</td></tr>'
              '<tr><th scope="row">How to book</th><td>Message us through the contact page or WhatsApp (07752 300937)</td></tr>'
              '</tbody></table>')
     main = f'''<main id="main-content" class="seo-page">
-{hero("FEMALE PERSONAL TRAINER · EAST LONDON", "Female Personal Trainer in East London", "Train one to one with Jasmin, a personal trainer at DB's Workouts. In a gym or outdoors, including boxing fitness.", "Gym or outdoors · One-to-one sessions · Free consultation", PHOTO_2, "Boxing padwork session with a female personal trainer at DB's Workouts", "Train with Jasmin.")}
+{hero("FEMALE PERSONAL TRAINER · EAST LONDON", "Female Personal Trainer in East London", "Train one to one with Jasmin, a personal trainer at DB's Workouts. In a gym or outdoors, including boxing fitness.", "Gym or outdoors · One-to-one sessions · Free consultation call", PHOTO_2, "Boxing padwork session with a female personal trainer at DB's Workouts", "Train with Jasmin.")}
 {trust()}
-<div class="seo-wrap seo-content" id="overview"><aside class="seo-quick"><h2>Quick answer</h2><p>Yes, DB&#x27;s Workouts has a female personal trainer. Jasmin is Level 3 qualified and fully insured, and trains clients one to one across East London, in a gym or outdoors, and offers boxing fitness. Message us to ask for Jasmin and book a free consultation.</p></aside>
+<div class="seo-wrap seo-content" id="overview"><aside class="seo-quick"><h2>Quick answer</h2><p>Yes, DB&#x27;s Workouts has a female personal trainer. Jasmin is Level 3 qualified and fully insured, and trains clients one to one across East London, in a gym or outdoors, and offers boxing fitness. Message us to ask for Jasmin and book a free consultation call.</p></aside>
 <section class="seo-section"><h2>Female personal trainer at a glance</h2>{facts}</section>
-<section class="seo-section seo-session"><div><h2>A female personal trainer in East London</h2><p>Some people prefer to train with a woman, and DB&#x27;s Workouts has a female personal trainer you can ask for. Jasmin works with a variety of clients and uses a variety of training methods, so your sessions are built around your goals and where you are starting from.</p><p>You can train in a gym or outdoors, and try boxing fitness padwork if you would like something different from a standard workout.</p></div><div><ol class="seo-steps"><li><span>01</span><div><h3>Message us</h3><p>Ask for Jasmin and tell us your area.</p></div></li><li><span>02</span><div><h3>Free consultation</h3><p>Talk through your goals and any injuries.</p></div></li><li><span>03</span><div><h3>Start training</h3><p>One-to-one sessions in a gym or outdoors.</p></div></li></ol></div></section>
+<section class="seo-section seo-session"><div><h2>A female personal trainer in East London</h2><p>Some people prefer to train with a woman, and DB&#x27;s Workouts has a female personal trainer you can ask for. Jasmin works with a variety of clients and uses a variety of training methods, so your sessions are built around your goals and where you are starting from.</p><p>You can train in a gym or outdoors, and try boxing fitness padwork if you would like something different from a standard workout.</p></div><div><ol class="seo-steps"><li><span>01</span><div><h3>Message us</h3><p>Ask for Jasmin and tell us your area.</p></div></li><li><span>02</span><div><h3>Free consultation call</h3><p>Talk through your goals and any injuries.</p></div></li><li><span>03</span><div><h3>Start training</h3><p>One-to-one sessions in a gym or outdoors.</p></div></li></ol></div></section>
 <section class="seo-proof seo-proof-photo seo-section"><div><p class="seo-kicker">YOUR TRAINER</p><h2>Jasmin.<br>One to one. Your pace.</h2><p>Jasmin is a personal trainer at DB&#x27;s Workouts. She can train you in a gym as well as outdoors, and offers one-to-one boxing fitness. Tell her about your goals and any injuries before you book.</p><a class="seo-text-link" href="#jasmin">Read Jasmin&#x27;s profile <span aria-hidden="true">↓</span></a></div><img src="{PHOTO_1[0]}" alt="One-to-one boxing padwork with a DB&#x27;s Workouts trainer" width="{PHOTO_1[1]}" height="{PHOTO_1[2]}" loading="lazy" decoding="async" style="max-height:440px;margin-inline:auto"></section>
 {JASMIN_SECTION}
 <section class="seo-section"><h2>Why people choose a female trainer</h2><p>People ask for a female trainer for many reasons. Some are new to training, some are returning after a break, and some simply feel more comfortable. Whatever your reason, you can ask for Jasmin when you message us, and sessions stay one to one.</p></section>
@@ -319,7 +319,7 @@ def build_hub():
     service["availableChannel"] = [{"@type": "ServiceChannel", "serviceType": "In a gym"}, {"@type": "ServiceChannel", "serviceType": "Outdoors"}]
     howto = {"@type": "HowTo", "name": "How to book a session with Jasmin",
              "step": [{"@type": "HowToStep", "position": 1, "name": "Message us", "text": "Message us through the contact page or WhatsApp and ask for Jasmin."},
-                      {"@type": "HowToStep", "position": 2, "name": "Have a free consultation", "text": "Talk through your goals, experience and any injuries."},
+                      {"@type": "HowToStep", "position": 2, "name": "Have a free consultation call", "text": "Talk through your goals, experience and any injuries."},
                       {"@type": "HowToStep", "position": 3, "name": "Start training", "text": "Train one to one with Jasmin in a gym or outdoors."}]}
     image = {"@type": "ImageObject", "@id": url + "#image", "contentUrl": DOMAIN + PHOTO_2[0], "url": DOMAIN + PHOTO_2[0],
              "caption": "Boxing padwork session with a female personal trainer at DB's Workouts", "width": PHOTO_2[1], "height": PHOTO_2[2]}
@@ -343,14 +343,14 @@ def build_area(a):
          f"Jasmin can train you in a gym as well as outdoors. Tell us you are in {n} and which you prefer, and we will confirm the options."),
         (f"Can I try boxing fitness in {n}?", "Yes. Jasmin offers one-to-one boxing fitness padwork, and no experience is needed."),
         ("Are sessions one to one?", "Yes. Sessions with Jasmin are one to one and built around your goals."),
-        ("How do I book?", "Message us through the contact page or WhatsApp and ask for Jasmin. A free consultation comes first."),
+        ("How do I book?", "Message us through the contact page or WhatsApp and ask for Jasmin. A free consultation call comes first."),
     ]
     near_pills = gm.pills([(area_slug(AREA_BY_SLUG[s]), AREA_BY_SLUG[s]["name"]) for s in a["near"]])
     guides = gm.pills([(g["slug"], g["name"]) for g in GUIDES])
     quick = (f"DB's Workouts has a female personal trainer for {n}. Jasmin is Level 3 qualified, fully insured and trains clients one to one in a gym or outdoors, and offers "
-             f"boxing fitness. Message us your postcode ({a['postcodes']}) and ask for Jasmin to book a free consultation.")
+             f"boxing fitness. Message us your postcode ({a['postcodes']}) and ask for Jasmin to book a free consultation call.")
     main = f'''<main id="main-content" class="seo-page">
-{hero(f"FEMALE PERSONAL TRAINER · {n.upper()}", f"Female Personal Trainer in {n}", f"One-to-one personal training and boxing fitness with Jasmin, a personal trainer at DB's Workouts. Covering {n} and {a['postcodes']}.", f"Gym or outdoors · {a['postcodes']} · Free consultation", PHOTO_2, f"Boxing padwork with a female personal trainer for clients in {n}", f"Train with Jasmin in {n}.")}
+{hero(f"FEMALE PERSONAL TRAINER · {n.upper()}", f"Female Personal Trainer in {n}", f"One-to-one personal training and boxing fitness with Jasmin, a personal trainer at DB's Workouts. Covering {n} and {a['postcodes']}.", f"Gym or outdoors · {a['postcodes']} · Free consultation call", PHOTO_2, f"Boxing padwork with a female personal trainer for clients in {n}", f"Train with Jasmin in {n}.")}
 {trust()}
 <div class="seo-wrap seo-content" id="overview"><aside class="seo-quick"><h2>Quick answer</h2><p>{escape(quick)}</p></aside>
 <section class="seo-section"><h2>Train with a female personal trainer in {escape(n)}</h2><p>If you live or work in {escape(n)} ({escape(a['postcodes'])}) and would like to train with a woman, you can ask for Jasmin at DB&#x27;s Workouts. She works with a variety of clients and builds one-to-one sessions around your goals. <a href="/{HUB_SLUG}#jasmin">Meet Jasmin</a>.</p><p>Message us your postcode and tell us whether you prefer a gym or outdoors. We confirm Jasmin&#x27;s availability and the details before your first session.</p></section>
@@ -375,7 +375,7 @@ def build_guide(g):
     guides = gm.pills([(x["slug"], x["name"]) for x in GUIDES if x["slug"] != slug])
     areas = gm.pills([(area_slug(a), a["name"]) for a in AREAS])
     main = f'''<main id="main-content" class="seo-page">
-{hero("FEMALE PERSONAL TRAINER · EAST LONDON", g["h1"], g["lead"], "Gym or outdoors · One-to-one sessions · Free consultation", PHOTO_2, "Boxing padwork session with a female personal trainer at DB's Workouts", "Train with Jasmin.")}
+{hero("FEMALE PERSONAL TRAINER · EAST LONDON", g["h1"], g["lead"], "Gym or outdoors · One-to-one sessions · Free consultation call", PHOTO_2, "Boxing padwork session with a female personal trainer at DB's Workouts", "Train with Jasmin.")}
 {trust()}
 <div class="seo-wrap seo-content" id="overview"><aside class="seo-quick"><h2>Quick answer</h2><p>{escape(g["quick"])}</p></aside>
 {sections}

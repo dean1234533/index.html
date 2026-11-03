@@ -353,7 +353,7 @@ def build_page(loc):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Trainer {name} | DB's Workouts – Outdoor PT {region}</title>
-  <meta name="description" content="Looking for a personal trainer in {name}? DB's Workouts offers outdoor 1-to-1 PT sessions at {park_hero} and local parks ({pc_str}). From £50. Book a free consultation.">
+  <meta name="description" content="Looking for a personal trainer in {name}? DB's Workouts offers outdoor 1-to-1 PT sessions at {park_hero} and local parks ({pc_str}). From £50. Book a free consultation call.">
   <meta name="keywords" content="{keywords}">
   <meta name="author" content="Dean Burt">
   <meta name="robots" content="index, follow">
@@ -373,7 +373,7 @@ def build_page(loc):
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Personal Trainer {name} | DB's Workouts – Outdoor PT">
-  <meta name="twitter:description" content="Outdoor PT in {name} {pc_str}. Sessions from £50. REPs certified. {park_hero} and local parks. Free consultation available.">
+  <meta name="twitter:description" content="Outdoor PT in {name} {pc_str}. Sessions from £50. REPs certified. {park_hero} and local parks. Free consultation call available.">
   <meta name="twitter:image" content="https://dbworkouts.co.uk/pics/IMG_8101.JPG">
   <script type="application/ld+json">
   [
@@ -414,7 +414,7 @@ def build_page(loc):
     <p>OUTDOOR PT &middot; {name.upper()}</p>
     <h1>Personal Trainer in <span class="redText">{name}</span></h1>
     <p>Outdoor PT &amp; strength coaching sessions at {park_hero} and local parks across {pc_str}. No gym needed.</p>
-    <a href="/contact" class="cta-btn">Book a Free Consultation</a>
+    <a href="/contact" class="cta-btn">Book a Free Consultation Call</a>
     <p style="font-size:14px;color:#999;">Free &middot; No commitment &middot; {name}, {region}</p>
   </div>
 
@@ -449,7 +449,7 @@ def build_page(loc):
 <a href="/personal-training-for-beginners-east-london">Beginner Personal Training</a>
 <a href="/mobile-personal-trainer-east-london">Mobile Personal Training</a>
 <a href="/pair-personal-training-east-london">Pair Personal Training</a></div></div>
-    <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
+    <a href="/contact" class="cta-btn block">Book a Free Consultation Call</a>
   </div>
 
 {footer_html}

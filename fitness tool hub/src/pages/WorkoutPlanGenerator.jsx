@@ -620,6 +620,8 @@ export default function WorkoutPlanGenerator() {
         <div className="mx-auto max-w-2xl">
           <RelatedTools tools={RELATED} />
         </div>
+
+        {!plan && <CTA />}
       </main>
 
       <Footer />

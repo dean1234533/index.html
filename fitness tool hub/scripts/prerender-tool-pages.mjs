@@ -63,6 +63,15 @@ function withSeo(html, { title, description, canonical }) {
   return out;
 }
 
+// A heading, the page description and a booking link, written into the page itself. The calculator replaces it as soon as it loads,
+// but crawlers and anyone without JavaScript see real content instead of an empty page.
+function withContent(html, { title, description }, slug) {
+  const heading = title.split(/\s[|\u2013-]\s/)[0].trim();
+  const book = `https://dbworkouts.co.uk/contact?utm_source=tools&utm_medium=static&utm_campaign=${encodeURIComponent(slug || "tools")}`;
+  const block = `<div id="root"><main style="max-width:42rem;margin:0 auto;padding:2rem 1rem;font-family:system-ui,sans-serif;color:#fff"><h1>${escapeText(heading)}</h1><p>${escapeText(description)}</p><p><a href="${book}" style="color:#fff">Book a free consultation call with Dean, a personal trainer in East London</a></p></main></div>`;
+  return html.replace('<div id="root"></div>', block);
+}
+
 const written = [];
 const skipped = [];
 
@@ -78,7 +87,7 @@ for (const file of readdirSync(pagesDir).filter((name) => name.endsWith(".jsx"))
 
   if (!slug) {
     // Hub page (/tools): the root index.html is what /tools serves.
-    writeFileSync(indexPath, withSeo(template, seo));
+    writeFileSync(indexPath, withContent(withSeo(template, seo), seo, ""));
     written.push("index.html (hub)");
     continue;
   }
@@ -86,7 +95,7 @@ for (const file of readdirSync(pagesDir).filter((name) => name.endsWith(".jsx"))
   // index.html bakes in JSON-LD for the macro calculator (WebApplication and a macro FAQ).
   // That is wrong for every other tool, and each page adds its own JSON-LD at runtime via
   // usePageSeo, so drop all the baked-in blocks from the per-tool copies.
-  const html = withSeo(template, seo).replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
+  const html = withContent(withSeo(template, seo), seo, slug).replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
   writeFileSync(path.join(distDir, `${slug}.html`), html);
   written.push(`${slug}.html`);
 }

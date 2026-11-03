@@ -55,6 +55,26 @@
       "date": "2026-10-21",
       "scope": "Boxing fitness page",
       "choice": "Real outdoor training photography, charcoal and brand red, split hero, session steps, price grid and native FAQ disclosures. Reuses shared navigation, footer and buttons."
+    },
+    {
+      "date": "2026-10-24",
+      "scope": "Location and service SEO landing pages",
+      "choice": "Extend the boxing page design using shared DB tokens, split training-photo heroes, visible coach and review proof, session steps, price comparisons and native details FAQs. Preserve original page metadata, local copy and structured data."
+    },
+    {
+      "date": "2026-10-24",
+      "scope": "Shared public navigation",
+      "choice": "One static header across main and SEO pages. Native Training and More disclosures, area directory, persistent desktop booking CTA, one mobile controller with Escape, focus management, inert closed content and resize cleanup. Preserve DB branding."
+    },
+    {
+      "date": "2026-10-26",
+      "scope": "Fitness tool directory badges",
+      "choice": "One instance per directory in a compact horizontal carousel with arrows, swipe, pause/play and reduced-motion support. Shared server decorator prevents duplicate badges."
+    },
+    {
+      "date": "2026-10-26",
+      "scope": "Fitness tool directory badges",
+      "choice": "Match app.dbworkouts.co.uk: reuse its Discover more tools heading, horizontal badge cards, arrow and pause controls, swipe and reduced motion. Preserve eight unique directory links."
     }
   ],
   "evidence": [],

@@ -28,7 +28,7 @@ def navigation(path='/'):
 <div class="primary-nav-inner">
 <a class="primary-brand" href="/" aria-label="DB's Workouts home"><img src="/pics/optimized/logo-160.webp" alt="" width="56" height="56" decoding="async"><span>DB's Workouts</span></a>
 <button class="primary-toggle" id="navigationToggle" type="button" aria-label="Open navigation" aria-controls="navigationPanel" aria-expanded="false"><span></span><span></span><span></span></button>
-<nav class="primary-links" id="navigationPanel" aria-label="Main navigation">''' + disclosure('Training', TRAINING) + link('/personal-trainer-east-london-areas', 'Areas') + link('/pricing', 'Pricing') + link('/testimonials', 'Results') + link('/about', 'About Dean') + disclosure('More', MORE) + '''<a class="primary-book" href="/contact">Book free consultation <span aria-hidden="true">↗</span></a></nav>
+<nav class="primary-links" id="navigationPanel" aria-label="Main navigation">''' + disclosure('Training', TRAINING) + link('/personal-trainer-east-london-areas', 'Areas') + link('/pricing', 'Pricing') + link('/testimonials', 'Results') + link('/about', 'About Dean') + disclosure('More', MORE) + '''<a class="primary-book" href="/contact">Book free consultation call <span aria-hidden="true">↗</span></a></nav>
 </div></header>'''
 
 

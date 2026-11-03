@@ -89,11 +89,11 @@ def refresh_html(html):
 <section class="seo-hero"><div class="seo-wrap seo-hero-grid">
 <div><p class="seo-kicker">{label}</p><h1>{heading}</h1>
 <p class="seo-lead">{intro}</p>
-<div class="seo-actions">{button('/contact', 'Book a free consultation')}<a class="seo-text-link" href="#training-details">Explore your training <span aria-hidden="true">↓</span></a></div>
+<div class="seo-actions">{button('/contact', 'Book a free consultation call')}<a class="seo-text-link" href="#training-details">Explore your training <span aria-hidden="true">↓</span></a></div>
 <p class="seo-note">Beginners welcome · Equipment provided · No gym needed</p></div>
 <figure class="seo-hero-photo"><img src="/pics/optimized/{image}" alt="{image_alt}" width="640" height="360" fetchpriority="high" decoding="async"><figcaption><span>DB’S WORKOUTS · OUTDOORS, TOGETHER</span><strong>{photo_caption}</strong></figcaption></figure>
 </div></section>
-<div class="seo-trust"><div class="seo-wrap"><a href="/testimonials"><b>5.0 ★★★★★</b><span>70 Google reviews</span></a><span><b>Since 2019</b>Qualified personal trainer</span><span><b>Built around you</b>Your goals. Your starting point.</span><span><b>Free consultation</b>A conversation with Dean</span></div></div>
+<div class="seo-trust"><div class="seo-wrap"><a href="/testimonials"><b>5.0 ★★★★★</b><span>70 Google reviews</span></a><span><b>Since 2019</b>Qualified personal trainer</span><span><b>Built around you</b>Your goals. Your starting point.</span><span><b>Free consultation call</b>A conversation with Dean</span></div></div>
 <div class="seo-wrap seo-content" id="training-details">'''
     inner = content[content.index('>')+1:content.rfind('</div>')]
     groups = []
@@ -133,7 +133,7 @@ def refresh_html(html):
     sections.insert(min(2, len(sections)), proof)
     if is_service and not is_directory:
         sections.insert(-1, '<section class="seo-section"><p class="seo-kicker">TRAIN YOUR WAY</p><h2>Choose your next step.</h2>' + price_grid() + '</section>')
-    final = f'''<section class="seo-final"><p class="seo-kicker">LET’S GET STARTED</p><h2>Your next chapter<br>starts outside.</h2><p>Tell Dean what you want from training. Find your starting point together.</p><div class="seo-actions">{button('/contact','Book a free consultation')}<a class="seo-text-link" href="https://wa.me/447752300937">Message Dean on WhatsApp <span aria-hidden="true">↗</span></a></div><p class="seo-note">Free · No commitment · Personal advice</p></section></div></main>'''
+    final = f'''<section class="seo-final"><p class="seo-kicker">LET’S GET STARTED</p><h2>Your next chapter<br>starts outside.</h2><p>Tell Dean what you want from training. Find your starting point together.</p><div class="seo-actions">{button('/contact','Book a free consultation call')}<a class="seo-text-link" href="https://wa.me/447752300937">Message Dean on WhatsApp <span aria-hidden="true">↗</span></a></div><p class="seo-note">Free · No commitment · Personal advice</p></section></div></main>'''
     # Existing service pages already have a main wrapper.
     start = hs
     end = ce

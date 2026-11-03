@@ -27,7 +27,7 @@ NEW_NAV = '''<nav class="db-nav" id="dbNav">
       <a href="active-living-1.html">Blog</a>
       <a href="contact.html">Contact</a>
     </div>
-    <a href="contact.html" class="db-nav-cta">Book Free Consultation</a>
+    <a href="contact.html" class="db-nav-cta">Book Free Consultation Call</a>
     <button class="db-nav-hamburger" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -39,7 +39,7 @@ NEW_NAV = '''<nav class="db-nav" id="dbNav">
     <a href="testimonials.html">Results</a>
     <a href="active-living-1.html">Blog</a>
     <a href="contact.html">Contact</a>
-    <a href="contact.html" class="db-mobile-cta">Book Free Consultation</a>
+    <a href="contact.html" class="db-mobile-cta">Book Free Consultation Call</a>
   </div>
 </nav>'''
 
@@ -59,6 +59,7 @@ NEW_FOOTER = '''<footer class="db-footer">
       <a href="testimonials.html">Results</a>
       <a href="active-living-1.html">Blog</a>
       <a href="contact.html">Contact</a>
+      <a href="refer-a-friend.html">Refer a Friend</a>
     </div>
     <div class="db-footer-col">
       <div class="db-footer-heading">Locations</div>

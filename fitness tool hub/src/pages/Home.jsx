@@ -139,6 +139,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-4 pb-6">
         <RelatedTools tools={RELATED} />
       </div>
+      {!results && <CTA />}
       <Footer />
     </div>
   );

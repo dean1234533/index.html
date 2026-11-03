@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { HeartPulse, Lock, Search } from "lucide-react";
 
+import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 import { TOOLS_DATA } from "@/lib/tools-data";
 import { usePageSeo } from "@/lib/seo";
@@ -172,6 +173,7 @@ export default function Tools() {
         )}
       </main>
 
+      <CTA />
       <Footer />
     </div>
   );

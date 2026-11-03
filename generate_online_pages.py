@@ -7,7 +7,7 @@ generate_service_pages.py to rebuild them, it keeps them as bespoke pages.
 
 Facts used (keep copy to these): 45-minute 1-to-1 online sessions at £30,
 a personalised workout and nutrition plan in the DB's Workouts app (personal
-access link sent by email), regular check-ins, free consultation, REPs Level 3
+access link sent by email), regular check-ins, free consultation call, REPs Level 3
 since 2019, 5.0 stars from 70 Google reviews. Outdoor sessions from £50.
 """
 import json
@@ -34,7 +34,7 @@ INCLUDES = [
     "A personalised workout plan in the DB's Workouts app",
     "A personalised nutrition plan in the DB's Workouts app",
     "Regular check-ins to keep you on track",
-    "A free initial consultation",
+    "A free initial consultation call",
 ]
 
 PAGES = [
@@ -59,7 +59,7 @@ PAGES = [
             ("Training anywhere in the UK", [
                 "You do not need to live near East London. You need an internet connection, a device for your session and somewhere to train. Tell Dean where you will be training and what equipment you have, and the plan is written around it."]),
             ("How to get started", [
-                "Book a free consultation to talk through your goals, fitness history and any limitations. Dean then sets you up in the DB's Workouts app, sends you a personal access link by email, and you begin your 45-minute sessions. [Book a free consultation](/contact)."]),
+                "Book a free consultation call to talk through your goals, fitness history and any limitations. Dean then sets you up in the DB's Workouts app, sends you a personal access link by email, and you begin your 45-minute sessions. [Book a free consultation call](/contact)."]),
         ],
         "faqs": [
             ("Do you offer online personal training across the UK?", "Yes. Online 1-to-1 personal training with DB's Workouts is available wherever you are, as long as you have an internet connection and space to train."),
@@ -67,7 +67,7 @@ PAGES = [
             ("Is Dean Burt a qualified personal trainer?", "Yes. Dean is a REPs Level 3 certified personal trainer, qualified since 2019, with a 5.0 rating from 70 Google reviews."),
             ("Is online training a class or one-to-one?", "It is one-to-one. Every session is just you and Dean, so the training is built around your goals and fitness level."),
             ("What do I need to start online personal training?", "A device with an internet connection for your session, somewhere to train and any equipment you have. You do not need a gym membership, and Dean plans around what you can access."),
-            ("How do I book an online personal trainer?", "Book a free consultation through the contact page or message Dean on WhatsApp on 07752 300937 to talk through your goals first."),
+            ("How do I book an online personal trainer?", "Book a free consultation call through the contact page or message Dean on WhatsApp on 07752 300937 to talk through your goals first."),
         ],
     },
     {
@@ -83,7 +83,7 @@ PAGES = [
         "area": {"@type": "Place", "name": "London"},
         "sections": [
             ("Personal training that fits a London schedule", [
-                "Getting to a gym or studio takes time many Londoners do not have. Online sessions remove the travel, so you can train from home before work, at lunchtime or in the evening. Talk through the times that suit you with Dean when you book your free consultation."]),
+                "Getting to a gym or studio takes time many Londoners do not have. Online sessions remove the travel, so you can train from home before work, at lunchtime or in the evening. Talk through the times that suit you with Dean when you book your free consultation call."]),
             ("Based in East London", [
                 "Dean Burt runs DB's Workouts in East London and has trained clients in parks across the area. His online clients get the same one-to-one coaching from wherever they are in London. See the [areas Dean covers](/personal-trainer-east-london-areas)."]),
             ("Small flat? No problem", [
@@ -128,7 +128,7 @@ PAGES = [
             ("Do you guarantee a certain amount of weight loss?", "No. Weight loss varies with your starting point, consistency, food habits and other factors. Dean helps you set realistic goals and tracks your progress at your check-ins."),
             ("Does online weight loss training include a nutrition plan?", "Yes. You get a personalised nutrition plan and workout plan in the DB's Workouts app, with regular check-ins, as part of the £30 per session price."),
             ("How much does online weight loss coaching cost?", "Online sessions cost £30 per 45-minute session, including your workout and nutrition plans and regular check-ins."),
-            ("Can beginners do online weight loss training?", "Yes. Dean starts with a free consultation and builds the training at a level that suits your current fitness. You do not need to get fit before starting."),
+            ("Can beginners do online weight loss training?", "Yes. Dean starts with a free consultation call and builds the training at a level that suits your current fitness. You do not need to get fit before starting."),
             ("Do I need gym equipment?", "No. Dean plans your sessions around the space and equipment you have, including bodyweight-only training."),
         ],
     },
@@ -140,7 +140,7 @@ PAGES = [
         "kicker": "ONLINE TRAINING · BEGINNERS WELCOME",
         "h1": "Online Personal Training for Beginners",
         "lead": "New to exercise, or coming back after a break? Start with a supportive 1-to-1 online session at a level that suits you, with a clear plan to follow in between.",
-        "quick": "Beginners are welcome. DB's Workouts online personal training starts with a free consultation, then 45-minute 1-to-1 sessions at £30 with a workout and nutrition plan in the DB's Workouts app and regular check-ins, all built around your current fitness.",
+        "quick": "Beginners are welcome. DB's Workouts online personal training starts with a free consultation call, then 45-minute 1-to-1 sessions at £30 with a workout and nutrition plan in the DB's Workouts app and regular check-ins, all built around your current fitness.",
         "photo": ("50% 16%", "ONLINE · BEGINNERS WELCOME", "Start where you are."),
         "area": {"@type": "Country", "name": "United Kingdom"},
         "sections": [
@@ -158,7 +158,7 @@ PAGES = [
         "faqs": [
             ("Can complete beginners do online personal training?", "Yes. Dean builds each programme around your current fitness and experience, and you do not need to get fit before starting."),
             ("Do I need any equipment as a beginner?", "No. You can start with bodyweight exercises. Tell Dean what you have access to and he builds the plan around it."),
-            ("What happens in the free consultation?", "You talk through your goals, fitness history and any limitations with Dean, and decide whether online personal training suits you."),
+            ("What happens in the free consultation call?", "You talk through your goals, fitness history and any limitations with Dean, and decide whether online personal training suits you."),
             ("How much does online personal training cost?", "Online 1-to-1 sessions cost £30 per 45-minute session, including your workout and nutrition plan in the app and regular check-ins."),
             ("Will I be on my own between sessions?", "No. Your plan is in the DB's Workouts app and regular check-ins keep you on track."),
         ],
@@ -274,7 +274,7 @@ PAGES = [
                 "Online 1-to-1 personal training costs £30 per 45-minute session. You pay per session, so your cost depends on how often you train."]),
             ("What is included", ["__INCLUDES__"]),
             ("Monthly cost: once or twice a week", [
-                "Training once a week is four sessions over four weeks, which is £120. Training twice a week is eight sessions, which is £240. Talk through the right pace for your goals and budget with Dean in your free consultation."]),
+                "Training once a week is four sessions over four weeks, which is £120. Training twice a week is eight sessions, which is £240. Talk through the right pace for your goals and budget with Dean in your free consultation call."]),
             ("What affects the cost of online personal training", [
                 "Prices vary between coaches. These are the factors that usually make the difference:",
                 "__LIST__:Whether sessions are one-to-one or in a group|How long each session is|Whether a workout and nutrition plan is included or charged separately|How much check-in support you get between sessions|The coach's qualifications and registration"]),
@@ -286,7 +286,7 @@ PAGES = [
         "faqs": [
             ("How much does an online personal trainer cost in the UK?", "Prices vary by coach. With DB's Workouts, online 1-to-1 personal training costs £30 per 45-minute session, with your workout and nutrition plan in the app and regular check-ins included."),
             ("What is included in the £30 online session?", "A 45-minute 1-to-1 online session with Dean, a personalised workout and nutrition plan in the DB's Workouts app, and regular check-ins."),
-            ("Is there a free consultation?", "Yes. You can talk through your goals with Dean before you start, with no commitment."),
+            ("Is there a free consultation call?", "Yes. You can talk through your goals with Dean before you start, with no commitment."),
             ("How much is online training once a week?", "One session a week is four sessions over four weeks, which is £120 at £30 per session."),
             ("Is online personal training cheaper than in person?", "Per session, yes: online is £30 for 45 minutes, and outdoor pay-as-you-go sessions are £50 for 60 minutes. Outdoor blocks lower the per-session price."),
         ],
@@ -298,7 +298,7 @@ HUB_PAGE = {
     "slug": HUB,
     "crumb": "Online Personal Training",
     "title": "Online Personal Training | £30 Sessions | DB's Workouts",
-    "desc": "Online 1-to-1 personal training with Dean Burt: 45-minute sessions for £30, plus a workout and nutrition plan in the DB's Workouts app and regular check-ins. Free consultation.",
+    "desc": "Online 1-to-1 personal training with Dean Burt: 45-minute sessions for £30, plus a workout and nutrition plan in the DB's Workouts app and regular check-ins. Free consultation call.",
     "kicker": "ONLINE 1-TO-1 · WITH DEAN BURT",
     "h1": "Online Personal Training",
     "lead": "One-to-one coaching in 45-minute online sessions, with a personalised workout and nutrition plan in the DB's Workouts app and regular check-ins. Train wherever you are, for £30 a session.",
@@ -311,9 +311,9 @@ HUB_PAGE = {
         ("What is included with online personal training?", "You get 45-minute 1-to-1 online sessions with Dean Burt, a personalised workout plan and nutrition plan in the DB's Workouts app, and regular check-ins to keep you on track."),
         ("How do I get my workout and nutrition plan?", "Dean sets you up in the DB's Workouts app and sends you a personal access link by email. Your workout and nutrition plan live there, so you can follow them between sessions."),
         ("Do I need a gym membership or equipment?", "No gym membership is required. Tell Dean what equipment you have access to, whether that is a full gym, a few dumbbells or just your bodyweight, and he will build the plan around it."),
-        ("Can beginners do online personal training?", "Yes. Dean starts with a free consultation to understand your goals, fitness history and any limitations, then builds the training at a level that works for you."),
+        ("Can beginners do online personal training?", "Yes. Dean starts with a free consultation call to understand your goals, fitness history and any limitations, then builds the training at a level that works for you."),
         ("Do you guarantee results?", "No. Results depend on your starting point, consistency and habits between sessions. Dean helps you set realistic goals and tracks your progress with regular check-ins."),
-        ("How do I book online personal training?", "Book a free consultation through the contact page or message Dean on WhatsApp on 07752 300937. You can talk through your goals before you start."),
+        ("How do I book online personal training?", "Book a free consultation call through the contact page or message Dean on WhatsApp on 07752 300937. You can talk through your goals before you start."),
     ],
 }
 
@@ -321,7 +321,7 @@ PRICE_CARDS = (
     '<div class="seo-prices"><article><p class="seo-kicker">TRAIN ONLINE</p><h3>Online 1-to-1 session</h3>'
     '<p class="seo-price">£30<span> / 45-min session</span></p>'
     '<p>Includes your workout and nutrition plan in the app and regular check-ins.</p>'
-    '<a href="/contact" class="seo-text-link">Book a free consultation ↗</a></article>'
+    '<a href="/contact" class="seo-text-link">Book a free consultation call ↗</a></article>'
     '<article><p class="seo-kicker">PREFER IN PERSON?</p><h3>Outdoor pay as you go</h3>'
     '<p class="seo-price">£50<span> / 60-min session</span></p>'
     '<p>One-to-one coaching in an East London park or home garden.</p>'
@@ -395,7 +395,7 @@ def schema_for(page, hub=False):
                       "thumbnailUrl": DOMAIN + "/pics/optimized/online-training-poster.webp", "uploadDate": "2026-10-28", "duration": "PT55S",
                       "contentUrl": DOMAIN + "/pics/online-training.mp4", "embedUrl": f"https://www.youtube.com/embed/{YOUTUBE_ID}", "publisher": {"@id": DOMAIN + "/#business"}})
         graph.append({"@type": "HowTo", "name": "How online personal training with DB's Workouts works", "totalTime": "PT10M",
-                      "step": [{"@type": "HowToStep", "position": 1, "name": "Book a free consultation", "text": "Talk through your goals, fitness history and any limitations with Dean."},
+                      "step": [{"@type": "HowToStep", "position": 1, "name": "Book a free consultation call", "text": "Talk through your goals, fitness history and any limitations with Dean."},
                                {"@type": "HowToStep", "position": 2, "name": "Get set up in the app", "text": "Dean sends you a personal access link by email to the DB's Workouts app, where your workout and nutrition plan live."},
                                {"@type": "HowToStep", "position": 3, "name": "Train and check in", "text": "Train in 45-minute 1-to-1 online sessions and check in regularly so your plan keeps adapting."}]})
     return {"@context": "https://schema.org", "@graph": graph}
@@ -423,7 +423,7 @@ def head_for(page, hub=False):
     if 'rel="alternate" hreflang' not in head:
         head = head.replace('<link rel="canonical"', f'<link rel="alternate" hreflang="en-GB" href="{url}">\n  <link rel="canonical"', 1)
     if 'name="geo.position"' not in head:
-        head = head.replace('<meta name="geo.placename"', '<meta name="geo.position" content="51.5590;0.0741">\n  <meta name="ICBM" content="51.5590, 0.0741">\n  <meta name="geo.placename"', 1)
+        head = head.replace('<meta name="geo.placename"', '<meta name="geo.position" content="51.5375;0.0058">\n  <meta name="ICBM" content="51.5375, 0.0058">\n  <meta name="geo.placename"', 1)
     head = head.replace('<meta name="robots" content="index, follow">', '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">')
     return head + '\n' + LIST_CSS + '\n<script type="application/ld+json">' + json.dumps(schema_for(page, hub), ensure_ascii=False) + "</script>\n</head>"
 
@@ -433,8 +433,8 @@ MODAL = (ROOT / "online_video_modal.html").read_text(encoding="utf-8") if (ROOT 
 
 def common_top(page, hub=False):
     pos, cap_k, cap_s = page["photo"]
-    btn = '<a class="db-btn db-btn-primary" href="/contact">Book a free consultation <span aria-hidden="true">↗</span></a>'
-    note = "Just you and Dean · Not a group class · Free consultation"
+    btn = '<a class="db-btn db-btn-primary" href="/contact">Book a free consultation call <span aria-hidden="true">↗</span></a>'
+    note = "Just you and Dean · Not a group class · Free consultation call"
     return f'''<main id="main-content" class="seo-page">
 <section class="seo-hero"><div class="seo-wrap seo-hero-grid">
 <div><p class="seo-kicker">{escape(page["kicker"])}</p><h1>{escape(page["h1"])}</h1>
@@ -443,7 +443,7 @@ def common_top(page, hub=False):
 <p class="seo-note">{note}</p></div>
 <figure class="seo-hero-photo"><img src="/pics/optimized/dean-portrait.webp" alt="Dean Burt, REPs Level 3 personal trainer at DB’s Workouts" width="599" height="800" fetchpriority="high" decoding="async" style="object-position:{pos}"><figcaption><span>{escape(cap_k)}</span><strong>{escape(cap_s)}</strong></figcaption></figure>
 </div></section>
-<div class="seo-trust"><div class="seo-wrap"><a href="/testimonials"><b>5.0 ★★★★★</b><span>70 Google reviews</span></a><span><b>£30 a session</b>45-minute 1-to-1 online</span><span><b>Plans in the app</b>Workout and nutrition, with check-ins</span><span><b>Free consultation</b>A conversation with Dean</span></div></div>
+<div class="seo-trust"><div class="seo-wrap"><a href="/testimonials"><b>5.0 ★★★★★</b><span>70 Google reviews</span></a><span><b>£30 a session</b>45-minute 1-to-1 online</span><span><b>Plans in the app</b>Workout and nutrition, with check-ins</span><span><b>Free consultation call</b>A conversation with Dean</span></div></div>
 <div class="seo-wrap seo-content" id="overview"><aside class="seo-quick"><h2>Quick answer</h2><p>{text(page["quick"])}</p></aside>
 '''
 
@@ -454,12 +454,12 @@ def faq_block(page):
 
 
 def closing(slug, title_line):
-    btn = '<a class="db-btn db-btn-primary" href="/contact">Book a free consultation <span aria-hidden="true">↗</span></a>'
+    btn = '<a class="db-btn db-btn-primary" href="/contact">Book a free consultation call <span aria-hidden="true">↗</span></a>'
     return (f'<section class="seo-section"><div class="info-block"><h2>More on online personal training</h2><div class="areas-grid">{related_pills(slug)}</div></div></section>'
             f'<section class="seo-section"><div class="info-block"><h2>Explore your training options</h2><div class="areas-grid">{explore_pills()}</div></div></section>'
             f'<section class="seo-final"><p class="seo-kicker">LET’S GET STARTED</p><h2>{title_line}</h2><p>Tell Dean what you want from training. Find your starting point together.</p>'
             f'<div class="seo-actions">{btn}<a class="seo-text-link" href="https://wa.me/447752300937">Message Dean on WhatsApp <span aria-hidden="true">↗</span></a></div>'
-            f'<p class="seo-note">Free consultation · No commitment · Personal advice</p></section></div></main>\n')
+            f'<p class="seo-note">Free consultation call · No commitment · Personal advice</p></section></div></main>\n')
 
 
 def pricing_section():
@@ -496,7 +496,7 @@ def build_hub():
              '<blockquote><span class="seo-stars" aria-label="5 stars">★★★★★</span><p>“Dean genuinely cares about your progress. He checks in between sessions, adjusts your plan when needed, and celebrates every milestone.”</p>'
              '<cite>Laura J. · Google review</cite><a class="seo-text-link" href="/testimonials">More client stories <span aria-hidden="true">↗</span></a></blockquote></section>')
     blocks = [
-        ("How online personal training works", ["Start with a free consultation. Dean talks through your goals, your fitness history and any limitations. He then sets you up in the DB's Workouts app, where your personalised workout and nutrition plan live, and sends you a personal access link by email. From there you train in 45-minute sessions and check in regularly, so your plan keeps adapting as you progress."]),
+        ("How online personal training works", ["Start with a free consultation call. Dean talks through your goals, your fitness history and any limitations. He then sets you up in the DB's Workouts app, where your personalised workout and nutrition plan live, and sends you a personal access link by email. From there you train in 45-minute sessions and check in regularly, so your plan keeps adapting as you progress."]),
         ("Built around the equipment you have", ["You do not need a gym membership. Tell Dean what you can access, whether that is a full gym, a few dumbbells, resistance bands or just your bodyweight, and the training is planned around it. Online training also suits busy schedules, travel and anyone who lives outside East London."]),
         ("Your workout and nutrition plan in the app", ["Every online client is set up in the DB's Workouts app with a workout plan and a nutrition plan written for them. It is the place to follow your programme between sessions, with Dean checking in on how it is going. The app is where your plans live. The coaching itself comes from Dean."]),
     ]

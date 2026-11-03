@@ -6,6 +6,7 @@ import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
 import Analytics from '@/components/Analytics';
 import CookieConsent from '@/components/CookieConsent';
+import StickyBookBar from '@/components/StickyBookBar';
 import BMICalculator from '@/pages/BMICalculator';
 import BodyFatCalculator from '@/pages/BodyFatCalculator';
 import CalorieBurnCalculator from '@/pages/CalorieBurnCalculator';
@@ -48,6 +49,7 @@ function App() {
         <ScrollToTop />
         <Analytics />
         <AppRoutes />
+        <StickyBookBar />
         <CookieConsent />
       </Router>
       <Toaster />

@@ -16,17 +16,17 @@ SERVICES = [
         "slug": "boxing-fitness-east-london",
         "name": "Boxing Fitness",
         "title": "Boxing Fitness East London | 1-to-1 Padwork | DB's Workouts",
-        "description": "Boxing fitness in East London with Dean Burt. Outdoor 1-to-1 padwork and conditioning, tailored to your level. £50 per session. Free consultation.",
+        "description": "Boxing fitness in East London with Dean Burt. Outdoor 1-to-1 padwork and conditioning, tailored to your level. £50 per session. Free consultation call.",
         "heading": "Boxing Fitness in East London",
         "intro": "Build fitness and confidence with 1-to-1 boxing padwork and conditioning in your local park. A personalised session with Dean, at your pace.",
         "sections": [
             ("Boxing fitness built around you", "Boxing fitness gives your outdoor training a different focus: padwork, movement and conditioning, coached one-to-one. Dean combines boxing pads with cardio and strength work to suit your current fitness and the goals you discuss together. You can make boxing fitness the focus of your sessions or include it in a wider personal training programme."),
             ("What happens in a boxing fitness session?", "A session starts with a warm-up, followed by coached padwork and exercises selected for your level. Dean adjusts the pace, work periods and recovery as you progress. The aim is to develop coordination, stamina and confidence through manageable challenges. Your session finishes with a cool-down, so you leave knowing what you worked on and what comes next."),
-            ("Starting boxing fitness as a beginner", "You do not need to arrive fit or know how to use boxing pads. During your free consultation, discuss your experience, any limitations and what you want from training. Dean starts from your current ability, explains the exercises and builds the session around you. If you are returning to exercise, the workload can increase gradually as your confidence grows."),
+            ("Starting boxing fitness as a beginner", "You do not need to arrive fit or know how to use boxing pads. During your free consultation call, discuss your experience, any limitations and what you want from training. Dean starts from your current ability, explains the exercises and builds the session around you. If you are returning to exercise, the workload can increase gradually as your confidence grows."),
             ("Padwork, strength and conditioning outdoors", "Sessions take place in East London parks or a suitable home garden, with the training equipment provided. Boxing padwork can be combined with resistance bands, bodyweight exercises and portable kit. Tell Dean whether your priority is general fitness, strength, weight management or simply finding exercise you enjoy. Results depend on your starting point, consistency and habits between sessions."),
         ],
         "faqs": [
-            ("Do you offer boxing fitness in East London?", "Yes. DB's Workouts offers 1-to-1 boxing fitness with outdoor padwork and conditioning across East London. Book a free consultation with Dean to discuss your goals and location."),
+            ("Do you offer boxing fitness in East London?", "Yes. DB's Workouts offers 1-to-1 boxing fitness with outdoor padwork and conditioning across East London. Book a free consultation call with Dean to discuss your goals and location."),
             ("Can beginners book boxing fitness sessions?", "Yes. Dean adapts padwork and conditioning to your starting fitness level and experience. You do not need previous boxing fitness experience."),
             ("Is this boxing fitness or competitive boxing coaching?", "These sessions focus on fitness, padwork and conditioning. If you want sparring or competitive boxing preparation, discuss that separately with Dean before booking."),
             ("Do I need to bring boxing equipment?", "Dean provides the training equipment. Wear comfortable training clothes and suitable footwear, and confirm any personal equipment requirements during your consultation."),
@@ -37,7 +37,7 @@ SERVICES = [
         "slug": "weight-loss-personal-trainer-east-london",
         "name": "Weight Loss Coaching",
         "title": "Weight Loss Personal Trainer East London | DB's Workouts",
-        "description": "Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £50. Free consultation.",
+        "description": "Weight loss personal training in East London: outdoor strength and cardio coaching with practical nutrition support. From £50. Free consultation call.",
         "heading": "Weight Loss Personal Training in East London",
         "intro": "Outdoor strength and cardio sessions, practical nutrition support and a programme you can keep following. Start with a free conversation about your goals.",
         "sections": [
@@ -57,31 +57,31 @@ SERVICES = [
         "slug": "personal-training-for-beginners-east-london",
         "name": "Beginner Personal Training",
         "title": "Personal Training for Beginners East London | DB's Workouts",
-        "description": "Beginner personal training in East London parks and home gardens. Build fitness and confidence with REPs Level 3 PT Dean Burt. Free consultation.",
+        "description": "Beginner personal training in East London parks and home gardens. Build fitness and confidence with REPs Level 3 PT Dean Burt. Free consultation call.",
         "heading": "Personal Training for Beginners in East London",
         "intro": "New to exercise or returning after a break? Start with supportive 1-to-1 outdoor coaching, at a level that works for you. No gym membership needed.",
         "sections": [
             ("You can start from where you are", "You do not need to be fit, confident or experienced before your first session. Dean begins with a conversation about your goals, fitness history and any limitations you want him to understand. An assessment helps shape the programme, so the exercises and pace reflect your starting point rather than someone else's routine."),
             ("What your first personal training session involves", "Your session includes a warm-up, a main workout adapted to your level and a cool-down. Dean explains the movements and coaches you through them. Exercises can use bodyweight, resistance bands and portable kit. As you learn the movements, the programme can build towards more strength, stamina and confidence."),
             ("Returning to exercise after a break", "If you have had time away from training, share what has changed and what you want to work towards. Dean can adjust the workload and help you build consistency gradually. You can choose a local park or discuss a suitable home garden, making training easier to fit around work and family commitments."),
-            ("Support between your sessions", "Session blocks include personalised workout and nutrition plans in the DB's Workouts app. These give you a programme to follow between coached sessions. Start with a £50 pay-as-you-go session or discuss a block after your free consultation. There is no contract or minimum commitment."),
+            ("Support between your sessions", "Session blocks include personalised workout and nutrition plans in the DB's Workouts app. These give you a programme to follow between coached sessions. Start with a £50 pay-as-you-go session or discuss a block after your free consultation call. There is no contract or minimum commitment."),
         ],
         "faqs": [
             ("Do I need to get fit before booking a personal trainer?", "No. Dean builds sessions around your starting ability. Beginners and people returning after a break are welcome."),
             ("What should I bring to an outdoor PT session?", "Wear comfortable training clothes and suitable footwear, and bring water. Dean provides the session equipment."),
             ("Can I try a session without buying a block?", "Yes. Pay-as-you-go personal training is £50 per session. You can start there without a contract or minimum commitment."),
-            ("What happens in the free consultation?", "It is a 20-minute conversation, in person or by phone, about your goals, fitness history and whether Dean's outdoor personal training is a good fit."),
+            ("What happens in the free consultation call?", "It is a 20-minute conversation, in person or by phone, about your goals, fitness history and whether Dean's outdoor personal training is a good fit."),
         ],
     },
     {
         "slug": "mobile-personal-trainer-east-london",
         "name": "Mobile Personal Training",
         "title": "Mobile Personal Trainer East London | Park & Garden PT",
-        "description": "Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £50. Free consultation.",
+        "description": "Mobile personal trainer in East London: Dean brings equipment to your local park or home garden. 1-to-1 sessions from £50. Free consultation call.",
         "heading": "Mobile Personal Trainer in East London",
         "intro": "Dean comes to your local park or suitable home garden with the equipment. Personalised 1-to-1 coaching, without a gym membership or a trip to a studio.",
         "sections": [
-            ("Personal training that comes to you", "Mobile outdoor personal training means choosing a convenient location with Dean, then following a programme built around your goals. Sessions can take place in a local park or suitable home garden. Share your postcode during the free consultation so you can agree a practical venue and check availability before booking."),
+            ("Personal training that comes to you", "Mobile outdoor personal training means choosing a convenient location with Dean, then following a programme built around your goals. Sessions can take place in a local park or suitable home garden. Share your postcode during the free consultation call so you can agree a practical venue and check availability before booking."),
             ("Local park or home garden?", "A park gives you room for circuits, cardio and portable strength equipment. A suitable home garden offers another outdoor option closer to your door. Dean helps you choose a space that works for the session and brings the kit. This service focuses on outdoor training; discuss your space with Dean before arranging a garden session."),
             ("Training around work and family life", "Early mornings, evenings and weekends can be discussed around your availability. You do not need to organise equipment or pay a gym membership. Each 1-to-1 session includes a warm-up, coached exercises and a cool-down, with the programme adjusted to your level. Confirm your preferred time and location during the consultation."),
             ("Strength, fitness and boxing padwork", "Your mobile PT programme can include strength work, cardio circuits, boxing fitness or a mix of exercises. Dean adapts the training to what you want to achieve. Blocks of 5, 10 or 15 sessions also include personalised nutrition and workout plans in the DB's Workouts app to support your routine between sessions."),
@@ -97,14 +97,14 @@ SERVICES = [
      'name': 'Pair Personal Training',
      'title': "Pair Personal Training East London | DB's Workouts",
      'description': 'Outdoor pair personal training in East London. Two people train together for 1.5 times the '
-                    'one-person price: £75 total pay as you go. Free consultation.',
+                    'one-person price: £75 total pay as you go. Free consultation call.',
      'heading': 'Pair Personal Training in East London',
      'intro': 'Train outdoors with a friend or partner. Personal coaching for two people, at 1.5 times the '
               'corresponding one-person price. Pay as you go is £75 total for the pair.',
      'sections': [('Two people. One shared session.',
                    "Pair personal training combines Dean's coaching with the encouragement of training alongside "
                    'a friend or partner. Discuss both of your goals, starting fitness levels and preferred East '
-                   'London location during your free consultation.'),
+                   'London location during your free consultation call.'),
                   ('Different starting points, personal coaching',
                    'Tell Dean about your individual experience and goals. Exercises and pace can be adapted so '
                    'you can train together while working at levels that suit you. Sessions can include '
@@ -171,7 +171,7 @@ def build_page(service, template):
   <p>OUTDOOR PERSONAL TRAINING · EAST LONDON</p>
   <h1>{escape(service["heading"])}</h1>
   <p>{escape(service["intro"])}</p>
-  <a href="/contact" class="cta-btn">Book a Free Consultation</a>
+  <a href="/contact" class="cta-btn">Book a Free Consultation Call</a>
   <p>REPs Level 3 certified · Qualified since 2019 · No gym membership needed</p>
 </div>
 <div class="page-content">
@@ -183,11 +183,11 @@ def build_page(service, template):
     <p><a href="/park-guide">Explore the East London park training guide</a>.</p>
   </div>
   <h2>Book with Dean Burt</h2>
-  <p>Dean is a REPs Level 3 certified personal trainer, qualified since 2019. Start with a free consultation to discuss your goals and the right session format. <a href="/about">Meet Dean</a> and <a href="/testimonials">read client reviews</a>.</p>
+  <p>Dean is a REPs Level 3 certified personal trainer, qualified since 2019. Start with a free consultation call to discuss your goals and the right session format. <a href="/about">Meet Dean</a> and <a href="/testimonials">read client reviews</a>.</p>
   <p>1-to-1 prices are £50 pay as you go, £237.50 for 5 sessions, £450 for 10 or £637.50 for 15 (£42.50 per session). Session blocks include free app nutrition and workout plans. Pair sessions are for two people and cost 1.5 times the corresponding one-person price. Pay as you go is £75 total for both people per session. <a href="/pricing">See full personal training prices and packages</a>.</p>
   <div class="info-block"><h2>Your questions answered</h2>{faqs}</div>
   <div class="info-block"><h2>Explore your training options</h2><div class="areas-grid">{service_links()}</div></div>
-  <a href="/contact" class="cta-btn block">Book a Free Consultation</a>
+  <a href="/contact" class="cta-btn block">Book a Free Consultation Call</a>
 </div>
 </main>
 '''
