@@ -268,7 +268,7 @@ export function generatePlan(inputs) {
   const hydration = calcHydration(weight, trainingDays);
 
   const injuryNote = injuries?.trim()
-    ? `⚠️ You mentioned: "${injuries}". Substitute or skip any exercise that causes discomfort, and consult a physiotherapist if needed.`
+    ? `You mentioned: "${injuries}". Substitute or skip any exercise that causes discomfort, and consult a physiotherapist if needed.`
     : null;
 
   return {

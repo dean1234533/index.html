@@ -1,0 +1,30 @@
+/* Shared outline icon treatment for public marketing pages. */
+.db-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  vertical-align: middle;
+  color: var(--accent-text, #f0142f);
+}
+.about-cred .ac-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-top: 0;
+  background: linear-gradient(145deg, rgba(179, 0, 24, .14), rgba(179, 0, 24, .04));
+  border: 1px solid rgba(240, 20, 47, .2);
+  border-radius: 10px;
+}
+.ts-icon { display: inline-flex; align-items: center; justify-content: center; }
+.ts-icon .db-icon { width: 32px; height: 32px; }
+.phil-icon .db-icon { width: 32px; height: 32px; }
+.collection-icon .db-icon { width: 32px; height: 32px; }
+.popular-badge .db-icon, .btn-etsy .db-icon { width: 18px; height: 18px; margin-right: 6px; }
+
+.feature-icon.fi-blue { background: rgba(179, 0, 24, .1); }
+.db-btn-primary .db-icon, .btn-plan .db-icon, .btn-etsy .db-icon, .popular-badge .db-icon,
+a[style*="background:var(--accent)"] .db-icon { color: inherit; width: 18px; height: 18px; }
+.section-label .db-icon, .fp-hero-eyebrow .db-icon { width: 18px; height: 18px; }

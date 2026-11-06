@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Dumbbell, RefreshCw } from "lucide-react";
+import { Dumbbell, RefreshCw, Flame, Scale, Zap, Utensils } from "lucide-react";
 import InputForm from "@/components/InputForm";
 import WorkoutPlan from "@/components/WorkoutPlan";
 import NutritionPlan from "@/components/NutritionPlan";
@@ -8,12 +8,15 @@ import CTABanner from "@/components/CTABanner";
 import { generatePlan } from "@/lib/planGenerator";
 
 const TABS = [
-  { key: "workout",   label: "🏋️ Workout Plan" },
-  { key: "nutrition", label: "🥗 Nutrition Plan" },
+  { key: "workout", label: "Workout Plan", icon: Dumbbell },
+  { key: "nutrition", label: "Nutrition Plan", icon: Utensils },
 ];
 
-const goalEmojis = {
-  lose_fat: "🔥", build_muscle: "💪", maintain: "⚖️", improve_fitness: "⚡"
+const goalIcons = {
+  lose_fat: <Flame className="inline-block w-5 h-5 mr-1 align-text-bottom text-primary" strokeWidth={1.5} aria-hidden="true" />,
+  build_muscle: <Dumbbell className="inline-block w-5 h-5 mr-1 align-text-bottom text-primary" strokeWidth={1.5} aria-hidden="true" />,
+  maintain: <Scale className="inline-block w-5 h-5 mr-1 align-text-bottom text-primary" strokeWidth={1.5} aria-hidden="true" />,
+  improve_fitness: <Zap className="inline-block w-5 h-5 mr-1 align-text-bottom text-primary" strokeWidth={1.5} aria-hidden="true" />
 };
 const goalLabels = {
   lose_fat: "Fat Loss", build_muscle: "Muscle Building", maintain: "Maintenance", improve_fitness: "Improve Fitness"
@@ -97,7 +100,7 @@ export default function Home() {
               <div>
                 <div className="text-xs text-muted-foreground font-medium uppercase tracking-wide mb-1">Your plan for</div>
                 <div className="font-heading text-lg font-bold text-foreground">
-                  {goalEmojis[inputs.goal]} {goalLabels[inputs.goal]} · {inputs.trainingDays} days/week · {inputs.level}
+                  {goalIcons[inputs.goal]} {goalLabels[inputs.goal]} · {inputs.trainingDays} days/week · {inputs.level}
                 </div>
                 <div className="text-sm text-muted-foreground mt-0.5">
                   {inputs.age} yrs · {inputs.weight} kg · {inputs.height} cm · {inputs.gender}
@@ -137,6 +140,7 @@ export default function Home() {
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
+                    <tab.icon className="inline-block w-4 h-4 mr-1.5 align-text-bottom" strokeWidth={1.5} aria-hidden="true" />
                     {tab.label}
                   </button>
                 ))}

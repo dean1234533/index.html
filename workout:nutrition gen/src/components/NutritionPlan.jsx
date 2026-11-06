@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Flame, Beef, Wheat, Droplets, Coffee, Sun, Moon, Apple } from "lucide-react";
+import { Flame, Beef, Wheat, Droplets, Coffee, Sun, Moon, Apple, Lightbulb } from "lucide-react";
 
 const goalLabels = {
   lose_fat:        { label: "Fat Loss", color: "text-orange-600", bg: "bg-orange-50 border-orange-200" },
@@ -133,7 +133,7 @@ export default function NutritionPlan({ data }) {
         </div>
         {meals.notes && (
           <div className="px-6 py-4 bg-secondary/40 border-t border-border">
-            <p className="text-xs text-muted-foreground italic">💡 {meals.notes}</p>
+            <p className="text-xs text-muted-foreground italic"><Lightbulb className="inline-block w-4 h-4 mr-1 align-text-bottom text-primary" strokeWidth={1.5} aria-hidden="true" /> {meals.notes}</p>
           </div>
         )}
       </motion.div>

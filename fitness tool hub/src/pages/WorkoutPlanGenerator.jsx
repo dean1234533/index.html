@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { track } from "@/lib/analytics";
 import {
-  AlertCircle, AlertTriangle, Beef, Calendar, Clock, Coffee,
-  Dumbbell, Droplets, Flame, Moon, RefreshCw, Ruler,
-  Scale, Sun, Target, Wheat, Zap, Apple,
+  AlertTriangle, Clock, Coffee,
+  Dumbbell, Droplets, Flame, Moon, RefreshCw,
+  Scale, Sun, Zap, Apple, Lightbulb, Utensils,
 } from "lucide-react";
 import { generatePlan } from "@/lib/planGenerator";
 import CTA from "@/components/sections/CTA";
@@ -40,10 +40,10 @@ const schema = {
 // ─── FORM CONSTANTS ────────────────────────────────────────────────────────────
 
 const GOALS = [
-  { value: "lose_fat",        label: "Lose Fat",        emoji: "🔥" },
-  { value: "build_muscle",    label: "Build Muscle",    emoji: "💪" },
-  { value: "maintain",        label: "Maintain",        emoji: "⚖️" },
-  { value: "improve_fitness", label: "Improve Fitness", emoji: "⚡" },
+  { value: "lose_fat",        label: "Lose Fat",        icon: Flame },
+  { value: "build_muscle",    label: "Build Muscle",    icon: Dumbbell },
+  { value: "maintain",        label: "Maintain",        icon: Scale },
+  { value: "improve_fitness", label: "Improve Fitness", icon: Zap },
 ];
 
 const LEVELS = [
@@ -56,8 +56,11 @@ const GOAL_LABELS = {
   lose_fat: "Fat Loss", build_muscle: "Muscle Building",
   maintain: "Maintenance", improve_fitness: "Improve Fitness",
 };
-const GOAL_EMOJIS = {
-  lose_fat: "🔥", build_muscle: "💪", maintain: "⚖️", improve_fitness: "⚡",
+const GOAL_ICONS = {
+  lose_fat: <Flame className="inline-block w-4 h-4 mr-1 align-text-bottom text-[#f0142f]" strokeWidth={1.5} aria-hidden="true" />,
+  build_muscle: <Dumbbell className="inline-block w-4 h-4 mr-1 align-text-bottom text-[#f0142f]" strokeWidth={1.5} aria-hidden="true" />,
+  maintain: <Scale className="inline-block w-4 h-4 mr-1 align-text-bottom text-[#f0142f]" strokeWidth={1.5} aria-hidden="true" />,
+  improve_fitness: <Zap className="inline-block w-4 h-4 mr-1 align-text-bottom text-[#f0142f]" strokeWidth={1.5} aria-hidden="true" />,
 };
 
 // ─── SMALL HELPERS ─────────────────────────────────────────────────────────────
@@ -138,7 +141,7 @@ function InputForm({ onGenerate }) {
         <div className="grid grid-cols-2 gap-2">
           {GOALS.map(g => (
             <ChoiceBtn key={g.value} selected={form.goal === g.value} onClick={() => set("goal", g.value)}>
-              <span className="text-base">{g.emoji}</span>
+              <g.icon className={`mx-auto w-6 h-6 ${form.goal === g.value ? "text-white" : "text-[#f0142f]"}`} strokeWidth={1.5} aria-hidden="true" />
               <span className="block text-xs mt-0.5">{g.label}</span>
             </ChoiceBtn>
           ))}
@@ -150,7 +153,7 @@ function InputForm({ onGenerate }) {
         <div className="flex gap-2">
           {["male", "female"].map(g => (
             <ChoiceBtn key={g} selected={form.gender === g} onClick={() => set("gender", g)}>
-              {g === "male" ? "♂ Male" : "♀ Female"}
+              {g === "male" ? "Male" : "Female"}
             </ChoiceBtn>
           ))}
         </div>
@@ -400,7 +403,7 @@ function NutritionPlan({ data }) {
         </div>
         {meals.notes && (
           <div className="px-6 py-4 bg-zinc-900/40 border-t border-zinc-800">
-            <p className="text-xs text-zinc-500 italic">💡 {meals.notes}</p>
+            <p className="text-xs text-zinc-500 italic"><Lightbulb className="inline-block w-4 h-4 mr-1 align-text-bottom text-[#f0142f]" strokeWidth={1.5} aria-hidden="true" /> {meals.notes}</p>
           </div>
         )}
       </div>
@@ -422,8 +425,8 @@ function NutritionPlan({ data }) {
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
 const TABS = [
-  { key: "workout",   label: "🏋️ Workout Plan" },
-  { key: "nutrition", label: "🥗 Nutrition Plan" },
+  { key: "workout", label: "Workout Plan", icon: Dumbbell },
+  { key: "nutrition", label: "Nutrition Plan", icon: Utensils },
 ];
 
 export default function WorkoutPlanGenerator() {
@@ -551,7 +554,7 @@ export default function WorkoutPlanGenerator() {
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#B30018] mb-0.5">Plan generated for</p>
                 <p className="font-black text-white text-sm">
-                  {GOAL_EMOJIS[inputs.goal]} {GOAL_LABELS[inputs.goal]} · {inputs.trainingDays}×/week · {inputs.level}
+                  {GOAL_ICONS[inputs.goal]} {GOAL_LABELS[inputs.goal]} · {inputs.trainingDays}×/week · {inputs.level}
                 </p>
                 <p className="text-xs text-zinc-500 mt-0.5">
                   {inputs.age} yrs · {inputs.weight} kg · {inputs.height} cm · {inputs.gender}
@@ -591,6 +594,7 @@ export default function WorkoutPlanGenerator() {
                         : "text-zinc-500 hover:text-zinc-300"
                     }`}
                   >
+                    <tab.icon className="inline-block w-4 h-4 mr-1.5 align-text-bottom" strokeWidth={1.5} aria-hidden="true" />
                     {tab.label}
                   </button>
                 ))}

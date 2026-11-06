@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Dumbbell, Target, User, Scale, Ruler, Calendar, AlertCircle, Zap } from "lucide-react";
+import { Dumbbell, Target, User, Scale, Ruler, Calendar, AlertCircle, Zap, Flame } from "lucide-react";
 
 const GOALS = [
-  { value: "lose_fat",       label: "Lose Fat",        emoji: "🔥", color: "from-orange-500 to-red-500" },
-  { value: "build_muscle",   label: "Build Muscle",    emoji: "💪", color: "from-blue-500 to-indigo-600" },
-  { value: "maintain",       label: "Maintain",        emoji: "⚖️", color: "from-emerald-500 to-teal-500" },
-  { value: "improve_fitness",label: "Improve Fitness", emoji: "⚡", color: "from-purple-500 to-violet-600" },
+  { value: "lose_fat",       label: "Lose Fat",        icon: Flame, color: "from-orange-500 to-red-500" },
+  { value: "build_muscle",   label: "Build Muscle",    icon: Dumbbell, color: "from-blue-500 to-indigo-600" },
+  { value: "maintain",       label: "Maintain",        icon: Scale, color: "from-emerald-500 to-teal-500" },
+  { value: "improve_fitness",label: "Improve Fitness", icon: Zap, color: "from-purple-500 to-violet-600" },
 ];
 
 const LEVELS = [
@@ -76,7 +76,7 @@ export default function InputForm({ onGenerate }) {
                   : "border-border bg-card hover:border-primary/30 hover:bg-secondary/50"
               }`}
             >
-              <div className="text-2xl mb-1">{g.emoji}</div>
+              <g.icon className="w-6 h-6 mb-2 text-primary" strokeWidth={1.5} aria-hidden="true" />
               <div className="font-semibold text-sm text-foreground">{g.label}</div>
               {form.goal === g.value && (
                 <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary" />
@@ -104,7 +104,7 @@ export default function InputForm({ onGenerate }) {
                   : "border-border bg-card text-muted-foreground hover:border-primary/30"
               }`}
             >
-              {g === "male" ? "♂ Male" : "♀ Female"}
+              {g === "male" ? "Male" : "Female"}
             </button>
           ))}
         </div>
