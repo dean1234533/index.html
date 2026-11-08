@@ -15,8 +15,8 @@ import re
 ROOT = Path(__file__).resolve().parent
 DOMAIN = "https://dbworkouts.co.uk"
 HUB_SLUG = "mobile-sports-massage-east-london"
-MODIFIED = "2026-10-30"
-MODIFIED_TEXT = "30 October 2026"
+MODIFIED = "2026-11-08"
+MODIFIED_TEXT = "8 November 2026"
 PRICE = "100.00"
 PHOTO_1 = ("/pics/optimized/mobile-sports-massage-1.webp", 603, 866)
 PHOTO_2 = ("/pics/optimized/mobile-sports-massage-2.webp", 603, 955)
@@ -76,6 +76,16 @@ AREAS = [
          near=["barking", "ilford", "romford", "east-ham", "plaistow"]),
     dict(slug="romford", name="Romford", postcodes="RM1", band="outside", pt="personal-trainer-romford",
          near=["dagenham", "ilford", "barking", "east-ham", "forest-gate"]),
+    dict(slug="dalston", name="Dalston", postcodes="E8", band="inside", pt="personal-trainer-dalston",
+         near=["hackney", "london-fields", "hoxton", "shoreditch", "bethnal-green"]),
+    dict(slug="shoreditch", name="Shoreditch", postcodes="E1 and E2", band="inside", pt="personal-trainer-shoreditch",
+         near=["hoxton", "bethnal-green", "hackney", "london-fields", "dalston"]),
+    dict(slug="london-fields", name="London Fields", postcodes="E8", band="inside", pt="personal-trainer-london-fields",
+         near=["hackney", "dalston", "hoxton", "bethnal-green", "shoreditch"]),
+    dict(slug="bethnal-green", name="Bethnal Green", postcodes="E2", band="inside", pt="personal-trainer-bethnal-green",
+         near=["bow", "shoreditch", "hackney", "hoxton", "london-fields"]),
+    dict(slug="hoxton", name="Hoxton", postcodes="N1", band="inside", pt="personal-trainer-hoxton",
+         near=["shoreditch", "dalston", "hackney", "london-fields", "bethnal-green"]),
 ]
 AREA_BY_SLUG = {a["slug"]: a for a in AREAS}
 

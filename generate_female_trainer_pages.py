@@ -21,8 +21,8 @@ import generate_massage_page as gm
 ROOT = gm.ROOT
 DOMAIN = gm.DOMAIN
 HUB_SLUG = "female-personal-trainer-east-london"
-MODIFIED = "2026-10-31"
-MODIFIED_TEXT = "31 October 2026"
+MODIFIED = "2026-11-08"
+MODIFIED_TEXT = "8 November 2026"
 PHOTO_1 = ("/pics/optimized/jasmin-boxing-1.webp", 900, 932)
 PHOTO_2 = ("/pics/optimized/jasmin-boxing-2.webp", 868, 1100)
 AREAS = gm.AREAS

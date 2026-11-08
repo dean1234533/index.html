@@ -258,3 +258,10 @@ select.db-input option{background:var(--card);color:var(--text)}
 
 /* ── Accessibility: focus-visible ──────────────────────── */
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+/* Boxed marketing icons use white strokes and red outlines. */
+body :is(.db-card-icon, .included-icon, .contact-option-icon) {
+  color: #fff;
+  border: 1px solid #B30018;
+}
+body :is(.db-card-icon, .included-icon, .contact-option-icon) > svg { color: #fff; }

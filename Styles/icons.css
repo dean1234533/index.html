@@ -15,7 +15,7 @@
   height: 44px;
   margin-top: 0;
   background: linear-gradient(145deg, rgba(179, 0, 24, .14), rgba(179, 0, 24, .04));
-  border: 1px solid rgba(240, 20, 47, .2);
+  border: 1px solid #B30018;
   border-radius: 10px;
 }
 .ts-icon { display: inline-flex; align-items: center; justify-content: center; }
@@ -28,3 +28,13 @@
 .db-btn-primary .db-icon, .btn-plan .db-icon, .btn-etsy .db-icon, .popular-badge .db-icon,
 a[style*="background:var(--accent)"] .db-icon { color: inherit; width: 18px; height: 18px; }
 .section-label .db-icon, .fp-hero-eyebrow .db-icon { width: 18px; height: 18px; }
+
+/* Red outlines on icon containers; their fills remain owned by each component. */
+body :is(.ac-icon, .qual-badge, .timeline-dot, .feature-icon, .what-check, .fp-plan-icon) {
+  border: 1px solid #B30018;
+}
+body :is(.ac-icon, .qual-badge, .timeline-dot, .feature-icon, .what-check, .fp-plan-icon) > svg {
+  color: #fff;
+}
+
+body .timeline-item:hover .timeline-dot { border-color: #B30018; }

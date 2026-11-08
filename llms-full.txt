@@ -166,6 +166,11 @@ Each 60-minute session has a structured warm-up, a main workout tailored to your
 - [Mobile Sports Massage Barking](https://dbworkouts.co.uk/mobile-sports-massage-barking): Barking (IG11): one-hour session at your home. £120 a session including £20 travel.
 - [Mobile Sports Massage Dagenham](https://dbworkouts.co.uk/mobile-sports-massage-dagenham): Dagenham (RM8 and RM10): one-hour session at your home. £120 a session including £20 travel.
 - [Mobile Sports Massage Romford](https://dbworkouts.co.uk/mobile-sports-massage-romford): Romford (RM1): one-hour session at your home. £120 a session including £20 travel.
+- [Mobile Sports Massage Dalston](https://dbworkouts.co.uk/mobile-sports-massage-dalston): Dalston (E8): one-hour session at your home. No travel charge within 5 miles of Hackney.
+- [Mobile Sports Massage Shoreditch](https://dbworkouts.co.uk/mobile-sports-massage-shoreditch): Shoreditch (E1 and E2): one-hour session at your home. No travel charge within 5 miles of Hackney.
+- [Mobile Sports Massage London Fields](https://dbworkouts.co.uk/mobile-sports-massage-london-fields): London Fields (E8): one-hour session at your home. No travel charge within 5 miles of Hackney.
+- [Mobile Sports Massage Bethnal Green](https://dbworkouts.co.uk/mobile-sports-massage-bethnal-green): Bethnal Green (E2): one-hour session at your home. No travel charge within 5 miles of Hackney.
+- [Mobile Sports Massage Hoxton](https://dbworkouts.co.uk/mobile-sports-massage-hoxton): Hoxton (N1): one-hour session at your home. No travel charge within 5 miles of Hackney.
 
 ## Female personal trainer
 - [Female Personal Trainer East London](https://dbworkouts.co.uk/female-personal-trainer-east-london): DB's Workouts has a female personal trainer, Jasmin, who is Level 3 qualified and fully insured and trains clients one to one in a gym or outdoors across East London.
@@ -190,3 +195,8 @@ Each 60-minute session has a structured warm-up, a main workout tailored to your
 - [Female Personal Trainer Barking](https://dbworkouts.co.uk/female-personal-trainer-barking): Train with Jasmin in Barking (IG11), one to one, in a gym or outdoors.
 - [Female Personal Trainer Dagenham](https://dbworkouts.co.uk/female-personal-trainer-dagenham): Train with Jasmin in Dagenham (RM8 and RM10), one to one, in a gym or outdoors.
 - [Female Personal Trainer Romford](https://dbworkouts.co.uk/female-personal-trainer-romford): Train with Jasmin in Romford (RM1), one to one, in a gym or outdoors.
+- [Female Personal Trainer Dalston](https://dbworkouts.co.uk/female-personal-trainer-dalston): Train with Jasmin in Dalston (E8), one to one, in a gym or outdoors.
+- [Female Personal Trainer Shoreditch](https://dbworkouts.co.uk/female-personal-trainer-shoreditch): Train with Jasmin in Shoreditch (E1 and E2), one to one, in a gym or outdoors.
+- [Female Personal Trainer London Fields](https://dbworkouts.co.uk/female-personal-trainer-london-fields): Train with Jasmin in London Fields (E8), one to one, in a gym or outdoors.
+- [Female Personal Trainer Bethnal Green](https://dbworkouts.co.uk/female-personal-trainer-bethnal-green): Train with Jasmin in Bethnal Green (E2), one to one, in a gym or outdoors.
+- [Female Personal Trainer Hoxton](https://dbworkouts.co.uk/female-personal-trainer-hoxton): Train with Jasmin in Hoxton (N1), one to one, in a gym or outdoors.
