@@ -392,7 +392,7 @@ def schema_for(page, hub=False):
     if hub:
         graph.append({"@type": "VideoObject", "@id": url + "#video", "name": "Online personal training client testimonial | DB's Workouts",
                       "description": "A video testimonial from a DB's Workouts online personal training client. Online 1-to-1 training with Dean Burt: 45-minute sessions, a workout and nutrition plan in the app and regular check-ins.",
-                      "thumbnailUrl": DOMAIN + "/pics/optimized/online-training-poster.webp", "uploadDate": "2026-10-28", "duration": "PT55S",
+                      "thumbnailUrl": DOMAIN + "/pics/optimized/online-training-poster.webp", "uploadDate": "2026-10-28T09:00:00+00:00", "duration": "PT55S",
                       "contentUrl": DOMAIN + "/pics/online-training.mp4", "embedUrl": f"https://www.youtube.com/embed/{YOUTUBE_ID}", "publisher": {"@id": DOMAIN + "/#business"}})
         graph.append({"@type": "HowTo", "name": "How online personal training with DB's Workouts works", "totalTime": "PT10M",
                       "step": [{"@type": "HowToStep", "position": 1, "name": "Book a free consultation call", "text": "Talk through your goals, fitness history and any limitations with Dean."},
