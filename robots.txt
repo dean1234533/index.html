@@ -55,5 +55,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+# Cloudflare's email-protection links live here and always 404 for crawlers
+Disallow: /cdn-cgi/
 
 Sitemap: https://dbworkouts.co.uk/sitemap.xml

@@ -292,6 +292,257 @@ PAGES = [
         ],
     },
 ]
+# ---- extra guides (added 2026-11-20): topical pages, each with its own search intent ----
+_UK = {"@type": "Country", "name": "United Kingdom"}
+_PHOTO = ("50% 18%", "ONLINE PERSONAL TRAINING", "A qualified coach, wherever you are.")
+_Q_PRICE = ("How much does online personal training cost?", "Online 1-to-1 personal training costs £30 per 45-minute session. Your workout and nutrition plan in the DB's Workouts app and your regular check-ins are included.")
+_Q_BOOK = ("How do I get started?", "Book a free consultation call through the contact page or message Dean on WhatsApp on 07752 300937. You can talk through your goals before you start.")
+_Q_GUARANTEE = ("Do you guarantee results?", "No. Results depend on your starting point, consistency and habits between sessions. Dean helps you set realistic goals and tracks your progress with regular check-ins.")
+_GET_STARTED = ("How to get started", [
+    "Book a free consultation call to talk through your goals, fitness history and any limitations. Dean then sets you up in the DB's Workouts app, sends you a personal access link by email, and you begin your 45-minute sessions. [Book a free consultation call](/contact)."])
+_COST = ("What it costs", [
+    "Online 1-to-1 sessions cost £30 per 45-minute session, and your workout and nutrition plan in the app and regular check-ins are included. Training once a week for four weeks is four sessions, which is £120. The [online personal training cost page](/online-personal-trainer-cost-uk) has more examples."])
+
+EXTRA = [
+    {
+        "slug": "online-personal-training-for-busy-people",
+        "crumb": "Online Training for Busy People",
+        "title": "Online Personal Training for Busy People | DB's Workouts",
+        "desc": "Online personal training that fits a busy week: 45-minute 1-to-1 sessions with REPs Level 3 trainer Dean Burt, £30 a session, no travel. Free consultation call.",
+        "kicker": "ONLINE PERSONAL TRAINING · BUSY PEOPLE",
+        "h1": "Online Personal Training for Busy People",
+        "lead": "Train one to one without the commute. 45-minute online sessions, a plan built around the time and equipment you actually have, and check-ins that keep it on track when your week changes.",
+        "quick": "Online personal training suits busy people because there is no travel: you train from home or anywhere with an internet connection. Sessions with Dean Burt are 45 minutes and cost £30, with a workout and nutrition plan in the DB's Workouts app and regular check-ins.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("Training that fits around work and family", [
+                "For most people the hard part of training is not knowing what to do. It is finding the time. Online personal training removes the journey to a gym or studio, so a session is 45 minutes of your day and not an hour and a half once you add the travel.",
+                "Tell Dean which days and times suit you when you book your free consultation call, and he will confirm what is available."]),
+            ("A plan built around your week", [
+                "Your plan is written around what you can realistically do, not an ideal week. If two sessions a week is what fits, the plan is built that way. Dean also asks what equipment you have, so you are never given exercises you cannot do at home."]),
+            ("Between sessions, your plan is in your pocket", [
+                "Your workout and nutrition plan live in the DB's Workouts app. Dean sends you a personal access link by email, so on the days you are not in a session you can open your plan and see exactly what to do."]),
+            ("When your week changes", [
+                "Busy weeks do not stay the same. Regular check-ins give you a chance to tell Dean what is working and what is not, and your plan is adjusted as you progress or as your schedule changes. [See how online personal training works](/online-personal-training)."]),
+            _COST, _GET_STARTED,
+        ],
+        "faqs": [
+            ("How long is each online session?", "Each session is 45 minutes, one to one with Dean."),
+            ("Can I train in the mornings or evenings?", "Tell Dean the days and times that suit you when you book your free consultation call, and he will confirm what is available."),
+            ("What if my week changes?", "Let Dean know as early as you can. Your plan is reviewed at your check-ins, so it can change as your schedule changes."),
+            ("Do I need to go to a gym?", "No. You can train at home. Tell Dean what equipment you have and the plan is built around it."),
+            _Q_PRICE, _Q_BOOK,
+        ],
+    },
+    {
+        "slug": "online-personal-training-for-women",
+        "crumb": "Online Training for Women",
+        "title": "Online Personal Training for Women | DB's Workouts",
+        "desc": "Online personal training for women: 1-to-1 sessions with REPs Level 3 trainer Dean Burt, £30 for 45 minutes, plus a workout and nutrition plan. Free consultation.",
+        "kicker": "ONLINE PERSONAL TRAINING · WOMEN",
+        "h1": "Online Personal Training for Women",
+        "lead": "Private, one-to-one coaching from home. A plan written around your goals and your fitness level, with a nutrition plan and regular check-ins, and no gym floor to walk onto.",
+        "quick": "Online personal training for women with DB's Workouts is one-to-one coaching with Dean Burt, a REPs Level 3 trainer, from home or wherever you have space. Sessions are 45 minutes and cost £30, with a workout and nutrition plan in the DB's Workouts app. If you would prefer a female trainer in person, Jasmin trains clients in East London.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("Train privately, at home, on your terms", [
+                "Plenty of women prefer to start training away from a busy gym, and online personal training lets you do that. Sessions are one to one, at home or wherever you have space, so there is nobody to compare yourself with and no equipment to queue for."]),
+            ("A plan for your goals", [
+                "Whether you want to lose weight, get stronger, feel fitter or build a routine you can keep, your plan is written around your goals, your fitness level and any limitations. Tell Dean about any injuries or health concerns on your free consultation call, and speak to your GP first if something worries you."]),
+            ("Workout and nutrition plan in the app", [
+                "Every online client is set up in the DB's Workouts app with a personalised workout plan and nutrition plan. Dean sends you a personal access link by email, and checks in with you regularly so the plan changes as you do."]),
+            ("If you would prefer a female trainer", [
+                "Online sessions at DB's Workouts are with Dean Burt. If you would rather train in person with a woman, DB's Workouts also has a female personal trainer, Jasmin, who is Level 3 qualified and fully insured and trains clients one to one across East London. See the [female personal trainer page](/female-personal-trainer-east-london)."]),
+            _COST, _GET_STARTED,
+        ],
+        "faqs": [
+            ("Do I need to be fit to start online personal training?", "No. Dean starts with a free consultation call to understand your goals, fitness history and any limitations, then builds the training at a level that works for you."),
+            ("Can I train with a female online trainer?", "Online sessions are with Dean Burt. If you would prefer to train in person with a woman in East London, Jasmin is a female personal trainer at DB's Workouts, Level 3 qualified and fully insured."),
+            ("Will I get a nutrition plan?", "Yes. Your personalised nutrition plan is in the DB's Workouts app alongside your workout plan. It is practical guidance, not medical advice."),
+            ("Do I need a gym membership?", "No. Tell Dean what equipment you have access to, whether that is a few dumbbells or just your bodyweight, and the plan is built around it."),
+            _Q_PRICE, _Q_GUARANTEE,
+        ],
+    },
+    {
+        "slug": "online-personal-training-for-men",
+        "crumb": "Online Training for Men",
+        "title": "Online Personal Training for Men | DB's Workouts",
+        "desc": "Online personal training for men: 1-to-1 sessions with REPs Level 3 trainer Dean Burt, £30 for 45 minutes, plus a workout and nutrition plan. Free consultation.",
+        "kicker": "ONLINE PERSONAL TRAINING · MEN",
+        "h1": "Online Personal Training for Men",
+        "lead": "Put structure behind your training. One-to-one coaching, a workout and nutrition plan written for you, and regular check-ins so you can see your progress.",
+        "quick": "Online personal training for men with DB's Workouts is one-to-one coaching with Dean Burt, a REPs Level 3 trainer. Sessions are 45 minutes and cost £30, with a workout and nutrition plan in the DB's Workouts app and regular check-ins, whether you train at home or in a gym.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("Structure when you train on your own", [
+                "Many men train hard but without a plan, so the effort goes into whatever feels right on the day. A personal trainer gives you a plan with a purpose, and online coaching gives you that without needing to book a trainer into a gym slot."]),
+            ("Strength, fat loss or getting back into it", [
+                "Your plan is built around your goal, whether that is getting stronger, losing weight, building a routine again after a break or simply feeling fitter. Dean asks about your training history, your schedule and any injuries before he writes anything. See also the [online strength training coach page](/online-strength-training-coach)."]),
+            ("Progress you can see", [
+                "Regular check-ins mean your plan does not stay the same once it stops working. You tell Dean how training is going, and your workouts and nutrition plan in the DB's Workouts app are adjusted as you progress."]),
+            ("At home or in a gym", [
+                "You do not need a gym membership, but you can use one. Tell Dean where you will be training and what equipment is available, and your plan is written around it. [Read about training at home](/online-personal-training-at-home)."]),
+            _COST, _GET_STARTED,
+        ],
+        "faqs": [
+            ("Can I do online personal training if I already train?", "Yes. Dean asks about your training history and builds the plan from where you are now, so it is not a beginner programme unless you are a beginner."),
+            ("Do I need a gym membership?", "No. Dean plans around the equipment you have, whether that is a full gym, a few dumbbells or just your bodyweight."),
+            ("Is it a class or one to one?", "It is one to one. Every session is just you and Dean, with no group classes."),
+            ("Will my plan change as I progress?", "Yes. Your plan is reviewed at regular check-ins and adjusted as you progress."),
+            _Q_PRICE, _Q_BOOK,
+        ],
+    },
+    {
+        "slug": "online-personal-training-for-gym-members",
+        "crumb": "Online Training for Gym Members",
+        "title": "Online Personal Training for Gym Members | DB's Workouts",
+        "desc": "Already pay for a gym? Online personal training with REPs Level 3 trainer Dean Burt gives you a plan for the gym you have: 1-to-1 sessions, £30 for 45 minutes.",
+        "kicker": "ONLINE PERSONAL TRAINING · GYM MEMBERS",
+        "h1": "Online Personal Training for Gym Members",
+        "lead": "You already pay for the gym. Add a trainer who writes the plan, checks in on your progress and keeps you accountable, without paying for a trainer on the gym floor.",
+        "quick": "Online personal training for gym members with DB's Workouts means Dean Burt, a REPs Level 3 trainer, plans your training around the gym you already use. Sessions are 45 minutes, one to one, and cost £30, with a workout and nutrition plan in the DB's Workouts app and regular check-ins.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("Keep your membership, add a plan", [
+                "A gym membership gives you the equipment. It does not give you a plan, someone to check your progress or someone who notices when you have stalled. Online personal training adds those, and you keep the membership you already pay for."]),
+            ("A plan written for your gym", [
+                "Tell Dean which equipment your gym has, what you like using and what you avoid, and your plan is written around it. Your workouts and nutrition plan are in the DB's Workouts app, so you can open them at the gym or at home."]),
+            ("Accountability between sessions", [
+                "Regular check-ins give you someone to report to, and Dean adjusts your plan as you progress. If a machine is always taken or your week gets in the way, say so, and the plan changes."]),
+            ("Not sure what to do when you get there?", [
+                "Many people walk into a gym unsure what to do first. A plan with the exercises, order and goal already decided takes that away. See the [online personal training for beginners page](/online-personal-training-for-beginners) if you are newer to training."]),
+            _COST, _GET_STARTED,
+        ],
+        "faqs": [
+            ("Do I need to cancel my gym membership?", "No. Online personal training works alongside the gym you already use. Dean writes your plan around the equipment your gym has."),
+            ("Do I train at the gym during the online session?", "Tell Dean where you will be training and how you would like the sessions to work, and he will plan it with you on your free consultation call."),
+            ("Can I use the plan at home as well?", "Yes. Your plan is in the DB's Workouts app, and Dean can write it for the gym, for home or for a mix of both."),
+            ("Is it one to one?", "Yes. Every session is just you and Dean, with no group classes."),
+            _Q_PRICE, _Q_BOOK,
+        ],
+    },
+    {
+        "slug": "online-vs-in-person-personal-training",
+        "crumb": "Online vs In-Person Training",
+        "title": "Online vs In-Person Personal Training | DB's Workouts",
+        "desc": "Online or in-person personal training? Compare price, convenience and coaching with DB's Workouts: online from £30 for 45 minutes, outdoor East London from £50.",
+        "kicker": "ONLINE VS IN-PERSON PERSONAL TRAINING",
+        "h1": "Online vs In-Person Personal Training: Which Is Right for You?",
+        "lead": "Both are one-to-one coaching with Dean Burt. The difference is where you train, what it costs and how you like to be coached. Here is an honest comparison.",
+        "quick": "With DB's Workouts, online personal training is £30 for a 45-minute session from wherever you are, and in-person outdoor training in East London is £50 for a 60-minute session, or £45 a session on a block of 10. Online suits distance and busy schedules. In person suits people in East London who want Dean beside them.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("The main differences", [
+                "__LIST__:Online: 45-minute 1-to-1 sessions at £30, anywhere in the UK, with a workout and nutrition plan in the app and regular check-ins|In person: 60-minute 1-to-1 outdoor sessions in East London parks or home gardens at £50 pay as you go, or £45 a session on a block of 10|Online: you use the equipment you have, and Dean plans around it|In person: equipment is provided|Pay-as-you-go outdoor sessions do not include the app plans. Online sessions, and outdoor session blocks, do"]),
+            ("When online personal training suits you", [
+                "Online suits you if you live outside East London, want to train privately at home, have a schedule where travel is the problem, or want one-to-one coaching at a lower cost per session. You need an internet connection, a device and somewhere to train. [See how online training works](/online-personal-training)."]),
+            ("When in-person training suits you", [
+                "In-person training suits you if you live or work in East London and would rather have your trainer beside you, like training outdoors, or prefer not to rely on a screen. Sessions take place in local parks or your home garden. [Explore outdoor personal training](/mobile-personal-trainer-east-london)."]),
+            ("Which costs less?", [
+                "Per session, online is lower: £30 for 45 minutes against £50 for 60 minutes outdoors pay as you go. On a block of 10 outdoor sessions the price is £450, which is £45 a session. See the full [pricing page](/pricing)."]),
+            ("Not sure? Ask on the free call", [
+                "Tell Dean where you live, what you want from training and how you like to be coached on your free consultation call, and he will tell you which option fits. You can ask whether combining the two would work for you. [Book a free consultation call](/contact)."]),
+        ],
+        "faqs": [
+            ("Is online personal training as good as in person?", "Both are one-to-one coaching with Dean. Online has the same personal attention through video, with your plan in the app. In person has Dean beside you. Which is better depends on where you live and how you like to train."),
+            ("Which is cheaper per session?", "Online is £30 for a 45-minute session. Outdoor pay as you go is £50 for a 60-minute session, and £45 a session on a block of 10 (£450)."),
+            ("Can I do online training if I live outside East London?", "Yes. Online personal training is available wherever you are, with an internet connection and somewhere to train."),
+            ("Can I combine online and in-person sessions?", "Ask Dean on your free consultation call whether a mix would work for you."),
+            _Q_BOOK,
+        ],
+    },
+    {
+        "slug": "is-online-personal-training-worth-it",
+        "crumb": "Is Online Personal Training Worth It?",
+        "title": "Is Online Personal Training Worth It? | DB's Workouts",
+        "desc": "Is online personal training worth the money? An honest look at when it works, when it does not, and what £30 a session with Dean Burt includes.",
+        "kicker": "ONLINE PERSONAL TRAINING · IS IT WORTH IT?",
+        "h1": "Is Online Personal Training Worth It?",
+        "lead": "It depends on what you want from it. Here is when online personal training tends to be worth the money, when it may not be, and what you pay for.",
+        "quick": "Online personal training is worth it if you want a plan, accountability and a qualified coach, and you can train without someone beside you. It may not suit you if you want a hands-on trainer or a group atmosphere. With DB's Workouts it is £30 a session, and no results are guaranteed.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("When online personal training is worth it", [
+                "It is usually worth it if you have tried training alone and drifted, if you are not sure what to do or in what order, if travel to a trainer is the barrier, or if you want regular accountability from a qualified person. One-to-one coaching means the plan is built around you and not around a group."]),
+            ("When it may not be", [
+                "It may not suit you if you want a trainer physically beside you, if you need the energy of a group class, or if you will not follow a plan without someone standing next to you. In that case in-person training may be a better fit. [Compare online and in-person training](/online-vs-in-person-personal-training)."]),
+            ("What you pay for", [
+                "__LIST__:45-minute 1-to-1 online sessions with Dean Burt, a REPs Level 3 trainer|A personalised workout plan and nutrition plan in the DB's Workouts app|Regular check-ins, so your plan changes as you progress|A free consultation call before you start",
+                "Sessions are £30 each. Four sessions, one a week for a month, are £120."]),
+            ("What affects your results", [
+                "Your plan matters, but so does what you do between sessions: how consistently you follow it, your eating and your daily habits. No trainer can guarantee a result, and Dean does not. What he does is set realistic goals, track your progress and adjust the plan when something is not working."]),
+            ("How to decide", [
+                "The free consultation call is there so you can decide with no commitment. Talk through your goals and what you have tried, ask anything you like, and then decide whether it is worth it for you. [Book a free consultation call](/contact)."]),
+        ],
+        "faqs": [
+            ("Is online personal training worth the money?", "It can be if you want a plan, accountability and a qualified coach. It may not be if you want a trainer beside you or a group class. The free consultation call helps you decide."),
+            ("Is online personal training better than an app?", "An app gives you a plan. With DB's Workouts the coaching comes from Dean in one-to-one sessions, and the app is where your workout and nutrition plan live."),
+            ("How much does it cost?", "£30 per 45-minute session, including your workout and nutrition plan in the app and regular check-ins."),
+            _Q_GUARANTEE, _Q_BOOK,
+        ],
+    },
+    {
+        "slug": "what-to-expect-from-online-personal-training",
+        "crumb": "What to Expect Online",
+        "title": "What to Expect From Online Personal Training | DB's Workouts",
+        "desc": "New to online personal training? Here is what happens from the free consultation call to your first 45-minute 1-to-1 session with Dean Burt, and what you need.",
+        "kicker": "ONLINE PERSONAL TRAINING · WHAT TO EXPECT",
+        "h1": "What to Expect From Online Personal Training",
+        "lead": "From the first conversation to your first session: what happens, what you need and what comes after.",
+        "quick": "Online personal training with DB's Workouts starts with a free consultation call, then Dean Burt sets you up in the DB's Workouts app with a personal link sent by email. You train in 45-minute one-to-one sessions that cost £30 each, and regular check-ins keep your plan on track.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("Step 1: the free consultation call", [
+                "You talk through your goals, your fitness history, how much time you have and anything you are worried about, such as injuries. There is no commitment, and it is a good time to ask Dean anything. If something worries you, speak to your GP or a physiotherapist and tell Dean."]),
+            ("Step 2: you are set up in the app", [
+                "Dean writes your workout plan and nutrition plan in the DB's Workouts app and sends you a personal access link by email. This is where you will find your plan between sessions."]),
+            ("What you need", [
+                "__LIST__:A device with an internet connection for your session|Somewhere to train, with enough space to move|Any equipment you have, even if that is only a pair of dumbbells or your bodyweight|Comfortable clothes and trainers"]),
+            ("Your sessions", [
+                "Each session is 45 minutes and just you and Dean, with no group. It is built around the goals and information you gave on your consultation call, and Dean talks you through the training and coaches how you move."]),
+            ("After the first session", [
+                "Regular check-ins give you the chance to say how training is going, and your plan is adjusted as you progress. Sessions are £30 each. [See how online personal training works](/online-personal-training)."]),
+        ],
+        "faqs": [
+            ("What happens on the free consultation call?", "You talk through your goals, fitness history and any limitations with Dean. There is no commitment."),
+            ("What do I need for an online session?", "A device with an internet connection, somewhere to train and any equipment you have. You do not need a gym membership."),
+            ("How long is a session?", "Each online session is 45 minutes, one to one with Dean."),
+            ("How do I get my plan?", "Dean sends you a personal access link by email to the DB's Workouts app, where your workout and nutrition plan live."),
+            _Q_PRICE, _Q_BOOK,
+        ],
+    },
+    {
+        "slug": "online-personal-trainer-near-me",
+        "crumb": "Online Personal Trainer Near Me",
+        "title": "Online Personal Trainer Near Me | DB's Workouts",
+        "desc": "An online personal trainer is near you wherever you are: 1-to-1 sessions with REPs Level 3 trainer Dean Burt, £30 for 45 minutes. Train in person in East London too.",
+        "kicker": "ONLINE PERSONAL TRAINER · NEAR ME",
+        "h1": "Online Personal Trainer Near Me",
+        "lead": "With online personal training, your trainer is as near as your phone or laptop. One-to-one coaching from wherever you live, and in person too if you are in East London.",
+        "quick": "An online personal trainer is near you wherever you have an internet connection. Dean Burt of DB's Workouts offers 45-minute one-to-one online sessions for £30 anywhere in the UK, with a workout and nutrition plan in the app. If you live in East London you can also train with him in person outdoors.",
+        "photo": _PHOTO, "area": _UK,
+        "sections": [
+            ("Near you means wherever you are", [
+                "You do not need a trainer who lives down the road to get one-to-one coaching. Online sessions run over video, so what matters is that you have an internet connection and somewhere to train. Dean coaches clients online across the UK."]),
+            ("What you get", [
+                "__INCLUDES__"]),
+            ("Prefer someone in person? East London", [
+                "If you live in East London you can train with Dean in person outdoors, in a local park or your home garden, from £50 a session. Dean covers areas from Stratford and Hackney to Ilford, Walthamstow and Romford. See [personal training in East London](/personal-trainer-east-london-areas) and the [pricing page](/pricing)."]),
+            ("Which is right for you?", [
+                "Online suits people who live further away, train at home or have a schedule where travel is the problem. In person suits people in East London who want their trainer beside them. [Compare online and in-person training](/online-vs-in-person-personal-training)."]),
+            _GET_STARTED,
+        ],
+        "faqs": [
+            ("Can I get an online personal trainer wherever I live?", "Yes. Online personal training with DB's Workouts is available wherever you are in the UK, as long as you have an internet connection and somewhere to train."),
+            ("Do I need to live near East London?", "No. Online sessions run over video. You only need to live in East London if you want in-person outdoor sessions."),
+            _Q_PRICE,
+            ("Is it one to one?", "Yes. Every session is just you and Dean, with no group classes."),
+            _Q_BOOK,
+        ],
+    },
+]
+PAGES += EXTRA
+
 PAGES_BY_SLUG = {p["slug"]: p for p in PAGES}
 
 HUB_PAGE = {
@@ -354,13 +605,48 @@ def render_section(heading, paras):
     return '<section class="seo-section">' + "\n".join(out) + "</section>"
 
 
+# Each page links to the hub plus five closely related pages, not all of them
+RELATED = {
+    "online-personal-trainer-uk": ["online-personal-trainer-near-me", "online-personal-trainer-london", "online-personal-trainer-cost-uk", "online-vs-in-person-personal-training", "what-to-expect-from-online-personal-training"],
+    "online-personal-trainer-london": ["online-personal-trainer-uk", "online-personal-trainer-near-me", "online-personal-trainer-cost-uk", "online-vs-in-person-personal-training", "online-personal-training-at-home"],
+    "online-weight-loss-personal-training": ["online-personal-training-with-nutrition-plan", "online-personal-training-for-beginners", "online-personal-training-for-women", "online-personal-trainer-cost-uk", "is-online-personal-training-worth-it"],
+    "online-personal-training-for-beginners": ["what-to-expect-from-online-personal-training", "online-personal-training-for-women", "online-personal-training-at-home", "online-personal-training-for-busy-people", "online-personal-trainer-cost-uk"],
+    "online-personal-training-at-home": ["online-strength-training-coach", "online-personal-training-for-busy-people", "online-personal-training-for-women", "online-personal-training-for-men", "online-vs-in-person-personal-training"],
+    "online-strength-training-coach": ["online-personal-training-for-men", "online-personal-training-for-gym-members", "online-personal-training-at-home", "online-personal-training-with-nutrition-plan", "online-personal-trainer-cost-uk"],
+    "online-personal-training-with-nutrition-plan": ["online-weight-loss-personal-training", "online-personal-trainer-cost-uk", "online-strength-training-coach", "online-personal-training-for-women", "is-online-personal-training-worth-it"],
+    "online-personal-trainer-cost-uk": ["online-vs-in-person-personal-training", "is-online-personal-training-worth-it", "what-to-expect-from-online-personal-training", "online-personal-trainer-uk", "online-weight-loss-personal-training"],
+    "online-personal-training-for-busy-people": ["online-personal-training-at-home", "online-personal-training-for-beginners", "online-personal-training-for-women", "online-personal-training-for-men", "online-personal-trainer-cost-uk"],
+    "online-personal-training-for-women": ["online-personal-training-for-beginners", "online-weight-loss-personal-training", "online-personal-training-for-busy-people", "online-personal-training-at-home", "what-to-expect-from-online-personal-training"],
+    "online-personal-training-for-men": ["online-strength-training-coach", "online-personal-training-for-gym-members", "online-personal-training-at-home", "online-personal-training-for-busy-people", "is-online-personal-training-worth-it"],
+    "online-personal-training-for-gym-members": ["online-strength-training-coach", "online-personal-training-for-men", "online-personal-training-for-beginners", "online-vs-in-person-personal-training", "online-personal-trainer-cost-uk"],
+    "online-vs-in-person-personal-training": ["is-online-personal-training-worth-it", "online-personal-trainer-cost-uk", "online-personal-trainer-near-me", "online-personal-trainer-uk", "online-personal-training-at-home"],
+    "is-online-personal-training-worth-it": ["online-vs-in-person-personal-training", "online-personal-trainer-cost-uk", "what-to-expect-from-online-personal-training", "online-personal-training-for-beginners", "online-weight-loss-personal-training"],
+    "what-to-expect-from-online-personal-training": ["online-personal-training-for-beginners", "online-personal-trainer-cost-uk", "online-personal-trainer-uk", "online-personal-training-at-home", "is-online-personal-training-worth-it"],
+    "online-personal-trainer-near-me": ["online-personal-trainer-uk", "online-personal-trainer-london", "online-vs-in-person-personal-training", "online-personal-trainer-cost-uk", "what-to-expect-from-online-personal-training"],
+}
+
+
+def _pill(slug, name, current=None):
+    cur = ' aria-current="page"' if slug == current else ""
+    return f'<a class="area-pill" href="/{slug}"{cur}>{escape(name)}</a>'
+
+
 def related_pills(current):
-    items = [(HUB, "Online Personal Training")] + [(p["slug"], p["crumb"]) for p in PAGES]
-    links = []
-    for slug, name in items:
-        cur = ' aria-current="page"' if slug == current else ""
-        links.append(f'<a class="area-pill" href="/{slug}"{cur}>{escape(name)}</a>')
-    return "\n".join(links)
+    names = {p["slug"]: p["crumb"] for p in PAGES}
+    items = [(HUB, "Online Personal Training")] + [(s, names[s]) for s in RELATED.get(current, []) if s in names]
+    return "\n".join(_pill(s, n, current) for s, n in items)
+
+
+def hub_guide_pills():
+    """Hub: a short list on show, the rest behind a Show all button."""
+    shown = ["online-personal-trainer-uk", "online-personal-training-for-beginners", "online-weight-loss-personal-training",
+             "online-personal-training-for-women", "online-personal-training-for-men", "online-personal-trainer-cost-uk"]
+    names = {p["slug"]: p["crumb"] for p in PAGES}
+    rest = [p["slug"] for p in PAGES if p["slug"] not in shown]
+    top = "".join(_pill(s, names[s]) for s in shown)
+    more = "".join(_pill(s, names[s]) for s in rest)
+    return (f'<div class="areas-grid">{top}</div><details class="more-guides"><summary>Show all online guides</summary>'
+            f'<div class="areas-grid">{more}</div></details>')
 
 
 def explore_pills():
@@ -407,7 +693,24 @@ LIST_CSS = """<style>
 .seo-section>ul li:last-child{border-bottom:1px solid var(--border-h)}
 .seo-section>ul li::before{content:'→';position:absolute;left:0;top:12px;color:var(--seo-accent,#e0364c);font-weight:700}
 .seo-section>p+ul{margin-top:20px}
+.seo-session>div>ul{list-style:none;margin:18px 0 0;padding:0}
+.seo-session>div>ul li{position:relative;padding:12px 0 12px 26px;border-top:1px solid var(--border-h);color:var(--text-dim);font-size:14px;line-height:1.6}
+.seo-session>div>ul li:last-child{border-bottom:1px solid var(--border-h)}
+.seo-session>div>ul li::before{content:'→';position:absolute;left:0;top:12px;color:var(--seo-accent,#e0364c);font-weight:700}
+.seo-session>div>p+ul{margin-top:20px}
+.seo-session figure.guide-figure img{width:100%;height:auto}
+.seo-session figure.guide-figure.tall img{width:auto;max-width:100%;height:auto;max-height:400px;margin-inline:auto}
+.guide-page .seo-session>div>p:not(.seo-kicker),.guide-page .seo-session>div>ul li,.guide-page .seo-section>ul li{font-size:16px;line-height:1.8}
+.guide-page .seo-quick p{font-size:15px;line-height:1.75}
+.guide-page .seo-faq summary{font-size:15px}
+.guide-page .seo-faq details p{font-size:15px;line-height:1.75}
+.guide-page .seo-prices article p:not(.seo-price):not(.seo-kicker){font-size:14px;line-height:1.7}
+.guide-page .seo-proof>div>p:not(.seo-kicker){font-size:15px;line-height:1.75}
+.guide-page figcaption{font-size:13px}
 .seo-section .area-pill{white-space:normal;overflow-wrap:anywhere}
+.seo-section details.more-guides{margin-top:22px}
+.seo-section details.more-guides summary{cursor:pointer;display:inline-block;padding:11px 18px;border:1px solid var(--border-h);border-radius:8px;font-size:14px;color:var(--text)}
+.seo-section details.more-guides[open] summary{margin-bottom:6px}
 </style>"""
 
 
@@ -435,7 +738,7 @@ def common_top(page, hub=False):
     pos, cap_k, cap_s = page["photo"]
     btn = '<a class="db-btn db-btn-primary" href="/contact">Book a free consultation call <span aria-hidden="true">↗</span></a>'
     note = "Just you and Dean · Not a group class · Free consultation call"
-    return f'''<main id="main-content" class="seo-page">
+    return f'''<main id="main-content" class="seo-page guide-page">
 <section class="seo-hero"><div class="seo-wrap seo-hero-grid">
 <div><p class="seo-kicker">{escape(page["kicker"])}</p><h1>{escape(page["h1"])}</h1>
 <p class="seo-lead">{text(page["lead"])}</p>
@@ -453,9 +756,10 @@ def faq_block(page):
     return f'<section class="seo-section seo-faq-section"><div class="seo-faq"><h2>Your questions answered</h2>{items}</div></section>'
 
 
-def closing(slug, title_line):
+def closing(slug, title_line, hub=False):
     btn = '<a class="db-btn db-btn-primary" href="/contact">Book a free consultation call <span aria-hidden="true">↗</span></a>'
-    return (f'<section class="seo-section"><div class="info-block"><h2>More on online personal training</h2><div class="areas-grid">{related_pills(slug)}</div></div></section>'
+    more = '' if hub else f'<section class="seo-section"><div class="info-block"><h2>More on online personal training</h2><div class="areas-grid">{related_pills(slug)}</div></div></section>'
+    return (more +
             f'<section class="seo-section"><div class="info-block"><h2>Explore your training options</h2><div class="areas-grid">{explore_pills()}</div></div></section>'
             f'<section class="seo-final"><p class="seo-kicker">LET’S GET STARTED</p><h2>{title_line}</h2><p>Tell Dean what you want from training. Find your starting point together.</p>'
             f'<div class="seo-actions">{btn}<a class="seo-text-link" href="https://wa.me/447752300937">Message Dean on WhatsApp <span aria-hidden="true">↗</span></a></div>'
@@ -466,12 +770,92 @@ def pricing_section():
     return f'<section class="seo-section"><p class="seo-kicker">PRICING</p><h2>Simple, clear pricing.</h2>{PRICE_CARDS}</section>'
 
 
+# ---- photos and video for the guide pages -------------------------------------
+IMG = {
+    "7853": ("training-7853", 640, 360, "A client training outdoors at sunrise"),
+    "7856": ("training-7856", 640, 360, "Clients doing lunges in a park training session"),
+    "7858": ("training-7858", 640, 360, "A one-to-one boxing padwork session in a park"),
+    "7859": ("training-7859", 640, 360, "Two clients stretching on mats in a park"),
+    "7860": ("training-7860", 640, 360, "A training group at an outdoor gym"),
+    "7883": ("training-7883", 585, 329, "Clients doing sit-ups on mats in a park"),
+    "7889": ("training-7889", 585, 329, "A client jogging during a park training session"),
+    "7933": ("training-7933", 585, 329, "Clients doing side planks in a park"),
+    "8096": ("training-8096", 640, 360, "Clients training with dumbbells in a park"),
+    "dean": ("hero-dean", 585, 879, "Dean Burt coaching a client with boxing pads"),
+    "jas1": ("jasmin-boxing-1", 900, 932, "Jasmin holding pads for a boxing fitness session in a gym"),
+    "jas2": ("jasmin-boxing-2", 868, 1100, "One-to-one boxing padwork in a gym"),
+}
+CAPTION = "In-person training in East London. Online clients train from home or wherever they have space."
+# One-to-one photos (a trainer with a single client) go beside coaching and plan sections;
+# group photos only beside location and outdoor sections.
+PAGE_IMAGES = {
+    "online-personal-trainer-uk": ("7858", "7853"), "online-personal-trainer-london": ("7856", "7853"),
+    "online-weight-loss-personal-training": ("7889", "7858"), "online-personal-training-for-beginners": ("7858", "7889"),
+    "online-personal-training-at-home": ("7853", "7858"), "online-strength-training-coach": ("7858", "jas2"),
+    "online-personal-training-with-nutrition-plan": ("7889", "7853"), "online-personal-trainer-cost-uk": ("7858", "7889"),
+    "online-personal-training-for-busy-people": ("7853", "7889"), "online-personal-training-for-women": ("jas2", "jas1"),
+    "online-personal-training-for-men": ("7858", "jas2"), "online-personal-training-for-gym-members": ("jas2", "jas1"),
+    "online-vs-in-person-personal-training": ("7853", "7858"), "is-online-personal-training-worth-it": ("7889", "7853"),
+    "what-to-expect-from-online-personal-training": ("7853", "7858"), "online-personal-trainer-near-me": ("7858", "7853"),
+}
+
+
+GYM_CAPTION = "A gym training session. Online clients can train at home or in any gym they use."
+
+
+def figure(key):
+    f, w, h, alt = IMG[key]
+    cap = GYM_CAPTION if key.startswith("jas") else CAPTION
+    tall = " tall" if h > w else ""
+    return (f'<figure class="guide-figure{tall}"><img src="/pics/optimized/{f}.webp" alt="{escape(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async">'
+            f'<figcaption>{escape(cap)}</figcaption></figure>')
+
+
+def split_section(heading, paras, key, image_first=False):
+    inner = "".join([f"<h2>{escape(heading)}</h2>"] + [
+        ("<ul>" + "".join(f"<li>{escape(i)}</li>" for i in (INCLUDES if para == "__INCLUDES__" else para[9:].split("|"))) + "</ul>")
+        if (para == "__INCLUDES__" or para.startswith("__LIST__:")) else f"<p>{text(para)}</p>" for para in paras])
+    parts = [f"<div>{inner}</div>", figure(key)]
+    if image_first:
+        parts.reverse()
+    return '<section class="seo-section seo-session">' + "".join(parts) + "</section>"
+
+
+def video_block():
+    yt = f'<a class="seo-text-link" href="{YOUTUBE}" rel="noopener" target="_blank">Watch on YouTube <span aria-hidden="true">↗</span></a>'
+    return ('<section class="seo-section seo-session"><div><p class="seo-kicker">CLIENT TESTIMONIAL</p><h2>Hear from an online client</h2>'
+            f'<p>Press play to hear from a DB&#x27;s Workouts online personal training client, in their own words.</p>{yt}</div>'
+            '<div><div class="vid-thumb" role="button" tabindex="0" aria-label="Play the online client testimonial video" '
+            "onclick=\"openVid('/pics/online-training.mp4')\" onkeydown=\"if(event.key==='Enter'||event.key===' '){event.preventDefault();openVid('/pics/online-training.mp4')}\">"
+            '<img src="/pics/optimized/online-training-poster.webp" alt="Video testimonial from a DB&#x27;s Workouts online personal training client" width="720" height="1282" loading="lazy" decoding="async">'
+            '<div class="vid-play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div><div class="vid-label"><span>Watch Video</span></div></div></div></section>')
+
+
+def proof_block():
+    return ('<section class="seo-proof seo-section"><div><p class="seo-kicker">YOUR COACH</p><h2>A real coach.<br>A plan that fits you.</h2>'
+            "<p>Dean Burt is a REPs Level 3 certified personal trainer, qualified since 2019. Start with a free conversation about your goals, your experience and what you have available to train with.</p>"
+            '<a class="seo-text-link" href="/about">Meet Dean <span aria-hidden="true">↗</span></a></div>'
+            '<img src="/pics/optimized/hero-dean.webp" alt="Dean Burt coaching a client with boxing pads" width="585" height="879" loading="lazy" decoding="async">'
+            '<blockquote><span class="seo-stars" aria-label="5 stars">★★★★★</span><p>“Dean genuinely cares about your progress. He checks in between sessions, adjusts your plan when needed, and celebrates every milestone.”</p>'
+            '<cite>Laura J. · Google review</cite><a class="seo-text-link" href="/testimonials">More client stories <span aria-hidden="true">↗</span></a></blockquote></section>')
+
+
 def build_cluster_page(page):
+    keys = PAGE_IMAGES.get(page["slug"], ("7856", "8096"))
+    secs = page["sections"]
     body = common_top(page)
-    body += "\n".join(render_section(h, ps) for h, ps in page["sections"])
-    body += pricing_section() + faq_block(page)
+    for i, (h, ps) in enumerate(secs):
+        if i == 1:
+            body += split_section(h, ps, keys[0])
+        elif i == 3:
+            body += split_section(h, ps, keys[1], image_first=True)
+        else:
+            body += render_section(h, ps)
+        if i == 0:
+            body += video_block()
+    body += proof_block() + pricing_section() + faq_block(page)
     body += closing(page["slug"], "Ready to train online?<br>Start with a conversation.")
-    return assemble(page, body)
+    return assemble(page, body, modal=True)
 
 
 def build_hub():
@@ -500,19 +884,18 @@ def build_hub():
         ("Built around the equipment you have", ["You do not need a gym membership. Tell Dean what you can access, whether that is a full gym, a few dumbbells, resistance bands or just your bodyweight, and the training is planned around it. Online training also suits busy schedules, travel and anyone who lives outside East London."]),
         ("Your workout and nutrition plan in the app", ["Every online client is set up in the DB's Workouts app with a workout plan and a nutrition plan written for them. It is the place to follow your programme between sessions, with Dean checking in on how it is going. The app is where your plans live. The coaching itself comes from Dean."]),
     ]
-    guides = ('<section class="seo-section"><h2>Online personal training guides</h2><p>Explore online training by goal and situation:</p>'
-              f'<div class="areas-grid">{related_pills(HUB)}</div></section>')
+    guides = ('<section class="seo-section"><h2>Online personal training guides</h2><p>Explore online training by goal and situation:</p>' + hub_guide_pills() + '</section>')
     body = common_top(page, hub=True) + included + proof + video
     body += "\n".join(render_section(h, ps) for h, ps in blocks)
     body += pricing_section() + faq_block(page) + guides
-    body += closing(HUB, "Ready to train online?<br>Start with a conversation.")
+    body += closing(HUB, "Ready to train online?<br>Start with a conversation.", hub=True)
     return assemble(page, body, hub=True)
 
 
-def assemble(page, body, hub=False):
+def assemble(page, body, hub=False, modal=False):
     nav = navigation("/" + page["slug"])
     footer = TEMPLATE[TEMPLATE.index("      <footer"):]
-    return (head_for(page, hub) + '\n<body>\n<a class="seo-skip" href="#main-content">Skip to content</a>\n' + nav + "\n" + body + (MODAL if hub else "") + footer)
+    return (head_for(page, hub) + '\n<body>\n<a class="seo-skip" href="#main-content">Skip to content</a>\n' + nav + "\n" + body + (MODAL if (hub or modal) else "") + footer)
 
 
 def main():

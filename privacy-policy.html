@@ -20,7 +20,7 @@
   <script src="/Script/cookie-consent.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700;800;900:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Styles/db.css?v=10">
 <style>@media(max-width:767px){.db-wa-fab{display:none!important}}</style>
 <link rel="stylesheet" href="/Styles/site-navigation.css?v=1">
@@ -39,7 +39,7 @@
 <div class="legal-header">
     <p class="legal-eyebrow">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="legal-meta">Effective Date: 26 March 2025 &nbsp;&middot;&nbsp; Last Updated: 3 November 2026</p>
+    <p class="legal-meta">Effective Date: 26 March 2025 &nbsp;&middot;&nbsp; Last Updated: 10 November 2026</p>
   </div>
 
   <div class="content-container">
@@ -113,16 +113,30 @@
     <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any external services you visit.</p>
 
     <h2>10. Google Calendar and Google user data</h2>
-<p>Trainers who work with DB's Workouts can choose to connect their Google Calendar to the DB's Workouts booking app (coach.dbworkouts.co.uk). This section explains exactly what that involves. It applies only to trainers and the business owner who connect a Google account, not to clients.</p>
+<p>DB's Workouts' booking app (coach.dbworkouts.co.uk) can connect to a Google Calendar. This section explains exactly what that involves. It applies only to trainers and the business owner who connect a Google account, not to clients.</p>
 <ul>
-<li><strong>What we access:</strong> only whether you are free or busy in your primary Google Calendar, using the Google permission "See your availability in your calendars" (calendar.freebusy). We also receive the email address of the Google account you connect, and keep it with the link so we can show you which account is connected. We do <strong>not</strong> see event titles, descriptions, attendees, locations or any other event details, and we never create, change or delete anything in your calendar.</li>
-<li><strong>Why:</strong> solely to stop clients being offered a training session at a time you are already busy, and to leave the travel or rest time you choose between sessions. We do not use it for advertising, analytics, profiling, or any other purpose.</li>
-<li><strong>How it is stored:</strong> Google gives us a token that lets us check your free or busy times. We store that token encrypted. Your busy times are checked when booking times are calculated and are held only briefly in memory; we do not keep a copy of your calendar.</li>
-<li><strong>Who sees it:</strong> your Google busy times are never shown to clients, other trainers or anyone else. Clients only see the times that remain open. We do not sell or share Google user data with anyone, and we do not allow humans to read it except where you ask us for support, or where it is needed for security or to comply with the law.</li>
-<li><strong>Your control:</strong> you can disconnect Google Calendar at any time from the Availability page in the app, which deletes the stored token and asks Google to revoke our access. You can also remove access at any time at <a href="https://myaccount.google.com/permissions" rel="noopener" target="_blank">myaccount.google.com/permissions</a>. If you stop working with us or ask us to delete your account, the token is deleted too.</li>
+<li><strong>Trainers:</strong> a trainer who connects their calendar gives us one permission only, "See your availability in your calendars" (calendar.freebusy). We see only whether you are free or busy. We do <strong>not</strong> see event titles, descriptions, attendees, locations or any other event details, and we never create, change or delete anything in a trainer's calendar. We use this solely to stop clients being offered a training session at a time you are already busy, and to leave the travel or rest time you choose between sessions.</li>
+<li><strong>The business owner's calendar:</strong> the business owner also gives us a second permission, shown by Google as "View and edit events on all of your calendars" (calendar.events), so the app can add events. We use it for one purpose: when someone books a session or consultation call through a DB's Workouts booking link, the app adds that booking to the business calendar as a new event containing the booking time, the person's name, and the place they will train or the phone number they gave. We do not read the titles or details of existing events, and we do not change or delete any event that we did not create.</li>
+<li><strong>The account:</strong> we also receive the email address of the Google account you connect, and keep it with the link so we can show you which account is connected.</li>
+<li><strong>How it is stored:</strong> Google gives us a token that lets us use the permissions above. We store that token encrypted. Busy times are checked when booking times are calculated and are held only briefly in memory; we do not keep a copy of your calendar.</li>
+<li><strong>Who sees it:</strong> your Google busy times are never shown to clients, other trainers or anyone else. Clients only see the times that remain open. We do not sell or share Google user data with anyone, we do not use it for advertising, analytics or profiling, and we do not allow humans to read it except where you ask us for support, or where it is needed for security or to comply with the law.</li>
+<li><strong>Your control:</strong> you can disconnect Google Calendar at any time from the Availability page in the app, which deletes the stored token and asks Google to revoke our access. You can also remove access at any time at <a href="https://myaccount.google.com/permissions" rel="noopener" target="_blank">myaccount.google.com/permissions</a>. Events already added to a calendar stay there unless you delete them. If you stop working with us or ask us to delete your account, the token is deleted too.</li>
 </ul>
 <p>DB's Workouts' use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" rel="noopener" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<h2>11. Changes to This Policy</h2>
+
+<h2>11. Booking Links and Sign-Up Links</h2>
+<p>If you book through one of our booking links, we collect your name and the place you want to train, or, for a consultation call, your phone number. If we send you a sign-up link, we also collect your name, email address, phone number and a password, and then the forms you fill in (a written consultation and a health screening). We use this only to arrange and deliver your training. We do not use it for marketing unless you tell us we can.</p>
+
+<h2>12. Consultation Notes, Recordings, Voice Notes and AI Tools</h2>
+<p>We may record a consultation, with your knowledge, so we can write accurate notes about your goals, health, lifestyle and training. If you send us a WhatsApp voice note, we may turn it into text so we can read your enquiry. The audio is turned into text by Cloudflare (Workers AI) or Groq, and an AI service from the same two companies organises the text into notes or helps prepare your training plan. We choose these two services because their published terms (checked in November 2026) say they do not use what we send to train their AI models. Cloudflare does not keep it after the request is answered. Groq does not keep it by default, but may log requests for up to 30 days to fix errors or investigate abuse. We do not keep the audio. We keep the text and notes securely, and they are seen only by the business owner and the trainer looking after you. A trainer only sees your notes once you are assigned to them. If you do not want a consultation recorded, tell us and we will take written notes instead.</p>
+
+<h2>13. Where Your Information Goes</h2>
+<p>Some of the services we use, including the AI and speech-to-text services above, process information outside the UK, including in the United States. We use only providers that commit to protecting it, and we send them only what is needed to do the job.</p>
+
+<h2>14. Your Contract</h2>
+<p>When you sign your personal training contract in our app, we keep your typed signature, your initials, the date, and your choice about photographs and filming. You can ask us for a copy at any time.</p>
+
+<h2>15. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. Any updates will be posted on this page with a revised effective date.</p>
 
     <p class="legal-contact">Questions or requests? Contact us at <a href="mailto:dbs_workouts@yahoo.com">dbs_workouts@yahoo.com</a> or via <a href="https://wa.me/447752300937" target="_blank" rel="noopener">WhatsApp</a>.</p>
