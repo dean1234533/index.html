@@ -28,6 +28,19 @@
 /logo.png
   Cache-Control: public, max-age=31536000, immutable
 
+# Hero and demo clips are decorative, not watch pages: keep the video files out of Google's video index
+/*.mp4
+  X-Robots-Tag: noindex
+
+/*.MP4
+  X-Robots-Tag: noindex
+
+/*.mov
+  X-Robots-Tag: noindex
+
+/*.MOV
+  X-Robots-Tag: noindex
+
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
