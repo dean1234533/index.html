@@ -21,6 +21,8 @@
 
 # Previously removed pages — send to closest relevant page to fix 404s
 /smart-life-app             /ai-plans                   301
+/smart-app                 https://app.dbworkouts.co.uk/ 301
+/smart-app.html            https://app.dbworkouts.co.uk/ 301
 /clothing                   /about                      301
 /DeanTBStudio               /blog-post                  301
 /deantbstudio               /blog-post                  301
